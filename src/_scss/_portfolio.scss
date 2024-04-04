@@ -1,8 +1,8 @@
 body.portfolio.list {
     #main {
         // width: calc(100vw - ($spacerHorizontal * 2));
-        width: 100vw;
-        padding: $spacerVertical $spacerHorizontal;
+        // width: 100vw;
+        // padding: $spacerVertical $spacerHorizontal;
     }
 }
 
@@ -74,6 +74,7 @@ body.portfolio.list {
                 display: block;
             }
             img {
+                border-radius: 1rem;
                 display: block;
                 width: 100%;
                 // height: 80vh;
@@ -100,7 +101,7 @@ body.portfolio.list {
 
         &.full {
             flex-direction: row-reverse;
-            gap: $spacerHorizontal * 2;
+            // gap: $spacerHorizontal * 2;
             min-height: 13.25vw;
             margin-bottom: $spacerVertical * 2;
             align-items: center;
@@ -116,6 +117,7 @@ body.portfolio.list {
 
             &>header {
                 display: block;
+                margin-left: $spacerHorizontal;
                 h2,h3 {
                     text-align: left;
                     margin-bottom: 0;
