@@ -28,7 +28,7 @@
 		margin-bottom: 1em;
 		line-height: 1.2;
 		.date {
-			flex-basis: 8em;
+			margin-right: $spacerHorizontal;
 			color: $textOffColor;
 			font-family: $monoFontFamily;
 		}
@@ -45,12 +45,6 @@
 body.post {
 
 	@include item-detail();
-
-	main, #main {
-		h1 {
-			margin-bottom: .25em;
-		}
-	}
 
 	.related-posts {
 		margin-top: $spacerVertical;

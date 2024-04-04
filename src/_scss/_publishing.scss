@@ -37,12 +37,6 @@ portfolio, and gallery pages.
 @mixin item-detail {
 	main,#main {
         padding-top: 0;
-		// .date {
-		// 	color: $textOffColor;
-		// }
-        h1,h2,h3,h4 {
-            clear: both;
-        }
         p {
             &>img,&>svg,&>video {
                 &.canzoom {
