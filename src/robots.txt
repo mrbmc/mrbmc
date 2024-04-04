@@ -1,0 +1,39 @@
+User-agent: AdsBot-Google
+Disallow: /config
+Disallow: /lib
+Disallow: /less
+Disallow: /downloads
+Disallow: /images/uploads
+
+
+User-agent: AdsBot-Google-Mobile
+Disallow: /config
+Disallow: /lib
+Disallow: /less
+Disallow: /downloads
+Disallow: /images/uploads
+
+
+User-agent: AdsBot-Google-Mobile-Apps
+Disallow: /config
+Disallow: /lib
+Disallow: /less
+Disallow: /downloads
+Disallow: /images/uploads
+
+
+User-agent: *
+Disallow: /wp-admin
+Disallow: /wp
+Disallow: /config
+Disallow: /lib
+Disallow: /less
+Disallow: /downloads
+Disallow: /images/uploads
+
+
+User-agent: ia_archiver
+Disallow: /
+
+
+Sitemap: https://www.brianmcconnell.me/sitemap.xml

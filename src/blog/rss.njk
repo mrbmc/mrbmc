@@ -1,0 +1,25 @@
+---
+permalink: /blog/rss.xml
+baseURL: https://www.brianmcconnell.me
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+    <title>{{ title }}</title>
+    <description>Brian McConnell is a design executive with a unique background in design, product, engineering and entrepreneurship. His mission as a leader is to create a competitive advantage through design.</description>
+    <link>{{ baseURL }}</link>
+
+
+    {% for page in collections.posts %}
+        <item>
+            <title>{{ page.data.title }}</title>
+            {% if summary %}<description>{{ summary }}</description>{% endif %}
+            <pubDate>{{ page.data.date.toISOString() }}</pubDate>
+            <author>Brian McConnell</author>
+            <link>{{ baseURL }}{{ page.url | url }}</link>
+            <image>{{ baseURL }}{{ page.data["masthead-image"] | url }}</image>
+        </item>
+    {% endfor %}
+</channel>
+</rss>

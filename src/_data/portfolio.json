@@ -1,0 +1,47 @@
+[
+    {
+        "title":"Disney+",
+        "slug":"disney",
+        "thumbnail":"/images/portfolio/thumbs/disney-teaser-16x9.jpg",
+        "masthead":{
+            "image":"/images/portfolio/disney-tiles-16x9.jpg",
+            "video":"/images/portfolio/disney-WelcomeLandingSizzleReel.mp4"
+        }
+    },
+    {
+        "title":"ESPN+",
+        "slug":"espn",
+        "thumbnail":"/images/portfolio/thumbs/espn-teaser-16x9.jpg",
+        "masthead":{
+            "image":"/images/portfolio/espn-teaser-16x9",
+            "video":"/images/portfolio/ESPN-ORGANIC_MLP_Generic.mp4"
+        }
+    },
+    {
+        "title":"Eurosport Player",
+        "slug":"eurosport",
+        "thumbnail":"/images/portfolio/eurosport-thumb.jpg",
+        "masthead":"/images/portfolio/eurosport-case-study.jpg"
+    },
+    {
+        "title":"NHL.tv and apps",
+        "slug":"nhl",
+        "thumbnail":"/images/portfolio/thumbs/nhl-teaser-16x9.jpg",
+        "masthead":{
+            "video":"/images/portfolio/nhl-masthead.mp4",
+            "image":"/images/portfolio/nhl-teaser-2x1.jpg"
+        }
+    },
+    {
+        "title":"Security Scorecard",
+        "slug":"securityscorecard",
+        "thumbnail":"/images/portfolio/thumbs/security-cover-16x9.jpg",
+        "masthead":"/images/portfolio/security-teaser.jpg"
+    },
+    {
+        "title":"BlogTalkRadio",
+        "slug":"blogtalkradio",
+        "thumbnail":"/images/portfolio/thumbs/btr-cover-16x9.jpg",
+        "masthead":"/images/portfolio/btr-hosttools-teaser-2x1.jpg"
+    }
+]

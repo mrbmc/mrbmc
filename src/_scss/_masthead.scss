@@ -1,0 +1,100 @@
+#masthead {
+
+    @include fullWidth(100vw);
+    margin-bottom: $spacerVertical;
+    height: calc(100vh - $navbarHeight);
+    flex-direction: column;
+    // justify-content: flex-end;
+    // align-items: center;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 1rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 10;
+
+    color: $heroUnitLeadColor;
+
+    h1,h2,h3 {
+        color: $heroUnitHeadingColor;
+        z-index: 2;
+        text-align: center;
+    }
+    h1 + p {
+        margin-top: -0.75em;
+    }
+
+    figure {
+        background: $black;
+        width: 100%;
+        height: 120%;//calc(100vh + $navbarHeight);
+        position: absolute;
+        // top: 0;
+        top: 0 - $navbarHeight;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        margin: 0;
+        overflow: hidden;
+
+        img,video {
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.80;
+        }
+        video::-webkit-media-controls-fullscreen-button {
+            display: none !important;
+        }
+        figcaption,caption {
+            position: absolute;
+            right: $spacerHorizontal;
+            bottom: $spacerVertical;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+            color: $white;
+        }
+
+
+    }
+
+    @media (orientation: portrait) {
+        // min-height: 100vw;
+        // min-height: auto;
+        height: auto;
+        min-height: 62vw;
+
+        figure {
+        //     height: auto;
+        //     top: 0;
+            // img {
+            //     height: auto;
+            //     object-fit: contain;
+            // }
+        }
+    }
+
+}// end masthead
+#scrollhint,.scrollhint {
+    $size: 48px;
+
+    width: $size;
+    height: $size;
+    position: absolute;
+    left: calc(50% - math.div($size, 2));
+    bottom: $size;
+    text-indent: -100vw;
+
+    z-index: 1;
+    &:hover {
+        cursor: pointer;
+    }
+    @media (orientation: portrait) {
+        display: none;
+    }
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCA1MyAyMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBvbHlnb24gcG9pbnRzPSIyNi41LDE3LjY4OCA5LjExNCwzLjc3OSAxMC4zMDMsMi4zMTIgMjYuNSwxNS4yNjkgNDIuNjk3LDIuMzEzIDQzLjg4NiwzLjc3OSIgZmlsbD0iY3VycmVudENvbG9yIj48L3BvbHlnb24+PC9nPjwvc3ZnPg==");
+
+    display: none;
+}
+

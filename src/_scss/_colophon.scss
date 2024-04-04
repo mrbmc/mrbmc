@@ -1,0 +1,76 @@
+
+body.colophon {
+	.chip {
+		width: 19%;
+		height: 4.5em;
+		padding: .25em;
+	    box-sizing: border-box;
+		display: inline-block;
+
+		&.black {
+			background: var(--black);
+			color: var(--gray-light);
+		}
+		&.gray100 {
+			background: var(--gray-dark);
+			color: var(--gray-light);
+		}
+		&.gray500 {
+			background: var(--gray-mid);
+			color: var(--gray-light);
+		}
+		&.gray900 {
+			background: var(--gray-light);
+		}
+		&.white {
+			background: var(--white);
+			box-shadow: inset 0 0 0 1px var(--gray-light);
+		}
+		&.brand {
+			background: var(--brandColor);
+			color: var(--gray-light);
+		}
+		&.complement {
+			background: var(--brandComplement);
+		}
+		&.accent {
+			background: var(--brandAccent);
+		}
+		&.secondary {
+			background: var(--brandSecondary);
+		}
+		&.brand80 {
+			background: $brandColor80;
+			color: transparent;
+		}
+		&.complement80 {
+			background: $brandComplement80;
+			color: transparent;
+		}
+		&.accent80 {
+			background: $brandAccent80;
+			color: transparent;
+		}
+		&.secondary80 {
+			background: $brandSecondary80;
+			color: transparent;
+		}
+		&.brand20 {
+			background: $brandColor20;
+			color: var(--gray-light);
+			color: transparent;
+		}
+		&.complement20 {
+			background: $brandComplement20;
+			color: transparent;
+		}
+		&.accent20 {
+			background: $brandAccent20;
+			color: transparent;
+		}
+		&.secondary20 {
+			background: $brandSecondary20;
+			color: transparent;
+		}
+	}
+}

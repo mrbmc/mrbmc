@@ -1,0 +1,118 @@
+body {
+    &>footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $gray-800;
+        overflow: hidden;
+        padding: $spacerVertical calc((100vw - $gridWidth)/2);
+        gap: 1rem;
+
+        background: 
+                    radial-gradient(38% 81% at 100% 81%,   $brandAccent80 25%,  $brandColor00 100%)
+                    ,radial-gradient(38% 130% at 81% 0%,    $brandComplement80 0%,   $brandColor00 100%)
+                    ,radial-gradient(38% 100% at 20% 100%,  $brandSecondary80 0%,      $brandColor00 100%)
+                    // ,radial-gradient(100% 100% at 50% 100%,  hsla(238, 30%, 10%, 50%) 0%,        $brandColor00 100%)
+                    ,$brandColor;
+
+
+        &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            filter: url(#noiseFilter) opacity(20%);
+        }
+
+        h2,h3,h4 {
+            color: $heroUnitLeadColor;
+            display: none;
+        }
+        a {
+            color: $heroUnitLeadColor;
+        }
+
+        &>div {
+            box-sizing: border-box;
+            flex: 1 0 50%;
+            z-index: 2;
+
+            nav {
+                display: flex;
+                justify-content: center;
+                a {
+                    margin: 0 ($spacerHorizontal * 0.5);
+                }            
+            }
+            p {
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+        #colophon {
+            @include smallType();
+        }
+        #contact {
+            nav {
+                $itemsize: 1.38rem;
+                // margin: 0 auto $spacerVertical auto;
+
+                a {
+                    font-size: $itemsize;
+                    line-height: $itemsize;
+                    width: $itemsize;
+                    height: $itemsize;
+                }
+                img,svg {
+                    width: 100%;
+                    height: 100%;
+                }
+                a.link-linkedin svg {
+                    filter: saturate(0);
+                    // filter: hue-rotate(38deg) brightness(0.9);
+
+                    //brand hsb: 238 82 66;
+                    //linkedin hsb: 199/100/73;
+                }
+                a.link-medium svg {
+                    filter: invert(100%);
+                }
+                a.link-strava svg {
+                    filter: saturate(0);
+                }
+            }
+        }
+    }
+}
+
+// phones up to tablets
+@media (max-width: $breakpointPortrait-1) {
+    body {
+        footer {
+            flex-direction: column;
+            &>div {
+                height: auto;
+                flex-basis: 100%;
+                max-width: 100%;
+                padding: $spacerVerticalPhone $spacerHorizontalPhone;
+                &:last-of-type {
+                    padding-left: $spacerHorizontalPhone;
+                }
+            }
+        }
+    }
+}
+
+
+// WIDESCREEN
+@media (min-width: $breakpointWidescreen) {
+    body {
+        &>footer {
+            &>div {
+            }
+        }
+    }
+}

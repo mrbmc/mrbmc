@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "ed6337c81972f5ff",
+    "type": "split",
+    "children": [
+      {
+        "id": "27d6f3644ff737e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e229b8bf761fa27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_includes/leadership.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9aa1532018642bff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "about.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "65c849442969dc5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c33507460b1f98f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "222d5f8ba0f64d2e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "764f6ee00d1e520e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f922079b8a12b54b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "dcafd64dceda2693",
+    "type": "split",
+    "children": [
+      {
+        "id": "60a7d2ec00383e45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ab59f90a010132d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "about.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "604cbe3bd5507b1d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "about.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d660e019cd95cf05",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "debc9c1cb6447a17",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "about.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9aa1532018642bff",
+  "lastOpenFiles": [
+    "_images/uploads/bmc-flint_silicon-20221022.mp4",
+    "_images/portfolio/disney-enterprise/ads-mission-control-scheduling.png",
+    "_images/portfolio/disney-enterprise/content-portal-episode.png",
+    "_images/portfolio/disney-enterprise/cypher.png",
+    "_images/portfolio/disney-enterprise/cypher-edit-key.png",
+    "_images/portfolio/disney-enterprise/dev-portal.png",
+    "_images/portfolio/disney-enterprise/ads-mission-control-scheduling.jpgpng",
+    "_images/portfolio/disney-enterprise/content-portal-episode.jpgpng",
+    "_images/portfolio/disney-enterprise/cypher.jpgpng",
+    "_images/portfolio/disney-enterprise/cypher-edit-key.jpgpng",
+    "_images/portfolio/disney-enterprise/dev-portal.jpgpng",
+    "_images/portfolio/disney-enterprise/knowsmore.png",
+    "colophon.md",
+    "about.md",
+    "_images/portfolio/disney-growth/signup-ps4-screen-8.png",
+    "_images/portfolio/disney-growth/signup-ps4-screen-7.png",
+    "_images/portfolio/disney-growth/signup-ps4-screen-6.png",
+    "_images/portfolio/disney-growth/signup-ps4-screen-5.png",
+    "_images/portfolio/disney-growth/Career Highlights/Disney+ Growth",
+    "_images/portfolio/disney-growth/Career Highlights",
+    "_images/portfolio/disney-growth/Growth",
+    "_scss/_colophon.scss",
+    "_scss/colophon.scss",
+    "_scss/colophon.scss.md",
+    "_includes/leadership.md",
+    "Untitled.md",
+    "_includes/process.md",
+    "blog/posts/bike-tour-2023.md",
+    "about-leadership.md",
+    "privacy.md",
+    "index.md",
+    "leadership.md",
+    "process.md",
+    "cv.md",
+    "bio.bak.md",
+    "portfolio/projects/images/portfolio/disney-growth/tv-signup-6.jpg.md",
+    "portfolio/projects/images/portfolio/disney-growth/pod-slide.svg.md",
+    "_includes/_posts.md",
+    "404.md",
+    "error.md",
+    "blog/index.md",
+    "blog.md",
+    "blog/tags.md",
+    "index-bak.md",
+    "images/about-wireframes-l.jpg.md",
+    "portfolio/projects/images/portfolio/culture-workshop/EXD-workshop-voting.JPG.md"
+  ]
+}

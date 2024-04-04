@@ -1,0 +1,113 @@
+// Transitions
+@mixin transition($transition) {
+  // -webkit-transition: $transition;
+  //    -moz-transition: $transition;
+  //      -o-transition: $transition;
+          transition: $transition;
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+     // -moz-transform: translate($x, $y);
+     //  -ms-transform: translate($x, $y);
+     //   -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+@mixin scale($ratio) {
+  // -webkit-transform: scale($ratio);
+  //    -moz-transform: scale($ratio);
+  //     -ms-transform: scale($ratio);
+  //      -o-transform: scale($ratio);
+          transform: scale($ratio);
+}
+
+@mixin rotate($degrees) {
+    // -webkit-transform: rotate($degrees);
+    // -moz-transform: rotate($degrees);
+    // -ms-transform: rotate($degrees);
+    // -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+.buildin {
+    @include translate(0, 20%);
+    @include opacity(0);
+    &.in {
+        @include transition(all $animateSpeed $animateEasing);
+        @include opacity(100);
+        @include translate(0, 0);
+    }
+}
+
+.fade {
+    @include opacity(0);
+    &.in {
+        @include transition(opacity $animateSpeed*2 $animateEasing);
+        @include opacity(100);
+    }
+}
+
+.pop {
+    @include transition(all $animateSpeed $animateEasing);
+    @include scale(.01);
+
+    &.in {
+        @include scale(1);
+    }
+}
+
+[class*="slide"] {
+    position: relative;
+    @include translate(0, 10%);
+
+    &.slide-left {
+        @include translate(-20%, 0);
+    }
+    &.slide-right {
+        @include translate(20%, 0);
+    }
+    &.in {
+        @include transition(all $animateSpeed $animateEasing);
+        @include translate(0, 0);
+    }
+}
+
+-webkit-keyframes updown {
+    from {
+        -webkit-transform: translate(0em, 0em);
+    }
+
+    to {
+        -webkit-transform: translate(0em, -1em);
+    }
+}
+
+-moz-keyframes updown {
+    from {
+        -moz-transform: translate(0em, 0em);
+    }
+
+    to {
+        -moz-transform: translate(0em, -1em);
+    }
+}
+
+-o-keyframes updown {
+    from {
+        -o-transform: translate(0em, 0em);
+    }
+
+    to {
+        -o-transform: translate(0em, -1em);
+    }
+}
+
+keyframes updown {
+    from {
+        transform: translate(0em, 0em);
+    }
+
+    to {
+        transform: translate(0em, -1em);
+    }
+}

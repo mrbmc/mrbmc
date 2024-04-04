@@ -1,0 +1,183 @@
+@font-face {
+    font-family:"Tomato";
+    src:url('/css/fonts/Tomato Grotesk VF.woff2') format('woff');
+}
+// Typography
+// -------------------------
+$systemFontFamily:      system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","HelveticaNeue", Helvetica, sans-serif;
+$sansFontFamily:        "Tomato","Helvetica Neue","Helvetica",$systemFontFamily;
+$serifFontFamily:       "Palatino","Georgia","Roboto Serif",Times,serif;
+$monoFontFamily:        "Courier New", monospace;
+
+$baseFontFamily:        $sansFontFamily;
+$baseFontWeight:        350;
+$boldFontWeight:        550;
+$baseFontSize:          math.div(24px, 16);//16px is the browser default so the numerator is your desired p size
+$baseLineHeight:        1.62;
+$serifFontWeight:       200;
+
+$headingsFontFamily:    $sansFontFamily;
+$headingsFontWeight:    $baseFontWeight;
+
+$displayFontFamily:     $headingsFontFamily;
+$displayFontWeight:     $baseFontWeight;
+
+$navbarFontFamily:      $baseFontFamily;
+$navbarFontWeight:      $baseFontWeight;
+
+
+@mixin typeset($face, $weight, $size: 1em, $line: 1.2, $kerning: 0) {
+    font-size: $size;
+    font-family: $face;
+    font-weight: $weight;
+    line-height: $line;
+    letter-spacing: $kerning;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering:optimizeLegibility;
+    // -moz-osx-font-smoothing: grayscale;
+    // font-smooth: never;
+    font-size: clamp(120%, 1.8vw, 240%);
+    // PHONES & TABLETS
+    // @media (max-width: $breakpointPortrait-1) {
+    //     font-size: $baseFontSize * 1.1;
+    // }
+    // // TABLETS & DESKTOPS
+    // @media (min-width: $breakpointPortrait) AND (max-width: $breakpointWidescreen-1) {
+    //     font-size: $baseFontSize * 1.0;
+    // }
+    // // WIDESCREEN & LARGE DESKTOPS
+    // @media (min-width: $breakpointWidescreen) AND (max-width: 1800px) {
+    //     font-size: $baseFontSize * 1.3;
+    // }
+    // // SUPER WIDESCREEN
+    // @media (min-width: 1801px) {
+    //     font-size: $baseFontSize * 1.6;
+    // }
+}
+
+body {
+    @include typeset($baseFontFamily, $baseFontWeight, 1rem, $baseLineHeight, -0.0125em);
+}
+.serif {
+    font-family: $serifFontFamily;
+    font-weight: $serifFontWeight;
+}
+a {
+    text-decoration: underline;
+    // text-decoration: none;
+    // font-weight: $boldFontWeight;
+}
+h1,h2,h3,h4,h5 {
+    a {
+        font-weight: $displayFontWeight;
+    }
+}
+$typeScale: 1.3;//each size is this much larger than the predecessor
+h1 {
+    @include typeset($displayFontFamily, $displayFontWeight, (1rem * pow($typeScale,4)), 1.2, -0.0625em);
+    // text-transform: uppercase;
+}
+h2 {
+    @include typeset($headingsFontFamily, $headingsFontWeight, (1rem * pow($typeScale,3)), 1.2, -0.05em);
+    // text-transform: uppercase;
+}
+h3 {
+    @include typeset($headingsFontFamily, $headingsFontWeight, (1rem * pow($typeScale,2)), 1.2, -0.0125em);
+    // text-transform: uppercase;
+}
+h4 {
+    @include typeset($headingsFontFamily, $headingsFontWeight, (1rem * pow($typeScale,0)), 1.2, 0.25em);
+    text-transform: uppercase;
+}
+h5 {
+    @include typeset($headingsFontFamily, $headingsFontWeight, (0.8rem * pow($typeScale,0)), 1.2, -0.0em);
+}
+p, li, dt, dd {
+}
+strong,b {
+    font-weight: $boldFontWeight;
+    color: $textBoldColor;
+}
+em {
+    font-style: italic;
+}
+@mixin largeType {
+    font-size: ($typeScale * 1em);
+}
+.large,.largeType {
+    @include largeType;
+}
+@mixin smallType {
+    font-size: math.div(1rem, $typeScale);
+}
+.small,.smallType {
+    @include smallType;
+}
+
+.caption,.legal {
+    @include smallType();
+    font-style: italic;
+    color: $textOffColor;
+}
+
+blockquote,.blockquote {
+    // font-style: italic;
+    font-family: $serifFontFamily;
+    font-weight: $serifFontWeight;
+    font-size: 133%;
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.underline {
+    padding: 0 1em;
+    border-bottom: 1px solid $textColor;
+}
+
+#header {
+    a {
+        text-decoration: none;
+        @include typeset($navbarFontFamily, $navbarFontWeight, 0.8rem, ($navbarHeight * .62), -0.0125em);
+        text-transform: uppercase;
+        &:hover {
+            color: $navbarLinkColorHover;
+            background: $navbarLinkBackgroundHover;
+            text-decoration: none;
+        }
+    }
+    .brand {
+        @include typeset($displayFontFamily, $displayFontWeight, 1em, ($navbarHeight * .62), 0.0em);
+    }
+}
+
+body.blog {
+    #post-detail {
+        font-family: $serifFontFamily;
+        font-weight: $serifFontWeight;
+        letter-spacing: -0.0em;
+    }
+}
+
+table {
+    thead {
+        th {
+            // font-family: $monoFontFamily;
+            font-weight: $boldFontWeight;
+            line-height: 1;
+            color: var(--gray-mid);
+            @include smallType;
+        }
+    }
+    tbody {
+        td {
+            font-family: $monoFontFamily;
+            line-height: 1;
+            @include smallType;
+            // color: var(--black),
+        }
+    }
+}

@@ -1,0 +1,178 @@
+body.about,body.home {
+
+
+    main,#main {
+        .gallery{
+            @include fullWidth(90vw);
+        }
+    }
+
+    h1 {
+        margin-top: $spacerVertical;
+    }
+    h1 + p {
+        margin: ($spacerVertical * 2) 0;
+    }
+
+    img[alt="Disney"] {
+        height: ($baseLineHeight * 1em);
+        width:auto;
+        display:inline;
+        margin-bottom: -.4em;
+        margin-right: .25em;
+    }
+    #travel-map {
+        width: 100%;
+        height: auto;
+        // filter: hue-rotate(60deg);
+    }
+    #strava-rides,#strava-profile {
+        height: 454px;
+        width: 100%;
+    }
+
+    img.cover {
+        $w: 100vw;
+        @include fullWidth($w);
+        overflow: hidden;
+        object-fit: cover;
+        // height: (100vw / 2.31);
+        height: math.div($w, 4);
+
+        &.family {
+            filter: sepia(10%) hue-rotate(0deg) saturate(50%) brightness(100%);
+        }
+
+
+    }
+
+    #mantras,ul.hero {
+        @include inverse();
+        @include fullWidth(100vw);
+        padding: $spacerVertical $gridMargin;
+
+        flex-direction: column;
+
+        ul,ol {
+            @include container();
+            padding-top: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1em;
+            @media (orientation: portrait) {
+                grid-template-columns: 1fr;
+            }
+        }
+        li {
+            @include card();
+            list-style: none;
+            margin: 0;
+
+            details {
+                padding: $spacerHorizontal;
+                summary {
+                    list-style-position: outside;
+                    @include typeset($headingsFontFamily, $headingsFontWeight, 1.62rem, 1.2, -0.0125em);
+
+                    display: block;
+                    padding: 1rem;
+                    margin: ($spacerHorizontal * -1) ($spacerHorizontal * -1) ($spacerHorizontal * -1) ($spacerHorizontal * -2);
+                    padding-left: 2.2rem;
+                    position: relative;
+                    cursor: pointer;
+                    user-select: none;
+
+                    &:before {
+                      content: '';
+                      border-width: .4rem;
+                      border-style: solid;
+                      border-color: transparent transparent transparent $textColor;
+                      position: absolute;
+                      top: 1.62rem;
+                      left: 1rem;
+                      transform: rotate(0);
+                      transform-origin: .2rem 50%;
+                      transition: $animateSpeed transform $animateEasing;
+                    }
+                }
+                &[open] {
+                    summary {
+                        margin-bottom: 0.5em;
+                    }
+                    & > summary:before {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            strong,em {
+                display: block;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &.hero {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: $spacerHorizontal;
+            box-sizing: border-box;
+            strong {
+                font-size: 144%;
+            }
+        }
+    }
+
+    @media (orientation: portrait) {
+        #mantras,ul.hero {
+            padding: $spacerVerticalPhone $spacerHorizontalPhone;
+        }
+        img.cover {
+            height: 33vh;
+        }
+        h1 {
+            margin-top: $spacerVerticalPhone;
+            &+p {
+                margin: ($spacerVerticalPhone * 2) 0;
+            }
+        }
+    }
+
+    hr {
+        margin: ($spacerVertical * 3) auto;
+    }
+}
+
+
+
+
+ul.timeline {
+    @include card;
+
+    // width: 62%;
+    margin: 0 10%;
+
+    li {
+        margin-left: 0;
+        // margin-top: 0;
+        // margin-bottom: 0;
+        // padding: 8px 8px 8px 24px;
+        position: relative;
+        padding-left: 1em;
+        border-left: 2px solid var(--black);
+        list-style: none;
+        padding-bottom: $spacerVertical;
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+        &:before {
+            display: inline-block;
+            content: "";
+            width: 12px;
+            height: 12px;
+            @include border-radius(10px);
+            margin-left: calc(-1em - 7px);
+            margin-right: 1em;
+            background: var(--black);
+        }
+    }
+}
+

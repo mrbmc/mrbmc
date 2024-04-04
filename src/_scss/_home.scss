@@ -1,0 +1,255 @@
+body.home {
+    #header {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: transparent;
+        box-shadow: none;
+
+        a#open-menu {
+            &:before,&:after {
+                // background: $heroUnitHeadingColor;
+            }
+        }
+        #menu {
+            a {
+                // color: $heroUnitHeadingColor;
+                &:hover {
+                    // color: $navbarLinkColorHover;
+                }
+            }
+            &:target {
+                a {
+                    // color: $navbarLinkColor;
+                }
+            }
+        }
+        .brand {
+            // filter: invert(0%);
+            // color: $white;
+        }
+    }
+    main,#main {
+        padding-top: 0;
+    }
+    #masthead {
+        color: $textColor;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media (orientation: landscape) {
+            padding-left: $spacerHorizontal;
+            padding-right: $gridMargin * 2;
+            height: (100vh);
+        }
+        @media (orientation: portrait) {
+            height: 80vh;
+        }
+        @media (orientation: portrait) {
+            padding: $spacerVerticalPhone $spacerHorizontalPhone;
+        }
+
+        a {
+            // color: $gray-light;
+        }
+
+        figure {
+            display: none;
+        }
+
+        h1,h2,h3 {
+            text-align: left;
+            color: $textBoldColor;
+        }
+        p {
+            // @include largeType;
+            z-index: 1;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        .scrollhint {
+            @media (orientation: landscape) {
+                display: block;
+            }
+        }
+
+
+
+        // moving gradients
+/*
+        &:before {
+            content: "";
+            // background-size: 200vw;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background: 
+                radial-gradient(38% 81% at 100% 81%,   $brandAccent20 25%,  $brandColor00 100%)
+                ,radial-gradient(38% 130% at 62% 0%,    $brandComplement20 0%,   $brandColor00 100%)
+                ,radial-gradient(38% 100% at 20% 100%,  $brandSecondary20 0%,      $brandColor00 100%)
+                ,radial-gradient(100% 100% at 0% 0%,  $brandColor80 0%,    $brandColor00 100%)
+                ,$heroUnitBackground;
+            // background: url('/images/backgrounds/clouds-small.jpg');
+            // filter: blur(90px) saturate(150%)brightness(0.9);
+            animation: gradient 30000ms $animateEasing infinite;
+
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: -0vw;
+            top: -0vh;
+            z-index: -2;
+            transform: scale(1.2);
+        }
+
+*/
+        &:after {
+            content: "";
+            background-size: 1000px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            // filter: url(#noiseFilter) opacity(25%);
+        }
+        #gradient-canvas {
+            // display: none;
+          width:100%;
+          height:100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
+          opacity: 0.2;
+          // filter: saturate(50%);
+          // --gradient-color-1: #{$brandColor};
+          // --gradient-color-2: #{$brandSecondary};
+          // --gradient-color-3: #{$brandColor};
+          // --gradient-color-4: #{$brandAccent};
+          --gradient-color-1: #{$white};
+          --gradient-color-2: #{$gray-900};
+          --gradient-color-3: #{$gray-800};
+          --gradient-color-4: #{$gray-700};
+          @media (prefers-color-scheme: dark) {
+              --gradient-color-1: #{$black};
+              --gradient-color-2: #{$gray-200};
+              --gradient-color-3: #{$gray-300};
+              --gradient-color-4: #{$gray-400};
+          }
+        }
+
+    }
+    .project-list,.blog {
+        padding-top: $spacerVertical;
+        // padding-bottom: $spacerVertical;
+    }
+    .project-list {
+         .project {
+            // flex: 1 0 31%;
+            // height: auto;
+            // min-height: auto;
+            // img {
+            //     height: auto;
+            // }
+            @media (orientation: landscape) {
+                scroll-snap-align: start;
+            }
+         }
+    }
+    #masthead {
+            @media (orientation: landscape) {
+                scroll-snap-align: start;
+            }
+    }
+    footer {
+            @media (orientation: landscape) {
+                scroll-snap-align: end;
+            }
+    }
+
+
+}
+
+/*
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+        background-size: 100% 100%;
+    }
+    12.5% {
+        // background-position: 0% 0%;
+        background-size: 200% 100%;
+    }
+    25% {
+        background-position: 100% 0%;
+        background-size: 100% 100%;
+    }
+    37.5% {
+        // background-position: 100% 0%;
+        background-size: 100% 200%;
+    }
+    50% {
+        background-position: 100% 100%;
+        background-size: 200% 200%;
+    }
+    62.5% {
+        // background-position: 100% 100%;
+        background-size: 100% 200%;
+    }
+    75% {
+        background-position: 0% 100%;
+        background-size: 100% 100%;
+    }
+    87.5% {
+        // background-position: 0% 100%;
+        background-size: 200% 100%;
+    }
+    100% {
+        background-position: 0%  0%;
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes canvasMover {
+    0% {
+        background-position: 0% 0%;
+        transform: scale(1.0, 1.0);
+    }
+    12.5% {
+        // background-position: 0% 0%;
+        transform: scale(2.0, 2.0);
+    }
+    25% {
+        background-position: 100% 0%;
+        transform: scale(1.0, 2.0);
+    }
+    37.5% {
+        // background-position: 100% 0%;
+        transform: scale(1.0, 2.0);
+    }
+    50% {
+        background-position: 100% 100%;
+        transform: scale(1.0, 1.0);
+    }
+    62.5% {
+        // background-position: 100% 100%;
+        transform: scale(2.0, 1.0);
+    }
+    75% {
+        background-position: 0% 100%;
+        transform: scale(2.0, 2.0);
+    }
+    87.5% {
+        // background-position: 0% 100%;
+        transform: scale(1.0, 2.0);
+    }
+    100% {
+        background-position: 0%  0%;
+        transform: scale(1.0);
+    }
+}
+
+*/

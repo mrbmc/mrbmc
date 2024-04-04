@@ -1,0 +1,446 @@
+@use 'sass:math';
+
+@import "./_mixins.scss"; 
+@import "./_variables.scss";
+@import "./_type.scss";
+@import "./_animations.scss";
+
+
+// ======================================================================
+// LAYOUT
+body,html {
+    // overflow-x: hidden;
+}
+
+.fullwidth {
+    @include fullWidth(100vw);
+}
+.fullwidth90 {
+    @include fullWidth(90vw);
+}
+.fullheight {
+    @include fullHeight(90vh);
+}
+// .container {
+// 	@include container;
+// }
+
+h1,h2,h3,h4,h5 {
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+p,ul,ol,dl,blockquote,.blockquote {
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+li, dt {
+    margin-left: 1em;
+    box-sizing: border-box;
+}
+body {
+    main, #main {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: $spacerVertical 0;
+        width: $gridWidth;
+        @media (orientation: portrait) {
+            width: 100%;
+            padding: 0 $spacerHorizontalPhone;
+            overflow-x: hidden;
+        }
+    }
+}
+
+
+
+
+
+
+// ======================================================================
+// CORE STYLES
+
+:root {
+    --black80:     #{$black80};
+    --black:        #{$gray-050};
+    --gray-dark:    #{$gray-200};
+    --gray-mid:     #{$gray-500};
+    --gray-light:   #{$gray-800};
+    --white:        #{$white};
+    --white80:     #{$white80};
+    --brandColor: #{$brandColor};
+    --brandComplement: #{$brandComplement};
+    --brandAccent: #{$brandAccent};
+    --brandSecondary: #{$brandSecondary};
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+    --black80:      #{$white80};
+    --black:        #{$white};
+    --gray-dark:    #{$gray-800};
+    --gray-mid:     #{$gray-500};
+    --gray-light:   #{$gray-200};
+    --white:        #{$gray-050};
+    --white80:      #{$black80};
+    };
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background: $bodyBackground;
+    color: $textColor;
+}
+h1,h2,h3,h4,h5 {
+    color: $displayTextColor;
+}
+a {
+    color: $linkColor;
+    &:hover {
+        color: $linkColorHover;
+    }
+}
+::selection {
+    background: $selectionColor;
+}
+
+
+
+
+
+
+
+
+
+// ======================================================================
+// ATOMIC STYLES
+
+.center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 0;
+}
+
+@mixin hide {
+    display: none !important;
+}
+
+img,video {
+    width: 100%;
+    // max-width: 100%;
+    max-height: 120vh;
+}
+video {
+    cursor: pointer;
+    &:after {
+        content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMTEuNjkgMzExLjY5Ij48cGF0aCBkPSJNMTU1Ljg0LDBBMTU1Ljg1LDE1NS44NSwwLDEsMCwzMTEuNjksMTU1Ljg0LDE1NS44NCwxNTUuODQsMCwwLDAsMTU1Ljg0LDBabTAsMjk2LjQyQTE0MC41OCwxNDAuNTgsMCwxLDEsMjk2LjQyLDE1NS44NCwxNDAuNTgsMTQwLjU4LDAsMCwxLDE1NS44NCwyOTYuNDJaIiBmaWxsPSIjZmZmZmZmIj48L3BhdGg+PHBvbHlnb24gcG9pbnRzPSIyMTguNzkgMTU1Ljg0IDExOS4yMiA5NC4zNCAxMTkuMjIgMjE3LjM0IDIxOC43OSAxNTUuODQiIGZpbGw9IiNmZmZmZmYiPjwvcG9seWdvbj48L3N2Zz4=");
+        display: block;
+    }
+}
+.video-wrapper {
+    position: relative;
+    svg.play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 20vw;
+        height: 20vw;
+        margin: -10vw 0 0 -10vw;
+    }
+}
+ul.inline,ol.inline {
+    &>li {
+        display: block;
+        float: left;
+    }
+}
+ul.soc {
+    list-style:none;
+    display: flex;
+    margin: 0;
+    font-size: 1.25rem;
+    li {
+        margin: 0;
+        a {
+            margin-right: 2em;
+        }
+        &:last-of-type {
+            a {
+                margin-right: 0;
+            }
+        }
+        .soc-medium,
+        .soc-github {
+            display: none;
+        }
+    }
+}
+hr {
+    background: none;
+    margin: ($spacerVertical * 1) auto;
+    height: 0px;
+    width: 38w;
+    max-width: 80%;
+    border: none;
+    border-top: 1px solid $borderColor;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0em;
+    margin-bottom: ($baseLineHeight * 1em);
+    background: $bodyBackground;
+    @include border-radius(.125em);
+    th,td {
+        padding: .5em 1em;
+    }
+    th {
+        border: 0 solid $borderColor;
+        border-width: 0 0 1px 0;
+    }
+    &.rotate {
+        @include transpose_table;
+    }
+    @media (orientation: portrait) {
+        width: calc(100vw - $spacerHorizontalPhone);
+        display: block;
+        // overflow: hidden;
+        overflow-x: scroll;
+    }
+}
+.positive {
+    color: $_teal;
+}
+.negative {
+    color: $_orange;
+}
+
+figure {
+    img,video {
+        width: 100%;
+    }
+}
+#noiseImage {
+    display: none;
+}
+
+
+
+
+// ======================================================================
+// MOLECULE STYLES
+
+@mixin card {
+    margin: $spacerVertical auto;
+    padding: $spacerHorizontal;
+    background: $bodyBackground;
+    border: 1px solid $borderColor;
+    border-radius: math.div($spacerHorizontal, 2);
+    box-shadow: inset 1px 1px 0px rgba(255,255,255,.08),inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadowOffset $shadowDepth $shadowColor;
+}
+@mixin well {
+    margin: $spacerVertical auto;
+    padding: $spacerHorizontal;
+    background: $wellBackground;
+    border-radius: math.div($spacerHorizontal, 2);
+    // box-shadow: inset 0 $shadowOffset $shadowDepth $shadowColor;
+}
+.well {
+	@include well;
+}
+.card {
+	@include card;
+}
+
+blockquote,.blockquote {
+    padding: 0 0 0 $spacerHorizontal;
+    margin: $spacerVertical 0 $spacerVertical ($spacerHorizontal * -1);
+    border-left: solid 4px $textOffColor;
+    color: $textOffColor;
+
+    @media (orientation: portrait) {
+        padding: 0 0 0 $spacerHorizontalPhone;
+        margin: $spacerVerticalPhone 0;
+    }
+}
+
+.button, button {
+    background: $brandColor;
+    color: $heroUnitLeadColor;
+    // border: 1px solid $brandColor;
+
+    padding: .5em 1em;
+    border-radius: .375em;
+    text-decoration: none;
+    // box-shadow: 0 8px 24px hsla(hue($brandColor), 50%, 10%, 20%);;
+    box-shadow: inset 0px 1px 1px 0px $white, 0 math.div($shadowOffset, 2) math.div($shadowDepth,2) $shadowColor, 0 $shadowOffset $shadowDepth $shadowColor;
+
+    @media (prefers-color-scheme: dark) {
+        // color: $heroUnitBackground;
+        // background: $heroUnitLeadColor;
+    }
+}
+
+@mixin inverse {
+    position: relative;
+    overflow: hidden;
+
+    >h1,>h2,>h3,>p,>span {
+        color: $white;
+    }
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -2;
+        background: $brandColor;
+
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background: 
+                radial-gradient(38% 81% at 100% 81%,   $brandAccent20 25%,  $brandColor00 100%)
+                ,radial-gradient(38% 130% at 62% 0%,    $brandComplement20 0%,   $brandColor00 100%)
+                ,radial-gradient(38% 100% at 20% 100%,  $brandSecondary20 0%,      $brandColor00 100%)
+                ,radial-gradient(100% 100% at 0% 0%,  $brandColor80 0%,    $brandColor00 100%)
+                ,$heroUnitBackground;
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: url(#noiseFilter) opacity(30%);
+    }
+}
+.inverse {
+    @include inverse();
+}
+
+
+
+
+// ======================================================================
+// ORGANISM STYLES
+
+@import "_masthead.scss";
+
+@import "_header.scss";
+
+@import "_footer.scss";
+
+@import "_publishing.scss";
+
+ol.sidenav {
+    position: sticky;
+    top: 0;//calc(100vh + 3em);
+
+    position: fixed;
+    left: 0;
+    top: calc(50% - ($baseLineHeight * 2.5em));
+
+    list-style-type: none;
+    background: $bodyBackground;
+    padding: .5em 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: $shadowOffset 0 $shadowDepth $shadowColor;
+
+    flex-direction: column;
+
+    &>li {
+        position: relative;
+        display: block;
+        padding: 0.25em 0.5em;
+        margin: 0;
+        &:hover {
+            ol {
+                display: block;
+            }
+        }
+    }
+
+    &.stuck {
+        margin-left: (0 - $gridMargin);
+    }
+    ol {
+        display: none;
+        position: absolute;
+        background: $bodyBackground;
+        top: -0.5em;
+        left: 100%;
+        border-radius: .25em;
+        box-shadow: 0 $shadowOffset $shadowDepth $shadowColor;
+
+        li {
+            list-style: none;
+            white-space: nowrap;
+            padding: 0.25em 0.5em;
+            margin: 0;
+        }
+    }
+}
+
+@mixin kpi {
+    @include well();
+    display: inline-block;
+    margin: $spacerVertical auto;
+    box-shadow:  0 math.div($shadowOffset, 2) math.div($shadowDepth,2) $shadowColor, 0 $shadowOffset ($shadowDepth * 2) $shadowColor;
+
+    em,i,b,strong,code,s,dt,dd {
+        display: block;
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+        width: 100%;
+    }
+    s {
+        text-decoration: none;
+    }
+    em,i,dd+dt {
+        font-style: normal;
+        color: $textOffColor;
+        @include smallType();
+    }
+    b,strong,dd {
+        font-size: 3.4em;
+        font-weight: $baseFontWeight;
+        color: $textBoldColor;
+    }
+}
+.kpi {
+    @include kpi;
+}
+
+
+
+
+
+
+
+// ======================================================================
+// SUB-PAGES
+
+@import "_home.scss";
+
+@import "_about.scss";
+
+@import "_portfolio.scss";
+
+@import "_blog.scss";
+
+@import "_resume.scss";
+
+@import "_photos.scss";
+
+@import "_colophon.scss";

@@ -1,0 +1,130 @@
+@use 'sass:math';
+
+// COLOR
+// -------------------------
+$_indigo:               #1e22a9;//hsl(238,70%,39%);
+$_rose:                 hsl(340,70%,70%);//
+$_pink:                 #ff6699;//hsl(340, 100%,70%);//
+$_sunshine:             #e6de00;//hsl(58, 100%, 45%);//
+// $_cyan:              hsl(180,100%,50%);
+$_teal:                 #00b1cc;//hsl(188,100%,40%);//
+$_orange:               #FF4F00;//international orange
+
+$brandColor:            $_indigo;
+$brandColor00:          #{$brandColor + "00"};
+$brandColor20:          #{$brandColor + "33"};
+$brandColor60:          #{$brandColor + "9E"};
+$brandColor80:          #{$brandColor + CC};
+$brandAccent:           $_pink;
+$brandAccent20:         #{$brandAccent + "4D"};
+$brandAccent80:         #{$brandAccent + "CC"};
+$brandComplement:       $_sunshine;
+$brandComplement20:     #{$brandComplement + "4D"};
+$brandComplement80:     #{$brandComplement + "CC"};
+$brandSecondary:        $_teal;
+$brandSecondary20:      #{$brandSecondary + "4D"};
+$brandSecondary80:      #{$brandSecondary + "BB"};
+
+$white80:               hslToHex(hue($brandColor),00%,100%)+AA;
+$white:                 hslToHex(hue($brandColor),00%,100%);
+$gray-950:              hslToHex(hue($brandColor),02%,96%);
+$gray-900:              hslToHex(hue($brandColor),05%,91%);
+$gray-800:              hslToHex(hue($brandColor),08%,82%);
+$gray-700:              hslToHex(hue($brandColor),10%,71%);
+$gray-600:              hslToHex(hue($brandColor),13%,62%);
+$gray-500:              hslToHex(hue($brandColor),13%,50%);
+$gray-400:              hslToHex(hue($brandColor),17%,42%);
+$gray-300:              hslToHex(hue($brandColor),21%,31%);
+$gray-200:              hslToHex(hue($brandColor),28%,20%);
+$gray-100:              hslToHex(hue($brandColor),34%,12%);
+$gray-050:              hslToHex(hue($brandColor),55%,04%);
+$black:                 hslToHex(hue($brandColor),00%,00%);
+$black80:               hslToHex(hue($brandColor),55%,04%)+CC;
+
+// SEMANTIC MAPPING
+$gray-light:$gray-700;
+$gray-mid:	$gray-500;
+$gray-dark: $gray-200;
+
+
+// TYPE
+// -------------------------
+$textColor:             var(--gray-dark);
+$textBoldColor:         var(--black);
+$textOffColor:          var(--gray-mid);
+$linkColor:             var(--black);
+$displayTextColor:      var(--black);
+$linkColorHover:        $linkColor;
+$selectionColor:        $brandAccent;
+
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        var(--white);
+$wellBackground:        var(--gray-light);
+$borderColor: 			var(--gray-light);
+$heroUnitBackground:    $black;
+$heroUnitHeadingColor:  $white;
+$heroUnitLeadColor:     $white;
+
+// Navbar
+// -------------------------
+$navbarBackground:                var(--white80);
+$navbarBackgroundHighlight:       transparent;
+$navbarBorder:                    none;//.0125rem solid var(--gray-light);
+$navbarText:                      $textColor;
+$navbarLinkColor:                 $textBoldColor;
+$navbarLinkColorHover:            $textBoldColor;
+$navbarLinkBackgroundHover:       $wellBackground;
+$navbarLinkColorActive:           var(--gray-light);
+$navbarLinkBackgroundActive:      var(--gray-dark);
+$navbarBrandColor:                $navbarLinkColor;
+
+
+// GRID
+// --------------------------------------------------
+$gridColumns:             12;
+$gridWidth:               62vw;
+$gridGutterWidth:         4vw;
+$gridColumnWidth:         math.div(($gridWidth - (($gridColumns - 1) * $gridGutterWidth)), $gridColumns);
+$gridMargin: 			  math.div((100vw - $gridWidth),2);
+
+$spacerHorizontal:          1rem;
+$spacerVertical:            2rem;
+$spacerHorizontalPhone:     1rem;
+$spacerVerticalPhone:       1rem;
+
+$breakpointWidescreen:      1201px;
+$breakpointWidescreen-1:    ($breakpointWidescreen - 1px);
+$breakpointDesktop:         961px;
+$breakpointDesktop-1:       $breakpointDesktop - 1;
+$breakpointPortrait:        769px;
+$breakpointPortrait-1:      $breakpointPortrait - 1;
+$breakpointPhone:           480px;
+
+
+
+$inputHeight:               1.25rem;
+$navbarHeight:              2rem;
+
+
+$shadowColor: 		hsla(hue($brandColor), 100%, 12%, 0.08);
+$shadowDepth: 		1rem;
+$shadowOffset: 		math.div($shadowDepth, 4);
+
+
+// ANIMATION
+// --------------------------------------------------
+$animateSpeed:      400ms;
+$easeBounce:      cubic-bezier(0.175, 0.885, 0.320, 1.275);
+$easeGetSet:      cubic-bezier(0.955, -1.00, 0.850, 0.490);
+$easeInQuart:     cubic-bezier(0.500, 0.000, 0.750, 0.000);
+$easeOutQuart:    cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$easeInOutQuart:  cubic-bezier(0.770, 0.000, 0.175, 1.000);
+$easeInOutQuad:	cubic-bezier(0.45, 0, 0.55, 1);
+$easeInOutCubic:	cubic-bezier(0.65, 0, 0.35, 1);
+$easeInOutBack: 	cubic-bezier(0.68, -0.6, 0.32, 1.6);
+$animateEasing:     $easeInOutCubic;
+$animateEquation:   $animateEasing;
+
+

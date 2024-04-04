@@ -1,0 +1,116 @@
+[
+{
+	"title":"Disney Streaming",
+	"slug":"dss",
+	"visible":false,
+	"masthead":{
+		"image":"/images/portfolio/disney-tiles-16x9.jpg",
+		"video":"/images/portfolio/DSS_screen_white_05_4.mp4",
+		"caption":"All the stories."
+	},
+	"description":"My mission as a design leader at Disney was to build teams, establish centers of excellence and support design operations in hiring and career development.",
+	"story": [
+		{
+			"title":"Hiring",
+			"description":"Candidate needs, diverse pipeline, interview kit."
+		},
+		{
+			"title":"Career Development",
+			"description":"Dual paths for makers and managers. Defining criteria for leveling up. Coaching managers on mentorship and developing their teams."
+		},
+		{
+			"title":"Resource Management",
+			"description":"Staffing needs, contractor onboarding, planning."
+		}
+	]
+},
+{
+	"BlogTalkRadio":[
+		{
+			"title":"Episode Page",
+			"image":"/images/portfolio/btr-episode-wireframe.jpg",
+			"description":"The most important page of the site, visited by 2M people a day.\nThe unique challenge of this page was integrating video ads into an audio product. I believe we were able to achieve a satisfying user experience while still captializing on much higher video CPMs."
+		},
+		{
+			"title":"Directory pages",
+			"image":"/images/portfolio/btr-category.jpg",
+			"description":"Pages for top level categories were developed with techniques found on topic specific content verticals. A heavy focus on SEO and a design catering to landing visitors boosted listening engagement here."
+		}
+	],
+	"bak": [
+		{
+			"title":"Dashboard Newsfeed",
+			"image":"/images/portfolio/btr-dashboard-newsfeed.jpg",
+			"description":"Another pain point we observed hosts experience was pogo-sticking between episode pages and their profile. In interviews we learned they did this to interact with their audience where they were. We used a news feed pattern to consolidate all their audience interactions in one place. This central control facilitated more comments, follows, and sharing."
+		},
+		{
+			"title":"The process",
+			"image":"/images/portfolio/btr-mybtr-process.jpg",
+			"description":"The host dashboard went through a full formal design process from sketches, to grid system, wireframes, prototypes and pixel perfect composites. Each step allowed us to further refine the goals of the application resulting in a much more streamlined experience."
+		},
+		{
+			"title":"Prototypes",
+			"image":"/images/portfolio/btr-mybtr-prototype.jpg",
+			"description":"Wireframes were developed as HTML prototypes. The benefits to this approach were rapid iterations, lifelike tools for <strong>usability testing</strong>, clear communication with executives and engineers, and richer interaction design.\n\n<a href='http://mybtr.mrbmc.com/?profile=novice'>See wireframes for novice users</a>\n<a href='http://mybtr.mrbmc.com/?profile=expert'>See wireframes for expert Users</a>"
+		},
+		{
+			"title":"Creating an Episode",
+			"image":"/images/portfolio/btr-hosttools-schedule.jpg",
+			"description":"The overhaul to the content creation tools focused on 3 changes: guidance on the quality of the content itself, active feedback on errors, and cleaner aesthetics. I'm proud of the balance we struck between novice, intermediate and advanced users by following the Pareto principle: 80% of users only touch 20% of the features. All features are exposed but collapsed, instructions are context sensitive."
+		},
+
+		{
+			"title":"The Results",
+			"description":"<big>41.3%</big> increase in monthly subscription revenue\n<big>25%</big> decrease in subscriber churn\n<big>10%</big> increase in subscriber activation"
+		},
+		{
+			"title":"User-Centered Design",
+			"image":"#",
+			"description":"We ran a full suite of user research including quantitative analysis of user behavior, multi-variate testing of designs, qualitative user research, and in-person usability testing.\n This work produced countless insights into customer pain points around evaluating the success of their shows, connecting with to their audience, and managing their assets. Solving these pain points had a direct correlation with subscription revenue."
+		},
+		{
+			"title":"Prototypes",
+			"image":"/images/portfolio/btr-mybtr-prototype.jpg",
+			"description":"Clickable html prototypes allowed usability tests with real customers. The prototypes enabled us to drill down into real use cases and uncover pain points we didn't know existed."
+		}
+	]
+},
+{
+	"title": "Steel Gills",
+	"slug":"steelgills",
+	"visible": false,
+	"role": "UX Design, UI Design, Brand Design, Development",
+	"skills":["ux","ui","gd","dev","pm"],
+	"url": "http://steelgills.com",
+	"masthead": "/images/portfolio/steelgills_teaser.jpg",
+	"description": "I wasn't satisfied with the existing tools for logging dives and divesites. I set out to design a better one.\n The market for digital dive logs exposed countless pain points: lack of web access, overly technical aimed at professional divers. no social connections and a total lack of usability best practices.",
+	"story": [
+		{
+			"title":"User Centered Design",
+			"image": ["/images/portfolio/steelgills-divelog.jpg","/images/portfolio/steelgills-map.jpg","/images/portfolio/steelgills-personas.jpg"],
+			"description": "We interviewed fellow divers on dive expeditions. From these interviews we could construct personas that illustrate the goals and obstacles each faced. We confirmed our thesis and found serious pain points in the logging process that other apps do not address and opportunities for social interaction."
+		},
+		{
+			"title":"Simple Sign-up",
+			"image": ["/images/portfolio/steelgills-thumb.jpg","/images/portfolio/steelgills-captcha.jpg"],
+			"description": "Signup is a barrier for many people. To overcome that we've offered one-click signup with Twitter &amp; Facebook. We've also streamlined our traditional registration by reducing the number of fields and using a more intuitive CAPTCHA system.<br /><br />We also used the signup process as an opportunity improve CAPTCHA. Everyone struggles with squiggly lines, inscrutable characters, and case errors. I used a semantic matching scheme with pictures instead."
+		}
+	],
+	"bak": [
+		{
+			"title":"User Centered Design",
+			"image": "/images/portfolio/steelgills-personas.jpg",
+			"description": "This form for logging dives uses more visual cues than other online tools. I also incorporated references familiar to users of paper logbooks."
+		},
+		{
+			"title":"Dive-Site Map",
+			"image": "/images/portfolio/steelgills-map.jpg",
+			"description": "We provide an interactive map for finding dive sites and graphs that visualize your dive history."
+		},
+		{
+			"title":"CAPTCHA that doesn't suck",
+			"description": "We also used the signup process as an opportunity improve CAPTCHA. Everyone struggles with squiggly lines, inscrutable characters, and case errors. I used a semantic matching scheme with pictures instead."
+		}
+	]
+}
+]

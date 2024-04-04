@@ -1,0 +1,60 @@
+.blog {
+	@include item-list();
+
+	@media (max-width: $breakpointPhone) {
+	    margin-top: 0;
+	}
+
+	div.post {
+		h3 {
+			margin-bottom: 0;
+			a {
+				text-decoration: none;
+			}
+		}
+		p.date {
+			margin-bottom: 0;
+			@include smallType();
+			color: $textOffColor;
+		}
+		p.summary {
+
+		}
+
+	}	
+
+	p.post {
+		display: flex;
+		margin-bottom: 1em;
+		line-height: 1.2;
+		.date {
+			flex-basis: 8em;
+			color: $textOffColor;
+			font-family: $monoFontFamily;
+		}
+		@media (max-width: $breakpointPortrait-1) {
+			flex-direction: column-reverse;
+			.date {
+				flex-basis: inherit;
+			}
+		}
+	}
+}
+
+
+body.post {
+
+	@include item-detail();
+
+	main, #main {
+		h1 {
+			margin-bottom: .25em;
+		}
+	}
+
+	.related-posts {
+		margin-top: $spacerVertical;
+		padding-top: $spacerVertical;
+	}
+}
+

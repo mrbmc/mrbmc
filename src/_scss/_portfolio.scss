@@ -1,0 +1,173 @@
+body.portfolio.list {
+    #main {
+        // width: calc(100vw - ($spacerHorizontal * 2));
+        width: 100vw;
+        padding: $spacerVertical $spacerHorizontal;
+    }
+}
+
+
+.project-list {
+    // @include item-list();
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: $spacerVertical;
+    @media (orientation: landscape) {
+    }
+
+    &>h2 {
+        flex: 1 0 100%;
+    }
+
+    &>p {
+        flex: 1 0 100%;
+    }
+
+    column-gap: $spacerHorizontal;
+    // row-gap: $spacerHorizontal;
+    .project {
+        display: flex;
+        flex-direction: column;
+        // margin-bottom: $spacerVertical;
+        flex: 1 0 100%;
+        // flex: 1 0 calc(33.3% - $spacerHorizontal);
+
+        justify-content: center;
+        min-height: 100vh;
+
+        @media (orientation: portrait) {
+            min-height: auto;
+            flex: 1 0 calc(50% - $spacerHorizontal);
+            margin-bottom: ($spacerVerticalPhone * 4);
+        }
+        @media (max-width: $breakpointPhone) {
+            flex: 1 0 100%;
+        }
+        header {
+            // display: none;
+            h3 {
+                // margin: 0;
+                text-align: center;
+            }
+            p {
+                @include smallType;
+                margin-bottom: 0;
+                display: none;
+            }
+            p.timeline {
+                color: $textOffColor;                
+            }
+        }
+        figure {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border-radius: .125rem;
+            // box-shadow: 0 2px 8px $shadowColor, 0 8px 24px $shadowColor;
+            transform: scale(1);
+            background: transparent;
+            a {
+                display: block;
+            }
+            img {
+                display: block;
+                width: 100%;
+                // height: 80vh;
+                object-fit: contain;
+                box-sizing: border-box;
+                filter: saturate(50%);
+                transition: all $animateSpeed $animateEasing;
+                @media (orientation: portrait) {
+                    height: auto;
+                }
+            }
+        }
+
+        &:hover {
+            z-index: 3;
+            // transform: scale(1.05);
+            figure {
+                // box-shadow: 0 2px 8px $shadowColor, 0 2px 8px $shadowColor, 0 8px 24px $shadowColor, 0 8px 24px $shadowColor;
+            }
+            img {
+                filter: saturate(100%);
+            }           
+        }
+
+        &.full {
+            flex-direction: row-reverse;
+            gap: $spacerHorizontal * 2;
+            min-height: 13.25vw;
+            margin-bottom: $spacerVertical * 2;
+            align-items: center;
+            overflow: visible;
+            flex: 1 0 100%;
+            height: auto;
+
+            @media (orientation: portrait) {
+                flex-direction: column-reverse;
+                gap: $spacerVerticalPhone;
+            }
+
+
+            &>header {
+                display: block;
+                h2,h3 {
+                    text-align: left;
+                    margin-bottom: 0;
+                }
+                p {
+                    display: block;
+                }
+                flex-basis: 38%;
+            }
+            &>figure {
+                flex-basis: 62%;
+                // img {
+                //     object-fit: cover;
+                // }
+            }
+        }
+
+    }
+}
+
+body.project {
+    @include item-detail();
+
+    h1,h2,h3,h4 {
+        padding: 1.5rem 0 0 0;
+    }
+
+    #masthead {
+        // figure {
+        //     position: static;
+        //     width: 100vw;
+        //     margin-left: $spacerHorizontalPhone * -1;            
+        // }
+        // @media (orientation: portrait) {
+        //     // height: 50vh;
+        // }
+    }
+    @media (orientation: portrait) {
+        #scrollhint {
+            display: none;
+        }
+    }
+}
+
+ul.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1em,2fr));
+    grid-gap: 1em;
+    li {
+        @include card();
+        list-style: none;
+        margin: 0;
+    }
+
+}

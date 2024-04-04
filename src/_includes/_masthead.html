@@ -1,0 +1,20 @@
+<section id="masthead">
+    <h1 {% if parallaxHeading %}data-parallax="50" data-fade="0"{% endif %}>{{ title }}</h1>
+    {% if mastheadSummary %}<p class="summary large">{{ mastheadSummary }}</p>{% endif %}
+    {% if bodyclass == "blog post" %}
+    <p {% if parallaxHeading %}data-parallax="50" data-fade="0"{% endif %}>
+        <span class="date">{{date | date: "%B %d, %Y" }}</span>
+        &bull;
+        <span class="readingtime">{{ content | timeToRead }} to read</span>
+    </p>
+    {% endif %}
+    {% if masthead-image or masthead-video %}
+    <figure data-fade="100" data-parallax="81">
+        {% if masthead-video %}
+        <video src="{{masthead-video}}" autoplay loop muted preload="auto" playsinline type="video/mp4"></video>{% else 
+        %}<img src="{{ masthead-image }}" alt="{{ masthead-title }}">
+        {% endif %}
+    </figure>
+    {% endif %}
+    <a class="scrollhint" href="#content">Scroll</a>
+</section>
