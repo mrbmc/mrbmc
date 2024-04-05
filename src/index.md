@@ -28,4 +28,4 @@ html {
 }
 </style>
 
-<script type="text/javascript" language="javascript" src="/js/home.min.js"></script>
+<!-- <script type="text/javascript" language="javascript" src="/js/home.min.js"></script> -->

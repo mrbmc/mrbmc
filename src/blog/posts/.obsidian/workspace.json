@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3208adf153159279",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Book Review - Worn.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "intentional-consumption.md",
+                "file": "Book Review - Worn.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "intentional-consumption.md",
+                "file": "Book Review - Worn.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "intentional-consumption.md"
+                "file": "Book Review - Worn.md"
               }
             }
           }
@@ -147,16 +160,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "39e1a20598308b49",
+  "active": "3208adf153159279",
   "lastOpenFiles": [
+    "bike-tour-2023.md",
+    "Book Review - Worn.md",
+    "intentional-consumption.md",
     "design-for-durability.md",
     "design-is-never-done.md",
     "designers-hierarchy-of-needs.md",
     "good-people-management-is-invisible.md",
     "leadership-in-nature.md",
     "newtons-laws-of-design.md",
-    "bike-tour-2023.md",
-    "intentional-consumption.md",
     "londoner-guide-to-NYC-cycling.md",
     "a-little-feedback-often.md",
     "travel-made-me-a-better-designer.md",
@@ -177,7 +191,6 @@
     "2023-10-02.md",
     "blog/travel-made-me-a-better-designer.md",
     "blog",
-    "about.md",
     "Untitled.canvas"
   ]
 }
