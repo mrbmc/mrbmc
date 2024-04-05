@@ -1,0 +1,155 @@
+<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="Imagetoolbar" content=""><meta name="format-detection" content="telephone=no"><meta name="google-site-verification" content="DQmdjO07WcpJ5bOxDYLGSBnPpovsUnGuSqIFdQaRjHA"><title>Brian McConnell | Team Culture Workshop</title><meta name="description" content="Brian McConnell is a design executive with a unique background in design, product, engineering and entrepreneurship. His mission as a leader is to create a competitive advantage through design."><link rel="icon" type="image/png" href="/images/favicon/favicon.png"><link rel="preload" as="style" href="/2023/css/screen.min.css"><link rel="preload" as="style" href="./js/mrbmc.min.js"><link rel="stylesheet" type="text/css" media="screen" href="/2023/css/screen.min.css"></head><body class="portfolio project"><a name="top"></a><header id="header"><a class="nav-home brand" href="/">BMC</a><nav id="menu"><a href="javascript:history.back();" id="close-menu">Close</a> <a class="nav-about" href="/about/" title="About">Design</a> <a class="nav-portfolio" href="/portfolio/" title="Portfolio">Portfolio</a> <a class="nav-resume" href="/resume/" title="Resumé">Resumé</a> <a class="nav-photos" href="/photos/" title="Gallery">Photos</a> <a class="nav-blog" href="/blog/" title="Blog">Blog</a></nav><a href="#menu" id="open-menu">Menu</a></header><section id="masthead"><h1 data-parallax="300" data-fade="75">Team Culture Workshop</h1><figure data-fade="75"><video src="/images/portfolio/culture-workshop/EXD-workshop-timelapse.MP4" autoplay loop muted preload="auto" playsinline data-parallax="100" type="video/mp4" id="masthead-video"></video></figure><a class="scrollhint" href="#main">Scroll</a></section><main id="main"><blockquote><p>Culture eats strategy for breakfast.</p></blockquote><p>Culture is the behavior of a group of people. It has the power to influence the work of a team to a greater degree than company values or processes.</p><p>Be that as it may, you can't prescribe culture through a set of values, or doctrine. But you can be intentional about stating the behavior you want, and gradually redirecting culture over time.</p><p><img src="/images/portfolio/culture-workshop/EXD-workshop-voting.jpg" alt="Dot Voting" class="canzoom"></p><p>In May 2022 I led a culture foundation workshop for a team I was managing at Disney. This team had suffered from attrition and low morale due to the infamously bad merger between Disney+ and Hulu teams. I was determined to right the course for the team with a healthy foundation.</p><p><img src="/images/portfolio/culture-workshop/EXD-workshop-trading-cards.jpg" alt="Dot Voting" class="canzoom"></p><h2>Pre-Workshop Planning</h2><p>Like every design project, we began with problem framing, stayed in low fidelity to test ideas, and then added fidelity as more decisions were made. Much of that low fidelity work happened in google documents.</p><p>My direct team and I spent 5-6 hours in pre-planning. I prepared a stump schedule, and draft goals, that the working group could react to.</p><p><strong>A redacted planning document for you to copy:</strong><br><a href="https://docs.google.com/document/d/1h7DjrrkWT_2N62TvJ-E1isimgb6i9XZT/edit">https://docs.google.com/document/d/1h7DjrrkWT_2N62TvJ-E1isimgb6i9XZT/edit</a></p><h3>Workshop Outline</h3><ul><li>Overview<ul><li>Mission</li><li>Desired Outcomes</li><li>Attendees</li><li>Facilitators</li><li>Ground rules</li><li>Preparing for a Great Readout</li></ul></li><li>Schedule<ul><li>Pre-workshop</li><li>Workshop<ul><li>Opening Ceremony</li><li>session 1</li><li>Break</li><li>Session 2</li><li>Lunch</li><li>Session 3</li><li>Coffee Break</li><li>Session 4</li><li>Happy hour</li></ul></li><li>After Workshop<ul><li>Recap worksession</li><li>Shareout</li></ul></li></ul></li><li>Team Charter Contents</li><li>Workbench / Unused Ideas</li></ul><p>#ymmv This workshop was highly tailored to our culture and POV but you're welcome to build off of this. At the very least this can help frame out logistical requirements for a great workshop in addition to content requirements.</p><h2>Facilitation Deck</h2><p>We distilled the planning doc into a deck for facilitating the day, and recording what decisions we could. Most of the work happened on the walls around us.</p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTUULlCpzpGsa393lodyHRubkYELCTWQywS_UN1vB67E9JVFJlRF_Q_WjZ59oNAXhVaYNy1vOvSDoEU/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:100%;height:62vh;"></iframe><h2>Results</h2><p>This workshop became the model for design teams at Disney Streaming to follow. I whitelabled the plan and consulted with three other teams who used this format to draft their own team charter.</p><p>This workshop also contributed to stopping attrition: In 2021 we lost 65% of this team. In 2022 we <em>grew</em> 400%.</p><p>Weekly team pulse checks literally turned frowns upside down as we saw more: 😏 and less 😫</p><nav class="pagination"><a href="/portfolio/design-prototyping-201/">← Previous Project: Rapid Prototyping 101</a> <a href="/portfolio/flint-and-silicon/">Next Project: Flint & Silicon →</a></nav><script type="text/javascript" language="javascript">function galleryLoad (e) {
+    if(DEBUG) console.log('galleryLoad',arguments);
+    var galleries = document.getElementsByClassName('gallery'),
+        src = "#";
+    Object.entries(galleries).forEach(([key, gallery]) => {
+        // console.log(`${key}: ${gallery}`)
+ 
+        // add anchors to images
+        var images = gallery.getElementsByTagName('img');
+        Object.entries(images).forEach(([key, img]) => {
+            var a = document.createElement('a');
+                a.setAttribute('href',"#" + img.getAttribute('src'));
+            wrapElement(img,a);
+
+            var caption = document.createElement('p');
+                caption.setAttribute('class','caption');
+                caption.textContent = img.getAttribute('alt');
+            a.parentNode.insertBefore(caption,a.nextSibling);
+        });
+
+        // create wrapper container
+        var wrapper = document.createElement('div');
+            wrapper.setAttribute('class','gallery-wrap');
+        wrapElement(gallery, wrapper);
+
+        // create the detail image
+        src = gallery.getElementsByTagName('img')[0].getAttribute('src');
+        var newImg = document.createElement('img');
+            newImg.src = src;
+            newImg.setAttribute('class','image-detail');
+        wrapper.prepend(newImg);
+    });
+
+    var details = document.getElementsByClassName('image-detail');
+    Object.entries(details).forEach(([key, detail]) => {
+        detail.addEventListener('click', function (e) {
+            console.log('click',this.getAttribute('src'));
+            window.open(this.getAttribute('src'),"detail");
+        })
+
+    });
+
+    updateDetailImage();
+
+};
+
+function updateDetailImage () {
+
+    var hash = window.location.hash;
+    if(hash.match(/gif|png|jpg|jpeg|webp|mp4/g)==null) {
+        e.preventDefault();
+        return false;
+    }
+
+    var clickTarget = document.querySelectorAll("[href='" + hash + "']")[0],
+        gallery = clickTarget.closest(".gallery-wrap"),
+        src = hash.substr(1);
+
+    gallery.getElementsByClassName('image-detail')[0].src = src;
+    return true;
+}
+
+function galleryPopstate (e) {
+    if(DEBUG) console.log("Gallery.onPopState",e);
+
+    return updateDetailImage();
+};
+
+
+function prevImage(e) {
+    if(DEBUG) console.log('prevImage',e);
+    var hash = window.location.hash,
+        currentImage = document.querySelectorAll("[href='" + hash + "']")[0],
+        prevImage = currentImage.closest("li").previousElementSibling;
+
+    if(prevImage != null) {
+        var src = prevImage.querySelectorAll('a')[0].getAttribute('href');
+        history.pushState({},"",src);
+        galleryPopstate(e);
+    }
+    console.log('currentImage',currentImage);
+    console.log('prevImage',prevImage);
+}
+
+function nextImage(e) {
+    if(DEBUG) console.log('nextImage',e);
+    var slug = window.location.hash.substr(1),
+        currentImage = document.querySelectorAll("[href='#" + slug + "']")[0],
+        nextImage = currentImage.closest("li").nextElementSibling;
+
+    if(nextImage != null) {
+        var src = nextImage.querySelectorAll('a')[0].getAttribute('href');
+        history.pushState({},"",src);
+        galleryPopstate(e);
+    }
+}
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+        // up arrow
+    }
+    else if (e.keyCode == '40') {
+        // down arrow
+    }
+    else if (e.keyCode == '37') {
+       // left arrow
+        prevImage(e);
+    }
+    else if (e.keyCode == '39') {
+       // right arrow
+        nextImage(e);
+    }
+
+}
+
+window.addEventListener('keydown', function(e) {
+    console.log('onkeydown',e);
+    checkKey(e);
+});
+window.addEventListener('load', function(e) {
+    galleryLoad(e);
+});
+window.addEventListener('popstate',function(e){
+    galleryPopstate(e);
+});
+
+
+function zoomiesLoad (e) {
+    console.log('zoomiesLoad');
+    var zoomies = document.querySelectorAll('.canzoom');
+    Object.entries(zoomies).forEach(([key, zoomy]) => {
+        console.log(`${key}: ${zoomy}`)
+        zoomy.addEventListener('click', function(e) {
+            console.log('zoomie clicked!',this);
+            toggleClass(this,'zoom');
+        });
+    });
+}
+window.addEventListener('load', function(e) {
+    zoomiesLoad(e);
+});</script></main><footer><div id="contact"><p>Email me at <a href="#" data-part1="b" data-part2="brianmcconnell" data-part3="me" data-part4="Website inquiry" class="link-email">b&#64;brianmcconnell.me</a></p><nav><a href="https://www.linkedin.com/in/mrbmc" class="link-linkedin"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.64334 11.0341H0.310005V3.54076H2.64334V11.0341ZM1.41334 2.60409H1.39667C1.218 2.61742 1.0385 2.59366 0.869449 2.53432C0.700393 2.47498 0.545429 2.38134 0.414282 2.25927C0.283134 2.1372 0.178635 1.98934 0.107344 1.82497C0.036053 1.66059 -0.000491084 1.48326 4.98345e-06 1.30409C4.98345e-06 0.564092 0.563338 0.00409261 1.43 0.00409261C1.60953 -0.0101492 1.79005 0.0128711 1.96025 0.0717087C2.13046 0.130546 2.28666 0.223931 2.41906 0.346001C2.55146 0.468071 2.6572 0.616192 2.72963 0.781066C2.80207 0.94594 2.83965 1.12401 2.84 1.30409C2.84 2.03076 2.29 2.60409 1.41334 2.60409ZM12 11.0341H9.33333V7.15742C9.33333 6.15742 8.92 5.45076 8 5.45076C7.71925 5.45073 7.44565 5.53934 7.2182 5.70393C6.99076 5.86853 6.82107 6.10073 6.73334 6.36742C6.67759 6.56563 6.65839 6.77234 6.67667 6.97742V11.0341H4.07C4.07 11.0341 4.10334 4.16742 4.07 3.54409H6.69667V4.73076C6.85334 4.21742 7.69667 3.48409 9.03 3.48409C10.6967 3.48409 12 4.56076 12 6.88076V11.0341Z" fill="white"></path><title>linkedin.com/in/mrbmc</title></svg> </a><a href="https://mrbmc.medium.com/" class="link-medium"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1043.63 592.71" class="aa bb"><g data-name="Layer 2"><g data-name="Layer 1"><path d="M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 460 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36M911.56 296.36c0 154.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 147.17 124.9 147.17 279M1043.63 296.36c0 138-23.17 249.94-51.76 249.94s-51.75-111.91-51.75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51.76 249.94"></path></g></g><title>https://mrbmc.medium.com/</title></svg> </a><a href="https://www.strava.com/athletes/773650" class="link-strava"><svg height="512px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x33_23-strava"><g><polygon points="226.172,26.001 90.149,288.345 170.29,288.345 226.172,184.036 281.605,288.345     361.116,288.345   " style="fill:#FF5500;"/><polygon points="361.116,288.345 321.675,367.586 281.605,288.345 220.871,288.345 321.675,485.999     421.851,288.345   " style="fill:#FFAF8A;"/></g></g><g id="Layer_1"/><title>strava.com/athletes/mrbmc</title></svg></a></nav></div><div id="colophon"><p class="small">Product & Design leadership – building high performing UX teams where human needs intersect with business impact.</p><p class="small">© 2023 Brian McConnell</p><p class="small"><a href="/colophon">Colophon</a></p></div></footer><script type="text/javascript">//<![CDATA[
+<!--
+var links = document.getElementsByClassName('link-email');
+for (const link of links) {
+  var attrs = link.dataset;
+  link.setAttribute(
+    "href",
+    `mailto:${attrs.part1}@${attrs.part2}.${attrs.part3}?subject=${attrs.part4}`
+  );
+}
+//-->
+//]]></script><script type="text/javascript" language="javascript" src="/js/mrbmc.min.js"></script></body></html>

@@ -1,0 +1,155 @@
+<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="Imagetoolbar" content=""><meta name="format-detection" content="telephone=no"><meta name="google-site-verification" content="DQmdjO07WcpJ5bOxDYLGSBnPpovsUnGuSqIFdQaRjHA"><title>Brian McConnell | Steel Gills</title><meta name="description" content="Brian McConnell is a design executive with a unique background in design, product, engineering and entrepreneurship. His mission as a leader is to create a competitive advantage through design."><link rel="icon" type="image/png" href="/images/favicon/favicon.png"><link rel="preload" as="style" href="/2023/css/screen.min.css"><link rel="preload" as="style" href="./js/mrbmc.min.js"><link rel="stylesheet" type="text/css" media="screen" href="/2023/css/screen.min.css"></head><body class="portfolio project"><a name="top"></a><header id="header"><a class="nav-home brand" href="/">BMC</a><nav id="menu"><a href="javascript:history.back();" id="close-menu">Close</a> <a class="nav-about" href="/about/" title="About">Design</a> <a class="nav-portfolio" href="/portfolio/" title="Portfolio">Portfolio</a> <a class="nav-resume" href="/resume/" title="Resumé">Resumé</a> <a class="nav-photos" href="/photos/" title="Gallery">Photos</a> <a class="nav-blog" href="/blog/" title="Blog">Blog</a></nav><a href="#menu" id="open-menu">Menu</a></header><section id="masthead"><h1 data-parallax="300" data-fade="75">Steel Gills</h1><figure data-fade="75"><img src="/images/portfolio/steelgills/steelgills-teaser.jpg" alt="" data-parallax="60"></figure><a class="scrollhint" href="#main">Scroll</a></section><main id="main"><p>This is a matter of life and death.</p><blockquote><p>Humans have explored 5% of the world's oceans even though they cover 70% of the earth's surface. Life on earth as we know it depends on healthy oceans and yet we know nothing about them.</p></blockquote><p>The warnings from scientists and policymakers about the dangers of pollution, overfishing, and global warming have fallen on deaf ears. Abstract knowledge derived from documentaries doesn't inspire action. The best inspiration for empathy, learning, and conservation is immersion in nature. Seeing a bleached coral reef, a turtle with propeller damage, or litter on the ocean floor brings the reality of our connection to the ocean into sharp focus.</p><p><a href="https://www.steelgills.com">STEEL GILLS</a> is a conservation project aimed at raising awareness for the state of the oceans by encouraging people to spend more time in them. It's an app for scuba divers with a focus on the environmental impact rather than the technical or functional aspect of diving.</p><hr><p>SCUBA Diving is as close as I've ever gotten to exploring another planet, except it has been this one we're on. Seeing the wonders of the seas in person has given me a deeper appreciation for the interconnected web of life that humanity depends on. As a PADI trained divemaster I've witnessed the same looks of pure joy &amp; wonder on the faces of countless divers I've led on trips.</p><p>Unfortunately, SCUBA Diving is still very inaccessible to most people. It's expensive, it's technical, and it's decidedly analog. The spectrum of users ranges from novice &quot;resort&quot; divers to highly trained professionals, with most apps catering toward the latter. Even those apps ostensibly for casual divers make the UX too cumbersome and technical.</p><h2>Member Experience</h2><iframe style="width:100%;height:80vh;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FjzdIWSUN0yUBSKvksmgR3g%2FSteel-Gills%3Fpage-id%3D684%253A4345%26type%3Ddesign%26node-id%3D1078-70652%26viewport%3D322%252C566%252C0.09%26t%3D6Vmgp9kkvGakRCOR-1%26scaling%3Dscale-down%26starting-point-node-id%3D1078%253A70652%26show-proto-sidebar%3D0%26mode%3Ddesign" allowfullscreen></iframe><p> </p><h2>Signup And Onboarding</h2><iframe width="800" height="450" style="width:100%;height:80vh;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FjzdIWSUN0yUBSKvksmgR3g%2FSteel-Gills%3Fpage-id%3D684%253A4345%26type%3Ddesign%26node-id%3D740-16882%26viewport%3D308%252C587%252C0.13%26t%3DQHJrpHE0wrQqP3Bk-1%26scaling%3Dscale-down%26starting-point-node-id%3D740%253A16882%26show-proto-sidebar%3D0%26mode%3Ddesign" allowfullscreen></iframe><nav class="pagination"><a href="/portfolio/pal-9100/">← Previous Project: WHTN: PAL-9100</a></nav><script type="text/javascript" language="javascript">function galleryLoad (e) {
+    if(DEBUG) console.log('galleryLoad',arguments);
+    var galleries = document.getElementsByClassName('gallery'),
+        src = "#";
+    Object.entries(galleries).forEach(([key, gallery]) => {
+        // console.log(`${key}: ${gallery}`)
+ 
+        // add anchors to images
+        var images = gallery.getElementsByTagName('img');
+        Object.entries(images).forEach(([key, img]) => {
+            var a = document.createElement('a');
+                a.setAttribute('href',"#" + img.getAttribute('src'));
+            wrapElement(img,a);
+
+            var caption = document.createElement('p');
+                caption.setAttribute('class','caption');
+                caption.textContent = img.getAttribute('alt');
+            a.parentNode.insertBefore(caption,a.nextSibling);
+        });
+
+        // create wrapper container
+        var wrapper = document.createElement('div');
+            wrapper.setAttribute('class','gallery-wrap');
+        wrapElement(gallery, wrapper);
+
+        // create the detail image
+        src = gallery.getElementsByTagName('img')[0].getAttribute('src');
+        var newImg = document.createElement('img');
+            newImg.src = src;
+            newImg.setAttribute('class','image-detail');
+        wrapper.prepend(newImg);
+    });
+
+    var details = document.getElementsByClassName('image-detail');
+    Object.entries(details).forEach(([key, detail]) => {
+        detail.addEventListener('click', function (e) {
+            console.log('click',this.getAttribute('src'));
+            window.open(this.getAttribute('src'),"detail");
+        })
+
+    });
+
+    updateDetailImage();
+
+};
+
+function updateDetailImage () {
+
+    var hash = window.location.hash;
+    if(hash.match(/gif|png|jpg|jpeg|webp|mp4/g)==null) {
+        e.preventDefault();
+        return false;
+    }
+
+    var clickTarget = document.querySelectorAll("[href='" + hash + "']")[0],
+        gallery = clickTarget.closest(".gallery-wrap"),
+        src = hash.substr(1);
+
+    gallery.getElementsByClassName('image-detail')[0].src = src;
+    return true;
+}
+
+function galleryPopstate (e) {
+    if(DEBUG) console.log("Gallery.onPopState",e);
+
+    return updateDetailImage();
+};
+
+
+function prevImage(e) {
+    if(DEBUG) console.log('prevImage',e);
+    var hash = window.location.hash,
+        currentImage = document.querySelectorAll("[href='" + hash + "']")[0],
+        prevImage = currentImage.closest("li").previousElementSibling;
+
+    if(prevImage != null) {
+        var src = prevImage.querySelectorAll('a')[0].getAttribute('href');
+        history.pushState({},"",src);
+        galleryPopstate(e);
+    }
+    console.log('currentImage',currentImage);
+    console.log('prevImage',prevImage);
+}
+
+function nextImage(e) {
+    if(DEBUG) console.log('nextImage',e);
+    var slug = window.location.hash.substr(1),
+        currentImage = document.querySelectorAll("[href='#" + slug + "']")[0],
+        nextImage = currentImage.closest("li").nextElementSibling;
+
+    if(nextImage != null) {
+        var src = nextImage.querySelectorAll('a')[0].getAttribute('href');
+        history.pushState({},"",src);
+        galleryPopstate(e);
+    }
+}
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '38') {
+        // up arrow
+    }
+    else if (e.keyCode == '40') {
+        // down arrow
+    }
+    else if (e.keyCode == '37') {
+       // left arrow
+        prevImage(e);
+    }
+    else if (e.keyCode == '39') {
+       // right arrow
+        nextImage(e);
+    }
+
+}
+
+window.addEventListener('keydown', function(e) {
+    console.log('onkeydown',e);
+    checkKey(e);
+});
+window.addEventListener('load', function(e) {
+    galleryLoad(e);
+});
+window.addEventListener('popstate',function(e){
+    galleryPopstate(e);
+});
+
+
+function zoomiesLoad (e) {
+    console.log('zoomiesLoad');
+    var zoomies = document.querySelectorAll('.canzoom');
+    Object.entries(zoomies).forEach(([key, zoomy]) => {
+        console.log(`${key}: ${zoomy}`)
+        zoomy.addEventListener('click', function(e) {
+            console.log('zoomie clicked!',this);
+            toggleClass(this,'zoom');
+        });
+    });
+}
+window.addEventListener('load', function(e) {
+    zoomiesLoad(e);
+});</script></main><footer><div id="contact"><p>Email me at <a href="#" data-part1="b" data-part2="brianmcconnell" data-part3="me" data-part4="Website inquiry" class="link-email">b&#64;brianmcconnell.me</a></p><nav><a href="https://www.linkedin.com/in/mrbmc" class="link-linkedin"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.64334 11.0341H0.310005V3.54076H2.64334V11.0341ZM1.41334 2.60409H1.39667C1.218 2.61742 1.0385 2.59366 0.869449 2.53432C0.700393 2.47498 0.545429 2.38134 0.414282 2.25927C0.283134 2.1372 0.178635 1.98934 0.107344 1.82497C0.036053 1.66059 -0.000491084 1.48326 4.98345e-06 1.30409C4.98345e-06 0.564092 0.563338 0.00409261 1.43 0.00409261C1.60953 -0.0101492 1.79005 0.0128711 1.96025 0.0717087C2.13046 0.130546 2.28666 0.223931 2.41906 0.346001C2.55146 0.468071 2.6572 0.616192 2.72963 0.781066C2.80207 0.94594 2.83965 1.12401 2.84 1.30409C2.84 2.03076 2.29 2.60409 1.41334 2.60409ZM12 11.0341H9.33333V7.15742C9.33333 6.15742 8.92 5.45076 8 5.45076C7.71925 5.45073 7.44565 5.53934 7.2182 5.70393C6.99076 5.86853 6.82107 6.10073 6.73334 6.36742C6.67759 6.56563 6.65839 6.77234 6.67667 6.97742V11.0341H4.07C4.07 11.0341 4.10334 4.16742 4.07 3.54409H6.69667V4.73076C6.85334 4.21742 7.69667 3.48409 9.03 3.48409C10.6967 3.48409 12 4.56076 12 6.88076V11.0341Z" fill="white"></path><title>linkedin.com/in/mrbmc</title></svg> </a><a href="https://mrbmc.medium.com/" class="link-medium"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1043.63 592.71" class="aa bb"><g data-name="Layer 2"><g data-name="Layer 1"><path d="M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 460 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36M911.56 296.36c0 154.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 147.17 124.9 147.17 279M1043.63 296.36c0 138-23.17 249.94-51.76 249.94s-51.75-111.91-51.75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51.76 249.94"></path></g></g><title>https://mrbmc.medium.com/</title></svg> </a><a href="https://www.strava.com/athletes/773650" class="link-strava"><svg height="512px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x33_23-strava"><g><polygon points="226.172,26.001 90.149,288.345 170.29,288.345 226.172,184.036 281.605,288.345     361.116,288.345   " style="fill:#FF5500;"/><polygon points="361.116,288.345 321.675,367.586 281.605,288.345 220.871,288.345 321.675,485.999     421.851,288.345   " style="fill:#FFAF8A;"/></g></g><g id="Layer_1"/><title>strava.com/athletes/mrbmc</title></svg></a></nav></div><div id="colophon"><p class="small">Product & Design leadership – building high performing UX teams where human needs intersect with business impact.</p><p class="small">© 2023 Brian McConnell</p><p class="small"><a href="/colophon">Colophon</a></p></div></footer><script type="text/javascript">//<![CDATA[
+<!--
+var links = document.getElementsByClassName('link-email');
+for (const link of links) {
+  var attrs = link.dataset;
+  link.setAttribute(
+    "href",
+    `mailto:${attrs.part1}@${attrs.part2}.${attrs.part3}?subject=${attrs.part4}`
+  );
+}
+//-->
+//]]></script><script type="text/javascript" language="javascript" src="/js/mrbmc.min.js"></script></body></html>
