@@ -5,7 +5,7 @@ title: Design & Product Leadership
 description: Brian McConnell is a design executive with a unique background as a designer, founder, product manager, and engineer. He builds sustainable businesses by designing products that meet real human needs.
 permalink: /about/
 ---
-# Designer, product builder, and polymath.
+# Design leader, product builder, and polymath.
 
 I am a results-oriented design leader with a proven track record of building teams, products, and partnerships that drive business impact. I have scaled design organizations at startups and enterprises. My deepest subject matter expertise is in design for growth & monetization, creative tooling, and enterprise SAAS products.
 
