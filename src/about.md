@@ -5,9 +5,11 @@ title: Design & Product Leadership
 description: Brian McConnell is a design executive with a unique background as a designer, founder, product manager, and engineer. He builds sustainable businesses by designing products that meet real human needs.
 permalink: /about/
 ---
-# Design leader, product builder, and polymath.
+## My family calls me Brian, but my friends call me BMC.{.left}
 
-I am a results-oriented design leader with a proven track record of building teams, products, and partnerships that drive business impact. I have scaled design organizations at startups and enterprises. My deepest subject matter expertise is in design for growth & monetization, creative tooling, and enterprise SAAS products.
+I am a 👧🏻 👦🏻 father, [👩🏻 husband](https://www.bettykang.com/), 🗽 New Yorker, ️[🚲 cyclist](https://www.strava.com/athletes/773650), [🤿 divemaster](https://www.steelgills.com/@mrbmc), [🌎 world traveler](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **👨‍💻 product design leader**.{.large}
+
+Most recently with Disney Streaming, I founded and led design teams for Growth Design, Enterprise SAAS, Sports Products, and User Research. While there I helped grow Disney's product design department from 5 designers to 147 cross-discipline creatives. Previously I helped startups in podcasting, social networking, and e-commerce grow their business using better design.
 
 * [Recent Highlights](#highlights)
 * [Design Leadership](#leadership) 
@@ -22,16 +24,14 @@ I am a results-oriented design leader with a proven track record of building tea
 + **2020** – Led the design of [Disney+ GroupWatch](/portfolio/disney-groupwatch), a social viewing feature.
 + **2019** – Launched [Growth Design for Disney+](/portfolio/disney-growth) & ESPN+ propelling them from **0-126M subscribers in two years**.
 + **2018** – Scaled a design team at MLB from 2 - 26 people including UX Research, Growth, Sports, and Enterprise.
-+ **2016** – Led the design of 6 different streaming services for MLB Advanced Media, growing that business toward a $4B exit.
++ **2016** – Led the design of streaming services for NHL, MLB, Eurosport, PGA, MLS, and more; growing MLB's streaming business toward a $4B exit.
 + **2015** – Led the team building a [patented](https://patents.google.com/patent/US20170195373A1/) podcast platform that paid creators a fair commission at [BlogTalkRadio](/portfolio/blogtalkradio) leading to a $55M acquisition.
   
 {.timeline}
 
 &nbsp;
 
-Over 20+ years I've learned to **deliver through ambiguity** at scale from startups to enterprises by bringing together evidence-based insights, rapid prototyping, and progressive delivery. 
-
-My unique career path has pivoted between leadership roles as a designer, engineer, and product manager thanks to an **ownership mindset**. I'm passionate about creating products that connect people, or unlock creative potential, regardless of my title. I always pivot back to design because of its unique power to **[amplify learning](/blog/a-little-feedback-often/)**. 
+Over 20+ years I've learned to **deliver through ambiguity** at scale ranging from timing startups to global enterprises by bringing together evidence-based insights, rapid prototyping, and progressive delivery. I've led teams ranging in size from 2 to 26 people through mergers, acquisitions, closures, and explosive growth. My unique career path has pivoted between leadership roles as a designer, engineer, and product manager thanks to an **ownership mindset**. I'm passionate about creating excellent products regardless of my title. I pivot back to design because of its unique power to **[amplify learning](/blog/a-little-feedback-often/)**. 
 
 [CV & Resumé](/resume/){.button} <!--&nbsp; [Design Blog](/blog/){.button}--> 
 

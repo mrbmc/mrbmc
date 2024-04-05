@@ -8,11 +8,12 @@ eleventyExcludeFromCollections: false
 
 <section id="masthead" class="bio">
 
-## My family calls me Brian, but my friends call me BMC.{.left}
+## Design As A Strategic Lever.
 
-I am a 👧🏻 👦🏻 father, [👩🏻 husband](https://www.bettykang.com/), 🗽 New Yorker, ️[🚲 cyclist](https://www.strava.com/athletes/773650), [🤿 divemaster](https://www.steelgills.com/@mrbmc), [🌎 world traveler](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **[👨‍💻 product designer](/about/)**.
+My name is Brian and I have been designing products, teams, and partnerships with purpose since the late 1900s. I have a knack for connecting the dots between user needs and business outcomes. 
 
-<div><a class="scrollhint" href="#selected-work">Scroll</a></div>
+<a href="#selected-work"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53 20" xml:space="preserve"><g><polygon points="26.5,17.688 9.114,3.779 10.303,2.312 26.5,15.269 42.697,2.313 43.886,3.779" fill="currentColor"></polygon></g></svg></a>{.scrollhint}
+
 <canvas width="1024" height="1024" id="gradient-canvas"></canvas>
 
 </section>
@@ -22,10 +23,10 @@ I am a 👧🏻 👦🏻 father, [👩🏻 husband](https://www.bettykang.com/),
 {% include "_post-list.md", postList: collections.posts, label: "Recent Posts", count: 4 %}
 
 
-<style type="text/css">
+<!-- <style type="text/css">
 html {
     scroll-snap-type: y mandatory;
 }
 </style>
-
+ -->
 <!-- <script type="text/javascript" language="javascript" src="/js/home.min.js"></script> -->
