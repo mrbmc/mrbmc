@@ -107,7 +107,8 @@ build_static;
 
 echo "---------------------------------------------";
 echo "GARBAGE COLLECTION";
-rm -Rf $OUT/.DS_Store $OUT/*/.DS_Store; 
+# rm -Rf $OUT/.DS_Store $OUT/*/.DS_Store; 
+find $OUT -name ".DS_Store" -type f -delete
 rm -Rf $OUT/*/node_modules; 
 chmod -Rf 755 $OUT/
 
