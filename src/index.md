@@ -8,9 +8,9 @@ eleventyExcludeFromCollections: false
 
 <section id="masthead" class="bio">
 
-## Design As A Strategic Lever.
+# Design As A Strategic Lever.
 
-My name is Brian and I have been designing products, teams, and partnerships with purpose since the late 1900s. I have a knack for connecting the dots between user needs and business outcomes. 
+I have been designing products, teams, and partnerships with purpose since the late 1900s. I have a knack for connecting the dots between user needs and business outcomes.
 
 <a href="#selected-work"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53 20" xml:space="preserve"><g><polygon points="26.5,17.688 9.114,3.779 10.303,2.312 26.5,15.269 42.697,2.313 43.886,3.779" fill="currentColor"></polygon></g></svg></a>{.scrollhint}
 
