@@ -33,9 +33,12 @@ body.home {
         padding-top: 0;
     }
     #masthead {
-        justify-content: center;
-        align-items: flex-start;
-
+        &>* {
+            max-width: $gridLimit;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
         @media (orientation: landscape) {
             padding: 0 $gridMargin;
             height: (100vh);

@@ -37,6 +37,9 @@ body {
         margin: 0 auto;
         padding: $spacerVertical 0;
         width: $gridWidth;
+
+        max-width: $gridLimit;
+
         @media (orientation: portrait) {
             width: 100%;
             padding: 0 $spacerHorizontalPhone;
