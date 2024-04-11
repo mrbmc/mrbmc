@@ -6,7 +6,7 @@ body {
         justify-content: center;
         color: $gray-800;
         overflow: hidden;
-        padding: $spacerVertical calc((100vw - $gridWidth)/2);
+        padding: $spacerVertical $gridMargin;
         gap: 1rem;
 
         background: 
