@@ -13,7 +13,6 @@
 	</header>
 	<figure>
 		<a href="{{ project.url }}"><img src="{{ project.data.thumbnail }}" alt="{{project.data.title}}" /></a>
-	</figure>
-</article>{% endif %}{% endfor %}
+	</figure>  </article>{% endif %}{% endfor %}
 
 </section>{% endif %}

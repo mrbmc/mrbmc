@@ -1,23 +1,17 @@
 body.portfolio.list {
     #main {
-        // width: calc(100vw - ($spacerHorizontal * 2));
-        // width: 100vw;
-        // padding: $spacerVertical $spacerHorizontal;
     }
 }
 
 
 .project-list {
-    // @include item-list();
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
-    margin-bottom: $spacerVertical;
-    @media (orientation: landscape) {
-    }
+    column-gap: ($spacerHorizontal * 2);
+    row-gap: 0;
 
     &>h2 {
         flex: 1 0 100%;
@@ -27,22 +21,18 @@ body.portfolio.list {
         flex: 1 0 100%;
     }
 
-    column-gap: $spacerHorizontal;
-    // row-gap: $spacerVertical;
     .project {
         display: flex;
         flex-direction: column;
-        // margin-bottom: $spacerVertical;
         flex: 1 0 100%;
-        // flex: 1 0 calc(33.3% - $spacerHorizontal);
-
         justify-content: center;
-        min-height: 100vh;
+        margin: $spacerVertical 0;
+        // min-height: 100vh;
 
         @media (orientation: portrait) {
-            min-height: auto;
+            // min-height: auto;
             flex: 1 0 calc(50% - $spacerHorizontal);
-            margin-bottom: ($spacerVerticalPhone * 4);
+            // margin-bottom: ($spacerVerticalPhone * 4);
         }
         @media (max-width: $breakpointPhone) {
             flex: 1 0 100%;
@@ -101,23 +91,22 @@ body.portfolio.list {
 
         &.full {
             flex-direction: row-reverse;
-            // gap: $spacerHorizontal * 2;
-            min-height: 13.25vw;
-            margin-bottom: $spacerVertical * 2;
+            // min-height: 13.25vw;
             align-items: center;
             overflow: visible;
             flex: 1 0 100%;
             height: auto;
+            column-gap: $spacerHorizontal;
 
             @media (orientation: portrait) {
                 flex-direction: column-reverse;
-                gap: $spacerVerticalPhone;
+                row-gap: $spacerVerticalPhone;
             }
 
 
             &>header {
                 display: block;
-                margin-left: $spacerHorizontal;
+                // margin-left: $spacerHorizontal;
                 h2,h3 {
                     text-align: left;
                     margin-bottom: 0;
@@ -146,14 +135,6 @@ body.project {
     }
 
     #masthead {
-        // figure {
-        //     position: static;
-        //     width: 100vw;
-        //     margin-left: $spacerHorizontalPhone * -1;            
-        // }
-        // @media (orientation: portrait) {
-        //     // height: 50vh;
-        // }
     }
     @media (orientation: portrait) {
         #scrollhint {

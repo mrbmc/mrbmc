@@ -40,22 +40,6 @@ html {
     // -moz-osx-font-smoothing: grayscale;
     // font-smooth: never;
     font-size: clamp(120%, 1.8vw, 240%);
-    // PHONES & TABLETS
-    // @media (max-width: $breakpointPortrait-1) {
-    //     font-size: $baseFontSize * 1.1;
-    // }
-    // // TABLETS & DESKTOPS
-    // @media (min-width: $breakpointPortrait) AND (max-width: $breakpointWidescreen-1) {
-    //     font-size: $baseFontSize * 1.0;
-    // }
-    // // WIDESCREEN & LARGE DESKTOPS
-    // @media (min-width: $breakpointWidescreen) AND (max-width: 1800px) {
-    //     font-size: $baseFontSize * 1.3;
-    // }
-    // // SUPER WIDESCREEN
-    // @media (min-width: 1801px) {
-    //     font-size: $baseFontSize * 1.6;
-    // }
 }
 
 body {

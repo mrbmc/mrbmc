@@ -88,11 +88,11 @@ $gridWidth:               96vw;
 $gridGutterWidth:         2vw;
 $gridColumnWidth:         math.div(($gridWidth - (($gridColumns - 1) * $gridGutterWidth)), $gridColumns);
 $gridMargin: 			  math.div((100vw - $gridWidth),2);
-$gridLimit: 			  1200px;
+$gridLimit: 			  40rem;
 
 $spacerHorizontal:          $gridGutterWidth;
 $spacerVertical:            2rem;
-$spacerHorizontalPhone:     ($gridGutterWidth * 0.5);
+$spacerHorizontalPhone:     ($gridGutterWidth * 2);
 $spacerVerticalPhone:       1rem;
 
 $breakpointWidescreen:      1201px;

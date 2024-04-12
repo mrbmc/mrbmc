@@ -148,21 +148,14 @@ body.home {
         // padding-bottom: $spacerVertical;
     }
     .project-list {
-        column-gap: 10vw;
-        column-gap: $spacerHorizontal;
-        // @include fullWidth(96vw);
         h2 {
             text-align: center;
         }
-         .project {
-            box-sizing: border-box;
+
+        .project {
             flex: 1 0 calc(50% - $spacerHorizontal);
             flex-direction: column-reverse;
-            min-height: auto;
-            margin: $spacerVertical 0;
             header {
-                height: 4rem;
-                margin: 0 0 0 0;
             }
             h3 {
                 margin: 0;
