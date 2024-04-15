@@ -1,4 +1,4 @@
-## The Design Process Is Storytelling{#process}
+## The Design Process Is Storytelling
 
 Good product design is good storytelling. I believe in using story structure as a rubric for evaluating design work. There is a classic story writing tool called the **Story Spine** that can be very useful to designers:
 

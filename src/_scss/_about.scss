@@ -5,6 +5,14 @@ body.about {
         .gallery{
             @include fullWidth(90vw);
         }
+
+        & > section {
+            border-top: solid 1px $borderColor;
+            padding-top: $spacerVertical * 2;
+            margin-top: $spacerVertical * 2;
+        }
+
+
     }
 
     h1 {
@@ -48,25 +56,25 @@ body.about {
 
     #mantras,ul.hero {
         @include inverse();
+
         @include fullWidth(100vw);
+        box-sizing: border-box;
         padding: $spacerVertical $gridMargin;
 
         flex-direction: column;
+        // display: grid;
+        // grid-template-columns: 1fr;
+        row-gap: $spacerVertical;
+        // column-gap: $spacerHorizontal;
+        // box-sizing: border-box;
 
-        ul,ol {
-            @include container();
-            padding-top: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-gap: 1em;
-            @media (orientation: portrait) {
-                grid-template-columns: 1fr;
-            }
-        }
+
         li {
             @include card();
             list-style: none;
-            margin: 0;
+            margin: 0 auto;
+            width: 100%;
+            max-width: $gridLimit;
 
             details {
                 padding: $spacerHorizontal;
@@ -107,17 +115,6 @@ body.about {
             strong,em {
                 display: block;
                 margin-bottom: 1rem;
-            }
-        }
-
-        &.hero {
-            display: grid;
-            grid-template-columns: 1fr;
-            row-gap: $spacerVertical;
-            column-gap: $spacerHorizontal;
-            box-sizing: border-box;
-            strong {
-                font-size: 144%;
             }
         }
     }

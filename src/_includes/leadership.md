@@ -1,4 +1,4 @@
-## Design Leadership{#leadership}
+## Design Leadership
 
 > A design leader is a human leader and functional expert who gives the business a competitive advantage by design.{.blockquote}
 
