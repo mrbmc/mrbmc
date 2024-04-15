@@ -4,7 +4,7 @@ eleventyExcludeFromCollections: false
 tags:
   - nature
   - leadership
-masthead-image: /images/leadership-nature.jpg
+masthead-image: /images/blog/leadership-nature.jpg
 date: 2023-10-17
 ---
 There are many amazing frameworks for design leadership published to learn from: [Four quadrants](https://www.petermerholz.com/blog/coach-diplomat-champion-architect-a-framework-for-understanding-and-assessing-design-leadership/), [*Ikigai* People Management](https://management30.com/blog/redefining-purpose-with-ikigai/), [Five Ps](https://www.i4design.com/chickenscratch/2017/4/23/5ps-management), [Servant Leadership Theory](https://www.pon.harvard.edu/daily/leadership-skills-daily/servant-leadership-theory/)... I don't want to just reframe the great work that has been shared already.  My addition to the conversation is sharing some lessons from nature that have inspired and informed my approach to design leadership.

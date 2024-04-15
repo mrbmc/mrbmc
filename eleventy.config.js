@@ -98,6 +98,17 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  // Liquid Filter
+  eleventyConfig.addLiquidFilter(
+    "replace_regex",
+    function () {
+      if(typeof(arguments[0]) != "undefined") {
+        return arguments[0].replace(arguments[1], arguments[2]);
+      }
+      return false;
+    }
+  );
+
 
   // ========================================
   // BUILD ASSETS
