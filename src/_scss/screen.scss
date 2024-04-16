@@ -301,17 +301,16 @@ blockquote,.blockquote {
         left: 0;
         bottom: 0;
         z-index: -2;
-        background: $brandColor;
 
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-            background: 
-                radial-gradient(38% 81% at 100% 81%,   $brandAccent20 25%,  $brandColor00 100%)
-                ,radial-gradient(38% 130% at 62% 0%,    $brandComplement20 0%,   $brandColor00 100%)
-                ,radial-gradient(38% 100% at 20% 100%,  $brandSecondary20 0%,      $brandColor00 100%)
-                ,radial-gradient(100% 100% at 0% 0%,  $brandColor80 0%,    $brandColor00 100%)
-                ,$heroUnitBackground;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background: 
+            radial-gradient(38% 81% at 100% 81%,   $brandAccent20 25%,  $brandColor00 100%)
+            ,radial-gradient(38% 130% at 62% 0%,    $brandComplement20 0%,   $brandColor00 100%)
+            ,radial-gradient(38% 100% at 20% 100%,  $brandSecondary20 0%,      $brandColor00 100%)
+            ,radial-gradient(100% 100% at 0% 0%,  $brandColor80 0%,    $brandColor00 100%)
+            ,$brandColor;
     }
     &:after {
         content: "";
