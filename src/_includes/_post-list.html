@@ -15,7 +15,7 @@
 
 </summary>
 
-{% if post.data.masthead-image %}<img src="{{ post.data.masthead-image | replace_regex: "blog/", "blog/tn-" | replace_regex: "\.png", ".jpg" }}" />{% endif %}
+{% if post.data.masthead-image %}<img src="{{ post.data.masthead-image | replace_regex: "\.", "-thumb." | replace_regex: "\.png", ".jpg" }}" />{% endif %}
 
 </div>
 
