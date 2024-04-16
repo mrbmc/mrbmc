@@ -10,15 +10,17 @@ const markdownItOptions = {
 }
 const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
 
-// const getSimilarCategories = function(categoriesA, categoriesB) {
-//   return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
-// }
+
+
+
 
 module.exports = function(eleventyConfig) {
+
 
   // ========================================
   // CONTENT PREP
 
+  // COLLECTION FOR BLOG POSTS
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi.getFilteredByGlob("**/blog/posts/*.md").sort(function(a,b) {
       // return a.date - b.date; // sort by date - ascending
@@ -26,6 +28,7 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // COLLECTION FOR WORK PROJECTS
   eleventyConfig.addCollection("work", function(collectionApi) {
     return collectionApi.getFilteredByTag('project').filter(item => item.data.category == "work").reverse();
   });
@@ -38,6 +41,7 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByTag('project').filter(item => item.data.category == "talk").reverse();
   });
 
+  // COLLECTION FOR PHOTO GALLERY
   eleventyConfig.addCollection('gallery', async collectionApi => {
     let files = await glob('./src/_images/gallery/*.jpg');
     //Now filter to non thumb-
@@ -64,6 +68,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.setLibrary('md', markdownLib);
 
+  // RELATED POSTS
   const getSimilarCategories = function(categoriesA, categoriesB) {
     return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
   };
@@ -75,6 +80,16 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // REGEX REPLACE FILTER
+  eleventyConfig.addLiquidFilter("replace_regex",function () {
+      if(typeof(arguments[0]) != "undefined") {
+        return arguments[0].replace(arguments[1], arguments[2]);
+      }
+      return false;
+    }
+  );
+
+  //MINIFY HTML
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if(outputPath.endsWith("html")) {
       // console.log('minifying: '+outputPath);
@@ -88,6 +103,7 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
+  //MINIFY JAVASCRIPT
   eleventyConfig.addLiquidFilter('jsmin', function (code, callback) {
     try {
       const minified = minify(code);
@@ -98,16 +114,6 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  // Liquid Filter
-  eleventyConfig.addLiquidFilter(
-    "replace_regex",
-    function () {
-      if(typeof(arguments[0]) != "undefined") {
-        return arguments[0].replace(arguments[1], arguments[2]);
-      }
-      return false;
-    }
-  );
 
 
   // ========================================
@@ -121,6 +127,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/_images":"images"});
   eleventyConfig.addPassthroughCopy({"src/_fonts":"css/fonts"});
   eleventyConfig.addPassthroughCopy({"src/_images/favicon/favicon.ico":"favicon.ico"});
+
 
   eleventyConfig.setServerOptions({
   //   // Default values are shown:
