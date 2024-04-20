@@ -71,14 +71,14 @@ body {
 }
 @media (prefers-color-scheme: dark) {
     :root {
-    --black80:      #{$white80};
-    --black:        #{$white};
-    --gray-dark:    #{$gray-800};
-    --gray-mid:     #{$gray-500};
-    --gray-light:   #{$gray-200};
-    --white:        #{$gray-050};
-    --white80:      #{$black80};
-    --brandColor:   #{$brandAccent};
+        --black80:      #{$white80};
+        --black:        #{$white};
+        --gray-dark:    #{$gray-800};
+        --gray-mid:     #{$gray-500};
+        --gray-light:   #{$gray-200};
+        --white:        #{$gray-050};
+        --white80:      #{$black80};
+        --brandColor:   #{$brandAccent};
     };
 }
 html {
@@ -277,11 +277,6 @@ blockquote,.blockquote {
 
     &:hover {
         color: $heroUnitHeadingColor;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        // color: $heroUnitBackground;
-        // background: $heroUnitLeadColor;
     }
 }
 

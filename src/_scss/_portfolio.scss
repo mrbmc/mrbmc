@@ -141,6 +141,12 @@ body.project {
             display: none;
         }
     }
+
+    @media (prefers-color-scheme: dark) {
+        img[src$=".svg"] {
+            filter: contrast(0.01) brightness(2);
+        }
+    }
 }
 
 ul.grid {
