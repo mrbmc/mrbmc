@@ -169,3 +169,24 @@ ul.grid {
     }
 
 }
+
+
+
+h2.section {
+    @include fullWidth();
+    justify-content: center;
+    align-items: center;
+    height: 62vh;
+    color: $white;
+    position: relative;
+    &:before {
+        filter: brightness(0.8);
+        content: "";
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}

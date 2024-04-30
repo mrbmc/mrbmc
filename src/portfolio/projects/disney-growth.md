@@ -48,7 +48,7 @@ parallaxHeading:
 
 Building Disney+ was an adventure. Adventures rarely follow a straight line of progress. You often venture off the beaten path, climb over obstacles, or take one step back and two steps sideways to make progress. I've included just a few of the most interesting UX challenges we faced in the multi-year saga of launching Disney+.
 
-## Chapter 1: Basecamp{#basecamp}
+## Chapter 1: Basecamp{#basecamp .section}
 
 ### The Strategy{#strategy}
 
@@ -221,7 +221,7 @@ _Spoiler: this would change six months after the launch._
 * The Disney Voice is friendly, direct, and accessible - even for legal contracts. 
 * Practice unreasonable hospitality. 
 
-## Chapter 2: Ascent {#ascent}
+## Chapter 2: Ascent {#ascent .section}
 
 ### Landing Page{#landing-page}
 
@@ -381,7 +381,7 @@ We designed a scalable framework that could adapt to different billing capabilit
 + ![](/images/portfolio/disney-growth/redemption-3.jpg)
 {.gallery}
 
-## Chapter 3: Summit{#summit}
+## Chapter 3: Summit{#summit .section}
 
 ### Global expansion{#global-expansion}
 
@@ -509,7 +509,7 @@ We also had a list of 6 viable ideas to prototype and test with users.
 
 ![](/images/portfolio/disney-growth/bundle-workshop-wireframes.jpg){.fullwidth90}
 
-## Chapter 4: Descent {#descent}
+## Chapter 4: Descent {#descent .section}
 
 ### Outcomes{#outcomes}
 
@@ -544,9 +544,18 @@ I'd like to think the foundation we created enabled the continued growth over th
 @media (prefers-color-scheme: dark) {
 ##main img[src*="svg"] { filter:invert(1) hue-rotate(180deg);}
 }
-.cover {
-height: 62vh;
-object-fit: cover;
+h2#basecamp:before {
+    background-image: url(/images/portfolio/disney-growth/everest-basecamp-web.jpg);
+}
+h2#ascent:before {
+    background-image: url(/images/portfolio/disney-growth/everest-ascent-web.jpg);
+    background-position: top center;
+}
+h2#summit:before {
+    background-image: url(/images/portfolio/disney-growth/everest-summit-web.jpg);
+}
+h2#descent:before {
+    background-image: url(/images/portfolio/disney-growth/everest-descent-web.jpg);
 }
 </style>
 
