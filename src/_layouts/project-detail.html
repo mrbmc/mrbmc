@@ -4,14 +4,10 @@ bodyclass: portfolio project
 ---
 
 {% if masthead-video or masthead-image %}
-{% include "_masthead.html", parallaxHeading: true %}
+{% include "_masthead.html" %}
 {% else %}
 <h1>{{ title }}</h1>
-<p class="date">
-    {{ date | date: "%B %d, %Y" }}
-    &bull;
-    {{ content | timeToRead }} to read
-</p>
+{% if summary %}<p class="summary large">{{ summary }}</p>{% endif %}
 {% endif %}
 
 <a id="content"></a>
@@ -27,4 +23,3 @@ bodyclass: portfolio project
 
 
 <script type="text/javascript" language="javascript" src="/js/portfolio.min.js"></script>
-

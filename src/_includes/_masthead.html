@@ -1,20 +1,30 @@
 <section id="masthead">
-    <h1 {% if parallaxHeading %}data-parallax="50" data-fade="0"{% endif %}>{{ title }}</h1>
-    {% if mastheadSummary %}<p class="summary large">{{ mastheadSummary }}</p>{% endif %}
+
+    <h1 {% if parallaxHeading == true %}data-parallax="50"{% endif %}>{{ title }}</h1>
+
+    <!-- {% if summary %}<p {% if parallaxHeading == true %}data-parallax="50"{% endif %} class="summary large">{{ summary }}</p>{% endif %} -->
+
     {% if bodyclass == "blog post" %}
-    <p {% if parallaxHeading %}data-parallax="50" data-fade="0"{% endif %}>
+    <p {% if parallaxHeading == true %}data-parallax="50"{% endif %}>
         <span class="date">{{date | date: "%B %d, %Y" }}</span>
         &bull;
         <span class="readingtime">{{ content | timeToRead }} to read</span>
     </p>
+    {% else if bodyclass == "portfolio project" %}
+
     {% endif %}
+
     {% if masthead-image or masthead-video %}
-    <figure data-fade="100" data-parallax="81">
+    <figure {% if parallaxHeading == true %}data-fade="100" data-parallax="81"{% endif %}>
         {% if masthead-video %}
         <video src="{{masthead-video}}" autoplay loop muted preload="auto" playsinline type="video/mp4"></video>{% else 
         %}<img src="{{ masthead-image }}" alt="{{ masthead-title }}">
         {% endif %}
     </figure>
     {% endif %}
+
     <a class="scrollhint" href="#content"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53 20" xml:space="preserve"><g><polygon points="26.5,17.688 9.114,3.779 10.303,2.312 26.5,15.269 42.697,2.313 43.886,3.779" fill="currentColor"></polygon></g></svg></a>
+
 </section>
+<!-- <img src="{{ masthead-image }}" alt="{{ masthead-title }}" class="fullwidth"> -->
+

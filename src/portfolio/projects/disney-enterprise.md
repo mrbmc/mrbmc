@@ -6,33 +6,45 @@ thumbnail: /images/portfolio/disney-enterprise/optumus-mockup.jpg
 eleventyExcludeFromCollections: false
 category:
   - work
-summary: This suite of 30+ enterprise SAAS products behind Disney+, Hulu, and ESPN saved Disney $100M/pa in operating costs and doubled AARPU.
+summary: This suite of 35+- enterprise SAAS products behind Disney+, Hulu, and ESPN saved Disney $100M/pa in operating costs and doubled AARPU.
 timeline: 2019-2023
 ---
-"StreamEngine" is a suite of ~35 purpose-built tools that operate Disney+, Hulu, ESPN+, and STAR+. Our team of designers partnered with *hundreds* of developers & product managers across Disney to build SAAS products that could each be a startup in their own right. 
+<!-- "StreamEngine" is a suite of ~35 purpose-built tools that operate Disney+, Hulu, ESPN+, and STAR+. Our team of designers partnered with *hundreds* of developers & product managers across Disney to build SAAS products that could each be a startup in their own right.  -->
 
 | Role & Responsibility                                                                                                                                          | Team                                     | Timeline            | Impact                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------- | ---------------------------------------------------------------------------- |
 | **Sr. Director, Product Design**<br><br>Team hiring, management, and organization design. Design strategy. Partner management. Budgeting. Culture development. | 12 FT Designers + 4-6 Design Contractors | Jan 2019 - Aug 2023 | saved **$100M** p/a in operating costs<br>supported a **2x growth in AARPU** |
 
+## Streaming Video is Hard
+
+Operating at the scale, and legal exposure, that Disney does often requires us to build, not buy, solutions due to cost or privacy constraints. *The scale of this platform was comparable to an entire industry.* Many of the products we built matched the scale of commercial products:
+
+| Disney Product              | Purpose                                                                              | Commercial Analog(s)                                                 |
+| --------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| Genie                       | Billing and SKU management                                                           | [Orb](https://www.withorb.com/), [Metronome](https://metronome.com/) |
+| Baymax                      | Customer Support Portal                                                              | Zendesk                                                              |
+| WeaponX                     | Experimentation & Feature Flagging                                                   | Optimizely, Launch Darkly                                            |
+| Polaris                     | Content Curation                                                                     | Contentful                                                           |
+| Optumus                     | Streaming Quality Analysis                                                           | [Conviva](https://www.conviva.com/)                                  |
+| Developer Platform          |                                                                                      | n/a                                                                  |
+| DATA Platform               | A one-stop shop for all metrics and analytics of our streaming services.             | Tableau, Zoho                                                        |
+| Ad Manager, Mission Control | Advertising curation, provisioning, and deployment.                                  | [Google AdSense](https://adsense.google.com/), Amazon Advertising    |
+| Partner Portal              |                                                                                      | GitLabs                                                              |
+| Galaxy                      | Platform for sending personalized targeted messages (Email, SMS, Push) to our users. | salesforce, omnisend, braze                                          |
+
+All of the products we designed or consulted on:
+
+Anti-Piracy Operations, Audience Segmentation, CDN Management Console, Commerce & Offer Operations, Commerce Config Tool, Content Catalog Browser, Content delivery Preview, Content Experience Management, Content Portal (hulu live, sVOD), CX Dashboard  , Data Activation Framework , DATA instrumentation library, Data Portal , Developer Portal, Dictionary & Translation, Disney Edge Controller (DEC), EXD Design System, Experimentation , Fraud Management Service, Hulu Ad Manager, Hulu Ad Mission Control, Hulu Ad Revenue Processing Service, Machine Learning Dashboard, Metadata Mapping & Visualization, Partner Portal, Player Config Service, Responder Files (DATA Feature Market), SRE Dashboard, Streaming QoS Insights, Support Agent Console, Unified Messaging Platform{.small .card}
+
 ## Legacy Of Tool Innovation
 
-Why build custom software tools? **To create something truly novel you need novel tools.**
+Why build custom software tools? 
+
+**To create something truly novel you need novel tools.**
 
 Disney has a rich history of building new tools that unlock creative possibilities. One famous example was the Multi-plane camera which massively accelerated animation and enabled parallax motion techniques.
 
 ![Multiplane Camera](/images/portfolio/Walt_Disney_Multiplane_Camera_2.jpeg){.fullwidth style="height:62vh;object-position: 50% 38%;"}
-
-
-### Streaming Video is Hard
-
-Building a global streaming platform that delivers flawless video to paying customers in the language & currency of their choice requires a lot of custom software. Operating at the scale, and legal exposure, that Disney does often requires us to build, not buy, solutions. 
-
-Here are some of the tools we designed:
-
-Anti-Piracy Operations, Audience Segmentation, CDN Management Console, Commerce & Offer Operations, Commerce Config Tool, Content Catalog Browser, Content delivery Preview, Content Experience Management, Content Portal (hulu live, sVOD), CX Dashboard  , Data Activation Framework , DATA instrumentation library, Data Portal , Developer Portal, Dictionary & Translation, Disney Edge Controller (DEC), EXD Design System, Experimentation , Fraud Management Service, Hulu Ad Manager, Hulu Ad Mission Control, Hulu Ad Revenue Processing Service, Machine Learning Dashboard, Metadata Mapping & Visualization, Partner Portal, Player Config Service, Responder Files (DATA Feature Market), SRE Dashboard
-Streaming QoE Insights, Support Agent Console , Unified Messaging Platform{.small .card}
-
 
  
 - ![Commerce Portal](/images/portfolio/disney-enterprise/commerces-offer-detail.jpg)
@@ -57,7 +69,7 @@ Culture can be designed with intentional reinforcement of the behaviors that ali
 ![linda](/images/portfolio/disney-enterprise/exd-team-linda.png)![caroline](/images/portfolio/disney-enterprise/exd-team-caroline.png)![dan](/images/portfolio/disney-enterprise/exd-team-dan.png)![alexaf](/images/portfolio/disney-enterprise/exd-team-alexaf.png)![daria](/images/portfolio/disney-enterprise/exd-team-daria.png)![takeem](/images/portfolio/disney-enterprise/exd-team-takeem.png)![alexac](/images/portfolio/disney-enterprise/exd-team-alexac.png)![jenny](/images/portfolio/disney-enterprise/exd-team-jenny.png)![willet](/images/portfolio/disney-enterprise/exd-team-willet.png)![sarah](/images/portfolio/disney-enterprise/exd-team-sarah.png)![kda](/images/portfolio/disney-enterprise/exd-team-kda.png)![cathy](/images/portfolio/disney-enterprise/exd-team-cathy.png)![carol](/images/portfolio/disney-enterprise/exd-team-carol.png)![jon](/images/portfolio/disney-enterprise/exd-team-jon.png)![agency](/images/portfolio/disney-enterprise/exd-team-agency.png)
 {.team}
 
-## Pods
+### Pods
 
 To tackle such a large surface area, we organized the team into pods for each topical area. These subjects aligned with business outcomes as well.
 

@@ -8,6 +8,7 @@
     "side": "checkbox",
     "personal": "multitext",
     "permalink": "text",
-    "category": "multitext"
+    "category": "multitext",
+    "parallaxHeading": "number"
   }
 }

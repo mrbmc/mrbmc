@@ -1,16 +1,18 @@
 ---
 title: Eurosport Player
 thumbnail: /images/portfolio/eurosport/eurosport-thumb.jpg
-masthead-image: /images/portfolio/eurosport/eurosport-case-study.jpg
 date: 2018-01-01
 category:
   - work
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
+summary: I led an end-to-end redesign across TV, Mobile and Web of Europe's largest streaming sports service (analogous to ESPN in the US).
 ---
+![](/images/portfolio/eurosport/eurosport-product-lineup-2x1.jpg){.fullwidth}
+
 I directed a trans-atlantic team of designers & researchers in re-imagining Europe's largest streaming sports service on TV, web, and mobile. We completed the end-to-end design and build in 4 months in advance of the 2018 Winter Olympics.
 
 
-![](/images/portfolio/eurosport/eurosport-product-lineup-2x1.jpg)
+
 
 ## A Unified Experience Across Devices
 
@@ -29,3 +31,14 @@ The Eurosport brand is recognized across the globe and appears in many different
 
 ![](/images/portfolio/eurosport/eurosport-2.png)
 ![](/images/portfolio/eurosport/eurosport-9.png)
+
+
+<style>
+#main p br {
+display: none;
+}
+#main p img {
+max-height: inherit;
+display: block;
+}
+</style>
