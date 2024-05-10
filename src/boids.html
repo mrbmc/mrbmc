@@ -14,12 +14,29 @@
 
 <canvas id="boids" width="150" height="150"></canvas>
 
+<textarea id="fps"></textarea>
+
 <style type="text/css">
   body {
-    margin:0;
+    margin: 0;
+  }
+  #boids {
     background: #201c1D;
     background: linear-gradient(0deg, hsl(198,38%,13%) 0%, hsl(203,100%,05%) 100%);
-    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+  }
+  #fps {
+    background: #000000;
+    border: transparent;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 55;
+    color: #0cF;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
   }
 </style>
 

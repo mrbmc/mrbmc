@@ -1,46 +1,57 @@
-// Size of canvas. These get updated to fill the whole browser.
+const DEBUG = (document.location.hostname == "localhost" || document.location.href.includes('debug'));
 
+// Size of canvas. These get updated to fill the whole browser.
 let width = 150;
 let height = 150;
+let diagnal = Math.sqrt(Math.pow(width,2) + Math.pow(height,2));
 
-var numBoids = 800;
+var numBoids = 500;// this is overridden by the screen size.
 var boidSize = 4;
-// const boidColor = "#29201D";//"#00ccFF";
+var minDistance = boidSize * 3;
+const boidShape = "circle";//options: circle (default), square, triangle, cross
+const boidColor = "#00FFFF";
 const DRAW_TRAIL = false;
 const tailLength = 250;
-const boidShape = "triangle";//options: circle (default), square, triangle, cross
 
 //these variables control the motion
 const visualRange = (!DRAW_TRAIL) ? 75 : 25; // default 75, really controls how quickly boids coalesce
-var minDistance = 10;//boidSize * 3; // The distance to stay away from other boids; default 20
-const avoidFactor = 0.05; // Adjust velocity by this %; default 0.05
-const matchingFactor = 50; // Adjust by this % of average velocity; default 50
-var speedLimit = (!DRAW_TRAIL) ? 5 : 100; //default 15
-const centeringFactor = 5; // default 5
-const boidColor = "#00CCCC";//"#201c1D";//"#00ccFF";
+const avoidFactor = 0.025; // Adjust velocity by this %; default 0.05
+const matchingFactor = 75; // Adjust by this % of average velocity; default 50
+const centeringFactor = 1; // How strong the clusters are, default 5
+var speedLimit = (!DRAW_TRAIL) ? 20 : 100; //default 15
 
-
+let msPrev = window.performance.now();
+const fps = 60;
+const msPerFrame = 1000 / fps;
 
 var boids = [];
 
+function setNumBoids () {
+  numBoids = Math.round(diagnal / boidSize * 2);
+}
+
 function setBoidSize () {
-  var width = window.innerWidth;
-  var height = window.innerHeight;
-  var diagnal = Math.sqrt(Math.pow(width,2) + Math.pow(height,2));
-  boidSize = Math.abs(diagnal/150);
-  minDistance = boidSize * 1.1;
+  if(DEBUG) console.log("Boids.setBoidSize",arguments);
+
+  // boidSize = Math.abs(diagnal / 100);
+  // boidSize = (width * height) / numBoids;
+  // minDistance = boidSize * 1;
   return true;
 }
 
 function setSpeedLimit () {
-  var width = window.innerWidth;
-  var height = window.innerHeight;
-  var diagnal = Math.sqrt(Math.pow(width,2) + Math.pow(height,2));
-  speedLimit = Math.abs(diagnal/300);
-  console.log(speedLimit);
+  if(DEBUG) console.log("Boids.setSpeedLimit",arguments);
+  // speedLimit = Math.abs(diagnal / 300);
+  speedLimit = boidSize;
 }
 
 function initBoids(_numBoids) {
+  if(DEBUG) console.log("Boids.initBoids",arguments);
+
+  setNumBoids();
+  setBoidSize();
+  setSpeedLimit();
+
   boids = [];
   n = (_numBoids != undefined) ? _numBoids : numBoids;
   for (var i = 0; i < n; i += 1) {
@@ -57,9 +68,8 @@ function initBoids(_numBoids) {
 
   // Clear the canvas and redraw all the boids in their current positions
   const ctx = document.getElementById("boids").getContext("2d");
-  ctx.clearRect(0, 0, width, height);
+        ctx.clearRect(0, 0, width, height);
   for (let boid of boids) {
-    // ctx.globalAlpha = boid.a;
     drawBoid(ctx, boid);
   }
 
@@ -75,43 +85,41 @@ function distance(boid1, boid2) {
 // Called initially and whenever the window resizes to update the canvas
 // size and width/height variables.
 function sizeCanvas() {
+  if(DEBUG) console.log("Boids.sizeCanvas",arguments);
+
   const canvas = document.getElementById("boids");
   width = window.innerWidth;
   height = window.innerHeight;
+  diagnal = Math.sqrt(Math.pow(width,2) + Math.pow(height,2));
   canvas.width = width;
   canvas.height = height;
 
-  numBoids = (width * height) / 1000;
-  // setBoidSize();
-  // setSpeedLimit();
   initBoids();
 }
 
 // Constrain a boid to within the window. If it gets too close to an edge,
 // nudge it back in and reverse its direction.
 function keepWithinBounds(boid) {
-  var margin = boidSize * 0.5;
-  var turnFactor = 1;
+
+  var margin = 0;//boidSize * 0.5;
+  var turnFactor = boidSize;
+  var bounce = Math.random() > .25;
 
   if (boid.x < margin) {
-    if(Math.random()>0.5 && !DRAW_TRAIL) boid.x += (width - margin);
-    else boid.dx *= -1;
-    // else boid.dx += turnFactor;
+    if(bounce) boid.dx *= -1;//boid.dx += turnFactor;
+    else boid.x += (width - margin);
   }
   if (boid.x > width - margin) {
-    if(Math.random()>0.5 && !DRAW_TRAIL)  boid.x -= (width - margin);
-    else boid.dx *= -1;
-    // else boid.dx -= turnFactor;
+    if(bounce) boid.dx *= -1;
+    else boid.x -= (width - margin);
   }
   if (boid.y < margin) {
-    if(Math.random()>0.5 && !DRAW_TRAIL) boid.y += (height - margin);
-    else boid.dy *= -1;
-    // boid.dy += turnFactor;
+    if(bounce) boid.dy *= -1;
+    else boid.y += (height - margin);
   }
   if (boid.y > height - margin) {
-    if(Math.random()>0.5 && !DRAW_TRAIL) boid.y -= (height - margin);
-    else boid.dy *= -1;
-    // boid.dy -= turnFactor;
+    if(bounce) boid.dy -= turnFactor;
+    else boid.y -= (height - margin);
   }
 }
 
@@ -224,7 +232,6 @@ function drawBoid(ctx, boid) {
       ctx.lineTo(boid.x + boidSize/2, boid.y);
       ctx.lineTo(boid.x + boidSize/2, boid.y + (boidSize/2));
       ctx.lineTo(boid.x + boidSize/2, boid.y - (boidSize/2));
-      // ctx.lineTo(boid.x, boid.y);
       break;
     // default:
     case "circle":
@@ -258,6 +265,16 @@ function drawBoid(ctx, boid) {
 
 // Main animation loop
 function animationLoop() {
+
+  // Schedule the next frame
+  // window.requestAnimationFrame(animationLoop);
+  setTimeout(animationLoop,msPerFrame);
+  const msNow = window.performance.now()
+  const msPassed = msNow - msPrev;
+  // if (msPassed < msPerFrame) return
+  updateStats(1000 / msPassed);
+  msPrev = msNow;
+
   // Update each boid
   for (let boid of boids) {
     // Update the velocities according to each rule
@@ -287,19 +304,24 @@ function animationLoop() {
     drawBoid(ctx, boid);
   }
 
+}
 
+function updateStats(_fps) {
+  var str = "fps: " + Math.round(_fps) + "\n";
+      str +="bds: " + numBoids;
 
-  // Schedule the next frame
-  window.requestAnimationFrame(animationLoop);
+  document.getElementById("fps").textContent = str;
 }
 
 window.onload = () => {
   // Make sure the canvas always fills the whole window
   window.addEventListener("resize", sizeCanvas, false);
+
   sizeCanvas();
 
   // Randomly distribute the boids to start
-  initBoids();
+  // commented out because it's called by sizeCanvas()
+  // initBoids();
 
   // Schedule the main animation loop
   window.requestAnimationFrame(animationLoop);
