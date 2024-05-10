@@ -125,7 +125,7 @@ blockquote,.blockquote {
 #header {
     a {
         text-decoration: none;
-        @include typeset($navbarFontFamily, $navbarFontWeight, 0.8rem, ($navbarHeight * .62), -0.0125em);
+        @include typeset($navbarFontFamily, $navbarFontWeight, 0.89em, ($navbarHeight * .62), -0.0125em);
         text-transform: uppercase;
 
         @include transition(all $animateSpeed $animateEasing);

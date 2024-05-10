@@ -74,6 +74,10 @@ body {
         }
     }
 }
+#noiseImage {
+    display: none;
+}
+
 
 // phones up to tablets
 @media (max-width: $breakpointPortrait-1) {

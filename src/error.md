@@ -1,8 +1,9 @@
 ---
 layout: layout-micro.html
 bodyclass: home
-title: Brian McConnell | ERROR
+title: "Brian McConnell | Error"
 permalink: "/error.html"
+masthead: -1
 ---
 
 # My bad!
