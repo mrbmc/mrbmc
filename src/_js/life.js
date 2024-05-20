@@ -2,12 +2,12 @@ const DEBUG = (document.location.hostname == "localhost" || document.location.hr
 
 //ANIMATION MANAGEMENT
 var oFPS = {
-	fps: 12,
+	fps: 60,
 	now: window.performance.now(),
 	prev: window.performance.now(),
-	timeout: {}
+	timeout: {},
+	generations: 0
 }
-
 
 // CANVAS MANAGEMENT
 const context = document.getElementsByTagName("canvas")[0].getContext("2d");
@@ -16,21 +16,20 @@ let height = 150;
 
 class GameWorld 
 {
+	static mortalityRate = 1;// % of death each generation
+	static initialPopulation = 50;// % of cells to start with
+	static maxCells = 1000;
+	// static numCells = 0;
+	static aliveCells = 0;
+	static minPopulation = 0;
 	static numRows = 60;
 	static numColumns = 100;
-	static mortalityRate = 1;// % of death each generation
-	static intialPopulation = 50;// % of cells to start with
-	static maxCells = 1000;
-	static numCells = 0;
-	static aliveCells = 0;
-	static minPopulation = 3;
-
 	static cells = [];
 
 	static neighbourCellsMap = [
-	    [-1, -1], [0, -1], [1, -1],
-	    [-1, 0],           [1, 0],
-	    [-1, 1],  [0, 1],  [1, 1]
+	    [-1,-1], [0,-1], [1,-1],
+	    [-1, 0],         [1, 0],
+	    [-1, 1], [0, 1], [1, 1]
 	];
 
 	constructor (context) 
@@ -38,8 +37,10 @@ class GameWorld
 		console.log("GameWorld.constructor");
 	}
 
+	static get numCells() {
+		return (this.numColumns * this.numRows);
+	}
 }
-
 
 
 class Cell
@@ -50,24 +51,24 @@ class Cell
     static colorAlive = '#00CCCC';
     static colorDead = '#00CCCC11';
     static shape = "circle";
-    static context = false;
-    static isAlive = false;
-    static isAliveNextFrame = false;
 
-    constructor (context, gridX, gridY)
+    // static isAlive = false;
+    // static isAliveNextFrame = false;
+
+    constructor (gridX, gridY)
     {
-        this.context = context;
-
         // Store the position of this cell in the grid
         this.gridX = gridX;
         this.gridY = gridY;
 
+        this.lifespan = window.performance.now();
+
         // Make random cells alive
-        this.isAlive = this.isAliveNextFrame = Math.random() > (1-(GameWorld.intialPopulation / 100));
+        this.isAlive = this.isAliveNextFrame = Math.random() > (1 - GameWorld.initialPopulation / 100);
     }
 
     draw() {
-        this.context.fillStyle = this.isAlive ? Cell.colorAlive : Cell.colorDead;
+        context.fillStyle = this.isAlive ? Cell.colorAlive : Cell.colorDead;
 
         switch(Cell.shape) {
         case "circle":
@@ -76,30 +77,47 @@ class Cell
 	        var y = (this.gridY * Cell.height) + r;
 
 			// this.context.translate(x, y);
-			this.context.beginPath();
-			this.context.arc(x, y, r, 0, 360, false);
-			this.context.fill();
+			context.beginPath();
+			context.arc(x, y, r, 0, 360, false);
+			context.fill();
     	break;
         default:
-	        // this.context.fillRect(this.gridX * Cell.width, this.gridY * Cell.height, Cell.width, Cell.height);
-			this.context.beginPath();
-	        this.context.roundRect(this.gridX * Cell.width, this.gridY * Cell.height, Cell.width, Cell.height, (Cell.width/4));
-	        this.context.fill();
+	        // context.fillRect(this.gridX * Cell.width, this.gridY * Cell.height, Cell.width, Cell.height);
+			context.beginPath();
+	        context.roundRect(this.gridX * Cell.width, this.gridY * Cell.height, Cell.width, Cell.height, (Cell.width/4));
+	        context.fill();
     	break;
         }
     }
 }
 
+function sizeCanvas() {
+
+	const canvas = document.getElementsByTagName("canvas")[0];
+	canvas.width = width = window.innerWidth;
+	canvas.height = height = window.innerHeight;
+
+	var screenArea = width * height;
+	var cellArea = screenArea / GameWorld.maxCells;
+	////uncomment this if you need to limit the cells due to performance concerns
+	// Cell.width = Cell.height = Math.ceil(Math.sqrt(cellArea));
+
+	GameWorld.numColumns = Math.ceil(width / Cell.width);
+	GameWorld.numRows = Math.ceil(height / Cell.height);
+
+	if(DEBUG) console.log("sizeCanvas",);
+}
+
 function createGrid()
 {
-	console.log("CreateGrid",GameWorld.numRows + "x" + GameWorld.numColumns);
+	console.log("createGrid",GameWorld.numRows + "x" + GameWorld.numColumns + "=" + GameWorld.numCells);
  	GameWorld.cells = [];
     for (let y = 0; y < GameWorld.numRows; y++) {
         for (let x = 0; x < GameWorld.numColumns; x++) {
-            GameWorld.cells.push(new Cell(context, x, y));
+            GameWorld.cells.push(new Cell(x, y));
         }
     }
-    GameWorld.numCells = GameWorld.cells.length;
+    // GameWorld.numCells = GameWorld.cells.length;
 }
 
 function updateCells() {
@@ -125,6 +143,7 @@ function updateCells() {
 
         }
     }
+
     GameWorld.aliveCells = 0;
 	// Apply the new state to all the cells at once
 	for(n = 0;n < GameWorld.numCells; n++) {
@@ -132,12 +151,6 @@ function updateCells() {
 		GameWorld.aliveCells += (GameWorld.cells[n].isAlive) ? 1 : 0;
 	}
 }
-
-
-// chaos generator
-// 1 in 10 they split
-// 1 in 10 they die
-// 8 in 10 status quote
 
 function getNumAliveNeighbours(x, y) {
     // Check every surrounding cell, using the neighbourCellsMap
@@ -174,72 +187,56 @@ function drawCells () {
 }
 
 function animationLoop (argument) {
+	// if(DEBUG) console.log("animationLoop")
 
 	// FRAME SCHEDULING
 	oFPS.now = window.performance.now();
-	const msPassed = oFPS.now - oFPS.prev;
-
+	var msPassed = oFPS.now - oFPS.prev;
 	// set FPS to program spec
-	oFPS.timeout = setTimeout(animationLoop,oFPS.ms);
+	oFPS.timeout = setTimeout(animationLoop, 1000/oFPS.fps);
 	if (msPassed < (1000 / oFPS.fps)) return;
 	// set FPS to display refresh rate
 	// requestAnimationFrame(animationLoop);
 
-	oFPS.prev = oFPS.now;
-	updateStats(1000 / msPassed);
-
     updateCells();
     drawCells();
 
-	var p = (GameWorld.aliveCells / GameWorld.numCells * 100);
-	if(p <= GameWorld.minPopulation) {
-		clearTimeout(oFPS.timeout);
-		setTimeout(initGame,2000);
-	}
+	// var p = (GameWorld.aliveCells / GameWorld.numCells * 100);
+	// if(p <= GameWorld.minPopulation || oFPS.generations >= 1200) {
+	// 	setTimeout(initGame,5000);
+	// }
 
+	oFPS.prev = oFPS.now;
+	oFPS.generations++;
+	updateStats(1000 / msPassed);
 }
 
 function updateStats(_fps) {
   var str = "fps: " + Math.round(_fps) + "\n";
+      str +="gen: " + oFPS.generations + "\n";
       str +="obj: " + GameWorld.numCells + "\n";
-      str +="alv: " + Math.round(GameWorld.aliveCells / GameWorld.numCells * 100,2) + "%";
+      str +="alv: " + Math.round(GameWorld.aliveCells / GameWorld.numCells * 100) + "%";
 
   document.getElementById("fps").textContent = str;
 }
 
 
 function initGame(argument) {
+	if(DEBUG) console.log("initGame")
+
+	oFPS.generations = 0;
+	clearTimeout(oFPS.timeout);
+
 	sizeCanvas();
 
 	createGrid();
+	drawCells();
 
 	// Schedule the main animation loop
 	window.requestAnimationFrame(animationLoop);
 }
 
-// Called initially and whenever the window resizes to update the canvas
-// size and width/height variables.
-function sizeCanvas() {
-	if(DEBUG) console.log("sizeCanvas",arguments);
-
-	const canvas = document.getElementsByTagName("canvas")[0];
-	width = window.innerWidth;
-	height = window.innerHeight;
-	canvas.width = width;
-	canvas.height = height;
-
-	var pixels = width * height;
-	var cellArea = pixels / GameWorld.maxCells;
-	//uncomment this if you need to limit the cells due to performance concerns
-	// Cell.width = Cell.height = Math.ceil(Math.sqrt(cellArea));
-
-	GameWorld.numColumns = Math.ceil(width / Cell.width);
-	GameWorld.numRows = Math.ceil(height / Cell.height);
-	// console.log(GameWorld.numRows + "x" + GameWorld.numColumns);
-}
-
 window.onload = () => {
-	// Make sure the canvas always fills the whole window
 	window.addEventListener("resize", sizeCanvas, false);
 
 	initGame();

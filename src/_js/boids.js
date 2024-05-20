@@ -325,4 +325,8 @@ window.onload = () => {
 
   // Schedule the main animation loop
   window.requestAnimationFrame(animationLoop);
+
+  if(!DEBUG) {
+    document.getElementById("fps").style.display = "none";
+  }
 };
