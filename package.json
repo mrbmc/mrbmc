@@ -7,13 +7,14 @@
     "lib": "lib"
   },
   "scripts": {
-    "watch:sass": "sass --watch src/_scss:www/css",
-    "watch:eleventy": "npx @11ty/eleventy --serve --incremental --ignore-initial",
-
     "build:all": "./build.sh build",
     "build:sass": "sass src/_scss:www/css --style compressed",
     "build:js": "./build.sh buildjs verbose",
     "build:eleventy": "npx @11ty/eleventy",
+
+
+    "watch:sass": "sass --watch src/_scss:www/css",
+    "watch:eleventy": "npx @11ty/eleventy --serve --incremental --ignore-initial",
 
 
     "build": "npm-run-all build:*",

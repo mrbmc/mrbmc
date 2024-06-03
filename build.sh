@@ -7,29 +7,21 @@ function build_js () {
 	echo "---------------------------------------------";
 	echo "- COMPILING JAVASCRIPT";
 
-	echo " Main JS";
-	mkdir -m755 -p $OUT/js;
-	uglifyjs -m \
-		-c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		--source-map url=mrbmc.min.js.map \
-		-o $OUT/js/mrbmc.min.js \
-		$SRC/_js/mrbmc.js;
+	# echo " Gradient JS";
+	# mkdir -m755 -p $OUT/js;
+	# uglifyjs -m \
+	# 	-c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
+	# 	--source-map url=gradient.min.js.map \
+	# 	-o $OUT/js/gradient.min.js \
+	# 	$SRC/_js/gradient.js;
 
-	echo " Gradient JS";
-	mkdir -m755 -p $OUT/js;
-	uglifyjs -m \
-		-c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		--source-map url=gradient.min.js.map \
-		-o $OUT/js/gradient.min.js \
-		$SRC/_js/gradient.js;
-
-	echo " home JS";
-	mkdir -m755 -p $OUT/js;
-	uglifyjs -m \
-		-c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		--source-map url=home.min.js.map \
-		-o $OUT/js/home.min.js \
-		$SRC/_js/home.js;
+	# echo " home JS";
+	# mkdir -m755 -p $OUT/js;
+	# uglifyjs -m \
+	# 	-c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
+	# 	--source-map url=home.min.js.map \
+	# 	-o $OUT/js/home.min.js \
+	# 	$SRC/_js/home.js;
 
 	echo " Photos JS";
 	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
@@ -51,15 +43,38 @@ function build_js () {
 
 	echo " Life JS";
 	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		 --source-map url=live.min.js.map \
+		 --source-map url=life.min.js.map \
 		-o $OUT/js/life.min.js \
 		$SRC/_js/life.js;
 
-	# echo " Contrails JS";
+	# echo " Wind JS";
 	# uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-	# 	 --source-map url=contrails.min.js.map \
-	# 	-o $OUT/js/contrails.min.js \
-	# 	$SRC/_js/contrails.js;
+	# 	 --source-map url=wind.min.js.map \
+	# 	-o $OUT/js/wind.min.js \
+	# 	$SRC/_js/wind.js;
+
+	echo " smoke JS";
+	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
+		 --source-map url=smoke.min.js.map \
+		-o $OUT/js/smoke.min.js \
+		$SRC/_js/smoke.js;
+
+	echo " WebGL JS";
+	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
+		 --source-map url=webgl.min.js.map \
+		-o $OUT/js/webgl.min.js \
+		$SRC/_js/webgl.js;
+
+	cp $SRC/_js/init-buffers.js $OUT/js/init-buffers.js;
+	cp $SRC/_js/draw-scene.js $OUT/js/draw-scene.js;
+
+	echo " Main JS";
+	mkdir -m755 -p $OUT/js;
+	uglifyjs -m \
+		-c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
+		--source-map url=mrbmc.min.js.map \
+		-o $OUT/js/mrbmc.min.js \
+		$SRC/_js/mrbmc.js;
 
 }
 
