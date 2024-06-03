@@ -5,7 +5,7 @@ title: Design & Product Leadership
 description: Brian McConnell is a design executive with a unique background as a designer, founder, product manager, and engineer. He builds sustainable businesses by designing products that meet real human needs.
 permalink: /about/
 ---
-# My family calls me Brian, but my friends call me BMC.{.left}
+# Design Leader With Unique Cross-Functional Expertise.{.left}
 
 I am a 👧🏻 👦🏻 father, [👩🏻 husband](https://www.bettykang.com/), 🗽 New Yorker, ️[🚲 cyclist](https://www.strava.com/athletes/773650), [🤿 divemaster](https://www.steelgills.com/@mrbmc), [🌎 world traveler](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **👨‍💻 product design leader with a knack for connecting the dots between user needs and business outcomes**.{.large}
 

@@ -8,9 +8,11 @@ eleventyExcludeFromCollections: false
 
 <section id="masthead" class="bio">
 
-# Design Is A Strategic Lever.
+# Designing Humane Software
 
-I believe Product Design offers a unique competitive advantage by unlocking critical thinking. The design process combines user insights and high craft to give form to ideas.
+My family calls me Brian, my friends call me BMC. I am a curious, strategic, and adaptable* design leader who has been building digital products since the late 1900s.
+
+
 
 {% comment %}
 * [linkedin](https://linkedin.com/in/mrbmc)
