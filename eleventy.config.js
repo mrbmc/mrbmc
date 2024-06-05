@@ -138,7 +138,7 @@ module.exports = function(eleventyConfig) {
   //   },
     // port: 9999,
     showVersion: true,
-    watch: ["www/css/screen.css","www/js/mrbmc.min.js"],
+    watch: ["www/css/screen.css","www/css/gaia.css","www/js/mrbmc.min.js"],
   });
 
   // ========================================
