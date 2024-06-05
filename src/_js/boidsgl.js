@@ -207,6 +207,7 @@ function createBoids () {
     boids = Array.from({ length: boids.length }, () => new Boid());
 
     let _positions = new Float32Array(boids.flatMap(boid => boid.getVertices()));
+
     gl.bindBuffer(gl.ARRAY_BUFFER, shader.positionBuffer);
     gl.bufferData(gl.ARRAY_BUFFER, _positions, gl.DYNAMIC_DRAW);
 }
@@ -445,6 +446,9 @@ function initControls() {
         document.getElementById(prop).value = Boid[prop].toFixed(2);
         document.getElementById(prop+'Value').innerText = Boid[prop].toFixed(2);
     });
+
+    document.getElementById('debugger').style.display = (DEBUG) ? "block" : "none";
+    document.getElementById('controls').style.display = (DEBUG) ? "block" : "none";
 
 }
 
