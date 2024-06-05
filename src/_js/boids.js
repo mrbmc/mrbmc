@@ -310,8 +310,8 @@ function updateStats(_fps) {
 	var str = "fps: " + Math.round(_fps) + "\n";
 			str +="bds: " + numBoids;
 
-	document.getElementById("fps").textContent = str;
-	document.getElementById("fps").style.display = DEBUG?"block":"none";
+	document.getElementById("debugger").textContent = str;
+	document.getElementById("debugger").style.display = DEBUG?"block":"none";
 }
 
 window.onload = () => {
