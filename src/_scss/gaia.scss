@@ -2,6 +2,7 @@ body {
   margin:0;
   background: #201c1D;
   background: linear-gradient(0deg, hsl(198,38%,13%) 0%, hsl(203,100%,05%) 100%);
+  font-family: "HelveticaNeue","Helvetica Neue","Helvetica",sans-serif;
 }
 canvas {
   width: 100vw;
@@ -19,4 +20,30 @@ canvas {
   padding: 0;
   margin: 0;
   height: 6em;
+}
+#controls {
+  text-align: right;
+  padding: 0.5rem;
+  border-radius: .25rem;
+  background: #FFFFFF80;
+  position: fixed;
+  bottom: .25rem;
+  right: .25rem;
+}
+input.slider {
+    appearance: none; /* removes browser-specific styling */
+    width: 300px; /* width of slider */
+    height: 1rem; /* height of slider */
+    background: #201c1D ; /* orange background */
+    outline: none; /* remove outline */
+    border-radius: 50px; /* round corners */
+}
+
+input.slider::-webkit-slider-thumb {
+  appearance: none; /* removes browser-specific styling */
+  width: 20px; /* handle width */
+  height: 20px; /* handle height */
+  border-radius: 50%; /* make it circular */
+  background: #00CCCC; /* white color */
+  cursor: pointer; /* cursor on hover */
 }
