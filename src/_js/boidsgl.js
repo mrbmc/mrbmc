@@ -16,13 +16,14 @@ class Boid {
     static separation = 0.25; // Adjust velocity by this %; default 0.05
     static alignment = 0.75; // Adjust by this % of average velocity; default 0.5
     static cohesion = 0.1; // How strong the clusters are, default 0.3
-    static _speedLimit = 15; //default 15
+    static _speedLimit = 7; //default 15
 
     static size = 4;
     static color = "#00CCFF";
 
     static get speedLimit () {
-        return Boid._speedLimit / 1000;
+        var fpsFactor = 120 / engine.avgFPS;
+        return Boid._speedLimit / 1000 * fpsFactor;
     }
 
     constructor(){
@@ -164,11 +165,12 @@ function updateBoids(){
 GRID OPTIMIZATION
 ---------------------------------------- */
 class Grid {
-    constructor(cols) {
-        console.log('new Grid',cols);
-        this.cols = cols;
-        this.rows = cols;
-        this.cells = Array.from({ length: (cols * cols) }, () => []);
+    constructor(size) {
+        console.log('new Grid',size);
+        var side = Math.ceil(Math.sqrt(size));
+        this.cols = side;
+        this.rows = side;
+        this.cells = Array.from({ length: (side * side) }, () => []);
     }
     getFriends (boid) {
         var cellID = this.getCell(boid);
@@ -203,60 +205,66 @@ class Grid {
 /* ----------------------------------------
 ANIMATION ENGINE
 ---------------------------------------- */
-
-function drawScene() {
-    gl.clear(gl.COLOR_BUFFER_BIT);
-
-    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-    gl.vertexAttribPointer(
-        programInfo.attribLocations.vertexPosition,
-        2,
-        gl.FLOAT,
-        false,
-        0,
-        0
-    );
-    gl.enableVertexAttribArray(programInfo.attribLocations.vertexPosition);
-
-    gl.useProgram(programInfo.program);
-
-    updateBoids();
-    gl.drawArrays(gl.POINTS, 0, numBoids);
-
-    Debugger.print();
-
-    requestAnimationFrame(drawScene);
-}
-
-class Debugger {
-    static last = window.performance.now();
-    static history = Array(10);
+class Engine {
+    static fps = 120;
 
     constructor(){
+        this.framePrev = window.performance.now();
+        this.frameTime = Math.floor(1000 / Engine.fps);
+        this.history = Array(10);
+        this.avgFPS = 120;
     }
-    static get interval () {
-        return (1000 / Debugger.fps);
+
+    drawFirstFrame () {
+        gl.clear(gl.COLOR_BUFFER_BIT);
+        gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+        gl.vertexAttribPointer(
+            programInfo.attribLocations.vertexPosition,
+            2,
+            gl.FLOAT,
+            false,
+            0,
+            0
+        );
+        gl.enableVertexAttribArray(programInfo.attribLocations.vertexPosition);
+        gl.useProgram(programInfo.program);
+
+        requestAnimationFrame(engine.drawFrame);
     }
-    static get fps () {
+
+    drawFrame () {
+        requestAnimationFrame(engine.drawFrame);
+
+        // var frameNow = window.performance.now();
+        // var frameSince = frameNow - engine.framePrev;
+        // // if (frameSince <= engine.frameTime) return;
+
+        updateBoids();
+
+        gl.drawArrays(gl.POINTS, 0, numBoids);
+
+        engine.debug();
+        engine.framePrev = window.performance.now();
+    }
+
+    get fps () {
         var now = window.performance.now();
-        var delta = now - Debugger.last;
+        var delta = now - this.framePrev;
         var fps = 1000 / delta;
         return Math.round(fps * 10 )/10;
     }
-    static print () {
 
-        Debugger.history.push(Debugger.fps);
+    debug () {
+        this.history.push(engine.fps);
         var avgSize = 20;
-        var avg = Debugger.history.slice(avgSize * -1).reduce((a, b) => a + b) / avgSize;
+        this.avgFPS = Math.round(this.history.slice(avgSize * -1).reduce((a, b) => a + b) / avgSize);
 
-        var str = "fps: " + Math.round(avg) + "\n";
-            str +="bds: " + numBoids;
-
+        var str = "fps: " + this.avgFPS + "\n";
+            str +="bds: " + boids.length + "\n";
+            str +="grid: " + grid.cells.length + "\n";
 
         document.getElementById("debugger").textContent = str;
         document.getElementById("debugger").style.display = DEBUG?"block":"none";
-
-        Debugger.last = window.performance.now();
     }
 }
 
@@ -359,13 +367,14 @@ function setup() {
     // canvas.width = window.innerWidth;
     // canvas.height = window.innerHeight;
 
-    window.grid = new Grid(2);
+    window.grid = new Grid(9);
+    window.engine = new Engine();
 
     initControls();
 
     createBoids();
 
-    drawScene();
+    engine.drawFirstFrame();
 
 }
 

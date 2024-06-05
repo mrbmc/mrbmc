@@ -63,7 +63,7 @@ function build_js () {
 	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
 		 --source-map url=boidsgl.min.js.map \
 		-o $OUT/js/boidsgl.min.js \
-		$SRC/_js/quadtree.js $SRC/_js/boidsgl.js;
+		$SRC/_js/boidsgl.js;
 
 	# cp $SRC/_js/init-buffers.js $OUT/js/init-buffers.js;
 	# cp $SRC/_js/draw-scene.js $OUT/js/draw-scene.js;
