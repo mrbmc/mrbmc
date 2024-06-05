@@ -134,7 +134,74 @@ class Boid {
     move () {
         this.x += this.dx;
         this.y += this.dy;
-        this.history.push([this.x, this.y, this.a]);
+        // this.history.push([this.x, this.y, this.a]);
+    }
+
+    getVertices () {
+        // Convert angle to radians
+        const angleRad = calculateAngle(this).radians;
+
+        // Calculate height of the equilateral triangle
+        const height = (Math.sqrt(3) / 2) * Boid.size;
+
+        // Calculate the distance from the center to a vertex
+        const centerToVertex = height / Math.sqrt(3);
+
+        // Vertex 1 (top vertex)
+        const vertex1 = [
+            this.x,
+            this.y - centerToVertex
+        ];
+        
+        // Vertex 2 (bottom left vertex)
+        const vertex2 = [
+            this.x - (Boid.size / 2),
+            this.y + (height / 2)
+        ];
+        
+        // Vertex 3 (bottom right vertex)
+        const vertex3 = [
+            this.x + (Boid.size / 2),
+            this.y + (height / 2)
+        ];
+
+        function calculateAngle(boid) {
+            const deltaX = (boid.x + boid.dx) - boid.x;
+            const deltaY = (boid.y + boid.dy) - boid.y;
+
+            // Calculate the angle in radians
+            const angleInRadians = Math.atan2(deltaY, deltaX);
+            
+            // Convert the angle to degrees (optional)
+            const angleInDegrees = angleInRadians * (180 / Math.PI);
+
+            return {
+                radians: angleInRadians + Math.PI,
+                degrees: angleInDegrees + 180
+            };
+        }
+
+        // Function to rotate a point around the center
+        function rotatePoint(point, angleRad, boid) {
+            const translatedX = point[0] - boid.x;
+            const translatedY = point[1] - boid.y;
+            
+            const rotatedX = translatedX * Math.cos(angleRad) - translatedY * Math.sin(angleRad);
+            const rotatedY = translatedX * Math.sin(angleRad) + translatedY * Math.cos(angleRad);
+            
+            return [
+                rotatedX + boid.x,
+                rotatedY + boid.y
+            ];
+        }
+
+        // Rotate all vertices around the center
+        const rotatedVertex1 = rotatePoint(vertex1, angleRad, this);
+        const rotatedVertex2 = rotatePoint(vertex2, angleRad, this);
+        const rotatedVertex3 = rotatePoint(vertex3, angleRad, this);
+        
+        return [rotatedVertex1, rotatedVertex2, rotatedVertex3].flat();
+
     }
 }
 
@@ -143,7 +210,7 @@ function createBoids () {
 
     boids = Array.from({ length: numBoids }, () => new Boid());
 
-    let _positions = new Float32Array(boids.flatMap(boid => [boid.x, boid.y]));
+    let _positions = new Float32Array(boids.flatMap(boid => boid.getVertices()));
     gl.bindBuffer(gl.ARRAY_BUFFER, shader.positionBuffer);
     gl.bufferData(gl.ARRAY_BUFFER, _positions, gl.DYNAMIC_DRAW);
 }
@@ -165,10 +232,9 @@ function updateBoids(){
 
     grid.storeBoids();
 
-    let _positions = new Float32Array(boids.flatMap(boid => [boid.x, boid.y]));
+    let _positions = new Float32Array(boids.flatMap(boid => boid.getVertices()));
     gl.bufferSubData(gl.ARRAY_BUFFER, 0, _positions);
 }
-
 
 
 
@@ -250,7 +316,7 @@ class Engine {
 
         updateBoids();
 
-        gl.drawArrays(gl.POINTS, 0, numBoids);
+        gl.drawArrays(gl.TRIANGLES, 0, numBoids);
 
         engine.debug();
         engine.framePrev = window.performance.now();
