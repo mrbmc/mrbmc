@@ -133,7 +133,7 @@ function createBoids () {
     boids = Array.from({ length: numBoids }, () => new Boid());
 
     let _positions = new Float32Array(boids.flatMap(boid => [boid.x, boid.y]));
-    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+    gl.bindBuffer(gl.ARRAY_BUFFER, shader.positionBuffer);
     gl.bufferData(gl.ARRAY_BUFFER, _positions, gl.DYNAMIC_DRAW);
 }
 
@@ -217,17 +217,17 @@ class Engine {
 
     drawFirstFrame () {
         gl.clear(gl.COLOR_BUFFER_BIT);
-        gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+        gl.bindBuffer(gl.ARRAY_BUFFER, shader.positionBuffer);
         gl.vertexAttribPointer(
-            programInfo.attribLocations.vertexPosition,
+            shader.programInfo.attribLocations.vertexPosition,
             2,
             gl.FLOAT,
             false,
             0,
             0
         );
-        gl.enableVertexAttribArray(programInfo.attribLocations.vertexPosition);
-        gl.useProgram(programInfo.program);
+        gl.enableVertexAttribArray(shader.programInfo.attribLocations.vertexPosition);
+        gl.useProgram(shader.programInfo.program);
 
         requestAnimationFrame(engine.drawFrame);
     }
@@ -270,64 +270,71 @@ class Engine {
 
 
 /* ----------------------------------------
-SETUP THE WEBGL SHADER FOUNDATION
+SETUP THE WEBGL SHADER
 ---------------------------------------- */
 
 const canvas = document.getElementById('glcanvas');
 const gl = canvas.getContext('webgl');
-const positionBuffer = gl.createBuffer();
-const vsSource = `
-    attribute vec2 a_position;
-    void main(void) {
-        gl_Position = vec4(a_position, 0.0, 1.0);
-        gl_PointSize = 2.0;
+
+class Shader 
+{
+    static vsSource = `
+        attribute vec2 a_position;
+        void main(void) {
+            gl_Position = vec4(a_position, 0.0, 1.0);
+            gl_PointSize = 3.0;
+        }
+    `;
+
+    static fsSource = `
+        void main(void) {
+            gl_FragColor = vec4(0.0, 1.0, 1.0, 1.0);
+        }
+    `;
+
+    constructor () {
+        if(DEBUG) console.log('new Shader',this);
+        this.positionBuffer = gl.createBuffer();
+        this.shaderProgram = this.initShaderProgram(gl, Shader.vsSource, Shader.fsSource);
+        this.programInfo = {
+            program: this.shaderProgram,
+            attribLocations: {
+                vertexPosition: gl.getAttribLocation(this.shaderProgram, 'a_position'),
+            },
+        };
     }
-`;
 
-const fsSource = `
-    void main(void) {
-        gl_FragColor = vec4(0.0, 1.0, 1.0, 1.0);
+    initShaderProgram(gl, vsSource, fsSource) {
+        var vertexShader = this.loadShader(gl, gl.VERTEX_SHADER, Shader.vsSource);
+        var fragmentShader = this.loadShader(gl, gl.FRAGMENT_SHADER, Shader.fsSource);
+
+        let _shaderProgram = gl.createProgram();
+        gl.attachShader(_shaderProgram, vertexShader);
+        gl.attachShader(_shaderProgram, fragmentShader);
+        gl.linkProgram(_shaderProgram);
+
+        if (!gl.getProgramParameter(_shaderProgram, gl.LINK_STATUS)) {
+            alert('Unable to initialize the shader program: ' + gl.getProgramInfoLog(_shaderProgram));
+            return null;
+        }
+        return _shaderProgram;
     }
-`;
 
-function initShaderProgram(gl, vsSource, fsSource) {
-    const vertexShader = loadShader(gl, gl.VERTEX_SHADER, vsSource);
-    const fragmentShader = loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
+    loadShader(gl, type, source) {
+        const shader = gl.createShader(type);
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
 
-    const shaderProgram = gl.createProgram();
-    gl.attachShader(shaderProgram, vertexShader);
-    gl.attachShader(shaderProgram, fragmentShader);
-    gl.linkProgram(shaderProgram);
-
-    if (!gl.getProgramParameter(shaderProgram, gl.LINK_STATUS)) {
-        alert('Unable to initialize the shader program: ' + gl.getProgramInfoLog(shaderProgram));
-        return null;
+        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+            alert('An error occurred compiling the shaders: ' + gl.getShaderInfoLog(shader));
+            gl.deleteShader(shader);
+            return null;
+        }
+        return shader;
     }
-    return shaderProgram;
+
+
 }
-
-function loadShader(gl, type, source) {
-    const shader = gl.createShader(type);
-    gl.shaderSource(shader, source);
-    gl.compileShader(shader);
-
-    if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-        alert('An error occurred compiling the shaders: ' + gl.getShaderInfoLog(shader));
-        gl.deleteShader(shader);
-        return null;
-    }
-    return shader;
-}
-
-const shaderProgram = initShaderProgram(gl, vsSource, fsSource);
-
-const programInfo = {
-    program: shaderProgram,
-    attribLocations: {
-        vertexPosition: gl.getAttribLocation(shaderProgram, 'a_position'),
-    },
-};
-
 
 
 /* ----------------------------------------
@@ -367,8 +374,11 @@ function setup() {
     // canvas.width = window.innerWidth;
     // canvas.height = window.innerHeight;
 
-    window.grid = new Grid(9);
+    window.grid = new Grid(5);
+
     window.engine = new Engine();
+
+    window.shader = new Shader();
 
     initControls();
 
