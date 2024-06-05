@@ -208,7 +208,7 @@ class Engine {
         if(DEBUG) console.log('new Engine',this);
         this.framePrev = window.performance.now();
         this.frameTime = Math.floor(1000 / Engine.fps);
-        this.history = Array(10);
+        this.fpsHistory = Array(10);
         this.avgFPS = 120;
     }
 
@@ -252,9 +252,12 @@ class Engine {
     }
 
     debug () {
-        this.history.push(engine.fps);
+        this.fpsHistory.push(engine.fps);
         var avgSize = 20;
-        this.avgFPS = Math.round(this.history.slice(avgSize * -1).reduce((a, b) => a + b) / avgSize);
+        while(this.fpsHistory.length > avgSize) {
+            this.fpsHistory.shift();
+        }
+        this.avgFPS = Math.round(this.fpsHistory.reduce((a, b) => a + b) / avgSize);
 
         var str = "fps: " + this.avgFPS + "\n";
             str +="bds: " + boids.length + "\n";
@@ -263,6 +266,7 @@ class Engine {
         document.getElementById("debugger").textContent = str;
         document.getElementById("debugger").style.display = DEBUG?"block":"none";
     }
+
 }
 
 
