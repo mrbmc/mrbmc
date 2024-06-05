@@ -287,6 +287,8 @@ SETUP THE WEBGL SHADER
 ---------------------------------------- */
 
 const canvas = document.getElementById('glcanvas');
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
 const gl = canvas.getContext('webgl');
 
 class Shader 
@@ -346,7 +348,6 @@ class Shader
         return shader;
     }
 
-
 }
 
 
@@ -384,8 +385,6 @@ function initControls() {
 }
 
 function setup() {
-    // canvas.width = window.innerWidth;
-    // canvas.height = window.innerHeight;
 
     window.grid = new Grid(5);
 
