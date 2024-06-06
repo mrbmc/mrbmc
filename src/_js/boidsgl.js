@@ -6,7 +6,7 @@ Math.clamp = function(val, min, max) {
 /* ----------------------------------------
 BOIDS DEFINITIONS
 ---------------------------------------- */
-let boids = Array(2000);
+let boids = Array(1000);
 
 class Boid {
     static size = 0.01;
@@ -408,7 +408,7 @@ function initControls() {
 }
 
 function setup() {
-    window.grid = new Grid(5);
+    window.grid = new Grid(3);
     window.engine = new Engine();
     window.shader = new Shader();
 
