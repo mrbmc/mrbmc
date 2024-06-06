@@ -447,6 +447,8 @@ function initControls() {
         document.getElementById(prop+'Value').innerText = Boid[prop].toFixed(2);
     });
 
+    document.getElementById('reset').addEventListener('click',createBoids)
+
     document.getElementById('debugger').style.display = (DEBUG) ? "block" : "none";
     document.getElementById('controls').style.display = (DEBUG) ? "block" : "none";
 
