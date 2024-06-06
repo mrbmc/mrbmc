@@ -138,7 +138,7 @@ class Boid {
     getVertices() {
         const angleRad = calculateAngle(this).radians;
 
-        const height = (Math.sqrt(3) / 2) * Boid.size;
+        const height = (Math.sqrt(3) / 1) * Boid.size;
         const centerToVertex = height / Math.sqrt(3);
 
         const vertex1 = [this.x, this.y - centerToVertex];
@@ -152,7 +152,7 @@ class Boid {
             const angleInDegrees = angleInRadians * (180 / Math.PI);
 
             return {
-                radians: angleInRadians + Math.PI,
+                radians: angleInRadians + (Math.PI / 2),
                 degrees: angleInDegrees + 180
             };
         }
