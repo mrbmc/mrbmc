@@ -179,9 +179,7 @@ function createBoids () {
     if(DEBUG) console.log('createBoids',arguments);
 
     boids = Array.from({ length: boids.length }, () => new Boid());
-    let _positions = new Float32Array(boids.flatMap(boid => boid.getVertices()));
-
-    gl.bufferData(gl.ARRAY_BUFFER, _positions, gl.DYNAMIC_DRAW);
+    updateBuffer();
 }
 
 function updateBoids() {
