@@ -6,7 +6,7 @@ Math.clamp = function(val, min, max) {
 /* ----------------------------------------
 BOIDS DEFINITIONS
 ---------------------------------------- */
-let boids = Array(1000);
+let boids = Array(1500);
 
 class Boid {
     static size = 0.01;
@@ -75,29 +75,12 @@ class Boid {
         }
     }
 
-    separate() {
-        let moveX = 0;
-        let moveY = 0;
-
-        let friends = grid.getFriends(this);
-        for (let otherBoid of friends) {
-            if (otherBoid === this) continue;
-            if (this.distance(otherBoid) < Boid.minDistance) {
-                moveX += this.x - otherBoid.x;
-                moveY += this.y - otherBoid.y;
-            }
-        }
-
-        this.dx += moveX * (Boid.separation / 1);
-        this.dy += moveY * (Boid.separation / 1);
-    }
-
-    align() {
+    align(_friends) {
         let avgDX = 0;
         let avgDY = 0;
         let numNeighbors = 0;
 
-        let friends = grid.getFriends(this);
+        let friends = (_friends) ? _friends : grid.getFriends(this);
         for (let otherBoid of friends) {
             if (otherBoid === this) continue;
             if (this.distance(otherBoid) < Boid.range) {
@@ -114,6 +97,23 @@ class Boid {
             this.dx += (avgDX - this.dx) * (Boid.alignment / 5);
             this.dy += (avgDY - this.dy) * (Boid.alignment / 5);
         }
+    }
+
+    separate(_friends) {
+        let moveX = 0;
+        let moveY = 0;
+
+        let friends = (_friends) ? _friends : grid.getFriends(this);
+        for (let otherBoid of friends) {
+            if (otherBoid === this) continue;
+            if (this.distance(otherBoid) < Boid.minDistance) {
+                moveX += this.x - otherBoid.x;
+                moveY += this.y - otherBoid.y;
+            }
+        }
+
+        this.dx += moveX * (Boid.separation / 1);
+        this.dy += moveY * (Boid.separation / 1);
     }
 
     limitSpeed() {
@@ -138,12 +138,19 @@ class Boid {
     getVertices() {
         const angleRad = calculateAngle(this).radians;
 
-        const height = (Math.sqrt(3) / 1) * Boid.size;
+        // const deltaX = (this.x + this.dx) - this.x;
+        // const deltaY = (this.y + this.dy) - this.y;
+        // const velo = Math.sqrt(Math.abs(deltaX * deltaX) + Math.abs(deltaY * deltaY));
+        // const size = ((velo/0.01) * (Boid.size)) + (Boid.size * 0.25);
+        const size = Boid.size;
+        
+        const height = (Math.sqrt(3) / 1) * size;
         const centerToVertex = height / Math.sqrt(3);
 
         const vertex1 = [this.x, this.y - centerToVertex];
-        const vertex2 = [this.x - (Boid.size / 2), this.y + (height / 2)];
-        const vertex3 = [this.x + (Boid.size / 2), this.y + (height / 2)];
+        const vertex2 = [this.x - (size / 2), this.y + (height / 2)];
+        const vertex3 = [this.x + (size / 2), this.y + (height / 2)];
+
 
         function calculateAngle(boid) {
             const deltaX = (boid.x + boid.dx) - boid.x;
@@ -184,9 +191,55 @@ function createBoids () {
 
 function updateBoids() {
     for (let boid of boids) {
-        boid.coalesce();
-        boid.separate();
-        boid.align();
+
+
+        let centerX = 0;
+        let centerY = 0;
+        let avgDX = 0;
+        let avgDY = 0;
+        let moveX = 0;
+        let moveY = 0;
+        let numNeighbors = 0;
+        let friends = grid.getFriends(boid);
+        for (let otherBoid of friends) {
+            if (otherBoid === boid) continue;
+            if (boid.distance(otherBoid) < Boid.range) {
+                //coalesce
+                centerX += otherBoid.x;
+                centerY += otherBoid.y;
+                //align
+                avgDX += otherBoid.dx;
+                avgDY += otherBoid.dy;
+
+                numNeighbors++;
+            }
+            //separate
+            if (boid.distance(otherBoid) < Boid.minDistance) {
+                moveX += boid.x - otherBoid.x;
+                moveY += boid.y - otherBoid.y;
+            }
+        }
+
+        if (numNeighbors) {
+            //coalesce
+            centerX /= numNeighbors;
+            centerY /= numNeighbors;
+            boid.dx += (centerX - boid.x) * (Boid.cohesion / 500);
+            boid.dy += (centerY - boid.y) * (Boid.cohesion / 500);
+            //align
+            avgDX /= numNeighbors;
+            avgDY /= numNeighbors;
+            boid.dx += (avgDX - boid.dx) * (Boid.alignment / 5);
+            boid.dy += (avgDY - boid.dy) * (Boid.alignment / 5);
+        }
+        //separate
+        boid.dx += moveX * (Boid.separation / 1);
+        boid.dy += moveY * (Boid.separation / 1);
+
+        // boid.coalesce();
+        // boid.separate();
+        // boid.align();
+
         boid.limitSpeed();
         boid.keepWithinBounds();
         boid.move();
@@ -408,7 +461,7 @@ function initControls() {
 }
 
 function setup() {
-    window.grid = new Grid(3);
+    window.grid = new Grid(5);
     window.engine = new Engine();
     window.shader = new Shader();
 
