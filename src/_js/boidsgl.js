@@ -1,5 +1,5 @@
 let DEBUG = (document.location.hostname == "localhost" || document.location.href.includes('debug'));
-Math.clamp = function(val, min, max) {
+clamp = function(val, min, max) {
     return Math.max(Math.min(val, max), min);
 }
 
@@ -361,7 +361,7 @@ class Grid {
         const col = Math.min(Math.floor(((boid.x + 1) / 2) * this.size),(this.size - 1));
         const row = Math.min(Math.floor(((boid.x + 1) / 2) * this.size),(this.size - 1));
         const cellID = row * this.size + col;
-        return Math.clamp(cellID, 0, this.cells.length - 1);
+        return clamp(cellID, 0, this.cells.length - 1);
     }
 }
 
