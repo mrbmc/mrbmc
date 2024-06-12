@@ -1,14 +1,13 @@
 ---
 title: Disney StreamEngine
-date: 2020-02-02
+date: 2020-06-02
 thumbnail: /images/portfolio/disney-enterprise/optumus-mockup.jpg
 eleventyExcludeFromCollections: false
 category:
   - work
-summary: This suite of 35+- enterprise SAAS products behind Disney+, Hulu, and ESPN saved Disney $80M/pa in operating costs and doubled AARPU.
+summary: This suite of 36 enterprise SAAS products behind Disney+, Hulu, and ESPN saved Disney $80M/pa in operating costs and grew MRR 25%.
 timeline: 2019-2023
 ---
-<!-- "StreamEngine" is a suite of ~35 purpose-built tools that operate Disney+, Hulu, ESPN+, and STAR+. Our team of designers partnered with *hundreds* of developers & product managers across Disney to build SAAS products that could each be a startup in their own right.  -->
 
 ![Streaming QoS Analysis](/images/portfolio/disney-enterprise/optumus-mockup.jpg){.fullwidth}
 
