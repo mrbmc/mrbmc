@@ -124,6 +124,34 @@ let positions = [];
 function updateBoids() {
     mostFriends = 0;
 
+    // for(let cell of optimizer.cells) {
+
+    //     var centerX = cell.reduce((sum, currentValue) => sum + currentValue.x, 0) / cell.length;
+    //     var centerY = cell.reduce((sum, currentValue) => sum + currentValue.Y, 0) / cell.length;
+    //     var avgDX = cell.reduce((sum, currentValue) => sum + currentValue.dx, 0) / cell.length;
+    //     var avgDY = cell.reduce((sum, currentValue) => sum + currentValue.dY, 0) / cell.length;
+
+    //     console.log('centerX',centerX);
+
+    //     for (let boid of cell) {
+    //         boid.dx += (centerX - boid.x) * (Boid.cohesion / 500);
+    //         boid.dy += (centerY - boid.y) * (Boid.cohesion / 500);
+    //         boid.dx += (avgDX - boid.dx) * (Boid.alignment / 5);
+    //         boid.dy += (avgDY - boid.dy) * (Boid.alignment / 5);
+
+
+    //         boid.limitSpeed();
+    //         boid.keepWithinBounds();
+    //         boid.move();
+    //     }
+
+    //     mostFriends = Math.max(mostFriends,cell.length);
+    // }
+
+    // optimizer.insertBoids();
+    // updateBuffer();
+    // return;
+
     for (let boid of boids) {
 
         let centerX = 0;
@@ -236,7 +264,8 @@ class GeoMap
 /* ----------------------------------------
 QUADTREE OPTIMIZATION
 ---------------------------------------- */
-class QuadTree {
+class QuadTree 
+{
     constructor(boundary, capacity) {
         // if(DEBUG) console.log('new QuadTree',this);
         this.boundary = boundary;
@@ -325,7 +354,8 @@ class QuadTree {
     }
 }
 
-class Rectangle {
+class Rectangle 
+{
     constructor(x, y, w, h) {
         this.x = x;
         this.y = y;
@@ -352,7 +382,8 @@ class Rectangle {
 /* ----------------------------------------
 GRID OPTIMIZATION
 ---------------------------------------- */
-class Grid {
+class Grid 
+{
     constructor(size) {
         if(DEBUG) console.log('new Grid',this);
         this.size = size;
@@ -363,14 +394,12 @@ class Grid {
 
     getFriends(boid) {
         const cellID = this.getCell(boid);
-
         //only return the friends within viewing distance. 
         //it's an expensive filter but reduces the ^N complexity of the algorithm
         // return this.cells[cellID].filter((friend) => {
         //     return (boid.distance(friend) < (Boid.range * Boid.range));
         // });
-
-        return this.cells[cellID];//.slice(720);
+        return this.cells[cellID];//.slice(100);
     }
 
     insertBoids() {
@@ -385,9 +414,9 @@ class Grid {
     }
 
     getCell(boid) {
-        const col = Math.min(Math.floor(((boid.x + 1) / 2) * this.size),(this.size - 1));
-        const row = Math.min(Math.floor(((boid.x + 1) / 2) * this.size),(this.size - 1));
-        const cellID = row * this.size + col;
+        const col = Math.floor(((boid.x + 1) / 2) * this.size);
+        const row = Math.floor(((boid.y + 1) / 2) * this.size);
+        const cellID = (row * this.size) + col;
         return clamp(cellID, 0, this.cells.length - 1);
     }
 }
@@ -395,12 +424,13 @@ class Grid {
 /* ----------------------------------------
 ANIMATION ENGINE
 ---------------------------------------- */
-class Engine {
-    static fps = 120;
+class Engine 
+{
+    static fps = 60;
 
     constructor() {
         this.framePrev = window.performance.now();
-        this.frameTime = Math.floor(1000 / Engine.fps);
+        this.fpsInterval = Math.floor(1000 / Engine.fps);
         this.fpsHistory = Array(10).fill(Engine.fps);
         this.avgFPS = Engine.fps;
     }
@@ -425,15 +455,19 @@ class Engine {
     }
 
     drawFrame() {
-        updateBoids();
+        if(PLAY!==true) return;
 
+        requestAnimationFrame(engine.drawFrame);
+
+        let now = window.performance.now();
+        let elapsed = now - engine.framePrev;
+        // if(elapsed < engine.fpsInterval) return;
+
+        updateBoids();
         gl.drawArrays(gl.TRIANGLES, 0, BOID_COUNT * 3);
 
         engine.debug();
         engine.framePrev = window.performance.now();
-
-        if(PLAY!==true) return;
-        requestAnimationFrame(engine.drawFrame);
     }
 
     get fps() {
@@ -470,7 +504,8 @@ canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 const gl = canvas.getContext('webgl');
 
-class Shader {
+class Shader 
+{
     static vsSource = `
         attribute vec2 a_position;
         void main(void) {
@@ -577,7 +612,7 @@ function setup() {
     createBoids();
 
     if(OPTIMIZATION_TYPE == "grid") {
-        window.optimizer = new Grid(8);
+        window.optimizer = new Grid(2);
     } else if(OPTIMIZATION_TYPE == "quadTree") {
         window.optimizer = new QuadTree(new Rectangle(0, 0, 2, 2), 48);
     } else if(OPTIMIZATION_TYPE == "geoMap") {
