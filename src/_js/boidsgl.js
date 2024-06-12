@@ -124,16 +124,10 @@ function createBoids () {
 }
 
 var mostFriends = 0;
-var tempOptimizer = [];
 
 function updateBoids() {
     mostFriends = 0;
 
-    if(OPTIMIZATION_TYPE == "grid") {
-        tempOptimizer = new Grid(optimizer.size);
-    } else {
-        tempOptimizer = new QuadTree(new Rectangle(0, 0, 2, 2), optimizer.capacity);
-    }
 
     for (let boid of boids) {
 
@@ -194,11 +188,9 @@ function updateBoids() {
         boid.limitSpeed();
         boid.keepWithinBounds();
         boid.move();
-
-        tempOptimizer.insert(boid);
     }
 
-    optimizer = tempOptimizer;
+    optimizer.insertBoids();
 
     updateBuffer();
 }
@@ -219,7 +211,8 @@ class QuadTree {
         this.capacity = capacity;
         this.boids = [];
         this.divided = false;
-        boids.forEach(boid => this.insert(boid));
+
+        this.insertBoids();
     }
 
     subdivide() {
@@ -235,6 +228,11 @@ class QuadTree {
         this.southeast = new QuadTree(se, this.capacity);
 
         this.divided = true;
+    }
+
+    insertBoids() {
+        this.clear();
+        boids.forEach(boid => this.insert(boid));
     }
 
     insert(boid) {
