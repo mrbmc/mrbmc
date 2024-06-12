@@ -155,27 +155,31 @@ function updateBoids() {
         friendsCount = Math.max(friendsCount,friends.length);
 
         for (let otherBoid of friends) {
-            if (otherBoid === boid) continue;
+            if (otherBoid === boid || otherBoid===undefined) continue;
             const distanceSquared = boid.distance(otherBoid);
-            // const distanceSquared = 0;
-            if (distanceSquared < (Boid.range * Boid.range)) {
-                //coalesce
-                centerX += otherBoid.x;
-                centerY += otherBoid.y;
-                //align
-                avgDX += otherBoid.dx;
-                avgDY += otherBoid.dy;
+            const bNear = (distanceSquared < (Boid.range * Boid.range)) ? 1 : 0;
+            const bCollide = (distanceSquared < (Boid.minDistance * Boid.minDistance)) ? 1 : 0;
 
-                numNeighbors++;
-            }
-            //separate
-            if (distanceSquared < (Boid.minDistance * Boid.minDistance)) {
-                moveX += boid.x - otherBoid.x;
-                moveY += boid.y - otherBoid.y;
-            }
+            if(distanceSquared > (Boid.range * Boid.range)) continue;
+
+            //coalesce
+            centerX += bNear * otherBoid.x;
+            centerY += bNear * otherBoid.y;
+            //align
+            avgDX += bNear * otherBoid.dx;
+            avgDY += bNear * otherBoid.dy;
+
+            numNeighbors += bNear;
+
+            if (distanceSquared > (Boid.minDistance * Boid.minDistance)) continue;
+
+            // //separate
+            moveX += (boid.x - otherBoid.x) * bCollide;
+            moveY += (boid.y - otherBoid.y) * bCollide;
+
         }
 
-        if (numNeighbors) {
+        // if (numNeighbors) {
             //coalesce
             centerX /= numNeighbors;
             centerY /= numNeighbors;
@@ -187,6 +191,7 @@ function updateBoids() {
             boid.dx += (avgDX - boid.dx) * (Boid.alignment / 5);
             boid.dy += (avgDY - boid.dy) * (Boid.alignment / 5);
         }
+        // }
         //separate
         boid.dx += moveX * (Boid.separation / 1);
         boid.dy += moveY * (Boid.separation / 1);
