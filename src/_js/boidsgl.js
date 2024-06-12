@@ -1,16 +1,11 @@
 let DEBUG = (document.location.hostname == "localhost" || document.location.href.includes('debug'));
 var PLAY = true;
-
-clamp = function(val, min, max) {
-    return Math.max(Math.min(val, max), min);
-}
-
-const OPTIMIZATION_TYPE = "quadTree";//or "grid"
+const OPTIMIZATION_TYPE = "quadTree";//"grid" or "quadTree"
+const BOID_COUNT = 1600;
 
 /* ----------------------------------------
 BOIDS DEFINITIONS
 ---------------------------------------- */
-const BOID_COUNT = 1200;
 let boids = Array(BOID_COUNT);
 
 class Boid {
@@ -137,50 +132,55 @@ function updateBoids() {
         let avgDY = 0;
         let moveX = 0;
         let moveY = 0;
-        let numNeighbors = 1;
+        let numNeighbors = 0;
 
         var friends = optimizer.getFriends(boid);
 
         //for debugging
         mostFriends = Math.max(mostFriends,friends.length);
 
-        for (let otherBoid of friends) {
-            if (otherBoid === boid || otherBoid===undefined) continue;
-            const distanceSquared = boid.distance(otherBoid);
-            const bNear = (distanceSquared < (Boid.range * Boid.range)) ? 1 : 0;
-            const bCollide = (distanceSquared < (Boid.minDistance * Boid.minDistance)) ? 1 : 0;
 
-            if(distanceSquared > (Boid.range * Boid.range)) continue;
+        //try skipping some friends to speed things up
+        for (let otherBoid of friends) {
+
+            if (otherBoid === boid || otherBoid===undefined) continue;
+
+            //if the other boid is out of visual range, we can skip this loop
+            //we assume the collision distance is smaller than the visual distance
+            if(boid.distance(otherBoid) > (Boid.range * Boid.range)) continue;
 
             //coalesce
-            centerX += bNear * otherBoid.x;
-            centerY += bNear * otherBoid.y;
+            centerX += otherBoid.x;
+            centerY += otherBoid.y;
+
             //align
-            avgDX += bNear * otherBoid.dx;
-            avgDY += bNear * otherBoid.dy;
+            avgDX += otherBoid.dx;
+            avgDY += otherBoid.dy;
 
-            numNeighbors += bNear;
+            numNeighbors += 1;
 
-            if (distanceSquared > (Boid.minDistance * Boid.minDistance)) continue;
+            //if there's no collision we can skip this separation
+            if (boid.distance(otherBoid) > (Boid.minDistance * Boid.minDistance)) continue;
 
             // //separate
-            moveX += (boid.x - otherBoid.x) * bCollide;
-            moveY += (boid.y - otherBoid.y) * bCollide;
+            moveX += (boid.x - otherBoid.x);
+            moveY += (boid.y - otherBoid.y);
 
         }
 
-        // if (numNeighbors) {
-            //coalesce
-            centerX /= numNeighbors;
-            centerY /= numNeighbors;
-            boid.dx += (centerX - boid.x) * (Boid.cohesion / 500);
-            boid.dy += (centerY - boid.y) * (Boid.cohesion / 500);
-            //align
-            avgDX /= numNeighbors;
-            avgDY /= numNeighbors;
-            boid.dx += (avgDX - boid.dx) * (Boid.alignment / 5);
-            boid.dy += (avgDY - boid.dy) * (Boid.alignment / 5);
-        // }
+        numNeighbors = Math.max(numNeighbors,1);
+
+        //coalesce
+        centerX /= numNeighbors;
+        centerY /= numNeighbors;
+        boid.dx += (centerX - boid.x) * (Boid.cohesion / 500);
+        boid.dy += (centerY - boid.y) * (Boid.cohesion / 500);
+        //align
+        avgDX /= numNeighbors;
+        avgDY /= numNeighbors;
+        boid.dx += (avgDX - boid.dx) * (Boid.alignment / 5);
+        boid.dy += (avgDY - boid.dy) * (Boid.alignment / 5);
+
         //separate
         boid.dx += moveX * (Boid.separation / 1);
         boid.dy += moveY * (Boid.separation / 1);
@@ -498,6 +498,10 @@ class Shader {
 /* ----------------------------------------
 CORE APP FUNCTIONS
 ---------------------------------------- */
+clamp = function(val, min, max) {
+    return Math.max(Math.min(val, max), min);
+}
+
 function initControls() {
     window.addEventListener('keydown', function(e) {
         switch (e.keyCode) {
@@ -543,7 +547,7 @@ function setup() {
     if(OPTIMIZATION_TYPE == "grid") {
         window.optimizer = new Grid(6);
     } else {
-        window.optimizer = new QuadTree(new Rectangle(0, 0, 2, 2), 640);
+        window.optimizer = new QuadTree(new Rectangle(0, 0, 2, 2), 48);
     }
 
     initControls();
