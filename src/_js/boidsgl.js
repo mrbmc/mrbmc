@@ -10,7 +10,8 @@ const optimizer = "grid";//or "grid"
 /* ----------------------------------------
 BOIDS DEFINITIONS
 ---------------------------------------- */
-let boids = Array(1500);
+const BOID_COUNT = 1500;
+let boids = Array(BOID_COUNT);
 
 class Boid {
     static size = 0.005;
@@ -118,7 +119,7 @@ class Boid {
 function createBoids () {
     if(DEBUG) console.log('createBoids',arguments);
 
-    boids = Array.from({ length: boids.length }, () => new Boid());
+    boids = Array.from({ length: BOID_COUNT }, () => new Boid());
     updateBuffer();
 }
 
@@ -256,7 +257,7 @@ class QuadTree {
             return false;
         }
 
-        if (this.boids.length < this.capacity) {
+        if (this.BOID_COUNT < this.capacity) {
             this.boids.push(boid);
             return true;
         } else {
@@ -399,7 +400,7 @@ class Engine {
         gl.enableVertexAttribArray(shader.programInfo.attribLocations.vertexPosition);
         gl.useProgram(shader.programInfo.program);
 
-        gl.drawArrays(gl.TRIANGLES, 0, boids.length * 3);
+        gl.drawArrays(gl.TRIANGLES, 0, BOID_COUNT * 3);
 
         requestAnimationFrame(engine.drawFrame);
     }
@@ -407,7 +408,7 @@ class Engine {
     drawFrame() {
         updateBoids();
 
-        gl.drawArrays(gl.TRIANGLES, 0, boids.length * 3);
+        gl.drawArrays(gl.TRIANGLES, 0, BOID_COUNT * 3);
 
         engine.debug();
         engine.framePrev = window.performance.now();
@@ -432,7 +433,7 @@ class Engine {
         this.avgFPS = Math.round(this.fpsHistory.reduce((a, b) => a + b) / avgSize);
 
         let str = `fps: ${this.avgFPS}\n`;
-            str += `bds: ${boids.length}\n`;
+            str += `bds: ${BOID_COUNT}\n`;
             str += `friends: ${mostFriends}\n`;
             str += `optimizer: ${optimizer}\n`;
 
