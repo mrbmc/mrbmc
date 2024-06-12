@@ -191,7 +191,6 @@ function updateBoids() {
             avgDY /= numNeighbors;
             boid.dx += (avgDX - boid.dx) * (Boid.alignment / 5);
             boid.dy += (avgDY - boid.dy) * (Boid.alignment / 5);
-        }
         // }
         //separate
         boid.dx += moveX * (Boid.separation / 1);
