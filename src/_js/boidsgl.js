@@ -1,7 +1,7 @@
 let DEBUG = (document.location.hostname == "localhost" || document.location.href.includes('debug'));
 var PLAY = true;
-const OPTIMIZATION_TYPE = "quadTree";//"grid" or "quadTree"
-const BOID_COUNT = 1600;
+const OPTIMIZATION_TYPE = "grid";//"grid" or "quadTree" or "geoMap"
+const BOID_COUNT = 1200;
 
 /* ----------------------------------------
 BOIDS DEFINITIONS
@@ -119,10 +119,10 @@ function createBoids () {
 }
 
 var mostFriends = 0;
+let positions = [];
 
 function updateBoids() {
     mostFriends = 0;
-
 
     for (let boid of boids) {
 
@@ -139,8 +139,6 @@ function updateBoids() {
         //for debugging
         mostFriends = Math.max(mostFriends,friends.length);
 
-
-        //try skipping some friends to speed things up
         for (let otherBoid of friends) {
 
             if (otherBoid === boid || otherBoid===undefined) continue;
@@ -162,7 +160,7 @@ function updateBoids() {
             //if there's no collision we can skip this separation
             if (boid.distance(otherBoid) > (Boid.minDistance * Boid.minDistance)) continue;
 
-            // //separate
+            //separate
             moveX += (boid.x - otherBoid.x);
             moveY += (boid.y - otherBoid.y);
 
@@ -196,9 +194,43 @@ function updateBoids() {
 }
 
 function updateBuffer() {
-    const _positions = new Float32Array(boids.flatMap(boid => boid.getVertices()));
+    positions = new Float32Array(boids.flatMap(boid => boid.getVertices()));
     gl.bindBuffer(gl.ARRAY_BUFFER, shader.positionBuffer);
-    gl.bufferData(gl.ARRAY_BUFFER, _positions, gl.DYNAMIC_DRAW);
+    gl.bufferData(gl.ARRAY_BUFFER, positions, gl.DYNAMIC_DRAW);
+}
+
+/* ----------------------------------------
+GEOMAP OPTIMIZATION
+---------------------------------------- */
+class GeoMap 
+{
+    constructor (vals) {
+        // this.boids = new Float32Array(vals);
+    }
+
+    insertBoids() {
+        // this.boids = boids.flatMap(boid => [boid.x,boid.y]);
+    }
+
+    getFriends(boid) {
+        var x_max = boid.x + Boid.range,
+            x_min = boid.x - Boid.range,
+            y_max = boid.y + Boid.range,
+            y_min = boid.y - Boid.range;
+
+        return boids.filter((friend)=>{
+            return (friend.x > x_min && friend.x < x_max && friend.y > y_min && friend.y < y_max);
+        });
+
+
+        for(let i = 0; i < this.boids.length; i += 2) {
+            var x = this.boids[i];
+            var y = this.boids[i+1];
+            if(x > x_min && x < x_max && y > y_min && y < y_max)
+                results.push(boids[i]);
+        }
+        return results;
+    }
 }
 
 /* ----------------------------------------
@@ -338,7 +370,7 @@ class Grid {
         //     return (boid.distance(friend) < (Boid.range * Boid.range));
         // });
 
-        return this.cells[cellID];
+        return this.cells[cellID];//.slice(720);
     }
 
     insertBoids() {
@@ -545,10 +577,13 @@ function setup() {
     createBoids();
 
     if(OPTIMIZATION_TYPE == "grid") {
-        window.optimizer = new Grid(6);
-    } else {
+        window.optimizer = new Grid(8);
+    } else if(OPTIMIZATION_TYPE == "quadTree") {
         window.optimizer = new QuadTree(new Rectangle(0, 0, 2, 2), 48);
+    } else if(OPTIMIZATION_TYPE == "geoMap") {
+        window.optimizer = new GeoMap(BOID_COUNT * 2);
     }
+
 
     initControls();
     engine.drawFirstFrame();
