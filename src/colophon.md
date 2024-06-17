@@ -56,7 +56,7 @@ Transportation provided by custom-built bikes:
 
 ### Typography
 
-The primary typeface is [Tomato Grotesk](https://www.thedesignersfoundry.com/tomato-grotesk/) by [The Designers Foundry](https://www.thedesignersfoundry.com/).
+The primary typeface is Helvetica Neue.
 
 For extended prose we use a native serif: Hoefler on MacOS & iOS, Palatino on Android and Windows.
 

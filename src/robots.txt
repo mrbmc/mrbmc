@@ -1,6 +1,9 @@
 User-agent: ClaudeBot
 Disallow: /
 
+User-agent: GPTBot
+Disallow: /
+
 User-agent: ImagesiftBot
 Disallow: /
 
@@ -24,6 +27,5 @@ Disallow: /lib
 Disallow: /less
 Disallow: /downloads
 Disallow: /images/uploads
-
 
 Sitemap: https://www.brianmcconnell.me/sitemap.xml

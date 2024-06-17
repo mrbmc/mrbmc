@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Book Review - Worn.md",
+                "file": "bike-tour-2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Book Review - Worn.md",
+                "file": "bike-tour-2023.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Book Review - Worn.md",
+                "file": "bike-tour-2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Book Review - Worn.md"
+                "file": "bike-tour-2023.md"
               }
             }
           }
@@ -162,9 +162,9 @@
   },
   "active": "3208adf153159279",
   "lastOpenFiles": [
+    "Book Review - Worn.md",
     "intentional-consumption.md",
     "bike-tour-2023.md",
-    "Book Review - Worn.md",
     "design-for-durability.md",
     "design-is-never-done.md",
     "designers-hierarchy-of-needs.md",

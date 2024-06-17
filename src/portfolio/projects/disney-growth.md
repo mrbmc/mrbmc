@@ -1,6 +1,6 @@
 ---
 title: Disney+ Growth Design
-date: 2020-02-01
+date: 2020-12-01
 thumbnail: /images/portfolio/disney-growth/disney-growth.png
 eleventyExcludeFromCollections: false
 category:
@@ -144,7 +144,7 @@ At the inception of work on Disney+ the "Growth" design team was 3 designers + 1
 
 Given the scope of features, devices, and countries this team needed to grow.
 
-![Growth Team in 2018](/images/portfolio/disney-growth/growth-team-start.svg){.center style="padding: 4rem;box-sizing:border-box;"}
+![Growth Team in 2018](/images/portfolio/disney-growth/growth-team-start.png){.center style="padding: 4rem;box-sizing:border-box;"}
 Growth Team - January 2019{.caption}
 #### Solution
 
@@ -160,7 +160,7 @@ After considering functional and matrix designs, we agreed to organize around KP
 
 We then expanded this model to more teams from Data and Marketing (and eventually Operations) and added names. Each of these teams had the autonomy to self-organize around which tactics and processes they used to deliver against the KPIs.
 
-![Pods](/images/portfolio/disney-growth/pod-slide.svg)  
+![Pods](/images/portfolio/disney-growth/pod-structure.png)  
 Example Pod{.caption}
 
 Each pod was able to create their own ways of working, but generally, they found a 2 week cadence of ceremonies to stay in sync, prioritize work, flatten issues, and break out working groups.
@@ -174,7 +174,7 @@ Over the 18 months from inception until Launch, I grew the Growth team to 1 Desi
 
 I was able to mentor two new designer leaders into positions leading their own teams, with autonomy to deliver against clear KPIs.
 
-![](/images/portfolio/disney-growth/growth-team-end.svg){.center}
+![](/images/portfolio/disney-growth/growth-team-end.png){.center}
 Growth Team in December 2020 {.caption}
 
 ### Experience Tenets{#ux-tenets}

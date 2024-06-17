@@ -153,9 +153,10 @@ The right tool for the right job. Some people really care a lot about this so he
 - Nitto B347AA Dove Handlebars
 - Oury grips
 - Dura-ace bar end shifters
+- [TRP Spyre mechanical disc brakes](https://trpcycling.com/products/spyre)
 - Tektro FL750 Brake Levers
 - [Velo Orange Grand Cru Crankset](https://velo-orange.com/collections/cranks/products/grand-cru-50-4bcd-crankset-mkii) (46/30)
-- Shimano 105 r5800 Derailleurs (front & back)
+- [Shimano 105 r5800 Derailleurs](https://bike.shimano.com/en-US/product/component/105-5800/RD-5800-GS.html) (front & back)
 - Shimano 105 Cassette 11-34
 - [Velocity Ailerons](https://www.velocityusa.com/product/wheels/road/aileron-comp-wheelset)
 - Panaracer Gravelking Slick 42mm (Tubeless)
