@@ -1,6 +1,13 @@
+/app
+/owa/
+/login/
+.aws
 .env
 .git
 .php
+.local
+.remote
+.production
 admin
 ads.txt
 AhrefsBot
