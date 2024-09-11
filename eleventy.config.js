@@ -136,7 +136,7 @@ module.exports = function(eleventyConfig) {
   //     // key: "./localhost.key",
   //     // cert: "./localhost.cert",
   //   },
-    // port: 9999,
+    port: 9999,
     showVersion: true,
     watch: ["www/css/screen.css","www/css/gaia.css","www/js/mrbmc.min.js"],
   });
