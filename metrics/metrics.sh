@@ -14,6 +14,7 @@ local usage=(
 local startm=01;
 local endm=12;
 
+goaccess_opt="--no-progress --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz='America/New York'"
 
 
 
@@ -62,15 +63,13 @@ function parse () {
 
 	for i in {$startm..$endm}
 	do
-		echo "2024-$i scrubbing";
+		echo "Cleaning 2024-$i";
 		grep  -E -v -i -f $BASE/blacklist.txt $BASE'/logs/log_raw_2024-'$i > $BASE'/logs/log_clean_2024-'$i
 	done
 
-	echo "concatenating"
+	echo "Concatenating 2024"
 	zcat -f $BASE/logs/log_clean_2024-* > $BASE/logs/log_clean;
 }
-
-
 
 function analyze () {
 
@@ -78,22 +77,37 @@ function analyze () {
 	echo "ANALYZING DATA";
 	echo "* * * * * * * * * * * * * * * * * *";
 
+
+
 	for i in {$startm..$endm}
 	do
-		# echo "2024-$i analyzing";
-		goaccess $BASE'/logs/log_clean_2024-'$i -o $BASE'/../metrics/www/2024'$i'.html' --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"
-		# goaccess $BASE'/logs/log_raw_2024-'$i -o $BASE'/../metrics/www/2024'$i'-raw.html' --log-format=CLOUDFRONT --no-query-string --tz="America/New York"
+		# clean logs
+
+		echo "Analyzing 2024-$i";
+		goaccess_cmd="goaccess $BASE/logs/log_clean_2024-$i -o $BASE/www/2024$i.html ";
+		goaccess_cmd+="$goaccess_opt";
+		eval ${goaccess_cmd}
+
+		# raw logs
+		goaccess_cmd="goaccess $BASE/logs/log_raw_2024-$i -o $BASE/www/2024$i-raw.html ";
+		goaccess_cmd+="$goaccess_opt";
+		# eval ${goaccess_cmd}
 	done
 
-	echo "Analyzing Periods";
-	sed -n '/2024\-'$(date -v-7d +%m)'\-'$(date -v-7d +%d)'/,/2024\-'$tomonth'\-'$todate'/ p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/l7.html --log-format=CLOUDFRONT --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"
-	sed -n '/2024\-'$(date -v-30d +%m)'\-'$(date -v-30d +%d)'/,/2024\-'$tomonth'\-'$todate'/ p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/l30.html --log-format=CLOUDFRONT --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"
+
+
+	periods_opt=('7d' '30d' '90d')
+	for n in $periods_opt
+	do
+		echo "Analyzing -$n";
+		sed_cmd="sed -n '/2024\-'$(date -v-$n +%m)'\-'$(date -v-$n +%d)'/,/2024\-'$tomonth'\-'$todate'/ p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/l$n.html $goaccess_opt";
+		eval ${sed_cmd}
+	done
 
 	if [[ "$arg_term[-1]" = "all" ]]; then
-		sed -n '/2024\-'$(date -v-90d +%m)'\-'$(date -v-90d +%d)'/,/2024\-'$tomonth'\-'$todate'/ p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/l90.html --log-format=CLOUDFRONT --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"	
-
 		echo "Analyzing 2024";
-		zcat -f $BASE/logs/log_clean_2024-* | goaccess  -o $BASE'/../metrics/www/2024.html' --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"
+		sed_cmd="zcat -f $BASE/logs/log_clean_2024-* | goaccess  -o $BASE'/../metrics/www/2024.html' $goaccess_opt";
+		eval ${sed_cmd}
 	fi
 
 }
