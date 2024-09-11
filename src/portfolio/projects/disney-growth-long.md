@@ -2,10 +2,10 @@
 title: Disney+ Growth Design
 date: 2020-12-01
 thumbnail: /images/portfolio/disney-growth/disney-growth.png
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 category:
   - work
-summary: The story of building Growth Design - the team, process, and product - to launch Disney+ from 0 to 105M subscribers in two years.
+summary: This is the story of building the Growth Design program - the team, process, and product - to launch Disney+ from 0 to 105M subscribers in two years.
 timeline: 2018-2020
 parallaxHeading:
   - "-1"
@@ -13,6 +13,7 @@ parallaxHeading:
 ![](/images/portfolio/disney-growth/disney-growth.png){.fullwidth style="object-fit:contain;"}
 
 
+<!--This is the story of how we launched Disney+ and grew it from **0 to 105M subscribers** in two years. It was my mission to build "Growth Design" - the team, process, and outcomes - from inception into a 13-person cross-discipline program.{.large}-->
 
 | Role                            | Responsibilities                                                                     | Team                                                         | Timeline            |
 | :------------------------------ | :----------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------------------ |
@@ -45,19 +46,24 @@ parallaxHeading:
 
 {.stickynav}
 
-Building Disney+ was an adventure. Adventures rarely follow a straight line of progress so I've included just a few of the most interesting UX challenges we faced in the multi-year saga of launching Disney+.
+Building Disney+ was an adventure. Adventures rarely follow a straight line of progress. You often venture off the beaten path, climb over obstacles, or take one step back and two steps sideways to make progress. I've included just a few of the most interesting UX challenges we faced in the multi-year saga of launching Disney+.
 
 ## Chapter 1: Basecamp{#basecamp .section}
 
 ### The Strategy{#strategy}
 
-![](/images/portfolio/disney-growth/disney-synergy-chart.jpg){style="float:right; width:38%;margin-left: 1rem;"}
+Understanding Disney's overarching strategy is important for rationalizing design decisions we made later.
+#### Strategic Diagnosis 
 
-By 2017 Disney recognized declining revenue from legacy distribution channels: theatrical, cable, DVD, and licensing.  At the same time, the business model for The Walt Disney Company is different from their competitors thanks to a diverse set of revenue streams. Establishing a direct relationship with consumers could be used to drive the flywheel for other lines of business.
+In 2017 Disney recognized declining revenue from legacy distribution channels: theatrical, cable, DVD, and licensing. That decline, coupled with a dependency on third-parties for customer data, was creating significant headwinds for the business.
+
+At the same time, the business model for The Walt Disney Company is different from their competitors thanks to a diverse set of revenue streams. Establishing a direct relationship with consumers could be used to drive the flywheel for other lines of business.
+
+![](/images/portfolio/disney-growth/disney-synergy-chart.jpg)
 
 #### Strategic Policy
 
-The internally stated goal for Disney+ was to acquire as many subscribers as possible. Profitability was a distant goal on the horizon. We used these tactics to succeed:
+The internally stated goal for Disney+ was to acquire as many subscribers as possible. Profitability was a distant goal on the horizon. We aimed to accomplish this goal with two main tactics:
 
 1. **Broad Distribution**  
    Make Disney+ available on every device that could stream video, with a purchase flow that was *native* to those devices.
@@ -67,18 +73,33 @@ The internally stated goal for Disney+ was to acquire as many subscribers as pos
    The $5.99 price at launch was far below competitors.
 
 ### Growth Origin Story {#origin-story}
+#### Situation
 
-The Growth Design team began work long before Disney+ launched; before Disney acquired BAMTech for its ability to build *content businesses*: streaming, commerce, and marketing. Most of the team had already launched & operated dozens of direct-to-consumer services as part of *MLB Advanced Media*.
+The Growth Design team began work long before Disney+ launched; before Disney acquired BAMTech to build its streaming services; even before BAMTech existed. Many of the people on the teams involved had already launched & operated dozens of direct-to-consumer services as part of *MLB Advanced Media*.
 
 ![placebolder image: logo cluster of streaming services we'd launched](/images/portfolio/disney-growth/mlbam-clients-grayscale.png){.canzoom}
 
-18 months before Disney+ we designed & built Disney's first direct-to-consumer offering in **ESPN+**. That [project deserves its own case study](/portfolio/espn), but I want to call out that much of the foundation for **Signup**, **Payment**, **Login**, and Subscription Management was established in the ESPN+ launch. The core of the Growth Design team carried over from that project.
+Disney acquired BAMTech for its ability to build *content businesses*. In addition to the technology for streaming high-quality video over the internet, BAMTech had the commerce platform turnstile UX to sell content directly to consumers at scale. That experience gave us a basecamp from which to begin our expedition up Disney+. We already had the infrastructure for many core Growth features:
 
-![Signup on Web, direct payment, anonymous users](/images/portfolio/disney-growth/espn-web-anon-flow.jpg){.canzoom style="height:50vh;object-fit:fill;"}
+* Sign-Up
+* Subscribe
+* Log-In
+* Onboarding
+* Account Management
+* Subscription Management
+#### Challenge
+
+18 months before Disney+ we designed & built Disney's first direct-to-consumer offering in **ESPN+**. That [project deserves its own case study](/portfolio/espn), but I want to call out that much of the foundation for Signup, Login, and Subscription Management was established in the ESPN+ launch. The core of the Growth Design team carried over from that project.
+
++ ![Signup on Web, direct payment, anonymous users](/images/portfolio/disney-growth/espn-web-anon-flow.jpg)
++ ![Signup on TV, direct payment, known users.](/images/portfolio/disney-growth/espn-ott-known-flow.jpg)
++ ![Signup on mobile, IAP payment, known users.](/images/portfolio/disney-growth/espn-mobile-known-flow.jpg)
++ ![White labeled signup flows.](/images/portfolio/disney-growth/white-label.png)
+{.gallery}
 
 ### The Mountain of Scope {#full-scope}
 
-The complete scope of surface areas for Disney+ Growth can be organized around several vectors. This intersectionality means each feature might have **9 variations** of interaction design.
+The complete scope of surface areas for Disney+ Growth can be organized around a few key vectors that intersect. That intersectionality means each feature might have 9 variations of interaction design.
 
 > Features  x Devices x Payment Terms
 
@@ -119,27 +140,30 @@ The complete scope of surface areas for Disney+ Growth can be organized around s
 
 #### Situation & Challenge
 
-At the inception of work on Disney+ the "Growth" design team was 3 designers + 1 UX researcher.  We worked well with engineers and product owners needed to grow the team in breadth and depth.
+At the inception of work on Disney+ the "Growth" design team was 3 designers + 1 UX researcher.  We had always worked well with engineers and product owners but not with the degree of specialization or scale that we needed.
+
+Given the scope of features, devices, and countries this team needed to grow.
+
 ![Growth Team in 2018](/images/portfolio/disney-growth/growth-team-start.png){.center style="padding: 4rem;box-sizing:border-box;"}
 Growth Team - January 2019{.caption}
 #### Solution
 
-I tackled this scale problem with my peer Directors and VP of Product, and later Data, and Marketing. We aimed for a modular structure, that could grow,  while still providing **clear swimlanes**, **accountability**, and **autonomy**. 
+Scaling the team to meet the massive scope was another design challenge I tackled with my peer Directors and VP of Product. We aimed for a modular structure, that could scale up,  while still providing **clear swimlanes**, **accountability**, and **autonomy**. 
 
-We considered functional and matrix designs, before agreeing to organize around KPIs that each group of people could chase after. This also roughly correlated to the user journey. We called these "Pods":
+After considering functional and matrix designs, we agreed to organize around KPIs that each group of people could chase after. This also roughly correlated to the user journey. We called these "Pods":
 
-| Pod         | KPIs                                                            |     |
-| ----------- | --------------------------------------------------------------- | --- |
-| Acquisition | Sign Up CTR, Log In CTR                                         |     |
-| Conversion  | Accounts Created,  Purchases Completed, Upsells to Higher Tiers |     |
-| Expansion   | Accounts Created,  Purchases Completed, Partnerships            |     |
+| Pod | KPIs |
+| ---- | ---- |
+| Acquisition | Sign Up CTR, Log In CTR |
+| Conversion | Accounts Created,  Purchases Completed, Upsells to Higher Tiers |
+| Expansion | Accounts Created,  Purchases Completed, Partnerships | 
 
-
+We then expanded this model to more teams from Data and Marketing (and eventually Operations) and added names. Each of these teams had the autonomy to self-organize around which tactics and processes they used to deliver against the KPIs.
 
 ![Pods](/images/portfolio/disney-growth/pod-structure.png)  
 Example Pod{.caption}
 
-Each pod had the autonomy to self-organize around their tactics and processes needed to deliver against the KPIs. They mostly found a 2 week cadence of ceremonies to stay in sync, prioritize work, flatten issues, and break out working groups.
+Each pod was able to create their own ways of working, but generally, they found a 2 week cadence of ceremonies to stay in sync, prioritize work, flatten issues, and break out working groups.
 
 ![Pods](/images/portfolio/disney-growth/pod-cadence.svg)  {.fullwidth}
 

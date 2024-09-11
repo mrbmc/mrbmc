@@ -42,7 +42,8 @@ body.home {
             height: (100vh);
         }
         @media (orientation: portrait) {
-            height: 62vh;
+            height: auto;
+            min-height: (68vh);
         }
 
         figure {
@@ -53,13 +54,20 @@ body.home {
             color: $textBoldColor;
         }
         h1{
+            $iconsize: 3.6em;
+            position: relative;
+            padding-right: calc($iconsize + $spacerHorizontal);
+            box-sizing: border-box;
             &:before {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: ($iconsize * -0.5);
                 content: "";
                 background: url(/images/profile/kageki-crane.svg);
                 background-repeat: no-repeat;
                 display: block;
                 filter: invert(34%) sepia(77%) saturate(1900%) hue-rotate(8deg) brightness(98%) contrast(104%);
-                $iconsize: 3.6em;
                 @media (orientation: landscape) {
                     float: right;
                     width: $iconsize;
@@ -68,12 +76,16 @@ body.home {
                     background-position: right center;
                 }
                 @media (orientation: portrait) {
+                    position: static;
                     // $iconsize: 2em;
                     width: 100%;
                     height: $iconsize;
                     background-size: $iconsize;
-                    background-position: left center;
+                    background-position: center center;
                 }
+            }
+            @media (orientation: portrait) {
+                padding-right: 0;
             }
             & > em {
                     background: linear-gradient($_indigo, $_teal, $_pink);

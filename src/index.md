@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: false
 
 <section id="masthead" class="bio">
 
-# Designing _humane_ software since the late 1900s.
+# _Humane_ product design since the late 1900s.
 
 <!-- My family calls me Brian, my friends call me BMC. I am a curious, strategic, and adaptable* design leader who has been building digital products since the late 1900s. -->
 

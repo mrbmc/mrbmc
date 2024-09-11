@@ -27,12 +27,9 @@ body.portfolio.list {
         flex: 1 0 100%;
         justify-content: center;
         margin: $spacerVertical 0;
-        // min-height: 100vh;
 
         @media (orientation: portrait) {
-            // min-height: auto;
             flex: 1 0 calc(50% - $spacerHorizontal);
-            // margin-bottom: ($spacerVerticalPhone * 4);
         }
         @media (max-width: $breakpointPhone) {
             flex: 1 0 100%;
@@ -56,10 +53,11 @@ body.portfolio.list {
             width: 100%;
             margin: 0;
             padding: 0;
-            border-radius: .125rem;
+            border-radius: .5rem;
             // box-shadow: 0 2px 8px $shadowColor, 0 8px 24px $shadowColor;
             transform: scale(1);
             background: transparent;
+            transition: all $animateSpeed $animateEasing;
             a {
                 display: block;
             }
@@ -72,6 +70,7 @@ body.portfolio.list {
                 box-sizing: border-box;
                 filter: saturate(50%);
                 transition: all $animateSpeed $animateEasing;
+                transform: scale(1);
                 @media (orientation: portrait) {
                     height: auto;
                 }
@@ -80,9 +79,8 @@ body.portfolio.list {
 
         &:hover {
             z-index: 3;
-            // transform: scale(1.05);
             figure {
-                // box-shadow: 0 2px 8px $shadowColor, 0 2px 8px $shadowColor, 0 8px 24px $shadowColor, 0 8px 24px $shadowColor;
+                transform: scale(1.025);
             }
             img {
                 filter: saturate(100%);
