@@ -43,7 +43,7 @@ html {
     // -moz-osx-font-smoothing: grayscale;
     // font-smooth: never;
     // font-size: $baseFontSize;
-    font-size: clamp(18px, 1.8vw, 72px);
+    font-size: clamp(18px, 1.8vw, 32px);
 }
 
 body {
@@ -63,9 +63,9 @@ h1,h2,h3,h4,h5 {
         font-weight: $displayFontWeight;
     }
 }
-$typeScale: 1.3;//each size is this much larger than the predecessor
+$typeScale: 1.19;//each size is this much larger than the predecessor
 h1 {
-    @include typeset($displayFontFamily, $displayFontWeight, (1rem * pow($typeScale,4)), 1.2, -0.05em);
+    @include typeset($displayFontFamily, $displayFontWeight, (1rem * pow($typeScale,5)), 1.2, -0.05em);
     // text-transform: uppercase;
 }
 h2 {
@@ -99,7 +99,7 @@ em {
     @include largeType;
 }
 @mixin smallType {
-    font-size: math.div(1rem, $typeScale);
+    font-size: 1em + (1 - $typeScale);
 }
 .small,.smallType {
     @include smallType;
