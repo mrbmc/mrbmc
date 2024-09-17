@@ -151,8 +151,8 @@
     display: flex;
     margin-right: auto;
 
-    @media (min-width: $gridLimit) {
-        margin-left: calc((100vw - $gridLimit) * -0.5);
+    @media (min-width: $gridWidth) {
+        margin-left: calc((100vw - $gridWidth) * -0.5);
     }
 
     @media (orientation: portrait) {

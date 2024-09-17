@@ -87,8 +87,8 @@ body.home {
         }
         .crane {
             position: absolute;
-            max-width: $gridLimit;
-            left: calc((100vw - $gridLimit)/2);
+            max-width: $gridWidth;
+            left: calc((100vw - $gridWidth)/2);
             // margin-top: ($iconsize * -0.5);
             content: "";
             text-align: right;

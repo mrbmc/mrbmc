@@ -84,11 +84,10 @@ $navbarBrandColor:                $navbarLinkColor;
 // GRID
 // --------------------------------------------------
 $gridColumns:             12;
-$gridWidth:               96vw;
-$gridGutterWidth:         2vw;
+$gridWidth:               40rem;
+$gridGutterWidth:         1rem;
 $gridColumnWidth:         math.div(($gridWidth - (($gridColumns - 1) * $gridGutterWidth)), $gridColumns);
-$gridMargin: 			  math.div((100vw - $gridWidth),2);
-$gridLimit: 			  40rem;
+$gridMargin: 			  math.div(calc(100vw - $gridWidth),2);
 
 $spacerHorizontal:          $gridGutterWidth;
 $spacerVertical:            2rem;
