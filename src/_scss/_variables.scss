@@ -93,7 +93,7 @@ $gridColumns:             	6;
 $gridWidth:               	40rem;
 $gridGutterWidth:         	$spacerHorizontal;
 $gridColumnWidth:         	math.div(($gridWidth - (($gridColumns - 1) * $gridGutterWidth)), $gridColumns);
-$gridMargin: 			  	math.div(calc(100vw - $gridWidth),2);
+$gridMargin: 			  	calc((100vw - $gridWidth) / 2);
 
 $breakpointWidescreen:      1201px;
 $breakpointWidescreen-1:    ($breakpointWidescreen - 1px);

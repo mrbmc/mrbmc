@@ -359,9 +359,6 @@ ol.sidenav {
         }
     }
 
-    &.stuck {
-        margin-left: (0 - $gridMargin);
-    }
     ol {
         display: none;
         position: absolute;
