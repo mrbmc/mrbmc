@@ -107,21 +107,17 @@ nav.pagination {
 
 p.gallery,div.gallery-wrap {
     @include fullWidth(100vw);
-    background: $wellBackground;
+    display: block;
     margin-bottom: $spacerVertical;
-    flex-direction: column;
+    background: $wellBackground;
+    overflow: auto;//this prevents collapsing margins
 
     .image-detail {
-        width: 100%;
-        height: 90vh;
-        padding: 0em 0;
-        object-fit: contain;
+        width: auto;
+        height: calc(84vh - ($spacerVertical * 1));
+        padding: 0;
+        margin: ($spacerVertical * 0.5) auto;
         display: block;
-        position: static;
-        object-position: center center;
-        box-sizing: border-box;
-        // .box-shadow(.5em 0 1em rgba(0,0,0,0.1));
-        cursor: zoom-in;
 
         @media (orientation: portrait) {
             max-height: 62vw;
@@ -134,37 +130,39 @@ p.gallery,div.gallery-wrap {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        margin: 0;
+        margin: 0 0 ($spacerVertical * 0.25);
         padding: 0;
 
         overflow-x: scroll;
-        overflow-y: hidden;
+        overflow-y: auto;
         &::-webkit-scrollbar {
             -webkit-appearance: none;
         }
-    // &::-webkit-scrollbar:horizontal {
-    //     height: 12px;
-    // }
-    // &::-webkit-scrollbar-thumb {
-    //     border-radius: 12px;
-    //     border: 2px solid $wellBackground; /* should match background, can't be transparent */
-    //     background-color: $textOffColor;
-    // }
-    // &::-webkit-scrollbar-track { 
-    //     background-color: $wellBackground; 
-    // } 
+        &::-webkit-scrollbar:horizontal {
+            height: ($spacerVertical * 0.25);
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: $spacerVertical;
+            border: 2px solid $wellBackground; /* should match background, can't be transparent */
+            background-color: $brandColor20;
+        }
+        &::-webkit-scrollbar-track { 
+            background-color: $wellBackground; 
+        } 
 
         li {
             list-style: none;
-            margin: 1.5vh 1em;
-            text-align: center;
+            margin: 0 ($spacerHorizontal * 0.5);
 			color: $textOffColor;
 			@include smallType();
             img {
                 display: block;
-                height: 7vh;
-                width: 100%;
-                object-fit: contain;
+                height: calc(16vh - ($spacerVertical * 0.5));
+                width: auto;
+                object-position: top center;
+                object-fit: cover;
+                padding: 0;
+                margin: 0;
             }
             p {
                 margin: 0;
