@@ -63,7 +63,7 @@ body.home {
         }
     
         p {
-            // @include largeType;
+            @include largeType;
             z-index: 1;
             &:last-of-type {
                 z-index: 2;
@@ -76,7 +76,7 @@ body.home {
             }
         }
 
-        $iconsize: 13rem;
+        $iconsize: 19vw;
         @media (orientation: landscape) {
             h1,h2,p.bio {
                 box-sizing: border-box;
@@ -96,7 +96,7 @@ body.home {
                 position: static;
                 margin: $spacerVerticalPhone auto;
 
-                $iconsize: 5rem;
+                $iconsize: 19vh;
                 width: $iconsize;
                 height: $iconsize;
             }
@@ -136,8 +136,14 @@ body.home {
         //     transform: translateZ(0);
         // }
     }
-    .project-list,.blog {
-        padding-top: $spacerVertical;
+    // .project-list,.blog {
+    //     padding-top: $spacerVertical;
+    // }
+    section {
+        margin-bottom: $spacerVertical;
+        @media (orientation: portrait) {
+            margin-bottom: $spacerVerticalPhone;
+        }
     }
     .project-list {
         h2 {

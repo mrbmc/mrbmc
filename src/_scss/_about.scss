@@ -106,35 +106,37 @@ body.about {
 ul.timeline {
     @include card;
 
-    // width: 62%;
-    margin: 0 ($spacerHorizontal * 2);
+    margin: $spacerVertical ($spacerHorizontal * 2);
     @media (orientation: portrait) {
-        margin: 0 ($spacerHorizontalPhone * 2);
+        margin: $spacerVerticalPhone 0;
     }
 
     li {
-        margin-left: 0;
-        // margin-top: 0;
-        // margin-bottom: 0;
-        // padding: 8px 8px 8px 24px;
+        margin: 0;
         position: relative;
-        padding-left: 1em;
-        border-left: 2px solid var(--black);
+        padding: 0 0 $spacerVertical $spacerHorizontal;
+        @media (orientation: portrait) {
+            padding: 0 0 $spacerVerticalPhone $spacerHorizontalPhone;
+        }
+        border-left: 2px solid $textOffColor;
         list-style: none;
-        padding-bottom: $spacerVertical;
         &:last-of-type {
             padding-bottom: 0;
         }
         &:before {
             display: inline-block;
             content: "";
-            width: 12px;
-            height: 12px;
-            @include border-radius(10px);
-            margin-left: calc(-1em - 7px);
-            margin-right: 1em;
-            background: var(--black);
+            $bullet-size: .62rem;
+            width: $bullet-size;
+            height: $bullet-size;
+            @include border-radius(1em);
+            margin: 0 $spacerHorizontal 0 calc(($spacerHorizontal * -1) - ($bullet-size * .5) - 1px);
+            @media (orientation: portrait) {
+                margin: 0 $spacerHorizontalPhone 0 calc(($spacerHorizontalPhone * -1) - ($bullet-size * .5) - 1px);
+            }
+            background: $textOffColor;
         }
+
     }
 }
 

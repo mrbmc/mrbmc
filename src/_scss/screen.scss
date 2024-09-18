@@ -231,6 +231,10 @@ figure {
     border: 1px solid $borderColor;
     border-radius: math.div($spacerHorizontal, 2);
     box-shadow: inset 1px 1px 0px rgba(255,255,255,.08),inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadowOffset $shadowDepth $shadowColor;
+    @media (orientation: portrait) {
+        margin: $spacerVerticalPhone auto;
+        padding: $spacerHorizontalPhone;
+    }
 }
 @mixin well {
     margin: $spacerVertical auto;

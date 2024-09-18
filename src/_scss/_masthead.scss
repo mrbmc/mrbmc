@@ -58,6 +58,7 @@
     @media (orientation: portrait) {
         height: auto;
         padding: $spacerVerticalPhone $spacerHorizontalPhone 0;
+        margin-bottom: $spacerVerticalPhone;
     }
 
     p:has(.scrollhint),p.scrollhint {

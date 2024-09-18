@@ -8,7 +8,7 @@
 // Typography
 // -------------------------
 $systemFontFamily:      system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","HelveticaNeue", Helvetica, sans-serif;
-$sansFontFamily:        "Helvetica Neue","Helvetica",$systemFontFamily;
+$sansFontFamily:        "Tomato","Helvetica Neue","Helvetica",$systemFontFamily;
 $serifFontFamily:       "Cormorant Garamond","Palatino","Georgia","Roboto Serif",Times,serif;
 $monoFontFamily:        "Courier New", monospace;
 
@@ -45,7 +45,7 @@ html {
     // font-size: $baseFontSize;
     font-size: clamp(18px, 1.8vw, 32px);
     @media (orientation: portrait) {
-        font-size: clamp(18px, 2.4vh, 32px);
+        font-size: 18px;
     }
 }
 
