@@ -20,7 +20,9 @@ Here are some more leadership frameworks that have influenced my approach:
 ### Team Leader 
 
 I find most of my design inspiration in lessons from nature, science, and history. The way I show up for my team is informed by [Leadership Models in Nature](/blog/leadership-in-nature/) that demonstrate mentorship, servant leadership, and distributed decision-making.
+
 [![Orca, Lion, Bee](/images/leadership-nature.jpg)](/blog/leadership-in-nature/){.fullwidth}
+
 ### Functional Leader
 
 As a functional expert I try to support these three pillars to create a healthy design practice:
@@ -30,6 +32,7 @@ As a functional expert I try to support these three pillars to create a healthy 
 #### Culture
 
 I believe culture can be designed by rewarding behavior that reinforces our values,  intentional hiring, and clear performance management.
+
 ![Culture](/images/about/puzzle-culture.svg){style="width:19vw;float:right;"}
 
 **Supporting Elements**

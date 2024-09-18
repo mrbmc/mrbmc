@@ -10,9 +10,9 @@ eleventyExcludeFromCollections: false
 
 ![logo](/images/profile/kageki-crane.svg){.crane}
 
-# Designing _better_ software products.
+# Designing _better_ software.
 
-My family calls me Brian but my friends call me BMC. I've been making products that connect human needs to business outcomes since the late 1900s.{.bio}
+My family calls me Brian but my friends call me BMC. I've been making digital products that connect human needs to business outcomes since the late 1900s.{.bio}
 
 {% comment %}
 * [linkedin](https://linkedin.com/in/mrbmc)
