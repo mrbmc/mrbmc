@@ -34,9 +34,9 @@ body {
         box-sizing: border-box;
         margin: 0 auto;
         width: 100%;
-        max-width: $gridWidth;
+        max-width: $grid-width;
         @media (orientation: portrait) {
-            padding: 0 $spacerHorizontal;
+            padding: 0 $spacer-horizontal;
         }
     }
 }
@@ -57,10 +57,10 @@ body {
     --gray-light:   #{$gray-light};
     --white:        #{$white};
     --white80:     #{$white80};
-    --brandColor: #{$brandColor};
-    --brandComplement: #{$brandComplement};
-    --brandAccent: #{$brandAccent};
-    --brandSecondary: #{$brandSecondary};
+    --brandColor: #{$brand-color};
+    --brandComplement: #{$brand-complement};
+    --brandAccent: #{$brand-accent};
+    --brandSecondary: #{$brand-secondary};
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -71,7 +71,7 @@ body {
         --gray-light:   #{$gray-dark};
         --white:        #{$black};
         --white80:      #{$black80};
-        --brandColor:   #{$brandAccent};
+        --brandColor:   #{$brand-accent};
     };
 }
 html {
@@ -79,20 +79,20 @@ html {
 }
 body {
     margin: 0;
-    background: $bodyBackground;
-    color: $textColor;
+    background: $body-background;
+    color: $text-color;
 }
 h1,h2,h3,h4,h5 {
-    color: $displayTextColor;
+    color: $text-color-bold;
 }
 a {
-    color: $linkColor;
+    color: $link-color;
     &:hover {
-        color: $linkColorHover;
+        color: $link-color-hover;
     }
 }
 ::selection {
-    background: $selectionColor;
+    background: $selection-color;
 }
 
 
@@ -170,12 +170,12 @@ ul.soc {
 }
 hr {
     background: none;
-    margin: ($spacerVertical * 1) auto;
+    margin: ($spacer-vertical * 1) auto;
     height: 0px;
     width: 38w;
     max-width: 80%;
     border: none;
-    border-top: 1px solid $borderColor;
+    border-top: 1px solid $border-color;
 }
 
 table {
@@ -183,7 +183,7 @@ table {
     max-width: 100%;
     border-spacing: 0em;
     margin-bottom: ($baseLineHeight * 1em);
-    background: $bodyBackground;
+    background: $body-background;
     @include border-radius(.125em);
     overflow-x: scroll;
     display: block;
@@ -191,10 +191,10 @@ table {
         padding: .5em 1em;
     }
     th {
-        border: 0 solid $borderColor;
+        border: 0 solid $border-color;
         border-width: 0 0 1px 0;
         text-align: left;
-        color: $textBoldColor;
+        color: $text-color-bold;
     }
     &.rotate {
         @include transpose_table;
@@ -213,7 +213,7 @@ figure {
     }
 }
 main > section {
-    margin-bottom: $spacerVertical;
+    margin-bottom: $spacer-vertical;
 }
 
 
@@ -224,24 +224,24 @@ main > section {
 
 @mixin card {
     box-sizing: border-box;
-    margin: $spacerVertical auto;
-    padding: $spacerHorizontal;
-    background: $bodyBackground;
-    border: 1px solid $borderColor;
-    border-radius: math.div($spacerHorizontal, 2);
-    box-shadow: inset 1px 1px 0px rgba(255,255,255,.08), inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadowOffset $shadowDepth $shadowColor;
+    margin: $spacer-vertical auto;
+    padding: $spacer-horizontal;
+    background: $body-background;
+    border: 1px solid $border-color;
+    border-radius: math.div($spacer-horizontal, 2);
+    box-shadow: inset 1px 1px 0px rgba(255,255,255,.08), inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadow-offset $shadow-depth $shadow-color;
 }
 @mixin well {
     box-sizing: border-box;
-    margin: $spacerVertical auto;
-    padding: $spacerHorizontal;
-    background: $wellBackground;
-    border-radius: math.div($spacerHorizontal, 2);
+    margin: $spacer-vertical auto;
+    padding: $spacer-horizontal;
+    background: $well-background;
+    border-radius: math.div($spacer-horizontal, 2);
 }
 @mixin hero {
     @include fullWidth(100vw);
     box-sizing: border-box;
-    padding: $spacerVertical $spacerHorizontal;
+    padding: $spacer-vertical $spacer-horizontal;
 
     @include inverse();
 }
@@ -256,10 +256,10 @@ main > section {
 }
 
 blockquote,.blockquote {
-    padding: 0 $spacerHorizontal;
-    margin: $spacerVertical 0 $spacerVertical ($spacerHorizontal * -1);
-    border-left: solid 4px $textOffColor;
-    color: $textOffColor;
+    padding: 0 $spacer-horizontal;
+    margin: $spacer-vertical 0 $spacer-vertical ($spacer-horizontal * -1);
+    border-left: solid 4px $text-color-subdued;
+    color: $text-color-subdued;
 
     @media (orientation: portrait) {
         margin-left: 0;
@@ -267,18 +267,18 @@ blockquote,.blockquote {
 }
 
 .button, button {
-    background: $brandColor;
-    color: $heroUnitLeadColor;
-    // border: 1px solid $brandColor;
+    background: $brand-color;
+    color: $hero-text-color;
+    // border: 1px solid $brand-color;
 
     padding: .5em 1em;
     border-radius: .375em;
     text-decoration: none;
-    // box-shadow: 0 8px 24px hsla(hue($brandColor), 50%, 10%, 20%);;
-    box-shadow: inset 0px 1px 1px 0px $white, 0 math.div($shadowOffset, 2) math.div($shadowDepth,2) $shadowColor, 0 $shadowOffset $shadowDepth $shadowColor;
+    // box-shadow: 0 8px 24px hsla(hue($brand-color), 50%, 10%, 20%);;
+    box-shadow: inset 0px 1px 1px 0px $white, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
 
     &:hover {
-        color: $heroUnitHeadingColor;
+        color: $hero-heading-color;
     }
 }
 
@@ -309,11 +309,11 @@ ol.sidenav {
     top: calc(50% - ($baseLineHeight * 2.5em));
 
     list-style-type: none;
-    background: $bodyBackground;
+    background: $body-background;
     padding: .5em 0;
     display: flex;
     justify-content: center;
-    box-shadow: $shadowOffset 0 $shadowDepth $shadowColor;
+    box-shadow: $shadow-offset 0 $shadow-depth $shadow-color;
 
     flex-direction: column;
 
@@ -332,11 +332,11 @@ ol.sidenav {
     ol {
         display: none;
         position: absolute;
-        background: $bodyBackground;
+        background: $body-background;
         top: -0.5em;
         left: 100%;
         border-radius: .25em;
-        box-shadow: 0 $shadowOffset $shadowDepth $shadowColor;
+        box-shadow: 0 $shadow-offset $shadow-depth $shadow-color;
 
         li {
             list-style: none;
@@ -365,7 +365,7 @@ ul.nav,ol.nav {
     @include card();
     background: var(--gray-light);
     display: inline-block;
-    margin: $spacerVertical auto;
+    margin: $spacer-vertical auto;
 
     em,i,b,strong,code,s,dt,dd {
         display: block;
@@ -379,13 +379,13 @@ ul.nav,ol.nav {
     }
     em,i,dd+dt {
         font-style: normal;
-        color: $textOffColor;
+        color: $text-color-subdued;
         @include smallType();
     }
     b,strong,dd {
         font-size: 3.4em;
         font-weight: $baseFontWeight;
-        color: $textBoldColor;
+        color: $text-color-bold;
     }
 }
 .kpi {
@@ -396,8 +396,8 @@ ul.nav,ol.nav {
     display: grid;
     // grid-template-columns: repeat(auto-fit, minmax(1em,2fr));
     grid-auto-flow: column;
-    grid-gap: $spacerHorizontal;
-    margin-bottom: $spacerVertical;
+    grid-gap: $spacer-horizontal;
+    margin-bottom: $spacer-vertical;
 
     &>* {
         list-style: none;
@@ -416,7 +416,7 @@ details {
     }
     &[open] {
         summary {
-            margin-bottom: $spacerVertical;
+            margin-bottom: $spacer-vertical;
         }
         & > summary:before {
             transform: rotate(90deg);

@@ -1,7 +1,7 @@
 .blog {
 	@include item-list();
 
-	@media (max-width: $breakpointPhone) {
+	@media (max-width: $breakpoint-phone) {
 	    margin-top: 0;
 	}
 
@@ -9,8 +9,8 @@
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
-		margin: $spacerVertical 0;
-		column-gap: $spacerHorizontal;
+		margin: $spacer-vertical 0;
+		column-gap: $spacer-horizontal;
 		&:hover {
 			cursor: pointer;
 		}
@@ -24,11 +24,11 @@
 		p.date {
 			margin-bottom: 0;
 			@include smallType();
-			color: $textOffColor;
+			color: $text-color-subdued;
 		}
 		summary {
 			// flex-basis: 75%;
-			width: calc(75% - $spacerHorizontal);
+			width: calc(75% - $spacer-horizontal);
 		}
 		img {
 			// display: flex;
@@ -46,8 +46,8 @@ body.post {
 	@include item-detail();
 
 	.related-posts {
-		margin-top: $spacerVertical;
-		padding-top: $spacerVertical;
+		margin-top: $spacer-vertical;
+		padding-top: $spacer-vertical;
 	}
 }
 

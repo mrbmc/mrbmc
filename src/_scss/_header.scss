@@ -1,19 +1,19 @@
 #header {
-    padding: 0 $spacerHorizontal;
+    padding: 0 $spacer-horizontal;
 
     box-sizing: border-box;
-    height: $navbarHeight;
+    height: $navbar-height;
 
-    background: $navbarBackground;
-    border: $navbarBorder;
+    background: $navbar-background;
+    border: $navbar-border;
     border-width: 0 0 1px 0;
 
     display: flex;
     z-index: 100;
     position: relative;
     align-items: center;
-    // line-height: ($navbarHeight * .62);
-    line-height: ($navbarHeight * 1);
+    // line-height: ($navbar-height * .62);
+    line-height: ($navbar-height * 1);
     list-style-type: none;
 
     @media (orientation: portrait) {
@@ -23,7 +23,7 @@
     a {
         -webkit-backface-visibility: hidden;
         -webkit-tap-highlight-color: transparent;
-        color: $navbarLinkColor;
+        color: $navbar-link-color;
 
         padding: 0 0.62em;
         margin: 0 0 0 0.62em;
@@ -54,7 +54,7 @@
         &:before {
             display: inline-block;
             content: "";
-            // background-color: $brandColor20;
+            // background-color: $brand-color-20;
             background-image: url('data:image/svg+xml,<svg viewBox="0 0 563 563" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M131.853 333.434L562.468 523.367L336.482 193.322L131.853 333.434Z" /><path fill="currentColor" d="M440.148 306.588L557.907 39.6064L353.279 179.718L440.148 306.588Z" /><path fill="currentColor" d="M119.371 315.67L111.161 134.941L198.03 261.811L119.371 315.67Z" /><path fill="currentColor" d="M392.269 469.535L226.741 396.524L313.61 523.394L392.269 469.535Z" /><path fill="currentColor" d="M93.5943 139.347L0.373047 201.727L95.6468 198.417L93.5943 139.347Z" /></svg>');
             background-position: center center;
             background-repeat: no-repeat;
@@ -77,13 +77,13 @@ body.about #header #menu a[href="/about/"],
 body.portfolio #header #menu a[href="/portfolio/"],
 body.blog #header #menu a[href="/blog/"],
 body.resume #header #menu a[href="/about/"] {
-    color: $navbarLinkColorActive;
-    background: $navbarLinkBackgroundActive;
+    color: $navbar-link-active-color;
+    background: $navbar-link-active-background;
 }
 
 
 // phones up to tablets
-// @media (max-width: $breakpointPortrait-1) {
+// @media (max-width: $breakpoint-portrait-1) {
 @media (orientation: portrait) {
     $burgerSize: 1.2em;
     $btnLine: 2px;
@@ -110,13 +110,13 @@ body.resume #header #menu a[href="/about/"] {
             margin: 0;
             overflow: hidden;
 
-            @include transition(transform $animateSpeed $animateEasing);
+            @include transition(transform $animation-speed $animation-easing);
 
             &:before,&:after {
                 display: block;
                 content: "";
 
-                background: $textBoldColor;
+                background: $text-color-bold;
 
                 width: $burgerSize;
                 height: $btnLine;
@@ -124,7 +124,7 @@ body.resume #header #menu a[href="/about/"] {
                 left: 0;
                 top: 20%;
 
-                @include transition(transform $animateSpeed $animateEasing);
+                @include transition(transform $animation-speed $animation-easing);
             }
             &:after {
                 top: inherit;
@@ -133,18 +133,18 @@ body.resume #header #menu a[href="/about/"] {
         }
 
         #menu {
-            background: $wellBackground;
+            background: $well-background;
             position: fixed;
             left: 0;
             top: 0;
             right: 0;
             bottom: 0;
-            padding: $spacerHorizontal;
+            padding: $spacer-horizontal;
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
 
-            @include transition(opacity $animateSpeed $animateEasing);
+            @include transition(opacity $animation-speed $animation-easing);
             @include translate(-100%,0%);
             @include opacity(0);
 
@@ -153,7 +153,7 @@ body.resume #header #menu a[href="/about/"] {
                 &:not(#close-menu) {
                     font-size: 150%;
                     line-height: $baseLineHeight;
-                    margin: 0 0 $spacerVertical 0;
+                    margin: 0 0 $spacer-vertical 0;
                 }
             }
 
@@ -166,8 +166,8 @@ body.resume #header #menu a[href="/about/"] {
                 & > a#close-menu {
                     display: block;
                     position: absolute;
-                    top: $navbarHeight * .19;
-                    right: $spacerHorizontal;
+                    top: $navbar-height * .19;
+                    right: $spacer-horizontal;
                     &:before,
                     &:after {
                         top: 50%;
@@ -193,19 +193,19 @@ body.resume #header #menu a[href="/about/"] {
 
     position: sticky;
     z-index: 90;
-    top: ($spacerVertical * .25);
+    top: ($spacer-vertical * .25);
     display: flex;
     justify-content: center;
     width: min-content;
-    margin: $spacerVertical auto;
-    box-shadow: 0 $shadowOffset $shadowDepth $shadowColor;
+    margin: $spacer-vertical auto;
+    box-shadow: 0 $shadow-offset $shadow-depth $shadow-color;
     border-radius: 2rem;
     -webkit-backdrop-filter: blur(.25rem);
     backdrop-filter: blur(.25rem);
 
 
     &>li {
-        background: $navbarBackground;
+        background: $navbar-background;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -221,10 +221,10 @@ body.resume #header #menu a[href="/about/"] {
         //SUBNAVS
         ol {
             display: none;
-            background: $bodyBackground;
+            background: $body-background;
             position: absolute;
             padding: .19rem 0rem;
-            box-shadow: 0 $shadowOffset $shadowDepth $shadowColor;
+            box-shadow: 0 $shadow-offset $shadow-depth $shadow-color;
 
             li {
                 list-style: none;
@@ -237,8 +237,8 @@ body.resume #header #menu a[href="/about/"] {
             }
         }
         &:hover {
-            color: $navbarLinkColorHover;
-            background: $navbarLinkBackgroundHover;
+            color: $navbar-link-hover-color;
+            background: $navbar-link-hover-background;
             ol,ul {
                 display: block;
             }
@@ -260,8 +260,8 @@ body.resume #header #menu a[href="/about/"] {
         width: 1rem;
         height: 1em;
         position: absolute;
-        right: $spacerHorizontal;
-        top: ($navbarHeight * .38);
+        right: $spacer-horizontal;
+        top: ($navbar-height * .38);
     }
 }
 

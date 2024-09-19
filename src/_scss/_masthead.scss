@@ -2,9 +2,9 @@
 
     @include fullWidth(100vw);
 
-    margin-bottom: $spacerVertical;
-    padding: $spacerVertical calc((100vw - $gridWidth)/2);
-    height: calc(100vh - $navbarHeight);
+    margin-bottom: $spacer-vertical;
+    padding: $spacer-vertical calc((100vw - $grid-width)/2);
+    height: calc(100vh - $navbar-height);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,15 +14,15 @@
     overflow: hidden;
     z-index: 10;
 
-    background: $heroUnitBackground;
-    color: $heroUnitLeadColor;
+    background: $hero-background;
+    color: $hero-text-color;
 
     h1,h2,h3 {
-        color: $heroUnitHeadingColor;
+        color: $hero-heading-color;
         z-index: 2;
     }
     a {
-        color: $heroUnitLeadColor;
+        color: $hero-text-color;
     }
     h1 + p {
         margin-bottom: 0em;
@@ -32,7 +32,7 @@
         width: 100%;
         height: 120%;
         position: absolute;
-        top: 0 - $navbarHeight;
+        top: 0 - $navbar-height;
         left: 0;
         right: 0;
         z-index: -1;
@@ -49,8 +49,8 @@
         }
         figcaption,caption {
             position: absolute;
-            right: $spacerHorizontal;
-            bottom: $spacerVertical;
+            right: $spacer-horizontal;
+            bottom: $spacer-vertical;
             text-shadow: 0 1px 4px rgba(0,0,0,0.8);
             color: $white;
         }
@@ -58,7 +58,7 @@
 
     @media (orientation: portrait) {
         height: auto;
-        padding: $spacerVertical $spacerHorizontal 0;
+        padding: $spacer-vertical $spacer-horizontal 0;
     }
 
     p:has(.scrollhint),p.scrollhint {
@@ -69,7 +69,7 @@
         @media (orientation: landscape) {
             position: absolute;
             left: calc(50% - math.div($size, 2));
-            bottom: $spacerVertical;
+            bottom: $spacer-vertical;
         }
         @media (orientation: portrait) {
         }

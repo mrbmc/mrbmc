@@ -29,7 +29,7 @@ portfolio, and gallery pages.
         	width: 100%;
         	height: 100%;
 			z-index: -1;
-            background: $heroUnitBackground;
+            background: $hero-background;
         }
 
     }	
@@ -40,7 +40,7 @@ portfolio, and gallery pages.
         p {
             &>img,&>svg,&>video {
                 &.canzoom {
-                    @include transition(all $animateSpeed $animateEasing);
+                    @include transition(all $animation-speed $animation-easing);
                     &:hover {
                         cursor: zoom-in,
                     }
@@ -61,18 +61,18 @@ portfolio, and gallery pages.
         .pullleft {
             @media (orientation: landscape) {
                 // width: 62%;
-                // margin-left: (0 - $gridMargin);
+                // margin-left: (0 - $grid-margin);
                 width: 38%;
-                margin-right: $spacerHorizontal;
+                margin-right: $spacer-horizontal;
                 float: left;
             }
         }
         .pullright {
             @media (orientation: landscape) {
                 // width: 62%;
-                // margin-right: (0 - $gridMargin);
+                // margin-right: (0 - $grid-margin);
                 width: 38%;
-                margin-left: $spacerHorizontal;
+                margin-left: $spacer-horizontal;
                 float: right;
             }
         }
@@ -89,7 +89,7 @@ portfolio, and gallery pages.
 
 nav.pagination {
     clear: both;
-    padding: $spacerVertical 0;
+    padding: $spacer-vertical 0;
 
 	display: flex;
 	justify-content: space-between;
@@ -100,7 +100,7 @@ nav.pagination {
 		text-transform: inherit;
 		display: block;
 	}
-	@media (max-width: $breakpointPortrait-1) {
+	@media (max-width: $breakpoint-portrait-1) {
 		flex-direction: column-reverse;
 	}
 }
@@ -108,15 +108,15 @@ nav.pagination {
 p.gallery,div.gallery-wrap {
     @include fullWidth(100vw);
     display: block;
-    margin-bottom: $spacerVertical;
-    background: $wellBackground;
+    margin-bottom: $spacer-vertical;
+    background: $well-background;
     overflow: auto;//this prevents collapsing margins
 
     .image-detail {
         width: auto;
-        height: calc(84vh - ($spacerVertical * 1));
+        height: calc(84vh - ($spacer-vertical * 1));
         padding: 0;
-        margin: ($spacerVertical * 0.5) auto;
+        margin: ($spacer-vertical * 0.5) auto;
         display: block;
 
         @media (orientation: portrait) {
@@ -129,7 +129,7 @@ p.gallery,div.gallery-wrap {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        margin: 0 0 ($spacerVertical * 0.25);
+        margin: 0 0 ($spacer-vertical * 0.25);
         padding: 0;
 
         overflow-x: scroll;
@@ -138,25 +138,25 @@ p.gallery,div.gallery-wrap {
             -webkit-appearance: none;
         }
         &::-webkit-scrollbar:horizontal {
-            height: ($spacerVertical * 0.25);
+            height: ($spacer-vertical * 0.25);
         }
         &::-webkit-scrollbar-thumb {
-            border-radius: $spacerVertical;
-            border: 2px solid $wellBackground; /* should match background, can't be transparent */
-            background-color: $brandColor20;
+            border-radius: $spacer-vertical;
+            border: 2px solid $well-background; /* should match background, can't be transparent */
+            background-color: $brand-color-20;
         }
         &::-webkit-scrollbar-track { 
-            background-color: $wellBackground; 
+            background-color: $well-background; 
         } 
 
         li {
             list-style: none;
-            margin: 0 ($spacerHorizontal * 0.5);
-			color: $textOffColor;
+            margin: 0 ($spacer-horizontal * 0.5);
+			color: $text-color-subdued;
 			@include smallType();
             img {
                 display: block;
-                height: calc(16vh - ($spacerVertical * 0.5));
+                height: calc(16vh - ($spacer-vertical * 0.5));
                 width: auto;
                 object-position: top center;
                 object-fit: cover;
@@ -191,12 +191,12 @@ p.gallery,div.gallery-wrap {
         &:before {
             transform: rotate(90deg);
         }
-        left: $spacerHorizontal;
+        left: $spacer-horizontal;
     }
     a.next {
         &:before {
             transform: rotate(-90deg);
         }
-        right: $spacerHorizontal;
+        right: $spacer-horizontal;
     }
 }

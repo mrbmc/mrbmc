@@ -6,19 +6,19 @@ body {
         justify-content: center;
         color: $gray-800;
         overflow: hidden;
-        padding: $spacerVertical $gridMargin;
+        padding: $spacer-vertical $grid-margin;
         gap: 1rem;
 
         @include inverse();
 
         h2,h3,h4 {
-            color: $heroUnitLeadColor;
+            color: $hero-text-color;
             display: none;
         }
         a {
-            color: $heroUnitLeadColor;
+            color: $hero-text-color;
             &:hover {
-                color: $heroUnitHeadingColor;
+                color: $hero-heading-color;
             }
         }
 
@@ -27,7 +27,7 @@ body {
                 display: flex;
                 justify-content: center;
                 a {
-                    margin: 0 ($spacerHorizontal * 0.5);
+                    margin: 0 ($spacer-horizontal * 0.5);
                 }
             }
             p {
@@ -41,7 +41,7 @@ body {
         #contact {
             nav {
                 $itemsize: 1.38rem;
-                // margin: 0 auto $spacerVertical auto;
+                // margin: 0 auto $spacer-vertical auto;
 
                 a {
                     font-size: $itemsize;

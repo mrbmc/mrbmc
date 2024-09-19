@@ -8,19 +8,19 @@ body.home {
 
         a#open-menu {
             &:before,&:after {
-                // background: $heroUnitHeadingColor;
+                // background: $hero-heading-color;
             }
         }
         #menu {
             a {
-                // color: $heroUnitHeadingColor;
+                // color: $hero-heading-color;
                 &:hover {
-                    // color: $navbarLinkColorHover;
+                    // color: $navbar-link-hover-color;
                 }
             }
             &:target {
                 a {
-                    // color: $navbarLinkColor;
+                    // color: $navbar-link-color;
                 }
             }
         }
@@ -32,8 +32,8 @@ body.home {
         }
     }
     #masthead {
-        background: $bodyBackground;
-        color: $textColor;
+        background: $body-background;
+        color: $text-color;
         @media (orientation: landscape) {
             height: (100vh);
         }
@@ -46,7 +46,7 @@ body.home {
         }
 
         h1,h2,h3 {
-            color: $textBoldColor;
+            color: $text-color-bold;
         }
         h1,h2 {
             @media (orientation: portrait) {
@@ -54,7 +54,7 @@ body.home {
             }
             & > em {
                     background: linear-gradient($_indigo, $_teal, $_pink);
-                    background: linear-gradient($brandAccent, $brandColor, $brandComplement);
+                    background: linear-gradient($brand-accent, $brand-color, $brand-complement);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     font-style: normal;
@@ -79,12 +79,12 @@ body.home {
         @media (orientation: landscape) {
             h1,h2,p.bio {
                 box-sizing: border-box;
-                padding-right: calc($iconsize + $spacerHorizontal);
+                padding-right: calc($iconsize + $spacer-horizontal);
             }
         }
         *:has(img.crane) {
             position: absolute;
-            right: calc((100vw - $gridWidth)/2);
+            right: calc((100vw - $grid-width)/2);
             text-align: center;
             filter: invert(34%) sepia(77%) saturate(1900%) hue-rotate(8deg) brightness(98%) contrast(104%);
             @media (orientation: landscape) {
@@ -93,7 +93,7 @@ body.home {
             }
             @media (orientation: portrait) {
                 position: static;
-                margin: $spacerVertical auto;
+                margin: $spacer-vertical auto;
 
                 $iconsize: 19vh;
                 width: $iconsize;
@@ -107,11 +107,11 @@ body.home {
         //     background-attachment: fixed;
         //     background-size: 100% 100%;
 
-        //     background-color: $brandColor;
+        //     background-color: $brand-color;
         //     background-image:
-        //     radial-gradient(ellipse 100% 162% at 62% -19%, $brandAccent 0px, transparent 50%),
-        //     radial-gradient(ellipse 200% 81% at 119% 62%, $brandComplement 0px, transparent 50%),
-        //     radial-gradient(ellipse 81% 162% at 19% 81%, $brandSecondary 0px, transparent 50%);
+        //     radial-gradient(ellipse 100% 162% at 62% -19%, $brand-accent 0px, transparent 50%),
+        //     radial-gradient(ellipse 200% 81% at 119% 62%, $brand-complement 0px, transparent 50%),
+        //     radial-gradient(ellipse 81% 162% at 19% 81%, $brand-secondary 0px, transparent 50%);
 
         //     content: "";
         //     width: 100%;
@@ -136,7 +136,7 @@ body.home {
         // }
     }
     // .project-list,.blog {
-    //     padding-top: $spacerVertical;
+    //     padding-top: $spacer-vertical;
     // }
     .project-list {
         h2 {

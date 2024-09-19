@@ -10,7 +10,7 @@ body.portfolio.list {
     flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
-    column-gap: ($spacerHorizontal * 2);
+    column-gap: ($spacer-horizontal * 2);
     row-gap: 0;
 
     &>h2 {
@@ -26,12 +26,12 @@ body.portfolio.list {
         flex-direction: column;
         flex: 1 0 100%;
         justify-content: center;
-        margin: $spacerVertical 0;
+        margin: $spacer-vertical 0;
 
         @media (orientation: portrait) {
-            flex: 1 0 calc(50% - $spacerHorizontal);
+            flex: 1 0 calc(50% - $spacer-horizontal);
         }
-        @media (max-width: $breakpointPhone) {
+        @media (max-width: $breakpoint-phone) {
             flex: 1 0 100%;
         }
         header {
@@ -43,7 +43,7 @@ body.portfolio.list {
             p {
                 @include smallType;
                 margin-bottom: 0;
-                color: $textOffColor;                
+                color: $text-color-subdued;                
             }
             p.timeline{
                 display: none;
@@ -54,10 +54,10 @@ body.portfolio.list {
             margin: 0;
             padding: 0;
             border-radius: .5rem;
-            // box-shadow: 0 2px 8px $shadowColor, 0 8px 24px $shadowColor;
+            // box-shadow: 0 2px 8px $shadow-color, 0 8px 24px $shadow-color;
             transform: scale(1);
             background: transparent;
-            transition: all $animateSpeed $animateEasing;
+            transition: all $animation-speed $animation-easing;
             a {
                 display: block;
             }
@@ -69,7 +69,7 @@ body.portfolio.list {
                 object-fit: contain;
                 box-sizing: border-box;
                 filter: saturate(100%);
-                transition: all $animateSpeed $animateEasing;
+                transition: all $animation-speed $animation-easing;
                 transform: scale(1);
                 @media (orientation: portrait) {
                     height: auto;
@@ -94,8 +94,8 @@ body.portfolio.list {
             overflow: visible;
             flex: 1 0 100%;
             height: auto;
-            column-gap: $spacerHorizontal;
-            row-gap: $spacerVertical;
+            column-gap: $spacer-horizontal;
+            row-gap: $spacer-vertical;
 
             @media (orientation: portrait) {
                 flex-direction: column-reverse;
@@ -104,7 +104,7 @@ body.portfolio.list {
 
             &>header {
                 display: block;
-                // margin-left: $spacerHorizontal;
+                // margin-left: $spacer-horizontal;
                 h2,h3 {
                     text-align: left;
                     margin-bottom: 0;
@@ -127,9 +127,9 @@ body.project {
 
     #main {
         &>h1 {
-            margin-top: ($spacerVertical * 2);
+            margin-top: ($spacer-vertical * 2);
             &+p {
-                margin-bottom: ($spacerVertical * 2);
+                margin-bottom: ($spacer-vertical * 2);
             }
         }
     }
@@ -150,7 +150,7 @@ body.project {
 
 h1.section,h2.section {
     @include fullWidth();
-    padding: $spacerVertical $gridMargin;
+    padding: $spacer-vertical $grid-margin;
     box-sizing: border-box;
     display: flex;
     align-items: center;

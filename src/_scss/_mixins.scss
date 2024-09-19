@@ -98,15 +98,15 @@
   }
 }
 
-@mixin bg-fill($bg:$bodyBackground,$text:$textColor) {
+@mixin bg-fill($bg:$body-background,$text:$text-color) {
   background: $bg;
   p,li,dd {color: $text;}
   h1,h2 { color:saturate(darken($bg,33%),10%);}
   h3,h4,h5,dt { color:saturate(darken($bg,-40%),-25%);}
-  // a {color:saturate(darken($textColor,20%),-10%);}
+  // a {color:saturate(darken($text-color,20%),-10%);}
 }
 
-@mixin neon($neonColor:$brandColor) {
+@mixin neon($neonColor:$brand-color) {
   text-shadow:
     0 0 7px #fff,
     0 0 10px $neonColor,
@@ -151,22 +151,22 @@
     margin-right: auto;
     display: block;
 
-    @media (min-width: $gridWidth) {
-        margin-left: calc(($limit - $gridWidth) * -0.5);
+    @media (min-width: $grid-width) {
+        margin-left: calc(($limit - $grid-width) * -0.5);
     }
 
     @media (orientation: portrait) {
-        margin-left: ($spacerHorizontal * -1);
+        margin-left: ($spacer-horizontal * -1);
     }
 }
-@mixin fullHeight($limit:calc(100vh - $navbarHeight)) {
+@mixin fullHeight($limit:calc(100vh - $navbar-height)) {
   height: $limit;
   max-height: $limit;
 }
 
 // @mixin span ($s:1) {
-//   width: ($s * $gridColumnWidth) + (($s - 1) * $gridGutterWidth);
-//   margin: $spacerVertical 0 $spacerVertical $gridGutterWidth;
+//   width: ($s * $grid-column) + (($s - 1) * $grid-padding);
+//   margin: $spacer-vertical 0 $spacer-vertical $grid-padding;
 //   float: left;
 //   &:first-of-type {
 //     margin-left: 0;
@@ -211,11 +211,11 @@
         background-attachment: fixed;
         background-size: 100% 100%;
         background: 
-            radial-gradient(38% 81% at 100% 81%,   $brandAccent20 25%,  $brandColor00 100%)
-            ,radial-gradient(38% 130% at 62% 0%,    $brandComplement20 0%,   $brandColor00 100%)
-            ,radial-gradient(38% 100% at 20% 100%,  $brandSecondary20 0%,      $brandColor00 100%)
-            ,radial-gradient(100% 100% at 0% 0%,  $brandColor80 0%,    $brandColor00 100%)
-            ,$brandColor;
+            radial-gradient(38% 81% at 100% 81%,   $brand-accent-20 25%,  $brand-color-00 100%)
+            ,radial-gradient(38% 130% at 62% 0%,    $brand-complement-20 0%,   $brand-color-00 100%)
+            ,radial-gradient(38% 100% at 20% 100%,  $brand-secondary-20 0%,      $brand-color-00 100%)
+            ,radial-gradient(100% 100% at 0% 0%,  $brand-color-80 0%,    $brand-color-00 100%)
+            ,$brand-color;
     }
     &:after {
         content: "";

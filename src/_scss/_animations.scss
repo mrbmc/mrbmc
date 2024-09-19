@@ -33,7 +33,7 @@
     @include translate(0, 20%);
     @include opacity(0);
     &.in {
-        @include transition(all $animateSpeed $animateEasing);
+        @include transition(all $animation-speed $animation-easing);
         @include opacity(100);
         @include translate(0, 0);
     }
@@ -42,13 +42,13 @@
 .fade {
     @include opacity(0);
     &.in {
-        @include transition(opacity $animateSpeed*2 $animateEasing);
+        @include transition(opacity $animation-speed*2 $animation-easing);
         @include opacity(100);
     }
 }
 
 .pop {
-    @include transition(all $animateSpeed $animateEasing);
+    @include transition(all $animation-speed $animation-easing);
     @include scale(.01);
 
     &.in {
@@ -67,7 +67,7 @@
         @include translate(20%, 0);
     }
     &.in {
-        @include transition(all $animateSpeed $animateEasing);
+        @include transition(all $animation-speed $animation-easing);
         @include translate(0, 0);
     }
 }

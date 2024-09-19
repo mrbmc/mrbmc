@@ -10,36 +10,36 @@ $_sunshine:             #e6de00;//hsl(58, 100%, 45%);//
 $_teal:                 #00b1cc;//hsl(188,100%,40%);//
 $_orange:               #FF4F00;//international orange
 
-$brandColor:            $_orange;
-$brandColor00:          #{$brandColor + "00"};
-$brandColor20:          #{$brandColor + "33"};
-$brandColor60:          #{$brandColor + "9E"};
-$brandColor80:          #{$brandColor + CC};
-$brandAccent:           $_sunshine;
-$brandAccent20:         #{$brandAccent + "4D"};
-$brandAccent80:         #{$brandAccent + "CC"};
-$brandComplement:       $_indigo;
-$brandComplement20:     #{$brandComplement + "4D"};
-$brandComplement80:     #{$brandComplement + "CC"};
-$brandSecondary:        $_pink;
-$brandSecondary20:      #{$brandSecondary + "4D"};
-$brandSecondary80:      #{$brandSecondary + "BB"};
+$brand-color:            $_orange;
+$brand-color-00:          #{$brand-color + "00"};
+$brand-color-20:          #{$brand-color + "33"};
+$brand-color-60:          #{$brand-color + "9E"};
+$brand-color-80:          #{$brand-color + CC};
+$brand-accent:           $_sunshine;
+$brand-accent-20:         #{$brand-accent + "4D"};
+$brand-accent-80:         #{$brand-accent + "CC"};
+$brand-complement:       $_indigo;
+$brand-complement-20:     #{$brand-complement + "4D"};
+$brand-complement-80:     #{$brand-complement + "CC"};
+$brand-secondary:        $_pink;
+$brand-secondary-20:      #{$brand-secondary + "4D"};
+$brand-secondary-80:      #{$brand-secondary + "BB"};
 
-$white80:               hslToHex(hue($brandColor),00%,100%)+AA;
-$white:                 hslToHex(hue($brandColor),00%,100%);
-$gray-950:              hslToHex(hue($brandColor),01%,96%);
-$gray-900:              hslToHex(hue($brandColor),01%,91%);
-$gray-800:              hslToHex(hue($brandColor),02%,82%);
-$gray-700:              hslToHex(hue($brandColor),02%,71%);
-$gray-600:              hslToHex(hue($brandColor),03%,62%);
-$gray-500:              hslToHex(hue($brandColor),03%,50%);
-$gray-400:              hslToHex(hue($brandColor),05%,42%);
-$gray-300:              hslToHex(hue($brandColor),05%,31%);
-$gray-200:              hslToHex(hue($brandColor),05%,20%);
-$gray-100:              hslToHex(hue($brandColor),13%,12%);
-$gray-050:              hslToHex(hue($brandColor),21%,04%);
-$black:                 hslToHex(hue($brandColor),34%,02%);
-$black80:               hslToHex(hue($brandColor),34%,04%)+CC;
+$white80:               hslToHex(hue($brand-color),00%,100%)+AA;
+$white:                 hslToHex(hue($brand-color),00%,100%);
+$gray-950:              hslToHex(hue($brand-color),01%,96%);
+$gray-900:              hslToHex(hue($brand-color),01%,91%);
+$gray-800:              hslToHex(hue($brand-color),02%,82%);
+$gray-700:              hslToHex(hue($brand-color),02%,71%);
+$gray-600:              hslToHex(hue($brand-color),03%,62%);
+$gray-500:              hslToHex(hue($brand-color),03%,50%);
+$gray-400:              hslToHex(hue($brand-color),05%,42%);
+$gray-300:              hslToHex(hue($brand-color),05%,31%);
+$gray-200:              hslToHex(hue($brand-color),05%,20%);
+$gray-100:              hslToHex(hue($brand-color),13%,12%);
+$gray-050:              hslToHex(hue($brand-color),21%,04%);
+$black:                 hslToHex(hue($brand-color),34%,02%);
+$black80:               hslToHex(hue($brand-color),34%,04%)+CC;
 
 // SEMANTIC MAPPING
 $gray-light:$gray-800;
@@ -49,72 +49,67 @@ $gray-dark: $gray-200;
 
 // TYPE
 // -------------------------
-$textColor:             var(--gray-dark);
-$textBoldColor:         var(--black);
-$textOffColor:          var(--gray-mid);
-$displayTextColor:      var(--black);
-$linkColor:             var(--black);
-$linkColorHover:        var(--brandColor);
-$selectionColor:        $brandAccent;
+$text-color:             var(--gray-dark);
+$text-color-bold:        var(--black);
+$text-color-subdued:     var(--gray-mid);
+$link-color:             var(--black);
+$link-color-hover:       var(--brandColor);
+$selection-color:        $brand-accent;
 
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        var(--white);
-$wellBackground:        var(--gray-light);
-$borderColor: 			var(--gray-light);
-$heroUnitBackground:    $gray-050;
-$heroUnitHeadingColor:  $white;
-$heroUnitLeadColor:     $gray-light;
+$body-background:        var(--white);
+$well-background:        var(--gray-light);
+$hero-background:    $gray-050;
+$hero-heading-color:  $white;
+$hero-text-color:     $gray-light;
+$border-color: 			var(--gray-light);
 
 // Navbar
 // -------------------------
-$navbarBackground:                var(--white80);
-$navbarBackgroundHighlight:       transparent;
-$navbarBorder:                    none;//.0125rem solid var(--gray-light);
-$navbarText:                      $textColor;
-$navbarLinkColor:                 $textBoldColor;
-$navbarLinkColorHover:            $textBoldColor;
-$navbarLinkBackgroundHover:       $wellBackground;
-$navbarLinkColorActive:           var(--gray-light);
-$navbarLinkBackgroundActive:      var(--gray-dark);
-$navbarBrandColor:                $navbarLinkColor;
+$navbar-background:                var(--white80);
+$navbar-background-highlight:       transparent;
+$navbar-border:                    none;//.0125rem solid var(--gray-light);
+$navbar-text:                      	$text-color;
+$navbar-brand-color:                $brand-color;
+$navbar-link-color:                 $text-color-bold;
+$navbar-link-hover-color:            $text-color-bold;
+$navbar-link-hover-background:       $well-background;
+$navbar-link-active-color:           var(--gray-light);
+$navbar-link-active-background:      var(--gray-dark);
 
 
 // GRID
 // --------------------------------------------------
-$spacerHorizontal:          1rem;
-$spacerVertical:            2rem;
+$spacer-horizontal:          1rem;
+$spacer-vertical:            2rem;
 
-$gridColumns:             	6;
-$gridWidth:               	40rem;
-$gridGutterWidth:         	$spacerHorizontal;
-$gridColumnWidth:         	math.div(($gridWidth - (($gridColumns - 1) * $gridGutterWidth)), $gridColumns);
-$gridMargin: 			  	calc((100vw - $gridWidth) / 2);
+$grid-columns:             	6;
+$grid-width:               	40rem;
+$grid-padding:         		$spacer-horizontal;
+$grid-column:         		math.div(($grid-width - (($grid-columns - 1) * $grid-padding)), $grid-columns);
+$grid-margin: 			  	calc((100vw - $grid-width) / 2);
 
-$breakpointWidescreen:      1201px;
-$breakpointWidescreen-1:    ($breakpointWidescreen - 1px);
-$breakpointDesktop:         961px;
-$breakpointDesktop-1:       $breakpointDesktop - 1;
-$breakpointPortrait:        769px;
-$breakpointPortrait-1:      $breakpointPortrait - 1;
-$breakpointPhone:           480px;
+$breakpoint-widescreen:      1201px;
+$breakpoint-widescreen-1:    ($breakpoint-widescreen - 1px);
+$breakpoint-desktop:         961px;
+$breakpoint-desktop-1:       $breakpoint-desktop - 1;
+$breakpoint-portrait:        769px;
+$breakpoint-portrait-1:      $breakpoint-portrait - 1;
+$breakpoint-phone:           480px;
 
+$input-height:               1.25rem;
+$navbar-height:              2rem;
 
-
-$inputHeight:               1.25rem;
-$navbarHeight:              2rem;
-
-
-$shadowColor: 				hsla(hue($brandColor), 100%, 12%, 0.2);
-$shadowDepth: 				$spacerVertical;
-$shadowOffset: 				math.div($shadowDepth, 4);
-$shadow: 0 $shadowOffset $shadowDepth $shadowColor;
+$shadow-color: 				hsla(hue($brand-color), 100%, 12%, 0.2);
+$shadow-depth: 				$spacer-vertical;
+$shadow-offset: 				math.div($shadow-depth, 4);
+$shadow: 0 $shadow-offset $shadow-depth $shadow-color;
 
 
 // ANIMATION
 // --------------------------------------------------
-$animateSpeed:      400ms;
 $easeBounce:      cubic-bezier(0.175, 0.885, 0.320, 1.275);
 $easeGetSet:      cubic-bezier(0.955, -1.00, 0.850, 0.490);
 $easeInQuart:     cubic-bezier(0.500, 0.000, 0.750, 0.000);
@@ -123,7 +118,6 @@ $easeInOutQuart:  cubic-bezier(0.770, 0.000, 0.175, 1.000);
 $easeInOutQuad:	cubic-bezier(0.45, 0, 0.55, 1);
 $easeInOutCubic:	cubic-bezier(0.65, 0, 0.35, 1);
 $easeInOutBack: 	cubic-bezier(0.68, -0.6, 0.32, 1.6);
-$animateEasing:     $easeInOutCubic;
-$animateEquation:   $animateEasing;
 
-
+$animation-speed:      400ms;
+$animation-easing:     $easeInOutCubic;

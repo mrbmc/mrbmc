@@ -10,9 +10,9 @@ body.photos {
         padding: 0;
     }
     #masthead {
-        height: calc(100vh - $navbarHeight - $thumbSize);
+        height: calc(100vh - $navbar-height - $thumbSize);
         h1 {
-            color: $textBoldColor;
+            color: $text-color-bold;
         }
     }
     section.gallery {
@@ -35,7 +35,7 @@ body.photos {
     nav#thumbnails {
         position: fixed;
         z-index: 5;
-        background: $wellBackground;
+        background: $well-background;
         white-space: nowrap;
         overflow-x: scroll;
         overflow-y: hidden;
@@ -56,7 +56,7 @@ body.photos {
             box-sizing: border-box;
             height: $thumbSize;
             @include opacity(68);
-            @include transition(all $animateSpeed $animateEasing);
+            @include transition(all $animation-speed $animation-easing);
             img {
                 height: 100%;
                 width: auto;
@@ -72,7 +72,7 @@ body.photos {
             }
             &.active {
                 img {
-                    border-color: $brandComplement;
+                    border-color: $brand-complement;
                 }
             }
 
@@ -84,7 +84,7 @@ body.photos {
 
 
 //tablets & phones
-@media (max-width: $breakpointPortrait-1) {
+@media (max-width: $breakpoint-portrait-1) {
     .gallery {
         .detail {
             height: 100vw;

@@ -4,19 +4,19 @@ body.about {
         padding-top: 0;
 
         & > section {
-            border-top: solid 1px $borderColor;
-            padding-top: $spacerVertical * 2;
-            margin-top: $spacerVertical * 2;
+            border-top: solid 1px $border-color;
+            padding-top: $spacer-vertical * 2;
+            margin-top: $spacer-vertical * 2;
         }
 
 
     }
 
     h1 {
-        margin: ($spacerVertical * 2) 0 $spacerVertical;
+        margin: ($spacer-vertical * 2) 0 $spacer-vertical;
     }
     h1 + p {
-        margin: $spacerVertical 0 ($spacerVertical * 2);
+        margin: $spacer-vertical 0 ($spacer-vertical * 2);
     }
 
     img[alt="Disney"] {
@@ -56,16 +56,16 @@ body.about {
 
         // @include fullWidth(100vw);
         // box-sizing: border-box;
-        // padding: $spacerVertical $spacerHorizontal;
+        // padding: $spacer-vertical $spacer-horizontal;
 
         display: flex;
         flex-direction: column;
-        row-gap: $spacerVertical;
+        row-gap: $spacer-vertical;
 
         li {
             list-style: none;
             width: 100%;
-            max-width: $gridWidth;
+            max-width: $grid-width;
             margin: 0 auto;
 
             details {
@@ -85,7 +85,7 @@ body.about {
     }
 
     hr {
-        margin: ($spacerVertical * 3) auto;
+        margin: ($spacer-vertical * 3) auto;
     }
 }
 
@@ -95,13 +95,13 @@ body.about {
 ul.timeline {
     @include card;
 
-    margin: $spacerVertical ($spacerHorizontal * 2);
+    margin: $spacer-vertical ($spacer-horizontal * 2);
 
     li {
         margin: 0;
         position: relative;
-        padding: 0 0 $spacerVertical $spacerHorizontal;
-        border-left: 2px solid $textOffColor;
+        padding: 0 0 $spacer-vertical $spacer-horizontal;
+        border-left: 2px solid $text-color-subdued;
         list-style: none;
         &:last-of-type {
             padding-bottom: 0;
@@ -113,8 +113,8 @@ ul.timeline {
             width: $bullet-size;
             height: $bullet-size;
             @include border-radius(1em);
-            margin: 0 $spacerHorizontal 0 calc(($spacerHorizontal * -1) - ($bullet-size * .5) - 1px);
-            background: $textOffColor;
+            margin: 0 $spacer-horizontal 0 calc(($spacer-horizontal * -1) - ($bullet-size * .5) - 1px);
+            background: $text-color-subdued;
         }
 
     }

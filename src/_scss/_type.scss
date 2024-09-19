@@ -87,7 +87,7 @@ p, li, dt, dd {
 }
 strong,b {
     font-weight: $boldFontWeight;
-    color: $textBoldColor;
+    color: $text-color-bold;
 }
 em {
     font-style: italic;
@@ -108,7 +108,7 @@ em {
 .caption,.legal {
     @include smallType();
     font-style: italic;
-    color: $textOffColor;
+    color: $text-color-subdued;
 }
 
 blockquote,.blockquote {
@@ -123,26 +123,26 @@ blockquote,.blockquote {
 
 .underline {
     padding: 0 1em;
-    border-bottom: 1px solid $textColor;
+    border-bottom: 1px solid $text-color;
 }
 
 #header {
     a {
         text-decoration: none;
-        @include typeset($navbarFontFamily, $navbarFontWeight, 0.89em, ($navbarHeight * .62), -0.0125em);
+        @include typeset($navbarFontFamily, $navbarFontWeight, 0.89em, ($navbar-height * .62), -0.0125em);
         text-transform: uppercase;
 
-        @include transition(all $animateSpeed $animateEasing);
+        @include transition(all $animation-speed $animation-easing);
 
         &:hover {
-            @include transition(all ($animateSpeed * .5) $animateEasing);
-            color: $navbarLinkColorHover;
-            background: $navbarLinkBackgroundHover;
+            @include transition(all ($animation-speed * .5) $animation-easing);
+            color: $navbar-link-hover-color;
+            background: $navbar-link-hover-background;
             text-decoration: none;
         }
     }
     .brand {
-        @include typeset($displayFontFamily, $displayFontWeight, 1em, ($navbarHeight * .62), 0.0em);
+        @include typeset($displayFontFamily, $displayFontWeight, 1em, ($navbar-height * .62), 0.0em);
     }
 }
 

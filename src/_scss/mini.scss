@@ -35,12 +35,12 @@ body {
     main, #main {
         box-sizing: border-box;
         margin: 0 auto;
-        padding: $spacerVertical 0;
-        width: $gridWidth;
+        padding: $spacer-vertical 0;
+        width: $grid-width;
 
         @media (orientation: portrait) {
             width: 100%;
-            padding: 0 $spacerHorizontal;
+            padding: 0 $spacer-horizontal;
             overflow-x: hidden;
         }
     }
@@ -62,10 +62,10 @@ body {
     --gray-light:   #{$gray-light};
     --white:        #{$white};
     --white80:     #{$white80};
-    --brandColor: #{$brandColor};
-    --brandComplement: #{$brandComplement};
-    --brandAccent: #{$brandAccent};
-    --brandSecondary: #{$brandSecondary};
+    --brandColor: #{$brand-color};
+    --brandComplement: #{$brand-complement};
+    --brandAccent: #{$brand-accent};
+    --brandSecondary: #{$brand-secondary};
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -76,7 +76,7 @@ body {
         --gray-light:   #{$gray-200};
         --white:        #{$gray-050};
         --white80:      #{$black80};
-        --brandColor:   #{$brandAccent};
+        --brandColor:   #{$brand-accent};
     };
 }
 html {
@@ -84,20 +84,20 @@ html {
 }
 body {
     margin: 0;
-    background: $bodyBackground;
-    color: $textColor;
+    background: $body-background;
+    color: $text-color;
 }
 h1,h2,h3,h4,h5 {
-    color: $displayTextColor;
+    color: $text-color-bold;
 }
 a {
-    color: $linkColor;
+    color: $link-color;
     &:hover {
-        color: $linkColorHover;
+        color: $link-color-hover;
     }
 }
 ::selection {
-    background: $selectionColor;
+    background: $selection-color;
 }
 
 
@@ -105,19 +105,19 @@ a {
 // MOLECULE STYLES
 
 @mixin card {
-    margin: $spacerVertical auto;
-    padding: $spacerHorizontal;
-    background: $bodyBackground;
-    border: 1px solid $borderColor;
-    border-radius: math.div($spacerHorizontal, 2);
-    box-shadow: inset 1px 1px 0px rgba(255,255,255,.08),inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadowOffset $shadowDepth $shadowColor;
+    margin: $spacer-vertical auto;
+    padding: $spacer-horizontal;
+    background: $body-background;
+    border: 1px solid $border-color;
+    border-radius: math.div($spacer-horizontal, 2);
+    box-shadow: inset 1px 1px 0px rgba(255,255,255,.08),inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadow-offset $shadow-depth $shadow-color;
 }
 @mixin well {
-    margin: $spacerVertical auto;
-    padding: $spacerHorizontal;
-    background: $wellBackground;
-    border-radius: math.div($spacerHorizontal, 2);
-    // box-shadow: inset 0 $shadowOffset $shadowDepth $shadowColor;
+    margin: $spacer-vertical auto;
+    padding: $spacer-horizontal;
+    background: $well-background;
+    border-radius: math.div($spacer-horizontal, 2);
+    // box-shadow: inset 0 $shadow-offset $shadow-depth $shadow-color;
 }
 .well {
 	@include well;
@@ -127,25 +127,25 @@ a {
 }
 
 blockquote,.blockquote {
-    padding: 0 0 0 $spacerHorizontal;
-    margin: $spacerVertical 0 $spacerVertical ($spacerHorizontal * -1);
-    border-left: solid 4px $textOffColor;
-    color: $textOffColor;
+    padding: 0 0 0 $spacer-horizontal;
+    margin: $spacer-vertical 0 $spacer-vertical ($spacer-horizontal * -1);
+    border-left: solid 4px $text-color-subdued;
+    color: $text-color-subdued;
 }
 
 .button, button {
-    background: $brandColor;
-    color: $heroUnitLeadColor;
-    // border: 1px solid $brandColor;
+    background: $brand-color;
+    color: $hero-text-color;
+    // border: 1px solid $brand-color;
 
     padding: .5em 1em;
     border-radius: .375em;
     text-decoration: none;
-    // box-shadow: 0 8px 24px hsla(hue($brandColor), 50%, 10%, 20%);;
-    box-shadow: inset 0px 1px 1px 0px $white, 0 math.div($shadowOffset, 2) math.div($shadowDepth,2) $shadowColor, 0 $shadowOffset $shadowDepth $shadowColor;
+    // box-shadow: 0 8px 24px hsla(hue($brand-color), 50%, 10%, 20%);;
+    box-shadow: inset 0px 1px 1px 0px $white, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
 
     &:hover {
-        color: $heroUnitHeadingColor;
+        color: $hero-heading-color;
     }
 }
 
@@ -170,11 +170,11 @@ blockquote,.blockquote {
         background-attachment: fixed;
         background-size: 100% 100%;
         background: 
-            radial-gradient(38% 81% at 100% 81%,   $brandAccent20 25%,  $brandColor00 100%)
-            ,radial-gradient(38% 130% at 62% 0%,    $brandComplement20 0%,   $brandColor00 100%)
-            ,radial-gradient(38% 100% at 20% 100%,  $brandSecondary20 0%,      $brandColor00 100%)
-            ,radial-gradient(100% 100% at 0% 0%,  $brandColor80 0%,    $brandColor00 100%)
-            ,$brandColor;
+            radial-gradient(38% 81% at 100% 81%,   $brand-accent-20 25%,  $brand-color-00 100%)
+            ,radial-gradient(38% 130% at 62% 0%,    $brand-complement-20 0%,   $brand-color-00 100%)
+            ,radial-gradient(38% 100% at 20% 100%,  $brand-secondary-20 0%,      $brand-color-00 100%)
+            ,radial-gradient(100% 100% at 0% 0%,  $brand-color-80 0%,    $brand-color-00 100%)
+            ,$brand-color;
     }
     &:after {
         content: "";
