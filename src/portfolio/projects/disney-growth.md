@@ -63,7 +63,7 @@ The complete scope of surface areas for Disney+ Growth can be organized around a
 
 At the inception of work on Disney+ the "Growth" design team was 3 designers + 1 UX researcher.  We had always worked well with engineers and product owners but not with the degree of specialization or scale that we needed.
 
-![Growth Team in 2018](/images/portfolio/disney-growth/growth-team-start.png){.center style="padding: 4rem;box-sizing:border-box;"}
+![Growth Team - January 2019](/images/portfolio/disney-growth/growth-team-start.png){.center}
 Growth Team - January 2019{.caption}
 
 #### Solution
