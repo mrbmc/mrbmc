@@ -16,9 +16,6 @@ body,html {
 .fullwidth {
     @include fullWidth(100vw);
 }
-.fullwidth90 {
-    @include fullWidth(90vw);
-}
 .fullheight {
     @include fullHeight(90vh);
 }
@@ -197,7 +194,7 @@ table {
         border: 0 solid $borderColor;
         border-width: 0 0 1px 0;
         text-align: left;
-        color: var(--gray-mid);
+        color: $textBoldColor;
     }
     &.rotate {
         @include transpose_table;
