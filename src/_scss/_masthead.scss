@@ -5,6 +5,7 @@
     margin-bottom: $spacerVertical;
     padding: $spacerVertical calc((100vw - $gridWidth)/2);
     height: calc(100vh - $navbarHeight);
+    display: flex;
     flex-direction: column;
     justify-content: center;
 
@@ -57,8 +58,7 @@
 
     @media (orientation: portrait) {
         height: auto;
-        padding: $spacerVerticalPhone $spacerHorizontalPhone 0;
-        margin-bottom: $spacerVerticalPhone;
+        padding: $spacerVertical $spacerHorizontal 0;
     }
 
     p:has(.scrollhint),p.scrollhint {

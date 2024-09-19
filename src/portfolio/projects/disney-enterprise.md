@@ -9,6 +9,16 @@ summary: A suite of enterprise SAAS products behind Disney+, Hulu, and ESPN save
 timeline: 2019-2023
 ---
 
+1. [The Strategy](#strategy)
+2. [Team Building](#team)
+3. [Product Domains](#products)
+   1. [Commerce](#commerce)
+   2. [Content](#content)
+   4. [Business Intelligence](#analytics)
+   3. [Developer Experience](#developer)
+
+{.stickynav}
+
 - ![Support Agent Portal](/images/portfolio/disney-enterprise/baymax-customer.jpg)
 - ![Commerce Portal](/images/portfolio/disney-enterprise/genie-offers.jpg)
 - ![Commerce Portal](/images/portfolio/disney-enterprise/web-genie.jpg)
@@ -29,16 +39,6 @@ timeline: 2019-2023
 - ![Content Portal](/images/portfolio/disney-enterprise/new/content-portal-episode.jpg)
 {.gallery}
 
-
-1. [The Strategy](#strategy)
-2. [The Team](#team)
-3. [The Products](#products)
-   1. [Commerce Management](#commerce)
-   <!-- 1. [Content Management](#content) -->
-   1. [Design System](#designsystem)
-
-{.stickynav}
-
 | Role & Responsibility                                                                                                                                          | Team                                   | Timeline            | Impact                                                                     |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ------------------- | -------------------------------------------------------------------------- |
 | **Sr. Director, Product Design**<br><br>Team hiring, management, and organization design. Design strategy. Partner management. Budgeting. Culture development. | 12 FT Designers + 6 Design Contractors | Jan 2019 - Aug 2023 | saved **$80M** p/a in operating costs<br>supported a **25% growth in MRR** |
@@ -47,7 +47,7 @@ timeline: 2019-2023
 
 _To create something truly novel you need novel tools._
 
-![golden circle](/images/portfolio/disney-enterprise/EXD-Golden-Circle.png)
+![golden circle](/images/portfolio/disney-enterprise/EXD-Golden-Circle.png){style="box-shadow:0 1em 1.38em 0.38em rgba(0,0,0,0.13);"}
 
 Creating a global streaming service that meets consumers where they are, requires a constellation of powerful software components: routing video across the globe, programming the content in every region, setting pricing for dozens of currencies, supporting thousands of support castmembers, messaging guests about their favorite content...
 
@@ -71,28 +71,31 @@ As the executive accountable for product design of these tools my mission was to
 
 ## The Team{#team}
 
+![linda](/images/portfolio/disney-enterprise/exd-team-linda.png)![caroline](/images/portfolio/disney-enterprise/exd-team-caroline.png)![dan](/images/portfolio/disney-enterprise/exd-team-dan.png)![alexaf](/images/portfolio/disney-enterprise/exd-team-alexaf.png)![daria](/images/portfolio/disney-enterprise/exd-team-daria.png)![takeem](/images/portfolio/disney-enterprise/exd-team-takeem.png)![alexac](/images/portfolio/disney-enterprise/exd-team-alexac.png)![jenny](/images/portfolio/disney-enterprise/exd-team-jenny.png)![willet](/images/portfolio/disney-enterprise/exd-team-willet.png)![sarah](/images/portfolio/disney-enterprise/exd-team-sarah.png)![kda](/images/portfolio/disney-enterprise/exd-team-kda.png)![cathy](/images/portfolio/disney-enterprise/exd-team-cathy.png)![carol](/images/portfolio/disney-enterprise/exd-team-carol.png)![jon](/images/portfolio/disney-enterprise/exd-team-jon.png)![agency](/images/portfolio/disney-enterprise/exd-team-agency.png)
+{.team}
+
+### Defining Culture
 A team is greater than the sum of the individuals. It's a singular unit with a shared purpose. The secret ingredient that binds a group of people together is the culture. I'm proud to say the Enterprise XD team at Disney had a strong culture of **psychological safety**, **authenticity**, and **shared growth**.
 
 Culture can be designed with intentional reinforcement of the behaviors that align with our values. Other teams at Disney saw this and asked for an open-source toolkit for our [culture workshop](/portfolio/team-culture-workshop/).
 
-![linda](/images/portfolio/disney-enterprise/exd-team-linda.png)![caroline](/images/portfolio/disney-enterprise/exd-team-caroline.png)![dan](/images/portfolio/disney-enterprise/exd-team-dan.png)![alexaf](/images/portfolio/disney-enterprise/exd-team-alexaf.png)![daria](/images/portfolio/disney-enterprise/exd-team-daria.png)![takeem](/images/portfolio/disney-enterprise/exd-team-takeem.png)![alexac](/images/portfolio/disney-enterprise/exd-team-alexac.png)![jenny](/images/portfolio/disney-enterprise/exd-team-jenny.png)![willet](/images/portfolio/disney-enterprise/exd-team-willet.png)![sarah](/images/portfolio/disney-enterprise/exd-team-sarah.png)![kda](/images/portfolio/disney-enterprise/exd-team-kda.png)![cathy](/images/portfolio/disney-enterprise/exd-team-cathy.png)![carol](/images/portfolio/disney-enterprise/exd-team-carol.png)![jon](/images/portfolio/disney-enterprise/exd-team-jon.png)![agency](/images/portfolio/disney-enterprise/exd-team-agency.png)
-{.team}
+<video src="/images/portfolio/culture-workshop/EXD-workshop-timelapse.mp4" autoplay muted loop ></video>
 
-### Pods
+### Operating Model
 
 To tackle such a large surface area, we organized the team into pods for each topical area. These subjects aligned with business outcomes as well.
 
 ![](/images/portfolio/disney-enterprise/exd-pods.png){.card}
 
 
-## Products{#products}
+## Product Domains{#products}
 
 ### Commerce {#commerce}
 
 How might we manage 1000+ offer combinations of currency, service 
 
-- ![genie 1](/images/portfolio/disney-enterprise/genie.png)
-- ![genie 1](/images/portfolio/disney-enterprise/genie.png)
+- ![genie 1](/images/portfolio/disney-enterprise/genie-offers.jpg)
+- ![genie 1](/images/portfolio/disney-enterprise/genie-campaign.png)
 {.gallery}
 
 <!-- ### Content{#content}
@@ -105,7 +108,7 @@ How might we manage 1000+ offer combinations of currency, service
 
 ![Streaming QoS Analysis](/images/portfolio/disney-enterprise/optumus-mockup.jpg)
 
-### Design System
+### Developer Experience{#developer}
 
 We partnered with a team of engineers who cared deeply about developer productivity to create a design system and a visual language that was unique to disney. This design system provides a high quality, rapid, and robust UI framework across all these products.
 
@@ -119,7 +122,7 @@ We partnered with a team of engineers who cared deeply about developer productiv
 {.gallery}
 
 
-### A unified platform
+## Unified Platform Vision
 
 
 - ![Commerce Portal](/images/portfolio/disney-enterprise/new/commerce-offer-detail.jpg)
@@ -173,8 +176,6 @@ flex: 1 1;
 
 <!--
 
--->
-
 All of the products we designed or consulted on:
 
 Anti-Piracy Operations, Audience Segmentation, CDN Management Console, Commerce & Offer Operations, Commerce Config Tool, Content Catalog Browser, Content delivery Preview, Content Experience Management, Content Portal (hulu live, sVOD), CX Dashboard  , Data Activation Framework , DATA instrumentation library, Data Portal , Developer Portal, Dictionary & Translation, Disney Edge Controller (DEC), EXD Design System, Experimentation , Fraud Management Service, Hulu Ad Manager, Hulu Ad Mission Control, Hulu Ad Revenue Processing Service, Machine Learning Dashboard, Metadata Mapping & Visualization, Partner Portal, Player Config Service, Responder Files (DATA Feature Market), SRE Dashboard, Streaming QoS Insights, Support Agent Console, Unified Messaging Platform{.small .card}
@@ -184,8 +185,8 @@ Anti-Piracy Operations, Audience Segmentation, CDN Management Console, Commerce 
 
 Why build custom software tools? 
 
-**To create something truly novel you need novel tools.**
-
 Disney has a rich history of building new tools that unlock creative possibilities. One famous example was the Multi-plane camera which massively accelerated animation and enabled parallax motion techniques.
 
 ![Multiplane Camera](/images/portfolio/Walt_Disney_Multiplane_Camera_2.jpeg){.fullwidth style="height:62vh;object-position: 50% 38%;"}
+-->
+

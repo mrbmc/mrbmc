@@ -1,7 +1,5 @@
 #header {
-    width: 100vw;
-    padding: ($navbarHeight * .19) $spacerHorizontal;
-    margin: 0 auto;
+    padding: 0 $spacerHorizontal;
 
     box-sizing: border-box;
     height: $navbarHeight;
@@ -14,7 +12,8 @@
     z-index: 100;
     position: relative;
     align-items: center;
-    line-height: ($navbarHeight * .62);
+    // line-height: ($navbarHeight * .62);
+    line-height: ($navbarHeight * 1);
     list-style-type: none;
 
     @media (orientation: portrait) {
@@ -33,37 +32,35 @@
             display: none;
         }
     }
-    nav,&>ol {
+    #menu {
         box-sizing: border-box;
         flex-basis: 100%;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        margin: 0;
         z-index: 2;
     }
 
 
     .brand {
+        $logo-size: 1.38em;
+        width: $logo-size;
+        height: $logo-size;
+        line-height: $logo-size;
         z-index: 3;
-        text-decoration: none;
-        display: flex;
-        padding: 0;
         margin: 0;
-        color: transparent;
-        &:hover {
-        color: transparent;
-
-        }
+        padding: 0;
+        overflow: hidden;
         &:before {
-            content: "";
-            background: url(/images/profile/kageki-crane.svg);
-            background-size: 1.2em;
-            background-position: 0 0;
-            background-repeat: no-repeat;
-            width: 1.62em;
-            height: 1.2em;
             display: inline-block;
+            content: "";
+            // background-color: $brandColor20;
+            background-image: url('data:image/svg+xml,<svg viewBox="0 0 563 563" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M131.853 333.434L562.468 523.367L336.482 193.322L131.853 333.434Z" /><path fill="currentColor" d="M440.148 306.588L557.907 39.6064L353.279 179.718L440.148 306.588Z" /><path fill="currentColor" d="M119.371 315.67L111.161 134.941L198.03 261.811L119.371 315.67Z" /><path fill="currentColor" d="M392.269 469.535L226.741 396.524L313.61 523.394L392.269 469.535Z" /><path fill="currentColor" d="M93.5943 139.347L0.373047 201.727L95.6468 198.417L93.5943 139.347Z" /></svg>');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            width: 100%;
+            height: 100%;
             @media (prefers-color-scheme: dark) {
                 filter: invert(100%);
             }
@@ -72,7 +69,6 @@
 
     a#open-menu, a#close-menu {
         display: none;
-        overflow: hidden;
     }
 }
 
@@ -89,57 +85,51 @@ body.resume #header #menu a[href="/about/"] {
 // phones up to tablets
 // @media (max-width: $breakpointPortrait-1) {
 @media (orientation: portrait) {
-    $burgerSize: 1rem;
-    $btnLine: 1.5px;
+    $burgerSize: 1.2em;
+    $btnLine: 2px;
 
     #header {
 
         justify-content: space-between;
-        padding: 0 $spacerHorizontalPhone;
+
+        .brand {
+            width: 2em;
+            height: 2em;
+        }
 
         a#open-menu, a#close-menu {
 
             display: block;
+            width: $burgerSize;
             height: $burgerSize;
             background: transparent;
-            padding: 0;
-            margin: 0;
-            width: $burgerSize;
             position: relative;
             z-index: 3;
             color: transparent !important;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
 
             @include transition(transform $animateSpeed $animateEasing);
 
             &:before,&:after {
                 display: block;
                 content: "";
-                width: 100%;
-                box-sizing: border-box;
 
-                background: transparent;
-                height: $btnLine;
                 background: $textBoldColor;
-                // height: calc(($burgerSize * .31) + ($btnLine/2));
-                // border: $btnLine solid $textBoldColor;
-                // border-width: $btnLine 0;
 
+                width: $burgerSize;
+                height: $btnLine;
                 position: absolute;
                 left: 0;
                 top: 20%;
+
                 @include transition(transform $animateSpeed $animateEasing);
             }
             &:after {
                 top: inherit;
                 bottom: 20%;
-                // border-width: 0 0 $btnLine 0;
             }
-        }
-        a#open-menu {
-            // display: block;
-        }
-        a#close-menu {
-            // display: none;
         }
 
         #menu {
@@ -149,11 +139,10 @@ body.resume #header #menu a[href="/about/"] {
             top: 0;
             right: 0;
             bottom: 0;
-            padding: $spacerVerticalPhone $spacerHorizontalPhone;
+            padding: $spacerHorizontal;
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
-            box-sizing: content-box;
 
             @include transition(opacity $animateSpeed $animateEasing);
             @include translate(-100%,0%);
@@ -164,7 +153,7 @@ body.resume #header #menu a[href="/about/"] {
                 &:not(#close-menu) {
                     font-size: 150%;
                     line-height: $baseLineHeight;
-                    margin: 0 0 ($spacerVerticalPhone*2) 0;
+                    margin: 0 0 $spacerVertical 0;
                 }
             }
 
@@ -178,7 +167,7 @@ body.resume #header #menu a[href="/about/"] {
                     display: block;
                     position: absolute;
                     top: $navbarHeight * .19;
-                    right: $spacerHorizontalPhone;
+                    right: $spacerHorizontal;
                     &:before,
                     &:after {
                         top: 50%;
@@ -192,9 +181,6 @@ body.resume #header #menu a[href="/about/"] {
 
                 }
             }
-        }
-        .brand {
-            z-index: 100;
         }
     }
 }
@@ -268,15 +254,6 @@ body.resume #header #menu a[href="/about/"] {
     }
 
     @include smallType();
-
-    // &:before {
-    //     content: "BMC";
-    //     display: block;
-    //     @include typeset($displayFontFamily, $displayFontWeight, 1em, inherit, 0.0em);
-    //     border-right: 1px solid var(--gray-mid);
-    //     padding-right: math.div($spacerHorizontal,2);
-    //     margin-right: math.div($spacerHorizontal,2);
-    // }
 
     a[href="#top"] {
         content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNTMgMjAiPjxwYXRoIGQ9Ik0yNi41MDAzIDIuMzEzNDVMOS4xMTQyNiAxNi4yMjI1TDEwLjMwMzMgMTcuNjg5NUwyNi41MDAzIDQuNzMyNDVMNDIuNjk3MyAxNy42ODg1TDQzLjg4NjMgMTYuMjIyNUwyNi41MDAzIDIuMzEzNDVaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=");

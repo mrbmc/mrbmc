@@ -2,9 +2,6 @@ body.about {
 
     main,#main {
         padding-top: 0;
-        .gallery{
-            @include fullWidth(90vw);
-        }
 
         & > section {
             border-top: solid 1px $borderColor;
@@ -54,13 +51,14 @@ body.about {
 
     }
 
-    #mantras,.hero {
-        @include inverse();
+    .hero {
+        // @include inverse();
 
-        @include fullWidth(100vw);
-        box-sizing: border-box;
-        padding: $spacerVertical $gridMargin;
+        // @include fullWidth(100vw);
+        // box-sizing: border-box;
+        // padding: $spacerVertical $spacerHorizontal;
 
+        display: flex;
         flex-direction: column;
         row-gap: $spacerVertical;
 
@@ -81,17 +79,8 @@ body.about {
     }
 
     @media (orientation: portrait) {
-        #mantras,ul.hero {
-            padding: $spacerVerticalPhone $spacerHorizontalPhone;
-        }
         img.cover {
             height: 33vh;
-        }
-        h1 {
-            margin-top: $spacerVerticalPhone;
-            &+p {
-                margin: ($spacerVerticalPhone * 2) 0;
-            }
         }
     }
 
@@ -107,17 +96,11 @@ ul.timeline {
     @include card;
 
     margin: $spacerVertical ($spacerHorizontal * 2);
-    @media (orientation: portrait) {
-        margin: $spacerVerticalPhone 0;
-    }
 
     li {
         margin: 0;
         position: relative;
         padding: 0 0 $spacerVertical $spacerHorizontal;
-        @media (orientation: portrait) {
-            padding: 0 0 $spacerVerticalPhone $spacerHorizontalPhone;
-        }
         border-left: 2px solid $textOffColor;
         list-style: none;
         &:last-of-type {
@@ -131,9 +114,6 @@ ul.timeline {
             height: $bullet-size;
             @include border-radius(1em);
             margin: 0 $spacerHorizontal 0 calc(($spacerHorizontal * -1) - ($bullet-size * .5) - 1px);
-            @media (orientation: portrait) {
-                margin: 0 $spacerHorizontalPhone 0 calc(($spacerHorizontalPhone * -1) - ($bullet-size * .5) - 1px);
-            }
             background: $textOffColor;
         }
 

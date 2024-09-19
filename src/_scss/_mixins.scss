@@ -148,34 +148,22 @@
 
 @mixin fullWidth($limit:100vw) {
     width: $limit;
-    display: flex;
     margin-right: auto;
+    display: block;
 
     @media (min-width: $gridWidth) {
-        margin-left: calc((100vw - $gridWidth) * -0.5);
+        margin-left: calc(($limit - $gridWidth) * -0.5);
     }
 
     @media (orientation: portrait) {
-        width: $limit;
-        margin-left: (0 - $spacerHorizontalPhone);
-        // width: 100vw;
-        // margin-left: auto;
+        margin-left: ($spacerHorizontal * -1);
     }
 }
 @mixin fullHeight($limit:calc(100vh - $navbarHeight)) {
   height: $limit;
   max-height: $limit;
 }
-@mixin container {
-    box-sizing: border-box;
-    width: $gridWidth;
-    padding: 0;
-    margin: 0 auto;
-    @media (orientation: portrait) {
-        width: 100%;
-        padding: $spacerVerticalPhone $spacerHorizontalPhone;
-    }
-}
+
 // @mixin span ($s:1) {
 //   width: ($s * $gridColumnWidth) + (($s - 1) * $gridGutterWidth);
 //   margin: $spacerVertical 0 $spacerVertical $gridGutterWidth;
@@ -200,4 +188,43 @@
   $g: decToHex(green(hsl($h,$s,$l)));
   $b: decToHex(blue(hsl($h,$s,$l)));
   @return ##{$r+$g+$b};
+}
+
+@mixin inverse {
+    position: relative;
+    overflow: hidden;
+
+    >h1,>h2,>h3,>p,>span {
+        color: $white;
+    }
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -2;
+
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background: 
+            radial-gradient(38% 81% at 100% 81%,   $brandAccent20 25%,  $brandColor00 100%)
+            ,radial-gradient(38% 130% at 62% 0%,    $brandComplement20 0%,   $brandColor00 100%)
+            ,radial-gradient(38% 100% at 20% 100%,  $brandSecondary20 0%,      $brandColor00 100%)
+            ,radial-gradient(100% 100% at 0% 0%,  $brandColor80 0%,    $brandColor00 100%)
+            ,$brandColor;
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: url(#noiseFilter) opacity(30%);
+    }
 }

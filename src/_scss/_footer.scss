@@ -23,16 +23,12 @@ body {
         }
 
         &>div {
-            box-sizing: border-box;
-            flex: 1 0 50%;
-            z-index: 2;
-
             nav {
                 display: flex;
                 justify-content: center;
                 a {
                     margin: 0 ($spacerHorizontal * 0.5);
-                }            
+                }
             }
             p {
                 text-align: center;
@@ -76,34 +72,4 @@ body {
 }
 #noiseImage {
     display: none;
-}
-
-
-// phones up to tablets
-@media (max-width: $breakpointPortrait-1) {
-    body {
-        footer {
-            flex-direction: column;
-            &>div {
-                height: auto;
-                flex-basis: 100%;
-                max-width: 100%;
-                padding: $spacerVerticalPhone $spacerHorizontalPhone;
-                &:last-of-type {
-                    padding-left: $spacerHorizontalPhone;
-                }
-            }
-        }
-    }
-}
-
-
-// WIDESCREEN
-@media (min-width: $breakpointWidescreen) {
-    body {
-        &>footer {
-            &>div {
-            }
-        }
-    }
 }

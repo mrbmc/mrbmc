@@ -63,7 +63,7 @@ The complete scope of surface areas for Disney+ Growth can be organized around a
 
 At the inception of work on Disney+ the "Growth" design team was 3 designers + 1 UX researcher.  We had always worked well with engineers and product owners but not with the degree of specialization or scale that we needed.
 
-![Growth Team in 2018](/images/portfolio/disney-growth/growth-team-start.png){.center style="padding: 4rem;box-sizing:border-box;"}
+![Growth Team - January 2019](/images/portfolio/disney-growth/growth-team-start.png){.center}
 Growth Team - January 2019{.caption}
 
 #### Solution
@@ -359,7 +359,7 @@ Disney+ became the fastest-growing streaming service *ever*.
 <dt>Aug 2019 - Dec 2020</dt></dl></div>
 
 
-![growth chart](/images/portfolio/disney-growth/growth-stats.svg)
+![growth chart](/images/portfolio/disney-growth/chart-disney-growth.svg)
 
 I don't believe that the Growth Design was responsible for all that. Disney+ was a desirable product offered at the right time. However, I believe that we did the work necessary – all the user archetypes, devices, payment methods, partnerships, and design systems –  to maximize the opportunity. 
 
