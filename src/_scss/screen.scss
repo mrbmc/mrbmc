@@ -226,29 +226,36 @@ main > section {
 // MOLECULE STYLES
 
 @mixin card {
+    box-sizing: border-box;
     margin: $spacerVertical auto;
     padding: $spacerHorizontal;
     background: $bodyBackground;
     border: 1px solid $borderColor;
     border-radius: math.div($spacerHorizontal, 2);
-    box-shadow: inset 1px 1px 0px rgba(255,255,255,.08),inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadowOffset $shadowDepth $shadowColor;
-    @media (orientation: portrait) {
-        margin: $spacerVerticalPhone auto;
-        padding: $spacerHorizontalPhone;
-    }
+    box-shadow: inset 1px 1px 0px rgba(255,255,255,.08), inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadowOffset $shadowDepth $shadowColor;
 }
 @mixin well {
+    box-sizing: border-box;
     margin: $spacerVertical auto;
     padding: $spacerHorizontal;
     background: $wellBackground;
     border-radius: math.div($spacerHorizontal, 2);
-    // box-shadow: inset 0 $shadowOffset $shadowDepth $shadowColor;
+}
+@mixin hero {
+    @include fullWidth(100vw);
+    box-sizing: border-box;
+    padding: $spacerVertical $spacerHorizontal;
+
+    @include inverse();
 }
 .well {
 	@include well;
 }
 .card {
 	@include card;
+}
+.hero {
+    @include hero;
 }
 
 blockquote,.blockquote {
@@ -278,44 +285,6 @@ blockquote,.blockquote {
     }
 }
 
-@mixin inverse {
-    position: relative;
-    overflow: hidden;
-
-    >h1,>h2,>h3,>p,>span {
-        color: $white;
-    }
-
-    &:before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: -2;
-
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        background: 
-            radial-gradient(38% 81% at 100% 81%,   $brandAccent20 25%,  $brandColor00 100%)
-            ,radial-gradient(38% 130% at 62% 0%,    $brandComplement20 0%,   $brandColor00 100%)
-            ,radial-gradient(38% 100% at 20% 100%,  $brandSecondary20 0%,      $brandColor00 100%)
-            ,radial-gradient(100% 100% at 0% 0%,  $brandColor80 0%,    $brandColor00 100%)
-            ,$brandColor;
-    }
-    &:after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: -1;
-        filter: url(#noiseFilter) opacity(30%);
-    }
-}
 .inverse {
     @include inverse();
 }
@@ -396,10 +365,10 @@ ul.nav,ol.nav {
 }
 
 @mixin kpi {
-    @include well();
+    @include card();
+    background: var(--gray-light);
     display: inline-block;
     margin: $spacerVertical auto;
-    box-shadow:  0 math.div($shadowOffset, 2) math.div($shadowDepth,2) $shadowColor, 0 $shadowOffset ($shadowDepth * 2) $shadowColor;
 
     em,i,b,strong,code,s,dt,dd {
         display: block;
