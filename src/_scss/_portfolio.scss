@@ -153,18 +153,6 @@ body.project {
     }
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1em,2fr));
-    grid-gap: 1em;
-    li,.card,details {
-        // @include card();
-        list-style: none;
-        margin: 0;
-    }
-
-}
-
 
 
 h2.section {

@@ -419,6 +419,22 @@ ul.nav,ol.nav {
     @include kpi;
 }
 
+.grid {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(1em,2fr));
+    grid-auto-flow: column;
+    grid-gap: $spacerHorizontal;
+    margin-bottom: $spacerVertical;
+
+    &>* {
+        list-style: none;
+        margin: 0;
+    }
+    @media (orientation: portrait) {
+        grid-auto-flow: row;
+    }
+}
+
 details {
     @include card();
     summary {
