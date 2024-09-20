@@ -1,8 +1,6 @@
 #masthead {
 
     @include fullWidth(100vw);
-
-    margin-bottom: $spacer-vertical;
     padding: $spacer-vertical calc((100vw - $grid-width)/2);
     height: calc(100vh - $navbar-height);
     display: flex;

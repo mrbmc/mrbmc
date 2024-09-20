@@ -139,7 +139,8 @@ body.home {
         padding: 0 $spacer-horizontal;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: $spacer-horizontal;
+        grid-row-gap: $spacer-vertical;
+        grid-column-gap: $spacer-horizontal;
         @media (orientation: landscape) {
             grid-template-columns: 1fr 1fr 1fr;
         }

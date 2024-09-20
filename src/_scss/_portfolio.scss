@@ -26,7 +26,7 @@ body.portfolio.list {
         flex-direction: column;
         flex: 1 0 100%;
         justify-content: center;
-        margin: $spacer-vertical 0;
+        margin: 0 0 ($spacer-vertical * 2) 0;
 
         @media (orientation: portrait) {
             flex: 1 0 calc(50% - $spacer-horizontal);
@@ -95,7 +95,7 @@ body.portfolio.list {
             flex: 1 0 100%;
             height: auto;
             column-gap: $spacer-horizontal;
-            row-gap: $spacer-vertical;
+            row-gap: 0;
 
             @media (orientation: portrait) {
                 flex-direction: column-reverse;
