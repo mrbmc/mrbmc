@@ -5,9 +5,11 @@ title: Design & Product Leadership
 description: Brian McConnell is a design executive with a unique background as a designer, founder, product manager, and engineer. He builds sustainable businesses by designing products that meet real human needs.
 permalink: /about/
 ---
-# Design Leader With Unique Cross-Functional Expertise.{.left}
+# Designer and Product Maker.{.left}
 
-I am a 👧🏻 👦🏻 father, [👩🏻 husband](https://www.bettykang.com/), 🗽 New Yorker, ️[🚲 cyclist](https://www.strava.com/athletes/773650), [🤿 divemaster](https://www.steelgills.com/@mrbmc), [🌎 world traveler](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **👨‍💻 product design leader with a knack for connecting the dots between user needs and business outcomes**.{.large}
+My family calls me Brian but my friends call me BMC. I am a 👧🏻 👦🏻 father, [👩🏻 husband](https://www.bettykang.com/), 🗽 New Yorker, ️[🚲 cyclist](https://www.strava.com/athletes/773650), [🤿 divemaster](https://www.steelgills.com/@mrbmc), [🌎 world traveler](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **👨‍💻 [product design leader](/portfolio/)**.    
+<br />
+I have a unique cross-functional expertise building products as a designer, product manager, engineer, and founder.{.large}
 
 * [Recent Highlights](#highlights)
 * [Design Leadership](#leadership) 
@@ -29,7 +31,9 @@ I am a 👧🏻 👦🏻 father, [👩🏻 husband](https://www.bettykang.com/),
 
 &nbsp;
 
-Over 20+ years I've learned to **deliver through ambiguity** at scale ranging from timing startups to global enterprises by bringing together evidence-based insights, rapid prototyping, and progressive delivery. I've led teams ranging in size from 2 to 26 people through mergers, acquisitions, closures, and explosive growth. My unique career path has pivoted between leadership roles as a designer, engineer, and product manager thanks to an **ownership mindset**. I'm passionate about creating excellent products regardless of my title. I pivot back to design because of its unique power to **[amplify learning](/blog/a-little-feedback-often/)**. 
+Over 20+ years I've learned to **deliver through ambiguity** at scale ranging from timing startups to global enterprises by bringing together evidence-based insights, rapid prototyping, and progressive delivery. I've led teams ranging in size from 2 to 26 people through mergers, acquisitions, closures, and explosive growth. 
+
+My unique career path has pivoted between leadership roles as a designer, engineer, and product manager thanks to an **ownership mindset**. I'm passionate about creating excellent products regardless of my title. I pivot back to design because of its unique power to **[amplify learning](/blog/a-little-feedback-often/)**. 
 
 [CV & Resumé](/resume/){.button} <!--&nbsp; [Design Blog](/blog/){.button}--> 
 
