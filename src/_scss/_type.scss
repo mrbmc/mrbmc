@@ -14,16 +14,16 @@ $monoFontFamily:        "Courier New", monospace;
 
 $baseFontFamily:        $sansFontFamily;
 $baseFontWeight:        400;
-$boldFontWeight:        400;
+$boldFontWeight:        600;
 $baseFontSize:          1.5em;//math.div(24, 16);//16px is the browser default so the numerator is your desired p size
 $baseLineHeight:        1.62;
 $serifFontWeight:       200;
 
 $headingsFontFamily:    $sansFontFamily;
-$headingsFontWeight:    $boldFontWeight;
+$headingsFontWeight:    $baseFontWeight;
 
 $displayFontFamily:     $sansFontFamily;
-$displayFontWeight:     $boldFontWeight;
+$displayFontWeight:     $baseFontWeight;
 
 $navbarFontFamily:      $sansFontFamily;
 $navbarFontWeight:      $baseFontWeight;
