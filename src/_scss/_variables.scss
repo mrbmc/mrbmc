@@ -59,11 +59,11 @@ $selection-color:        $brand-accent;
 
 // Scaffolding
 // -------------------------
-$body-background:        var(--white);
-$well-background:        var(--gray-light);
-$hero-background:    $gray-050;
-$hero-heading-color:  $white;
-$hero-text-color:     $gray-light;
+$body-background:       var(--white);
+$well-background:       var(--gray-light);
+$hero-background:    	$gray-050;
+$hero-heading-color:  	$white;
+$hero-text-color:     	$gray-light;
 $border-color: 			var(--gray-light);
 
 // Navbar
@@ -82,25 +82,26 @@ $navbar-link-active-background:      var(--gray-dark);
 
 // GRID
 // --------------------------------------------------
-$spacer-horizontal:          1rem;
-$spacer-vertical:            2rem;
+$spacer-horizontal:          	1rem;
+$spacer-vertical:            	2rem;
 
-$grid-columns:             	6;
-$grid-width:               	40rem;
-$grid-padding:         		$spacer-horizontal;
-$grid-column:         		math.div(($grid-width - (($grid-columns - 1) * $grid-padding)), $grid-columns);
-$grid-margin: 			  	calc((100vw - $grid-width) / 2);
+$grid-columns:             		6;
+$grid-width:               		40rem;
+$grid-padding:         			$spacer-horizontal;
+$grid-column:         			math.div(($grid-width - (($grid-columns - 1) * $grid-padding)), $grid-columns);
+$grid-margin: 			  		calc((100vw - $grid-width) / 2);
 
-$breakpoint-widescreen:      1201px;
-$breakpoint-widescreen-1:    ($breakpoint-widescreen - 1px);
-$breakpoint-desktop:         961px;
-$breakpoint-desktop-1:       $breakpoint-desktop - 1;
-$breakpoint-portrait:        769px;
-$breakpoint-portrait-1:      $breakpoint-portrait - 1;
-$breakpoint-phone:           480px;
+$breakpoint-widescreen:      	1201px;
+$breakpoint-widescreen-1:    	($breakpoint-widescreen - 1px);
+$breakpoint-desktop:         	961px;
+$breakpoint-desktop-1:       	$breakpoint-desktop - 1;
+$breakpoint-portrait:        	769px;
+$breakpoint-portrait-1:      	$breakpoint-portrait - 1;
+$breakpoint-phone:           	480px;
 
-$input-height:               1.25rem;
-$navbar-height:              2rem;
+$input-height:               	1.25rem;
+$navbar-height:              	2rem;
+$border-radius: 				$spacer-horizontal * 0.5;
 
 $shadow-color: 				hsla(hue($brand-color), 100%, 12%, 0.2);
 $shadow-depth: 				$spacer-vertical;
