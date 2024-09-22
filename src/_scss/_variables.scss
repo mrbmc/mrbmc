@@ -25,7 +25,8 @@ $brand-secondary:        $_pink;
 $brand-secondary-20:      #{$brand-secondary + "4D"};
 $brand-secondary-80:      #{$brand-secondary + "BB"};
 
-$white80:               hslToHex(hue($brand-color),00%,100%)+AA;
+$white-20:               hslToHex(hue($brand-color),00%,100%)+66;
+$white-80:               hslToHex(hue($brand-color),00%,100%)+AA;
 $white:                 hslToHex(hue($brand-color),00%,100%);
 $gray-950:              hslToHex(hue($brand-color),01%,96%);
 $gray-900:              hslToHex(hue($brand-color),01%,91%);
@@ -54,7 +55,7 @@ $text-color-bold:        var(--black);
 $text-color-subdued:     var(--gray-mid);
 $link-color:             var(--black);
 $link-color-hover:       var(--brandColor);
-$selection-color:        $brand-accent;
+$selection-color:        $brand-color;
 
 
 // Scaffolding
@@ -68,7 +69,7 @@ $border-color: 			var(--gray-light);
 
 // Navbar
 // -------------------------
-$navbar-background:                var(--white80);
+$navbar-background:                var(--white-20);
 $navbar-background-highlight:       transparent;
 $navbar-border:                    none;//.0125rem solid var(--gray-light);
 $navbar-text:                      	$text-color;
@@ -101,7 +102,7 @@ $breakpoint-phone:           	480px;
 
 $input-height:               	1.25rem;
 $navbar-height:              	2rem;
-$border-radius: 				$spacer-horizontal * 0.5;
+$border-radius: 				$spacer-horizontal * 0.25;
 
 $shadow-color: 				hsla(hue($brand-color), 100%, 12%, 0.2);
 $shadow-depth: 				$spacer-vertical;

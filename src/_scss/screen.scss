@@ -184,7 +184,6 @@ table {
     border-spacing: 0em;
     margin-bottom: ($baseLineHeight * 1em);
     background: $body-background;
-    @include border-radius(.125em);
     overflow-x: scroll;
     display: block;
     th,td {
@@ -228,7 +227,7 @@ main > section {
     padding: $spacer-horizontal;
     background: $body-background;
     border: 1px solid $border-color;
-    border-radius: math.div($spacer-horizontal, 2);
+    border-radius: $border-radius;
     box-shadow: inset 1px 1px 0px rgba(255,255,255,.08), inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadow-offset $shadow-depth $shadow-color;
 }
 @mixin well {
@@ -236,7 +235,7 @@ main > section {
     margin: $spacer-vertical auto;
     padding: $spacer-horizontal;
     background: $well-background;
-    border-radius: math.div($spacer-horizontal, 2);
+    border-radius: $border-radius;
 }
 @mixin hero {
     @include fullWidth(100vw);
@@ -272,7 +271,7 @@ blockquote,.blockquote {
     // border: 1px solid $brand-color;
 
     padding: .5em 1em;
-    border-radius: .375em;
+    border-radius: $border-radius;
     text-decoration: none;
     // box-shadow: 0 8px 24px hsla(hue($brand-color), 50%, 10%, 20%);;
     box-shadow: inset 0px 1px 1px 0px $white, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
@@ -335,7 +334,7 @@ ol.sidenav {
         background: $body-background;
         top: -0.5em;
         left: 100%;
-        border-radius: .25em;
+        border-radius: $border-radius;
         box-shadow: 0 $shadow-offset $shadow-depth $shadow-color;
 
         li {

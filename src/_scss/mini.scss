@@ -61,7 +61,8 @@ body {
     --gray-mid:     #{$gray-mid};
     --gray-light:   #{$gray-light};
     --white:        #{$white};
-    --white80:     #{$white80};
+    --white-80:     #{$white-80};
+    --white-20:     #{$white-20};
     --brandColor: #{$brand-color};
     --brandComplement: #{$brand-complement};
     --brandAccent: #{$brand-accent};
@@ -69,13 +70,14 @@ body {
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --black80:      #{$white80};
+        --black80:      #{$white-80};
         --black:        #{$white};
         --gray-dark:    #{$gray-800};
         --gray-mid:     #{$gray-500};
         --gray-light:   #{$gray-200};
         --white:        #{$gray-050};
-        --white80:      #{$black80};
+        --white-80:      #{$black80};
+        --white-20:      #{$black80};
         --brandColor:   #{$brand-accent};
     };
 }
@@ -139,7 +141,7 @@ blockquote,.blockquote {
     // border: 1px solid $brand-color;
 
     padding: .5em 1em;
-    border-radius: .375em;
+    border-radius: $border-radius;
     text-decoration: none;
     // box-shadow: 0 8px 24px hsla(hue($brand-color), 50%, 10%, 20%);;
     box-shadow: inset 0px 1px 1px 0px $white, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
