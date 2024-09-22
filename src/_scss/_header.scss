@@ -1,5 +1,5 @@
 #header {
-    padding: 0 $spacer-horizontal;
+    padding: ($navbar-height * .19) $spacer-horizontal;
 
     box-sizing: border-box;
     height: $navbar-height;
@@ -9,15 +9,16 @@
     border-width: 0 0 1px 0;
 
     display: flex;
-    z-index: 100;
+    justify-content: space-between;
     position: relative;
-    align-items: center;
-    // line-height: ($navbar-height * .62);
-    line-height: ($navbar-height * 1);
-    list-style-type: none;
+    z-index: 100;
 
     @media (orientation: portrait) {
         margin-left: 0;
+    }
+
+    #menu {
+        display: flex;
     }
 
     a {
@@ -25,28 +26,17 @@
         -webkit-tap-highlight-color: transparent;
         color: $navbar-link-color;
 
-        padding: 0 0.62em;
-        margin: 0 0 0 0.62em;
-        @include border-radius(4px);
+        padding: 0 .62rem;
+        border-radius: $border-radius;
         &.nav-cv,&.nav-resume,&.nav-photos {
             display: none;
         }
     }
-    #menu {
-        box-sizing: border-box;
-        flex-basis: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        z-index: 2;
-    }
-
 
     .brand {
-        $logo-size: 1.38em;
+        $logo-size: $navbar-height * .62;
         width: $logo-size;
         height: $logo-size;
-        line-height: $navbar-height;
         z-index: 3;
         margin: 0;
         padding: 0;
