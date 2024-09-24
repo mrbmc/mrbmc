@@ -2,7 +2,7 @@
 
 BASE=$(dirname "$0");
 
-startdate=20240101;#$(date -v-1y +%Y%m%d);
+startdate=$(date -v-30d +%Y%m%d);
 startdateday=$(date -j -f %Y%m%d $startdate +%d);
 startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
 
@@ -13,35 +13,15 @@ stopdatemonth=$(date -j -f %Y%m%d $stopdate +%m);
 local flag_skipdownload flag_verbose flag_help flag_raw
 local usage=(
 "metrics.sh [-h|--help]"
-"metrics-sh [-v|--verbose] [-t|--term=<duration>] [<message...>]"
+"metrics-sh [-v|--verbose] [-s|--skipdownload] [-r|--raw] [-t|--term=<duration>] [<message...>]"
 )
-
-
-
 
 goaccess_opt="--no-progress --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz='America/New York'"
 
 
-zmodload zsh/zutil
-zparseopts -D -F -K -- \
-{h,-help}=flag_help \
-{s,-skipdownload}=flag_skipdownload \
-{r,-raw}=flag_raw \
-{v,-verbose}=flag_verbose \
-{t,-term}:=arg_duration \
-{d,-date}:=arg_startdate ||
-return 1
-
-[[ -z "$flag_help" ]] || { print -l $usage && return }
-if (( $#flag_verbose )); then
-print "verbose mode"
-fi
-
-# echo "--verbose: $flag_verbose"
-# echo "--skipdownload: $flag_skipdownload"
-# echo "--term: $arg_duration[-1]"
-# echo "positional: $@"
-
+# ==================================================
+# FUNCTIONS
+# ==================================================
 
 
 function download () {
@@ -129,58 +109,80 @@ function analyze () {
 		eval ${sed_cmd}
 	fi
 
+	return 1;
+}
+
+function parseRange () {
+	sed_cmd="sed -n '" \
+	sed_cmd+="/2024\-'$(date -j -f %Y%m%d $startdate +%m)'\-'$(date -j -f %Y%m%d $startdate +%d)'/"
+	filename="$startdate";
+	if [[ $startdate != $stopdate ]]; then
+		sed_cmd+=",/2024\-'$(date -j -f %Y%m%d $stopdate +%m)'\-'$(date -j -f %Y%m%d $stopdate +%d)'/"
+		filename+="-$stopdate";
+	fi
+	sed_cmd+=" p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/$filename.html "
+	sed_cmd+="$goaccess_opt";
+	# echo $sed_cmd;
+	eval ${sed_cmd}
+	return 1;
 }
 
 
 
-# =================================================================
-# =================================================================
+# ==================================================
+# PARSE INPUTS
+# ==================================================
+zmodload zsh/zutil
+zparseopts -D -F -K -- \
+{h,-help}=flag_help \
+{s,-skipdownload}=flag_skipdownload \
+{r,-raw}=flag_raw \
+{v,-verbose}=flag_verbose \
+{t,-term}:=arg_duration \
+{f,-from}:=arg_startdate \
+{u,-until}:=arg_stopdate ||
+return 1
 
+[[ -z "$flag_help" ]] || { print -l $usage && return }
+[[ -z "$flag_verbose" ]] || { print "verbose mode" && return }
 
 # if [ $# -eq 0 ]; then
 # 	echo "* * * * * * * * * * * * * * * * * * * * * * *";
-#     echo "Please enter a command. Options are 'all', 'process', or 'download'";
+#     echo "Please enter a command. Use -h or --help for options.";
+# 	echo "* * * * * * * * * * * * * * * * * * * * * * *";
 # 	exit;
 # fi
-
+# echo "--verbose: $flag_verbose"
+# echo "--skipdownload: $flag_skipdownload"
+# echo "--term: $arg_duration[-1]"
+# echo "positional: $@"
 
 if [[ "$arg_startdate[-1]" ]]; then
-	#if a date is set, and the duration is NOT set
-	#calculate the start date
-	#set the stop date
-	#set the output to the date
-
-	targetdate=$(date -j -f %Y%m%d $arg_startdate[-1] +%Y%m%d);
-
-	sed_cmd="sed -n '" \
-	sed_cmd+="/2024\-'$(date -j -f %Y%m%d $targetdate +%m)'\-'$(date -j -f %Y%m%d $targetdate +%d)'/"
-	sed_cmd+=" p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/$targetdate.html "
-	sed_cmd+="$goaccess_opt";
-	echo "Analyzing $targetdate"
-	eval ${sed_cmd}
-
-
-	sed_cmd="sed -n '" \
-	sed_cmd+="/2024\-'$(date -j -f %Y%m%d $targetdate +%m)'\-'$(date -j -f %Y%m%d $targetdate +%d)'/"
-	sed_cmd+=" p' $BASE/logs/log_raw | goaccess -a -o $BASE/../metrics/www/$targetdate-raw.html "
-	sed_cmd+="$goaccess_opt";
-	echo "Analyzing $targetdate"
-	eval ${sed_cmd}
-
-
-	exit;
-fi
-
-if [[ "$arg_duration[-1]" = "recent" ]]; then
-	echo "RECENT ONLY";
-	startdate=$(date -v-30d +%Y%m%d);
+	startdate=$(date -j -f %Y%m%d $arg_startdate[-1] +%Y%m%d);
 	startdateday=$(date -j -f %Y%m%d $startdate +%d);
 	startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
 fi
 
+if [[ "$arg_stopdate[-1]" ]]; then
+	stopdate=$(date -j -f %Y%m%d $arg_stopdate[-1] +%Y%m%d);
+	stopdateday=$(date -j -f %Y%m%d $stopdate +%d);
+	stopdatemonth=$(date -j -f %Y%m%d $stopdate +%m);
+fi
+
+if [[ "$arg_duration[-1]" = "all" ]]; then
+	echo "PROCESS EVERYTHING";
+	startdate=20240101;#$(date -v-1y +%Y%m%d);
+	startdateday=$(date -j -f %Y%m%d $startdate +%d);
+	startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
+fi
 
 echo "TIMEFRAME: $startdate – $stopdate";
 
+
+if [[ "$arg_startdate[-1]" && "$arg_stopdate[-1]" ]]; then
+	parseRange;
+	exit;
+fi
 
 if (( $#flag_skipdownload )); then
 	echo "SKIP DOWNLOAD"
@@ -194,9 +196,8 @@ analyze;
 
 
 
+#NOTE: you can't unzip all files for a year. too many files.
+#gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.2024-0'* | grep  -E -v -i -f ../blacklist.txt | goaccess  -o ../www/2024.html --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"
+#zcat -f logs/log_clean0* 
 
 exit;
-
-#NOTE: you can't unzip all files for a year. too many files.
-gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.2024-0'* | grep  -E -v -i -f ../blacklist.txt | goaccess  -o ../www/2024.html --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"
-zcat -f logs/log_clean0* 
