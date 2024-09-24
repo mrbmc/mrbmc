@@ -187,7 +187,7 @@ table {
     width: 100%;
     max-width: 100%;
     border-spacing: 0em;
-    margin-bottom: ($baseLineHeight * 1em);
+    margin-bottom: ($base-line-height * 1em);
     background: $body-background;
     overflow-x: scroll;
     display: block;
@@ -310,7 +310,7 @@ ol.sidenav {
 
     position: fixed;
     left: 0;
-    top: calc(50% - ($baseLineHeight * 2.5em));
+    top: calc(50% - ($base-line-height * 2.5em));
 
     list-style-type: none;
     background: $body-background;
@@ -388,7 +388,7 @@ ul.nav,ol.nav {
     }
     b,strong,dd {
         font-size: 3.4em;
-        font-weight: $baseFontWeight;
+        font-weight: $base-font-weight;
         color: $text-color-bold;
     }
 }
@@ -415,7 +415,7 @@ ul.nav,ol.nav {
 details {
     @include card();
     summary {
-        @include typeset($headingsFontFamily, $headingsFontWeight, 1.0rem, 1.2, -0.0125em);
+        @include typeset($heading-font-family, $heading-font-weight, 1.0rem, 1.2, -0.0125em);
         cursor: pointer;
     }
     &[open] {

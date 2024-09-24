@@ -7,26 +7,26 @@
 
 // Typography
 // -------------------------
-$systemFontFamily:      system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","HelveticaNeue", Helvetica, sans-serif;
-$sansFontFamily:        "Tomato","Helvetica Neue","Helvetica",$systemFontFamily;
-$serifFontFamily:       "Cormorant Garamond","Palatino","Georgia","Roboto Serif",Times,serif;
-$monoFontFamily:        "Courier New", monospace;
+$system-font-family:      system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","HelveticaNeue", Helvetica, sans-serif;
+$sans-font-family:        "Tomato","Helvetica Neue","Helvetica",$system-font-family;
+$serif-font-family:       "Cormorant Garamond","Palatino","Georgia","Roboto Serif",Times,serif;
+$mono-font-family:        "Courier New", monospace;
 
-$baseFontFamily:        $sansFontFamily;
-$baseFontWeight:        400;
-$boldFontWeight:        600;
-$baseFontSize:          1.5em;//math.div(24, 16);//16px is the browser default so the numerator is your desired p size
-$baseLineHeight:        1.62;
-$serifFontWeight:       200;
+$base-font-family:        $sans-font-family;
+$base-font-weight:        400;
+$bold-font-weight:        600;
+$base-font-size:          1.5em;//math.div(24, 16);//16px is the browser default so the numerator is your desired p size
+$base-line-height:        1.62;
+$serif-font-weight:       200;
 
-$headingsFontFamily:    $sansFontFamily;
-$headingsFontWeight:    $baseFontWeight;
+$heading-font-family:    $sans-font-family;
+$heading-font-weight:    $base-font-weight;
 
-$displayFontFamily:     $sansFontFamily;
-$displayFontWeight:     $baseFontWeight;
+$display-font-family:     $sans-font-family;
+$display-font-weight:     $base-font-weight;
 
-$navbarFontFamily:      $sansFontFamily;
-$navbarFontWeight:      $baseFontWeight;
+$navbar-font-family:      $sans-font-family;
+$navbar-font-weight:      $base-font-weight;
 
 
 @mixin typeset($face, $weight, $size: 1em, $line: 1.2, $kerning: 0) {
@@ -42,7 +42,7 @@ html {
     text-rendering:optimizeLegibility;
     // -moz-osx-font-smoothing: grayscale;
     // font-smooth: never;
-    // font-size: $baseFontSize;
+    // font-size: $base-font-size;
     font-size: clamp(18px, 1.8vw, 32px);
     @media (orientation: portrait) {
         font-size: 18px;
@@ -50,43 +50,43 @@ html {
 }
 
 body {
-    @include typeset($baseFontFamily, $baseFontWeight, 1rem, $baseLineHeight, -0.0125em);
+    @include typeset($base-font-family, $base-font-weight, 1rem, $base-line-height, -0.0125em);
 }
 .serif {
-    font-family: $serifFontFamily;
-    font-weight: $serifFontWeight;
+    font-family: $serif-font-family;
+    font-weight: $serif-font-weight;
 }
 a {
     text-decoration: underline;
     // text-decoration: none;
-    // font-weight: $boldFontWeight;
+    // font-weight: $bold-font-weight;
 }
 h1,h2,h3,h4,h5 {
     a {
-        font-weight: $displayFontWeight;
+        font-weight: $display-font-weight;
     }
 }
 $typeScale: 1.19;//each size is this much larger than the predecessor
 h1 {
-    @include typeset($displayFontFamily, $displayFontWeight, (1rem * pow($typeScale,5)), 1.2, -0.05em);
+    @include typeset($display-font-family, $display-font-weight, (1rem * pow($typeScale,5)), 1.2, -0.05em);
 }
 h2 {
-    @include typeset($headingsFontFamily, $headingsFontWeight, (1rem * pow($typeScale,3)), 1.2, -0.0375em);
+    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($typeScale,3)), 1.2, -0.0375em);
 }
 h3 {
-    @include typeset($baseFontFamily, $boldFontWeight, (1rem * pow($typeScale,2)), 1.2, -0.0250em);
+    @include typeset($base-font-family, $bold-font-weight, (1rem * pow($typeScale,2)), 1.2, -0.0250em);
 }
 h4 {
-    @include typeset($headingsFontFamily, $headingsFontWeight, (1rem * pow($typeScale,0)), 1.2, 0.25em);
+    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($typeScale,0)), 1.2, 0.25em);
     text-transform: uppercase;
 }
 h5 {
-    @include typeset($headingsFontFamily, $headingsFontWeight, (1rem * pow($typeScale,1)), 1.2, -0.0em);
+    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($typeScale,1)), 1.2, -0.0em);
 }
 p, li, dt, dd {
 }
 strong,b {
-    font-weight: $boldFontWeight;
+    font-weight: $bold-font-weight;
     color: $text-color-bold;
 }
 em {
@@ -113,8 +113,8 @@ em {
 
 blockquote,.blockquote {
     // font-style: italic;
-    font-family: $serifFontFamily;
-    font-weight: $serifFontWeight;
+    font-family: $serif-font-family;
+    font-weight: $serif-font-weight;
     font-size: 133%;
     p:last-of-type {
         margin-bottom: 0;
@@ -129,7 +129,7 @@ blockquote,.blockquote {
 #header {
     a {
         text-decoration: none;
-        @include typeset($navbarFontFamily, $navbarFontWeight, 0.89em, ($navbar-height * .62), -0.0125em);
+        @include typeset($navbar-font-family, $navbar-font-weight, 0.89em, ($navbar-height * .62), -0.0125em);
         text-transform: uppercase;
 
         @include transition(all $animation-speed $animation-easing);
@@ -142,14 +142,14 @@ blockquote,.blockquote {
         }
     }
     .brand {
-        @include typeset($displayFontFamily, $displayFontWeight, 1em, ($navbar-height * .62), 0.0em);
+        @include typeset($display-font-family, $display-font-weight, 1em, ($navbar-height * .62), 0.0em);
     }
 }
 
 body.blog {
     #post-detail {
-        font-family: $serifFontFamily;
-        font-weight: $serifFontWeight;
+        font-family: $serif-font-family;
+        font-weight: $serif-font-weight;
         letter-spacing: -0.0em;
     }
 }
@@ -157,7 +157,7 @@ body.blog {
 table {
     thead {
         th {
-            font-weight: $boldFontWeight;
+            font-weight: $bold-font-weight;
             line-height: 1;
             @include smallType;
         }

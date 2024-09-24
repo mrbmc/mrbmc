@@ -1,7 +1,7 @@
 body.resume {
     p,li {
-        font-family: $serifFontFamily;
-        font-weight: $serifFontWeight;
+        font-family: $serif-font-family;
+        font-weight: $serif-font-weight;
     }
     h2 {
         // display: none;
@@ -9,14 +9,14 @@ body.resume {
     }
     h3 {
         margin-top: 1em;
-        // font-weight: $boldFontWeight;
+        // font-weight: $bold-font-weight;
     }
     h4 {
-        @include typeset($headingsFontFamily, $boldFontWeight, (1rem * pow($typeScale,0)), 1.2, -0.0125em);
+        @include typeset($heading-font-family, $bold-font-weight, (1rem * pow($typeScale,0)), 1.2, -0.0125em);
         text-transform: inherit;
     }
     h5 {
-        // font-weight: $boldFontWeight;
+        // font-weight: $bold-font-weight;
         font-size: 120%;
     }
     p,h5,ul,ol {
