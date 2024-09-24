@@ -109,6 +109,7 @@ p.gallery,div.gallery-wrap {
     display: block;
     margin-bottom: $spacer-vertical;
     background: $well-background;
+    box-shadow: inset $shadow;
     overflow: auto;//this prevents collapsing margins
 
     .image-detail {
