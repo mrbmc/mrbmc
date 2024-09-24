@@ -2,12 +2,13 @@
 
 BASE=$(dirname "$0");
 
-startdate=$(date +%Y%m%d);
+startdate=20240101;#$(date -v-1y +%Y%m%d);
+startdateday=$(date -j -f %Y%m%d $startdate +%d);
+startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
+
 stopdate=$(date +%Y%m%d);
 stopdateday=$(date -j -f %Y%m%d $stopdate +%d);
 stopdatemonth=$(date -j -f %Y%m%d $stopdate +%m);
-startm=01;
-endm=12;
 
 local flag_skipdownload flag_verbose flag_help flag_raw
 local usage=(
@@ -52,7 +53,7 @@ function download () {
 	aws s3 sync s3://brianmcconnell.me $BASE/downloads
 
 	echo "UNZIPPING LOGS"
-	for i in {$startm..$endm}
+	for i in {$startdatemonth..$stopdatemonth}
 	do
 		echo "2024-$i unzipping";
 		gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.2024-'$i*'gz' > $BASE'/logs/log_raw_2024-'$i
@@ -73,7 +74,7 @@ function parse () {
 		return true;
 	fi
 
-	for i in {$startm..$endm}
+	for i in {$startdatemonth..$stopdatemonth}
 	do
 		echo "Cleaning 2024-$i";
 		cat  $BASE'/logs/log_raw_2024-'$i |\
@@ -94,7 +95,7 @@ function analyze () {
 
 
 
-	for i in {$startm..$endm}
+	for i in {$startdatemonth..$stopdatemonth}
 	do
 		echo "Analyzing 2024-$i";
 
@@ -110,16 +111,14 @@ function analyze () {
 		eval ${goaccess_cmd}
 	done
 
-
-
 	periods_opt=('7d' '30d' '90d')
 	for duration in $periods_opt
 	do
 		echo "Analyzing -$duration";
 		if (( $#flag_raw )); then
-			sed_cmd="sed -n '/2024\-'$(date -v-$duration +%m)'\-'$(date -v-$duration +%d)'/,/2024\-'$stopdatemonth'\-'$stopdateday'/ p' $BASE/logs/log_raw | goaccess -a -o $BASE/../metrics/www/l$n-raw.html $goaccess_opt";
+			sed_cmd="sed -n '/2024\-'$(date -v-$duration +%m)'\-'$(date -v-$duration +%d)'/,/2024\-'$stopdatemonth'\-'$stopdateday'/ p' $BASE/logs/log_raw | goaccess -a -o $BASE/../metrics/www/l$duration-raw.html $goaccess_opt";
 		else
-			sed_cmd="sed -n '/2024\-'$(date -v-$duration +%m)'\-'$(date -v-$duration +%d)'/,/2024\-'$stopdatemonth'\-'$stopdateday'/ p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/l$n.html $goaccess_opt";
+			sed_cmd="sed -n '/2024\-'$(date -v-$duration +%m)'\-'$(date -v-$duration +%d)'/,/2024\-'$stopdatemonth'\-'$stopdateday'/ p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/l$duration.html $goaccess_opt";
 		fi
 		eval ${sed_cmd}
 	done
@@ -131,6 +130,11 @@ function analyze () {
 	fi
 
 }
+
+
+
+# =================================================================
+# =================================================================
 
 
 # if [ $# -eq 0 ]; then
@@ -167,12 +171,16 @@ if [[ "$arg_startdate[-1]" ]]; then
 	exit;
 fi
 
-
 if [[ "$arg_duration[-1]" = "recent" ]]; then
 	echo "RECENT ONLY";
-	startm=$(date -v-30d +%m);
-	endm=$(date +%m);
+	startdate=$(date -v-30d +%Y%m%d);
+	startdateday=$(date -j -f %Y%m%d $startdate +%d);
+	startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
 fi
+
+
+echo "TIMEFRAME: $startdate – $stopdate";
+
 
 if (( $#flag_skipdownload )); then
 	echo "SKIP DOWNLOAD"
