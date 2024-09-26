@@ -25,6 +25,14 @@ goaccess_opt="--no-progress --log-format=CLOUDFRONT --no-query-string --agent-li
 
 
 function download () {
+
+	if [[ "$flag_skipdownload" ]]; then
+		echo "* * * * * * * * * * * * * * * * * *";
+		echo "SKIP DOWNLOAD";
+		echo "* * * * * * * * * * * * * * * * * *";
+		return;
+	fi
+
 	echo "* * * * * * * * * * * * * * * * * *";
 	echo "DOWNLOADING DATA";
 	echo "* * * * * * * * * * * * * * * * * *";
@@ -33,12 +41,16 @@ function download () {
 	aws s3 sync s3://brianmcconnell.me $BASE/downloads
 
 	echo "UNZIPPING LOGS"
-	for i in {$startdatemonth..$stopdatemonth}
+	tempstartmonth=$startdatemonth;
+	if [[ "$arg_duration[-1]" != "all" ]]; then
+		tempstartmonth=$stopdatemonth;
+	fi
+
+	for i in {$tempstartmonth..$stopdatemonth}
 	do
 		echo "2024-$i unzipping";
 		gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.2024-'$i*'gz' > $BASE'/logs/log_raw_2024-'$i
 	done
-
 }
 
 
@@ -54,7 +66,12 @@ function parse () {
 		return true;
 	fi
 
-	for i in {$startdatemonth..$stopdatemonth}
+	tempstartmonth=$startdatemonth;
+	if [[ "$arg_duration[-1]" != "all" ]]; then
+		tempstartmonth=$stopdatemonth;
+	fi
+
+	for i in {$tempstartmonth..$stopdatemonth}
 	do
 		echo "Cleaning 2024-$i";
 		cat  $BASE'/logs/log_raw_2024-'$i |\
@@ -65,7 +82,14 @@ function parse () {
 
 	echo "Concatenating 2024"
 	zcat -f $BASE/logs/log_clean_2024-* > $BASE/logs/log_clean;
+
+#NOTE: you can't unzip all files for a year. too many files.
+#gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.2024-0'* | grep  -E -v -i -f ../blacklist.txt | goaccess  -o ../www/2024.html --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"
+#zcat -f logs/log_clean0* 
+
 }
+
+
 
 function analyze () {
 
@@ -73,9 +97,18 @@ function analyze () {
 	echo "ANALYZING DATA";
 	echo "* * * * * * * * * * * * * * * * * *";
 
+	if [[ "$arg_startdate[-1]" && "$arg_stopdate[-1]" ]]; then
+		analyze-range;
+		return 1;
+	fi
 
 
-	for i in {$startdatemonth..$stopdatemonth}
+	tempstartmonth=$startdatemonth;
+	if [[ "$arg_duration[-1]" != "all" ]]; then
+		tempstartmonth=$stopdatemonth;
+	fi
+
+	for i in {$tempstartmonth..$stopdatemonth}
 	do
 		echo "Analyzing 2024-$i";
 
@@ -112,7 +145,10 @@ function analyze () {
 	return 1;
 }
 
-function parseRange () {
+function analyze-range () {
+
+	echo "Analyzing $startdate-$stopdate";
+
 	sed_cmd="sed -n '" \
 	sed_cmd+="/2024\-'$(date -j -f %Y%m%d $startdate +%m)'\-'$(date -j -f %Y%m%d $startdate +%d)'/"
 	filename="$startdate";
@@ -145,17 +181,7 @@ return 1
 
 [[ -z "$flag_help" ]] || { print -l $usage && return }
 [[ -z "$flag_verbose" ]] || { print "verbose mode" && return }
-
-# if [ $# -eq 0 ]; then
-# 	echo "* * * * * * * * * * * * * * * * * * * * * * *";
-#     echo "Please enter a command. Use -h or --help for options.";
-# 	echo "* * * * * * * * * * * * * * * * * * * * * * *";
-# 	exit;
-# fi
-# echo "--verbose: $flag_verbose"
-# echo "--skipdownload: $flag_skipdownload"
-# echo "--term: $arg_duration[-1]"
-# echo "positional: $@"
+# [[ -z "$flag_skipdownload" ]] || { print "skip download" && return }
 
 if [[ "$arg_startdate[-1]" ]]; then
 	startdate=$(date -j -f %Y%m%d $arg_startdate[-1] +%Y%m%d);
@@ -170,34 +196,21 @@ if [[ "$arg_stopdate[-1]" ]]; then
 fi
 
 if [[ "$arg_duration[-1]" = "all" ]]; then
-	echo "PROCESS EVERYTHING";
-	startdate=20240101;#$(date -v-1y +%Y%m%d);
+	startdate=$(date +%Y)"0101";
 	startdateday=$(date -j -f %Y%m%d $startdate +%d);
 	startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
 fi
 
 echo "TIMEFRAME: $startdate – $stopdate";
 
+# ==================================================
+# RUN ACTIONS
+# ==================================================
 
-if [[ "$arg_startdate[-1]" && "$arg_stopdate[-1]" ]]; then
-	parseRange;
-	exit;
-fi
-
-if (( $#flag_skipdownload )); then
-	echo "SKIP DOWNLOAD"
-else
-	download;
-fi
+download;
 
 parse;
 
 analyze;
-
-
-
-#NOTE: you can't unzip all files for a year. too many files.
-#gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.2024-0'* | grep  -E -v -i -f ../blacklist.txt | goaccess  -o ../www/2024.html --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"
-#zcat -f logs/log_clean0* 
 
 exit;
