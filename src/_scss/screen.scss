@@ -30,15 +30,15 @@ li, dt {
     box-sizing: border-box;
 }
 body {
-    main, #main {
+    > main {
         box-sizing: border-box;
         margin: 0 auto;
         width: 100%;
         max-width: $grid-width;
         @media (orientation: portrait) {
-            padding: $spacer-vertical $spacer-horizontal;
+            padding: 0 $spacer-horizontal;
         }
-        h1:first-child {
+        >h1:first-child,>section:first-child {
             padding-top: $spacer-vertical;
         }
     }

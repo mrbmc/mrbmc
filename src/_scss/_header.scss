@@ -3,6 +3,7 @@
 
     box-sizing: border-box;
     height: $navbar-height;
+    min-height: 44px;;
 
     background: $navbar-background;
     border: $navbar-border;
@@ -10,6 +11,7 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 100;
 
