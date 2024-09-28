@@ -22,6 +22,7 @@ body.home {
         h1,h2,h3,p {
             color: $text-color-bold;
             color: $white;
+            max-width: 26em;
         }
         h1,h2 {
             @media (orientation: portrait) {
@@ -30,7 +31,7 @@ body.home {
             & > em {
                     color: $brand-accent;
                     background: $white;
-                    background-image: linear-gradient($brand-accent-50, $brand-color-50);
+                    background-image: linear-gradient($brand-accent-20, $brand-color-80);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     font-style: normal;
@@ -38,7 +39,7 @@ body.home {
             & > strong {
                     color: $brand-color;
                     background: $white;
-                    background-image: linear-gradient($brand-secondary-50, $brand-complement-50);
+                    background-image: linear-gradient($brand-secondary-20, $brand-complement-80);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     font-style: normal;
@@ -77,12 +78,22 @@ body.home {
             height: $crane-size;
             position: absolute;
             top: calc(50% - ($crane-size * 0.5));
-            right: $grid-margin;
+            // right: $grid-margin;
+            right: $spacer-horizontal;
             z-index: 2;
             @media (orientation: portrait) {
                 position: static;
-                margin: 0 auto $spacer-vertical auto;
+                margin: 0 auto 0 auto;
             }
+
+            @include translate(0, 20%);
+            @include opacity(0);
+
+        }
+        &.in:before {
+            transition: transform ($animation-speed * 3) $animation-easing, opacity ($animation-speed * 2) $animation-easing;
+            @include opacity(100);
+            @include translate(0, 0);
         }
 
         // add a mesh gradient background
@@ -93,9 +104,10 @@ body.home {
 
             background-color: $hero-background;
             background-image:
-            radial-gradient(ellipse 138% 62% at 119% 62%, $gray-300 0px, transparent 100%),
-            radial-gradient(ellipse 81% 162% at 19% 81%, $gray-500 0px, transparent 100%),
-            radial-gradient(ellipse 81% 119% at 62% -19%, $gray-700 0px, transparent 100%),
+            radial-gradient(ellipse 38% 119% at 19% 100%, $black 0px, transparent 100%),
+            radial-gradient(ellipse 81% 62% at 81% -19%, $gray-500 0px, transparent 100%),
+            conic-gradient(from 0.625turn at 19% -10%, transparent, $gray-300 20%, transparent, transparent, transparent, transparent, $gray-300 80%, transparent),
+            conic-gradient(from 0.5turn at 110% 81%, transparent, $gray-300 20%, transparent, transparent, transparent, transparent, $gray-300 80%, transparent)
             ;
 
             // rich color
@@ -133,10 +145,10 @@ body.home {
             position: absolute;
             left: 0;
             top: 0;
-            filter: url("#noiseFilter") opacity(50%);
+            filter: url("#noiseFilter") opacity(30%);
             transform: translateZ(0);
             @supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
-                filter: url("#noiseFilter") opacity(50%);
+                filter: url("#noiseFilter") opacity(20%);
             }
         }
     }

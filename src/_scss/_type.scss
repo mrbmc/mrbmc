@@ -68,10 +68,10 @@ h1,h2,h3,h4,h5 {
 }
 $typeScale: 1.19;//each size is this much larger than the predecessor
 h1 {
-    @include typeset($display-font-family, $display-font-weight, (1rem * pow($typeScale,5)), 1.2, -0.05em);
+    @include typeset($display-font-family, $display-font-weight, (1rem * pow($typeScale,6)), 1.2, -0.05em);
 }
 h2 {
-    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($typeScale,3)), 1.2, -0.0375em);
+    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($typeScale,4)), 1.2, -0.0375em);
 }
 h3 {
     @include typeset($base-font-family, $bold-font-weight, (1rem * pow($typeScale,2)), 1.2, -0.0250em);

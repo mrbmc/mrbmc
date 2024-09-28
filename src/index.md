@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: false
 
 <section id="masthead" class="bio">
 
-# Designing products that connect human _needs_ with business **outcomes**.
+# Products that connect human _needs_ with business **outcomes**.{.buildin}
 
 {% comment %}
 * [linkedin](https://linkedin.com/in/mrbmc)
@@ -25,3 +25,13 @@ eleventyExcludeFromCollections: false
 
 {% include "_post-list.html", postList: collections.posts, label: "Recent Posts", count: 4 %}
 
+
+
+<script type="text/javascript">
+window.addEventListener('load', function(e) {
+	document.getElementsByTagName('h1')[0].classList.toggle('in');
+	setTimeout(function(){
+		document.getElementById('masthead').classList.toggle('in');
+	},200);
+});
+</script>
