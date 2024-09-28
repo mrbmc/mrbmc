@@ -10,9 +10,7 @@ body.home {
     #masthead {
         background: $body-background;
         color: $text-color;
-        @media (orientation: portrait) {
-            min-height: 68vh;
-        }
+        justify-content: center;
         @media (orientation: landscape) {
             height: calc(81vh - $navbar-height);
         }

@@ -1,11 +1,12 @@
 #masthead {
 
     @include fullWidth(100vw);
-    padding: $spacer-vertical calc((100vw - $grid-width)/2);
+    // padding: $spacer-vertical calc((100vw - $grid-width)/2);
+    padding: $spacer-vertical $spacer-horizontal;
     height: calc(100vh - $navbar-height);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
 
     position: relative;
     box-sizing: border-box;
@@ -56,7 +57,6 @@
 
     @media (orientation: portrait) {
         height: auto;
-        padding: $spacer-vertical $spacer-horizontal 0;
     }
 
     p:has(.scrollhint),p.scrollhint {

@@ -148,8 +148,6 @@
 
 @mixin fullWidth($limit:100vw) {
     width: $limit;
-    margin-right: auto;
-    display: block;
 
     @media (min-width: $grid-width) {
         margin-left: calc(($limit - $grid-width) * -0.5);
