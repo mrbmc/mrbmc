@@ -16,7 +16,7 @@ parallaxHeading:
 
 Disney+ launched in 2019 to become the fastest growing streaming service ever. My contributions to this success as a design leader hinged on these things:
 
-1. [Build a team]($project-team) and empower them to pursue the right outcomes.
+1. [Build a team](#project-team) and empower them to pursue the right outcomes.
 2. Define [experience principles](#ux-tenets) that can align cross-functional teams spread across timezones and product areas.
 4. [Communicate the product value](#landing-page) clearly to consumers.
 3. Present a [native experience](#tv-signup) on every device and [global region](#global-expansion).
