@@ -16,7 +16,14 @@ local usage=(
 "metrics-sh [-v|--verbose] [-s|--skipdownload] [-r|--raw] [-t|--term=<duration>] [<message...>]"
 )
 
-goaccess_opt="--no-progress --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz='America/New York'"
+goaccess_opt="--no-progress "
+goaccess_opt+="--log-format=CLOUDFRONT "
+goaccess_opt+="--no-query-string "
+goaccess_opt+="--agent-list "
+goaccess_opt+="--ignore-crawlers "
+goaccess_opt+="--unknowns-as-crawlers "
+goaccess_opt+="--tz='America/New York' "
+goaccess_opt+="--geoip-database=/Users/brianmcconnell/Downloads/GeoLite2-City_20241001/GeoLite2-City.mmdb"
 
 
 # ==================================================
@@ -27,15 +34,14 @@ goaccess_opt="--no-progress --log-format=CLOUDFRONT --no-query-string --agent-li
 function download () {
 
 	if [[ "$flag_skipdownload" ]]; then
-		echo "* * * * * * * * * * * * * * * * * *";
+		echo "========================================";
 		echo "SKIP DOWNLOAD";
-		echo "* * * * * * * * * * * * * * * * * *";
 		return;
 	fi
 
-	echo "* * * * * * * * * * * * * * * * * *";
+	echo "========================================";
 	echo "DOWNLOADING DATA";
-	echo "* * * * * * * * * * * * * * * * * *";
+	echo "----------------------------------------";
 
 	echo "DOWNLOADING LOGS FROM S3"
 	aws s3 sync s3://brianmcconnell.me $BASE/downloads
@@ -55,9 +61,9 @@ function download () {
 
 
 function parse () {
-	echo "* * * * * * * * * * * * * * * * * *";
+	echo "========================================";
 	echo "PREPARING DATA" $1;
-	echo "* * * * * * * * * * * * * * * * * *";
+	echo "----------------------------------------";
 
 
 	if (( $#flag_raw )); then
@@ -67,9 +73,9 @@ function parse () {
 	fi
 
 	tempstartmonth=$startdatemonth;
-	if [[ "$arg_duration[-1]" != "all" ]]; then
-		tempstartmonth=$stopdatemonth;
-	fi
+	# if [[ "$arg_duration[-1]" != "all" ]]; then
+	# 	tempstartmonth=$stopdatemonth;
+	# fi
 
 	for i in {$tempstartmonth..$stopdatemonth}
 	do
@@ -93,9 +99,9 @@ function parse () {
 
 function analyze () {
 
-	echo "* * * * * * * * * * * * * * * * * *";
+	echo "========================================";
 	echo "ANALYZING DATA";
-	echo "* * * * * * * * * * * * * * * * * *";
+	echo "----------------------------------------";
 
 	if [[ "$arg_startdate[-1]" && "$arg_stopdate[-1]" ]]; then
 		analyze-range;
@@ -104,9 +110,9 @@ function analyze () {
 
 
 	tempstartmonth=$startdatemonth;
-	if [[ "$arg_duration[-1]" != "all" ]]; then
-		tempstartmonth=$stopdatemonth;
-	fi
+	# if [[ "$arg_duration[-1]" != "all" ]]; then
+	# 	tempstartmonth=$stopdatemonth;
+	# fi
 
 	for i in {$tempstartmonth..$stopdatemonth}
 	do
@@ -201,7 +207,10 @@ if [[ "$arg_duration[-1]" = "all" ]]; then
 	startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
 fi
 
-echo "TIMEFRAME: $startdate – $stopdate";
+echo "========================================";
+echo "LOG ANALYSIS TIMEFRAME";
+echo "----------------------------------------";
+echo "$startdate – $stopdate";
 
 # ==================================================
 # RUN ACTIONS
