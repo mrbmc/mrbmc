@@ -55,6 +55,12 @@ body.post {
 
 	@include item-detail();
 
+	#masthead {
+		@media (orientation: landscape) {
+		    padding: $spacer-vertical 38vw $spacer-vertical $spacer-horizontal;
+		}
+	}
+
 	.related-posts {
 		margin-top: $spacer-vertical;
 		padding-top: $spacer-vertical;

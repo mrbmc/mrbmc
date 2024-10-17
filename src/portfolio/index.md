@@ -1,5 +1,5 @@
 ---
-layout: layout.html 
+layout: layout.html
 bodyclass: portfolio list
 title: "Portfolio"
 ---

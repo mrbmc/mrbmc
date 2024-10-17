@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "6f06be330d9700b7",
+        "id": "f24455d88c5f9c7b",
         "type": "tabs",
         "children": [
           {
-            "id": "4f912c9250b9fe4c",
+            "id": "75684717df7cb422",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "disney-growth-long.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "798af14f21009bb3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "eurosport.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "eurosport.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "eurosport.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "eurosport.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -159,18 +138,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ac39235f87c4c098",
+  "active": "75684717df7cb422",
   "lastOpenFiles": [
-    "flint-and-silicon.md",
-    "eurosport.md",
-    "nhl.md",
-    "nhlgameflow.md",
-    "nhltv.md",
-    "optumus.md",
+    "disney-growth-long.md",
+    "securityscorecard.md",
     "disney-growth.md",
+    "steelgills.md",
+    "rhythmism.md",
+    "pal-9100.md",
+    "optumus.md",
+    "nhlgameflow.md",
+    "nhl.md",
+    "nhltv.md",
+    "blogtalkradio.md",
+    "boids.md",
+    "design-prototyping-201.md",
+    "disney.md",
+    "espnplus.md",
+    "espnvision.md",
+    "eurosport.md",
+    "flint-and-silicon.md",
     "disney-groupwatch.md",
     "disney-enterprise.md",
-    "disney-growth-long.md",
     "team-charter-workshop.md",
     "espn.md",
     "portfolio/espn.md"

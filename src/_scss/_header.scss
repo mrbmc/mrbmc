@@ -1,7 +1,7 @@
 #header {
     padding: ($navbar-height * .19) $spacer-horizontal;
 
-    position: fixed;
+    position: relative;
     z-index: 100;
     box-sizing: border-box;
     height: $navbar-height;
@@ -11,8 +11,8 @@
     background: $navbar-background;
     border: $navbar-border;
     border-width: 0 0 1px 0;
-    -webkit-backdrop-filter: blur(.25rem);
-    backdrop-filter: blur(.25rem);
+    // -webkit-backdrop-filter: blur(.25rem);
+    // backdrop-filter: blur(.25rem);
 
     display: flex;
     justify-content: space-between;

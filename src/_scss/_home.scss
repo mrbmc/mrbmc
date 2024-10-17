@@ -1,18 +1,19 @@
 body.home {
     #header {
-        .brand {
-            width: auto;
-            &:before {
-                display: none;
-            }
-        }
+        position: absolute;
+    //     .brand {
+    //         width: auto;
+    //         &:before {
+    //             display: none;
+    //         }
+    //     }
     }
     #masthead {
         background: $body-background;
         color: $text-color;
         justify-content: center;
         @media (orientation: landscape) {
-            height: calc(81vh - $navbar-height);
+            height: calc(81vh);
         }
 
         figure {
@@ -21,16 +22,17 @@ body.home {
 
         h1,h2,h3,p {
             color: $text-color-bold;
-            color: $white;
+            // color: $white;
             max-width: 26em;
         }
-        h1,h2 {
+        h1 {
+            // font-size: (1rem * pow($type-scale,7));
             @media (orientation: portrait) {
                 padding-right: 0;
             }
             & > em {
                     color: $brand-accent;
-                    background: $white;
+                    background: $text-color;
                     background-image: linear-gradient($brand-accent-20, $brand-color-80);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -38,7 +40,7 @@ body.home {
             }
             & > strong {
                     color: $brand-color;
-                    background: $white;
+                    background: $text-color;
                     background-image: linear-gradient($brand-secondary-20, $brand-complement-80);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -62,7 +64,7 @@ body.home {
         }
 
         $crane-size: 19vw;
-        $crane-color: #FFFFFF;//$white;
+        $crane-color: $text-color;
         @media (orientation: landscape) {
             h1,h2,p.bio {
                 box-sizing: border-box;
@@ -81,13 +83,15 @@ body.home {
             // right: $grid-margin;
             right: $spacer-horizontal;
             z-index: 2;
+
+            @include opacity(0);
+            @include translate(20%, 0%);
+
             @media (orientation: portrait) {
                 position: static;
-                margin: 0 auto 0 auto;
+                margin: $navbar-height auto 0 auto;
+                @include translate(0%, -20%);
             }
-
-            @include translate(20%, 0%);
-            @include opacity(0);
 
         }
         &.in:before {
@@ -102,12 +106,22 @@ body.home {
             // background-attachment: fixed;
             background-size: 100% 100%;
 
-            background-color: $hero-background;
+            // //dark
+            // background-color: $hero-background;
+            // background-image:
+            // radial-gradient(ellipse 38% 119% at 19% 100%, $black 0px, transparent 100%),
+            // radial-gradient(ellipse 81% 62% at 81% -19%, $gray-500 0px, transparent 100%),
+            // conic-gradient(from 0.625turn at 19% -10%, transparent, $gray-300 20%, transparent, transparent, transparent, transparent, $gray-300 80%, transparent),
+            // conic-gradient(from 0.5turn at 110% 81%, transparent, $gray-300 20%, transparent, transparent, transparent, transparent, $gray-300 80%, transparent)
+            // ;
+
+            //light
+            background-color: $body-background;
             background-image:
-            radial-gradient(ellipse 38% 119% at 19% 100%, $black 0px, transparent 100%),
-            radial-gradient(ellipse 81% 62% at 81% -19%, $gray-500 0px, transparent 100%),
-            conic-gradient(from 0.625turn at 19% -10%, transparent, $gray-300 20%, transparent, transparent, transparent, transparent, $gray-300 80%, transparent),
-            conic-gradient(from 0.5turn at 110% 81%, transparent, $gray-300 20%, transparent, transparent, transparent, transparent, $gray-300 80%, transparent)
+            // radial-gradient(ellipse 100% 38% at 91% 100%, var(--gray-light) 0px, transparent 100%),
+            conic-gradient(from 0.65turn at 119% 62%, transparent 0%, var(--white) 12.5%, transparent, var(--gray-light) 25%, transparent 37.5%),
+            conic-gradient(from 0.9turn at -19% 119%, transparent 0%, var(--white) 12.5%, transparent, var(--gray-light) 25%, var(--white) 37.5%, transparent 50%),
+            radial-gradient(ellipse 19% 119% at 81% 100%, var(--gray-light) 0px, transparent 100%),
             ;
 
             // rich color
@@ -145,10 +159,10 @@ body.home {
             position: absolute;
             left: 0;
             top: 0;
-            filter: url("#noiseFilter") opacity(30%);
+            filter: url("#noiseFilter") opacity(40%);
             transform: translateZ(0);
             @supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
-                filter: url("#noiseFilter") opacity(20%);
+                filter: url("#noiseFilter") opacity(30%);
             }
         }
     }

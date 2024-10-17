@@ -9,6 +9,7 @@ tags:
   - ukraine
   - war
   - sports
+summary: Every four years we set aside killing one another over political, religious, and economic rivalry so we can watch athletes attempt to kill themselves.
 ---
 If your family is like mine, you're probably glued to the news this week. No, not due to the impending Russian invasion of Ukraine (we'll get to that) but because of the XXIV Olympic Winter Games.
 
