@@ -27,11 +27,12 @@ body.colophon {
 			box-shadow: inset 0 0 0 1px var(--gray-light);
 		}
 		&.brand {
-			background: var(--brandColor);
-			color: var(--gray-light);
+			background: var(--brand-color);
+			color: var(--white);
 		}
 		&.complement {
 			background: var(--brandComplement);
+			color: var(--white);
 		}
 		&.accent {
 			background: var(--brandAccent);
