@@ -21,7 +21,7 @@ Here are some more leadership frameworks that have influenced my approach:
 
 I find most of my design inspiration in lessons from nature, science, and history. The way I show up for my team is informed by [Leadership Models in Nature](/blog/leadership-in-nature/) that demonstrate mentorship, servant leadership, and distributed decision-making.
 
-[![Orca, Lion, Bee](/images/leadership-nature.jpg)](/blog/leadership-in-nature/){.fullwidth}
+[![Orca, Lion, Bee](/images/leadership-nature.jpg)](/blog/leadership-in-nature/) {.fullwidth}
 
 ### Functional Leader
 
