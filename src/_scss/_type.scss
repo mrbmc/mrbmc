@@ -19,13 +19,13 @@ $base-font-size:          1.5em;//math.div(24, 16);//16px is the browser default
 $base-line-height:        1.62;
 $serif-font-weight:       200;
 
-$heading-font-family:    $sans-font-family;
+$heading-font-family:    $base-font-family;
 $heading-font-weight:    $base-font-weight;
 
-$display-font-family:     $sans-font-family;
+$display-font-family:     $base-font-family;
 $display-font-weight:     $base-font-weight;
 
-$navbar-font-family:      $sans-font-family;
+$navbar-font-family:      $base-font-family;
 $navbar-font-weight:      $base-font-weight;
 
 
@@ -43,9 +43,10 @@ html {
     // -moz-osx-font-smoothing: grayscale;
     // font-smooth: never;
     // font-size: $base-font-size;
-    font-size: clamp(18px, 1.8vw, 32px);
+    font-size: clamp(18px, 1.8vw, 40px);
     @media (orientation: portrait) {
         font-size: 18px;
+        font-size: clamp(16px, 1.6vh, 32px);
     }
 }
 
@@ -68,7 +69,7 @@ h1,h2,h3,h4,h5 {
 }
 $type-scale: 1.19;//each size is this much larger than the predecessor
 h1 {
-    @include typeset($display-font-family, $display-font-weight, (1rem * pow($type-scale,8)), 1.2, -0.05em);
+    @include typeset($display-font-family, $display-font-weight, (1rem * pow($type-scale,8)), 1.0, -0.05em);
 }
 h2 {
     @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($type-scale,6)), 1.2, -0.0375em);

@@ -20,7 +20,10 @@ body,html {
     @include fullHeight(90vh);
 }
 
-h1,h2,h3,h4,h5,
+h1,h2,h3,h4,h5{
+    margin: 1em 0 1rem 0;
+    padding: 0;
+}
 p,ul,ol,dl,blockquote,.blockquote {
     margin: 0 0 1rem 0;
     padding: 0;
@@ -37,6 +40,7 @@ body {
         max-width: $grid-width;
         @media (orientation: portrait) {
             padding: 0 $spacer-horizontal;
+            max-width: 75vh;
         }
         >h1:first-child,>section:first-child {
             padding-top: $spacer-vertical;

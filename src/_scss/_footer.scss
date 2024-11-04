@@ -2,23 +2,23 @@ body {
     &>footer {
         position: relative;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $gray-800;
+        flex-direction: row;
+        justify-content: space-between;
+        // color: $gray-800;
         overflow: hidden;
-        padding: $spacer-vertical $grid-margin;
-        gap: 1rem;
+        padding: ($spacer-vertical * 2) $spacer-horizontal $spacer-vertical $spacer-horizontal;
+        gap: $spacer-horizontal;
 
         @include inverse();
 
         h2,h3,h4 {
-            color: $hero-text-color;
+            // color: $card-text-color;
             display: none;
         }
         a {
-            color: $hero-text-color;
+            // color: $card-text-color;
             &:hover {
-                color: $hero-heading-color;
+                // color: $well-bold-color;
             }
         }
 
@@ -36,12 +36,16 @@ body {
             }
         }
         #colophon {
+            display: flex;
+            flex-direction: column;
             @include smallType();
+            nav {
+                justify-content: flex-end;
+            }
         }
         #contact {
             nav {
                 $itemsize: 1.38rem;
-                // margin: 0 auto $spacer-vertical auto;
 
                 a {
                     font-size: $itemsize;

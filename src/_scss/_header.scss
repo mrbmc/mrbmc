@@ -33,7 +33,8 @@
         -webkit-tap-highlight-color: transparent;
         color: $navbar-link-color;
 
-        padding: 0 .62rem;
+        padding: 0 ($spacer-horizontal * 1);
+        margin: 0 0 0 $spacer-horizontal;
         border-radius: $border-radius;
         &.nav-cv,&.nav-resume,&.nav-photos {
             display: none;
@@ -104,6 +105,7 @@ body.resume #header #menu a[href="/about/"] {
         padding: 0;
         margin: 0;
         white-space: nowrap;
+        overflow: hidden;
 
         &:first-of-type {
             border-radius: 1em 0 0 1em;
@@ -117,8 +119,10 @@ body.resume #header #menu a[href="/about/"] {
             display: none;
             background: $body-background;
             position: absolute;
-            padding: .19rem 0rem;
+            padding: .25rem 0rem;
             box-shadow: 0 $shadow-offset $shadow-depth $shadow-color;
+            border-radius: .25em;
+            overflow: hidden;
 
             li {
                 list-style: none;
@@ -131,8 +135,6 @@ body.resume #header #menu a[href="/about/"] {
             }
         }
         &:hover {
-            color: $navbar-link-hover-color;
-            background: $navbar-link-hover-background;
             ol,ul {
                 display: block;
             }
@@ -141,9 +143,13 @@ body.resume #header #menu a[href="/about/"] {
 
         a {
             display: flex;
-            padding: 0 1em;
             white-space: nowrap;
             text-decoration: none;
+            padding: 0 ($spacer-horizontal * 1);
+            &:hover {
+                background: $navbar-link-hover-background;
+                color: $navbar-link-hover-color;
+            }
         }
     }
 
