@@ -12,23 +12,8 @@ $_orange:               #FF4F00;//international orange
 
 // SEMANTIC MAPPING
 $brand-color:            $_indigo;
-$brand-color-00:          #{$brand-color + "00"};
-$brand-color-10:          #{$brand-color + "19"};
-$brand-color-20:          #{$brand-color + "40"};
-$brand-color-50:          #{$brand-color + "80"};
-$brand-color-80:          #{$brand-color + CC};
 $brand-accent:           $_pink;
-$brand-accent-20:         #{$brand-accent + "33"};
-$brand-accent-50:         #{$brand-accent + "80"};
-$brand-accent-80:         #{$brand-accent + "CC"};
 $brand-complement:       $_orange;
-$brand-complement-20:     #{$brand-complement + "33"};
-$brand-complement-50:     #{$brand-complement + "80"};
-$brand-complement-80:     #{$brand-complement + "CC"};
-$brand-secondary:        $_sunshine;
-$brand-secondary-20:      #{$brand-secondary + "33"};
-$brand-secondary-50:      #{$brand-secondary + "80"};
-$brand-secondary-80:      #{$brand-secondary + "BB"};
 
 $neutral-100:          hslToHex(hue($brand-color),00%,100%);
 $neutral-95:           hslToHex(hue($brand-color),01%,96%);

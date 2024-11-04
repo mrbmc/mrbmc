@@ -37,40 +37,29 @@ body.colophon {
 		&.accent {
 			background: var(--brandAccent);
 		}
-		&.secondary {
-			background: var(--brandSecondary);
-		}
 		&.brand80 {
-			background: $brand-color-80;
+			background: transparentize($brand-color,0.2);
 			color: transparent;
 		}
 		&.complement80 {
-			background: $brand-complement-80;
+			background: transparentize($brand-complement,0.2);
 			color: transparent;
 		}
 		&.accent80 {
-			background: $brand-accent-80;
-			color: transparent;
-		}
-		&.secondary80 {
-			background: $brand-secondary-80;
+			background: transparentize($brand-accent,0.2);
 			color: transparent;
 		}
 		&.brand20 {
-			background: $brand-color-20;
+			background: transparentize($brand-color,0.8);
 			color: var(--gray-light);
 			color: transparent;
 		}
 		&.complement20 {
-			background: $brand-complement-20;
+			background: transparentize($brand-complement,0.8);
 			color: transparent;
 		}
 		&.accent20 {
-			background: $brand-accent-20;
-			color: transparent;
-		}
-		&.secondary20 {
-			background: $brand-secondary-20;
+			background: transparentize($brand-accent,0.8);
 			color: transparent;
 		}
 	}

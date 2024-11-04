@@ -65,7 +65,6 @@ body {
     --brand-color:      #{$brand-color};
     --brandComplement:  #{$brand-complement};
     --brandAccent:      #{$brand-accent};
-    --brandSecondary:   #{$brand-secondary};
 }
 @media (prefers-color-scheme: dark) {
     :root {

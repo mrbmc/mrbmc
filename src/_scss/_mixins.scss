@@ -211,20 +211,14 @@
         background-repeat: no-repeat;
         // background-attachment: fixed;
         background-size: 100% 100%;
-        // background: 
-        //     radial-gradient(38% 81% at 100% 81%,   $brand-accent-20 25%,  $brand-color-00 100%)
-        //     ,radial-gradient(38% 130% at 62% 0%,    $brand-complement-20 0%,   $brand-color-00 100%)
-        //     ,radial-gradient(38% 100% at 20% 100%,  $brand-secondary-20 0%,      $brand-color-00 100%)
-        //     ,radial-gradient(100% 100% at 0% 0%,  $brand-color-80 0%,    $brand-color-00 100%)
-        //     ,$brand-color;
 
-      background-color: $well-background;
-      background-image:
-      radial-gradient(ellipse 81% 119% at 10% -19%, $brand-complement-80 0%, transparent 100%),
-      radial-gradient(ellipse 100% 100% at 100% 81%, $brand-secondary-80 0px, transparent 100%),
-      conic-gradient(from 0.7turn at 105% 19%, transparent 0%, $brand-color-50 5%, transparent 10%, transparent),
-      conic-gradient(from 0.06turn at 4% 119%, transparent 0%, $brand-color-50 12.5%, transparent 25%, transparent 99%),
-      ;
+        background-color: $well-background;
+        background-image:
+        radial-gradient(ellipse 81% 119% at 10% -19%, transparentize($brand-accent,0.8) 0%, transparent 100%),
+        radial-gradient(ellipse 100% 100% at 100% 81%, transparentize($brand-complement,0.8) 0px, transparent 100%),
+        conic-gradient(from 0.025turn at 0% 119%, transparent 0%, transparentize($brand-color,0.8) 12.5%, transparent 25%, transparent 99%),
+        conic-gradient(from 0.66turn at 119% 8%, transparent 0%, transparentize($brand-color,0.8) 5%, transparent 10%, transparent 99%),
+        ;
 
     }
     &:after {
