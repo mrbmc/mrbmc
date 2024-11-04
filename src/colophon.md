@@ -88,11 +88,11 @@ Whenever I find myself growing grim about the mouth; whenever it is a damp, driz
 
 Black{.chip .black}
 
-Gray 100{.chip .gray100}
+Gray Dark{.chip .gray100}
 
-Gray 500{.chip .gray500}
+Gray Mid{.chip .gray500}
 
-Gray 900{.chip .gray900}
+Gray Light{.chip .gray900}
 
 White{.chip .white}
 

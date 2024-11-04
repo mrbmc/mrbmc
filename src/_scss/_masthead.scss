@@ -12,21 +12,21 @@
     overflow: hidden;
     z-index: 10;
 
-    background: $hero-background;
-    color: $hero-text-color;
+    background: $well-background;
+    color: $well-text-color;
 
     h1,h2,h3 {
-        color: $hero-heading-color;
+        color: $well-bold-color;
         z-index: 2;
     }
     a {
-        color: $hero-text-color;
+        color: $well-bold-color;
     }
     h1 + p {
         margin-bottom: 0em;
     }
     .summary {
-        color: $hero-heading-color;
+        color: $well-bold-color;
     }
 
     figure {

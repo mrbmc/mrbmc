@@ -53,36 +53,24 @@ body {
 // CORE STYLES
 
 :root {
-    --black-20:     #{$black-20};
-    --black-50:     #{$black-50};
-    --black-80:     #{$black-80};
-    --black:        #{$black};
-    --gray-dark:    #{$gray-dark};
-    --gray-mid:     #{$gray-mid};
-    --gray-light:   #{$gray-light};
-    --white:        #{$white};
-    --white-80:     #{$white-80};
-    --white-50:     #{$white-50};
-    --white-20:     #{$white-20};
-    --brandColor: #{$brand-color};
-    --brandComplement: #{$brand-complement};
-    --brandAccent: #{$brand-accent};
-    --brandSecondary: #{$brand-secondary};
+    --black:            #{$black};
+    --gray-dark:        #{$gray-dark};
+    --gray-mid:         #{$gray-mid};
+    --gray-light:       #{$gray-light};
+    --white:            #{$white};
+    --brand-color:      #{$brand-color};
+    --brandComplement:  #{$brand-complement};
+    --brandAccent:      #{$brand-accent};
+    --brandSecondary:   #{$brand-secondary};
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --black-20:      #{$white-20};
-        --black-50:      #{$white-50};
-        --black-80:      #{$white-80};
         --black:        #{$white};
         --gray-dark:    #{$gray-light};
         --gray-mid:     #{$gray-mid};
         --gray-light:   #{$gray-dark};
         --white:        #{$black};
-        --white-80:      #{$black-80};
-        --white-50:      #{$black-50};
-        --white-20:      #{$black-20};
-        --brandColor:   #{$brand-accent};
+        --brand-color:  #{$brand-accent};
     };
 }
 html {
@@ -236,23 +224,25 @@ main > section {
     box-sizing: border-box;
     margin: $spacer-vertical auto;
     padding: $spacer-horizontal;
-    background: $body-background;
     border: 1px solid $border-color;
     border-radius: $border-radius;
     box-shadow: inset 1px 1px 0px rgba(255,255,255,.08), inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadow-offset $shadow-depth $shadow-color;
+
+    background: $card-background;
+    color: $card-text-color;
+    h1,h2,h3,h4,strong,b {
+        color: $card-bold-color;
+    }
 }
 @mixin well {
-    box-sizing: border-box;
-    margin: $spacer-vertical auto;
-    padding: $spacer-horizontal;
-    background: $well-background;
+    @include card();
     border-radius: $border-radius;
+    box-shadow: inset $shadow-offset $shadow-depth $shadow-color;
 }
 @mixin hero {
     @include fullWidth(100vw);
     box-sizing: border-box;
     padding: $spacer-vertical $spacer-horizontal;
-
     @include inverse();
 }
 .well {
@@ -278,8 +268,7 @@ blockquote,.blockquote {
 
 .button, button {
     background: $brand-color;
-    color: $hero-text-color;
-    // border: 1px solid $brand-color;
+    color: $on-brand-color;
 
     padding: .5em 1em;
     border-radius: $border-radius;
@@ -288,7 +277,7 @@ blockquote,.blockquote {
     box-shadow: inset 0px 1px 1px 0px $white, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
 
     &:hover {
-        color: $hero-heading-color;
+        color: $well-bold-color;
     }
 }
 

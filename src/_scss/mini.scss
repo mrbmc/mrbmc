@@ -55,36 +55,24 @@ body {
 // CORE STYLES
 
 :root {
-    --black-20:     #{$black-20};
-    --black-50:     #{$black-50};
-    --black-80:     #{$black-80};
     --black:        #{$black};
     --gray-dark:    #{$gray-dark};
     --gray-mid:     #{$gray-mid};
     --gray-light:   #{$gray-light};
     --white:        #{$white};
-    --white-80:     #{$white-80};
-    --white-50:     #{$white-50};
-    --white-20:     #{$white-20};
-    --brandColor: #{$brand-color};
+    --brand-color: #{$brand-color};
     --brandComplement: #{$brand-complement};
     --brandAccent: #{$brand-accent};
     --brandSecondary: #{$brand-secondary};
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --black-20:      #{$white-20};
-        --black-50:      #{$white-50};
-        --black-80:      #{$white-80};
         --black:        #{$white};
         --gray-dark:    #{$gray-light};
         --gray-mid:     #{$gray-mid};
         --gray-light:   #{$gray-dark};
         --white:        #{$black};
-        --white-80:      #{$black-80};
-        --white-50:      #{$black-50};
-        --white-20:      #{$black-20};
-        --brandColor:   #{$brand-accent};
+        --brand-color:   #{$brand-accent};
     };
 }
 html {
@@ -143,7 +131,7 @@ blockquote,.blockquote {
 
 .button, button {
     background: $brand-color;
-    color: $hero-text-color;
+    color: $card-text-color;
     // border: 1px solid $brand-color;
 
     padding: .5em 1em;
@@ -153,7 +141,7 @@ blockquote,.blockquote {
     box-shadow: inset 0px 1px 1px 0px $white, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
 
     &:hover {
-        color: $hero-heading-color;
+        color: $well-bold-color;
     }
 }
 
