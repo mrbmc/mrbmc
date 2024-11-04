@@ -33,7 +33,7 @@
     @include translate(0, 20%);
     @include opacity(0);
     &.in {
-        transition: transform ($animation-speed * 2) $animation-easing, opacity ($animation-speed * 1.5) $animation-easing;
+        transition: transform ($animation-speed * 1) $animation-easing, opacity ($animation-speed * 1.5) $animation-easing;
         @include opacity(100);
         @include translate(0, 0);
     }
