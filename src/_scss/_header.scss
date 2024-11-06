@@ -150,7 +150,7 @@ body.resume #header #menu a[href="/about/"] {
         }
     }
 
-    @include smallType();
+    @include small-type();
 
     a[href="#top"] {
         content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNTMgMjAiPjxwYXRoIGQ9Ik0yNi41MDAzIDIuMzEzNDVMOS4xMTQyNiAxNi4yMjI1TDEwLjMwMzMgMTcuNjg5NUwyNi41MDAzIDQuNzMyNDVMNDIuNjk3MyAxNy42ODg1TDQzLjg4NjMgMTYuMjIyNUwyNi41MDAzIDIuMzEzNDVaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=");

@@ -153,7 +153,7 @@ p.gallery,div.gallery-wrap {
             list-style: none;
             margin: 0 ($spacer-horizontal * 0.5);
 			color: $text-color-subdued;
-			@include smallType();
+			@include small-type();
             img {
                 display: block;
                 height: calc(16vh - ($spacer-vertical * 0.5));

@@ -79,22 +79,22 @@ Body.Large:  ({{ 1 | times: typefactor | round: 3 }}rem)
 Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation.{.largeType}
 
 Body.Small:  ({{ 2 | minus: typefactor | round: 3 }}rem)  
-Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation.{.smallType}
+Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation.{.small-type}
 
 Prose:  
 Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people’s hats off—then, I account it high time to get to sea as soon as I can. {.serif}
 
 ### Color
 
-Black{.chip .black}
+Neutral-00{.chip .black}
 
-Gray Dark{.chip .gray100}
+Neutral-30{.chip .gray-dark}
 
-Gray Mid{.chip .gray500}
+Neutral-50{.chip .gray-mid}
 
-Gray Light{.chip .gray900}
+Neutral-80{.chip .gray-light}
 
-White{.chip .white}
+Neutral-100{.chip .white}
 
 Brand {.chip .brand}
 
@@ -102,7 +102,7 @@ Accent {.chip .accent}
 
 Complement {.chip .complement}
 
-Secondary {.chip .secondary}
+&nbsp;{.chip .white}
 
 &nbsp;{.chip .white}
 
@@ -112,7 +112,7 @@ Accent80 {.chip .accent80}
 
 Complement80 {.chip .complement80}
 
-Secondary80 {.chip .secondary80}
+&nbsp;{.chip .white}
 
 &nbsp;{.chip .white}
 
@@ -122,5 +122,7 @@ Accent20 {.chip .accent20}
 
 Complement20 {.chip .complement20}
 
-Secondary20 {.chip .secondary20}
+&nbsp;{.chip .white}
+
+&nbsp;{.chip .white}
 

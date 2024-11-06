@@ -38,7 +38,7 @@ body {
         #colophon {
             display: flex;
             flex-direction: column;
-            @include smallType();
+            @include small-type();
             nav {
                 justify-content: flex-end;
             }

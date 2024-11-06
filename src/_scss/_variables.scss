@@ -6,7 +6,7 @@ $_indigo:               #1e22a9;//hsl(238,70%,39%);
 $_rose:                 hsl(340,70%,70%);//
 $_pink:                 #ff6699;//hsl(340, 100%,70%);//
 $_sunshine:             #e6de00;//hsl(58, 100%, 45%);//
-// $_cyan:              hsl(180,100%,50%);
+$_cyan:              	hsl(180,100%,50%);
 $_teal:                 #00b1cc;//hsl(188,100%,40%);//
 $_orange:               #FF4F00;//international orange
 
@@ -21,18 +21,36 @@ $neutral-90:           hslToHex(hue($brand-color),01%,91%);
 $neutral-80:           hslToHex(hue($brand-color),02%,82%);
 $neutral-70:           hslToHex(hue($brand-color),02%,71%);
 $neutral-60:           hslToHex(hue($brand-color),03%,62%);
-$neutral-50:           hslToHex(hue($brand-color),03%,50%);
-$neutral-40:           hslToHex(hue($brand-color),05%,42%);
-$neutral-30:           hslToHex(hue($brand-color),05%,31%);
-$neutral-20:           hslToHex(hue($brand-color),05%,20%);
-$neutral-10:           hslToHex(hue($brand-color),13%,12%);
-$neutral-05:           hslToHex(hue($brand-color),21%,04%);
-$neutral-0:            hslToHex(hue($brand-color),34%,02%);
-$black: 				$neutral-10;
-$gray-dark: 			$neutral-30;
-$gray-mid:				$neutral-50;
-$gray-light:			$neutral-80;
-$white: 				$neutral-100;
+$neutral-50:           hslToHex(hue($brand-color),05%,50%);
+$neutral-40:           hslToHex(hue($brand-color),08%,42%);
+$neutral-30:           hslToHex(hue($brand-color),13%,31%);
+$neutral-20:           hslToHex(hue($brand-color),21%,20%);
+$neutral-10:           hslToHex(hue($brand-color),34%,12%);
+$neutral-05:           hslToHex(hue($brand-color),55%,04%);
+$neutral-0:            hslToHex(hue($brand-color),89%,02%);
+
+:root {
+    --black:            #{$neutral-10};
+    --gray-dark:        #{$neutral-30};
+    --gray-mid:         #{$neutral-50};
+    --gray-light:       #{$neutral-80};
+    --white:            #{$neutral-100};
+    --white-semi:       #{$neutral-100}54;
+    --brand-color:      #{$brand-color};
+    --brand-complement: #{$brand-complement};
+    --brand-accent:     #{$brand-accent};
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black:        #{$neutral-100};
+        --gray-dark:    #{$neutral-80};
+        --gray-mid:     #{$neutral-50};
+        --gray-light:   #{$neutral-30};
+        --white:        #{$neutral-10};
+        --white-semi:   #{$neutral-10}54;
+    };
+}
+
 
 // TYPE
 // -------------------------
@@ -58,7 +76,7 @@ $well-bold-color:  		var(--white);
 
 // Navbar
 // -------------------------
-$navbar-background:                	transparent;
+$navbar-background:                	var(--white-semi);
 $navbar-background-highlight:      	transparent;
 $navbar-border:                    	none;//.0125rem solid var(--gray-light);
 $navbar-text:                      	$text-color;

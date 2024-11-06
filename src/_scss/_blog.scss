@@ -32,7 +32,7 @@
 		}
 		p.date {
 			margin-bottom: 0;
-			@include smallType();
+			@include small-type();
 			color: $text-color-subdued;
 		}
 		summary {

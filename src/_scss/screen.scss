@@ -55,27 +55,6 @@ body {
 
 // ======================================================================
 // CORE STYLES
-
-:root {
-    --black:            #{$black};
-    --gray-dark:        #{$gray-dark};
-    --gray-mid:         #{$gray-mid};
-    --gray-light:       #{$gray-light};
-    --white:            #{$white};
-    --brand-color:      #{$brand-color};
-    --brandComplement:  #{$brand-complement};
-    --brandAccent:      #{$brand-accent};
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        --black:        #{$white};
-        --gray-dark:    #{$gray-light};
-        --gray-mid:     #{$gray-mid};
-        --gray-light:   #{$gray-dark};
-        --white:        #{$black};
-        --brand-color:  #{$brand-accent};
-    };
-}
 html {
     scroll-behavior: smooth;
 }
@@ -277,7 +256,7 @@ blockquote,.blockquote {
     border-radius: $border-radius;
     text-decoration: none;
     // box-shadow: 0 8px 24px hsla(hue($brand-color), 50%, 10%, 20%);;
-    box-shadow: inset 0px 1px 1px 0px $white, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
+    box-shadow: inset 0px 1px 1px 0px $neutral-100, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
 
     &:hover {
         color: $well-bold-color;

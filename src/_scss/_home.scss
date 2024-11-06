@@ -1,12 +1,7 @@
 body.home {
     #header {
         position: absolute;
-    //     .brand {
-    //         width: auto;
-    //         &:before {
-    //             display: none;
-    //         }
-    //     }
+        background: transparent;
     }
     #masthead {
         background: $body-background;
@@ -26,7 +21,6 @@ body.home {
 
         h1,h2,h3,p {
             color: $text-color-bold;
-            // color: $white;
             max-width: 26em;
         }
         h1 {

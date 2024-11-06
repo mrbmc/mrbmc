@@ -41,7 +41,7 @@ body.portfolio.list {
                 text-align: center;
             }
             p {
-                // @include smallType;
+                // @include small-type;
                 margin-bottom: 0;
                 color: $text-color-subdued;                
             }
@@ -153,7 +153,7 @@ h1.section,h2.section {
     display: flex;
     align-items: center;
     height: 62vh;
-    color: $white;
+    color: $well-text-color;
     position: relative;
     &:before {
         filter: brightness(0.8);

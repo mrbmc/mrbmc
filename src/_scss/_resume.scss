@@ -46,7 +46,7 @@ body.resume {
             flex-basis: 23%;
             margin: 0;
             line-height: 1;
-            @include smallType;
+            @include small-type;
             b,strong,em {
                 // font-size: 2.1em;
             }
@@ -63,7 +63,7 @@ body.resume {
     #education,.education {
         padding: 1em 1em 0.5em 1em;
         h2,h3, p, strong {
-            color: $white;
+            color: $neutral-100;
         }
         background: #5b0e9c url(/images/nyu-torch.svg) no-repeat center right;
     }

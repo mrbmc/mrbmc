@@ -192,9 +192,13 @@
     position: relative;
     overflow: hidden;
 
-    color: $white;
+    color: $well-text-color;
     a {
       color: $white;
+      color: $well-bold-color;
+      &:hover {
+        color: $well-bold-color;
+      }
     }
 
     &:before {

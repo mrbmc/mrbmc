@@ -11,15 +11,15 @@ body.colophon {
 			background: var(--black);
 			color: var(--gray-light);
 		}
-		&.gray100 {
+		&.gray-dark {
 			background: var(--gray-dark);
 			color: var(--gray-light);
 		}
-		&.gray500 {
+		&.gray-mid {
 			background: var(--gray-mid);
 			color: var(--gray-light);
 		}
-		&.gray900 {
+		&.gray-light {
 			background: var(--gray-light);
 		}
 		&.white {
@@ -31,11 +31,11 @@ body.colophon {
 			color: var(--white);
 		}
 		&.complement {
-			background: var(--brandComplement);
+			background: var(--brand-complement);
 			color: var(--white);
 		}
 		&.accent {
-			background: var(--brandAccent);
+			background: var(--brand-accent);
 		}
 		&.brand80 {
 			background: transparentize($brand-color,0.2);

@@ -45,21 +45,18 @@ body.about {
     }
 
     .hero {
-        // @include inverse();
-
-        // @include fullWidth(100vw);
-        // box-sizing: border-box;
-        // padding: $spacer-vertical $spacer-horizontal;
 
         display: flex;
-        flex-direction: column;
-        row-gap: $spacer-vertical;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: $spacer-vertical ($spacer-horizontal * 2);
 
         li {
             list-style: none;
-            width: 100%;
+            box-sizing: border-box;
+            flex-basis: calc(50% - ($spacer-horizontal * 1));
             max-width: $grid-width;
-            margin: 0 auto;
+            margin: 0;
 
             details {
                 margin: 0;
