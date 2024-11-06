@@ -28,6 +28,8 @@ function galleryLoad (e) {
         var newImg = document.createElement('img');
             newImg.src = src;
             newImg.setAttribute('class','image-detail');
+            newImg.setAttribute('loading','lazy');
+            newImg.setAttribute('alt','Image Caption');
         wrapper.prepend(newImg);
 
 

@@ -10,7 +10,7 @@ timeline: 2018-2020
 parallaxHeading:
   - "-1"
 ---
-![Disney+ Welcome on All Devices](/images/portfolio/disney-growth/disney-growth.png){.fullwidth style="object-fit:contain;"}
+![Disney+ Welcome on All Devices](/images/portfolio/disney-growth/disney-growth.jpg)
 
 &nbsp;
 

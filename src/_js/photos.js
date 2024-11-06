@@ -28,8 +28,8 @@ function onScroll() {
             oldClass = me.className,
             newClass = b ?  (oldClass.indexOf(' in')>=0 ? oldClass : oldClass + " in") : oldClass.replaceAll(' in', '');
         me.className = newClass;
-        if(b)
-          me.src = me.dataset.src;
+        // if(b)
+        //   me.src = me.dataset.src;
     });
 }
 

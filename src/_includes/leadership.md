@@ -27,7 +27,7 @@ I find most of my design inspiration in lessons from nature, science, and histor
 
 As a functional expert I try to support these three pillars to create a healthy design practice:
 
-![Puzzle](/images/about/puzzle.svg){style="height:38vh;"}
+![Puzzle](/images/about/puzzle.svg){style="height:38vh;width:auto;display:inline-block"}
 
 #### Culture
 
