@@ -1,6 +1,6 @@
 <section id="masthead">
 
-    {% if bodyclass == "blog post" %}
+{% if bodyclass == "blog post" %}
     <p {% if parallaxHeading == true %}data-parallax="50"{% endif %}>
         <span class="date">{{date | date: "%B %d, %Y" }}</span>
         &bull;
@@ -9,25 +9,22 @@
 
     <h1 {% if parallaxHeading == true %}data-parallax="50"{% endif %}>{{ title }}</h1>
 
-    {% if summary %}<p {% if parallaxHeading == true %}data-parallax="50"{% endif %} class="summary large">{{ summary }}</p>{% endif %}
-
-    {% else if bodyclass == "portfolio project" %}
-
-    <h1 {% if parallaxHeading == true %}data-parallax="50"{% endif %}>{{ title }}</h1>
-
+    {% if summary %}
+    <p {% if parallaxHeading == true %}data-parallax="50"{% endif %} class="summary large">{{ summary }}</p>
     {% endif %}
+{% endif %}
 
-    {% if masthead-image or masthead-video %}
+{% if bodyclass == "portfolio project" %}
+    <h1 {% if parallaxHeading == true %}data-parallax="50"{% endif %}>{{ title }}</h1>
+{% endif %}
+
+{% if masthead-image or masthead-video %}
     <figure {% if parallaxHeading == true %}data-fade="100" data-parallax="81"{% endif %}>
         {% if masthead-video %}
         <video src="{{masthead-video}}" autoplay loop muted preload="auto" playsinline type="video/mp4"></video>{% else 
         %}<img src="{{ masthead-image }}" alt="{{ masthead-title }}">
         {% endif %}
     </figure>
-    {% endif %}
-
-    <!-- <p><a href="#content" class="scrollhint"><svg viewBox="0 0 53 20"><g><polygon points="26.5,17.688 9.114,3.779 10.303,2.312 26.5,15.269 42.697,2.313 43.886,3.779" fill="currentColor"></polygon></g></svg></a></p> -->
+{% endif %}
 
 </section>
-<!-- <img src="{{ masthead-image }}" alt="{{ masthead-title }}" class="fullwidth"> -->
-
