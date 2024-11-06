@@ -16,6 +16,9 @@ body,html {
 .fullwidth {
     @include fullWidth(100vw);
 }
+.fullwidth90 {
+    @include fullWidth(90vw);
+}
 .fullheight {
     @include fullHeight(90vh);
 }
@@ -45,6 +48,26 @@ body {
         >h1:first-child,>section:first-child {
             padding-top: $spacer-vertical;
         }
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1em,2fr));
+    grid-auto-flow: column;
+    grid-gap: ($spacer-horizontal * 2);
+    margin-top: $spacer-vertical;
+    margin-bottom: $spacer-vertical;
+
+    &>* {
+        list-style: none;
+        margin: 0;
+    }
+    @media (orientation: portrait) {
+        grid-auto-flow: row;
+    }
+    &.x2x2 {
+        grid-auto-flow: row;
+        grid-template-columns: 50% 50%;
     }
 }
 
@@ -202,9 +225,9 @@ main > section {
 // ======================================================================
 // MOLECULE STYLES
 
-@mixin card {
+.card {
     box-sizing: border-box;
-    margin: $spacer-vertical auto;
+    width: 100%;
     padding: $spacer-horizontal;
     border: 1px solid $border-color;
     border-radius: $border-radius;
@@ -216,25 +239,11 @@ main > section {
         color: $card-bold-color;
     }
 }
-@mixin well {
-    @include card();
-    border-radius: $border-radius;
-    box-shadow: inset $shadow-offset $shadow-depth $shadow-color;
-}
-@mixin hero {
-    @include fullWidth(100vw);
-    box-sizing: border-box;
-    padding: $spacer-vertical $spacer-horizontal;
-    @include inverse();
-}
-.well {
-	@include well;
-}
-.card {
-	@include card;
-}
 .hero {
-    @include hero;
+    @include fullWidth(100vw);
+    @include inverse();
+    box-sizing: border-box;
+    padding: $spacer-vertical $grid-margin;
 }
 
 blockquote,.blockquote {
@@ -342,57 +351,14 @@ ul.nav,ol.nav {
     }
 }
 
-@mixin kpi {
-    @include card();
-    background: var(--gray-light);
-    display: inline-block;
-    margin: $spacer-vertical auto;
-
-    em,i,b,strong,code,s,dt,dd {
-        display: block;
-        margin: 0;
-        padding: 0;
-        line-height: 1.2;
-        width: 100%;
-    }
-    s {
-        text-decoration: none;
-    }
-    em,i,dd+dt {
-        font-style: normal;
-        color: $text-color-subdued;
-        @include smallType();
-    }
-    b,strong,dd {
-        font-size: 3.4em;
-        font-weight: $base-font-weight;
-        color: $text-color-bold;
-    }
-}
-.kpi {
-    @include kpi;
-}
-
-.grid {
-    display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(1em,2fr));
-    grid-auto-flow: column;
-    grid-gap: $spacer-horizontal;
-    margin-bottom: $spacer-vertical;
-
-    &>* {
+.hero {
+    li {
         list-style: none;
-        margin: 0;
-    }
-    @media (orientation: portrait) {
-        grid-auto-flow: row;
     }
 }
 
 details {
-    @include card();
     summary {
-        @include typeset($heading-font-family, $heading-font-weight, 1.0rem, 1.2, -0.0125em);
         cursor: pointer;
     }
     &[open] {
@@ -402,6 +368,21 @@ details {
         & > summary:before {
             transform: rotate(90deg);
         }
+    }
+}
+.kpi {
+    em,i,b,strong,code,s,dt,dd {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    em,i,dd+dt {
+        color: $text-color-subdued;
+        @include small-type();
+    }
+    b,strong,dd {
+        color: $text-color-bold;
     }
 }
 

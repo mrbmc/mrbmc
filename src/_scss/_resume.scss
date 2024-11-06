@@ -1,55 +1,37 @@
 body.resume {
+    main {
+        margin-top: $spacer-vertical;
+    }
     p,li {
         font-family: $serif-font-family;
         font-weight: $serif-font-weight;
-    }
-    h2 {
-        // display: none;
-        // font-weight: 500;
-    }
-    h3 {
-        margin-top: 1em;
-        // font-weight: $bold-font-weight;
     }
     h4 {
         @include typeset($heading-font-family, $bold-font-weight, (1rem * pow($type-scale,0)), 1.2, -0.0125em);
         text-transform: inherit;
     }
     h5 {
-        // font-weight: $bold-font-weight;
         font-size: 120%;
     }
-    p,h5,ul,ol {
-        margin-bottom: 1em;
-        margin-left: 38%;
+    h4,h5 {
+        margin-top: 0;
     }
-    h3,h4 {
-        margin-bottom: 0.5rem;
+    p,h5,ul {
+        margin-left: 40%;
     }
     h4,h4+p {
         clear: both;
         float: left;
-        width: 38%;
+        width: 36%;
         margin-left: 0;
     }
     .two-col {
         margin-left: 0;
         margin-right: 0;
     }
-    ul.stats {
-        margin-left: 0;
-        margin: 0 0 $spacer-vertical 0;
-        display: flex;
-        justify-content: space-between;
+    ol.stats {
+        list-style: none;
         li {
-            @include kpi;
-            flex-basis: 23%;
-            margin: 0;
-            line-height: 1;
-            @include small-type;
-            b,strong,em {
-                // font-size: 2.1em;
-            }
         }
         &+p {
             margin-left: 0;

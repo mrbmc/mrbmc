@@ -6,11 +6,11 @@ permalink: /resume/
 ---
 Brian McConnell is a results-oriented design leader, adept at building cross-functional partnerships, managing change, and driving innovation. He brings an entrepreneurial mindset to the enterprise, and scaling experience to startups.{.large .two-col}
 
-- **24** years experience
-- **40+** products built
-- **13** years managing teams
-- **26** largest team
-{.stats}
+1. **24** years experience{.card .kpi}
+2. **40+** products built{.card .kpi}
+3. **13** years managing teams{.card .kpi}
+4. **26** largest team{.card .kpi}
+{.stats .grid}
 
 [Download 1-Page Resumé](/images/uploads/Brian_McConnell-Resume.pdf){.button .hidden-print}
 

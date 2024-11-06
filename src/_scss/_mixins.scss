@@ -162,39 +162,12 @@
   max-height: $limit;
 }
 
-// @mixin span ($s:1) {
-//   width: ($s * $grid-column) + (($s - 1) * $grid-padding);
-//   margin: $spacer-vertical 0 $spacer-vertical $grid-padding;
-//   float: left;
-//   &:first-of-type {
-//     margin-left: 0;
-//   }
-// }
-
-// @function hsl-str($color) {
-//   @return unquote("hsl(#{hue($color)}, #{saturation($color)}, #{lightness($color)})");
-// }
-
-@function decToHex($dec) {
-    $hex: "0123456789ABCDEF";
-    $first: math.div(($dec - $dec % 16),16)+1;
-    $second: ($dec % 16)+1;
-    @return str-slice($hex, $first, $first) + str-slice($hex, $second, $second)
-}
-@function hslToHex($h,$s,$l) {
-  $r: decToHex(red(hsl($h,$s,$l)));
-  $g: decToHex(green(hsl($h,$s,$l)));
-  $b: decToHex(blue(hsl($h,$s,$l)));
-  @return ##{$r+$g+$b};
-}
-
 @mixin inverse {
     position: relative;
     overflow: hidden;
 
     color: $well-text-color;
     a {
-      color: $white;
       color: $well-bold-color;
       &:hover {
         color: $well-bold-color;

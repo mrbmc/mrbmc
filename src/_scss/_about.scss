@@ -46,26 +46,30 @@ body.about {
 
     .hero {
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: $spacer-vertical ($spacer-horizontal * 2);
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // gap: $spacer-vertical ($spacer-horizontal * 2);
 
-        li {
-            list-style: none;
-            box-sizing: border-box;
+        
+        li .card {
+            min-height: 100%;
             flex-basis: calc(50% - ($spacer-horizontal * 1));
-            max-width: $grid-width;
-            margin: 0;
-
-            details {
-                margin: 0;
-            }
-            strong,em {
-                display: block;
-                margin-bottom: 1rem;
-            }
         }
+        // li {
+        //     list-style: none;
+        //     box-sizing: border-box;
+        //     max-width: $grid-width;
+        //     margin: 0;
+
+        //     details {
+        //         margin: 0;
+        //     }
+        //     strong,em {
+        //         display: block;
+        //         margin-bottom: 1rem;
+        //     }
+        // }
     }
 
     @media (orientation: portrait) {
@@ -83,8 +87,6 @@ body.about {
 
 
 ul.timeline {
-    @include card;
-
     @media (orientation: landscape) {
         margin: $spacer-vertical ($spacer-horizontal * 2);
     }
