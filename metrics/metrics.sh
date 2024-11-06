@@ -23,7 +23,7 @@ goaccess_opt+="--agent-list "
 goaccess_opt+="--ignore-crawlers "
 goaccess_opt+="--unknowns-as-crawlers "
 goaccess_opt+="--tz='America/New York' "
-goaccess_opt+="--geoip-database=/Users/brianmcconnell/Downloads/GeoLite2-City_20241001/GeoLite2-City.mmdb"
+goaccess_opt+="--geoip-database=/Users/brianmcconnell/Downloads/GeoLite2-City/GeoLite2-City.mmdb"
 
 
 # ==================================================
