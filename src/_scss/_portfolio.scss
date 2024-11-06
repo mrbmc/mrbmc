@@ -158,14 +158,17 @@ h1.section,h2.section {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    height: 62vh;
-    color: $well-text-color;
+    height: 83.3vh;
+    color: $well-bold-color;
     position: relative;
     &:before {
         filter: brightness(0.8);
         content: "";
-        background-size: cover;
+        object-fit: cover;
+        background-size: 120%;
         background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
         position: absolute;
         top: 0;
         left: 0;
