@@ -18,7 +18,7 @@ pagination:
 
   {% for p in pics %}
   <p id="{{p.id}}">
-    <img src="#" data-src="{{p.path}}" alt="{{ p.title }}" data-spy="scroll" class="fade" />
+    <img src="{{p.path}}" data-src="{{p.path}}" alt="{{ p.title }}" data-spy="scroll" class="fade" loading="lazy" />
   </p>
   {% endfor %}
 

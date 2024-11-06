@@ -16,11 +16,11 @@ Half of the battle is acutally knowing in detail what kind of viewing experience
 
 <div class="carousel">
 
-- ![Optumus Quality Monitor](/images/portfolio/disney/enterprise-optumus-dashboard.png)  
+- ![Optumus Quality Monitor](/images/portfolio/disney-enterprise/enterprise-optumus-dashboard.png)  
 Streaming Quality Dashboard
-- ![Optumus Quality Monitor](/images/portfolio/disney/enterprise-optumus-session.png)  
+- ![Optumus Quality Monitor](/images/portfolio/disney-enterprise/enterprise-optumus-session.png)  
 Monitoring a user's streaming session
-- ![Optumus Quality Monitor](/images/portfolio/disney/enterprise-optumus-spotlight.png)  
+- ![Optumus Quality Monitor](/images/portfolio/disney-enterprise/enterprise-optumus-spotlight.png)  
 Deep dive into streaming events
 
 </div>

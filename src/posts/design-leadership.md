@@ -11,7 +11,7 @@ tags:
 
 The vocabulary of product design is full of phrases and terms that we all assume we have a shared definition of. We use terms like management, culture, communication, and leadership in and across design teams, but they don’t always mean what you think they mean. When you dig a little deeper to really understand what people are saying, you find that we’re all speaking a different language. What one person considers culture, another person calls Process. Management can be a taboo word among designers and an aspirational goal at the same time.
 
-![img](https://cdn-images-1.medium.com/max/1600/0*Z6HUUb0Cu7nt8g0q.jpg)
+![img](/images/blog/inconceivable.jpg)
 
 Matters get even fuzzier when we start using variants of a word in different contexts. “Lead” can be used as a verb, when you lead a project. It can also be a noun when you’re described as a Design Lead or Lead Designer. I’ve always believed that calling someone a design lead on a team of one is a misnomer. How can you be leading if nobody is following?
 

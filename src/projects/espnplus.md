@@ -19,7 +19,7 @@ timeline: 2017-2018
 
 &nbsp;
 
-![](/images/portfolio/espn-masthead-2x1.jpg)
+![](/images/portfolio/espn/espn-masthead-2x1.jpg)
 
 
 This project was the first opportunity to establish Growth Design as a center of excellence within Disney. My team leveraged our experience building acquistion, signup and onboarding for Major League Baseball, the NHL and other clients for Disney's first direct-to-consumer streaming service.

@@ -1,7 +1,7 @@
 ---
 title: ESPN Vision
 thumbnail: /images/portfolio/terremoto-screenshots/espn+_01.png
-masthead-image: /images/portfolio/espn-masthead-16x9.jpg
+masthead-image: /images/portfolio/espn/espn-masthead-16x9.jpg
 masthead-video: /images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
 date: 2020-02-01
 tags:

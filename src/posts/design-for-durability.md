@@ -16,7 +16,7 @@ I recently refurbished a vintage road bike (1988 Cannondale Black Lightning) tha
 Many of the essential design details of the bike – the frame geometry, the shape of the tubing, the drop bars – are the same today as they were when the bike was made. Granted at the top of the market the advancements in aerodynamics and material science have pushed the envelope, but you could put this bike into a shop today and it would fit in.
 
 <!--As an example, the bottom bracket that was sold with the frame in 1988 is still spinning smoothly and quietly after untold miles. In comparison, I just had to replace the bottom bracket on my modern bike after 5 seasons. -->
-![1990 Black Lightning](/images/blog/cannondale-blacklightning-1988.jpeg)
+![1990 Black Lightning](/images/blog/blacklightning-1990.jpg)
 1990 Black Lightning{.caption}
 
 ![2023 Cannondale CAAD](/images/blog/cannondale-caad-optimo-105.webp)

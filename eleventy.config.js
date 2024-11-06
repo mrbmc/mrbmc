@@ -1,3 +1,4 @@
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const glob = require("glob-promise");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const htmlmin = require('html-minifier');
@@ -13,16 +14,40 @@ const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
 
 
 
-
 module.exports = function(eleventyConfig) {
+
 
 
   // ========================================
   // CONTENT PREP
 
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // which file extensions to process
+    extensions: "html",
+
+    // Add any other Image utility options here:
+
+    urlPath: "/images/optimized/",
+    outputDir: "www/images/optimized/",
+
+    // optional, output image formats
+    formats: ["auto"],
+    // formats: ["webp", "avif"],
+
+    // optional, output image widths
+    // widths: ["auto"],
+    widths: [1280],
+
+    // optional, attributes assigned on <img> override these values.
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async"
+    },
+  });
+
   // COLLECTION FOR PHOTO GALLERY
   eleventyConfig.addCollection('gallery', async collectionApi => {
-    let files = await glob('./src/_images/gallery/*.jpg');
+    let files = await glob('images/gallery/*.jpg');
     //Now filter to non thumb-
     let images = files.filter(f => {
       return f.indexOf('thumb') !== 0;
@@ -31,8 +56,8 @@ module.exports = function(eleventyConfig) {
     let collection = images.map(i => {
       return {
         id: 'p' + ++n,
-        path: i.replace('./src/_images/', '/images/'),
-        thumb: i.replace('./src/_images/gallery/', '/images/gallery/thumbs/')
+        // path: i.replace('./src/images/', '/images/'),
+        thumb: i.replace('images/gallery/', 'images/gallery/thumbs/')
       }
     });
     return collection;
@@ -103,9 +128,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"backup/2015":"2015"});
   eleventyConfig.addPassthroughCopy({"backup/2022":"2022"});
   eleventyConfig.addPassthroughCopy({"backup/2023/www":"2023"});
-  eleventyConfig.addPassthroughCopy({"src/_images":"images"});
+  eleventyConfig.addPassthroughCopy({"src/images":"images"});
   eleventyConfig.addPassthroughCopy({"src/_fonts":"css/fonts"});
-  eleventyConfig.addPassthroughCopy({"src/_images/favicon/favicon.ico":"favicon.ico"});
+  eleventyConfig.addPassthroughCopy({"src/images/favicon/favicon.ico":"favicon.ico"});
 
 
   eleventyConfig.setServerOptions({

@@ -1,7 +1,7 @@
 ---
 title: ESPN
 thumbnail: /images/portfolio/thumbs/espn-teaser-16x9.jpg
-masthead-image: /images/portfolio/espn-masthead-16x9.jpg
+masthead-image: /images/portfolio/espn/espn-masthead-16x9.jpg
 masthead-video: /images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
 date: 2018-04-12
 tags:
@@ -23,7 +23,7 @@ eleventyExcludeFromCollections: true
 
 &nbsp;
 
-![](/images/portfolio/espn-masthead-2x1.jpg)
+![](/images/portfolio/espn/espn-masthead-2x1.jpg)
 
 
 This project was the first opportunity to establish Growth Design as a center of excellence within Disney. My team leveraged our experience building acquistion, signup and onboarding for Major League Baseball, the NHL and other clients for Disney's first direct-to-consumer streaming service.

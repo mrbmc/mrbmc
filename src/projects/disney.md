@@ -34,7 +34,7 @@ How might we onboard guests to a brand-new streaming service from the most belov
 
 ## Disney+ GroupWatch
 
-[![GroupWatch](/images/portfolio/disney-groupwatch-devices.png)](https://www.figma.com/proto/8Syl0NQrlMnyDjTdsqGcOi/Brian-McConnell---Design-Leader?page-id=504%3A1084&type=design&node-id=211-10&viewport=42%2C-261%2C0.03&t=dOrzm6oO53rEqfOr-8&scaling=contain&starting-point-node-id=211%3A10&hide-ui=1)
+[![GroupWatch](/images/portfolio/disney-groupwatch/disney-groupwatch-devices.png)](https://www.figma.com/proto/8Syl0NQrlMnyDjTdsqGcOi/Brian-McConnell---Design-Leader?page-id=504%3A1084&type=design&node-id=211-10&viewport=42%2C-261%2C0.03&t=dOrzm6oO53rEqfOr-8&scaling=contain&starting-point-node-id=211%3A10&hide-ui=1)
 
 GroupWatch was Disney's first social viewing feature. It allows people to stream movies & shows in sync on any device Disney+ is available.
 
@@ -50,10 +50,10 @@ I led a team of 20+ product designers and researchers from proof-of-concept thro
 
 Collectively these products ***saved Disney $100M p/a in operating costs***; but more significantly they opened new creative possibilities for cast members to better serve our guests.
 
-- ![Managing 1000+ SKUs in Market](/images/portfolio/disney/genie.png)
-- ![Global Dictionary](/images/portfolio/disney/cypher.png)
-- ![Editorial + Algorithmic content management](/images/portfolio/disney/maestro.png)
-- ![A/B/N Experiments & Feature Flagging](/images/portfolio/disney/weaponx.png)
-- ![Streaming Quality Analytics](/images/portfolio/disney/enterprise-optumus-session.png)
-- ![Customer Support Tooling](/images/portfolio/disney/baymax.png)
+- ![Managing 1000+ SKUs in Market](/images/portfolio/disney-enterprise/genie-offers.jpg)
+- ![Global Dictionary](/images/portfolio/disney-enterprise/cypher-dictionary.png)
+- ![Editorial + Algorithmic content management](/images/portfolio/disney-enterprise/maestro.png)
+- ![A/B/N Experiments & Feature Flagging](/images/portfolio/disney-enterprise/weaponx.png)
+- ![Streaming Quality Analytics](/images/portfolio/disney-enterprise/enterprise-optumus-session.png)
+- ![Customer Support Tooling](/images/portfolio/disney-enterprise/baymax.png)
 {.gallery}

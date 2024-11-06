@@ -10,7 +10,7 @@ tags:
 
 I wrote this guide to cycling in New York for a couple of friends who recently moved to NY from London.
 
-![](/images/blog/nyc-cycling.jpeg)
+![](/images/blog/nyc-cycling.jpg)
 ### Rules of the road
 
 In New York cars drive on the right side of the road. In London they drive on the wrong side. Be extra vigilant of cars on your newly exposed flank. 
