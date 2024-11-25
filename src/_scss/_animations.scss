@@ -38,8 +38,18 @@
         @include translate(0, 0);
     }
 }
+.blur-in {
+    filter:blur(1em);
+    opacity: 0;
+    transition: filter ($animation-speed * 1.5) $animation-easing, opacity ($animation-speed * 1) $animation-easing;
+    &.in {
+        filter:blur(0);
+        opacity: 100;
+    }
+}
 
-.fade {
+.fade,
+.fade-in {
     @include opacity(0);
     &.in {
         @include transition(opacity $animation-speed*2 $animation-easing);
