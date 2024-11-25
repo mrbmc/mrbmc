@@ -13,7 +13,7 @@ stopdatemonth=$(date -j -f %Y%m%d $stopdate +%m);
 local flag_skipdownload flag_verbose flag_help flag_raw
 local usage=(
 "metrics.sh [-h|--help]"
-"metrics-sh [-v|--verbose] [-s|--skipdownload] [-r|--raw] [-t|--term=<duration>] [<message...>]"
+"metrics-sh [-v|--verbose] [-s|--skipdownload] [-r|--raw] [-f|--from=<start-date>] [-u|--until=<stop-date>] [-t|--term=<duration>] [-i|--ip=ip.to.investigate]"
 )
 
 goaccess_opt="--no-progress "
@@ -36,18 +36,21 @@ function download () {
 	if [[ "$flag_skipdownload" ]]; then
 		echo "========================================";
 		echo "SKIP DOWNLOAD";
-		echo "----------------------------------------";
 		return;
 	fi
 
 	echo "========================================";
 	echo "DOWNLOADING DATA";
-	echo "----------------------------------------";
+	[[ -z "$flag_verbose" ]] || { echo "----------------------------------------";}
 
-	echo "DOWNLOADING LOGS FROM S3"
-	aws s3 sync s3://brianmcconnell.me $BASE/downloads
+	if (( $#flag_verbose )); then
+		echo "Downloading from s3://brianmcconnell.me"
+		aws s3 sync s3://brianmcconnell.me $BASE/downloads
+	else
+		aws s3 sync s3://brianmcconnell.me $BASE/downloads --quiet
+	fi
 
-	echo "UNZIPPING LOGS"
+	# [[ -z "$flag_verbose" ]] || { echo "Unzipping Logs"; }
 	tempstartmonth=$startdatemonth;
 	if [[ "$arg_duration[-1]" != "all" ]]; then
 		tempstartmonth=$stopdatemonth;
@@ -58,7 +61,9 @@ function download () {
 	#zcat -f logs/log_clean0* 
 	for i in {$tempstartmonth..$stopdatemonth}
 	do
-		echo "2024-$i unzipping";
+		if (( $#flag_verbose )); then
+			echo "2024-$i unzipping";
+		fi
 		gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.2024-'$i*'gz' > $BASE'/logs/log_raw_2024-'$i
 	done
 }
@@ -67,7 +72,7 @@ function download () {
 function parse () {
 	echo "========================================";
 	echo "PREPARING DATA" $1;
-	echo "----------------------------------------";
+	[[ -z "$flag_verbose" ]] || { echo "----------------------------------------";}
 
 
 	tempstartmonth=$startdatemonth;
@@ -77,34 +82,34 @@ function parse () {
 	# fi
 
 	if (( $#flag_raw )); then
-		echo "Concatenating 2024 raw"
+		[[ -z "$flag_verbose" ]] || { echo "Concatenating 2024 raw"; }
 		zcat -f $BASE/logs/log_raw_2024-* > $BASE/logs/log_raw;
 		return true;
 	else
 
 		for i in {$tempstartmonth..$stopdatemonth}
 		do
-			echo "Cleaning 2024-$i";
+			[[ -z "$flag_verbose" ]] || { echo "Cleaning 2024-$i"; }
 			cat  $BASE'/logs/log_raw_2024-'$i |\
 			grep -E -v -i -f $BASE/blacklist-agents.txt |\
 			grep -E -v -i -f $BASE/blacklist-urls.txt\
 			> $BASE'/logs/log_clean_2024-'$i
 		done
 
-		echo "Concatenating 2024 clean"
+		[[ -z "$flag_verbose" ]] || { echo "Concatenating 2024 clean"; }
 		zcat -f $BASE/logs/log_clean_2024-* > $BASE/logs/log_clean;
 	fi
 
 }
 
 
-
 function analyze () {
 
 	echo "========================================";
 	echo "ANALYZING DATA";
-	echo "----------------------------------------";
-
+	[[ -z "$flag_verbose" ]] || { 
+		echo "----------------------------------------";
+	}
 	if [[ "$arg_startdate[-1]" && "$arg_stopdate[-1]" ]]; then
 		analyze-range;
 		return 1;
@@ -118,11 +123,11 @@ function analyze () {
 
 		if (( $#flag_raw )); then
 			# raw logs
-			echo "Analyzing 2024-$i RAW";
+			[[ -z "$flag_verbose" ]] || { echo "Analyzing 2024-$i RAW"; }
 			goaccess_cmd="goaccess $BASE/logs/log_raw_2024-$i -o $BASE/www/2024$i-raw.html ";
 		else
 			# clean logs
-			echo "Analyzing 2024-$i CLEAN";
+			[[ -z "$flag_verbose" ]] || { echo "Analyzing 2024-$i CLEAN"; }
 			goaccess_cmd="goaccess $BASE/logs/log_clean_2024-$i -o $BASE/www/2024$i.html ";
 		fi
 
@@ -131,22 +136,20 @@ function analyze () {
 	done
 
 	periods_opt=('7d' '30d' '90d')
-	sedhackmon=$(date -v+1d +%m);
-	sedhackday=$(date -v+1d +%d);
 	for duration in $periods_opt
 	do
 		if (( $#flag_raw )); then
-			echo "Analyzing -$duration RAW";
-			sed_cmd="sed -n '/2024-'$(date -v-$duration +%m)'-'$(date -v-$duration +%d)'/,/2024-'$sedhackmon'-'$sedhackday'/ p' $BASE/logs/log_raw | goaccess -a -o $BASE/../metrics/www/l$duration-raw.html $goaccess_opt";
+			[[ -z "$flag_verbose" ]] || { echo "Analyzing -$duration RAW";}
+			sed_cmd="sed -n '/'$(date -v-$duration +%Y-%m-%d)'/,/$(date -v+1d +%Y-%m-%d)/ p' $BASE/logs/log_raw | goaccess -a -o $BASE/../metrics/www/l$duration-raw.html $goaccess_opt";
 		else
-			echo "Analyzing -$duration CLEAN";
-			sed_cmd="sed -n '/2024-$(date -v-$duration +%m)-$(date -v-$duration +%d)/,/2024-$sedhackmon-$sedhackday/ p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/l$duration.html $goaccess_opt";
+			[[ -z "$flag_verbose" ]] || { echo "Analyzing -$duration CLEAN";}
+			sed_cmd="sed -n '/$(date -v-$duration +%Y-%m-%d)/,/$(date -v+1d +%Y-%m-%d)/ p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/l$duration.html $goaccess_opt";
 		fi
 		eval ${sed_cmd}
 	done
 
 	if [[ "$arg_duration[-1]" = "all" ]]; then
-		echo "Analyzing 2024";
+		[[ -z "$flag_verbose" ]] || { echo "Analyzing 2024";}
 		sed_cmd="zcat -f $BASE/logs/log_clean_2024-* | goaccess  -o $BASE'/../metrics/www/2024.html' $goaccess_opt";
 		eval ${sed_cmd}
 	fi
@@ -162,7 +165,7 @@ function analyze-range () {
 	sed_cmd+="/2024\-'$(date -j -f %Y%m%d $startdate +%m)'\-'$(date -j -f %Y%m%d $startdate +%d)'/"
 	filename="$startdate";
 	if [[ $startdate != $stopdate ]]; then
-		sed_cmd+=",/2024\-'$(date -j -f %Y%m%d $stopdate +%m)'\-'$(date -j -f %Y%m%d $stopdate +%d)'/"
+		sed_cmd+=",/2024\-'$(date -j -v+1d -f %Y%m%d $stopdate +%m)'\-'$(date -j -v+1d -f %Y%m%d $stopdate +%d)'/"
 		filename+="-$stopdate";
 	fi
 	sed_cmd+=" p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/$filename.html "
@@ -173,6 +176,16 @@ function analyze-range () {
 }
 
 
+function investigate () {
+	the_cmd="cat ";
+	the_cmd+=$BASE'/logs/log_raw_2024-11';
+	the_cmd+=" | grep "$arg_ipmask[-1];
+	# the_cmd+=" | grep -vi images";
+	the_cmd+=" > "$BASE"/logs/investigation.log;";
+	# the_cmd+="edit investigation.log";
+	# echo $the_cmd;
+	eval ${the_cmd};
+}
 
 # ==================================================
 # PARSE INPUTS
@@ -183,14 +196,14 @@ zparseopts -D -F -K -- \
 {s,-skipdownload}=flag_skipdownload \
 {r,-raw}=flag_raw \
 {v,-verbose}=flag_verbose \
+{i,-ip}:=arg_ipmask \
 {t,-term}:=arg_duration \
 {f,-from}:=arg_startdate \
 {u,-until}:=arg_stopdate ||
 return 1
 
 [[ -z "$flag_help" ]] || { print -l $usage && return }
-[[ -z "$flag_verbose" ]] || { print "verbose mode" && return }
-# [[ -z "$flag_skipdownload" ]] || { print "skip download" && return }
+# [[ -z "$flag_verbose" ]] || { print "verbose mode" }
 
 if [[ "$arg_startdate[-1]" ]]; then
 	startdate=$(date -j -f %Y%m%d $arg_startdate[-1] +%Y%m%d);
@@ -210,14 +223,23 @@ if [[ "$arg_duration[-1]" = "all" ]]; then
 	startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
 fi
 
-echo "========================================";
-echo "LOG ANALYSIS TIMEFRAME";
-echo "----------------------------------------";
-echo "$startdate – $stopdate";
-
 # ==================================================
 # RUN ACTIONS
 # ==================================================
+
+if [[ "$arg_ipmask[-1]" ]]; then
+	investigate;
+	exit;
+fi
+
+echo "========================================";
+echo "LOG ANALYSIS";
+[[ -z "$flag_verbose" ]] || { 
+	echo "----------------------------------------";
+}
+[[ -z "$flag_verbose" ]] || { 
+	echo "TIMEFRAME: $startdate – $stopdate";
+}
 
 download;
 
@@ -225,4 +247,7 @@ parse;
 
 analyze;
 
-exit;
+echo "========================================";
+echo "LOG ANALYSIS COMPLETE";
+
+exit 1;

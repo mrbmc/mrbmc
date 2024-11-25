@@ -14,6 +14,7 @@
 /new
 /old
 /owa/
+/register
 /test
 /wordpress
 /wp
