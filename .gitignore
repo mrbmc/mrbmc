@@ -9,3 +9,4 @@ metrics/log_*
 /metrics/downloads
 /metrics/www
 /metrics/logs
+.DS_Store
