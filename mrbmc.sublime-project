@@ -1,0 +1,54 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/brianmcconnell/Sites/mrbmc",
+		},
+	],
+	"settings":
+	{
+		"Pretty JSON":
+		{
+			"pretty_on_save": true,
+		},
+		"libsass":
+		{
+		    "output": {
+		        "dir": "../www/css",
+		        "structure": "nested"
+		    },
+		    "compile": {
+		        "style": false,             
+		        "line-numbers": false,      
+		        "line-comments": false,     
+		        "load-path": false,         
+		        "plugin-path": false,       
+		        "sourcemap": false,         
+		        "omit-map-comment": false,  
+		        "precision": false          
+		    }
+		},
+		"less2css":
+		{
+			"main_file": "/Users/brianmcconnell/Sites/mrbmc/src/_less/screen.less",
+			"outputDir": "/Users/brianmcconnell/Sites/mrbmc/www/css",
+			"autoCompile": false,
+			"createCssSourceMaps": true,
+			"ignorePrefixedFiles": true,
+			"minify": true,
+			"minName": ".min",
+			"showErrorWithWindow": true,
+		},
+		"SublimeOnSaveBuild":{
+		    "filename_filter": "\\.(js)$",
+		    "build_on_save": 1
+		}
+    },
+    "build_systems":
+    [
+        {
+            "name": "MRBMC",
+			"shell_cmd": "/Users/brianmcconnell/Sites/mrbmc/build.sh buildjs",
+        }
+	],
+}

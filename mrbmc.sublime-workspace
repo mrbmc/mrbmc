@@ -1,0 +1,2013 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"the",
+				"the_cmd"
+			],
+			[
+				"inve",
+				"investigation"
+			],
+			[
+				"ini",
+				"initAnimations"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"getE",
+				"getElementsByClassName"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"getEle",
+				"getElementsByTagName"
+			],
+			[
+				"sed",
+				"sedhack"
+			],
+			[
+				"objet",
+				"object-position"
+			],
+			[
+				"text-",
+				"text-color-bold"
+			],
+			[
+				"object-",
+				"object-position"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"colu",
+				"column-gap"
+			],
+			[
+				"spacer",
+				"spacer-vertical"
+			],
+			[
+				"box-s",
+				"box-shadow"
+			],
+			[
+				"full",
+				"fullwidth90"
+			],
+			[
+				"flex",
+				"flex-basis"
+			],
+			[
+				"neu",
+				"neutral-10"
+			],
+			[
+				"ne",
+				"neutral-30"
+			],
+			[
+				"text",
+				"text-color-subdued"
+			],
+			[
+				"neutr",
+				"neutral-50"
+			],
+			[
+				"gra",
+				"gray-mid"
+			],
+			[
+				"background-",
+				"background-repeat"
+			],
+			[
+				"background",
+				"background-attachment"
+			],
+			[
+				"brand",
+				"brand-color"
+			],
+			[
+				"space",
+				"spacer-horizontal"
+			],
+			[
+				"navbar",
+				"navbar-background"
+			],
+			[
+				"link",
+				"link-color-hover"
+			],
+			[
+				"sa",
+				"shadow-offset"
+			],
+			[
+				"shadow",
+				"shadow-depth"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"secon",
+				"brand-secondary"
+			],
+			[
+				"sedh",
+				"sedhackday"
+			],
+			[
+				"coll",
+				"collection"
+			],
+			[
+				"base",
+				"base-font-size"
+			],
+			[
+				"hero",
+				"hero-heading-color"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"anim",
+				"animation-easing"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"spac",
+				"spacerHorizontal"
+			],
+			[
+				"stop",
+				"stopdate"
+			],
+			[
+				"star",
+				"startdatemonth"
+			],
+			[
+				"anal",
+				"analyze-range"
+			],
+			[
+				"start",
+				"startdatemonth"
+			],
+			[
+				"brand-",
+				"brand-color-80"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"sc",
+				"scroll"
+			],
+			[
+				"spacer-",
+				"spacer-vertical"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"bl",
+				"black"
+			],
+			[
+				"wekl",
+				"well-background"
+			],
+			[
+				"brand-c",
+				"brand-color"
+			],
+			[
+				"brand-co",
+				"brand-color"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"grid-ga",
+				"grid-column-gap"
+			],
+			[
+				"bra",
+				"brand-color"
+			],
+			[
+				"bran",
+				"brand-color"
+			],
+			[
+				"well",
+				"well-background"
+			],
+			[
+				"obj",
+				"object-fit"
+			],
+			[
+				"gri",
+				"grid"
+			],
+			[
+				"grid",
+				"grid-gap"
+			],
+			[
+				"grid-",
+				"grid-gap"
+			],
+			[
+				"arg",
+				"arg_datestart"
+			],
+			[
+				"sta",
+				"static"
+			],
+			[
+				"text-co",
+				"text-color-bold"
+			],
+			[
+				"text-color",
+				"text-color-bold"
+			],
+			[
+				"en",
+				"flex-end"
+			],
+			[
+				"gray",
+				"gray-light"
+			],
+			[
+				"wrpa",
+				"word-wrap"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"spa",
+				"spacerHorizontal"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"poi",
+				"position"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"sr",
+				"srcElement"
+			],
+			[
+				"ad",
+				"addEventListener"
+			],
+			[
+				"next",
+				"next_link"
+			],
+			[
+				"brandColor",
+				"brandColor60"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"her",
+				"heroUnitHeadingColor"
+			],
+			[
+				"brandCol",
+				"brandColor"
+			],
+			[
+				"brandCom",
+				"brandComplement"
+			],
+			[
+				"brandSec",
+				"brandSecondary"
+			],
+			[
+				"brands",
+				"brandSecondary"
+			],
+			[
+				"go",
+				"goaccess_opt"
+			],
+			[
+				"goac",
+				"goaccess_cmd"
+			],
+			[
+				"to",
+				"tomonth"
+			],
+			[
+				"flag",
+				"flag_verbose"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"flex-",
+				"flex-basis"
+			],
+			[
+				"bol",
+				"textBoldColor"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"brandAcce",
+				"brandAccent"
+			],
+			[
+				"brandComple",
+				"brandComplement"
+			],
+			[
+				"brandSecon",
+				"brandSecondary"
+			],
+			[
+				"backgr",
+				"background-repeat"
+			],
+			[
+				"ar",
+				"arguments"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"get",
+				"getContext"
+			],
+			[
+				"con",
+				"constructor"
+			],
+			[
+				"arr",
+				"arrayOfNumbers"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"BOID",
+				"BOID_COUNT"
+			],
+			[
+				"min",
+				"minDistance"
+			],
+			[
+				"se",
+				"separation"
+			],
+			[
+				"cel",
+				"cellID"
+			],
+			[
+				"frame",
+				"frameTime"
+			],
+			[
+				"pos",
+				"_positions"
+			],
+			[
+				"nu",
+				"numNeighbors"
+			],
+			[
+				"inser",
+				"insertBoids"
+			],
+			[
+				"dista",
+				"distanceSquared"
+			],
+			[
+				"pu",
+				"push"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"sl",
+				"slice"
+			],
+			[
+				"dis",
+				"distanceSquared"
+			],
+			[
+				"updateb",
+				"updateBuffer"
+			],
+			[
+				"posi",
+				"positions"
+			],
+			[
+				"f",
+				"forEach"
+			],
+			[
+				"qu",
+				"query"
+			],
+			[
+				"frie",
+				"friendsCount"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"sli",
+				"slice"
+			],
+			[
+				"av",
+				"avgSize"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/SASS Build/SASS.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"List",
+					""
+				],
+				[
+					"Packages/User/mrbmc.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/mrbmc.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"MRBMC",
+					""
+				],
+				[
+					"Packages/SASS Build/SASS - Compressed.sublime-build",
+					""
+				],
+				[
+					"Packages/SASS Build/SASS.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/SASS Build/SASS.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/ShellScript/ShellScript.sublime-build",
+					""
+				],
+				[
+					"Packages/User/mrbmc.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/ShellScript/ShellScript.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 329.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"javasc",
+				"Format: Javascript"
+			],
+			[
+				"pacakge",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"list pack",
+				"Package Control: List Packages"
+			],
+			[
+				"lista",
+				"Package Control: List Packages"
+			],
+			[
+				"live reload",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"live",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"livereload",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"liverel",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"livereloa",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			],
+			[
+				"instsa",
+				"Package Control: Advanced Install Packages"
+			],
+			[
+				"liverelo",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"reload",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"reloa",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"relo",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"remove ma",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"rel",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"spell",
+				"Google Spell Check"
+			],
+			[
+				"min",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"enable",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"json",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"list pac",
+				"Package Control: List Packages"
+			],
+			[
+				"guar",
+				"Guard: Start Guard"
+			],
+			[
+				"build",
+				"Build With: mrbmc"
+			],
+			[
+				"buil",
+				"Build: New Build System"
+			],
+			[
+				"termin",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"guard",
+				"Guard: Start Guard"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"em",
+				"Emmet: Rename Tag"
+			],
+			[
+				"emmet",
+				"Emmet: Rename Tag"
+			],
+			[
+				"PACKA",
+				"Package Control: List Packages"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"PACK",
+				"Package Control: Remove Package"
+			],
+			[
+				"packge",
+				"Package Control: List Packages"
+			],
+			[
+				"less",
+				"List LESS variables"
+			],
+			[
+				"upload",
+				"FTPSync: Upload current file"
+			],
+			[
+				"ftpsy",
+				"FTPSync: Browse"
+			],
+			[
+				"ftpsync",
+				"FTPSync: Setup FTPSync in this folder"
+			],
+			[
+				"ftpsyn",
+				"FTPSync: Upload current file"
+			],
+			[
+				"",
+				"FTPSync: Browse"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"pcakge",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet",
+				"Snippet: Bootstrap starter"
+			],
+			[
+				"snippet: bootstrap st",
+				"Snippet: Bootstrap starter"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 242.0,
+		"history":
+		[
+			"npx @11ty/eleventy --serve",
+			" npx @11ty/eleventy --serve",
+			"npx @11ty npx @11ty/eleventy --serve",
+			"npx @11ty",
+			"pwd",
+			"cd ~/",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/brianmcconnell/Sites/mrbmc",
+		"/Users/brianmcconnell/Sites/mrbmc/backup",
+		"/Users/brianmcconnell/Sites/mrbmc/src",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects"
+	],
+	"file_history":
+	[
+		"/Users/brianmcconnell/Library/CloudStorage/GoogleDrive-thebmc@gmail.com/My Drive/WORK/mrbmc/mrbmc.sublime-project",
+		"/Users/brianmcconnell/Sites/mrbmc/package.json",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/post-detail.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/index.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/posts/posts.json",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_post-list.html",
+		"/Users/brianmcconnell/Sites/mrbmc/build.sh",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/eurosport.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-enterprise.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/blog.md",
+		"/Users/brianmcconnell/Sites/mrbmc/node_modules/es-abstract/helpers/isNaN.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_about.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/screen.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_type.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-agents.txt",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/metrics.sh",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/logs/investigation.log",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-urls.txt",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/logs/investigation.txt",
+		"/Users/brianmcconnell/Sites/mrbmc/src/colophon.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_blog.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_footer.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_portfolio.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/about.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/portfolio.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/project-detail.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_masthead.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_animations.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-groupwatch.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_variables.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_mixins.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/mrbmc.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_home.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_masthead.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_footer.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/leadership.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_publishing.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/boids.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/gallery-inline.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/optumus.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_header.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_project-list.md",
+		"/Users/brianmcconnell/Sites/mrbmc/eleventy.config.js",
+		"/Users/brianmcconnell/Sites/mrbmc/www/css/screen.css",
+		"/Users/brianmcconnell/Sites/mrbmc/src/sitemap.njk",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_photos.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/filters.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/principles.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_resume.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/mini.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/pal-9100.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_data/portfolio-extras.json",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_data/portfolio.json",
+		"/Users/brianmcconnell/Sites/mrbmc/src/posts/a-little-feedback-often.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/posts/bike-tour-2023.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/espn.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/espnvision.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhlgameflow.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhltv.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_header.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/gaia.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/photos.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/photos.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_colophon.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/portfolio.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/www/blog/design-for-durability/index.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/posts/intentional-consumption.md",
+		"/Users/brianmcconnell/Sites/mrbmc/www/blog/intentional-consumption/index.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/posts/design-leadership.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/posts/londoner-guide-to-NYC-cycling.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/posts/design-for-durability.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/espnplus.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/cv.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/404.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/projects.json",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_project-list.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/boids.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/team-charter-workshop.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/design-prototyping-201.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/flint-and-silicon.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/steelgills.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/rhythmism.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/blogtalkradio.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth-long.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhl.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/securityscorecard.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio/index.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/blog/posts/posts.json",
+		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio/blarts/blarts.json",
+		"/Users/brianmcconnell/Sites/mrbmc/src/designs/disney-enterprise.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/.eleventyignore",
+		"/Users/brianmcconnell/Sites/mrbmc/backup/2015/portfolio.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/privacy.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio/projects/disney-growth.md",
+		"/Users/brianmcconnell/Sites/mrbmc/www/404.html",
+		"/Users/brianmcconnell/Sites/mrbmc/backup/2023/src/_less/_home.less",
+		"/Users/brianmcconnell/Library/CloudStorage/GoogleDrive-thebmc@gmail.com/My Drive/Derivatives/Her First Big Cock- First Cock Porn Video d9 - xHamster.webloc",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/print.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio/projects/disney-enterprise.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_images/profile/kageki-crane.svg",
+		"/Users/brianmcconnell/Sites/mrbmc/src/robots.txt",
+		"/Users/brianmcconnell/Sites/mrbmc/src/blog/posts/bike-tour-2023.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio/projects/disney-growth-long.md",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist.txt",
+		"/Users/brianmcconnell/.zprofile",
+		"/opt/homebrew/etc/httpd/extra/httpd-vhosts.conf",
+		"/Users/brianmcconnell/Sites/mrbmc/www/.htaccess",
+		"/Users/brianmcconnell/Sites/mrbmc/backup/2023/src/_less/_animations.less",
+		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/boids.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/boidsgl.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/BoidsWorker.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/Boid.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/boidsgl.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/life.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/quadtree.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/life.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/webgl.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/smoke.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/webgl.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/wind.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/boids.html",
+		"/Users/brianmcconnell/Library/Application Support/Sublime Text 3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/init-buffers.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_js,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/projects/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>,*.md",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/projects,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/blog,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_js,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/backup/2023/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_js,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scsss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/blog/posts,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_layouts,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/blog/posts,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/portfolio,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/blog,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/backup,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>,-*.less",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>,-*.less",
+			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/_src/less/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/less/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/blog/posts,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_js,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/blog,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/portfolio,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_js,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_js,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_js,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/blog/posts,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>,*.html",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/less,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/11ty,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/less,<project filters>,-*.css",
+			"/Users/brianmcconnell/Sites/mrbmc/11ty,<project filters>,-*.css",
+			"/Users/brianmcconnell/Sites/mrbmc/11ty/_includes,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/11ty,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/less,<project filters>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"start",
+			"deploy",
+			"\"",
+			"deploy",
+			"thumb",
+			"experimentation",
+			"for",
+			"arg_ipmask",
+			"log",
+			"about/leadership",
+			"saturate",
+			"saturat",
+			"init",
+			"elements",
+			"buildin",
+			"transition",
+			"mosaic",
+			"grid",
+			"for",
+			"blacklist",
+			"\\-v\\+1d",
+			"\\-v1d",
+			"'",
+			"verbose",
+			"inverse",
+			"blockquote",
+			"inverse",
+			"---",
+			"dark",
+			"@media",
+			"noise",
+			"gallery",
+			"inverse",
+			"margin",
+			"gallery",
+			"inverse",
+			"hero",
+			"col3",
+			"esc",
+			"\"esc\"",
+			"getelements",
+			" \\.contain",
+			"baymax",
+			"the products",
+			"h4",
+			"baymax",
+			"web-",
+			"images/portfolio/disney-enterprise/web",
+			"enterprise-optumus-",
+			" \\.",
+			"enterprise-optumus-",
+			"culture-workshop",
+			"portfolio/disney\\-groupwatch[\\)\\\"\\'\\]\\}]",
+			"portfolio/disney\\-groupwatch",
+			"disney\\-groupwatch",
+			"groupwatch[\\)\\\"\\']",
+			"portfolio/disney\\-growth[\\)\\\"\\']",
+			"/disney",
+			"portfolio/disney\\-growth[\\)\\\"\\']",
+			"portfolio/disney\\-growth",
+			"disney-growth",
+			"301\t\\-",
+			"\\t650",
+			"6500",
+			"571\t",
+			"sedhackday",
+			"sedhackmon",
+			"sed_cmd",
+			"arg_duration",
+			"duration",
+			"stopdate",
+			"arg_startdate",
+			"analyze\\-range",
+			"lag_verbose",
+			"\\]\\]",
+			"verbose",
+			"row-",
+			"figures",
+			" \\.row6",
+			"\\.col-",
+			"grid",
+			" \\.row\\-2",
+			"orange",
+			"landing",
+			"table",
+			"\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-",
+			"snap",
+			"eleventyImageTransformPlugin",
+			"image",
+			"collection",
+			"categories",
+			"markdownIt",
+			"set",
+			"collections",
+			"projects",
+			"collection",
+			"soc",
+			"grid",
+			"pullleft",
+			"item-detail",
+			"item-list",
+			"include item-list",
+			"transition",
+			"overflow",
+			"border\\-radius",
+			"link-email",
+			"format",
+			"30",
+			"snap",
+			"gallery",
+			"wrapElement",
+			"createElement",
+			"optumus",
+			"\\.section",
+			"section",
+			"main",
+			"include",
+			"Searching",
+			"fullwidth90",
+			"fullWidth",
+			"fullwidth",
+			"<details",
+			"details",
+			"card",
+			"@include card",
+			"hero",
+			"include kpi",
+			"kpi"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"'",
+			"col4",
+			"optumus-",
+			"301 http://www.brianmcconnell.me",
+			"\\t65",
+			"row",
+			".col",
+			"",
+			"src/image",
+			"\"/images",
+			"\"/_images",
+			"src/_images",
+			"small-type",
+			"image",
+			"brand-complement",
+			"brand-accent",
+			"transparentize($brand-secondary,0.8)",
+			"transparentize($brand-secondary,0.5)",
+			"transparentize($brand-secondary,0.2)",
+			"transparentize($brand-accent,0.2)",
+			"transparentize($brand-accent,0.8)",
+			"transparentize($brand-accent,0.5)",
+			"transparentize($brand-accent,0.8)",
+			"transparentize($brand-color,0.8)",
+			"transparentize($brand-color,0.5)",
+			"transparentize($brand-color,0.2)",
+			"transparentize($brand-complement,0.2)",
+			"transparentize($brand-complement,0.5)",
+			"transparentize($brand-complement,0.8)",
+			"$brand-color-00",
+			"$card-background",
+			"$card-text-color",
+			"$well-bold-color",
+			"$neutral-",
+			"--brand-color",
+			"tags\\:\n  \\- work\n",
+			"$type-scale",
+			"black-80",
+			"$navbar-font-weight",
+			"$navbar-font-family",
+			"$mono-font-family",
+			"$serif-font-family",
+			"$system-font-family",
+			"$display-font-family",
+			"$display-font-weight",
+			"$heading-font-weight",
+			"$heading-font-family",
+			"$sans-font-family",
+			"$serif-font-weight",
+			"$base-line-height",
+			"$base-font-size",
+			"$bold-font-weight",
+			"$base-font-family",
+			"$base-font-weight",
+			"$crane-size",
+			"Net Subs",
+			"arg_startdate",
+			"$animation-easing",
+			"$animation-speed",
+			"$shadow-offset",
+			"$shadow-depth",
+			"$shadow-color",
+			"$navbar-height",
+			"$input-height",
+			"$breakpoint-phone",
+			"$breakpoint-desktop",
+			"$breakpoint-portrait",
+			"$breakpoint-desktop",
+			"$breakpoint-widescreen",
+			"$grid-margin",
+			"$grid-padding",
+			"$grid-column",
+			"$grid-margin",
+			"$grid-width",
+			"$grid-columns",
+			"$spacer-vertical",
+			"$spacer-horizontal",
+			"$navbar-brand-color",
+			"$navbar-link-active-background",
+			"$navbar-link-active-color",
+			"hover-background",
+			"$navbar-link-hover-color",
+			"$navbar-link-hover-background",
+			"$navbar-link-hover",
+			"$navbar-link-color",
+			"$navbar-text",
+			"$navbar-border",
+			"$navbar-background-highlight",
+			"$navbar-background",
+			"$border-color",
+			"$hero-text-color",
+			"$hero-heading-color",
+			"$hero-background",
+			"$well-background",
+			"$body-background",
+			"$selection-color",
+			"$link-color-hover",
+			"$link-color",
+			"$text-color-subdued",
+			"$text-color",
+			"$text-color-bold",
+			"$text-color",
+			"$brand-accent",
+			"$brand-complement",
+			"$brand-secondary",
+			"$brand-secondary-\\1",
+			"$brand-complement-\\1",
+			"$brand-accent-\\1",
+			"$brand-color",
+			"$brand-color-\\1",
+			"960",
+			"1280",
+			"convert \\1.\\2 -quality 80 -format jpg -resize 1440 -crop 1440x1080+0+0 web-\\1.jpg",
+			"convert \\1.\\2 -quality 80 -format jpg -resize 1440 -crop 1440x1080+0+0 \\1.jpg",
+			"convert \\1 -quality 80 -format jpg -resize 1440 -crop 1440x1080+0+0 \\1.jpg",
+			"MRR",
+			"arg_duration",
+			"tv-reference-signup",
+			"tv-reference",
+			"round: 3",
+			"-a",
+			"-q",
+			" --silent --log-format=CLOUDFRONT",
+			"metrics/www",
+			"boid.",
+			"",
+			"boid.",
+			""
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 127.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 181.0
+	},
+	"output.find_results":
+	{
+		"height": 413.0
+	},
+	"output.guard":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "MRBMC",
+	"project": "mrbmc.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"Post-deta",
+				"src/_layouts/post-detail.html"
+			],
+			[
+				"eurosport",
+				"src/projects/eurosport.md"
+			],
+			[
+				"b",
+				"build.sh"
+			],
+			[
+				"posts.",
+				"src/posts/posts.json"
+			],
+			[
+				"_post",
+				"src/_includes/_post-list.html"
+			],
+			[
+				"index",
+				"src/index.md"
+			],
+			[
+				"post-list",
+				"src/_includes/_post-list.html"
+			],
+			[
+				"blog",
+				"src/blog.md"
+			],
+			[
+				"post-det",
+				"src/_layouts/post-detail.html"
+			],
+			[
+				"enter",
+				"src/projects/disney-enterprise.md"
+			],
+			[
+				"ind",
+				"src/index.md"
+			],
+			[
+				"in",
+				"node_modules/es-abstract/helpers/isNaN.js"
+			],
+			[
+				"_about",
+				"src/_scss/_about.scss"
+			],
+			[
+				"scree",
+				"src/_scss/screen.scss"
+			],
+			[
+				"black",
+				"metrics/blacklist-urls.txt"
+			],
+			[
+				"bla",
+				"metrics/blacklist-agents.txt"
+			],
+			[
+				"metri",
+				"metrics/metrics.sh"
+			],
+			[
+				"_ty",
+				"src/_scss/_type.scss"
+			],
+			[
+				"scre",
+				"src/_scss/screen.scss"
+			],
+			[
+				"colo",
+				"src/colophon.md"
+			],
+			[
+				"_foot",
+				"src/_includes/_footer.html"
+			],
+			[
+				"portfolio.js",
+				"src/_js/portfolio.js"
+			],
+			[
+				"post-",
+				"src/_layouts/post-detail.html"
+			],
+			[
+				"about",
+				"src/about.md"
+			],
+			[
+				"_anm",
+				"src/_scss/_animations.scss"
+			],
+			[
+				"post-de",
+				"src/_layouts/post-detail.html"
+			],
+			[
+				"masthead",
+				"src/_includes/_masthead.html"
+			],
+			[
+				"group",
+				"src/projects/disney-groupwatch.md"
+			],
+			[
+				"disney-gr",
+				"src/projects/disney-growth.md"
+			],
+			[
+				"project-",
+				"src/_layouts/project-detail.html"
+			],
+			[
+				"mrbm",
+				"src/_js/mrbmc.js"
+			],
+			[
+				"_var",
+				"src/_scss/_variables.scss"
+			],
+			[
+				"_mix",
+				"src/_scss/_mixins.scss"
+			],
+			[
+				"_home",
+				"src/_scss/_home.scss"
+			],
+			[
+				"_portfo",
+				"src/_scss/_portfolio.scss"
+			],
+			[
+				"scr",
+				"src/_scss/screen.scss"
+			],
+			[
+				"metr",
+				"metrics/metrics.sh"
+			],
+			[
+				"blac",
+				"metrics/blacklist-agents.txt"
+			],
+			[
+				"_mast",
+				"src/_scss/_masthead.scss"
+			],
+			[
+				"_mixi",
+				"src/_scss/_mixins.scss"
+			],
+			[
+				"_ho",
+				"src/_scss/_home.scss"
+			],
+			[
+				"_fo",
+				"src/_scss/_footer.scss"
+			],
+			[
+				"_footer",
+				"src/_includes/_footer.html"
+			],
+			[
+				"mixi",
+				"src/_scss/_mixins.scss"
+			],
+			[
+				"mix",
+				"src/_scss/_mixins.scss"
+			],
+			[
+				"_pu",
+				"src/_scss/_publishing.scss"
+			],
+			[
+				"projec-",
+				"src/_layouts/project-detail.html"
+			],
+			[
+				"Por",
+				"src/portfolio.md"
+			],
+			[
+				"groupwatch",
+				"src/projects/disney-groupwatch.md"
+			],
+			[
+				"galler",
+				"src/_js/gallery-inline.js"
+			],
+			[
+				"_portfol",
+				"src/_scss/_portfolio.scss"
+			],
+			[
+				"mrbmc",
+				"src/_js/mrbmc.js"
+			],
+			[
+				"-enter",
+				"src/projects/disney-enterprise.md"
+			],
+			[
+				"_header",
+				"src/_includes/_header.html"
+			],
+			[
+				"project-list",
+				"src/_includes/_project-list.md"
+			],
+			[
+				"portf",
+				"src/portfolio.md"
+			],
+			[
+				"-growt",
+				"src/projects/disney-growth.md"
+			],
+			[
+				"eleve",
+				"eleventy.config.js"
+			],
+			[
+				"_port",
+				"src/_scss/_portfolio.scss"
+			],
+			[
+				"mast",
+				"src/_scss/_masthead.scss"
+			],
+			[
+				"screen",
+				"src/_scss/screen.scss"
+			],
+			[
+				"-gro",
+				"src/projects/disney-growth.md"
+			],
+			[
+				"-growth",
+				"src/projects/disney-growth.md"
+			],
+			[
+				"ele",
+				"eleventy.config.js"
+			],
+			[
+				"sitema",
+				"src/sitemap.njk"
+			],
+			[
+				"post-detail",
+				"src/_layouts/post-detail.html"
+			],
+			[
+				"project-det",
+				"src/_layouts/project-detail.html"
+			],
+			[
+				"portfolio",
+				"src/portfolio.md"
+			],
+			[
+				"footer",
+				"src/_includes/_footer.html"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"bui",
+				"build.sh"
+			],
+			[
+				"galler-in",
+				"src/_js/gallery-inline.js"
+			],
+			[
+				"_publis",
+				"src/_scss/_publishing.scss"
+			],
+			[
+				"_publi",
+				"src/_scss/_publishing.scss"
+			],
+			[
+				"_ph",
+				"src/_scss/_photos.scss"
+			],
+			[
+				"gallery-in",
+				"src/_js/gallery-inline.js"
+			],
+			[
+				"elev",
+				"eleventy.config.js"
+			],
+			[
+				"var",
+				"src/_scss/_variables.scss"
+			],
+			[
+				"Princ",
+				"src/_includes/principles.md"
+			],
+			[
+				"princ",
+				"src/_includes/principles.md"
+			],
+			[
+				"_t",
+				"src/_scss/_type.scss"
+			],
+			[
+				"_res",
+				"src/_scss/_resume.scss"
+			],
+			[
+				"mini",
+				"src/_scss/mini.scss"
+			],
+			[
+				"photos.j",
+				"src/_js/photos.js"
+			],
+			[
+				"photos.js",
+				"src/_js/photos.js"
+			],
+			[
+				"pho",
+				"src/photos.html"
+			],
+			[
+				"princi",
+				"src/_includes/principles.md"
+			],
+			[
+				"_head",
+				"src/_scss/_header.scss"
+			],
+			[
+				"_masthead",
+				"src/_scss/_masthead.scss"
+			],
+			[
+				"_hea",
+				"src/_scss/_header.scss"
+			],
+			[
+				"_coo",
+				"src/_scss/_colophon.scss"
+			],
+			[
+				"_an",
+				"src/_scss/_animations.scss"
+			],
+			[
+				"_typ",
+				"src/_scss/_type.scss"
+			],
+			[
+				"_varia",
+				"src/_scss/_variables.scss"
+			],
+			[
+				"lay",
+				"src/_layouts/layout.html"
+			],
+			[
+				"_MIX",
+				"src/_scss/_mixins.scss"
+			],
+			[
+				"_masthea",
+				"src/_scss/_masthead.scss"
+			],
+			[
+				"_blog",
+				"src/_scss/_blog.scss"
+			],
+			[
+				"layout",
+				"src/_layouts/layout.html"
+			],
+			[
+				"Pages",
+				"src/_scss/pages.scss"
+			],
+			[
+				"leader",
+				"src/_includes/leadership.md"
+			],
+			[
+				"www/blog/des",
+				"www/blog/design-for-durability/index.html"
+			],
+			[
+				"photos",
+				"src/photos.html"
+			],
+			[
+				"intent",
+				"src/posts/intentional-consumption.md"
+			],
+			[
+				"www/blog/inten",
+				"www/blog/intentional-consumption/index.html"
+			],
+			[
+				"el",
+				"eleventy.config.js"
+			],
+			[
+				"design",
+				"src/posts/design-leadership.md"
+			],
+			[
+				"nyc-c",
+				"src/posts/londoner-guide-to-NYC-cycling.md"
+			],
+			[
+				"blog.",
+				"src/blog.md"
+			],
+			[
+				"cv.m",
+				"src/cv.md"
+			],
+			[
+				"photo",
+				"src/photos.html"
+			],
+			[
+				"",
+				"src/projects/disney-growth.md"
+			],
+			[
+				"cv.",
+				"src/cv.md"
+			],
+			[
+				"404",
+				"src/404.md"
+			],
+			[
+				"intention",
+				"src/posts/intentional-consumption.md"
+			],
+			[
+				"disne",
+				"src/projects/disney-growth.md"
+			],
+			[
+				"screen.css",
+				"www/css/screen.css"
+			],
+			[
+				"Project-det",
+				"src/_layouts/project-detail.html"
+			],
+			[
+				"-grow",
+				"src/projects/disney-growth.md"
+			],
+			[
+				"_portfolo",
+				"src/_scss/_portfolio.scss"
+			],
+			[
+				"metrc",
+				"metrics/metrics.sh"
+			],
+			[
+				"inde",
+				"src/index.md"
+			],
+			[
+				"Metri",
+				"metrics/metrics.sh"
+			],
+			[
+				"_foote",
+				"src/_scss/_footer.scss"
+			],
+			[
+				"_por",
+				"src/_scss/_portfolio.scss"
+			],
+			[
+				"_type",
+				"src/_scss/_type.scss"
+			],
+			[
+				"_portf",
+				"src/_scss/_portfolio.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 501.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Google Drive/Sites/bettykang/bettykang.com.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 277.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 648.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
