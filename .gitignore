@@ -1,12 +1,13 @@
 
 /node_modules
-/www
-backup/2023/src/_images/uploads/bmc-flint_silicon-20221022.mp4
-src/_images/uploads/bmc-flint_silicon-20221022.mp4
+/backup/2023/src/_images/uploads/bmc-flint_silicon-20221022.mp4
 /backup/2023/node_modules
-metrics/logs/*.gz
-metrics/log_*
 /metrics/downloads
 /metrics/www
 /metrics/logs
 .DS_Store
+/src/_images/uploads/bmc-flint_silicon-20221022.mp4
+/src/.obsidian
+/src/projects/.obsidian
+/src/posts/.obsidian
+/www
