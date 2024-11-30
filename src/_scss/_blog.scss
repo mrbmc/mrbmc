@@ -65,5 +65,12 @@ body.post {
 		margin-top: $spacer-vertical;
 		padding-top: $spacer-vertical;
 	}
+
+	transition: all ($animation-speed * 4) $animation-easing;
+
+	background: hsl($brand-hue,100%,92%);
+	&.scrolled {
+		background: var(--white);
+	}
 }
 

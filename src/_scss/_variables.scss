@@ -27,26 +27,28 @@ $_orange:               #FF4F00;//international orange
 $brand-color:            $_indigo;
 $brand-accent:           $_pink;
 $brand-complement:       $_orange;
+$brand-hue:             hue($brand-color);
 
-$neutral-100:          hslToHex(hue($brand-color),00%,100%);
-$neutral-95:           hslToHex(hue($brand-color),01%,96%);
-$neutral-90:           hslToHex(hue($brand-color),01%,91%);
-$neutral-80:           hslToHex(hue($brand-color),02%,82%);
-$neutral-70:           hslToHex(hue($brand-color),02%,71%);
-$neutral-60:           hslToHex(hue($brand-color),03%,62%);
-$neutral-50:           hslToHex(hue($brand-color),05%,50%);
-$neutral-40:           hslToHex(hue($brand-color),08%,42%);
-$neutral-30:           hslToHex(hue($brand-color),13%,31%);
-$neutral-20:           hslToHex(hue($brand-color),21%,20%);
-$neutral-10:           hslToHex(hue($brand-color),34%,12%);
-$neutral-05:           hslToHex(hue($brand-color),55%,04%);
-$neutral-0:            hslToHex(hue($brand-color),89%,02%);
+$neutral-100:          hslToHex($brand-hue,00%,100%);
+$neutral-95:           hslToHex($brand-hue,01%,96%);
+$neutral-90:           hslToHex($brand-hue,01%,91%);
+$neutral-80:           hslToHex($brand-hue,02%,82%);
+$neutral-70:           hslToHex($brand-hue,02%,71%);
+$neutral-60:           hslToHex($brand-hue,03%,62%);
+$neutral-50:           hslToHex($brand-hue,05%,50%);
+$neutral-40:           hslToHex($brand-hue,08%,42%);
+$neutral-30:           hslToHex($brand-hue,13%,31%);
+$neutral-20:           hslToHex($brand-hue,21%,20%);
+$neutral-10:           hslToHex($brand-hue,34%,12%);
+$neutral-05:           hslToHex($brand-hue,55%,04%);
+$neutral-0:            hslToHex($brand-hue,89%,02%);
 
 :root {
     --black:            #{$neutral-10};
     --gray-dark:        #{$neutral-30};
     --gray-mid:         #{$neutral-50};
     --gray-light:       #{$neutral-80};
+    --off-white:        #{$neutral-95};
     --white:            #{$neutral-100};
     --white-semi:       #{$neutral-100}54;
     --brand-color:      #{$brand-color};
@@ -59,6 +61,7 @@ $neutral-0:            hslToHex(hue($brand-color),89%,02%);
         --gray-dark:    #{$neutral-80};
         --gray-mid:     #{$neutral-50};
         --gray-light:   #{$neutral-30};
+        --off-white:    #{$neutral-20};
         --white:        #{$neutral-10};
         --white-semi:   #{$neutral-10}54;
     };
@@ -129,7 +132,7 @@ $input-height:               	1.25rem;
 $navbar-height:              	2rem;
 $border-radius: 				$spacer-horizontal * 0.25;
 
-$shadow-color: 				hsla(hue($brand-color), 100%, 12%, 0.2);
+$shadow-color: 				hsla($brand-hue, 100%, 12%, 0.2);
 $shadow-depth: 				$spacer-vertical;
 $shadow-offset: 				math.div($shadow-depth, 4);
 $shadow: 0 $shadow-offset $shadow-depth $shadow-color;
