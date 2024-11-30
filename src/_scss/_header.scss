@@ -1,5 +1,10 @@
+@use 'sass:math';
+@use '_colors.scss';
+@use '_grid.scss';
+@use '_animation.scss';
+
 #header {
-    padding: ($navbar-height * .19) $spacer-horizontal;
+    padding: ($navbar-height * .19) grid.$gutter;
 
     position: relative;
     z-index: 100;
@@ -8,17 +13,15 @@
     min-height: 44px;
     width: 100%;
 
-    background: $navbar-background;
-    border: $navbar-border;
-    border-width: 0 0 1px 0;
-    // -webkit-backdrop-filter: blur(.25rem);
-    // backdrop-filter: blur(.25rem);
+    background: colors.$navbar-background;
+    border: 0px solid colors.$navbar-border;
+    border-width: 0 0 0px 0;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    transition: top $animation-speed $animation-easing;
+    transition: top animation.$speed animation.$easing;
 
     @media (orientation: portrait) {
         margin-left: 0;
@@ -31,18 +34,18 @@
     a {
         -webkit-backface-visibility: hidden;
         -webkit-tap-highlight-color: transparent;
-        color: $navbar-link-color;
+        color: colors.$navbar-link-color;
 
-        @include transition(all $animation-speed $animation-easing);
+        transition: all animation.$speed animation.$easing;
 
-        padding: 0 ($spacer-horizontal * 1);
-        margin: 0 0 0 $spacer-horizontal;
+        padding: 0 (grid.$gutter * .5);
+        margin: 0 0 0 grid.$gutter;
         border-radius: $border-radius;
 
         &:hover {
-            @include transition(all ($animation-speed * .5) $animation-easing);
-            color: $navbar-link-hover-color;
-            background: $navbar-link-hover-background;
+            transition: all (animation.$speed * .5) animation.$easing;
+            color: colors.$navbar-link-hover-color;
+            background: colors.$navbar-link-hover-background;
         }
 
         &.nav-cv,&.nav-resume,&.nav-photos {
@@ -84,8 +87,8 @@ body.about #header #menu a[href="/about/"],
 body.portfolio #header #menu a[href="/portfolio/"],
 body.blog #header #menu a[href="/blog/"],
 body.resume #header #menu a[href="/about/"] {
-    color: $navbar-link-active-color;
-    background: $navbar-link-active-background;
+    color: colors.$navbar-link-active-color;
+    background: colors.$navbar-link-active-background;
 }
 
 
@@ -97,11 +100,11 @@ body.resume #header #menu a[href="/about/"] {
 
     position: sticky;
     z-index: 90;
-    top: ($spacer-vertical * .25);
+    top: (grid.$gutter * .25);
     display: flex;
     justify-content: center;
     width: min-content;
-    margin: $spacer-vertical auto;
+    margin: grid.$gutter auto;
     box-shadow: 0 $shadow-offset $shadow-depth $shadow-color;
     border-radius: 2rem;
     -webkit-backdrop-filter: blur(.2rem);
@@ -109,7 +112,7 @@ body.resume #header #menu a[href="/about/"] {
 
 
     &>li {
-        background: $navbar-background;
+        background: colors.$navbar-background;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -126,7 +129,7 @@ body.resume #header #menu a[href="/about/"] {
         //SUBNAVS
         ol {
             display: none;
-            background: $body-background;
+            background: colors.$navbar-background;
             position: absolute;
             padding: .25rem 0rem;
             box-shadow: 0 $shadow-offset $shadow-depth $shadow-color;
@@ -154,10 +157,10 @@ body.resume #header #menu a[href="/about/"] {
             display: flex;
             white-space: nowrap;
             text-decoration: none;
-            padding: 0 ($spacer-horizontal * 1);
+            padding: 0 grid.$gutter;
             &:hover {
-                background: $navbar-link-hover-background;
-                color: $navbar-link-hover-color;
+                background: colors.$navbar-link-hover-background;
+                color: colors.$navbar-link-hover-color;
             }
         }
     }
@@ -169,7 +172,7 @@ body.resume #header #menu a[href="/about/"] {
         width: 1rem;
         height: 1em;
         position: absolute;
-        right: $spacer-horizontal;
+        right: grid.$gutter;
         top: ($navbar-height * .38);
     }
 }

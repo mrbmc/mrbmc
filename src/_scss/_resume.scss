@@ -1,6 +1,10 @@
+@use 'sass:math';
+@use '_colors.scss';
+@use '_grid.scss';
+
 body.resume {
     main {
-        margin-top: $spacer-vertical;
+        margin-top: grid.$gutter;
     }
     p,li {
         font-family: $serif-font-family;
@@ -45,7 +49,7 @@ body.resume {
     #education,.education {
         padding: 1em 1em 0.5em 1em;
         h2,h3, p, strong {
-            color: $neutral-100;
+            color: colors.$neutral-100;
         }
         background: #5b0e9c url(/images/nyu-torch.svg) no-repeat center right;
     }

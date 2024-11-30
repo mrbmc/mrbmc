@@ -1,7 +1,7 @@
 #masthead {
 
     @include fullWidth(100vw);
-    padding: $spacer-vertical $spacer-horizontal;
+    padding: grid.$gutter grid.$gutter;
     height: calc(100vh - $navbar-height);
     display: flex;
     flex-direction: column;
@@ -45,10 +45,10 @@
         }
         figcaption,caption {
             position: absolute;
-            right: $spacer-horizontal;
-            bottom: $spacer-vertical;
+            right: grid.$gutter;
+            bottom: grid.$gutter;
             text-shadow: 0 1px 4px rgba(0,0,0,0.8);
-            color: $well-bold-color;
+            color: colors.$well-bold-color;
         }
     }
 
@@ -64,7 +64,7 @@
         @media (orientation: landscape) {
             position: absolute;
             left: calc(50% - math.div($size, 2));
-            bottom: $spacer-vertical;
+            bottom: grid.$gutter;
         }
         @media (orientation: portrait) {
         }

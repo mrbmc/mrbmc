@@ -11,7 +11,7 @@ eleventyExcludeFromCollections: true
     <link>{{ baseURL }}</link>
 
 
-    {% for page in collections.posts %}
+    {% for page in collections.post %}
         <item>
             <title>{{ page.data.title }}</title>
             {% if summary %}<description>{{ summary }}</description>{% endif %}

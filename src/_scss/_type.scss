@@ -91,16 +91,10 @@ p, li, dt, dd {
 }
 strong,b {
     font-weight: $bold-font-weight;
-    color: $text-color-bold;
 }
 em {
     font-style: italic;
 }
-.underline {
-    padding: 0 1em;
-    border-bottom: 1px solid $text-color;
-}
-
 @mixin largeType {
     font-size: (1rem * $type-scale);
 }
@@ -117,7 +111,6 @@ em {
 .caption,.legal {
     @include small-type();
     font-style: italic;
-    color: $text-color-subdued;
 }
 
 blockquote,.blockquote {

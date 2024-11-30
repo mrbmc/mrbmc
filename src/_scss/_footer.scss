@@ -6,8 +6,8 @@ body {
         justify-content: space-between;
         // color: $gray-800;
         overflow: hidden;
-        padding: ($spacer-vertical * 2) $spacer-horizontal $spacer-vertical $spacer-horizontal;
-        gap: $spacer-horizontal;
+        padding: grid.$gutter-xl grid.$gutter;
+        gap: grid.$gutter;
 
         @include inverse();
 
@@ -27,7 +27,7 @@ body {
                 display: flex;
                 justify-content: center;
                 a {
-                    margin: 0 ($spacer-horizontal * 0.5);
+                    margin: 0 (grid.$gutter * 0.5);
                 }
             }
             p {
@@ -76,8 +76,8 @@ body {
 }
 #noiseImage {
     position: absolute;
-    z-index: -10;
     top: 0;
-    // width: 1px;
-    // height: 1px;
+    z-index: -10;
+    width: 0px;
+    height: 1px;
 }

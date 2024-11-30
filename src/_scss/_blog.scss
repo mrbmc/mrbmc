@@ -1,6 +1,11 @@
+@use 'sass:math';
+@use '_colors.scss';
+@use '_grid.scss';
+@use '_animation.scss';
+
 .blog {
 
-	@media (max-width: $breakpoint-phone) {
+	@media (max-width: grid.$breakpoint-phone) {
 	    margin-top: 0;
 	}
 
@@ -8,8 +13,8 @@
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
-		margin: 0 0 $spacer-vertical 0;
-		column-gap: $spacer-horizontal;
+		margin: 0 0 grid.$gutter-xl 0;
+		column-gap: grid.$gutter;
 
         &:hover {
 			cursor: pointer;
@@ -33,18 +38,18 @@
 		p.date {
 			margin-bottom: 0;
 			@include small-type();
-			color: $text-color-subdued;
+			color: colors.$text-color-subdued;
 		}
 		summary {
 			// flex-basis: 75%;
-			width: calc(62% - $spacer-horizontal);
+			width: calc(62% - grid.$gutter);
 		}
 		img {
 			// display: flex;
 			// flex-basis: 25%;
 			width: 38%;
 			border-radius: $border-radius;
-	        transition: all $animation-speed $animation-easing;
+	        transition: all animation.$speed animation.$easing;
 		}
 
 	}	
@@ -57,20 +62,20 @@ body.post {
 
 	#masthead {
 		@media (orientation: landscape) {
-		    padding: $spacer-vertical 38vw $spacer-vertical $spacer-horizontal;
+		    padding: grid.$gutter-xl 38vw grid.$gutter-xl grid.$gutter;
 		}
 	}
 
 	.related-posts {
-		margin-top: $spacer-vertical;
-		padding-top: $spacer-vertical;
+		padding: grid.$gutter-xl 0;
+		margin: grid.$gutter-xl 0;
 	}
 
-	transition: all ($animation-speed * 4) $animation-easing;
+	transition: all (animation.$speed * 4) animation.$easing;
 
-	background: hsl($brand-hue,100%,92%);
+	background: hsl(colors.$brand-hue,100%,92%);
 	&.scrolled {
-		background: var(--white);
+		background: colors.$body-background;
 	}
 }
 

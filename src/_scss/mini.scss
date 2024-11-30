@@ -1,8 +1,10 @@
 @use 'sass:math';
+@use '_colors.scss';
+@use '_grid.scss';
+@use '_animation.scss';
 
 @import "./_variables.scss";
 @import "./_mixins.scss"; 
-@import "./_animations.scss";
 @import "./_type.scss";
 
 
@@ -35,12 +37,12 @@ body {
     main, #main {
         box-sizing: border-box;
         margin: 0 auto;
-        padding: $spacer-vertical 0;
-        width: $grid-width;
+        padding: grid.$gutter 0;
+        width: grid.$width;
 
         @media (orientation: portrait) {
             width: 100%;
-            padding: 0 $spacer-horizontal;
+            padding: 0 grid.$gutter;
             overflow-x: hidden;
         }
     }
@@ -59,20 +61,20 @@ html {
 }
 body {
     margin: 0;
-    background: $body-background;
-    color: $text-color;
+    background: colors.$body-background;
+    color: colors.$text-color;
 }
 h1,h2,h3,h4,h5 {
-    color: $text-color-bold;
+    color: colors.$text-color-bold;
 }
 a {
-    color: $link-color;
+    color: colors.$link-color;
     &:hover {
-        color: $link-color-hover;
+        color: colors.$link-color-hover;
     }
 }
 ::selection {
-    background: $selection-color;
+    background: colors.$selection-color;
 }
 
 
@@ -80,18 +82,18 @@ a {
 // MOLECULE STYLES
 
 @mixin card {
-    margin: $spacer-vertical auto;
-    padding: $spacer-horizontal;
-    background: $body-background;
-    border: 1px solid $border-color;
-    border-radius: math.div($spacer-horizontal, 2);
+    margin: grid.$gutter auto;
+    padding: grid.$gutter;
+    background: colors.$body-background;
+    border: 1px solid colors.$border-color;
+    border-radius: math.div(grid.$gutter, 2);
     box-shadow: inset 1px 1px 0px rgba(255,255,255,.08),inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadow-offset $shadow-depth $shadow-color;
 }
 @mixin well {
-    margin: $spacer-vertical auto;
-    padding: $spacer-horizontal;
-    background: $well-background;
-    border-radius: math.div($spacer-horizontal, 2);
+    margin: grid.$gutter auto;
+    padding: grid.$gutter;
+    background: colors.$well-background;
+    border-radius: math.div(grid.$gutter, 2);
     // box-shadow: inset 0 $shadow-offset $shadow-depth $shadow-color;
 }
 .well {
@@ -102,25 +104,25 @@ a {
 }
 
 blockquote,.blockquote {
-    padding: 0 0 0 $spacer-horizontal;
-    margin: $spacer-vertical 0 $spacer-vertical ($spacer-horizontal * -1);
-    border-left: solid 4px $text-color-subdued;
-    color: $text-color-subdued;
+    padding: 0 0 0 grid.$gutter;
+    margin: grid.$gutter 0 grid.$gutter (grid.$gutter * -1);
+    border-left: solid 4px colors.$text-color-subdued;
+    color: colors.$text-color-subdued;
 }
 
 .button, button {
-    background: $brand-color;
-    color: $card-text-color;
+    background: colors.$brand-color;
+    color: colors.$card-text-color;
     // border: 1px solid $brand-color;
 
     padding: .5em 1em;
     border-radius: $border-radius;
     text-decoration: none;
     // box-shadow: 0 8px 24px hsla(hue($brand-color), 50%, 10%, 20%);;
-    box-shadow: inset 0px 1px 1px 0px $neutral-100, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
+    box-shadow: inset 0px 1px 1px 0px colors.$neutral-100, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
 
     &:hover {
-        color: $well-bold-color;
+        color: colors.$well-bold-color;
     }
 }
 
@@ -129,7 +131,7 @@ blockquote,.blockquote {
     overflow: hidden;
 
     >h1,>h2,>h3,>p,>span {
-        color: $well-text-color;
+        color: colors.$well-text-color;
     }
 
     &:before {
@@ -144,12 +146,12 @@ blockquote,.blockquote {
         background-repeat: no-repeat;
         // background-attachment: fixed;
         background-size: 100% 100%;
-        background-color: $well-background;
+        background-color: colors.$well-background;
         background-image:
-        radial-gradient(ellipse 81% 119% at 10% -19%, transparentize($brand-accent,0.8) 0%, transparent 100%),
-        radial-gradient(ellipse 100% 100% at 100% 81%, transparentize($brand-complement,0.8) 0px, transparent 100%),
-        conic-gradient(from 0.025turn at 0% 119%, transparent 0%, transparentize($brand-color,0.8) 12.5%, transparent 25%, transparent 99%),
-        conic-gradient(from 0.66turn at 119% 8%, transparent 0%, transparentize($brand-color,0.8) 5%, transparent 10%, transparent 99%),
+        radial-gradient(ellipse 81% 119% at 10% -19%, transparentize(colors.$brand-accent,0.8) 0%, transparent 100%),
+        radial-gradient(ellipse 100% 100% at 100% 81%, transparentize(colors.$brand-complement,0.8) 0px, transparent 100%),
+        conic-gradient(from 0.025turn at 0% 119%, transparent 0%, transparentize(colors.$brand-color,0.8) 12.5%, transparent 25%, transparent 99%),
+        conic-gradient(from 0.66turn at 119% 8%, transparent 0%, transparentize(colors.$brand-color,0.8) 5%, transparent 10%, transparent 99%),
         ;
     }
     &:after {

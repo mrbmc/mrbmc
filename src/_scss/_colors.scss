@@ -1,0 +1,106 @@
+@use 'sass:math';
+
+@function decToHex($dec) {
+    $hex: "0123456789ABCDEF";
+    $first: math.div(($dec - $dec % 16),16)+1;
+    $second: ($dec % 16)+1;
+    @return str-slice($hex, $first, $first) + str-slice($hex, $second, $second)
+}
+@function hslToHex($h,$s,$l) {
+  $r: decToHex(red(hsl($h,$s,$l)));
+  $g: decToHex(green(hsl($h,$s,$l)));
+  $b: decToHex(blue(hsl($h,$s,$l)));
+  @return ##{$r+$g+$b};
+}
+
+// COLOR
+// -------------------------
+$_indigo:               #1e22a9;//hsl(238,70%,39%);
+$_rose:                 hsl(340,70%,70%);//
+$_pink:                 #ff6699;//hsl(340, 100%,70%);//
+$_sunshine:             #e6de00;//hsl(58, 100%, 45%);//
+$_cyan:              	hsl(180,100%,50%);
+$_teal:                 #00b1cc;//hsl(188,100%,40%);//
+$_orange:               #FF4F00;//international orange
+
+// SEMANTIC MAPPING
+$brand-color:           $_indigo;
+$brand-accent:          $_pink;
+$brand-complement:      $_orange;
+$brand-hue:             hue($brand-color);
+$success:               $_teal;
+$error:                 $_orange;
+
+$neutral-100:           hslToHex($brand-hue,00%,100%);
+$neutral-95:            hslToHex($brand-hue,01%,96%);
+$neutral-90:            hslToHex($brand-hue,01%,92%);
+$neutral-80:            hslToHex($brand-hue,02%,86%);
+$neutral-70:            hslToHex($brand-hue,02%,71%);
+$neutral-60:            hslToHex($brand-hue,03%,62%);
+$neutral-50:            hslToHex($brand-hue,05%,50%);
+$neutral-40:            hslToHex($brand-hue,08%,42%);
+$neutral-30:            hslToHex($brand-hue,13%,31%);
+$neutral-20:            hslToHex($brand-hue,21%,20%);
+$neutral-10:            hslToHex($brand-hue,34%,12%);
+$neutral-05:            hslToHex($brand-hue,55%,04%);
+$neutral-0:             hslToHex($brand-hue,89%,02%);
+
+:root {
+    --black:            #{$neutral-10};
+    --gray-dark:        #{$neutral-30};
+    --gray-mid:         #{$neutral-50};
+    --gray-light:       #{$neutral-80};
+    --white:            #{$neutral-100};
+    --white-semi:       #{$neutral-100}54;
+    --brand-color:      #{$brand-color};
+    --brand-complement: #{$brand-complement};
+    --brand-accent:     #{$brand-accent};
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black:        #{$neutral-100};
+        --gray-dark:    #{$neutral-80};
+        --gray-mid:     #{$neutral-50};
+        --gray-light:   #{$neutral-30};
+        --white:        #{$neutral-10};
+        --white-semi:   #{$neutral-10}54;
+    };
+}
+
+
+// TYPE
+// -------------------------
+$text-color:             var(--gray-dark);
+$text-color-bold:        var(--black);
+$text-color-subdued:     var(--gray-mid);
+$link-color:             var(--black);
+$link-color-hover:       var(--gray-dark);
+$selection-color:        $brand-accent;
+$on-brand-color: 		 $neutral-100;
+
+// Scaffolding
+// -------------------------
+$body-background:       var(--white);
+$border-color: 			var(--gray-light);
+$card-background:       var(--white);
+$card-text-color:       var(--gray-dark);
+$card-bold-color:       var(--black);
+$well-background:    	var(--gray-light);
+$well-text-color:     	$text-color;
+$well-bold-color:  		$text-color-bold;
+$hero-background:       #{$neutral-0};
+$hero-text-color:       #{$neutral-90};
+$hero-bold-color:       #{$neutral-100};
+
+// Navbar
+// -------------------------
+$navbar-background:                 $body-background;
+$navbar-border:                     $border-color;
+$navbar-text:                       $text-color;
+$navbar-brand-color:                $brand-color;
+$navbar-link-color:                 $link-color;
+$navbar-link-hover-color:           $link-color-hover;
+$navbar-link-hover-background:      $well-background;
+$navbar-link-active-color:          $hero-text-color;
+$navbar-link-active-background:     $hero-background;
+

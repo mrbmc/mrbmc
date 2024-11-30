@@ -1,4 +1,6 @@
 @use 'sass:math';
+@use '_colors.scss';
+@use '_grid.scss';
 
 @mixin clearfix {
   *zoom: 1;
@@ -96,7 +98,7 @@
   }
 }
 
-@mixin bg-fill($bg:$body-background,$text:$text-color) {
+@mixin bg-fill($bg:colors.$body-background,$text:colors.$text-color) {
   background: $bg;
   p,li,dd {color: $text;}
   h1,h2 { color:saturate(darken($bg,33%),10%);}
@@ -147,12 +149,12 @@
 @mixin fullWidth($limit:100vw) {
     width: $limit;
 
-    @media (min-width: $grid-width) {
-        margin-left: calc(($limit - $grid-width) * -0.5);
+    @media (min-width: grid.$width) {
+        margin-left: calc(($limit - grid.$width) * -0.5);
     }
 
     @media (orientation: portrait) {
-        margin-left: ($spacer-horizontal * -1);
+        margin-left: (grid.$gutter * -1);
     }
 }
 @mixin fullHeight($limit:calc(100vh - $navbar-height)) {
@@ -163,22 +165,22 @@
 @mixin inverse {
     position: relative;
     overflow: hidden;
-    background-color: $hero-background;
+    background-color: colors.$hero-background;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     // background-attachment: fixed;
     background-image:
-    radial-gradient(ellipse 81% 119% at 10% -19%, transparentize($brand-accent,0.8) 0%, transparent 100%),
-    radial-gradient(ellipse 100% 100% at 100% 81%, transparentize($brand-complement,0.8) 0px, transparent 100%),
-    conic-gradient(from 0.025turn at 0% 119%, transparent 0%, transparentize($brand-color,0.8) 12.5%, transparent 25%, transparent 99%),
-    conic-gradient(from 0.66turn at 119% 8%, transparent 0%, transparentize($brand-color,0.8) 5%, transparent 10%, transparent 99%),
+    radial-gradient(ellipse 81% 119% at 10% -19%, transparentize(colors.$brand-accent,0.8) 0%, transparent 100%),
+    radial-gradient(ellipse 100% 100% at 100% 81%, transparentize(colors.$brand-complement,0.8) 0px, transparent 100%),
+    conic-gradient(from 0.025turn at 0% 119%, transparent 0%, transparentize(colors.$brand-color,0.8) 12.5%, transparent 25%, transparent 99%),
+    conic-gradient(from 0.66turn at 119% 8%, transparent 0%, transparentize(colors.$brand-color,0.8) 5%, transparent 10%, transparent 99%),
     ;
 
-    color: $hero-text-color;
+    color: colors.$hero-text-color;
     h1,h2,h3,h4,a {
-      color: $hero-bold-color;
+      color: colors.$hero-bold-color;
       &:hover {
-        color: $hero-text-color;
+        color: colors.$hero-text-color;
       }
     }
 

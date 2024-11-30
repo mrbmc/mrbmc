@@ -1,3 +1,6 @@
+@use '_colors.scss';
+@use '_grid.scss';
+@use '_animation.scss';
 
 /* ==================================================
 these are mixins that are used to set up the blog, 
@@ -9,7 +12,7 @@ portfolio, and gallery pages.
         p {
             &>img,&>svg,&>video {
                 &.canzoom {
-                    @include transition(all $animation-speed $animation-easing);
+                    transition: all animation.$speed animation.$easing;
                     &:hover {
                         cursor: zoom-in,
                     }
@@ -30,18 +33,18 @@ portfolio, and gallery pages.
         img.pullleft {
             @media (orientation: landscape) {
                 // width: 62%;
-                // margin-left: (0 - $grid-margin);
+                // margin-left: (0 - grid.$margin);
                 width: 38%;
-                margin-right: $spacer-horizontal;
+                margin-right: grid.$gutter;
                 float: left;
             }
         }
         img.pullright {
             @media (orientation: landscape) {
                 // width: 62%;
-                // margin-right: (0 - $grid-margin);
+                // margin-right: (0 - grid.$margin);
                 width: 38%;
-                margin-left: $spacer-horizontal;
+                margin-left: grid.$gutter;
                 float: right;
             }
         }
@@ -58,7 +61,7 @@ portfolio, and gallery pages.
 
 nav.pagination {
     clear: both;
-    padding: $spacer-vertical 0;
+    padding: grid.$gutter 0;
 
 	display: flex;
 	justify-content: space-between;
@@ -69,7 +72,7 @@ nav.pagination {
 		text-transform: inherit;
 		display: block;
 	}
-	@media (max-width: $breakpoint-portrait-1) {
+	@media (max-width: grid.$breakpoint-portrait-1) {
 		flex-direction: column-reverse;
 	}
 }
@@ -77,14 +80,14 @@ nav.pagination {
 p.gallery,div.gallery-wrap {
     @include fullWidth(100vw);
     display: block;
-    margin-bottom: $spacer-vertical;
-    background: $hero-background;
+    margin-bottom: grid.$gutter;
+    background: colors.$hero-background;
     box-shadow: inset $shadow;
     overflow: auto;//this prevents collapsing margins
 
     .image-detail {
         width: 98vw;
-        height: calc(84vh - ($spacer-vertical * 1));
+        height: calc(84vh - grid.$gutter);
         object-fit: contain;
         padding: 0;
         margin: 0 auto;
@@ -109,25 +112,25 @@ p.gallery,div.gallery-wrap {
             -webkit-appearance: none;
         }
         &::-webkit-scrollbar:horizontal {
-            height: ($spacer-vertical * 0.25);
+            height: (grid.$gutter * 0.25);
         }
         &::-webkit-scrollbar-thumb {
-            border-radius: $spacer-vertical;
-            border: 2px solid $well-background; /* should match background, can't be transparent */
-            background-color: transparentize($brand-color,0.8);
+            border-radius: grid.$gutter;
+            border: 2px solid colors.$well-background; /* should match background, can't be transparent */
+            background-color: transparentize(colors.$brand-color,0.8);
         }
         &::-webkit-scrollbar-track { 
-            background-color: $well-background; 
+            background-color: colors.$well-background; 
         } 
 
         li {
             list-style: none;
-            margin: 0 ($spacer-horizontal * 0.5);
-			color: $text-color-subdued;
+            margin: 0 (grid.$gutter * 0.5);
+			color: colors.$text-color-subdued;
 			@include small-type();
             img {
                 display: block;
-                height: calc(16vh - ($spacer-vertical * 0.5));
+                height: calc(16vh - (grid.$gutter * 0.5));
                 width: auto;
                 object-position: top center;
                 object-fit: cover;
@@ -163,12 +166,12 @@ p.gallery,div.gallery-wrap {
         &:before {
             transform: rotate(90deg);
         }
-        left: $spacer-horizontal;
+        left: grid.$gutter;
     }
     a.next {
         &:before {
             transform: rotate(-90deg);
         }
-        right: $spacer-horizontal;
+        right: grid.$gutter;
     }
 }

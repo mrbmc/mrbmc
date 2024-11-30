@@ -1,3 +1,8 @@
+@use 'sass:math';
+@use '_colors.scss';
+@use '_grid.scss';
+@use '_animation.scss';
+
 body.photos {
     $thumbSize: 6vh;
     #header {
@@ -12,7 +17,7 @@ body.photos {
     #masthead {
         height: calc(100vh - $navbar-height - $thumbSize);
         h1 {
-            color: $text-color-bold;
+            color: colors.$text-color-bold;
         }
     }
     section.gallery {
@@ -35,7 +40,7 @@ body.photos {
     nav#thumbnails {
         position: fixed;
         z-index: 5;
-        background: $well-background;
+        background: colors.$well-background;
         white-space: nowrap;
         overflow-x: scroll;
         overflow-y: hidden;
@@ -55,24 +60,23 @@ body.photos {
             padding: .25vh 0.125vh;
             box-sizing: border-box;
             height: $thumbSize;
-            @include opacity(68);
-            @include transition(all $animation-speed $animation-easing);
+            opacity: 68;
+            transition: all animation.$speed animation.$easing;
             img {
                 height: 100%;
                 width: auto;
                 box-sizing: border-box;
                 border: solid 2px transparent;
                 object-fit: contain;
-                // .border-radius(4px);
             }
 
             &.active,&:hover,&:focus {
-                @include opacity(100);
-                @include scale(1.2);
+                opacity: 100;
+                transform: scale(1.2);
             }
             &.active {
                 img {
-                    border-color: $brand-complement;
+                    border-color: colors.$brand-complement;
                 }
             }
 
@@ -84,7 +88,7 @@ body.photos {
 
 
 //tablets & phones
-@media (max-width: $breakpoint-portrait-1) {
+@media (max-width: grid.$breakpoint-portrait-1) {
     .gallery {
         .detail {
             height: 100vw;

@@ -1,15 +1,19 @@
+@use 'sass:math';
+@use '_colors.scss';
+@use '_grid.scss';
+
 body.about {
 
     main,#main {
         & > section {
-            border-top: solid 1px $border-color;
-            padding-top: $spacer-vertical * 2;
-            margin-top: $spacer-vertical * 2;
+            border-top: solid 1px colors.$border-color;
+            padding-top: grid.$gutter-xl;
+            margin-top: grid.$gutter-xl;
         }
     }
 
     h1 + p {
-        margin: $spacer-vertical 0 ($spacer-vertical * 2);
+        margin: grid.$gutter 0 grid.$gutter-xl;
     }
 
     img[alt="Disney"] {
@@ -47,7 +51,7 @@ body.about {
     .hero {
         li .card {
             min-height: 100%;
-            flex-basis: calc(50% - ($spacer-horizontal * 1));
+            flex-basis: calc(50% - grid.$gutter);
         }
     }
 
@@ -58,7 +62,7 @@ body.about {
     }
 
     hr {
-        margin: ($spacer-vertical * 3) auto;
+        margin: grid.$gutter-xl auto;
     }
 }
 
@@ -68,14 +72,14 @@ body.about {
 ul.timeline {
     width: auto;
     @media (orientation: landscape) {
-        margin: $spacer-vertical ($spacer-horizontal * 2);
+        margin: grid.$gutter-xl grid.$gutter;
     }
 
     li {
         margin: 0;
         position: relative;
-        padding: 0 0 $spacer-vertical $spacer-horizontal;
-        border-left: 2px solid $text-color-subdued;
+        padding: 0 0 grid.$gutter-xl grid.$gutter;
+        border-left: 2px solid colors.$text-color-subdued;
         list-style: none;
         &:last-of-type {
             padding-bottom: 0;
@@ -87,8 +91,8 @@ ul.timeline {
             width: $bullet-size;
             height: $bullet-size;
             @include border-radius(1em);
-            margin: 0 $spacer-horizontal 0 calc(($spacer-horizontal * -1) - ($bullet-size * .5) - 1px);
-            background: $text-color-subdued;
+            margin: 0 grid.$gutter 0 calc((grid.$gutter * -1) - ($bullet-size * .5) - 1px);
+            background: colors.$text-color-subdued;
         }
 
     }

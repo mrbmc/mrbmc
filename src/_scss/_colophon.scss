@@ -1,3 +1,5 @@
+@use 'sass:math';
+@use '_colors.scss';
 
 body.colophon {
 	.chip {
@@ -38,28 +40,28 @@ body.colophon {
 			background: var(--brand-accent);
 		}
 		&.brand80 {
-			background: transparentize($brand-color,0.2);
+			background: transparentize(colors.$brand-color,0.2);
 			color: transparent;
 		}
 		&.complement80 {
-			background: transparentize($brand-complement,0.2);
+			background: transparentize(colors.$brand-complement,0.2);
 			color: transparent;
 		}
 		&.accent80 {
-			background: transparentize($brand-accent,0.2);
+			background: transparentize(colors.$brand-accent,0.2);
 			color: transparent;
 		}
 		&.brand20 {
-			background: transparentize($brand-color,0.8);
+			background: transparentize(colors.$brand-color,0.8);
 			color: var(--gray-light);
 			color: transparent;
 		}
 		&.complement20 {
-			background: transparentize($brand-complement,0.8);
+			background: transparentize(colors.$brand-complement,0.8);
 			color: transparent;
 		}
 		&.accent20 {
-			background: transparentize($brand-accent,0.8);
+			background: transparentize(colors.$brand-accent,0.8);
 			color: transparent;
 		}
 	}

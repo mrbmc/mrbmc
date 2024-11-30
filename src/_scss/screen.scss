@@ -1,8 +1,10 @@
 @use 'sass:math';
+@use '_colors.scss';
+@use '_grid.scss';
+@use '_animation.scss';
 
 @import "./_variables.scss";
 @import "./_mixins.scss"; 
-@import "./_animations.scss";
 @import "./_type.scss";
 
 // ======================================================================
@@ -12,20 +14,20 @@ html {
 }
 body {
     margin: 0;
-    background: $body-background;
-    color: $text-color;
+    background: colors.$body-background;
+    color: colors.$text-color;
 }
 h1,h2,h3,h4,h5 {
-    color: $text-color-bold;
+    color: colors.$text-color-bold;
 }
 a {
-    color: $link-color;
+    color: colors.$link-color;
     &:hover {
-        color: $link-color-hover;
+        color: colors.$link-color-hover;
     }
 }
 ::selection {
-    background: $selection-color;
+    background: colors.$selection-color;
 }
 
 
@@ -72,6 +74,12 @@ video {
         margin: -10vw 0 0 -10vw;
     }
 }
+strong,b {
+    color: colors.$text-color-bold;
+}
+.caption,.legal {
+    color: colors.$text-color-subdued;
+}
 ul.inline,ol.inline {
     &>li {
         display: block;
@@ -80,29 +88,29 @@ ul.inline,ol.inline {
 }
 hr {
     background: none;
-    margin: ($spacer-vertical * 1) auto;
+    margin: grid.$gutter-xl auto;
     height: 0px;
     width: 38w;
     max-width: 80%;
     border: none;
-    border-top: 1px solid $border-color;
+    border-top: 1px solid colors.$border-color;
 }
 table {
     width: 100%;
     max-width: 100%;
     border-spacing: 0em;
     margin-bottom: ($base-line-height * 1em);
-    background: $body-background;
+    background: colors.$body-background;
     overflow-x: scroll;
     display: block;
     th,td {
         padding: .5em 1em;
     }
     th {
-        border: 0 solid $border-color;
+        border: 0 solid colors.$border-color;
         border-width: 0 0 1px 0;
         text-align: left;
-        color: $text-color-bold;
+        color: colors.$text-color-bold;
     }
     td {
         vertical-align: top;
@@ -112,10 +120,10 @@ table {
     }
 }
 .positive {
-    color: $_teal;
+    color: colors.$success;
 }
 .negative {
-    color: $_orange;
+    color: colors.$error;
 }
 
 
@@ -127,29 +135,29 @@ table {
 .card {
     box-sizing: border-box;
     width: 100%;
-    padding: $spacer-horizontal;
-    border: 1px solid $border-color;
+    padding: grid.$gutter;
+    border: 1px solid colors.$border-color;
     border-radius: $border-radius;
     box-shadow: inset 1px 1px 0px rgba(255,255,255,.08), inset -1px 1px 0px rgba(255,255,255,.05), 0 $shadow-offset $shadow-depth $shadow-color;
 
-    background: $card-background;
-    color: $card-text-color;
+    background: colors.$card-background;
+    color: colors.$card-text-color;
     h1,h2,h3,h4,strong,b {
-        color: $card-bold-color;
+        color: colors.$card-bold-color;
     }
 }
 .hero {
     @include fullWidth(100vw);
     @include inverse();
     box-sizing: border-box;
-    padding: $spacer-vertical $grid-margin;
+    padding: grid.$gutter grid.$margin;
 }
 
 blockquote,.blockquote {
-    padding: 0 $spacer-horizontal;
-    margin: $spacer-vertical 0 $spacer-vertical ($spacer-horizontal * -1);
-    border-left: solid 4px $text-color-subdued;
-    color: $text-color-subdued;
+    padding: 0 grid.$gutter;
+    margin: grid.$gutter 0 grid.$gutter (grid.$gutter * -1);
+    border-left: solid 4px colors.$text-color-subdued;
+    color: colors.$text-color-subdued;
 
     @media (orientation: portrait) {
         margin-left: 0;
@@ -157,17 +165,16 @@ blockquote,.blockquote {
 }
 
 .button, button {
-    background: $brand-color;
-    color: $on-brand-color;
+    background: colors.$brand-color;
+    color: colors.$on-brand-color;
 
     padding: .5em 1em;
     border-radius: $border-radius;
     text-decoration: none;
-    // box-shadow: 0 8px 24px hsla(hue($brand-color), 50%, 10%, 20%);;
-    box-shadow: inset 0px 1px 1px 0px $neutral-100, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
+    box-shadow: inset 0px 1px 1px 0px colors.$neutral-100, 0 math.div($shadow-offset, 2) math.div($shadow-depth,2) $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
 
     &:hover {
-        color: $well-bold-color;
+        color: colors.$well-bold-color;
     }
 }
 
@@ -197,7 +204,7 @@ ol.sidenav {
     top: calc(50% - ($base-line-height * 2.5em));
 
     list-style-type: none;
-    background: $body-background;
+    background: colors.$body-background;
     padding: .5em 0;
     display: flex;
     justify-content: center;
@@ -220,7 +227,7 @@ ol.sidenav {
     ol {
         display: none;
         position: absolute;
-        background: $body-background;
+        background: colors.$body-background;
         top: -0.5em;
         left: 100%;
         border-radius: $border-radius;
@@ -261,7 +268,7 @@ details {
     }
     &[open] {
         summary {
-            margin-bottom: $spacer-vertical;
+            margin-bottom: grid.$gutter;
         }
         & > summary:before {
             transform: rotate(90deg);
@@ -276,11 +283,11 @@ details {
         width: 100%;
     }
     em,i,dd+dt {
-        color: $text-color-subdued;
+        color: colors.$text-color-subdued;
         @include small-type();
     }
     b,strong,dd {
-        color: $text-color-bold;
+        color: colors.$text-color-bold;
     }
 }
 
@@ -321,13 +328,13 @@ body {
         box-sizing: border-box;
         margin: 0 auto;
         width: 100%;
-        max-width: $grid-width;
+        max-width: grid.$width;
         @media (orientation: portrait) {
-            padding: 0 $spacer-horizontal;
+            padding: 0 grid.$gutter;
             max-width: 75vh;
         }
         >h1:first-child,>section:first-child {
-            padding-top: $spacer-vertical;
+            padding-top: grid.$gutter;
         }
     }
 }
@@ -335,9 +342,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1em,2fr));
     grid-auto-flow: column;
-    grid-gap: ($spacer-horizontal * 2);
-    margin-top: $spacer-vertical;
-    margin-bottom: $spacer-vertical;
+    grid-gap: (grid.$gutter * 2);
+    margin-top: grid.$gutter;
+    margin-bottom: grid.$gutter;
 
     &>* {
         list-style: none;
@@ -358,14 +365,14 @@ body {
 }
 .mosaic {
     display: grid;
-    gap: $spacer-horizontal;
+    gap: grid.$gutter;
     grid-template-columns: repeat(12, 1fr);
-    background: $well-background;
+    background: colors.$well-background;
     grid-auto-flow: row;
     list-style: none;
-    margin-top: $spacer-vertical;
-    margin-bottom: $spacer-vertical;
-    padding: $spacer-vertical $spacer-horizontal;
+    margin-top: grid.$gutter;
+    margin-bottom: grid.$gutter;
+    padding: grid.$gutter grid.$gutter;
     box-sizing: border-box;
 
     li {
@@ -398,7 +405,7 @@ body {
     }
 }
 main > section {
-    margin-bottom: $spacer-vertical * 2;
+    margin-bottom: grid.$gutter * 2;
 }
 
 
