@@ -1,6 +1,8 @@
 #!/bin/zsh
 SRC="$(dirname "$0")/src";
 OUT="$(dirname "$0")/www";
+S3BUCKET="www.brianmcconnell.me"
+CLOUDFRONT="E1TNSK7JF24IAY";
 
 NOCOLOR='\033[0m';
 Black='\033[1;30m';
@@ -198,8 +200,9 @@ if [[ "$1" == "deploy" ]]; then
 	echo "* * * * * * * * * * * * * * * * * * * * * * *";
 	echo "DEPLOY TO AWS";
 	echo "* * * * * * * * * * * * * * * * * * * * * * *";
-	aws s3 sync $OUT s3://www.brianmcconnell.me --delete
-	aws cloudfront  create-invalidation --distribution-id E1TNSK7JF24IAY --paths \
+	aws s3 sync $OUT s3://$S3BUCKET --delete
+
+	aws cloudfront  create-invalidation --distribution-id $CLOUDFRONT --paths \
 	"/images/*" "/css/*" "/js/*" \
 	"/portfolio/*" "/blog/*" "/resume/*" \
 	"/about/*" "/boids/*" "/colophon/*" \
@@ -237,6 +240,5 @@ fi;
 
 echo "We could not execute the '$1' command.";
 echo "Available options are 'build', 'js', 'assets', 'thumbs', 'backup', or 'deploy'";
-exit;
 
 exit;
