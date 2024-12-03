@@ -116,9 +116,7 @@ function analyze () {
 	fi
 
 
-	tempstartmonth=$startdatemonth;
-
-	for i in {$tempstartmonth..$stopdatemonth}
+	for i in {$startdatemonth..$stopdatemonth}
 	do
 
 		if (( $#flag_raw )); then
@@ -177,13 +175,26 @@ function analyze-range () {
 
 
 function investigate () {
-	the_cmd="cat ";
-	the_cmd+=$BASE'/logs/log_raw_2024-11';
+
+	echo "========================================";
+	echo "INVESTIGATING AN IP";
+	[[ -z "$flag_verbose" ]] || { 
+		echo "----------------------------------------";
+	}
+
+	duration='7d';
+	the_cmd="sed -n '/'$(date -v-$duration +%Y-%m-%d)'/,/$(date -v+1d +%Y-%m-%d)/ p' $BASE/logs/log_raw"
+
+	# the_cmd="cat ";
+	# the_cmd+=$BASE'/logs/log_raw_2024-12';
 	the_cmd+=" | grep "$arg_ipmask[-1];
 	# the_cmd+=" | grep -vi images";
 	the_cmd+=" > "$BASE"/logs/investigation.log;";
-	# the_cmd+="edit investigation.log";
-	# echo $the_cmd;
+
+	[[ -z "$flag_verbose" ]] || { 
+		echo $the_cmd;
+	}
+
 	eval ${the_cmd};
 }
 
