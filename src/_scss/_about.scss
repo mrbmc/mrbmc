@@ -1,11 +1,46 @@
 @use 'sass:math';
 @use '_colors.scss';
 @use '_grid.scss';
+@use '_variables.scss';
+@use '_mixins.scss';
 
 body.about {
 
     main,#main {
-        & > section {
+        #bio {
+            box-sizing: border-box;
+            @include mixins.fullWidth();
+            padding: grid.$gutter-xl grid.$gutter;
+            min-height: 38vw;
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p.portrait {
+                border-radius: variables.$border-radius-xl;
+                overflow: hidden;
+                    img {
+                        display: block;
+                    }
+            }
+
+            @media (orientation: landscape) {
+                h1,p.large {
+                    width: 60vw;
+                    margin: 0;
+                }
+                p.portrait {
+                    position: absolute;
+                    right: grid.$gutter;
+                    top: 50%;
+                    width: calc(36vw - grid.$gutter);
+                    margin: -18vw 0 0 0;
+                }                
+            }
+        }
+        #leadership, #principles, #process {
             border-top: solid 1px colors.$border-color;
             padding-top: grid.$gutter-xl;
             margin-top: grid.$gutter-xl;

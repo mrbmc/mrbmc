@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: false
 
 <section id="masthead" class="bio">
 
-# Products that connect human _needs_ with business **outcomes**.{.blur-in}
+# UX design, product discovery, and cross-functional leadership.{.blur-in}
 
 {% comment %}
 * [linkedin](https://linkedin.com/in/mrbmc)
