@@ -11,9 +11,6 @@ const markdownItOptions = {
 }
 const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
 
-
-
-
 module.exports = function(eleventyConfig) {
 
 
@@ -71,6 +68,10 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.setLibrary('md', markdownLib);
+
+  eleventyConfig.addPairedShortcode('section', (children,id) => {
+    return `<section id="${id}">${children}</section>`;
+  });
 
   // RELATED POSTS
   const getSimilarCategories = function(categoriesA, categoriesB) {
