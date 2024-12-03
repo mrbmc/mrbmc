@@ -1,14 +1,21 @@
 ## The Design Process Is Storytelling
 
-Good product design is good storytelling. I believe in using story structure as a rubric for evaluating design work. There is a classic story writing tool called the **Story Spine** that can be very useful to designers:
+Good product design is good storytelling. Storytelling is about _transformation_. Users are transformed by your product.
+
+Users **_hated_** the design I shared in my first usability study. We tested the prototype for a fitness-tracking app. The cohort unanimously complained that the scoreboard was confusing; and that the app was irrelevant. After recovering from our shock, we dug into the feedback and found a simple fix to the progress calculation. The second test passed with flying colors and we saw healthier people because our app inspired them to move more.
+
+<!--![AHA MyStart!](/images/portfolio/aha-start-ui.jpg){style="max-width:600px;display:block;margin: 1rem auto;"}
+Web design in 2008{.caption}-->
+
+I believe in using story structure as a rubric for evaluating design work. There is a classic story writing tool called the **Story Spine** that can be very useful to designers:
 
 Once upon a time there was <span class="underline">&nbsp;</span>,  
-Every day <span class="underline">&nbsp;</span>,  
-One day <span class="underline">&nbsp;</span>,  
-Because of that <span class="underline">&nbsp;</span>,  
-Because of that <span class="underline">&nbsp;</span>,  
-Until finally <span class="underline">&nbsp;</span>,  
-And ever since that day <span class="underline">&nbsp;</span>.{.blockquote}
+Every day __________,  
+One day __________,  
+Because of that __________,  
+Because of that __________,  
+Until finally __________,  
+And ever since that day __________.{.blockquote}
 
 An effective design depends on character development, conflict, and resolution; just like a compelling story. We need to understand our users (characters), frame their problems with evidence (development), ideate broadly on solutions (resolve conflict), and prove those solutions through testing (resolution).
 

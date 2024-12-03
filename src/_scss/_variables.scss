@@ -7,8 +7,9 @@
 $input-height:               	1.25rem;
 $navbar-height:              	2rem;
 $border-radius: 				grid.$gutter * 0.25;
+$border-radius-xl: 				grid.$gutter;
 
-$shadow-color: 				hsla(colors.$brand-hue, 100%, 12%, 0.2);
+$shadow-color: 				hsla(colors.$brand-hue, 100%, 12%, 0.05);
 $shadow-depth: 				grid.$gutter;
 $shadow-offset: 			math.div($shadow-depth, 4);
 $shadow:                    0 $shadow-offset $shadow-depth $shadow-color;

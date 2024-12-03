@@ -1,5 +1,7 @@
 @use '_colors.scss';
 @use '_grid.scss';
+@use '_type.scss';
+@use '_variables.scss';
 
 body.home {
     #header {
@@ -17,21 +19,10 @@ body.home {
         @media (orientation: portrait) {
             padding-top: (grid.$gutter + $navbar-height);
         }
-
-        figure {
-            display: none;
-        }
-
-        h1,h2,h3,p {
+        h1,p {
             color: colors.$text-color-bold;
-            max-width: 26em;
         }
         h1 {
-            // font-size: (1rem * pow($type-scale,7));
-            margin: 0;
-            @media (orientation: portrait) {
-                padding-right: 0;
-            }
             & > em {
                     color: colors.$brand-color;
                     background: colors.$text-color;
@@ -54,28 +45,23 @@ body.home {
                     margin-right: -3px;
             }
         }
-    
-        p {
-            @include largeType;
-            z-index: 1;
-            &:last-of-type {
-                z-index: 2;
-                margin-bottom: 0;
-            }
-        }
+
         .scrollhint {
             @media (orientation: landscape) {
                 display: block;
             }
         }
 
-        $crane-size: 25vw;
+        $crane-size: 10vw;
         $crane-color: colors.$text-color;
         @media (orientation: landscape) {
             h1,h2,p.bio {
-                box-sizing: border-box;
-                padding-right: calc($crane-size + grid.$gutter);
+                max-width: grid.$width;
+                margin: 0 auto;
             }
+        }
+        @media (orientation: portrait) {
+            padding-right: 0;
         }
 
         &:before {

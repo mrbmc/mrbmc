@@ -1,6 +1,7 @@
 @use 'sass:math';
 @use '_colors.scss';
 @use '_grid.scss';
+@use '_variables.scss';
 @use '_animation.scss';
 
 body.portfolio.list {
@@ -49,7 +50,7 @@ body.portfolio.list {
         figure,p.figure {
             margin: 0;
             padding: 0;
-            border-radius: ($border-radius * 2);
+            border-radius: variables.$border-radius-xl;
             overflow: hidden;
             background: colors.$well-background;
 
@@ -69,8 +70,8 @@ body.portfolio.list {
 
         &:hover {
             z-index: 3;
-            transform: scale(1.05);
             figure,p.figure {
+                transform: scale(1.01);
                 filter: saturate(1.2) contrast(1.1) brightness(1.1);
                 box-shadow: $shadow;
             }

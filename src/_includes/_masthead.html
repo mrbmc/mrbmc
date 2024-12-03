@@ -7,7 +7,7 @@
         <span class="readingtime">{{ content | timeToRead }} to read</span>
     </p>
 
-    <h1 class="blur-in" {% if parallaxHeading == true %}data-parallax="50"{% endif %}>{{ title }}</h1>
+    <h1 class="" {% if parallaxHeading == true %}data-parallax="50"{% endif %}>{{ title }}</h1>
 
     {% if summary %}
     <p {% if parallaxHeading == true %}data-parallax="50"{% endif %} class="summary large">{{ summary }}</p>
@@ -22,7 +22,7 @@
     <figure {% if parallaxHeading == true %}data-fade="100" data-parallax="81"{% endif %}>
         {% if masthead-video %}
         <video src="{{masthead-video}}" autoplay loop muted preload="auto" playsinline type="video/mp4"></video>{% else 
-        %}<img class="fade-in" src="{{ masthead-image }}" alt="{{ masthead-title }}" onload="this.classList.toggle('in',true);">
+        %}<img class="blur-in fade-in" src="{{ masthead-image }}" alt="{{ masthead-title }}" onload="this.classList.toggle('in',true);">
         {% endif %}
     </figure>
 {% endif %}

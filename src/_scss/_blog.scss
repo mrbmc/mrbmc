@@ -3,10 +3,14 @@
 @use '_grid.scss';
 @use '_animation.scss';
 
-.blog {
+#blog {
 
 	@media (max-width: grid.$breakpoint-phone) {
 	    margin-top: 0;
+	}
+
+	section#blog {
+		padding-top: grid.$gutter;
 	}
 
 	div.post {
@@ -22,7 +26,7 @@
             figure {
             }
             img {
-	            transform: scale(1.05);
+	            transform: scale(1.01);
                 box-shadow: $shadow;
                 filter: saturate(120%);
             }           
@@ -55,8 +59,36 @@
 	}	
 }
 
+body.blog.grid {
+	section#blog {
+		box-sizing: border-box;
+		width: 100vw;
+		padding: grid.$gutter;
+		margin-left: calc(grid.$margin * -1);
+		display: grid;
+		grid-column-gap: grid.$gutter;
+		grid-row-gap: grid.$gutter-xl;
+		grid-template-columns: repeat(3,1fr);
+		align-items: start;
+		.post {
+			flex-direction: column-reverse;
+			margin: 0;
+			img {
+				width: 100%;
+				aspect-ratio: 16/9;
+				object-fit: cover;
+			}
+			summary {
+				width: 100%;
+				h3 {
+					margin-top: 0.5rem;
+				}
+			}
+		}
+	}
+}
 
-body.post {
+body.blog.post {
 
 	@include item-detail();
 

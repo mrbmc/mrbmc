@@ -1,14 +1,29 @@
-// @font-face {
-//     font-family:"Tomato";
-//     src:url('/css/fonts/Tomato Grotesk VF.woff2') format('woff');
-// }
+@use '_grid.scss';
+@use '_variables.scss';
 
+
+
+// @font-face {
+//     font-family:"Neue Montreal";
+//     font-weight: 400;
+//     src:url('/css/fonts/PPNeueMontreal-Book.eot') format('embedded-opentype');
+//     src:url('/css/fonts/PPNeueMontreal-Book.ttf') format('truetype');
+//     src:url('/css/fonts/PPNeueMontreal-Book.woff2') format('woff');
+// }
+// @font-face {
+//     font-family:"Monument Grotesk";
+//     font-weight: 400;
+//     // src:url('/css/fonts/Monument Grotesk Regular.eot') format('embedded-opentype');
+//     // src:url('/css/fonts/Monument Grotesk Regular.ttf') format('truetype');
+//     src:url('/css/fonts/ABCMonumentGrotesk-Regular-Trial.woff2') format('woff');
+// }
 // @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 // Typography
 // -------------------------
-$system-font-family:      system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","HelveticaNeue", Helvetica, sans-serif;
-$sans-font-family:        "Helvetica Neue","Helvetica",$system-font-family;
+$system-font-family:      system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","HelveticaNeue", Helvetica, Arial, sans-serif;
+$sans-font-family:        "Monument Grotesk","Helvetica Neue",$system-font-family;
 $serif-font-family:       "Cormorant Garamond","Palatino","Georgia","Roboto Serif",Times,serif;
 $mono-font-family:        "Courier New", monospace;
 
@@ -27,6 +42,8 @@ $display-font-weight:     $base-font-weight;
 
 $navbar-font-family:      $base-font-family;
 $navbar-font-weight:      $base-font-weight;
+
+$scale: 1.19;//each size is this much larger than the predecessor
 
 
 @mixin typeset($face, $weight, $size: 1em, $line: 1.2, $kerning: 0) {
@@ -67,24 +84,23 @@ h1,h2,h3,h4,h5 {
         font-weight: $display-font-weight;
     }
 }
-$type-scale: 1.19;//each size is this much larger than the predecessor
 h1 {
-    @include typeset($display-font-family, $display-font-weight, (1rem * pow($type-scale,8)), 1.0, -0.05em);
+    @include typeset($display-font-family, $display-font-weight, (1rem * pow($scale,8)), 1.0, -0.025em);
 }
 h2 {
-    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($type-scale,6)), 1.2, -0.0375em);
+    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($scale,6)), 1.2, -0.0375em);
 }
 h3 {
-    @include typeset($base-font-family, $bold-font-weight, (1rem * pow($type-scale,2)), 1.2, -0.0250em);
+    @include typeset($base-font-family, $bold-font-weight, (1rem * pow($scale,2)), 1.2, -0.0250em);
 }
 h4 {
-    @include typeset($base-font-family, $bold-font-weight, (1rem * pow($type-scale,1)), 1.2, -0.0250em);
+    @include typeset($base-font-family, $bold-font-weight, (1rem * pow($scale,1)), 1.2, -0.0250em);
 }
 h5 {
-    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($type-scale,1)), 1.2, -0.0em);
+    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($scale,1)), 1.2, -0.0em);
 }
 .eyebrow{
-    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($type-scale,0)), 1.2, 0.25em);
+    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($scale,0)), 1.2, 0.25em);
     text-transform: uppercase;
 }
 p, li, dt, dd {
@@ -96,13 +112,13 @@ em {
     font-style: italic;
 }
 @mixin largeType {
-    font-size: (1rem * $type-scale);
+    font-size: (1rem * $scale);
 }
 .large,.largeType {
     @include largeType;
 }
 @mixin small-type {
-    font-size: 1em + (1 - $type-scale);
+    font-size: 1em + (1 - $scale);
 }
 .small,.small-type {
     @include small-type;
@@ -134,7 +150,7 @@ blockquote,.blockquote {
         }
     }
     .brand {
-        @include typeset($display-font-family, $display-font-weight, 1em, ($navbar-height * .62), 0.0em);
+        @include typeset($display-font-family, $display-font-weight, 1em, (variables.$navbar-height * .62), 0.0em);
     }
 }
 
@@ -167,7 +183,7 @@ table {
         font-style: normal;
     }
     b,strong,dd {
-        @include typeset($display-font-family, $display-font-weight, (1rem * pow($type-scale,6)), 1.2, -0.0125em);
+        @include typeset($display-font-family, $display-font-weight, (1rem * pow($scale,6)), 1.2, -0.0125em);
     }
 }
 details {

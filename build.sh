@@ -186,6 +186,11 @@ if [[ "$1" == "assets" ]]; then
 exit;
 fi;
 
+if [[ "$1" == "static" ]]; then
+	build_static;
+exit;
+fi;
+
 
 if [[ "$1" == "backup" ]]; then
 	echo "* * * * * * * * * * * * * * * * * * * * * * *";

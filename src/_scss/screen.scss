@@ -333,9 +333,6 @@ body {
             padding: 0 grid.$gutter;
             max-width: 75vh;
         }
-        >h1:first-child,>section:first-child {
-            padding-top: grid.$gutter;
-        }
     }
 }
 .grid {
