@@ -13,14 +13,14 @@ tags:
 >*noun*{.small}  
 >An unusual and exciting, typically *hazardous*, experience or activity.
 
-In August 2023 I rode my bike across the Green Mountains of Vermont, zig-zagging over mountain passes, abandoned logging roads, and working dairy farms. It was the most demanding endurance challenge of my life (I think). It provided an extended opportunity for reflection on why we do hard things. 
+In August 2023 I rode my bike across the Green Mountains of Vermont, zig-zagging over mountain passes, abandoned logging roads, and working dairy farms. It was the most demanding endurance challenge of my life (maybe). It provided an extended opportunity for reflection on why we do hard things. 
 
 ### By the Numbers:
 
-| Distance  | Elevation  | Ride Time  | Energy  |
-|:----------|:----------|:----------|:----------|
-| 417.43 km | 5960 m | 22h 21m| 9495 kjul |
-|259 mi| 18,667 ft| | |
+| Distance  | Elevation | Ride Time | Energy    |
+| :-------- | :-------- | :-------- | :-------- |
+| 417.43 km | 5960 m    | 22h 21m   | 9495 kjul |
+| 259 mi    | 18,667 ft |           |           |
 
 1. [But Why](#why)
 3. [The Plan](#plan)
@@ -29,7 +29,7 @@ In August 2023 I rode my bike across the Green Mountains of Vermont, zig-zagging
 
 {.stickynav}
 
-<video autoplay loop src="/images/blog/vt-ride-1.mp4" class="fullwidth"></video>
+<video src="/images/blog/vt-ride-720p.mp4" autoplay autoplay="autoplay" loop mute muted class="fullwidth"></video>
 
 [Photo Gallery](https://photos.app.goo.gl/KCDqsEEAQieps4eLA)
 
