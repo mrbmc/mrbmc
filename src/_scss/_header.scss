@@ -4,12 +4,12 @@
 @use '_animation.scss';
 
 #header {
-    padding: ($navbar-height * .19) grid.$gutter;
+    padding: .38rem grid.$gutter;
 
     position: relative;
     z-index: 100;
     box-sizing: border-box;
-    height: $navbar-height;
+    // height: $navbar-height;
     min-height: 44px;
     width: 100%;
 
@@ -34,6 +34,7 @@
     a {
         -webkit-backface-visibility: hidden;
         -webkit-tap-highlight-color: transparent;
+
         color: colors.$navbar-link-color;
 
         transition: all animation.$speed animation.$easing;
@@ -58,7 +59,7 @@
         width: $logo-size;
         height: $logo-size;
         z-index: 3;
-        margin: 0;
+        margin: -0.25em;
         padding: 0.25em;
         overflow: hidden;
         &:before {
