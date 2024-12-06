@@ -85,7 +85,7 @@ body.photos {
 
 
 //tablets & phones
-@media (max-width: grid.$breakpoint-portrait-1) {
+@media (max-width: grid.$breakpoint) {
     .gallery {
         .detail {
             height: 100vw;

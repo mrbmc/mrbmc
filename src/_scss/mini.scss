@@ -40,7 +40,7 @@ body {
         padding: grid.$gutter 0;
         width: grid.$width;
 
-        @media (orientation: portrait) {
+        @media (max-width: grid.$breakpoint) {
             width: 100%;
             padding: 0 grid.$gutter;
             overflow-x: hidden;

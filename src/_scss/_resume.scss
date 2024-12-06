@@ -64,7 +64,7 @@ body.resume {
         margin: 0 auto;
     }
 
-    @media (orientation: portrait) {
+    @media (max-width: grid.$breakpoint) {
         h4,h4+p {
             float: none;
             width: auto;

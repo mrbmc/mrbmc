@@ -23,7 +23,7 @@
 
     transition: top animation.$speed animation.$easing;
 
-    @media (orientation: portrait) {
+    @media (max-width: grid.$breakpoint) {
         margin-left: 0;
     }
 
@@ -95,10 +95,6 @@ body.resume #header #menu a[href="/about/"] {
 
 
 .stickynav {
-    @media (orientation: portrait) {
-        display: none;
-    }
-
     position: sticky;
     z-index: 90;
     top: (grid.$gutter * .25);
@@ -111,6 +107,11 @@ body.resume #header #menu a[href="/about/"] {
     -webkit-backdrop-filter: blur(.2rem);
     backdrop-filter: blur(.2rem);
 
+    @media (max-width: grid.$breakpoint) {
+        position: fixed;
+        bottom: 0;
+        top: auto;
+    }
 
     &>li {
         background: colors.$navbar-background;

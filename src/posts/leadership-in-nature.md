@@ -55,11 +55,11 @@ What are some lessons you've learned from Science or Nature? I'd love to learn m
 <style type="text/css">
 h2 {margin-bottom: 0em;}
 
-        @media (orientation: landscape) {
-			iframe {width:62vw;height:35vw;}
-			}
-        @media (orientation: portrait) {
-			iframe {width:100%;height:40vw;}
-			}
+iframe {
+	width: 100%;
+	height: 50.625vw;
+	max-width: 960px;
+	max-height: 540px;
+}
 </style>
 

@@ -85,7 +85,7 @@ body.portfolio.list {
             overflow: visible;
             column-gap: grid.$gutter;
 
-            @media (orientation: portrait) {
+            @media (max-width: grid.$breakpoint) {
                 flex-direction: column-reverse;
             }
 
@@ -120,7 +120,7 @@ body.project {
             margin-bottom: (grid.$gutter * 2);
         }
     }
-    @media (orientation: portrait) {
+    @media (max-width: grid.$breakpoint) {
         #scrollhint {
             display: none;
         }
@@ -158,7 +158,7 @@ body.project {
 
 h1.section,h2.section {
     @include fullWidth();
-    padding: grid.$gutter grid.$margin;
+    padding: grid.$gutter;
     box-sizing: border-box;
     display: flex;
     align-items: center;

@@ -149,11 +149,10 @@
 @mixin fullWidth($limit:100vw) {
     width: $limit;
 
-    @media (min-width: grid.$width) {
-        margin-left: calc(($limit - grid.$width) * -0.5);
+    @media (min-width: grid.$breakpoint) {
+        margin-left: calc((($limit - grid.$width) * -0.5));
     }
-
-    @media (orientation: portrait) {
+    @media (max-width: grid.$breakpoint) {
         margin-left: (grid.$gutter * -1);
     }
 }

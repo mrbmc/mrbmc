@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b427c057fce4323e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nhlgameflow.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "nhlgameflow"
-            }
-          },
-          {
             "id": "40abe8cd4f200754",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blogtalkradio.md",
+                "file": "nhl.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "blogtalkradio"
+              "title": "nhl"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blogtalkradio.md"
+                "file": "nhl.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of blogtalkradio"
+              "title": "Outline of nhl"
             }
           }
         ],
@@ -179,6 +164,7 @@
   },
   "active": "40abe8cd4f200754",
   "lastOpenFiles": [
+    "blogtalkradio.md",
     "nhl.md",
     "disney-enterprise.md",
     "nhltv.md",
@@ -193,7 +179,6 @@
     "rhythmism.md",
     "pal-9100.md",
     "optumus.md",
-    "blogtalkradio.md",
     "boids.md",
     "design-prototyping-201.md",
     "disney.md",
