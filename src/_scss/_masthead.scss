@@ -11,7 +11,7 @@
     overflow: hidden;
     z-index: 10;
 
-    @include inverse();
+    @include hero();
 
     h1,h2,h3 {
         z-index: 2;

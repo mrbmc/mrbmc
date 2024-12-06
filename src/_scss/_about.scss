@@ -84,6 +84,7 @@ body.about {
     }
 
     .hero {
+        @include mixins.hero();
         li .card {
             min-height: 100%;
             flex-basis: calc(50% - grid.$gutter);

@@ -9,7 +9,7 @@ body {
         padding: grid.$gutter-xl grid.$gutter;
         gap: grid.$gutter;
 
-        @include inverse();
+        @include hero();
 
         h2,h3,h4 {
             // color: $card-text-color;
