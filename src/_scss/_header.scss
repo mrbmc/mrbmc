@@ -4,12 +4,12 @@
 @use '_animation.scss';
 
 #header {
-    padding: ($navbar-height * .19) grid.$gutter;
+    padding: .38rem grid.$gutter;
 
     position: relative;
     z-index: 100;
     box-sizing: border-box;
-    height: $navbar-height;
+    // height: $navbar-height;
     min-height: 44px;
     width: 100%;
 
@@ -23,7 +23,7 @@
 
     transition: top animation.$speed animation.$easing;
 
-    @media (orientation: portrait) {
+    @media (max-width: grid.$breakpoint) {
         margin-left: 0;
     }
 
@@ -34,6 +34,7 @@
     a {
         -webkit-backface-visibility: hidden;
         -webkit-tap-highlight-color: transparent;
+
         color: colors.$navbar-link-color;
 
         transition: all animation.$speed animation.$easing;
@@ -58,7 +59,7 @@
         width: $logo-size;
         height: $logo-size;
         z-index: 3;
-        margin: 0;
+        margin: -0.25em;
         padding: 0.25em;
         overflow: hidden;
         &:before {
@@ -94,10 +95,6 @@ body.resume #header #menu a[href="/about/"] {
 
 
 .stickynav {
-    @media (orientation: portrait) {
-        display: none;
-    }
-
     position: sticky;
     z-index: 90;
     top: (grid.$gutter * .25);
@@ -110,6 +107,11 @@ body.resume #header #menu a[href="/about/"] {
     -webkit-backdrop-filter: blur(.2rem);
     backdrop-filter: blur(.2rem);
 
+    @media (max-width: grid.$breakpoint) {
+        position: fixed;
+        bottom: 0;
+        top: auto;
+    }
 
     &>li {
         background: colors.$navbar-background;
@@ -142,7 +144,6 @@ body.resume #header #menu a[href="/about/"] {
                 margin: 0;
                 padding: 0;
                 a {
-
                 }
             }
         }
@@ -158,14 +159,13 @@ body.resume #header #menu a[href="/about/"] {
             white-space: nowrap;
             text-decoration: none;
             padding: 0 grid.$gutter;
+            @include small-type();
             &:hover {
                 background: colors.$navbar-link-hover-background;
                 color: colors.$navbar-link-hover-color;
             }
         }
     }
-
-    @include small-type();
 
     a[href="#top"] {
         content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNTMgMjAiPjxwYXRoIGQ9Ik0yNi41MDAzIDIuMzEzNDVMOS4xMTQyNiAxNi4yMjI1TDEwLjMwMzMgMTcuNjg5NUwyNi41MDAzIDQuNzMyNDVMNDIuNjk3MyAxNy42ODg1TDQzLjg4NjMgMTYuMjIyNUwyNi41MDAzIDIuMzEzNDVaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=");

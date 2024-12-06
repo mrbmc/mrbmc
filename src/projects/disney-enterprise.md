@@ -212,10 +212,10 @@ Evangelizing design system adoption begins with a promise of a better future. We
 <style>
 .team {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 1rem;
-  @media (orientation: portrait) {
-    grid-template-columns: 1fr 1fr 1fr;
+  @media (max-width: 43rem) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .team img {

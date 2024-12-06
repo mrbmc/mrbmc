@@ -234,7 +234,7 @@ GroupWatch found traction quickly with a solid cohort of subscribers. Over time 
 <style>
 #main h2 {margin: 3rem auto 0;text-align:center; clear:both;}
 img.doublediamond { height:2rem;width:auto;margin:0 auto 3rem auto;display:block;}
-@media (orientation: landscape) {
+@media (min-width: 43rem) {
 #scrollhint,.scrollhint { display: block;}
 }
 div.gallery-wrap .image-detail {

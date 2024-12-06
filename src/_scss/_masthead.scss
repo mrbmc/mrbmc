@@ -52,7 +52,8 @@
         }
     }
 
-    @media (orientation: portrait) {
+    @media (max-width: grid.$breakpoint) {
+        min-height: 56.25vw;
         height: auto;
     }
 
@@ -61,12 +62,10 @@
 
         width: $size;
         height: $size;
-        @media (orientation: landscape) {
+        @media (min-width: grid.$breakpoint) {
             position: absolute;
             left: calc(50% - math.div($size, 2));
             bottom: grid.$gutter;
-        }
-        @media (orientation: portrait) {
         }
         margin: 0 auto;
         z-index: 10;

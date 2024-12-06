@@ -1,6 +1,5 @@
 @use '_colors.scss';
 @use '_grid.scss';
-@use '_type.scss';
 @use '_variables.scss';
 
 body.home {
@@ -12,11 +11,11 @@ body.home {
         background: colors.$body-background;
         color: colors.$text-primary;
         justify-content: center;
-        @media (orientation: landscape) {
+        @media (min-width: grid.$breakpoint) {
             min-height: calc(81vh);
             height: auto;
         }
-        @media (orientation: portrait) {
+        @media (max-width: grid.$breakpoint) {
             padding-top: (grid.$gutter + $navbar-height);
         }
         h1,p {
@@ -47,22 +46,22 @@ body.home {
         }
 
         .scrollhint {
-            @media (orientation: landscape) {
+            @media (min-width: grid.$breakpoint) {
                 display: block;
             }
         }
 
         $crane-size: 10vw;
         $crane-color: colors.$text-primary;
-        @media (orientation: landscape) {
+        @media (min-width: grid.$breakpoint) {
             h1,h2,p.bio {
                 max-width: grid.$width;
                 margin: 0 auto;
             }
         }
-        @media (orientation: portrait) {
-            padding-right: 0;
-        }
+        // @media (max-width: grid.$breakpoint) {
+        //     padding-right: 0;
+        // }
 
         &:before {
             @media (prefers-color-scheme: light) {
@@ -93,8 +92,11 @@ body.home {
         padding: grid.$gutter;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        @media (orientation: landscape) {
+        @media (min-width: grid.$breakpoint) {
             grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width: grid.$breakpoint-widescreen) {
+            grid-template-columns: repeat(4, 1fr);
         }
 
 
@@ -115,9 +117,12 @@ body.home {
             }
             figure,p.figure {
                 img {
-                    height: calc((100vw - (grid.$gutter * 3))/2);
-                    @media (orientation: landscape) {
+                    height: calc((100vw - (grid.$gutter * 4))/2);
+                    @media (min-width: grid.$breakpoint) {
                         height: calc((100vw - (grid.$gutter * 4))/3);
+                    }
+                    @media (min-width: grid.$breakpoint-widescreen) {
+                        height: calc((100vw - (grid.$gutter * 4))/4);
                     }
                 }                
             }

@@ -45,29 +45,6 @@ $neutral-10:            hslToHex($brand-hue,34%,12%);
 $neutral-05:            hslToHex($brand-hue,55%,04%);
 $neutral-0:             hslToHex($brand-hue,89%,02%);
 
-:root {
-    --black:            #{$neutral-10};
-    --gray-dark:        #{$neutral-30};
-    --gray-mid:         #{$neutral-50};
-    --gray-light:       #{$neutral-90};
-    --white:            #{$neutral-100};
-    --white-semi:       #{$neutral-100}54;
-    --brand-color:      #{$brand-color};
-    --brand-complement: #{$brand-complement};
-    --brand-accent:     #{$brand-accent};
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        --black:        #{$neutral-100};
-        --gray-dark:    #{$neutral-90};
-        --gray-mid:     #{$neutral-50};
-        --gray-light:   #{$neutral-30};
-        --white:        #{$neutral-10};
-        --white-semi:   #{$neutral-10}54;
-    };
-}
-
-
 // TYPE
 // -------------------------
 $text-primary:          var(--gray-dark);

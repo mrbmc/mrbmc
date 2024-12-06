@@ -5,7 +5,7 @@
 
 #blog {
 
-	@media (max-width: grid.$breakpoint-phone) {
+	@media (max-width: grid.$breakpoint) {
 	    margin-top: 0;
 	}
 
@@ -93,7 +93,7 @@ body.blog.post {
 	@include item-detail();
 
 	#masthead {
-		@media (orientation: landscape) {
+		@media (min-width: grid.$breakpoint) {
 		    padding: grid.$gutter-xl 38vw grid.$gutter-xl grid.$gutter;
 		}
 	}

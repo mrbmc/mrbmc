@@ -29,7 +29,28 @@ a {
 ::selection {
     background: colors.$selection-color;
 }
-
+:root {
+    --black:            #{colors.$neutral-10};
+    --gray-dark:        #{colors.$neutral-30};
+    --gray-mid:         #{colors.$neutral-50};
+    --gray-light:       #{colors.$neutral-90};
+    --white:            #{colors.$neutral-100};
+    --white-semi:       #{colors.$neutral-100}54;
+    --brand-color:      #{colors.$brand-color};
+    --brand-complement: #{colors.$brand-complement};
+    --brand-accent:     #{colors.$brand-accent};
+    --breakpoint:       #{grid.$breakpoint};
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black:        #{colors.$neutral-100};
+        --gray-dark:    #{colors.$neutral-90};
+        --gray-mid:     #{colors.$neutral-50};
+        --gray-light:   #{colors.$neutral-30};
+        --white:        #{colors.$neutral-10};
+        --white-semi:   #{colors.$neutral-10}54;
+    };
+}
 
 
 
@@ -153,7 +174,11 @@ table {
     @include fullWidth(100vw);
     @include inverse();
     box-sizing: border-box;
-    padding: grid.$gutter grid.$margin;
+    padding: grid.$gutter;
+
+    @media (min-width: grid.$breakpoint) {
+        padding: grid.$gutter grid.$margin;
+    }
 }
 
 blockquote,.blockquote {
@@ -162,7 +187,7 @@ blockquote,.blockquote {
     border-left: solid 4px colors.$text-secondary;
     color: colors.$text-secondary;
 
-    @media (orientation: portrait) {
+    @media (max-width: grid.$breakpoint) {
         margin-left: 0;
     }
 }
@@ -329,12 +354,11 @@ li, dt {
 body {
     > main {
         box-sizing: border-box;
-        margin: 0 auto;
-        width: 100%;
         max-width: grid.$width;
-        @media (orientation: portrait) {
-            padding: 0 grid.$gutter;
-            max-width: 75vh;
+        margin: 0 auto;
+        padding: 0;
+        @media (max-width: grid.$breakpoint) {
+            margin: 0 grid.$gutter;
         }
     }
 }
@@ -350,9 +374,6 @@ body {
         list-style: none;
         margin: 0;
     }
-    @media (orientation: portrait) {
-        grid-auto-flow: row;
-    }
     &.x2x2 {
         grid-auto-flow: row;
         grid-template-columns: repeat(2, 1fr);
@@ -362,6 +383,9 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    @media (max-width: grid.$breakpoint) {
+        grid-auto-flow: column;
+    }
 }
 .mosaic {
     display: grid;

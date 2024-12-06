@@ -10,10 +10,8 @@ $width:               		40rem;
 $column:         			math.div(($width - (($columns - 1) * $gutter)), $columns);
 $margin: 			  		calc((100vw - $width) / 2);
 
-$breakpoint-widescreen:      	1201px;
-$breakpoint-widescreen-1:    	($breakpoint-widescreen - 1px);
-$breakpoint-desktop:         	961px;
-$breakpoint-desktop-1:       	$breakpoint-desktop - 1;
-$breakpoint-portrait:        	769px;
-$breakpoint-portrait-1:      	$breakpoint-portrait - 1;
-$breakpoint-phone:           	480px;
+$breakpoint:					$width + $gutter + $gutter;
+$breakpoint-widescreen:      	1440px;
+// $breakpoint-desktop:         	960px;
+// $breakpoint-portrait:        	768px;
+// $breakpoint-phone:           	480px;

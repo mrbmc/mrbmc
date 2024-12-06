@@ -372,17 +372,17 @@ In mid-2021 I took on a new opportunity within Disney Streaming to lead design f
 @media (prefers-color-scheme: dark) {
 /* 	#main img[src*="svg"] { filter:invert(1) hue-rotate(180deg);} */
 }
-h2#basecamp:before {
+h2#basecamp {
     background-image: url(/images/portfolio/disney-growth/everest-basecamp-web.jpg);
 }
-h2#ascent:before {
+h2#ascent {
     background-image: url(/images/portfolio/disney-growth/everest-ascent-web.jpg);
     background-position: top center;
 }
-h2#summit:before {
+h2#summit {
     background-image: url(/images/portfolio/disney-growth/everest-summit-web.jpg);
 }
-h2#descent:before {
+h2#descent {
     background-image: url(/images/portfolio/disney-growth/everest-descent-web.jpg);
 }
 </style>

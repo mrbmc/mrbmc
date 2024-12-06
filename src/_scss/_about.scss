@@ -26,7 +26,7 @@ body.about {
                     }
             }
 
-            @media (orientation: landscape) {
+            @media (min-width: grid.$breakpoint) {
                 h1,p.large {
                     width: 60vw;
                     margin: 0;
@@ -90,12 +90,6 @@ body.about {
         }
     }
 
-    @media (orientation: portrait) {
-        img.cover {
-            height: 33vh;
-        }
-    }
-
     hr {
         margin: grid.$gutter-xl auto;
     }
@@ -106,7 +100,7 @@ body.about {
 
 ul.timeline {
     width: auto;
-    @media (orientation: landscape) {
+    @media (min-width: grid.$breakpoint) {
         margin: grid.$gutter-xl grid.$gutter;
     }
 

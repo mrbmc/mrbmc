@@ -31,7 +31,7 @@ portfolio, and gallery pages.
             }
         }
         img.pullleft {
-            @media (orientation: landscape) {
+            @media (min-width: grid.$breakpoint) {
                 // width: 62%;
                 // margin-left: (0 - grid.$margin);
                 width: 38%;
@@ -40,7 +40,7 @@ portfolio, and gallery pages.
             }
         }
         img.pullright {
-            @media (orientation: landscape) {
+            @media (min-width: grid.$breakpoint) {
                 // width: 62%;
                 // margin-right: (0 - grid.$margin);
                 width: 38%;
@@ -72,7 +72,7 @@ nav.pagination {
 		text-transform: inherit;
 		display: block;
 	}
-	@media (max-width: grid.$breakpoint-portrait-1) {
+	@media (max-width: grid.$breakpoint) {
 		flex-direction: column-reverse;
 	}
 }
@@ -93,7 +93,7 @@ p.gallery,div.gallery-wrap {
         margin: 0 auto;
         display: block;
 
-        @media (orientation: portrait) {
+        @media (max-width: grid.$breakpoint) {
             max-height: 62vw;
         }
     }

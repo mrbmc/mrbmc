@@ -9,7 +9,7 @@ tags:
 summary: I led several design programs for the National Hockey League including the NHL.tv streaming service and product-led-growth on NHL App & NHL.com.
 timeline: 2015-2018
 ---
-I built & led the team that designed the official site, app and streaming service for the National Hockey League. My engagement with the NHL spanned more than five years with my role ranging from team lead, design strategist, art director, storyteller and UX researcher.
+I founded, hired, mentored, and led the team that designed the official site, app and streaming service for the National Hockey League. My engagement with the NHL spanned more than five years with my role ranging from team lead, design strategist, art director, storyteller and UX researcher.
 
 It was also an opportunity to build centers of excellence around UX Research and Prototyping for BAMTech Media.
 

@@ -1,7 +1,7 @@
 @use 'sass:math';
 @use '_colors.scss';
 @use '_grid.scss';
-@use '_type.scss';
+// @use '_type.scss';
 
 body.resume {
     main {
@@ -11,8 +11,12 @@ body.resume {
         font-family: $serif-font-family;
         font-weight: $serif-font-weight;
     }
+    h3 {
+        color: colors.$text-secondary;
+        clear: both;
+    }
     h4 {
-        @include typeset($heading-font-family, $bold-font-weight, (1rem * pow(type.$scale,0)), 1.2, -0.0125em);
+        // @include typeset($heading-font-family, $bold-font-weight, (1rem * pow(type.$scale,0)), 1.2, -0.0125em);
         text-transform: inherit;
     }
     h5 {
@@ -60,7 +64,7 @@ body.resume {
         margin: 0 auto;
     }
 
-    @media (orientation: portrait) {
+    @media (max-width: grid.$breakpoint) {
         h4,h4+p {
             float: none;
             width: auto;
