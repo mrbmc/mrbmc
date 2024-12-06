@@ -53,18 +53,23 @@ $scale: 1.19;//each size is this much larger than the predecessor
     line-height: $line;
     letter-spacing: $kerning;
 }
+@mixin largeType {
+    font-size: (1rem * $scale);
+}
+.large,.largeType {
+    @include largeType;
+}
+@mixin small-type {
+    font-size: 1em + (1 - $scale);
+}
 
-html {
+
+:root {
     -webkit-font-smoothing: antialiased;
     text-rendering:optimizeLegibility;
     // -moz-osx-font-smoothing: grayscale;
     // font-smooth: never;
-    // font-size: $base-font-size;
-    font-size: clamp(18px, 1.8vw, 40px);
-    @media (orientation: portrait) {
-        font-size: 18px;
-        font-size: clamp(16px, 1.6vh, 32px);
-    }
+    font-size: clamp(16px, 1.8vw, 40px);
 }
 
 body {
@@ -99,12 +104,8 @@ h4 {
 h5 {
     @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($scale,1)), 1.2, -0.0em);
 }
-.eyebrow{
-    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($scale,0)), 1.2, 0.25em);
-    text-transform: uppercase;
-}
-p, li, dt, dd {
-}
+// p, li, dt, dd {
+// }
 strong,b {
     font-weight: $bold-font-weight;
 }
@@ -115,14 +116,9 @@ code,pre {
     font-family: $mono-font-family;
     font-weight: 800;
 }
-@mixin largeType {
-    font-size: (1rem * $scale);
-}
-.large,.largeType {
-    @include largeType;
-}
-@mixin small-type {
-    font-size: 1em + (1 - $scale);
+.eyebrow{
+    @include typeset($heading-font-family, $heading-font-weight, (1rem * pow($scale,0)), 1.2, 0.25em);
+    text-transform: uppercase;
 }
 .small,.small-type {
     @include small-type;
@@ -145,16 +141,16 @@ blockquote,.blockquote {
 
 #header {
     a {
-        text-decoration: none;
         @include typeset($navbar-font-family, $navbar-font-weight, 1rem, $base-line-height, -0.0125em);
         text-transform: uppercase;
+        text-decoration: none;
 
-        &:hover {
-            text-decoration: none;
-        }
+        // &:hover {
+        //     text-decoration: none;
+        // }
     }
     .brand {
-        @include typeset($display-font-family, $display-font-weight, 1em, (variables.$navbar-height * .62), 0.0em);
+        @include typeset($display-font-family, $display-font-weight, 1rem, (variables.$navbar-height * .62), 0.0em);
     }
 }
 
@@ -181,7 +177,6 @@ table {
         }
     }
 }
-
 .kpi {
     dt,em,i {
         font-style: normal;
