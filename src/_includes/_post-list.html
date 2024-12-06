@@ -1,11 +1,11 @@
-{% if postList.length > 0 %}<section id="blog" class="blog">
+<section id="post-list">
 
-{% if label %}## {{ label }}{% endif %}
+{% if heading %}## {{ heading }}{% endif %}
 
 {% if summary %}{{ summary }}{% endif %}
 
 {% for post in postList reversed %}{% if forloop.index0 < count %}
-<div class="post" role="article" onclick="location.href='{{post.url}}'">
+<article class="post" role="article" onclick="location.href='{{post.url}}'">
 
 <summary>
 
@@ -17,8 +17,8 @@
 
 {% if post.data.masthead-image %}<img src="{{ post.data.masthead-image }}" alt="{{ post.data.title }}" loading="lazy" />{% endif %}
 
-</div>
+</article>
 
 {% endif %}{% endfor %}
 
-</section>{% endif %}
+</section>

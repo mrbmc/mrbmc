@@ -3,17 +3,17 @@
 @use '_grid.scss';
 @use '_animation.scss';
 
-#blog {
+body.blog #post-list {
+	padding-top: grid.$gutter-xl;
+}
+
+#post-list {
 
 	@media (max-width: grid.$breakpoint) {
 	    margin-top: 0;
 	}
 
-	section#blog {
-		padding-top: grid.$gutter;
-	}
-
-	div.post {
+	.post {
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
@@ -59,42 +59,13 @@
 	}	
 }
 
-body.blog.grid {
-	section#blog {
-		box-sizing: border-box;
-		width: 100vw;
-		padding: grid.$gutter;
-		margin-left: calc(grid.$margin * -1);
-		display: grid;
-		grid-column-gap: grid.$gutter;
-		grid-row-gap: grid.$gutter-xl;
-		grid-template-columns: repeat(3,1fr);
-		align-items: start;
-		.post {
-			flex-direction: column-reverse;
-			margin: 0;
-			img {
-				width: 100%;
-				aspect-ratio: 16/9;
-				object-fit: cover;
-			}
-			summary {
-				width: 100%;
-				h3 {
-					margin-top: 0.5rem;
-				}
-			}
-		}
-	}
-}
-
 body.blog.post {
 
 	@include item-detail();
 
 	#masthead {
 		@media (min-width: grid.$breakpoint) {
-		    padding: grid.$gutter-xl 38vw grid.$gutter-xl grid.$gutter;
+		    padding-right: 38vw;
 		}
 	}
 
