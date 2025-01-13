@@ -2,13 +2,15 @@
 
 BASE=$(dirname "$0");
 
-startdate=$(date -v-30d +%Y%m%d);
-startdateday=$(date -j -f %Y%m%d $startdate +%d);
-startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
+start_date=$(date -v-15d +%Y%m%d);
+start_day=$(date -j -f %Y%m%d $start_date +%d);
+start_month=$(date -j -f %Y%m%d $start_date +%m);
+start_seconds=$(date -j -f %Y%m%d $start_date +%s)
 
-stopdate=$(date +%Y%m%d);
-stopdateday=$(date -j -f %Y%m%d $stopdate +%d);
-stopdatemonth=$(date -j -f %Y%m%d $stopdate +%m);
+stop_date=$(date +%Y%m%d);
+stop_day=$(date -j -f %Y%m%d $stop_date +%d);
+stop_month=$(date -j -f %Y%m%d $stop_date +%m);
+stop_seconds=$(date -j -f %Y%m%d $stop_date +%s)
 
 local flag_skipdownload flag_verbose flag_help flag_raw
 local usage=(
@@ -51,21 +53,33 @@ function download () {
 	fi
 
 	# [[ -z "$flag_verbose" ]] || { echo "Unzipping Logs"; }
-	tempstartmonth=$startdatemonth;
+	tempstartmonth=$start_month;
 	if [[ "$arg_duration[-1]" != "all" ]]; then
-		tempstartmonth=$stopdatemonth;
+		tempstartmonth=$stop_month;
 	fi
 
 	#NOTE: you can't unzip all files for a year so we go month by month
 	#gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.2024-0'* | grep  -E -v -i -f ../blacklist.txt | goaccess  -o ../www/2024.html --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"
 	#zcat -f logs/log_clean0* 
-	for i in {$tempstartmonth..$stopdatemonth}
-	do
-		if (( $#flag_verbose )); then
-			echo "2024-$i unzipping";
+
+    local diff_days=$(((stop_seconds - start_seconds) / 86400))
+	local last_date="";
+
+	for ((i = $diff_days; i > 0; i--)); do
+
+	    target_date=$(date -v-$i"d" -j -f %Y%m%d $stop_date +%Y-%m)
+
+	    if [[ $target_date != $last_date ]]; then
+
+			[[ -z "$flag_verbose" ]] || { echo "unzipping $target_date"; }
+			gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.'$target_date*'gz' > $BASE'/logs/log_raw_'$target_date;
+
+			last_date=$target_date;
 		fi
-		gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.2024-'$i*'gz' > $BASE'/logs/log_raw_2024-'$i
+
 	done
+
+
 }
 
 
@@ -75,29 +89,34 @@ function parse () {
 	[[ -z "$flag_verbose" ]] || { echo "----------------------------------------";}
 
 
-	tempstartmonth=$startdatemonth;
-	# this optimizes parsing by not skipping past month that haven't changed but it's really not needed and messes up the L30 et al
-	# if [[ "$arg_duration[-1]" != "all" ]]; then
-	# 	tempstartmonth=$stopdatemonth;
-	# fi
-
 	if (( $#flag_raw )); then
-		[[ -z "$flag_verbose" ]] || { echo "Concatenating 2024 raw"; }
-		zcat -f $BASE/logs/log_raw_2024-* > $BASE/logs/log_raw;
+		# [[ -z "$flag_verbose" ]] || { echo "Concatenating 2024 raw"; }
+		# zcat -f $BASE/logs/log_raw_2024-* > $BASE/logs/log_raw;
 		return true;
 	else
+	    local diff_days=$(((stop_seconds - start_seconds) / 86400))
+		local last_date="";
 
-		for i in {$tempstartmonth..$stopdatemonth}
-		do
-			[[ -z "$flag_verbose" ]] || { echo "Cleaning 2024-$i"; }
-			cat  $BASE'/logs/log_raw_2024-'$i |\
-			grep -E -v -i -f $BASE/blacklist-agents.txt |\
-			grep -E -v -i -f $BASE/blacklist-urls.txt\
-			> $BASE'/logs/log_clean_2024-'$i
+		for ((i = $diff_days; i > 0; i--)); do
+
+		    target_date=$(date -v-$i"d" -j -f %Y%m%d $stop_date +%Y-%m)
+
+		    if [[ $target_date != $last_date ]]; then
+		    
+				[[ -z "$flag_verbose" ]] || { echo "Cleaning $target_date"; }
+				cat  $BASE'/logs/log_raw_'$target_date |\
+				grep -E -v -i -f $BASE/blacklist-agents.txt |\
+				grep -E -v -i -f $BASE/blacklist-urls.txt\
+				> $BASE'/logs/log_clean_'$target_date
+
+				last_date=$target_date;
+			fi
+
 		done
 
 		[[ -z "$flag_verbose" ]] || { echo "Concatenating 2024 clean"; }
 		zcat -f $BASE/logs/log_clean_2024-* > $BASE/logs/log_clean;
+		zcat -f $BASE/logs/log_clean_2025-* >> $BASE/logs/log_clean;
 	fi
 
 }
@@ -110,28 +129,40 @@ function analyze () {
 	[[ -z "$flag_verbose" ]] || { 
 		echo "----------------------------------------";
 	}
-	if [[ "$arg_startdate[-1]" && "$arg_stopdate[-1]" ]]; then
+	if [[ "$arg_start_date[-1]" && "$arg_stop_date[-1]" ]]; then
 		analyze-range;
 		return 1;
 	fi
 
 
-	for i in {$startdatemonth..$stopdatemonth}
-	do
+    local diff_days=$(((stop_seconds - start_seconds) / 86400))
+	local last_date="";
+	for ((i = $diff_days; i > 0; i--)); do
 
-		if (( $#flag_raw )); then
-			# raw logs
-			[[ -z "$flag_verbose" ]] || { echo "Analyzing 2024-$i RAW"; }
-			goaccess_cmd="goaccess $BASE/logs/log_raw_2024-$i -o $BASE/www/2024$i-raw.html ";
-		else
-			# clean logs
-			[[ -z "$flag_verbose" ]] || { echo "Analyzing 2024-$i CLEAN"; }
-			goaccess_cmd="goaccess $BASE/logs/log_clean_2024-$i -o $BASE/www/2024$i.html ";
+	    target_date=$(date -v-$i"d" -j -f %Y%m%d $stop_date +%Y-%m)
+
+	    if [[ $target_date != $last_date ]]; then
+	    
+
+			if (( $#flag_raw )); then
+				# raw logs
+				[[ -z "$flag_verbose" ]] || { echo "Analyzing 2024-$i RAW"; }
+				goaccess_cmd="goaccess $BASE/logs/log_raw_$target_date -o $BASE/www/$target_date-raw.html ";
+			else
+				# clean logs
+				[[ -z "$flag_verbose" ]] || { echo "Analyzing 2024-$i CLEAN"; }
+				goaccess_cmd="goaccess $BASE/logs/log_clean_$target_date -o $BASE/www/$target_date.html ";
+			fi
+
+			goaccess_cmd+="$goaccess_opt";
+			eval ${goaccess_cmd}
+
+
+			last_date=$target_date;
 		fi
 
-		goaccess_cmd+="$goaccess_opt";
-		eval ${goaccess_cmd}
 	done
+
 
 	periods_opt=('7d' '30d' '90d')
 	for duration in $periods_opt
@@ -157,18 +188,27 @@ function analyze () {
 
 function analyze-range () {
 
-	echo "Analyzing $startdate-$stopdate";
+	echo "Analyzing $start_date-$stop_date";
 
 	sed_cmd="sed -n '" \
-	sed_cmd+="/2024\-'$(date -j -f %Y%m%d $startdate +%m)'\-'$(date -j -f %Y%m%d $startdate +%d)'/"
-	filename="$startdate";
-	if [[ $startdate != $stopdate ]]; then
-		sed_cmd+=",/2024\-'$(date -j -v+1d -f %Y%m%d $stopdate +%m)'\-'$(date -j -v+1d -f %Y%m%d $stopdate +%d)'/"
-		filename+="-$stopdate";
+	sed_cmd+="/2024\-'$(date -j -f %Y%m%d $start_date +%m)'\-'$(date -j -f %Y%m%d $start_date +%d)'/"
+	filename="$start_date";
+	if [[ $start_date != $stop_date ]]; then
+		sed_cmd+=",/2024\-'$(date -j -v+1d -f %Y%m%d $stop_date +%m)'\-'$(date -j -v+1d -f %Y%m%d $stop_date +%d)'/"
+		filename+="-$stop_date";
 	fi
-	sed_cmd+=" p' $BASE/logs/log_clean | goaccess -a -o $BASE/../metrics/www/$filename.html "
+	if (( $#flag_raw )); then
+		filename+="-raw"
+		sed_cmd+=" p' $BASE/logs/log_raw"
+	else
+		sed_cmd+=" p' $BASE/logs/log_clean"
+	fi
+	sed_cmd+=" | goaccess -a -o $BASE/../metrics/www/$filename.html "
 	sed_cmd+="$goaccess_opt";
-	# echo $sed_cmd;
+
+	[[ -z "$flag_verbose" ]] || { 
+		echo $sed_cmd;
+	}
 	eval ${sed_cmd}
 	return 1;
 }
@@ -209,29 +249,32 @@ zparseopts -D -F -K -- \
 {v,-verbose}=flag_verbose \
 {i,-ip}:=arg_ipmask \
 {t,-term}:=arg_duration \
-{f,-from}:=arg_startdate \
-{u,-until}:=arg_stopdate ||
+{f,-from}:=arg_start_date \
+{u,-until}:=arg_stop_date ||
 return 1
 
 [[ -z "$flag_help" ]] || { print -l $usage && return }
 # [[ -z "$flag_verbose" ]] || { print "verbose mode" }
 
-if [[ "$arg_startdate[-1]" ]]; then
-	startdate=$(date -j -f %Y%m%d $arg_startdate[-1] +%Y%m%d);
-	startdateday=$(date -j -f %Y%m%d $startdate +%d);
-	startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
+if [[ "$arg_start_date[-1]" ]]; then
+	start_date=$(date -j -f %Y%m%d $arg_start_date[-1] +%Y%m%d);
+	start_day=$(date -j -f %Y%m%d $start_date +%d);
+	start_month=$(date -j -f %Y%m%d $start_date +%m);
+	start_seconds=$(date -j -f %Y%m%d $start_date +%s);
 fi
 
-if [[ "$arg_stopdate[-1]" ]]; then
-	stopdate=$(date -j -f %Y%m%d $arg_stopdate[-1] +%Y%m%d);
-	stopdateday=$(date -j -f %Y%m%d $stopdate +%d);
-	stopdatemonth=$(date -j -f %Y%m%d $stopdate +%m);
+if [[ "$arg_stop_date[-1]" ]]; then
+	stop_date=$(date -j -f %Y%m%d $arg_stop_date[-1] +%Y%m%d);
+	stop_day=$(date -j -f %Y%m%d $stop_date +%d);
+	stop_month=$(date -j -f %Y%m%d $stop_date +%m);
+	stop_seconds=$(date -j -f %Y%m%d $stop_date +%s);
 fi
 
 if [[ "$arg_duration[-1]" = "all" ]]; then
-	startdate=$(date +%Y)"0101";
-	startdateday=$(date -j -f %Y%m%d $startdate +%d);
-	startdatemonth=$(date -j -f %Y%m%d $startdate +%m);
+	start_date=$(date +%Y)"0101";
+	start_day=$(date -j -f %Y%m%d $start_date +%d);
+	start_month=$(date -j -f %Y%m%d $start_date +%m);
+	start_seconds=$(date -j -f %Y%m%d $start_date +%s);
 fi
 
 # ==================================================
@@ -249,7 +292,7 @@ echo "LOG ANALYSIS";
 	echo "----------------------------------------";
 }
 [[ -z "$flag_verbose" ]] || { 
-	echo "TIMEFRAME: $startdate – $stopdate";
+	echo "TIMEFRAME: $start_date – $stop_date";
 }
 
 download;

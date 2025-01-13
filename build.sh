@@ -54,6 +54,12 @@ function build_js () {
 		-o $OUT/js/boids.min.js \
 		$SRC/_js/boids.js;
 
+	echo " AI Boids JS";
+	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
+		 --source-map url=boids.min.js.map \
+		-o $OUT/js/aiboids.min.js \
+		$SRC/_js/aiboids.js;
+
 	echo " Life JS";
 	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
 		 --source-map url=life.min.js.map \

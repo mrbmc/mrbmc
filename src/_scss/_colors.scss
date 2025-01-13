@@ -32,7 +32,7 @@ $success:               $_teal;
 $error:                 $_orange;
 
 $neutral-100:           hslToHex($brand-hue,00%,100%);
-$neutral-95:            hslToHex($brand-hue,01%,96%);
+$neutral-95:            hslToHex($brand-hue,100%,96%);
 $neutral-90:            hslToHex($brand-hue,01%,92%);
 $neutral-80:            hslToHex($brand-hue,02%,82%);
 $neutral-70:            hslToHex($brand-hue,02%,71%);

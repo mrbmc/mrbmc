@@ -73,7 +73,15 @@ We formed a hypothesis that a light redesign of the team home pages (the most vi
 - Updated advertising UI with time remaining and playlist queue.
 - Throttling the advertising fill rate from 2 per video play down to 1 every two videos.
 
-<video src="/images/portfolio/nhl/1a-Mobile-Video-Improvements.mp4" controls playsinline autoplay style="width:375px;height:750px;display:block;margin:0 auto;"></video>
+Screens
+
+- ![Before](/images/portfolio/nhl/nhl-mobile-video-before.png) {.col3}
+- ![After](/images/portfolio/nhl/nhl-mobile-video-after.png) {.col3}
+- <video src="/images/portfolio/nhl/1a-Mobile-Video-Improvements.mp4" controls playsinline autoplay style=""></video> {.col6 .row2}
+{.mosaic .fullwidth}
+
+
+<!-- width:375px;height:750px;display:block;margin:0 auto; -->
 
 ### Results
 We saw a **150% increase ↗**{.positive} in  `Recency` and `Frequency`  engagement metrics measuring video consumption. This netted a **25% increase ↗**{.positive} in ad impressions despite the lower fill rate.
@@ -83,7 +91,6 @@ We saw a **150% increase ↗**{.positive} in  `Recency` and `Frequency`  engagem
 Based on these findings we carried over the same idea of improving curated playlists and non-blocking browsing to the web experience. We branded this new feature "On The Fly". The results were not quite as impressive as on mobile but still positive.
 
 <video src="/images/portfolio/nhl/on-the-fly.mp4" controls playsinline autoplay style="display:block;margin:0 auto;"></video>
-
 
 ----
 

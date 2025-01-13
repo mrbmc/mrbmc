@@ -21,7 +21,7 @@ title: "Portfolio"
 {% endif %}
 
 {% if collections.personal.length > 0 %}
-{% include "_project-list.md", projectList: collections.personal, label: "Play", summary: "As a Kinesthetic Learner, I need create new things to refine my thinking, and develop new skills.", count:3 %}
+{% include "_project-list.md", projectList: collections.personal, label: "Play", summary: "As a Kinesthetic Learner, I need create new things to refine my thinking, and develop new skills.", count:4 %}
 {% endif %}
 
 <style type="text/css">

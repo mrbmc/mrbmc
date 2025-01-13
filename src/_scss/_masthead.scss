@@ -12,6 +12,9 @@
     z-index: 10;
 
     @include hero();
+    &:before {
+        filter: none;
+    }
 
     h1,h2,h3 {
         z-index: 2;

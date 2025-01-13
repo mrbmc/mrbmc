@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '_colors.scss';
 @use '_grid.scss';
 @use '_variables.scss';
@@ -10,8 +11,7 @@ body.home {
   }
 
   #masthead {
-    background: colors.$body-background;
-    color: colors.$text-primary;
+    // color: colors.$text-primary;
     justify-content: center;
 
     @media (min-width:grid.$breakpoint) {
@@ -24,28 +24,27 @@ body.home {
     }
 
     h1, p {
-      color: colors.$text-tertiary;
+      // color: colors.$text-tertiary;
     }
 
     h1 {
+      text-wrap: balance;
+      color: colors.$text-primary;
+      background: colors.$brand-color;
+      background-image: linear-gradient(315deg, color.adjust(colors.$brand-accent, $alpha: -0.2) 19%, color.adjust(colors.$brand-color, $alpha: -0.2) 81%);
+      background-clip: text;
+      padding-right: 3px;
+      margin-right: -3px;
+
       & > em {
-        color: colors.$brand-color;
-        background: colors.$text-primary;
-        background-image: linear-gradient(transparentize(colors.$brand-accent, 0.5) 19%, transparentize(colors.$brand-color, 0.2) 81%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         font-style: normal;
-        padding-right: 3px;
-        margin-right: -3px;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
       }
 
       & > strong {
-        color: colors.$brand-complement;
-        background: colors.$text-primary;
-        background-image: linear-gradient(transparentize(colors.$brand-color, 0.5) 19%, transparentize(colors.$brand-complement, 0.2) 81%);
-        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-style: normal;
+        color: transparent;
         font-weight: $heading-font-weight;
         padding-right: 3px;
         margin-right: -3px;
@@ -73,22 +72,35 @@ body.home {
 
     // add a mesh gradient background
     & {
+      background: colors.$body-background;
       background-repeat: no-repeat;
       // background-attachment: fixed;
       background-size: 100% 100%;
       // trying to add just a light brush of color.
-      background-color: colors.$body-background;
-      background-image: radial-gradient(ellipse 81% 119% at 10% -19%, transparentize(colors.$brand-accent, 0.7) 0%, transparent 100%), conic-gradient(from 0.015turn at 0% 119%, transparent 0%, transparentize(colors.$brand-color, 0.85) 12.5%, transparent 25%, transparent 99%), radial-gradient(ellipse 100% 100% at 100% 81%, transparentize(colors.$brand-complement, 0.8) 0px, transparent 100%), conic-gradient(from 0.68turn at 119% 19%, transparent 0%, transparentize(colors.$brand-color, 0.85) 5%, transparent 10%, transparent 99%), ;
+      // background-color: colors.$body-background;
+      // background-image: 
+      //   radial-gradient(ellipse 81% 119% at 10% -19%, transparentize(colors.$brand-accent, 0.7) 0%, transparent 100%), 
+      //   conic-gradient(from 0.015turn at 0% 119%, transparent 0%, transparentize(colors.$brand-color, 0.85) 12.5%, transparent 25%, transparent 99%), 
+      //   radial-gradient(ellipse 100% 100% at 100% 81%, transparentize(colors.$brand-complement, 0.8) 0px, transparent 100%), 
+      //   conic-gradient(from 0.68turn at 119% 19%, transparent 0%, transparentize(colors.$brand-color, 0.85) 5%, transparent 10%, transparent 99%), 
+      //   ;
+      // background-image: 
+      //   radial-gradient(ellipse 81% 119% at 10% -19%,             color.adjust(colors.$brand-accent, $alpha: -0.7, $saturation: -90%, $lightness: 50%) 0%, transparent 100%), 
+      //   conic-gradient(from 0.015turn at 0% 119%, transparent 0%, color.adjust(colors.$brand-color, $alpha: -0.85, $saturation: -90%) 12.5%, transparent 25%, transparent 99%), 
+      //   radial-gradient(ellipse 100% 100% at 100% 81%,            color.adjust(colors.$brand-complement, $alpha: -0.8, $saturation: -90%, $lightness: 50%) 0px, transparent 100%), 
+      //   conic-gradient(from 0.68turn at 119% 19%, transparent 0%, color.adjust(colors.$brand-color, $alpha: -0.85, $saturation: -90%) 5%, transparent 10%, transparent 99%), 
+      //   ;
+      // background-image: 
+      //   radial-gradient(ellipse 81% 119% at 10% -19%,             #EEE 0%, transparent 100%), 
+      //   conic-gradient(from 0.015turn at 0% 119%, transparent 0%, #FFFFFF 12.5%, transparent 25%, transparent 99%), 
+      //   radial-gradient(ellipse 100% 100% at 100% 81%,            #DDD 0px, transparent 100%), 
+      //   conic-gradient(from 0.68turn at 119% 19%, transparent 0%, #CCC 5%, transparent 10%, transparent 99%), 
+      //   ;
     }
 
     &:before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      filter: url(#noiseFilter) opacity(10%);
+      background: colors.$neutral-95;
+      filter: none;
     }
   }
 

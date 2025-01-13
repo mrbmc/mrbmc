@@ -10,7 +10,7 @@ permalink: /about/
 
 # Designer and <br />Product Maker.
 
-My family calls me Brian but my friends call me BMC. I am a 👧🏻 👦🏻 father, [👩🏻 husband](https://www.bettykang.com/), 🗽 New Yorker, ️[🚲 cyclist](https://www.strava.com/athletes/773650), [🤿 divemaster](https://www.steelgills.com/@mrbmc), [🌎 world traveler](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **👨‍💻 [product design leader](/portfolio/)** with a unique polymath background as designer, product manager, engineer, and founder.{.large}
+My family calls me Brian but my friends call me BMC. I am a father 👧🏻 👦🏻, [husband 👩🏻](https://www.bettykang.com/), New Yorker 🗽, ️[cyclist 🚲](https://www.strava.com/athletes/773650), [divemaster 🤿](https://www.steelgills.com/@mrbmc), [world traveler 🌎](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **[product design leader 👨‍💻](/portfolio/)** with a unique polymath background as designer, product manager, engineer, and founder.{.large}
 
 ![Portrait of Brian](/images/profile/mrbmc-20241121.jpeg) {.portrait  .blur-in}
 
@@ -36,9 +36,9 @@ My family calls me Brian but my friends call me BMC. I am a 👧🏻 👦🏻 fa
 
 &nbsp;
 
-Over 20+ years I've learned to **deliver through ambiguity** at scale ranging from timing startups to global enterprises by bringing together evidence-based insights, rapid prototyping, and progressive delivery. I've led teams ranging in size from 2 to 26 people through mergers, acquisitions, closures, and explosive growth. 
+Over 20+ years I've learned to **deliver through ambiguity** at nascent startups and global enterprises by bringing together evidence-based insights, rapid prototyping, and strategic design.
 
-My unique career path has pivoted between leadership roles as a designer, engineer, and product manager thanks to an **ownership mindset**. I'm passionate about creating excellent products regardless of my title. I pivot back to design because of its unique power to **[amplify learning](/blog/a-little-feedback-often/)**. 
+I've led teams of 2 to 25 people through mergers, acquisitions, closures, transformations, and explosive growth. My unique career path has pivoted between leadership roles as a designer, engineer, and product manager thanks to an **entrepreneur mindset**. I practice design because of its unique power to **[amplify learning](/blog/a-little-feedback-often/)**. 
 
 [CV & Resumé](/resume/){.button} <!--&nbsp; [Design Blog](/blog/){.button}--> 
 

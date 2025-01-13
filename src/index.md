@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: false
 
 <section id="masthead" class="bio">
 
-# UX design, product discovery, and cross-functional leadership.{.blur-in}
+# UX <em>design</em>, product <em>discovery</em>, and cross-functional <em>leadership</em>.{.blur-in}
 
 {% comment %}
 * [linkedin](https://linkedin.com/in/mrbmc)

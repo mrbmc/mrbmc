@@ -11,10 +11,14 @@
             "id": "bbffcb0dcfe90e39",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "nhl.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "nhl"
             }
           }
         ]
@@ -134,9 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "nhl.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of nhl"
             }
           }
         ],

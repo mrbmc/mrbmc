@@ -4,7 +4,7 @@ bodyclass: resume
 title: Brian McConnell | Design & Product Leadership
 permalink: /resume/
 ---
-Brian McConnell is a results-oriented design leader, adept at building cross-functional partnerships, managing change, and driving innovation. He brings an entrepreneurial mindset to the enterprise, and scaling experience to startups.{.large .two-col}
+Executive design leader with a proven track record of scaling design organizations and driving multi-billion dollar business growth through human-centered product development. Known for building and leading UX teams that transform streaming media businesses, having scaled Disney+ from launch to 126M+ subscribers and grown design teams from 2 to 26+ across global locations. Consistently deliver breakthrough products by combining evidence-based design strategies with exceptional craft.{.large .two-col}
 
 1. **24** years experience{.card .kpi}
 2. **40+** products built{.card .kpi}
@@ -18,28 +18,33 @@ Brian McConnell is a results-oriented design leader, adept at building cross-fun
 
 ## Experience
 
-### Disney Streaming / MLB Advanced Media
+### The Walt Disney Company
+*Née MLB Advanced Media / BAMTech, acquired in August 2017*
 
 #### Senior Director, Product Design  
 April 2018 - August 2023
 
-I joined Disney through its acquisition of BAMTech to launch its new streaming businesses.
+Led design strategy and operations for Disney's streaming portfolio (Disney+, ESPN+, Hulu, STAR+), driving exceptional business growth and operational efficiency:
 
-- Launched Disney+ & ESPN+ propelling them from 0 – 126M subscribers in two years by building a Growth Design program, collaborating cross-functionally, advising Disney leadership on design strategy, and designing for multiple time horizons.
-- Launched & grew STAR+ to 11.5M subscribers in two years by designing a fan-centric sports experience.
-- Saved $80M+ p/a in operational costs with a suite of 40+ Enterprise SaaS tools for content, data, commerce, and developer productivity.
-- Reduced designer attrition 50% and recruiting timelines 80% by co-authoring a career framework, performance evaluation playbook, and hiring & onboarding processes.
-- Developed and mentored leadership at the Director, Manager, and Lead Designer positions.
+- Scaled Disney+ and ESPN+ from launch to 126M subscribers in two years through strategic design leadership, innovative Growth Design programs, and cross-functional collaboration
+- Transformed streaming operations by implementing 40+ Enterprise SaaS tools, reducing operational costs by $80M annually while increasing monthly recurring revenue by 25%
+- Built high-performing design teams through organizational development initiatives that reduced attrition by 50% and accelerated hiring efficiency by 80%
+
+**Secondary achievements:**
+
+- Successfully launched STAR+ in Latin America, reaching 11.5M subscribers through fan-centric sports experience design
+- Led design organizations through major transitions including Disney+ & Hulu merger and BAMTech acquisition
+- Established a unified design system and brand architecture across a global streaming portfolio.
+- Developed leadership pipeline through mentorship of Directors, Managers, and Lead Designers
 
 #### Director, Product Design
 September 2015 - April 2018
 
-I joined MLB Advanced Media as they began a transformation from an in-house team to a **$4B acquisition exit** for ownership.
+Led design strategy for MLB's streaming technology division, building the foundation for a $4B acquisition by Disney. Established the organization's first UX Research practice and design culture while pioneering cost-efficient development processes through innovative prototyping and resource management.
 
-- Scaled a design team of 2 up to 26 designers & researchers across the US and EU through recruiting, culture development, and mentoring new design leaders.
-- Led the design of 6 new streaming services for global entertainment brands.
-- Drove feature innovation and reduced development costs through rigorous UX Research, cross-functional partnerships, new prototyping technology, and designing efficient resource management models.
-- Founded teams for Growth Design, UX Research, and Enterprise SAAS Design.
+- Scaled streaming design team from 2 to 26 practitioners across US and EU markets, establishing UX Research, Growth Design, and Enterprise SaaS capabilities
+- Launched 6 new streaming services, significantly expanding BAMTech's market position and enterprise value
+- Established design culture and career development framework that enabled rapid team scaling across two continents
 
 ##### Disney Projects
 - <a href="http://disneyplus.com">Disney+</a>
@@ -61,45 +66,53 @@ I joined MLB Advanced Media as they began a transformation from an in-house team
 #### Sr. Director, Product & UX  
 September 2010 - April 2015
 
-* Managed a cross-functional team of 7 people including engineers, UX designers, and Content Designers.
-* Boosted ad revenue 37% YoY by building a patented monetization platform with programmatic integration and targeted ad-serving capability.  [Patent: US20170195373A1](https://patents.google.com/patent/US20170195373A1/)
-* Grew subscription revenue 42% YoY by designing robust creator tools with advanced engagement analytics, script writing education, and advanced audio processing.
+Led product and design through a strategic pivot from a live radio platform to a monetized podcasting ecosystem. As the first design leader, established user-centered practices and design operations, while leading a cross-functional team of 7 engineers, designers, and content strategists.
+
+* Drove 37% YoY ad revenue growth by architecting a patented programmatic advertising platform (US20170195373A1) for targeted podcast monetization
+* Increased subscription revenue by 42% YoY through the development of comprehensive creator tools including analytics, educational content, and audio processing
+
 #### Director of UX Design 
 December 2010 - December 2013
 
-* Increased Daily Active Users YoY +95% by designing a mobile listening experience and refreshed podcast cover artwork.
-* Implemented a global redesign, instituted user-centered design practices, hired and managed design contractors, and defined the standards of quality.
-* UX lead on the launch of Cinchcast, an enterprise conferencing & webinar product.
+* Grew daily active users 95% YoY by launching a mobile-first listening experience and modernizing platform design
+* Designed Cinchcast, a new enterprise conferencing product, from concept to launch.
+
 ### BUZZD City Guide
 #### Director of UX  
 August 2009 - August 2010
 
-Led the design of Buzzd’s mobile city guide. Utilized user-centered practices, directed brand redesign, project managed agile development process.
+Buzzd was a mobile social travel guide for the US. As the UX Director I introduced user-centered product development, directed a brand redesign, and managed agile development process. These accomplishment extended Buzzd's runway by 6 months.
 
-- Increased overall user activity 200+% by redesigning the browse locations UI.
-- Increased adoption 20% by optimizing the onboarding UX getting users to a success state faster.
-- Doubled application speed (cut load times 50%) by indexing the location database, and optimizing the image pipeline to be mobile friendly.
+- Increased overall user activity by 200%+ by redesigning the browse locations UI to meet user expectations.
+- Increased user account activation 20% by optimizing the onboarding UX and delivering customer value faster.
+- Solved the biggest user complaint by increasing app speed 100% with faster location searches, and responsive images.
 
 ### Edelman Digital
 #### Technical Director  
 April 2007 - October 2008
 
-Managed a team of 4 web developers. Led engineering efforts for client projects, business development, UX design, software architecture design, and mentored junior developers.
+- Managed a team of 4 web developers including career development and resource management.
+- Led the software architecture and development of projects for Fortune 500 clients.
+- Drove business development as the technology consultant for new clients.
+
+### Kageki Group
+#### Founder & Principal  
+Jan 2000 - Dec 2005
+
+Kageki is a digital consultancy helping companies navigate ambiguity in 0-1 ideas and organizational transition.
+
+- Hired and managed a 4-person cross-functional team of designers, developers, and business analysts.
+- Founded a social network for live music earning revenue from advertising, ticketing, and referral programs. 
+- Saved a client $100ks/pa, and increased sales by 20% by designing an enterprise digital supply chain.
+- Increased sales by 100% for clients with new online presence.
+
+---
+
 ### Motionbox
 #### Senior User Interface Developer
 March 2006 - April 2007
 
 Motionbox created a novel UI for editing and sharing short clips of video. I prototyped and developed new interfaces in Flash and HTML.
-### Kageki Group
-#### Founder & Principal  
-Jan 2000 - Dec 2005
-
-Founded & led a 4-person digital agency mostly serving music industry clients.
-
-- Managed the finances, daily operations, program management, and business development for the firm.
-- Saved a client $100k/pa in operational costs by rebuilding their content supply chain.
-- Increased sales 100% for three record labels by revitalizing their web presence and fan engagement.
-- Founded a social network for music fans earning a six-figure revenue from advertising, event ticketing, and referral programs.
 
 ### Cambridge Technology Partners
 #### UX Design Technologist
