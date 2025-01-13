@@ -77,7 +77,7 @@ nav.pagination {
 	}
 }
 
-p.gallery,div.gallery-wrap {
+p#gallery,div#gallery-wrap {
     @include fullWidth(100vw);
     display: block;
     margin-bottom: grid.$gutter;

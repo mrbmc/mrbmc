@@ -17,7 +17,7 @@ body.photos {
     #masthead {
         height: calc(100vh - $navbar-height - $thumbSize);
     }
-    section.gallery {
+    section#gallery {
         position: relative;
         padding: 0;
 
@@ -52,7 +52,7 @@ body.photos {
         flex-direction: row;
         justify-content: center;
 
-        &>a,.thumbnail {
+        a,.thumbnail {
             display: block;
             padding: .25vh 0.125vh;
             box-sizing: border-box;
@@ -86,7 +86,7 @@ body.photos {
 
 //tablets & phones
 @media (max-width: grid.$breakpoint) {
-    .gallery {
+    #gallery {
         .detail {
             height: 100vw;
             &>img {

@@ -1,7 +1,8 @@
 ---
 layout: layout.html
-bodyclass: photos
 title: Brian McConnell | Photography
+bodyclass: photos
+permalink: /photos/
 pagination: 
   data: collections.gallery
   size: 20
@@ -9,29 +10,34 @@ pagination:
   alias: pics
 ---
 
-<section id="masthead">
-  <h1>Photography</h1>
-  <p>Mostly horizons, textures, and silhouettes.</p>
-</section>
+{% section "masthead" %}
 
-<section class="gallery">
+# Photography
 
-  {% for p in pics %}
-  <p id="{{p.id}}">
-    <img src="{{p.path}}" data-src="{{p.path}}" alt="{{ p.title }}" data-spy="scroll" class="fade" loading="lazy" />
-  </p>
-  {% endfor %}
+Mostly horizons, textures, and silhouettes.
 
-</section>
+{% endsection %}
+
+
+{% section "gallery" %}
+
+{% for p in pics %}
+
+![{{ p.title }}]({{p.path}}){data-spy="scroll" class="fade" loading="lazy"} {id="{{p.id}}"}
+
+{% endfor %}
+
+{% endsection %}
 
 <nav id="thumbnails">
-  {% for p in pics %}
-  <a href="#{{p.id}}">
-    <img src="{{p.thumb}}" alt="{{ p.title }}" />
-  </a>
-  {% endfor %}
-</nav>
 
+{% for p in pics %}
+
+[![{{ p.titles }}]({{p.thumb}})](#{{p.id}})
+
+{% endfor %}
+
+</nav>
 
 {%if pagination.pages.length > 1 %}
 <nav class="pagination">
@@ -41,10 +47,10 @@ pagination:
 </nav>
 {% endif %}
 
+
 <style type="text/css">
 html {
     scroll-snap-type: y mandatory;
 }
 </style>
-
 <script type="text/javascript" language="javascript" src="/js/photos.min.js"></script>

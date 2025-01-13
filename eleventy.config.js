@@ -18,6 +18,25 @@ module.exports = function(eleventyConfig) {
   // ========================================
   // CONTENT PREP
 
+  // COLLECTION FOR PHOTO GALLERY
+  eleventyConfig.addCollection('gallery', async collectionApi => {
+    let files = await glob('src/images/gallery/*.jpg');
+    //Now filter to non thumb-
+    let images = files.filter(f => {
+      return f.indexOf('thumb') !== 0;
+    });
+    var n = 0;
+    let collection = images.map(i => {
+      return {
+        id: 'p' + ++n,
+        path: i.replace('src/images/', '/images/'),
+        thumb: i.replace('src/images/gallery/', '/images/gallery/thumbs/')
+      }
+    });
+    return collection;
+  });
+
+  //Image optimization
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // which file extensions to process
     extensions: "html",
@@ -40,24 +59,6 @@ module.exports = function(eleventyConfig) {
       loading: "lazy",
       decoding: "async"
     },
-  });
-
-  // COLLECTION FOR PHOTO GALLERY
-  eleventyConfig.addCollection('gallery', async collectionApi => {
-    let files = await glob('images/gallery/*.jpg');
-    //Now filter to non thumb-
-    let images = files.filter(f => {
-      return f.indexOf('thumb') !== 0;
-    });
-    var n = 0;
-    let collection = images.map(i => {
-      return {
-        id: 'p' + ++n,
-        // path: i.replace('./src/images/', '/images/'),
-        thumb: i.replace('images/gallery/', 'images/gallery/thumbs/')
-      }
-    });
-    return collection;
   });
 
 
@@ -83,6 +84,10 @@ module.exports = function(eleventyConfig) {
     }).sort((a,b) => {
       return getSimilarCategories(b.data.tags, tags) - getSimilarCategories(a.data.tags, tags);
     });
+  });
+
+  eleventyConfig.addPairedShortcode('section', (children,id) => {
+    return `<section id="${id}">${children}</section>`;
   });
 
   // REGEX REPLACE FILTER
