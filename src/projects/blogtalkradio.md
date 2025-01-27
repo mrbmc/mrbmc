@@ -6,7 +6,7 @@ date: 2014-01-01
 tags:
   - work
 masthead-title: BlogTalkRadio
-summary: Dynamo was a creator-economy ecosystem. We built an advertising platform that paid podcast hosts a fair income for their work.
+description: Dynamo was a creator-economy ecosystem. We built an advertising platform that paid podcast hosts a fair income for their work.
 timeline: 2013-2015
 ---
 ## How might we reward podcast hosts with a fair income from their work?

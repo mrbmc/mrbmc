@@ -5,7 +5,7 @@ date: 2018-01-01
 tags:
   - work
 eleventyExcludeFromCollections: false
-summary: I led an end-to-end redesign across TV, Mobile and Web of Europe's largest streaming sports service (analogous to ESPN in the US).
+description: I led an end-to-end redesign across TV, Mobile and Web of Europe's largest streaming sports service (analogous to ESPN in the US).
 ---
 ![](/images/portfolio/eurosport/eurosport-product-lineup-2x1.jpg){.fullwidth90}
 

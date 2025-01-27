@@ -2,7 +2,7 @@
 title: Fusion Family Feast
 date: 2024-10-01
 thumbnail: /images/portfolio/fusion-family-feast.jpeg
-summary: A collection of Korean + Jewish fusion recipes.
+description: A collection of Korean + Jewish fusion recipes.
 masthead-image: /images/portfolio/fusion-family-feast.jpeg
 eleventyExcludeFromCollections: false
 tags:

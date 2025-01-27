@@ -2,7 +2,7 @@
 
 {% if label %}## {{ label }}{% endif %}
 
-{% if summary %}{{ summary }}{% endif %}
+{% if description %}{{ description }}{% endif %}
 
 {% for project in projectList reversed %}{% if forloop.index0 < count %}
 <article class="project{%if bodyclass != "home" %} full{% endif %}" onclick="location.href='{{project.url}}'">
@@ -12,7 +12,7 @@
 
 {% if project.data.timeline %}{{project.data.timeline}}{.timeline}{% endif %}
 
-{% if project.data.summary %}{{ project.data.summary }}{.summary}{% endif %}
+{% if project.data.description %}{{ project.data.description }}{.summary}{% endif %}
 
 </header>
 

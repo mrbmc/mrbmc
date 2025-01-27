@@ -2,7 +2,7 @@
 title: What's the lifespan of your design?
 masthead-image: /images/blog/blacklightning-1990.jpg
 date: 2023-09-18
-summary: Designing digital products to be more durable is good business and good ecology.
+description: Designing digital products to be more durable is good business and good ecology.
 tags:
   - design
   - cycling

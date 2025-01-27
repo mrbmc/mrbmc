@@ -6,7 +6,7 @@ masthead-video: /images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
 date: 2020-02-01
 tags:
   - work
-summary: An experience vision looking four years into the future of streaming sports.
+description: An experience vision looking four years into the future of streaming sports.
 timeline: "2019"
 eleventyExcludeFromCollections: true
 ---

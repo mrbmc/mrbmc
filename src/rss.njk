@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
     {% for page in collections.post %}
         <item>
             <title>{{ page.data.title }}</title>
-            {% if summary %}<description>{{ summary }}</description>{% endif %}
+            {% if description %}<description>{{ description }}</description>{% endif %}
             <pubDate>{{ page.data.date.toISOString() }}</pubDate>
             <author>Brian McConnell</author>
             <link>{{ baseURL }}{{ page.url | url }}</link>

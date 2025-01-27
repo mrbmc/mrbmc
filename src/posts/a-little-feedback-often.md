@@ -6,7 +6,7 @@ tags:
   - design
   - process
 eleventyExcludeFromCollections: false
-summary: Product design is like a sealion balancing a ball on its nose. The trick is maintaining a momentum of continual learning.
+description: Product design is like a sealion balancing a ball on its nose. The trick is maintaining a momentum of continual learning.
 masthead-image: /images/blog/sealion-balance.jpg
 ---
 I learned how to balance a broomstick on my chin and to juggle when I was about 14. The best thing about knowing how to juggle is embarrassing my kids in front of their friends.

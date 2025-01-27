@@ -6,7 +6,7 @@ date: 2019-12-05
 tags:
   - work
 eleventyExcludeFromCollections: true
-summary: GameFlow™ was a real-time visualization of momentum in a hockey game that gave fans, players, and teams deeper insights into the most exciting moments.
+description: GameFlow™ was a real-time visualization of momentum in a hockey game that gave fans, players, and teams deeper insights into the most exciting moments.
 timeline: "2019"
 ---
 

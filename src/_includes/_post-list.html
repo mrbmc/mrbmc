@@ -2,7 +2,7 @@
 
 {% if heading %}## {{ heading }}{% endif %}
 
-{% if summary %}{{ summary }}{% endif %}
+{% if description %}{{ description }}{% endif %}
 
 {% for post in postList reversed %}{% if forloop.index0 < count %}
 <article class="post" role="article" onclick="location.href='{{post.url}}'">

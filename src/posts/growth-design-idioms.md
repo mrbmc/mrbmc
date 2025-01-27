@@ -9,7 +9,7 @@ tags:
   - ui
   - usability
   - capitalism
-summary: Recurring themes have emerged over my 15+ years of selling software directly to consumers for Disney, MLB, BlogTalkRadio, et al.
+description: Recurring themes have emerged over my 15+ years of selling software directly to consumers for Disney, MLB, BlogTalkRadio, et al.
 ---
 
 I've seen a few recurring themes emerge over 15+ years of working on "Growth Design" for Disney, MLB, BlogTalkRadio, et al. These nuggets are fortune cookie length to get attention but there is an evidential story behind each one.

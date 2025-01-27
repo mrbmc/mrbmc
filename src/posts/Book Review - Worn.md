@@ -8,7 +8,7 @@ tags:
   - clothing
   - civics
   - environment
-summary: Who's getting robbed when you buy something on sale?
+description: Who's getting robbed when you buy something on sale?
 ---
 When you buy a product for a price that is lower than reasonable, ask yourself how that's possible. A drop in value doesn't happen without a corresponding effect somewhere else. Someone, somewhere, is paying for that discount. 
 

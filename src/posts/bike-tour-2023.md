@@ -2,7 +2,7 @@
 title: Let's go on an adventure!
 masthead-image: /images/blog/vt-tour.jpg
 date: 2023-10-01
-summary: A four-day ride across the Green Mountain state pushed the limits of my endurance for pedaling and listening to my own thoughts.
+description: A four-day ride across the Green Mountain state pushed the limits of my endurance for pedaling and listening to my own thoughts.
 tags:
   - cycling
   - travel

@@ -7,7 +7,7 @@ date: 2017-01-01
 tags:
   - work
 eleventyExcludeFromCollections: true
-summary: NHL.tv was the hockey league's official streaming service. I directed the design of the entire experience on TV devices, web, and mobile.
+description: NHL.tv was the hockey league's official streaming service. I directed the design of the entire experience on TV devices, web, and mobile.
 timeline: 2015-2018
 ---
 I built & led the team that designed the official site, app and streaming service for the National Hockey League. My engagement with the NHL spanned more than five years with my role ranging between team lead, design strategist, art director, storyteller and UX researcher.

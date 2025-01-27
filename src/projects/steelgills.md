@@ -3,7 +3,7 @@ title: Steel Gills
 date: 2017-01-01
 thumbnail: /images/portfolio/steelgills/steelgills-thumb.jpg
 masthead-image: /images/portfolio/steelgills/steelgills-teaser.jpg
-summary: Ocean conservation by raising exposure to nature.
+description: Ocean conservation by raising exposure to nature.
 eleventyExcludeFromCollections: false
 tags:
   - personal

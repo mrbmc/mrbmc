@@ -5,7 +5,7 @@ thumbnail: /images/portfolio/disney-growth/disney-growth-thumb.jpg
 eleventyExcludeFromCollections: false
 tags:
   - work
-summary: Designing the product, team, and program that grew Disney+ from 0 to 105M subscribers.
+description: Designing the product, team, and program that grew Disney+ from 0 to 105M subscribers.
 timeline: 2018-2020
 parallaxHeading:
   - "-1"
