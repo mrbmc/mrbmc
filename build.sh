@@ -216,8 +216,8 @@ if [[ "$1" == "deploy" ]]; then
 	aws cloudfront  create-invalidation --distribution-id $CLOUDFRONT --paths \
 	"/images/*" "/css/*" "/js/*" \
 	"/portfolio/*" "/blog/*" "/resume/*" \
-	"/about/*" "/boids/*" "/colophon/*" \
-	"/index.html" "/404.html" "/error.html" "/";
+	"/about/*" "/gaia/*" "/colophon/*" \
+	"/index.html" "/404.html" "/error.html" "/" "/sitemap.xml";
 	exit;
 fi
 
