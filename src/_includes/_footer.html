@@ -2,21 +2,15 @@
     <div id="contact">
         <h3>Contact</h3>
         <nav>
+
             <a href="#" data-part1="b" data-part2="brianmcconnell" data-part3="me" data-part4="Website inquiry" class="link-email">
-                {% include "images/social-icons/email.svg" %}
+                {% include "images/social-icons/email.svg" %} Email
             </a>
-            <a href="https://www.linkedin.com/in/mrbmc" class="link-linkedin">
-                {% include "images/social-icons/linkedin.svg" %}
-            </a>
-            <a href="https://www.strava.com/athletes/773650" class="link-strava">
-                {% include "images/social-icons/strava.svg" %}
-            </a>
-            <a href="https://github.com/mrbmc" class="link-github">
-                {% include "images/social-icons/github.svg" %}
-            </a>
-            <a href="https://adplist.org/mentors/brian-mcconnell" class="link-adplist">
-                {% include "images/social-icons/adplist.svg" %}
-            </a>
+{% for social in site.socials %}
+{% assign socialimageurl = "images/social-icons/" | append: social.slug | append: ".svg" %}
+<a href="{{social.url}}">{% include socialimageurl %} {{social.name}}</a>
+{% endfor %}
+
         </nav>
     </div>
     <div id="colophon">

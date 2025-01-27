@@ -4,5 +4,32 @@
   "handle":"mrbmc",
   "url": "https://www.brianmcconnell.me",
   "description": "Brian McConnell is a design executive with a unique background in design, product, engineering and entrepreneurship. His mission as a leader is to create a competitive advantage through design.",
-  "moniker":"Design leader. Product builder. Mentor & coach."
+  "moniker":"Design leader. Product builder. Mentor & coach.",
+  "socials":[
+    {
+      "slug":"linkedin",
+      "name":"LinkedIn",
+      "url":"https://www.linkedin.com/in/mrbmc"
+    },
+    {
+      "slug":"github",
+      "name":"GitHub",
+      "url":"https://github.com/mrbmc"
+    },
+    {
+      "slug":"adplist",
+      "name":"ADPList",
+      "url":"https://adplist.org/mentors/brian-mcconnell"
+    },
+    {
+      "slug":"bluesky",
+      "name":"Blue Sky",
+      "url":"https://bsky.app/profile/mrbmc.bsky.social"
+    },
+    {
+      "slug":"strava",
+      "name":"Srava",
+      "url":"https://www.strava.com/athletes/773650"
+    }
+  ]
 }

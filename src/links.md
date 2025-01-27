@@ -11,12 +11,11 @@ header: false
 
 {{site.moniker}}
 
-* <a href="#" data-part1="b" data-part2="brianmcconnell" data-part3="me" data-part4="Website inquiry" class="button link-email">{% include "images/social-icons/email.svg" %} Email</a>
-* <a href="https://www.linkedin.com/in/mrbmc" class="button link-linkedin">{% include "images/social-icons/linkedin.svg" %} LinkedIn</a>
-* <a href="https://github.com/mrbmc" class="button link-github">{% include "images/social-icons/github.svg" %} Github</a>
-* <a href="https://adplist.org/mentors/brian-mcconnell" class="button link-adplist">{% include "images/social-icons/adplist.svg" %} ADPList</a>
-* <a href="https://bsky.app/profile/mrbmc.bsky.social" class="button link-bluesky">{% include "images/social-icons/bluesky.svg" %} BlueSky</a>
-* <a href="https://www.strava.com/athletes/773650" class="button link-strava">{% include "images/social-icons/strava.svg" %} Strava</a>
+* <a href="#" data-part1="b" data-part2="brianmcconnell" data-part3="me" data-part4="Website inquiry" class="button">{% include "images/social-icons/email.svg" %} Email</a>
+{% for social in site.socials %}
+{% assign socialimageurl = "images/social-icons/" | append: social.slug | append: ".svg" %}
+* [{% include socialimageurl %} {{social.name}}]({{social.url}}){.button}
+{% endfor %}
 {.links}
 
 <style type="text/css">

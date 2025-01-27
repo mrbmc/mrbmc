@@ -52,6 +52,7 @@ body {
                     line-height: $itemsize;
                     width: $itemsize;
                     height: $itemsize;
+                    overflow: hidden;
                 }
                 img,svg {
                     width: 100%;
