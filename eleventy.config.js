@@ -54,12 +54,30 @@ module.exports = function(eleventyConfig) {
     widths: ["auto"],
     // widths: [1280],
 
-    // optional, attributes assigned on <img> override these values.
+    filenameFormat: function (id, src, width, format, options) {
+      // id: hash of the original image
+      // src: original image path
+      // width: current width in px
+      // format: current file format
+      // options: set of options passed to the Image call
+      let _src = src.split('/').pop().split(".")[0];
+      return `${_src}-${width}.${format}`;
+    },
+
+   // optional, attributes assigned on <img> override these values.
     defaultAttributes: {
       loading: "lazy",
       decoding: "async"
     },
   });
+  eleventyConfig.addLiquidFilter("getOptimizedImageSrc",function (arg) {
+    if (typeof arg == "undefined") return "";
+    let result = "/images/optimized/";
+        result += arg.split("/").pop();
+        result += "-640.webp";
+    return result;
+  });
+
 
 
 
