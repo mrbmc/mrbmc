@@ -13,20 +13,13 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <link rel="stylesheet" type="text/css" media="screen" href="/css/mini.css" />
-
-<style>
-#main {
-  height: calc(100vh - 2rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-</style>
 </head>
 
 <body class="{{ bodyclass }}">
 
+{% unless header==false %}
 {% include "_header.html" %}
+{% endunless %}
 
 <main id="main">
 
@@ -34,7 +27,9 @@
 
 </main>
 
+{% unless header==false %}
 {% include "_footer.html" %}
+{% endunless %}
 
 </body>
 </html>

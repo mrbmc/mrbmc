@@ -9,51 +9,6 @@
 
 
 // ======================================================================
-// LAYOUT
-body,html {
-    // overflow-x: hidden;
-}
-
-.fullwidth {
-    @include fullWidth(100vw);
-}
-.fullwidth90 {
-    @include fullWidth(90vw);
-}
-.fullheight {
-    @include fullHeight(90vh);
-}
-
-h1,h2,h3,h4,h5,
-p,ul,ol,dl,blockquote,.blockquote {
-    margin: 0 0 1rem 0;
-    padding: 0;
-}
-li, dt {
-    margin-left: 1em;
-    box-sizing: border-box;
-}
-body {
-    main, #main {
-        box-sizing: border-box;
-        margin: 0 auto;
-        padding: grid.$gutter 0;
-        width: grid.$width;
-
-        @media (max-width: grid.$breakpoint) {
-            width: 100%;
-            padding: 0 grid.$gutter;
-            overflow-x: hidden;
-        }
-    }
-}
-
-
-
-
-
-
-// ======================================================================
 // CORE STYLES
 
 html {
@@ -75,6 +30,70 @@ a {
 }
 ::selection {
     background: colors.$selection-color;
+}
+:root {
+    --black:            #{colors.$neutral-10};
+    --gray-dark:        #{colors.$neutral-30};
+    --gray-mid:         #{colors.$neutral-50};
+    --gray-light:       #{colors.$neutral-90};
+    --white:            #{colors.$neutral-100};
+    --white-semi:       #{colors.$neutral-100}54;
+    --brand-color:      #{colors.$brand-color};
+    --on-brand-color:   #{colors.$neutral-100};
+    --brand-complement: #{colors.$brand-complement};
+    --brand-accent:     #{colors.$brand-accent};
+    --breakpoint:       #{grid.$breakpoint};
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black:        #{colors.$neutral-100};
+        --gray-dark:    #{colors.$neutral-90};
+        --gray-mid:     #{colors.$neutral-50};
+        --gray-light:   #{colors.$neutral-30};
+        --white:        #{colors.$neutral-10};
+        --white-semi:   #{colors.$neutral-10}54;
+    };
+}
+
+
+.fullwidth {
+    @include fullWidth(100vw);
+}
+.fullwidth90 {
+    @include fullWidth(90vw);
+}
+.fullheight {
+    @include fullHeight(90vh);
+}
+
+h1,h2,h3,h4,h5,
+p,ul,ol,dl,blockquote,.blockquote {
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+li, dt {
+    margin-left: 1em;
+    box-sizing: border-box;
+}
+body {
+// #main {
+//   height: calc(100vh - 2rem);
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
+    main, #main {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: grid.$gutter 0;
+        width: grid.$width;
+
+        @media (max-width: grid.$breakpoint) {
+            width: 100%;
+            padding: 0 grid.$gutter;
+            overflow-x: hidden;
+        }
+    }
 }
 
 
@@ -181,3 +200,10 @@ blockquote,.blockquote {
 @import "_header.scss";
 
 @import "_footer.scss";
+
+
+
+
+
+
+
