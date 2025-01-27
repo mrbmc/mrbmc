@@ -1,34 +1,12 @@
 @use '_grid.scss';
 @use '_variables.scss';
 
-// @font-face {
-//     font-family:"Neue Montreal";
-//     font-weight: 400;
-//     src:url('/css/fonts/PPNeueMontreal-Book.eot') format('embedded-opentype');
-//     src:url('/css/fonts/PPNeueMontreal-Book.ttf') format('truetype');
-//     src:url('/css/fonts/PPNeueMontreal-Book.woff2') format('woff');
-// }
-// @font-face {
-//     font-family:"Monument Grotesk";
-//     font-weight: 400;
-//     // src:url('/css/fonts/Monument Grotesk Regular.eot') format('embedded-opentype');
-//     // src:url('/css/fonts/Monument Grotesk Regular.ttf') format('truetype');
-//     src:url('/css/fonts/ABCMonumentGrotesk-Regular-Trial.woff2') format('woff');
-// }
-@font-face {
-    font-family:"Tomato";
-    font-weight: 400;
-    // src:url('/css/fonts/Monument Grotesk Regular.eot') format('embedded-opentype');
-    // src:url('/css/fonts/Monument Grotesk Regular.ttf') format('truetype');
-    src:url('/css/fonts/Tomato Grotesk VF.woff2') format('woff');
-}
 // @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 // Typography
 // -------------------------
 $system-font-family:      system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue","HelveticaNeue", Helvetica, Arial, sans-serif;
-$sans-font-family:        "Tomato","Helvetica Neue",$system-font-family;
+$sans-font-family:        "Helvetica Neue",$system-font-family;
 $serif-font-family:       "Cormorant Garamond","Palatino","Georgia","Roboto Serif",Times,serif;
 $mono-font-family:        "Courier New", monospace;
 
