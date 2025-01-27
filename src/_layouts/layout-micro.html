@@ -8,7 +8,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="google-site-verification" content="7vE2o5qgkgIapuGrmnfqWvnVvWEaroo3YFyr6K_wIk4" />
   <meta name="generator" content="eleventy">
-  <title>Brian McConnell | {{ title }}</title>
+  <title>{%if title %}{{ title }} | {% endif %}{{site.title}}</title>
   <meta name="description" content="{%if description %}{{ description }}{%else%}Brian McConnell is a design executive with a unique background in design, product, engineering and entrepreneurship. His mission as a leader is to create a competitive advantage through design.{%endif%}">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
