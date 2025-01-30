@@ -1,6 +1,7 @@
 ---
 title: Design Quality Is A Business Function
 date: 2025-01-24
+masthead-image: /images/blog/quality-stamp.png
 tags:
   - design-strategy
   - design
