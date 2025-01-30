@@ -377,8 +377,8 @@ We designed a scalable framework that could adapt to different billing capabilit
 
 + ![](/images/portfolio/disney-growth/redemption-0.jpg)
 + ![](/images/portfolio/disney-growth/redemption-1.jpg)
-+ ![](/images/portfolio/disney-growth/redemption-2.jpg)
-+ ![](/images/portfolio/disney-growth/redemption-3.jpg)
++ ![](/images/portfolio/disney-growth/redemption-2.png)
++ ![](/images/portfolio/disney-growth/redemption-3.png)
 {.gallery}
 
 ## Chapter 3: Summit{#summit .section}
