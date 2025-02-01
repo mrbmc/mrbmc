@@ -1,76 +1,82 @@
-body {
-    &>footer {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        // color: $gray-800;
-        overflow: hidden;
-        padding: variables.$gutter-xl variables.$gutter;
-        gap: variables.$gutter;
+body > footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // color: $gray-800;
+    overflow: hidden;
+    padding: variables.$gutter-xl variables.$gutter;
+    gap: variables.$gutter;
 
-        @include hero();
+    @include hero();
 
-        h2,h3,h4 {
-            // color: var(--card-text-color);
-            display: none;
+    h2,h3,h4 {
+        // color: var(--card-text-color);
+        display: none;
+    }
+    a {
+        // color: var(--card-text-color);
+        &:hover {
+            // color: var(--well-bold-color);
         }
-        a {
-            // color: var(--card-text-color);
-            &:hover {
-                // color: var(--well-bold-color);
-            }
-        }
+    }
 
-        &>div {
-            nav {
-                display: flex;
-                justify-content: center;
-                a {
-                    margin: 0 (variables.$gutter * 0.5);
-                }
-            }
-            p {
-                text-align: center;
-                margin-bottom: 0;
-            }
-        }
-        #colophon {
+    &>div {
+        nav {
             display: flex;
-            flex-direction: column;
-            font-size: variables.$small-font-size;
-            nav {
-                justify-content: flex-end;
+            justify-content: center;
+            a {
+                margin: 0 (variables.$gutter * 0.5);
             }
         }
-        #contact {
+        p {
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+    #colophon {
+        display: flex;
+        flex-direction: column;
+        font-size: variables.$small-font-size;
+        nav {
+            justify-content: flex-end;
+        }
+    }
+    #contact {
+        nav {
+            $itemsize: 1.38rem;
+
+            a {
+                font-size: $itemsize;
+                line-height: $itemsize;
+                width: $itemsize;
+                height: $itemsize;
+                overflow: hidden;
+            }
+            img,svg {
+                width: 100%;
+                height: 100%;
+            }
+            a.link-linkedin svg {
+                filter: saturate(0);
+                // filter: hue-rotate(38deg) brightness(0.9);
+
+                //brand hsb: 238 82 66;
+                //linkedin hsb: 199/100/73;
+            }
+            a.link-medium svg {
+                filter: invert(100%);
+            }
+            a.link-strava svg {
+                filter: saturate(0);
+            }
+        }
+    }
+    @media (max-width: variables.$breakpoint) {
+        flex-direction: column;
+        #colophon {
             nav {
-                $itemsize: 1.38rem;
-
-                a {
-                    font-size: $itemsize;
-                    line-height: $itemsize;
-                    width: $itemsize;
-                    height: $itemsize;
-                    overflow: hidden;
-                }
-                img,svg {
-                    width: 100%;
-                    height: 100%;
-                }
-                a.link-linkedin svg {
-                    filter: saturate(0);
-                    // filter: hue-rotate(38deg) brightness(0.9);
-
-                    //brand hsb: 238 82 66;
-                    //linkedin hsb: 199/100/73;
-                }
-                a.link-medium svg {
-                    filter: invert(100%);
-                }
-                a.link-strava svg {
-                    filter: saturate(0);
-                }
+                justify-content: center;
             }
         }
     }
