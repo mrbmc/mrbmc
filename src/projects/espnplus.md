@@ -6,8 +6,9 @@ _masthead-video: /images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
 date: 2018-04-12
 tags:
   - work
-description: I led Growth Design for the launch of ESPN+ in a close partnership with the team in Bristol. 0-26M subscribers in two years.
+description: Growth Design for ESPN+ and a vision for the future of streaming sports.
 timeline: 2017-2018
+eleventyExcludeFromCollections: true
 ---
 ## ESPN+ Launch
 
