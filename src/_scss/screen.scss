@@ -45,7 +45,6 @@
     --hero-background:       #{colors.$neutral-30};
     --hero-text-color:       #{colors.$neutral-90};
     --hero-bold-color:       #{colors.$neutral-100};
-
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -139,7 +138,7 @@ ul.inline,ol.inline {
 }
 hr {
     background: none;
-    margin: variables.$gutter-xl auto;
+    margin: var(variables.$gutter-xl) auto;
     height: 0px;
     width: 38w;
     max-width: 80%;
@@ -150,7 +149,7 @@ table {
     width: 100%;
     max-width: 100%;
     border-spacing: 0em;
-    margin-bottom: (variables.$base-line-height * 1em);
+    margin-bottom: variables.$gutter;
     background: var(--body-background);
     overflow-x: scroll;
     display: block;
@@ -168,6 +167,8 @@ table {
     }
     &.rotate {
         @include transpose_table;
+        @media (min-width: variables.$breakpoint) {
+        }
     }
 }
 .positive,.success {
@@ -189,7 +190,7 @@ table {
     padding: variables.$gutter;
     border: 1px solid var(--border-color);
     border-radius: variables.$border-radius;
-    box-shadow: inset 1px 1px 0px rgba(255,255,255,.08), inset -1px 1px 0px rgba(255,255,255,.05), 0 variables.$shadow-offset variables.$shadow-depth variables.$shadow-color;
+    box-shadow: inset 1px 1px 0px rgba(255,255,255,.08), inset -1px 1px 0px rgba(255,255,255,.05), variables.$shadow;
 
     background: var(--card-background);
     color: var(--card-text-color);
@@ -222,7 +223,7 @@ table {
 
 blockquote,.blockquote {
     padding: 0 variables.$gutter;
-    margin: variables.$gutter 0 variables.$gutter (variables.$gutter * -1);
+    margin: variables.$gutter 0 variables.$gutter calc(variables.$gutter * -1);
     border-left: solid 4px var(--text-secondary);
     color: var(--text-secondary);
 
@@ -259,53 +260,6 @@ blockquote,.blockquote {
 @import "_header.scss";
 
 @import "_footer.scss";
-
-ol.sidenav {
-    position: sticky;
-    top: 0;//calc(100vh + 3em);
-
-    position: fixed;
-    left: 0;
-    top: calc(50% - (variables.$base-line-height * 2.5em));
-
-    list-style-type: none;
-    background: var(--body-background);
-    padding: .5em 0;
-    display: flex;
-    justify-content: center;
-    box-shadow: variables.$shadow-offset 0 variables.$shadow-depth variables.$shadow-color;
-
-    flex-direction: column;
-
-    &>li {
-        position: relative;
-        display: block;
-        padding: 0.25em 0.5em;
-        margin: 0;
-        &:hover {
-            ol {
-                display: block;
-            }
-        }
-    }
-
-    ol {
-        display: none;
-        position: absolute;
-        background: var(--body-background);
-        top: -0.5em;
-        left: 100%;
-        border-radius: variables.$border-radius;
-        box-shadow: 0 variables.$shadow-offset variables.$shadow-depth variables.$shadow-color;
-
-        li {
-            list-style: none;
-            white-space: nowrap;
-            padding: 0.25em 0.5em;
-            margin: 0;
-        }
-    }
-}
 
 ul.nav,ol.nav {
     display: flex;
@@ -349,7 +303,7 @@ details {
     }
     em,i,dd+dt {
         color: var(--text-secondary);
-        font-size: variables.$small-font-size;
+        @include small-type();
     }
     b,strong,dd {
         color: var(--text-tertiary);
@@ -390,83 +344,50 @@ li, dt {
 }
 body {
     > main {
-        box-sizing: border-box;
+        box-sizing: content-box;
         max-width: variables.$width;
         margin: 0 auto;
-        padding: 0;
-        @media (max-width: variables.$breakpoint) {
-            margin: 0 variables.$gutter;
-        }
+        padding: 0 variables.$gutter;
+
+        // @media (max-width: variables.$breakpoint) {
+        //     margin: 0 variables.$gutter;
+        //     padding: 0;
+        // }
     }
 }
 .grid {
+    box-sizing: border-box;
     display: grid;
+    // margin-top: variables.$gutter;
+    // margin-bottom: variables.$gutter;
+    // margin-right: 0;
+
     grid-template-columns: repeat(auto-fit, minmax(1em,2fr));
-    grid-auto-flow: column;
-    grid-gap: (variables.$gutter * 2);
-    margin-top: variables.$gutter;
-    margin-bottom: variables.$gutter;
+    grid-auto-flow: row;
+    grid-gap: variables.$gutter;
 
     &>* {
+        box-sizing: border-box;
         list-style: none;
         margin: 0;
     }
-    &.x2x2 {
-        grid-auto-flow: row;
+    &.cols2 {
         grid-template-columns: repeat(2, 1fr);
     }
-    &.x3x1 {
-        grid-auto-flow: row;
+    &.cols3 {
+        // grid-auto-flow: row;
         grid-template-columns: repeat(3, 1fr);
     }
 
     @media (max-width: variables.$breakpoint) {
-        grid-auto-flow: column;
-    }
-}
-.mosaic {
-    display: grid;
-    gap: variables.$gutter;
-    grid-template-columns: repeat(12, 1fr);
-    background: var(--well-background);
-    grid-auto-flow: row;
-    list-style: none;
-    margin-top: variables.$gutter;
-    margin-bottom: variables.$gutter;
-    padding: variables.$gutter variables.$gutter;
-    box-sizing: border-box;
-
-    li {
-        padding: 0;
-        margin: 0;
-        img {
-            display: block;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: 50% 0%;
-        }
-        &.contain {
-            img {
-                object-fit: contain;
-                object-position: 50% 50%;
-            }
-        }
-        @for $i from 1 through 12 {
-            &.col#{$i} {
-                grid-column: span $i;
-            }
-            &.row#{$i} {
-                grid-row: span $i;
-            }
-        }
-        &.clear {
-            grid-row: 3 / span 2;
+        grid-gap: variables.$gutter;
+        &[class*="cols"] {
+            grid-template-columns: repeat(1, 1fr);        
         }
     }
 }
 main > section {
-    margin-bottom: variables.$gutter * 2;
+    margin-bottom: var(variables.$gutter-xl);
 }
 
 

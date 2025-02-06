@@ -96,7 +96,7 @@ Growth Team in December 2020 {.caption}
 
 We established  **Experience Principles** for Disney+ because we've seen them improve the quality of design decisions on complex projects. Writing these with our cross-functional team made these real living ideas that people would say while collaborating.
 
-<div class="grid x2x2 fullwidth90">
+<div class="grid cols2 fullwidth">
 	<details class="card">
 	<summary>"First stream, first."</summary>
 Disney's competitive advantage is that their content is <strong>already known and beloved</strong>. We believed escorting guests into a browsing experience of familiar content would lead them to their <em>first view</em> as quickly as possible. The first view was more valuable to us than collecting marketing information, or personalized onboarding.
@@ -356,8 +356,7 @@ Disney+ became the fastest-growing streaming service *ever*.
 <dd>+$48.36</dd>
 <dt>Aug 2019 - Dec 2020</dt></dl></div>
 
-
-![growth chart](/images/portfolio/disney-growth/chart-disney-growth.svg)
+{% include "./images/portfolio/disney-growth/chart-disney-growth.svg" %}
 
 ### Takeaways {#takeaways}
 
@@ -371,6 +370,10 @@ In mid-2021 I took on a new opportunity within Disney Streaming to lead design f
 <style>
 @media (prefers-color-scheme: dark) {
 /* 	#main img[src*="svg"] { filter:invert(1) hue-rotate(180deg);} */
+}
+main>svg {
+	max-width: 100%;
+	height: auto;
 }
 h2#basecamp {
     background-image: url(/images/portfolio/disney-growth/everest-basecamp-web.jpg);

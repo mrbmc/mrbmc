@@ -78,7 +78,7 @@ module.exports = function(eleventyConfig) {
     return result;
   });
 
-  eleventyConfig.addWatchTarget("./src/css");
+  eleventyConfig.addWatchTarget("./src/css/*.css");
 
 
 
@@ -101,8 +101,12 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  eleventyConfig.addPairedShortcode('section', (children,id,_class) => {
-    return `<section id="${id}" class="${_class}">${children}</section>`;
+  eleventyConfig.addPairedShortcode('section', (children,_id,_class) => {
+    let result = `<section`;
+    if(_id) result += ` id="${_id}"`;
+    if(_class) result += ` class="${_class}"`;
+    result += `>${children}</section>`;
+    return result;
   });
 
   // REGEX REPLACE FILTER
@@ -145,14 +149,16 @@ module.exports = function(eleventyConfig) {
   // BUILD ASSETS
   eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
-  eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
+  eleventyConfig.addPassthroughCopy({"src/robots.txt": "/robots.txt" });
   eleventyConfig.addPassthroughCopy({"src/images/favicon/favicon.ico":"favicon.ico"});
+  eleventyConfig.addPassthroughCopy({"src/css/screen.*":"css/"});
+  // don't passthrough the src/css dir because we inline it
+  // eleventyConfig.addPassthroughCopy({"src/css":"css"});
 
   // We enable the passthrough for development purposes.
   // This updates the build with realtime image updates.
-  // eleventyConfig.addPassthroughCopy({"src/css":"css"});
-  eleventyConfig.addPassthroughCopy({"src/css/screen.*":"css/"});
   eleventyConfig.addPassthroughCopy({"src/images":"images"});
+
 
 
   eleventyConfig.setServerOptions({

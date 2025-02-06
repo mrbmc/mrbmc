@@ -79,4 +79,46 @@ body.project {
             height: 56.25vw;
         }
     }
+    .mosaic {
+        display: grid;
+        gap: var(variables.$gutter);
+        grid-template-columns: repeat(12, 1fr);
+        background: var(--well-background);
+        grid-auto-flow: row;
+        list-style: none;
+        margin-top: var(variables.$gutter);
+        margin-bottom: var(variables.$gutter);
+        padding: var(variables.$gutter);
+        box-sizing: border-box;
+
+        li {
+            padding: 0;
+            margin: 0;
+            img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: 50% 0%;
+            }
+            &.contain {
+                img {
+                    object-fit: contain;
+                    object-position: 50% 50%;
+                }
+            }
+            @for $i from 1 through 12 {
+                &.col#{$i} {
+                    grid-column: span $i;
+                }
+                &.row#{$i} {
+                    grid-row: span $i;
+                }
+            }
+            &.clear {
+                grid-row: 3 / span 2;
+            }
+        }
+    }
+
 }

@@ -7,7 +7,7 @@ permalink: /about/
 cssfile: "css/about.css"
 ---
 
-{% section "bio" %}
+{% section "bio","fullwidth" %}
 
 # Designer and <br />Product Maker.
 

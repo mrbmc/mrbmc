@@ -22,15 +22,16 @@
       }
 
       p {
-        color: var(--text-secondary);
+        // color: var(--text-secondary);
         margin-bottom: 0;
-        font-size: variables.$small-font-size;
+        // font-size: variables.$small-font-size;
       }
 
-      p.timeline {
+      .timeline {
         display: none;
-        font-weight: variables.$bold-font-weight;
-        color: var(--gray-light);
+        // font-weight: variables.$bold-font-weight;
+        margin: 0;
+        color: var(--text-secondary);
       }
 
     }
@@ -81,11 +82,11 @@ body.portfolio {
 
       header {
         flex-basis: 38%;
-        h3 {
-          a {
-            color: var(--text-secondary);
-          }
-        }
+        // h3 {
+        //   a {
+        //     color: var(--text-secondary);
+        //   }
+        // }
       }
 
       figure, .figure {

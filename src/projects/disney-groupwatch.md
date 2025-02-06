@@ -89,7 +89,7 @@ The market research we collected along with the previous UX research gave us a f
    
 3. **GroupWatch is additive to existing behaviors**   
    Use mobile devices for communication and TVs for viewing. Tap into existing social norms for planning and watching.{.card}
-{.hero .grid .x3x1}
+{.hero .grid .cols3}
 ### Design Principles
 
 Principles are a powerful way to align teams in big programs and guide decisions about tradeoffs in the design. Principles must address the specific user goals and business constraints of a project. Generic principles about "ease of use" and "delightful" do not aid critical thinking in a specific context.

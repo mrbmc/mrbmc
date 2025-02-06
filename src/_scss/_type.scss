@@ -1,141 +1,200 @@
+@use 'sass:math';
 @use '_grid.scss';
 @use '_variables.scss';
-
 // @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+// Typography
+// -------------------------
+$system-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+$sans-font-family: "Helvetica Neue", $system-font-family;
+$serif-font-family: "Cormorant Garamond", "Palatino", "Georgia", "Roboto Serif", Times, serif;
+$mono-font-family: "Courier New", monospace;
+$base-font-family: $sans-font-family;
+$base-font-weight: 400;
+$bold-font-weight: 600;
+$base-font-size: 1.5em;
+//math.div(24, 16);
+//16px is the browser default so the numerator is your desired p size
+$base-line-height: 1.62;
+$serif-font-weight: 200;
+$small-font-size: .81em;
+$large-font-size: 1.19em;
+$heading-font-family: $base-font-family;
+$heading-font-weight: $base-font-weight;
+$display-font-family: $base-font-family;
+$display-font-weight: $base-font-weight;
+$navbar-font-family: $base-font-family;
+$navbar-font-weight: $base-font-weight;
 
-@mixin typeset($face, $weight, $size: 1em, $line: 1.2, $kerning: 0) {
-    font-size: $size;
-    font-family: $face;
-    font-weight: $weight;
-    line-height: $line;
-    letter-spacing: $kerning;
+@mixin typeset($face, $weight, $size:1em, $line:1.2, $kerning:0) {
+  font-size: $size;
+  font-family: $face;
+  font-weight: $weight;
+  line-height: $line;
+  letter-spacing: $kerning;
 }
 
+@mixin small-type() {
+  font-size: $small-font-size;
+}
 
 :root {
-    -webkit-font-smoothing: antialiased;
-    text-rendering:optimizeLegibility;
-    // -moz-osx-font-smoothing: grayscale;
-    // font-smooth: never;
-    font-size: clamp(16px, 1.8vw, 40px);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: clamp(18px, 1.8vw, 40px);
+  --type-scale: 1.19;
+
+  @media (max-width:variables.$breakpoint) {
+    --type-scale: 1.12;
+  }
+
 }
 
 body {
-    @include typeset(variables.$base-font-family, variables.$base-font-weight, 1rem, variables.$base-line-height, -0.0125em);
-}
-.serif {
-    font-family: variables.$serif-font-family;
-    font-weight: variables.$serif-font-weight;
-}
-a {
-    text-decoration: underline;
-    // text-decoration: none;
-    // font-weight: variables.$bold-font-weight;
-}
-h1,h2,h3,h4,h5 {
-    a {
-        text-decoration: none;
-    }
-}
-h1 {
-    @include typeset(variables.$display-font-family, variables.$display-font-weight, (1rem * pow(variables.$type-scale,8)), 1.0, -0.0em);
-}
-h2 {
-    @include typeset(variables.$heading-font-family, variables.$display-font-weight, (1rem * pow(variables.$type-scale,6)), 1.2, -0.0375em);
-}
-h3 {
-    @include typeset(variables.$base-font-family, variables.$heading-font-weight, (1rem * pow(variables.$type-scale,2)), 1.2, -0.0250em);
-}
-h4 {
-    @include typeset(variables.$base-font-family, variables.$heading-font-weight, (1rem * pow(variables.$type-scale,1)), 1.2, -0.0250em);
-}
-h5 {
-    @include typeset(variables.$heading-font-family, variables.$heading-font-weight, (1rem * pow(variables.$type-scale,1)), 1.2, -0.0em);
-}
-// p, li, dt, dd {
-// }
-strong,b {
-    font-weight: variables.$bold-font-weight;
-}
-em {
-    font-style: italic;
-}
-code,pre {
-    font-family: variables.$mono-font-family;
-    font-weight: 800;
-}
-.eyebrow{
-    @include typeset(variables.$heading-font-family, variables.$heading-font-weight, (1rem * pow(variables.$type-scale,0)), 1.2, 0.25em);
-    text-transform: uppercase;
-}
-.large,.large-type,.largeType {
-    font-size: variables.$large-font-size;
-}
-.small,.small-type {
-    font-size: variables.$small-font-size;
-}
-.caption,.legal {
-    font-size: variables.$small-font-size;
-    font-style: italic;
+  @include typeset($base-font-family, $base-font-weight, 1rem, $base-line-height, -0.0125em);
 }
 
-blockquote,.blockquote {
-    // font-style: italic;
-    font-family: variables.$serif-font-family;
-    font-weight: variables.$serif-font-weight;
-    font-size: 133%;
-    p:last-of-type {
-        margin-bottom: 0;
-    }
+.serif {
+  font-family: $serif-font-family;
+  font-weight: $serif-font-weight;
+}
+
+a {
+  text-decoration: underline;
+  // text-decoration: none;
+  // font-weight: variables.$bold-font-weight;
+}
+
+h1, h2, h3, h4, h5 {
+  a {
+    text-decoration: none;
+  }
+
+}
+
+h1 {
+  @include typeset($display-font-family, $display-font-weight, calc(1rem * pow(var(--type-scale), 8)), 1.0, -0.0em);
+}
+
+h2 {
+  @include typeset($heading-font-family, $display-font-weight, calc(1rem * pow(var(--type-scale), 6)), 1.2, -0.0375em);
+}
+
+h3 {
+  @include typeset($base-font-family, $heading-font-weight, calc(1rem * pow(var(--type-scale), 2)), 1.2, -0.0250em);
+}
+
+h4 {
+  @include typeset($base-font-family, $heading-font-weight, calc(1rem * pow(var(--type-scale), 1)), 1.2, -0.0250em);
+}
+
+h5 {
+  @include typeset($heading-font-family, $heading-font-weight, calc(1rem * pow(var(--type-scale), 1)), 1.2, -0.0em);
+}
+
+strong, b {
+  font-weight: $bold-font-weight;
+}
+
+em {
+  font-style: italic;
+}
+
+code, pre {
+  font-family: $mono-font-family;
+  font-weight: 800;
+}
+
+.eyebrow {
+  @include typeset($heading-font-family, $heading-font-weight, calc(1rem * pow(var(--type-scale), 0)), 1.2, 0.25em);
+  text-transform: uppercase;
+}
+
+.large, .large-type, .largeType {
+  font-size: $large-font-size;
+}
+
+.small, .small-type {
+  font-size: $small-font-size;
+}
+
+.caption, .legal {
+  font-size: $small-font-size;
+  font-style: italic;
+}
+
+blockquote, .blockquote {
+  // font-style: italic;
+  font-family: $serif-font-family;
+  font-weight: $serif-font-weight;
+  font-size: 133%;
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
 }
 
 #header {
-    a {
-        @include typeset(variables.$navbar-font-family, variables.$navbar-font-weight, 1rem, variables.$base-line-height, -0.0125em);
-        text-transform: uppercase;
-        text-decoration: none;
+  a {
+    @include typeset($navbar-font-family, $navbar-font-weight, 1rem, $base-line-height, -0.0125em);
+    text-transform: uppercase;
+    text-decoration: none;
 
-        // &:hover {
-        //     text-decoration: none;
-        // }
-    }
-    .logo {
-        @include typeset(variables.$display-font-family, variables.$display-font-weight, 1rem, (variables.$navbar-height * .62), 0.0em);
-    }
+    // &:hover {
+    //       text-decoration: none;
+    // }
+
+  }
+
+  .logo {
+    @include typeset($display-font-family, $display-font-weight, 1rem, (variables.$navbar-height * .62), 0.0em);
+  }
+
 }
 
 body.blog {
-    #post-detail {
-        font-family: variables.$serif-font-family;
-        font-weight: variables.$serif-font-weight;
-        letter-spacing: -0.0em;
-    }
+  #post-detail {
+    font-family: $serif-font-family;
+    font-weight: $serif-font-weight;
+    letter-spacing: -0.0em;
+  }
+
 }
 
 table {
-    thead {
-        th {
-            font-weight: variables.$bold-font-weight;
-            line-height: 1;
-            font-size: variables.$small-font-size;
-        }
+  thead {
+    th {
+      font-weight: $bold-font-weight;
+      line-height: 1;
+      font-size: $small-font-size;
     }
-    tbody {
-        td {
-            font-size: variables.$small-font-size;
-        }
+
+  }
+
+  tbody {
+    td {
+      font-size: $small-font-size;
     }
+
+  }
+
 }
+
 .kpi {
-    dt,em,i {
-        font-style: normal;
-    }
-    b,strong,dd {
-        @include typeset(variables.$display-font-family, variables.$display-font-weight, (1rem * pow(variables.$type-scale,6)), 1.2, -0.0125em);
-    }
+  dt, em, i {
+    font-style: normal;
+  }
+
+  b, strong, dd {
+    @include typeset($display-font-family, $display-font-weight, calc(1rem * pow(var(--type-scale), 6)), 1.2, -0.0125em);
+  }
+
 }
+
 details {
-    summary {
-        @include typeset(variables.$heading-font-family, variables.$heading-font-weight, 1.0rem, 1.2, -0.0125em);
-    }
+  summary {
+    @include typeset($heading-font-family, $heading-font-weight, 1.0rem, 1.2, -0.0125em);
+  }
+
 }

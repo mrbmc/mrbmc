@@ -9,7 +9,6 @@ body.about {
     main,#main {
         #bio {
             box-sizing: border-box;
-            @include mixins.fullWidth();
             padding: variables.$gutter-xl variables.$gutter;
             min-height: 38vw;
 
@@ -52,7 +51,7 @@ body.about {
     }
 
     img[alt="Disney"] {
-        height: (variables.$base-line-height * 1em);
+        height: 1.62em;
         width:auto;
         display:inline;
         margin-bottom: -.4em;

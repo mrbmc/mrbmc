@@ -18,11 +18,12 @@
         transition: all variables.$speed variables.$easing;
 
         header {
-            flex-basis: 62%;
+            flex-basis: 81%;
             h3 {
                 margin: 0;
                 a {
-                  color: var(--text-secondary);
+                    transition: color variables.$speed variables.$easing;
+                //   color: var(--text-secondary);
                 }
             }
             p {
@@ -31,7 +32,7 @@
             }
         }
         figure,.figure {
-            flex-basis: 38%;
+            flex-basis: 19%;
             border-radius: variables.$border-radius;
             overflow: hidden;
             margin-bottom: 0;
@@ -48,13 +49,21 @@
             z-index: 3;
             figure,.figure {
                 box-shadow: variables.$shadow;
-                filter: saturate(120%);
+                filter: saturate(110%);
             }           
-            transform: scale(1.05);
+            transform: scale(1.02);
         }
-
-
     }   
+    &:has(article:hover) {
+        article:not(:hover) header {
+            h3 {
+                a {
+                  color: var(--text-secondary);
+                }
+            }
+        }
+        
+    }
 }
 
 body.blog #post-list {

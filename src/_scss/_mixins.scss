@@ -73,11 +73,11 @@
   flex: 1 0 math.div(100%, $cols);
 }
 
-@mixin fullWidth($limit:100vw) {
-    width: $limit;
+@mixin fullWidth($_limit:100vw) {
+    width: $_limit;
 
     @media (min-width: variables.$breakpoint) {
-        margin-left: calc((($limit - variables.$width) * -0.5));
+      margin-left: calc((($_limit - variables.$width) * -0.5));
     }
     @media (max-width: variables.$breakpoint) {
         margin-left: (variables.$gutter * -1);

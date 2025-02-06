@@ -10,7 +10,7 @@
 
 ### [{{post.data.title}}]({{ post.url }})
 
-{{ post.data.date | date: "%Y-%m-%d" }}{.date}
+{{ post.data.date | date: "%b %-e%q, %Y" }}{.date}
 
 </header>
 

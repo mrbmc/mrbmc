@@ -599,7 +599,7 @@ void main() {
                       value: this.amp
                   }),
                   noiseSpeed: new this.minigl.Uniform({
-                      value: 6.2
+                      value: 10
                   }),
                   noiseFlow: new this.minigl.Uniform({
                       value: 3
@@ -633,7 +633,7 @@ void main() {
                   type: "vec2"
               }),
               noiseSpeed: new this.minigl.Uniform({
-                  value: 7 + .3 * e
+                  value: 11 + .3 * e
               }),
               noiseFlow: new this.minigl.Uniform({
                   value: 6.5 + .3 * e

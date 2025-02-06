@@ -49,6 +49,10 @@
         {
             "name": "MRBMC",
 			"shell_cmd": "/Users/brianmcconnell/Sites/mrbmc/build.sh js",
+        },
+        {
+            "name": "MCGULP",
+			"shell_cmd": "gulp",
         }
 	],
 }

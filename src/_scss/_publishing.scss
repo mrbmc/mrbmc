@@ -129,7 +129,8 @@ p#gallery,div.gallery-wrap {
             list-style: none;
             margin: 0 (variables.$gutter * 0.5);
 			color: var(--text-secondary);
-			font-size: variables.$small-font-size;
+			// font-size: variables.$small-font-size;
+            // @include small-type();
             img {
                 display: block;
                 height: calc(16vh - (variables.$gutter * 0.5));
