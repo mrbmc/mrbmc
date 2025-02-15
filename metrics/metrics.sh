@@ -2,7 +2,7 @@
 
 BASE=$(dirname "$0");
 
-start_date=$(date -v-300d +%Y%m%d);
+start_date=$(date -v-30d +%Y%m%d);
 start_day=$(date -j -f %Y%m%d $start_date +%d);
 start_month=$(date -j -f %Y%m%d $start_date +%m);
 start_seconds=$(date -j -f %Y%m%d $start_date +%s)
