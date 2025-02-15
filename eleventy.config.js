@@ -13,8 +13,6 @@ const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
 
 module.exports = function(eleventyConfig) {
 
-
-
   // ========================================
   // CONTENT PREP
 
@@ -34,6 +32,18 @@ module.exports = function(eleventyConfig) {
       }
     });
     return collection;
+  });
+
+  // RELATED POSTS
+  const getSimilarCategories = function(categoriesA, categoriesB) {
+    return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
+  };
+  eleventyConfig.addLiquidFilter('similarPosts', function (collection, path, tags) {
+    return collection.filter((post) => {
+      return getSimilarCategories(post.data.tags, tags) >= 1 && post.data.page.inputPath !== path;
+    }).sort((a,b) => {
+      return getSimilarCategories(b.data.tags, tags) - getSimilarCategories(a.data.tags, tags);
+    });
   });
 
   //Image optimization
@@ -78,9 +88,6 @@ module.exports = function(eleventyConfig) {
     return result;
   });
 
-  eleventyConfig.addWatchTarget("./src/css/*.css");
-
-
 
 
   // ========================================
@@ -88,18 +95,6 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.setLibrary('md', markdownLib);
-
-  // RELATED POSTS
-  const getSimilarCategories = function(categoriesA, categoriesB) {
-    return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
-  };
-  eleventyConfig.addLiquidFilter('similarPosts', function (collection, path, tags) {
-    return collection.filter((post) => {
-      return getSimilarCategories(post.data.tags, tags) >= 1 && post.data.page.inputPath !== path;
-    }).sort((a,b) => {
-      return getSimilarCategories(b.data.tags, tags) - getSimilarCategories(a.data.tags, tags);
-    });
-  });
 
   eleventyConfig.addPairedShortcode('section', (children,_id,_class) => {
     let result = `<section`;
@@ -145,13 +140,15 @@ module.exports = function(eleventyConfig) {
 
 
 
+
+
   // ========================================
   // BUILD ASSETS
   eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
   eleventyConfig.addPassthroughCopy({"src/robots.txt": "/robots.txt" });
   eleventyConfig.addPassthroughCopy({"src/images/favicon/favicon.ico":"favicon.ico"});
-  eleventyConfig.addPassthroughCopy({"src/css/screen.*":"css/"});
+  // eleventyConfig.addPassthroughCopy({"src/css/screen.*":"css/"});
   // don't passthrough the src/css dir because we inline it
   // eleventyConfig.addPassthroughCopy({"src/css":"css"});
 
@@ -159,6 +156,7 @@ module.exports = function(eleventyConfig) {
   // This updates the build with realtime image updates.
   eleventyConfig.addPassthroughCopy({"src/images":"images"});
 
+  eleventyConfig.addWatchTarget("www/css/screen.css");
 
 
   eleventyConfig.setServerOptions({
@@ -170,7 +168,7 @@ module.exports = function(eleventyConfig) {
   //   },
     port: 10000,
     showVersion: true,
-    watch: ["www/css/","www/js/mrbmc.min.js"],
+    watch: ["www/css/","src/css/","www/js/mrbmc.min.js"],
   });
 
   // ========================================

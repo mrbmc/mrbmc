@@ -1,45 +1,75 @@
-const { series } = require('gulp');
+const { src, dest, series } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const uglify = require('gulp-uglify');
+const cleanCSS = require('gulp-clean-css'); // If you want CSS minification
+const rsync = require('gulp-rsync');
+const exec = require('child_process').exec;
 
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var pipeline = require('readable-stream').pipeline;
+// Define paths
+const paths = {
+  // js: 'src/_js/**/*.js',
+  js: ['src/_js/mrbmc.js'],
+  css: 'src/_scss/!(_*).scss',
+  images: 'src/images/**/*',
+  html: ['src/**/*.md', 'src/**/*.njk'] // Eleventy source files (assuming Markdown or Nunjucks)
+};
 
-  // build_js;
-
-  // build_static;
-
-  // build_assets;
-
-  // build_garbage;
-
-
-function jsTranspile(cb) {
-
-  // echo " Gradient JS";
-  // uglifyjs -m \
-  //   -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-  //   --source-map url=gradient.min.js.map \
-  //   -o $OUT/js/gradient.min.js \
-  //   $SRC/_js/gradient.js;
-
-  return pipeline(
-        gulp.src('./src/_js/gradient.js'),
-        uglify(),
-        gulp.dest('./www/js')
-  );
-  // cb();
+// Compile and minify JavaScript
+function buildJS() {
+  return src(paths.js)
+    .pipe(uglify())
+    .pipe(dest('www/js'));
 }
 
-function cssTranspile(cb) {
-  cb();
+// Compile SCSS to CSS
+function compileCSS() {
+  return src(paths.css)
+    .pipe(sass({ 
+      outputStyle: 'compressed', 
+      sourceMaps: false
+    }).on('error', sass.logError))
+    .pipe(cleanCSS()) // Optional, if you want CSS minification
+    .pipe(dest('www/css'));
 }
 
-function assets(cb) {
-  cb();
+// Build HTML with Eleventy
+function buildHTML() {
+  return exec('npx @11ty/eleventy', (err, stdout) => {
+    console.log(stdout);
+    if (err) throw err;
+  });
 }
 
-function garbage(cb) {
-  cb();
+// Sync static assets (images)
+function syncAssets() {
+  const options = {
+    root: 'src/images/',
+    destination: 'www/images',
+    exclude: ['portfolio/**/*'],
+    delete: true,
+    progress: true
+  };
+  return src(paths.images).pipe(rsync(options));
 }
 
-exports.default = series(jsTranspile,cssTranspile,assets,garbage);
+// Clean up unnecessary files (garbage collection)
+function cleanUp() {
+  const dirs = [
+    `${__dirname}/www/*/node_modules`,
+    `${__dirname}/www/metrics`
+  ];
+
+  // Implement your garbage collection logic here using shell commands or Node.js
+  console.log("Garbage Collection: Not implemented in Gulp tasks");
+
+  return Promise.resolve();
+}
+
+// Define default task
+exports.default = series(
+  buildJS,
+  compileCSS,
+  buildHTML,
+  syncAssets,
+  cleanUp
+);

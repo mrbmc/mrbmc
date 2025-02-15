@@ -25,78 +25,89 @@ function build_js () {
 	echo " Gradient JS";
 	uglifyjs -m \
 		-c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		--source-map url=gradient.min.js.map \
-		-o $OUT/js/gradient.min.js \
+		--source-map url=gradient.js.map \
+		-o $OUT/js/gradient.js \
 		$SRC/_js/gradient.js;
 
 	# echo " home JS";
 	# mkdir -m755 -p $OUT/js;
 	# uglifyjs -m \
 	# 	-c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-	# 	--source-map url=home.min.js.map \
-	# 	-o $OUT/js/home.min.js \
+	# 	--source-map url=home.js.map \
+	# 	-o $OUT/js/home.js \
 	# 	$SRC/_js/home.js;
 
 	echo " Photos JS";
 	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		 --source-map url=photos.min.js.map \
-		-o $OUT/js/photos.min.js \
+		 --source-map url=photos.js.map \
+		-o $OUT/js/photos.js \
 		$SRC/_js/photos.js;
 
 	echo " Portfolio JS";
 	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		 --source-map url=portfolio.min.js.map \
-		-o $OUT/js/portfolio.min.js \
+		 --source-map url=portfolio.js.map \
+		-o $OUT/js/portfolio.js \
 		$SRC/_js/gallery-inline.js $SRC/_js/portfolio.js;
 
 	echo " Boids JS";
 	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		 --source-map url=boids.min.js.map \
-		-o $OUT/js/boids.min.js \
+		 --source-map url=boids.js.map \
+		-o $OUT/js/boids.js \
 		$SRC/_js/boids.js;
 
 	echo " AI Boids JS";
 	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		 --source-map url=boids.min.js.map \
-		-o $OUT/js/aiboids.min.js \
+		 --source-map url=boids.js.map \
+		-o $OUT/js/aiboids.js \
 		$SRC/_js/aiboids.js;
 
 	echo " Life JS";
 	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		 --source-map url=life.min.js.map \
-		-o $OUT/js/life.min.js \
+		 --source-map url=life.js.map \
+		-o $OUT/js/life.js \
 		$SRC/_js/life.js;
 
 	# echo " Wind JS";
 	# uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-	# 	 --source-map url=wind.min.js.map \
-	# 	-o $OUT/js/wind.min.js \
+	# 	 --source-map url=wind.js.map \
+	# 	-o $OUT/js/wind.js \
 	# 	$SRC/_js/wind.js;
 
-	echo " smoke JS";
-	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		 --source-map url=smoke.min.js.map \
-		-o $OUT/js/smoke.min.js \
-		$SRC/_js/smoke.js;
+	# echo " smoke JS";
+	# uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
+	# 	 --source-map url=smoke.js.map \
+	# 	-o $OUT/js/smoke.js \
+	# 	$SRC/_js/smoke.js;
 
-	echo " BoidsGL JS";
-	uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		 --source-map url=boidsgl.min.js.map \
-		-o $OUT/js/boidsgl.min.js \
-		$SRC/_js/boidsgl.js;
+	# echo " BoidsGL JS";
+	# uglifyjs -m -c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
+	# 	 --source-map url=boidsgl.js.map \
+	# 	-o $OUT/js/boidsgl.js \
+	# 	$SRC/_js/boidsgl.js;
 
 	# cp $SRC/_js/init-buffers.js $OUT/js/init-buffers.js;
 	# cp $SRC/_js/draw-scene.js $OUT/js/draw-scene.js;
+
+	echo "SPARKY";
+	uglifyjs -m \
+		-c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
+		--source-map url=sparky.js.map \
+		-o $OUT/js/sparky.js \
+		$SRC/_js/sparky.js;# $SRC/_js/getLayer.js $SRC/_js/getParticleSystem.js;
+
+	echo "COPY THREE"
+	cp $SRC/_js/getLayer.js $SRC/_js/getParticleSystem.js $OUT/js;
 
 	echo " Main JS";
 	mkdir -m755 -p $OUT/js;
 	uglifyjs -m \
 		-c sequences=true,dead_code,conditionals,booleans,unused,if_return,join_vars \
-		--source-map url=mrbmc.min.js.map \
-		-o $OUT/js/mrbmc.min.js \
+		--source-map url=mrbmc.js.map \
+		-o $OUT/js/mrbmc.js \
 		$SRC/_js/mrbmc.js;
 
-		echo "${NOCOLOR}";
+	echo "${NOCOLOR}";
+
 }
 
 function build_thumbs () {
