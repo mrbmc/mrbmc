@@ -96,9 +96,9 @@ Features for managine automated price changes grew **MRR by 25% YoY**.
 
 *codename Baymax*
 
-Disney provides its guests and exceptional level of care. Disney+ is no exception, but it can be a significant cost center as well. These custom built tools for our agents saved Disney **$20M/pa in operating expenses** 
+Disney provides its guests with exceptional care because we believe the brand experience provides long-term commercial value. Be that as it may, customer care can be a significant cost center. *How might we deliver personal care at scale?* 
 
-We focused on shortening **case resolution time**, increasing **CSAT** scores, and giving agents upsell capability.
+These custom built tools for our agents saved Disney **$20M/pa in operating expenses** by shortening **case resolution time**, increasing **CSAT** scores, and giving agents **upsell** capability.
 
 - ![Support Agent Portal](/images/portfolio/disney-enterprise/baymax-customer.jpg) {.col8 .row2}
 - ![Support Agent Portal](/images/portfolio/disney-enterprise/baymax-search_results.png) {.col4}
@@ -230,7 +230,7 @@ Evangelizing design system adoption begins with a promise of a better future. We
 
 All of the products we designed or consulted on:
 
-Anti-Piracy Operations, Audience Segmentation, CDN Management Console, Commerce & Offer Operations, Commerce Config Tool, Content Catalog Browser, Content delivery Preview, Content Experience Management, Content Portal (hulu live, sVOD), CX Dashboard  , Data Activation Framework , DATA instrumentation library, Data Portal , Developer Portal, Dictionary & Translation, Disney Edge Controller (DEC), EXD Design System, Experimentation , Fraud Management Service, Hulu Ad Manager, Hulu Ad Mission Control, Hulu Ad Revenue Processing Service, Machine Learning Dashboard, Metadata Mapping & Visualization, Partner Portal, Player Config Service, Responder Files (DATA Feature Market), SRE Dashboard, Streaming QoS Insights, Support Agent Console, Unified Messaging Platform{.small .card}
+Anti-Piracy Operations, Audience Segmentation, CDN Management Console, Commerce & Offer Operations, Commerce Config Tool, Content Catalog Browser, Content delivery Preview, Content Experience Management, Content Portal (hulu live, sVOD), CX Dashboard  , Data Activation Framework , DATA instrumentation library, Data Portal , Developer Portal, Dictionary & Translation, Disney Edge Controller (DEC), EXD Design System, Experimentation , Fraud Management Service, Hulu Ad Manager, Hulu Ad Mission Control, Hulu Ad Revenue Processing Service, Machine Learning Dashboard, Metadata Mapping & Visualization, Partner Portal, Player Config Service, Responder Files (DATA Feature Market), SRE Dashboard, Streaming QoS Insights, Support Agent Console, Unified Messaging Platform{.small-type .card}
 
 
 ### Legacy Of Tool Innovation

@@ -1,14 +1,15 @@
 @use 'sass:math';
 @use '_colors.scss';
 @use '_variables.scss';
+@use '_type.scss' as type;
 
 body.resume {
     main {
         margin-top: variables.$gutter;
     }
     p,li {
-        font-family: variables.$serif-font-family;
-        font-weight: variables.$serif-font-weight;
+        font-family: type.$serif-font-family;
+        font-weight: type.$serif-font-weight;
     }
     h3 {
         color: var(--text-secondary);

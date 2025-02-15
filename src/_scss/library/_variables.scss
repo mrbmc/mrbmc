@@ -1,0 +1,77 @@
+@use 'sass:color';
+@use 'sass:math';
+@use 'colors';
+
+// GRID
+// --------------------------------------------------
+$gutter: 1.5rem;
+$gutter-xl: 3rem;
+$columns: 6;
+$width: 40rem;
+$column: math.div(($width - (($columns - 1) * $gutter)), $columns);
+$margin: calc((100vw - $width) / 2);
+$breakpoint: $width + $gutter + $gutter;
+$breakpoint-widescreen: 1440px;
+// $breakpoint-desktop: 960px;
+// $breakpoint-portrait: 768px;
+// $breakpoint-phone: 480px;
+
+// ANIMATION
+// --------------------------------------------------
+$easeBounce: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+$easeGetSet: cubic-bezier(0.955, -1.00, 0.850, 0.490);
+$easeInQuart: cubic-bezier(0.500, 0.000, 0.750, 0.000);
+$easeOutQuart: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$easeOutCubic: cubic-bezier(0.33, 1, 0.68, 1);
+$easeInOutQuart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+$easeInOutQuad: cubic-bezier(0.45, 0, 0.55, 1);
+$easeInOutCubic: cubic-bezier(0.65, 0, 0.35, 1);
+$easeInOutBack: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+$speed: 400ms;
+$easing: $easeOutCubic;
+
+// ATOMS
+$input-height: 1.25rem;
+$navbar-height: 2.38rem;
+$border-radius: $gutter * 0.25;
+$border-radius-xl: $gutter;
+$shadow-color: hsla(colors.$primary-hue, 100%, 12%, 0.05);
+$shadow-depth: $gutter;
+$shadow-offset: ($shadow-depth * .33);
+$shadow: 0 2px 8px $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;
+$shadow-xl: 0 2px 8px $shadow-color, 0 $shadow-offset $shadow-depth $shadow-offset $shadow-color;
+
+// Typography
+// -------------------------
+$system-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+$sans-font-family: "Helvetica Neue", $system-font-family;
+$serif-font-family: "Cormorant Garamond", "Palatino", "Georgia", "Roboto Serif", Times, serif;
+$mono-font-family: "Courier New", monospace;
+$base-font-family: $sans-font-family;
+$base-font-weight: 400;
+$bold-font-weight: 600;
+$base-font-size: 1.5em;
+//math.div(24, 16);
+//16px is the browser default so the numerator is your desired p size
+$base-line-height: 1.62;
+$serif-font-weight: 200;
+$small-font-size: .81em;
+$large-font-size: 1.19em;
+$heading-font-family: $base-font-family;
+$heading-font-weight: $base-font-weight;
+$display-font-family: $base-font-family;
+$display-font-weight: $base-font-weight;
+$navbar-font-family: $base-font-family;
+$navbar-font-weight: $base-font-weight;
+
+// Navbar
+// -------------------------
+// $navbar-background: var(--body-background);
+// $navbar-border: var(--border-color);
+// $navbar-text: var(--text-primary);
+// $navbar-primary: $primary;
+// $navbar-link-color: var(--link-color);
+// $navbar-link-hover-color: var(--link-color-hover);
+// $navbar-link-hover-background: var(--well-background);
+// $navbar-link-active-color: var(--body-background);
+// $navbar-link-active-background: var(--text-primary);

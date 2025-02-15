@@ -1,0 +1,68 @@
+@use "library" as lib;
+
+img, video {
+  width: 100%;
+  height: auto;
+  max-height: 120vh;
+}
+
+video {
+  cursor: pointer;
+
+  &:after {
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMTEuNjkgMzExLjY5Ij48cGF0aCBkPSJNMTU1Ljg0LDBBMTU1Ljg1LDE1NS44NSwwLDEsMCwzMTEuNjksMTU1Ljg0LDE1NS44NCwxNTUuODQsMCwwLDAsMTU1Ljg0LDBabTAsMjk2LjQyQTE0MC41OCwxNDAuNTgsMCwxLDEsMjk2LjQyLDE1NS44NCwxNDAuNTgsMTQwLjU4LDAsMCwxLDE1NS44NCwyOTYuNDJaIiBmaWxsPSIjZmZmZmZmIj48L3BhdGg+PHBvbHlnb24gcG9pbnRzPSIyMTguNzkgMTU1Ljg0IDExOS4yMiA5NC4zNCAxMTkuMjIgMjE3LjM0IDIxOC43OSAxNTUuODQiIGZpbGw9IiNmZmZmZmYiPjwvcG9seWdvbj48L3N2Zz4=");
+    display: block;
+  }
+
+}
+
+strong, b {
+  color: var(--text-secondary);
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+.caption, .legal {
+  color: var(--text-secondary);
+}
+
+code, .code {
+  color: var(--text-secondary);
+}
+
+ul.inline, ol.inline {
+  &>li {
+    display: block;
+    float: left;
+  }
+
+}
+
+hr {
+  background: none;
+  margin: var(lib.$gutter-xl) auto;
+  height: 0px;
+  width: 38w;
+  max-width: 80%;
+  border: none;
+  border-top: 1px solid var(--border-color);
+}
+
+.positive, .success {
+  color: lib.$success;
+}
+
+.negative, .failure, .error {
+  color: lib.$error;
+}
+

@@ -1,265 +1,31 @@
-@use 'sass:math';
-@use '_colors.scss';
-@use '_grid.scss';
-@use '_variables.scss';
+@use "library" as lib;
 
-@import "./_animation.scss";
-@import "./_mixins.scss"; 
-@import "./_type.scss";
+@use 'type';
+@use 'animation';
+
 
 // ======================================================================
 // CORE STYLES
-:root {
-    --black:            #{colors.$neutral-10};
-    --gray-dark:        #{colors.$neutral-30};
-    --gray-mid:         #{colors.$neutral-50};
-    --gray-light:       #{colors.$neutral-90};
-    --white:            #{colors.$neutral-100};
-    --white-semi:       #{colors.$neutral-100}54;
-
-    --primary:          #{colors.$primary};
-    --on-primary:       #{colors.$neutral-100};
-    --tertiary:         #{colors.$tertiary};
-    --secondary:        #{colors.$secondary};
-    --breakpoint:       #{variables.$breakpoint};
-    --success:          #{colors.$success};
-    --error:            #{colors.$error};
-
-    // TYPE
-    // -------------------------
-    --text-primary:          var(--gray-dark);
-    --text-secondary:        var(--gray-mid);
-    --link-color:            var(--black);
-    --link-color-hover:      var(--gray-dark);
-
-    // Scaffolding
-    // -------------------------
-    --body-background:       var(--white);
-    --border-color:          var(--gray-light);
-    --card-background:       var(--white);
-    --card-text-color:       var(--gray-dark);
-    --card-bold-color:       var(--black);
-    --well-background:       var(--gray-light);
-    --well-text-color:       var(--gray-dark);
-    --well-bold-color:       var(--black);
-    --hero-background:       #{colors.$neutral-30};
-    --hero-text-color:       #{colors.$neutral-90};
-    --hero-bold-color:       #{colors.$neutral-100};
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        --black:        #{colors.$neutral-100};
-        --gray-dark:    #{colors.$neutral-90};
-        --gray-mid:     #{colors.$neutral-50};
-        --gray-light:   #{colors.$neutral-30};
-        --white:        #{colors.$neutral-10};
-        --white-semi:   #{colors.$neutral-10}54;
-
-        --primary:      #{colors.$primary-inverse};
-    };
-}
-::selection {
-    background: var(--secondary);
-}
-html {
-    scroll-behavior: smooth;
-}
-body {
-    margin: 0;
-    background: var(--body-background);
-    color: var(--text-primary);
-}
-h1,h2,h3,h4,h5 {
-    color: var(--text-primary);
-}
-a {
-    color: var(--link-color);
-    &:hover {
-        color: var(--link-color-hover);
-    }
-}
-
-
-
-
-
-
+@use "root";
 
 // ======================================================================
 // ATOMIC STYLES
-
-img,video {
-    width: 100%;
-    height: auto;
-    max-height: 120vh;
-}
-video {
-    cursor: pointer;
-    &:after {
-        content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMTEuNjkgMzExLjY5Ij48cGF0aCBkPSJNMTU1Ljg0LDBBMTU1Ljg1LDE1NS44NSwwLDEsMCwzMTEuNjksMTU1Ljg0LDE1NS44NCwxNTUuODQsMCwwLDAsMTU1Ljg0LDBabTAsMjk2LjQyQTE0MC41OCwxNDAuNTgsMCwxLDEsMjk2LjQyLDE1NS44NCwxNDAuNTgsMTQwLjU4LDAsMCwxLDE1NS44NCwyOTYuNDJaIiBmaWxsPSIjZmZmZmZmIj48L3BhdGg+PHBvbHlnb24gcG9pbnRzPSIyMTguNzkgMTU1Ljg0IDExOS4yMiA5NC4zNCAxMTkuMjIgMjE3LjM0IDIxOC43OSAxNTUuODQiIGZpbGw9IiNmZmZmZmYiPjwvcG9seWdvbj48L3N2Zz4=");
-        display: block;
-    }
-}
-// .video-wrapper {
-//     position: relative;
-//     svg.play {
-//         position: absolute;
-//         left: 50%;
-//         top: 50%;
-//         width: 20vw;
-//         height: 20vw;
-//         margin: -10vw 0 0 -10vw;
-//     }
-// }
-strong,b {
-    color: var(--text-secondary);
-}
-.center {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-indent: 0;
-}
-.hide {
-    display: none !important;
-}
-.caption,.legal {
-    color: var(--text-secondary);
-}
-code,.code {
-    color: var(--text-secondary);
-}
-ul.inline,ol.inline {
-    &>li {
-        display: block;
-        float: left;
-    }
-}
-hr {
-    background: none;
-    margin: var(variables.$gutter-xl) auto;
-    height: 0px;
-    width: 38w;
-    max-width: 80%;
-    border: none;
-    border-top: 1px solid var(--border-color);
-}
-table {
-    width: 100%;
-    max-width: 100%;
-    border-spacing: 0em;
-    margin-bottom: variables.$gutter;
-    background: var(--body-background);
-    overflow-x: scroll;
-    display: block;
-    th,td {
-        padding: .5em 1em;
-    }
-    th {
-        border: 0 solid var(--border-color);
-        border-width: 0 0 1px 0;
-        text-align: left;
-        color: var(--text-secondary);
-    }
-    td {
-        vertical-align: top;
-    }
-    &.rotate {
-        @include transpose_table;
-        @media (min-width: variables.$breakpoint) {
-        }
-    }
-}
-.positive,.success {
-    color: colors.$success;
-}
-.negative,.failure,.error {
-    color: colors.$error;
-}
-
-
-
+// 1.7K
+@use "atoms";
 
 // ======================================================================
 // MOLECULE STYLES
+//  1.9k
 
-.card {
-    box-sizing: border-box;
-    width: 100%;
-    padding: variables.$gutter;
-    border: 1px solid var(--border-color);
-    border-radius: variables.$border-radius;
-    box-shadow: inset 1px 1px 0px rgba(255,255,255,.08), inset -1px 1px 0px rgba(255,255,255,.05), variables.$shadow;
-
-    background: var(--card-background);
-    color: var(--card-text-color);
-    h1,h2,h3,h4,strong,b {
-        color: var(--card-bold-color);
-    }
-}
-.well {
-    background: var(--well-background);
-    color: var(--well-text-color);
-    padding: variables.$gutter;
-    box-sizing: border-box;
-
-    &.fullwidth {
-        @media (min-width: variables.$breakpoint) {
-            padding: variables.$gutter variables.$margin;
-        }
-    }
-}
-.hero {
-    @include fullWidth(100vw);
-    @include inverse();
-    box-sizing: border-box;
-    padding: variables.$gutter;
-
-    @media (min-width: variables.$breakpoint) {
-        padding: variables.$gutter variables.$margin;
-    }
-}
-
-blockquote,.blockquote {
-    padding: 0 variables.$gutter;
-    margin: variables.$gutter 0 variables.$gutter calc(variables.$gutter * -1);
-    border-left: solid 4px var(--text-secondary);
-    color: var(--text-secondary);
-
-    @media (max-width: variables.$breakpoint) {
-        margin-left: 0;
-    }
-}
-
-.button, button {
-    background: colors.$primary;
-    color: var(--on-primary);
-
-    padding: .5em 1em;
-    border-radius: variables.$border-radius;
-    text-decoration: none;
-    box-shadow: inset 0px 1px 1px 0px colors.$neutral-100, 0 math.div(variables.$shadow-offset, 2) math.div(variables.$shadow-depth,2) variables.$shadow-color, 0 variables.$shadow-offset variables.$shadow-depth variables.$shadow-color;
-
-    &:hover {
-        color: var(--well-bold-color);
-    }
-}
-
-.inverse {
-    @include inverse();
-}
-
-
-
-
+@use "molecules";
 
 // ======================================================================
 // ORGANISM STYLES
+// 0.6k
 
-@import "_header.scss";
+@use "components/_header";
 
-@import "_footer.scss";
+@use "components/footer";
 
 ul.nav,ol.nav {
     display: flex;
@@ -275,19 +41,13 @@ ul.nav,ol.nav {
     }
 }
 
-.hero {
-    li {
-        list-style: none;
-    }
-}
-
 details {
     summary {
         cursor: pointer;
     }
     &[open] {
         summary {
-            margin-bottom: variables.$gutter;
+            margin-bottom: lib.$gutter;
         }
         & > summary:before {
             transform: rotate(90deg);
@@ -295,6 +55,12 @@ details {
     }
 }
 .kpi {
+  dt, em, i {
+    font-style: normal;
+  }
+  b, strong, dd {
+    font-weight: lib.$bold-font-weight;
+  }
     em,i,b,strong,code,s,dt,dd {
         display: block;
         margin: 0;
@@ -303,7 +69,7 @@ details {
     }
     em,i,dd+dt {
         color: var(--text-secondary);
-        @include small-type();
+        font-size: lib.$small-font-size;
     }
     b,strong,dd {
         color: var(--text-tertiary);
@@ -315,19 +81,22 @@ details {
 
 // ======================================================================
 // LAYOUT
+// 1.1K
+
+
 body,html {
     // overflow-x: hidden;
     overscroll-behavior-x: none;
 }
 
 .fullwidth,.fullWidth {
-    @include fullWidth(100vw);
+    @include lib.fullWidth(100vw);
 }
 .fullwidth90 {
-    @include fullWidth(90vw);
+    @include lib.fullWidth(90vw);
 }
 .fullheight {
-    @include fullHeight(90vh);
+    @include lib.fullHeight(90vh);
 }
 
 h1,h2,h3,h4,h5{
@@ -345,12 +114,12 @@ li, dt {
 body {
     > main {
         box-sizing: content-box;
-        max-width: variables.$width;
+        max-width: lib.$width;
         margin: 0 auto;
-        padding: 0 variables.$gutter;
+        padding: 0 lib.$gutter;
 
-        // @media (max-width: variables.$breakpoint) {
-        //     margin: 0 variables.$gutter;
+        // @media (max-width: lib.$breakpoint) {
+        //     margin: 0 lib.$gutter;
         //     padding: 0;
         // }
     }
@@ -358,13 +127,10 @@ body {
 .grid {
     box-sizing: border-box;
     display: grid;
-    // margin-top: variables.$gutter;
-    // margin-bottom: variables.$gutter;
-    // margin-right: 0;
 
     grid-template-columns: repeat(auto-fit, minmax(1em,2fr));
     grid-auto-flow: row;
-    grid-gap: variables.$gutter;
+    grid-gap: lib.$gutter;
 
     &>* {
         box-sizing: border-box;
@@ -378,40 +144,16 @@ body {
         // grid-auto-flow: row;
         grid-template-columns: repeat(3, 1fr);
     }
-
-    @media (max-width: variables.$breakpoint) {
-        grid-gap: variables.$gutter;
+    @media (max-width: lib.$breakpoint) {
+        grid-gap: lib.$gutter;
         &[class*="cols"] {
             grid-template-columns: repeat(1, 1fr);        
         }
     }
+    .card {
+      height: 100%;
+    }
 }
 main > section {
-    margin-bottom: var(variables.$gutter-xl);
+    margin-bottom: var(lib.$gutter-xl);
 }
-
-
-
-
-// ======================================================================
-// SHARED CODE
-
-// @import "_publishing.scss";
-
-
-// ======================================================================
-// SUB-PAGES
-
-// @import "_home.scss";
-
-// @import "_about.scss";
-
-// @import "_portfolio.scss";
-
-// @import "_blog.scss";
-
-// @import "_resume.scss";
-
-// @import "_photos.scss";
-
-// @import "_colophon.scss";

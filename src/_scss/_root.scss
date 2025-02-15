@@ -1,0 +1,71 @@
+@use "library" as lib;
+
+:root {
+    --black:            #{lib.$neutral-10};
+    --gray-dark:        #{lib.$neutral-30};
+    --gray-mid:         #{lib.$neutral-50};
+    --gray-light:       #{lib.$neutral-90};
+    --white:            #{lib.$neutral-100};
+    --white-semi:       #{lib.$neutral-100}54;
+
+    --primary:          #{lib.$primary};
+    --secondary:        #{lib.$secondary};
+    --tertiary:         #{lib.$tertiary};
+    --on-primary:       #{lib.$neutral-100};
+    --breakpoint:       #{lib.$breakpoint};
+    --success:          #{lib.$success};
+    --error:            #{lib.$error};
+
+    // TYPE
+    // -------------------------
+    --text-primary:          var(--gray-dark);
+    --text-secondary:        var(--gray-mid);
+    --link-color:            var(--black);
+    --link-color-hover:      var(--gray-dark);
+
+    // Scaffolding
+    // -------------------------
+    --body-background:       var(--white);
+    --border-color:          var(--gray-light);
+    --card-background:       var(--white);
+    --card-text-color:       var(--gray-dark);
+    --card-bold-color:       var(--black);
+    --well-background:       var(--gray-light);
+    --well-text-color:       var(--gray-dark);
+    --well-bold-color:       var(--black);
+    --hero-background:       #{lib.$neutral-30};
+    --hero-text-color:       #{lib.$neutral-90};
+    --hero-bold-color:       #{lib.$neutral-100};
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black:        #{lib.$neutral-100};
+        --gray-dark:    #{lib.$neutral-90};
+        --gray-mid:     #{lib.$neutral-50};
+        --gray-light:   #{lib.$neutral-30};
+        --white:        #{lib.$neutral-10};
+        --white-semi:   #{lib.$neutral-10}54;
+
+        // --primary:      #{lib.$primary-inverse};
+    };
+}
+::selection {
+    background: var(--secondary);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background: var(--body-background);
+    color: var(--text-primary);
+}
+h1,h2,h3,h4,h5 {
+    color: var(--text-primary);
+}
+a {
+    color: var(--link-color);
+    &:hover {
+        color: var(--link-color-hover);
+    }
+}

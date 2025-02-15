@@ -1,8 +1,8 @@
 ## Design Leadership
 
-> A design leader is a human leader and functional expert who gives the business a competitive advantage by design.{.blockquote}
+> A design leader is both a functional expert, *and* a human leader, who can give the business a competitive advantage by design.{.blockquote}
 
-A *good* leader has a clarity of purpose and the ability to rally others toward that cause. I believe it is a privilege to lead because it means other people are investing themselves in your purpose.
+A good leader has a clarity of purpose and the ability to rally others toward that cause. I believe it is a privilege to lead because it means other people are investing themselves in your purpose.
 
 <!-- 	Listen more than you talk.  
 	Help your peers achieve their goals.  
@@ -17,11 +17,16 @@ Here are some more leadership frameworks that have influenced my approach:
 * I also draw tremendous inspiration from [leadership in science and nature](/blog/leadership-in-nature/).
  -->
 
-### Team Leader 
+### Leadership Philosophy 
 
-I find most of my design inspiration in lessons from nature, science, and history. The way I show up for my team is informed by [Leadership Models in Nature](/blog/leadership-in-nature/) that demonstrate mentorship, servant leadership, and distributed decision-making.
+My leadership philosophy is inspired by lessons from nature, science, and history. There are highly effective leadership models in the animal kingdom that demonstrate the values I want to embody as a leader:
++ **mentorship**
++ **psychological safety**
++ **collaboration**.
 
-[![Orca, Lion, Bee](/images/leadership-nature.jpg)](/blog/leadership-in-nature/) {.fullwidth}
+[Blog post: Leadership Models in Nature](/blog/leadership-in-nature/)
+
+[![Orca, Lion, Bee](/images/leadership-nature.jpg)](/blog/leadership-in-nature/) {.fullwidths}
 
 ### Functional Leader
 

@@ -11,7 +11,7 @@
 
 <header>
 
-### [{{ project.data.title }}]({{ project.url }})
+#### [{{ project.data.title }}]({{ project.url }})
 
 {% if project.data.timeline %}#### {{project.data.timeline}}{.timeline}{% endif %}
 

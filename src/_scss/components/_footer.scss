@@ -1,3 +1,5 @@
+@use '../library' as lib;
+
 body > footer {
     position: relative;
     display: flex;
@@ -5,28 +7,17 @@ body > footer {
     justify-content: space-between;
     // color: $gray-800;
     overflow: hidden;
-    padding: variables.$gutter-xl variables.$gutter;
-    gap: variables.$gutter;
+    padding: lib.$gutter-xl lib.$gutter;
+    gap: lib.$gutter;
 
-    @include hero();
-
-    h2,h3,h4 {
-        // color: var(--card-text-color);
-        display: none;
-    }
-    a {
-        // color: var(--card-text-color);
-        &:hover {
-            // color: var(--well-bold-color);
-        }
-    }
+    @include lib.hero();
 
     &>div {
         nav {
             display: flex;
             justify-content: center;
             a {
-                margin: 0 (variables.$gutter * 0.5);
+                margin: 0 (lib.$gutter * 0.5);
             }
         }
         p {
@@ -71,7 +62,7 @@ body > footer {
             }
         }
     }
-    @media (max-width: variables.$breakpoint) {
+    @media (max-width: lib.$breakpoint) {
         flex-direction: column;
         #colophon {
             nav {

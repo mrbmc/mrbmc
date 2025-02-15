@@ -58,7 +58,4 @@ window.addEventListener('load', function(e) {
 
     initMosaics();
 
-    galleryLoad(e);
 });
-
-

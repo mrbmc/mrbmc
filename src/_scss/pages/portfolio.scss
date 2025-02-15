@@ -1,0 +1,37 @@
+@use "../library" as lib;
+
+@use "../components/project-list";
+
+body.portfolio {
+  .project-list {
+    .project {
+      flex-direction: row-reverse;
+      align-items: center;
+
+      @media (max-width:lib.$breakpoint) {
+        flex-direction: column-reverse;
+      }
+
+      header {
+        flex-basis: 38%;
+        // h3 {
+        //   a {
+        //     color: var(--text-secondary);
+        //   }
+        // }
+      }
+
+      figure, .figure {
+        flex-basis: 62%;
+
+        img {
+          // height: 25vw;
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,33 +1,69 @@
-@use 'sass:math';
-@use 'sass:color';
-@use '_colors.scss';
-@use '_variables.scss';
-@use '_mixins.scss';
+@use '../library' as lib;
 
-@import "_publishing.scss";
+@use "../components/masthead";
 
-@import "_masthead.scss";
+@use "../components/gallery-inline";
 
 body.project {
-    @include item-detail();
 
     #main {
         display: flex;
         flex-direction: column;
+
+        p {
+            &>img,&>svg,&>video {
+                &.canzoom {
+                    transition: all lib.$speed lib.$easing;
+                    &:hover {
+                        cursor: zoom-in,
+                    }
+                }
+                &.zoom {
+                    max-height: 100vh;
+                    @include lib.fullWidth(100vw);
+                    &:hover {
+                        cursor: zoom-out;
+                    }
+                }
+            }
+            img.fullwidth,svg.fullwidth,video.fullwidth {
+                max-height: 95vh;
+                object-fit: cover;
+            }
+        }
+        img.pullleft {
+            @media (min-width: lib.$breakpoint) {
+                // width: 62%;
+                // margin-left: (0 - lib.$margin);
+                width: 38%;
+                margin-right: lib.$gutter;
+                float: left;
+            }
+        }
+        img.pullright {
+            @media (min-width: lib.$breakpoint) {
+                // width: 62%;
+                // margin-right: (0 - lib.$margin);
+                width: 38%;
+                margin-left: lib.$gutter;
+                float: right;
+            }
+        }
+
         #masthead {
             .description,.summary {
-                max-width: variables.$width;
+                max-width: lib.$width;
             }
         }
         p.summary {
-            margin-bottom: (variables.$gutter * 2);
+            margin-bottom: (lib.$gutter * 2);
         }
         h2,h3 {
-            margin-top: (variables.$gutter * 4);
-            margin-bottom: (variables.$gutter * 2);
+            margin-top: (lib.$gutter * 4);
+            margin-bottom: (lib.$gutter * 2);
         }
     }
-    @media (max-width: variables.$breakpoint) {
+    @media (max-width: lib.$breakpoint) {
         #scrollhint {
             display: none;
         }
@@ -36,6 +72,16 @@ body.project {
     @media (prefers-color-scheme: dark) {
         img[src$=".svg"] {
             filter: contrast(0.01) brightness(2);
+        }
+    }
+
+    nav.pagination {
+        padding: lib.$gutter 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: lib.$breakpoint) {
+            flex-direction: column-reverse;
         }
     }
 
@@ -48,7 +94,7 @@ body.project {
         left: 0;
         z-index: 100;
         background: #000000cc;
-        padding: variables.$gutter variables.$gutter;
+        padding: lib.$gutter lib.$gutter;
         box-sizing: border-box;
         &.in {
             display: block;
@@ -60,8 +106,7 @@ body.project {
     }
 
     h1.section,h2.section {
-        @include mixins.fullWidth();
-        padding: variables.$gutter;
+        padding: lib.$gutter;
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -75,20 +120,23 @@ body.project {
         background-repeat: no-repeat;
         background-size: cover;
 
-        @media (max-width: variables.$breakpoint) {
+        @include lib.fullWidth();
+
+        @media (max-width: lib.$breakpoint) {
             height: 56.25vw;
         }
     }
+
     .mosaic {
         display: grid;
-        gap: var(variables.$gutter);
+        gap: var(lib.$gutter);
         grid-template-columns: repeat(12, 1fr);
         background: var(--well-background);
         grid-auto-flow: row;
         list-style: none;
-        margin-top: var(variables.$gutter);
-        margin-bottom: var(variables.$gutter);
-        padding: var(variables.$gutter);
+        margin-top: var(lib.$gutter);
+        margin-bottom: var(lib.$gutter);
+        padding: var(lib.$gutter);
         box-sizing: border-box;
 
         li {

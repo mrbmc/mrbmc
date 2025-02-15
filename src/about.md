@@ -4,14 +4,14 @@ bodyclass: about
 title: Design & Product Leadership
 description: Brian McConnell is a design executive with a unique background as a designer, founder, product manager, and engineer. He builds sustainable businesses by designing products that meet real human needs.
 permalink: /about/
-cssfile: "css/about.css"
+cssfile: "css/pages/about.css"
 ---
 
 {% section "bio","fullwidth" %}
 
 # Designer and <br />Product Maker.
 
-My family calls me Brian but my friends call me BMC. I am a father 👧🏻 👦🏻, [husband 👩🏻](https://www.bettykang.com/), New Yorker 🗽, ️[cyclist 🚲](https://www.strava.com/athletes/773650), [divemaster 🤿](https://www.steelgills.com/@mrbmc), [world traveler 🌎](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **[product design leader 👨‍💻](/portfolio/)** with a unique polymath background as designer, product manager, engineer, and founder.{.large}
+My family calls me Brian but my friends call me BMC. I am a father 👧🏻 👦🏻, [husband 👩🏻](https://www.bettykang.com/), New Yorker 🗽, ️[cyclist 🚲](https://www.strava.com/athletes/773650), [divemaster 🤿](https://www.steelgills.com/@mrbmc), [world traveler 🌎](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **[product design leader 👨‍💻](/portfolio/)** with a unique polymath background as designer, product manager, engineer, and founder.{.large-type}
 
 ![Portrait of Brian](/images/profile/mrbmc-20241121.jpeg) {.portrait  .blur-in}
 

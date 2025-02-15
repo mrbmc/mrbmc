@@ -9,172 +9,73 @@ these are mixins that are used to set up the blog,
 portfolio, and gallery pages.
 ================================================== */
 
-@mixin item-detail {
-	main,#main {
-        p {
-            &>img,&>svg,&>video {
-                &.canzoom {
-                    transition: all variables.$speed variables.$easing;
-                    &:hover {
-                        cursor: zoom-in,
-                    }
-                }
-                &.zoom {
-                    @include mixins.fullWidth(100vw);
-                    max-height: 100vh;
-                    &:hover {
-                        cursor: zoom-out;
-                    }
-                }
-            }
-            img.fullwidth,svg.fullwidth,video.fullwidth {
-                max-height: 95vh;
-                object-fit: cover;
-            }
-        }
-        img.pullleft {
-            @media (min-width: variables.$breakpoint) {
-                // width: 62%;
-                // margin-left: (0 - variables.$margin);
-                width: 38%;
-                margin-right: variables.$gutter;
-                float: left;
-            }
-        }
-        img.pullright {
-            @media (min-width: variables.$breakpoint) {
-                // width: 62%;
-                // margin-right: (0 - variables.$margin);
-                width: 38%;
-                margin-left: variables.$gutter;
-                float: right;
-            }
-        }
-        iframe {
-            // .fullWidth(calc(90vh / .62)),
-            // height: 90vh,
-        }
-        // table {
-        //     m
-        //     overflow-x: scroll,
-        // }
-	}
-}
+// @mixin item-detail {
+// 	main,#main {
+//         p {
+//             &>img,&>svg,&>video {
+//                 &.canzoom {
+//                     transition: all variables.$speed variables.$easing;
+//                     &:hover {
+//                         cursor: zoom-in,
+//                     }
+//                 }
+//                 &.zoom {
+//                     @include mixins.fullWidth(100vw);
+//                     max-height: 100vh;
+//                     &:hover {
+//                         cursor: zoom-out;
+//                     }
+//                 }
+//             }
+//             img.fullwidth,svg.fullwidth,video.fullwidth {
+//                 max-height: 95vh;
+//                 object-fit: cover;
+//             }
+//         }
+//         img.pullleft {
+//             @media (min-width: variables.$breakpoint) {
+//                 // width: 62%;
+//                 // margin-left: (0 - variables.$margin);
+//                 width: 38%;
+//                 margin-right: variables.$gutter;
+//                 float: left;
+//             }
+//         }
+//         img.pullright {
+//             @media (min-width: variables.$breakpoint) {
+//                 // width: 62%;
+//                 // margin-right: (0 - variables.$margin);
+//                 width: 38%;
+//                 margin-left: variables.$gutter;
+//                 float: right;
+//             }
+//         }
+//         iframe {
+//             // .fullWidth(calc(90vh / .62)),
+//             // height: 90vh,
+//         }
+//         // table {
+//         //     m
+//         //     overflow-x: scroll,
+//         // }
+// 	}
+// }
 
-nav.pagination {
-    clear: both;
-    padding: variables.$gutter 0;
+// nav.pagination {
+//     clear: both;
+//     padding: variables.$gutter 0;
 
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	align-items: center;
+// 	display: flex;
+// 	justify-content: space-between;
+// 	list-style: none;
+// 	align-items: center;
 
-	a {
-		text-transform: inherit;
-		display: block;
-	}
-	@media (max-width: variables.$breakpoint) {
-		flex-direction: column-reverse;
-	}
-}
+// 	a {
+// 		text-transform: inherit;
+// 		display: block;
+// 	}
+// 	@media (max-width: variables.$breakpoint) {
+// 		flex-direction: column-reverse;
+// 	}
+// }
 
-p#gallery,div.gallery-wrap {
-    @include mixins.fullWidth(100vw);
-    display: block;
-    margin-bottom: variables.$gutter;
-    background: var(--hero-background);
-    box-shadow: inset variables.$shadow;
-    overflow: auto;//this prevents collapsing margins
-
-    .image-detail {
-        width: 98vw;
-        height: calc(84vh - variables.$gutter);
-        object-fit: contain;
-        padding: 0;
-        margin: 0 auto;
-        display: block;
-
-        @media (max-width: variables.$breakpoint) {
-            max-height: 62vw;
-        }
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        margin: 0;
-        padding: 0;
-
-        // overflow-x: auto;
-        // overflow-y: auto;
-        &::-webkit-scrollbar {
-            -webkit-appearance: none;
-        }
-        &::-webkit-scrollbar:horizontal {
-            height: (variables.$gutter * 0.25);
-        }
-        &::-webkit-scrollbar-thumb {
-            border-radius: variables.$gutter;
-            border: 2px solid var(--well-background); /* should match background, can't be transparent */
-            background-color: transparentize(colors.$primary,0.8);
-        }
-        &::-webkit-scrollbar-track { 
-            background-color: var(--well-background); 
-        } 
-
-        li {
-            list-style: none;
-            margin: 0 (variables.$gutter * 0.5);
-			color: var(--text-secondary);
-			// font-size: variables.$small-font-size;
-            // @include small-type();
-            img {
-                display: block;
-                height: calc(16vh - (variables.$gutter * 0.5));
-                width: auto;
-                object-position: top center;
-                object-fit: cover;
-                padding: 0;
-                margin: 0;
-            }
-            p {
-                margin: 0;
-                display: none;
-            }
-        }
-    }
-
-    position: relative;
-    a.next,a.prev {
-        &:before {
-            content: "";
-            display: block;
-            width: 2rem;
-            height: 2rem;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 53 20'%3E%3Cpolygon points='26.5,17.688 9.114,3.779 10.303,2.312 26.5,15.269 42.697,2.313 43.886,3.779' fill='currentColor' /%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: center center;
-            filter: invert(1);
-        }
-        width: 2rem;
-        height: 2rem;
-        overflow: hidden;
-        position: absolute;
-        top: calc(50% - 1rem);
-    }
-    a.prev {
-        &:before {
-            transform: rotate(90deg);
-        }
-        left: variables.$gutter;
-    }
-    a.next {
-        &:before {
-            transform: rotate(-90deg);
-        }
-        right: variables.$gutter;
-    }
-}

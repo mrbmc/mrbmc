@@ -1,11 +1,8 @@
-@use 'sass:math';
-@use '_colors.scss';
-@use '_grid.scss';
-@use '_variables.scss';
+@use '../library' as lib;
 
 #post-list {
 
-    @media (max-width: variables.$breakpoint) {
+    @media (max-width: lib.$breakpoint) {
         margin-top: 0;
     }
 
@@ -13,16 +10,16 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        column-gap: variables.$gutter;
-        margin-bottom: variables.$gutter-xl;
-        transition: all variables.$speed variables.$easing;
+        column-gap: lib.$gutter;
+        margin-bottom: lib.$gutter-xl;
+        transition: all lib.$speed lib.$easing;
 
         header {
             flex-basis: 81%;
             h3 {
                 margin: 0;
                 a {
-                    transition: color variables.$speed variables.$easing;
+                    transition: color lib.$speed lib.$easing;
                 //   color: var(--text-secondary);
                 }
             }
@@ -33,7 +30,7 @@
         }
         figure,.figure {
             flex-basis: 19%;
-            border-radius: variables.$border-radius;
+            border-radius: lib.$border-radius;
             overflow: hidden;
             margin-bottom: 0;
             a {
@@ -48,7 +45,7 @@
             cursor: pointer;
             z-index: 3;
             figure,.figure {
-                box-shadow: variables.$shadow;
+                box-shadow: lib.$shadow;
                 filter: saturate(110%);
             }           
             transform: scale(1.02);
@@ -64,8 +61,4 @@
         }
         
     }
-}
-
-body.blog #post-list {
-    padding-top: variables.$gutter-xl;
 }

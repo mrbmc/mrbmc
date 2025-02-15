@@ -13,7 +13,7 @@ parallaxHeading:
 ![](/images/portfolio/disney-growth/disney-growth.png){.fullwidth style="object-fit:contain;"}
 
 
-<!--This is the story of how we launched Disney+ and grew it from **0 to 105M subscribers** in two years. It was my mission to build "Growth Design" - the team, process, and outcomes - from inception into a 13-person cross-discipline program.{.large}-->
+<!--This is the story of how we launched Disney+ and grew it from **0 to 105M subscribers** in two years. It was my mission to build "Growth Design" - the team, process, and outcomes - from inception into a 13-person cross-discipline program.{.large-type}-->
 
 | Role                            | Responsibilities                                                                     | Team                                                         | Timeline            |
 | :------------------------------ | :----------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------------------ |

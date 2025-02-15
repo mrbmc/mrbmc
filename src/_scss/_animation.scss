@@ -1,43 +1,18 @@
-@use '_variables.scss';
-
-
-// Transitions
-@mixin transition($transition) {
-  // -webkit-transition: $transition;
-  //    -moz-transition: $transition;
-  //      -o-transition: $transition;
-          transition: $transition;
-}
-
-@mixin translate($x, $y) {
-  -webkit-transform: translate($x, $y);
-     // -moz-transform: translate($x, $y);
-     //  -ms-transform: translate($x, $y);
-     //   -o-transform: translate($x, $y);
-          transform: translate($x, $y);
-}
-
-@mixin rotate($degrees) {
-    // -webkit-transform: rotate($degrees);
-    // -moz-transform: rotate($degrees);
-    // -ms-transform: rotate($degrees);
-    // -o-transform: rotate($degrees);
-    transform: rotate($degrees);
-}
+@use 'library' as lib;
 
 .buildin {
-    @include translate(0, 20%);
+    transform: translate(0, 20%);
     opacity: 0;
     &.in {
-        transition: transform (variables.$speed * 1) variables.$easing, opacity (variables.$speed * 1.5) variables.$easing;
+        transition: transform (lib.$speed * 1) lib.$easing, opacity (lib.$speed * 1.5) lib.$easing;
         opacity: 100;
-        @include translate(0, 0);
+        transform: translate(0, 0);
     }
 }
 .blur-in {
     filter:blur(1em);
     opacity: 0;
-    transition: filter (variables.$speed * 1.5) variables.$easing, opacity (variables.$speed * 1) variables.$easing;
+    transition: filter (lib.$speed * 1.5) lib.$easing, opacity (lib.$speed * 1) lib.$easing;
     &.in {
         filter:blur(0);
         opacity: 100;
@@ -48,13 +23,13 @@
 .fade-in {
     opacity: 0;
     &.in {
-        @include transition(opacity variables.$speed*2 variables.$easing);
+        transition: opacity lib.$speed*2 lib.$easing;
         opacity: 100;
     }
 }
 
 .pop {
-    @include transition(all variables.$speed variables.$easing);
+    transition: all lib.$speed lib.$easing;
     transform: scale(0.01);
     &.in {
         transform: scale(1);
@@ -63,16 +38,16 @@
 
 [class*="slide"] {
     position: relative;
-    @include translate(0, 10%);
+    transform: translate(0, 10%);
 
     &.slide-left {
-        @include translate(-20%, 0);
+        transform: translate(-20%, 0);
     }
     &.slide-right {
-        @include translate(20%, 0);
+        transform: translate(20%, 0);
     }
     &.in {
-        @include transition(all variables.$speed variables.$easing);
-        @include translate(0, 0);
+        transition: all lib.$speed lib.$easing;
+        transform: translate(0, 0);
     }
 }

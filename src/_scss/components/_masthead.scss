@@ -1,14 +1,9 @@
-@use 'sass:color';
-@use 'sass:math';
-@use '_colors.scss';
-@use '_variables.scss';
-@use '_mixins.scss';
+@use '../library' as lib;
 
 #masthead {
 
-    @include mixins.fullWidth(100vw);
-    padding: variables.$gutter variables.$gutter;
-    height: calc(100vh - variables.$navbar-height);
+    padding: lib.$gutter lib.$gutter;
+    height: calc(100vh - lib.$navbar-height);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -17,7 +12,6 @@
     overflow: hidden;
     z-index: 10;
 
-    @include mixins.hero();
     &:before {
         filter: none;
     }
@@ -37,7 +31,7 @@
         width: 100%;
         height: 120%;
         position: absolute;
-        top: 0 - variables.$navbar-height;
+        top: 0 - lib.$navbar-height;
         left: 0;
         right: 0;
         z-index: -1;
@@ -54,14 +48,14 @@
         }
         figcaption,caption {
             position: absolute;
-            right: variables.$gutter;
-            bottom: variables.$gutter;
+            right: lib.$gutter;
+            bottom: lib.$gutter;
             text-shadow: 0 1px 4px rgba(0,0,0,0.8);
             color: var(--well-bold-color);
         }
     }
 
-    @media (max-width: variables.$breakpoint) {
+    @media (max-width: lib.$breakpoint) {
         min-height: 56.25vw;
         height: auto;
     }
@@ -71,13 +65,14 @@
 
         width: $size;
         height: $size;
-        @media (min-width: variables.$breakpoint) {
-            position: absolute;
-            left: calc(50% - math.div($size, 2));
-            bottom: variables.$gutter;
-        }
         margin: 0 auto;
         z-index: 10;
+
+        @media (min-width: lib.$breakpoint) {
+            position: absolute;
+            left: calc(50% - lib.div($size, 2));
+            bottom: lib.$gutter;
+        }
         &:hover {
             cursor: pointer;
         }
@@ -87,5 +82,9 @@
             height: $size;
         }
     }
+
+    @include lib.hero();
+
+    @include lib.fullWidth(100vw);
 
 }// end masthead

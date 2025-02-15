@@ -1,0 +1,7 @@
+@use "../library" as lib;
+
+@use "../components/post-list";
+
+body.blog #post-list {
+    padding-top: lib.$gutter-xl;
+}

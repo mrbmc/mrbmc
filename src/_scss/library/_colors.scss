@@ -1,0 +1,52 @@
+@use 'sass:color';
+// @use 'sass:math';
+// @use 'sass:string';
+
+// @function decToHex($dec) {
+//     $hex: "0123456789ABCDEF";
+//     $first: math.div(($dec - $dec % 16),16)+1;
+//     $second: ($dec % 16)+1;
+//     @return string.slice($hex, $first, $first) + string.slice($hex, $second, $second)
+// }
+// @function hslToHex($h,$s,$l) {
+//   // @debug 'color.channel(hsl(#{$h},#{$s},#{$l}), "red", $space: rgb)';
+//   $r: decToHex(color.channel(hsl($h,$s,$l), "red", $space: rgb));
+//   $g: decToHex(color.channel(hsl($h,$s,$l), "green", $space: rgb));
+//   $b: decToHex(color.channel(hsl($h,$s,$l), "blue", $space: rgb));
+//   @return ##{$r+$g+$b};
+// }
+
+// COLOR
+// -------------------------
+$_indigo:               #1e22a9;//hsl(238,70%,39%);//rgb(30, 34, 169)
+$_rose:                 hsl(340,70%,70%);
+$_pink:                 #ff6699;//hsl(340, 100%,70%);//rgb(255, 102, 153)
+$_sunshine:             #e6de00;//hsl(58, 100%, 45%);//
+$_cyan:              	  hsl(180,100%,50%);
+$_teal:                 #00b1cc;//hsl(188,100%,40%);//
+$_orange:               #FF4F00;//international orange
+
+// SEMANTIC MAPPING
+$primary:               $_indigo;
+$primary-hue:           238;
+// $primary-inverse:       hsl($primary-hue, 70%, 62%);
+// $primary-inverse:       color.adjust($primary,$lightness: 24%);
+$primary-inverse:       #5A5FE2;
+$secondary:             $_pink;
+$tertiary:              $_teal;
+$success:               $_teal;
+$error:                 $_orange;
+
+$neutral-100:           hsl($primary-hue,00%,100%);
+$neutral-95:            hsl($primary-hue,100%,96%);
+$neutral-90:            hsl($primary-hue,01%,92%);
+$neutral-80:            hsl($primary-hue,02%,82%);
+$neutral-70:            hsl($primary-hue,02%,71%);
+$neutral-60:            hsl($primary-hue,03%,62%);
+$neutral-50:            hsl($primary-hue,08%,49%);
+$neutral-40:            hsl($primary-hue,08%,42%);
+$neutral-30:            hsl($primary-hue,13%,30%);
+$neutral-20:            hsl($primary-hue,21%,20%);
+$neutral-10:            hsl($primary-hue,34%,12%);
+$neutral-05:            hsl($primary-hue,55%,04%);
+$neutral-0:             hsl($primary-hue,89%,02%);

@@ -1,0 +1,30 @@
+@use '../library' as lib;
+
+@use "../components/masthead";
+
+body.blog.post {
+
+	#masthead {
+    	p.summary {
+    		display: none;
+    	}
+	    @media (min-width:lib.$breakpoint) {
+	    	justify-content: space-between;
+	      h1, h2, p {
+	        max-width: lib.$width;
+	      }
+	    }
+	}
+
+	.related-posts {
+		padding: lib.$gutter-xl 0;
+		margin: lib.$gutter-xl 0;
+	}
+
+	transition: all (lib.$speed * 4) lib.$easing;
+
+	background: var(--well-background);
+	&.scrolled {
+		background: var(--body-background);
+	}
+}

@@ -1,0 +1,118 @@
+@use '../library' as lib;
+
+@use "../components/masthead";
+
+@use '../components/project-list';
+
+@use '../components/post-list';
+
+body.home {
+  #header {
+    position: absolute;
+    background: transparent;
+
+    .logo {
+        color: var(--hero-text-color);
+        &:hover {
+            color: var(--well-text-color);
+        }
+    }
+
+    #menu {
+      a {
+        color: var(--hero-text-color);
+        &:hover {
+          color: var(--link-color);
+        }
+      }
+    }
+
+  }
+
+  #masthead {
+    @media (min-width:lib.$breakpoint) {
+      min-height: calc(81vh);
+      height: auto;
+    }
+
+    @media (max-width:lib.$breakpoint) {
+      padding-top: (lib.$gutter + lib.$navbar-height);
+    }
+
+    @media (min-width:lib.$breakpoint) {
+      h1, h2, p.bio {
+        max-width: lib.$width;
+      }
+
+    }
+
+  }
+
+  #gradient-canvas, #masthead canvas {
+    $scaler: 2;
+    position: absolute;
+    width: 100% * $scaler;
+    height: 100% * $scaler;
+    left: -50%;
+    top: -50%;
+    --gradient-color-1: var(--primary);
+    --gradient-color-2: var(--secondary);
+    --gradient-color-3: var(--primary);
+    --gradient-color-4: var(--tertiary);
+  }
+
+  .project-list {
+    padding: lib.$gutter;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: lib.$gutter;
+    grid-column-gap: lib.$gutter;
+
+    h2 {
+      display: none;
+    }
+
+    @media (min-width:lib.$breakpoint) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    // @media (min-width:lib.$breakpoint-widescreen) {
+    //   grid-template-columns: repeat(4, 1fr);
+    // }
+
+    .project {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+
+      header {
+        h3 {
+          text-align: center;
+        }
+
+        p {
+          display: none;
+        }
+
+      }
+
+      figure, .figure {
+        img {
+          height: calc((100vw - (lib.$gutter * 4))/2);
+
+          @media (min-width:lib.$breakpoint) {
+            height: calc((100vw - (lib.$gutter * 4))/3);
+          }
+
+          @media (min-width:lib.$breakpoint-widescreen) {
+            height: calc((100vw - (lib.$gutter * 4))/4);
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

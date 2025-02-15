@@ -1,0 +1,95 @@
+@use "library" as lib;
+
+.card {
+    box-sizing: border-box;
+    width: 100%;
+    padding: lib.$gutter;
+    border: 1px solid var(--border-color);
+    border-radius: lib.$border-radius;
+    box-shadow: lib.$shadow;
+    background: var(--card-background);
+    color: var(--card-text-color);
+
+    h1,h2,h3,h4,strong,b {
+        color: var(--card-bold-color);
+    }
+}
+.hero {
+    box-sizing: border-box;
+    padding: lib.$gutter;
+
+    @include lib.fullWidth(100vw);
+
+    @include lib.inverse();
+
+    li {
+        list-style: none;
+    }
+
+    @media (min-width: lib.$breakpoint) {
+        padding: lib.$gutter lib.$margin;
+    }
+}
+
+blockquote,.blockquote {
+    padding: 0 lib.$gutter;
+    margin: lib.$gutter 0 lib.$gutter calc(lib.$gutter * -1);
+    border-left: solid 4px var(--text-secondary);
+    color: var(--text-secondary);
+
+    @media (max-width: lib.$breakpoint) {
+        margin-left: 0;
+    }
+}
+
+.button, button {
+    background: var(--primary);
+    color: var(--on-primary);
+
+    padding: ( lib.$gutter * .5 ) lib.$gutter;
+    border-radius: lib.$border-radius;
+    text-decoration: none;
+    box-shadow: inset 0px 1px 1px 0px lib.$neutral-100, lib.$shadow;
+
+    &:hover {
+      color: var(--hero-bold-color);
+    }
+}
+table {
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0em;
+  margin-bottom: lib.$gutter;
+  // background: var(--body-background);
+  overflow-x: scroll;
+  display: block;
+
+  th, td {
+    padding: .5em 1em;
+  }
+
+  th {
+    font-weight: lib.$bold-font-weight;
+    line-height: 1;
+    font-size: lib.$small-font-size;
+    border: 0 solid var(--border-color);
+    border-width: 0 0 1px 0;
+    text-align: left;
+    color: var(--text-secondary);
+  }
+
+  td {
+    font-size: lib.$small-font-size;
+    vertical-align: top;
+  }
+
+  &.rotate {
+    @include lib.transpose_table;
+
+    @media (min-width:lib.$breakpoint) {
+    }
+
+  }
+
+}
+

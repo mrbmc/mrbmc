@@ -10,7 +10,7 @@ timeline: 2019-2020
 ---
 ![GroupWatch Devices](/images/portfolio/disney-groupwatch/disney-groupwatch-devices.png){.fullwidth .blur-in}
 
-### Storytelling is a fundamental human need.
+## Storytelling is a fundamental human need.
 
 **How might we build social connection into the streaming experience?** I led a cross-discipline team of 20+ product designers, researchers, animators, marketers, and illustrators from deep user research through international roll-out to try and answer this question. We built a beloved feature for Disney+ that connected people when they could not be together.
 
@@ -71,11 +71,11 @@ The R&D team created a proof of concept build using the core technology and desi
 
 Our executive leaders wanted to ensure there was a viable market for social-viewing. I partnered with our product marketing team, a VP of Product, and an external research firm to interview users about their co-viewing use and validate user perception of this feature.
  
-* ![](/images/portfolio/disney-groupwatch/groupwatch-research-frame1.jpg)
-* ![](/images/portfolio/disney-groupwatch/groupwatch-research-frame2.jpg)
-* ![](/images/portfolio/disney-groupwatch/groupwatch-research-frame3.jpg)
-* ![](/images/portfolio/disney-groupwatch/groupwatch-research-frame4.jpg)
-{.gallery .inverse style=""}
+* ![Research Participants](/images/portfolio/disney-groupwatch/groupwatch-research-frame1.jpg)
+* ![Tested Concepts](/images/portfolio/disney-groupwatch/groupwatch-research-frame2.jpg)
+* ![Concept Feedback](/images/portfolio/disney-groupwatch/groupwatch-research-frame3.jpg)
+* ![Quant Insights](/images/portfolio/disney-groupwatch/groupwatch-research-frame4.jpg)
+{.gallery style=""}
 
 ### Experience Guidelines
 
@@ -128,43 +128,43 @@ Demonstrate Disney’s commitment to innovation and improving the guest experien
 
 All the research and feedback helped clarify the primary user archetypes and their JTBDs. The single biggest interaction and UX challenge was helping the Host user archetype with the emotional labor of inviting people to watch together. We knew the invitation flow had to be frictionless and integrate with existing user behaviors.
 
-![](/images/portfolio/disney-groupwatch/groupwatch-ixd.jpg)
+![Interaction Design for the Invite](/images/portfolio/disney-groupwatch/groupwatch-ixd.jpg)
 {.fullwidth90}  
 
 Interaction design for the invite.{.caption}
 
 Two designers and a researcher partnered to refine the invite UI. Using Rapid Iterative Test Evaluation tested prototypes with users to learn more about their mental models and identify any usabilty issues. This was the first prototype flow:
-![](/images/portfolio/disney-groupwatch/groupwatch-invite-v1.png){.canzoom}
+![Invite flow version 1](/images/portfolio/disney-groupwatch/groupwatch-invite-v1.png){.canzoom}
 
 Testing convinced the team to make big changes: 
 - Remove UI that "triggered" users and added anxiety.
 - Leverage the native social features in phones. 
 - Lean into the "theater lobby" metaphor of the social gathering.
-![](/images/portfolio/disney-groupwatch/groupwatch-invite-v2.png){.canzoom}
+![Invite flow version 2](/images/portfolio/disney-groupwatch/groupwatch-invite-v2.png){.canzoom}
 
-#### Visual Design
+### Visual Design
 
 Once we had the core invite experience dialed in we moved on to visual design of the waiting area and wayfinding.
 
 1. Visual design started with a broad spectrum of divergent ideas. We began to read-in more designers to the project at this point.
 
-![](/images/portfolio/disney-groupwatch/groupwatch-visual-v1.jpg){.canzoom}
+![24 versions of the waiting room](/images/portfolio/disney-groupwatch/groupwatch-visual-v1.jpg){.canzoom}
 
 
 2. We focused on layouts that had the right balance of social and content priority.
 
-![](/images/portfolio/disney-groupwatch/groupwatch-visual-v2.jpg){.canzoom}
+![Waiting room layouts that balance social and content](/images/portfolio/disney-groupwatch/groupwatch-visual-v2.jpg){.canzoom}
 
 3. Engineering leads had been informed of the program but now was the point we dug deep with Client Engineers to identify expensive UI that couldn't be rendered or needed custom components.
 
-![](/images/portfolio/disney-groupwatch/groupwatch-visual-v3.jpg){.canzoom}
+![Waiting room layouts that are feasible](/images/portfolio/disney-groupwatch/groupwatch-visual-v3.jpg){.canzoom}
 
 4. Finally, we aligned to the existing visual style as much as possible so the feature would feel native and intentional.
 
-![](/images/portfolio/disney-groupwatch/groupwatch-visual-v4.jpg){.canzoom}
+![Waiting room designs that fit our visual language](/images/portfolio/disney-groupwatch/groupwatch-visual-v4.jpg){.canzoom}
 
 
-#### Motion Design
+### Motion Design
 
 <video src="/images/portfolio/disney-groupwatch/groupwatch-motion-mobile.mp4" controls autoplay loop class="pullright" style="width:235px;height:482px;margin: 0 0 1em 0;"></video>
 
@@ -183,22 +183,22 @@ The motion design for TV devices was slightly more complex than mobile because i
 
 <video src="/images/portfolio/disney-groupwatch/groupwatch-motion-tv.mp4" controls autoplay loop class="" style="display:block;clear:both;"></video>
 
-#### Reactions
+### Reactions Illustration
 
 The core strategy was still "Group on mobile, Watch on TV" but we had a hypothesis that the experience needed a form of real-time interaction to connect people. Reactions were already popular on other products and felt like a natural fit.
 
 We did another round of divergent ideation with illustrations. It was super fun to invite 7 illustrators from across Product, Content, and Marketing design to participate. These are just some of the ideas they came up with.
-![](/images/portfolio/disney-groupwatch/groupwatch-reactions-ideation.png)
+![Reactions ideation](/images/portfolio/disney-groupwatch/groupwatch-reactions-ideation.png)
 
 We ran the reactions through a couple of rounds of usability and preference testing. We needed the final set to meet a few requirements:
 * **Legible** - the emotions were identifiable by users  
 * **Scalable** - we could easily add new emotions to the set.  
 * **Global** - the colors and shapes could work in most cultures.
 
-![](/images/portfolio/disney-groupwatch/groupwatch-reactions-final.png)
+![Final reactions illustrations](/images/portfolio/disney-groupwatch/groupwatch-reactions-final.png)
 
 ## Deliver{#deliver}
-![Double Diamond](/images/portfolio/doublediamond-deliver.png){.doublediamond}
+![Double Diamond - Deliver](/images/portfolio/doublediamond-deliver.png){.doublediamond}
 
 ### Developer Collaboration
 
@@ -206,30 +206,30 @@ A key part of our strategy for this feature was our TV support. Disney's patente
 
 We designed a wayfinding system to help hosts and guests navigate to their Groupwatch on TV after they received an invite on their phone. 
 
-![TV](/images/portfolio/disney-groupwatch/groupwatch-tv-desired.jpg)
+![TV desired design](/images/portfolio/disney-groupwatch/groupwatch-tv-desired.jpg)
 
 Our client and services engineers had reservations about this design. They were concerned that loading the GroupWatch™ session state, loading user data, and rendering this module in the middle of the homepage would create a slow experience for the majority of non-group users. Design and engineering negotiated a few ideas that would ensure a quick load time with sufficient information about the session.
 
-![TV](/images/portfolio/disney-groupwatch/groupwatch-tv-actual.jpg)
+![TV feasible design](/images/portfolio/disney-groupwatch/groupwatch-tv-actual.jpg)
 
 ### Marketing Collaboration
 
 Leading up to the launch of the feature I was able to collaborate with the Marketing Design team on materials in and out of the product to introduce the feature. Unconstrained by the design system and device technical constraints, they were able to elevate the look of GroupWatch and communicate the value proposition much more effectively.
-![](/images/portfolio/disney-groupwatch/groupwatch-marketing.png){.fullwidth}
+![Marketing designs](/images/portfolio/disney-groupwatch/groupwatch-marketing.png){.fullwidth}
 
 ### Public Reception
 
 The feature was well covered in the tech and media press. Many outlets called out the unique value of the feature during the Covid Pandemic.
 
 Fan reception was positive as well although people attempting to watch across different international regions experienced issues with different cuts of films being incompatible.
-![](/images/portfolio/disney-groupwatch/press.png){style="width:48%;display:inline-block;"}
-![](/images/portfolio/disney-groupwatch/social.png){style="width:48%;display:inline-block;"}
+![Press reactions](/images/portfolio/disney-groupwatch/press.png){style="width:48%;display:inline-block;"}
+![Social reactions](/images/portfolio/disney-groupwatch/social.png){style="width:48%;display:inline-block;"}
 
 ### In Market Performance
 
 GroupWatch found traction quickly with a solid cohort of subscribers. Over time the size of groups increased as hosts invited more guests to their sessions. We saw spikes with each international expansion, and from cross-promotion with content releases.
 
-![](/images/portfolio/disney-groupwatch/groupwatch-metrics.png)
+![Performacne Chart](/images/portfolio/disney-groupwatch/groupwatch-metrics.png)
 
 <style>
 #main h2 {margin: 3rem auto 0;text-align:center; clear:both;}

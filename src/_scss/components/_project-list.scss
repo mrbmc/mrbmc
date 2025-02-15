@@ -1,0 +1,62 @@
+@use '../library' as lib;
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  grid-row-gap: lib.$gutter;
+  grid-column-gap: lib.$gutter;
+
+  .project {
+    display: flex;
+    transition: all lib.$speed lib.$easing;
+    column-gap: lib.$gutter;
+
+    header {
+      p {
+        margin-bottom: 0;
+      }
+
+      .timeline {
+        display: none;
+        // font-weight: lib.$bold-font-weight;
+        margin: 0;
+        color: var(--text-secondary);
+      }
+
+    }
+
+    figure, .figure {
+      border-radius: lib.$border-radius;
+      overflow: hidden;
+      margin: 0;
+      filter: saturate(95%);
+      transition: all lib.$speed lib.$easing;
+
+      a {
+        display: block;
+      }
+
+      img {
+        display: block;
+        object-fit: cover;
+        // box-sizing: border-box;
+      }
+
+    }
+
+    &:hover {
+      z-index: 3;
+
+      figure, p.figure {
+        filter: saturate(1.02) contrast(1.1) brightness(1.1);
+        box-shadow: lib.$shadow;
+      }
+
+      transform: scale(1.05);
+    }
+
+  }
+
+}
+

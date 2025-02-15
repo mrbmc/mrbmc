@@ -5,7 +5,7 @@ title: Brian McConnell | Design & Product Leadership
 permalink: /resume/
 cssfile: "css/resume.css"
 ---
-Executive design leader with a proven track record of scaling design organizations and driving multi-billion dollar business growth through human-centered product development. Known for building and leading UX teams that transform streaming media businesses, having scaled Disney+ from launch to 126M subscribers and grown design teams from 2 to 26 across global locations. Consistently deliver breakthrough products by combining evidence-based design strategies with exceptional craft.{.large .two-col}
+Executive design leader with a proven track record of scaling design organizations and driving multi-billion dollar business growth through human-centered product development. Known for building and leading UX teams that transform streaming media businesses, having scaled Disney+ from launch to 126M subscribers and grown design teams from 2 to 26 across global locations. Consistently deliver breakthrough products by combining evidence-based design strategies with exceptional craft.{.large-type .two-col}
 
 1. **24** years experience{.card .kpi}
 2. **40+** products built{.card .kpi}

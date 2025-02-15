@@ -154,3 +154,9 @@ function galleryKeyPress(e) {
     }
 
 }
+
+window.addEventListener('load', function(e) {
+    console.log('project.window.load',e);
+    galleryLoad(e);
+});
+

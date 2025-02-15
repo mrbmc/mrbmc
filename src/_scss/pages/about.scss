@@ -1,15 +1,11 @@
-@use 'sass:math';
-@use 'sass:color';
-@use '_colors.scss';
-@use '_variables.scss';
-@use "_mixins.scss"; 
+@use "../library" as lib;
 
 body.about {
 
     main,#main {
         #bio {
             box-sizing: border-box;
-            padding: variables.$gutter-xl variables.$gutter;
+            padding: lib.$gutter-xl lib.$gutter;
             min-height: 38vw;
 
             position: relative;
@@ -18,36 +14,49 @@ body.about {
             justify-content: center;
 
             p.portrait {
-                border-radius: variables.$border-radius-xl;
+                border-radius: lib.$border-radius-xl;
                 overflow: hidden;
                     img {
                         display: block;
                     }
             }
 
-            @media (min-width: variables.$breakpoint) {
-                h1,p.large {
+            @media (min-width: lib.$breakpoint) {
+                h1,p.large-type {
                     width: 60vw;
                     margin: 0;
                 }
                 p.portrait {
                     position: absolute;
-                    right: variables.$gutter;
+                    right: lib.$gutter;
                     top: 50%;
-                    width: calc(36vw - variables.$gutter);
+                    width: calc(36vw - lib.$gutter);
                     margin: -18vw 0 0 0;
                 }                
             }
         }
         #leadership, #principles, #process {
             border-top: solid 1px var(--border-color);
-            padding-top: variables.$gutter-xl;
-            margin-top: variables.$gutter-xl;
+            padding-top: lib.$gutter-xl;
+            margin-top: lib.$gutter-xl;
         }
     }
 
     h1 + p {
-        margin: variables.$gutter 0 variables.$gutter-xl;
+        margin: lib.$gutter 0 lib.$gutter-xl;
+    }
+
+    .well {
+        background: var(--well-background);
+        color: var(--well-text-color);
+        padding: lib.$gutter;
+        box-sizing: border-box;
+
+        &.fullwidth {
+            @media (min-width: lib.$breakpoint) {
+                padding: lib.$gutter lib.$margin;
+            }
+        }
     }
 
     img[alt="Disney"] {
@@ -69,11 +78,11 @@ body.about {
 
     img.cover {
         $w: 100vw;
-        @include mixins.fullWidth($w);
+        @include lib.fullWidth($w);
         overflow: hidden;
         object-fit: cover;
         // height: (100vw / 2.31);
-        height: math.div($w, 4);
+        height: lib.div($w, 4);
 
         &.family {
             filter: sepia(10%) hue-rotate(0deg) saturate(50%) brightness(100%);
@@ -82,16 +91,8 @@ body.about {
 
     }
 
-    .hero {
-        // @include mixins.hero();
-        li .card {
-            min-height: 100%;
-            flex-basis: calc(50% - variables.$gutter);
-        }
-    }
-
     hr {
-        margin: variables.$gutter-xl auto;
+        margin: lib.$gutter-xl auto;
     }
 }
 
@@ -100,14 +101,14 @@ body.about {
 
 ul.timeline {
     width: auto;
-    @media (min-width: variables.$breakpoint) {
-        margin: variables.$gutter-xl variables.$gutter;
+    @media (min-width: lib.$breakpoint) {
+        margin: lib.$gutter-xl lib.$gutter;
     }
 
     li {
         margin: 0;
         position: relative;
-        padding: 0 0 variables.$gutter-xl variables.$gutter;
+        padding: 0 0 lib.$gutter-xl lib.$gutter;
         border-left: 2px solid var(--text-secondary);
         list-style: none;
         &:last-of-type {
@@ -119,8 +120,8 @@ ul.timeline {
             $bullet-size: .62rem;
             width: $bullet-size;
             height: $bullet-size;
-            border-radius: variables.$border-radius;
-            margin: 0 variables.$gutter 0 calc((variables.$gutter * -1) - ($bullet-size * .5) - 1px);
+            border-radius: lib.$border-radius;
+            margin: 0 lib.$gutter 0 calc((lib.$gutter * -1) - ($bullet-size * .5) - 1px);
             background: var(--text-secondary);
         }
 
