@@ -1,20 +1,20 @@
 @use 'sass:color';
-// @use 'sass:math';
-// @use 'sass:string';
+@use 'sass:math';
+@use 'sass:string';
 
-// @function decToHex($dec) {
-//     $hex: "0123456789ABCDEF";
-//     $first: math.div(($dec - $dec % 16),16)+1;
-//     $second: ($dec % 16)+1;
-//     @return string.slice($hex, $first, $first) + string.slice($hex, $second, $second)
-// }
-// @function hslToHex($h,$s,$l) {
-//   // @debug 'color.channel(hsl(#{$h},#{$s},#{$l}), "red", $space: rgb)';
-//   $r: decToHex(color.channel(hsl($h,$s,$l), "red", $space: rgb));
-//   $g: decToHex(color.channel(hsl($h,$s,$l), "green", $space: rgb));
-//   $b: decToHex(color.channel(hsl($h,$s,$l), "blue", $space: rgb));
-//   @return ##{$r+$g+$b};
-// }
+@function decToHex($dec) {
+    $hex: "0123456789ABCDEF";
+    $first: math.div(($dec - $dec % 16),16)+1;
+    $second: math.round($dec % 16)+1;
+    @return string.slice($hex, $first, $first) + string.slice($hex, $second, $second)
+}
+@function hslToHex($h,$s,$l) {
+  // @debug 'color.channel(hsl(#{$h},#{$s},#{$l}), "red", $space: rgb)';
+  $r: decToHex(color.channel(hsl($h,$s,$l), "red", $space: rgb));
+  $g: decToHex(color.channel(hsl($h,$s,$l), "green", $space: rgb));
+  $b: decToHex(color.channel(hsl($h,$s,$l), "blue", $space: rgb));
+  @return ##{$r+$g+$b};
+}
 
 // COLOR
 // -------------------------
@@ -38,16 +38,16 @@ $quartiary:             $_sunshine;
 $success:               $_teal;
 $error:                 $_orange;
 
-$neutral-100:           hsl($primary-hue,00%,100%);
-$neutral-95:            hsl($primary-hue,100%,96%);
-$neutral-90:            hsl($primary-hue,01%,92%);
-$neutral-80:            hsl($primary-hue,02%,82%);
-$neutral-70:            hsl($primary-hue,02%,71%);
-$neutral-60:            hsl($primary-hue,03%,62%);
-$neutral-50:            hsl($primary-hue,08%,49%);
-$neutral-40:            hsl($primary-hue,08%,42%);
-$neutral-30:            hsl($primary-hue,13%,30%);
-$neutral-20:            hsl($primary-hue,21%,20%);
-$neutral-10:            hsl($primary-hue,34%,12%);
-$neutral-05:            hsl($primary-hue,55%,04%);
-$neutral-0:             hsl($primary-hue,89%,02%);
+$neutral-100:           hslToHex($primary-hue,00%,100%);
+$neutral-95:            hslToHex($primary-hue,100%,96%);
+$neutral-90:            hslToHex($primary-hue,01%,92%);
+$neutral-80:            hslToHex($primary-hue,02%,82%);
+$neutral-70:            hslToHex($primary-hue,02%,71%);
+$neutral-60:            hslToHex($primary-hue,03%,62%);
+$neutral-50:            hslToHex($primary-hue,08%,49%);
+$neutral-40:            hslToHex($primary-hue,08%,42%);
+$neutral-30:            hslToHex($primary-hue,13%,30%);
+$neutral-20:            hslToHex($primary-hue,21%,20%);
+$neutral-10:            hslToHex($primary-hue,34%,12%);
+$neutral-05:            hslToHex($primary-hue,55%,04%);
+$neutral-0:             hslToHex($primary-hue,89%,02%);

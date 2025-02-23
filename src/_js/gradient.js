@@ -577,10 +577,7 @@ void main() {
       this.conf = {
         presetName: "",
         wireframe: true,
-        // density: [.06, .16],
         density: [.03, .08],
-        zoom: 20,
-        rotation: 0,
         seed: 2e1,
         playing: true
       },
@@ -614,7 +611,7 @@ void main() {
             type: "vec2"
           }),
           noiseSpeed: new this.minigl.Uniform({
-            value: 1e-5//5e-6
+            value: 9e-6
           })
         },
         type: "struct"

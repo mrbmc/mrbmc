@@ -30,6 +30,19 @@ body.home {
   }
 
   #masthead {
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        filter: url(#noiseFilter) opacity(20%);
+    }
+    h1 {
+      z-index: 3;
+    }
     @media (min-width:lib.$breakpoint) {
       min-height: calc(81vh);
       height: auto;
@@ -50,6 +63,7 @@ body.home {
 
   #gradient-canvas, #masthead canvas {
     position: absolute;
+    z-index: 0;
     $scaler: 1;
     width: 100% * $scaler;
     height: 100% * $scaler;
@@ -59,6 +73,11 @@ body.home {
     --gradient-color-2: var(--secondary);
     --gradient-color-3: var(--tertiary);
     --gradient-color-4: var(--primary);
+
+    --gradient-color-1: var(--gray-dark);
+    --gradient-color-2: var(--gray-mid);
+    --gradient-color-3: var(--black);
+    --gradient-color-4: var(--gray-dark);
   }
 
   .project-list {
@@ -110,5 +129,4 @@ body.home {
     }
 
   }
-
 }
