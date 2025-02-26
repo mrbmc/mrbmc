@@ -19,10 +19,10 @@
 // COLOR
 // -------------------------
 $_indigo:               #1e22a9;//hsl(238,70%,39%);//rgb(30, 34, 169)
-$_rose:                 hsl(340,70%,70%);
+$_rose:                 hslToHex(340,70%,70%);
 $_pink:                 #ff6699;//hsl(340, 100%,70%);//rgb(255, 102, 153)
 $_sunshine:             #e6de00;//hsl(58, 100%, 45%);//
-$_cyan:              	  hsl(180,100%,50%);
+$_cyan:              	  hslToHex(180,100%,50%);
 $_teal:                 #00b1cc;//hsl(188,100%,40%);//
 $_orange:               #FF4F00;//international orange
 

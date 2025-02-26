@@ -38,7 +38,7 @@ body.home {
         top: 0;
         left: 0;
         z-index: 2;
-        filter: url(#noiseFilter) opacity(20%);
+        filter: url(#noiseFilter) opacity(10%);
     }
     h1 {
       z-index: 3;
@@ -54,9 +54,8 @@ body.home {
 
     @media (min-width:lib.$breakpoint) {
       h1, h2, p.bio {
-        max-width: lib.$width;
+        max-width: lib.$grid-width;
       }
-
     }
 
   }
@@ -69,15 +68,19 @@ body.home {
     height: 100% * $scaler;
     left: 50% * ($scaler - 1) * -1;
     top: 50% * ($scaler - 1) * -1;
-    --gradient-color-1: var(--primary);
-    --gradient-color-2: var(--secondary);
-    --gradient-color-3: var(--tertiary);
-    --gradient-color-4: var(--primary);
 
-    --gradient-color-1: var(--gray-dark);
-    --gradient-color-2: var(--gray-mid);
-    --gradient-color-3: var(--black);
-    --gradient-color-4: var(--gray-dark);
+    //full color
+    // --gradient-color-1: var(--primary);
+    // --gradient-color-2: var(--secondary);
+    // --gradient-color-3: var(--tertiary);
+    // --gradient-color-4: var(--primary);
+
+    // grayscale
+    --gradient-color-1: #{lib.$neutral-10};
+    --gradient-color-2: #{lib.$neutral-30};
+    --gradient-color-3: #{lib.$neutral-50};
+    --gradient-color-4: #{lib.$neutral-10};
+
   }
 
   .project-list {
@@ -121,7 +124,6 @@ body.home {
           @media (min-width:lib.$breakpoint-widescreen) {
             height: calc((100vw - (lib.$gutter * 4))/4);
           }
-
         }
 
       }

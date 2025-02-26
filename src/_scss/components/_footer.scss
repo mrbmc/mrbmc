@@ -10,7 +10,8 @@ body > footer {
     padding: lib.$gutter-xl lib.$gutter;
     gap: lib.$gutter;
 
-    @include lib.hero();
+    // @include lib.hero();
+    background: var(--well-background);
 
     &>div {
         nav {

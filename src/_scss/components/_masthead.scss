@@ -12,6 +12,20 @@
     overflow: hidden;
     z-index: 10;
 
+    @include lib.hero(
+        lib.$primary,
+        lib.adjust(lib.$secondary,$alpha:-0.2),
+        lib.adjust(lib.$tertiary,$alpha:-0.0),
+        lib.adjust(lib.$primary,$alpha:-0.5),
+        );
+
+    @include lib.fullWidth(100vw);
+
+    @media (max-width: lib.$breakpoint) {
+        min-height: 56.25vw;
+        height: auto;
+    }
+
     &:before {
         filter: none;
     }
