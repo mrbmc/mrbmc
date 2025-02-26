@@ -57,9 +57,6 @@
 
 <script type="text/javascript" language="javascript">
 
-const date = new Date(Date.parse(document.lastModified));
-document.getElementById('mod-date').innerText = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
-
 function initEmails(){
     Array.from(document.getElementsByClassName('link-email')).map(link => {
       var attrs = link.dataset;
@@ -78,7 +75,6 @@ function initAnimations() {
         element.classList.add('in',true);
     });
 };
-
 
 window.addEventListener('load', function(e) {
     "use strict";
