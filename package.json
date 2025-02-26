@@ -9,8 +9,7 @@
   "scripts": {
     "build": "gulp full --verbose",
     "deploy": "./build.sh deploy",
-    "watch:sass": "sass --watch src/_scss:www/css --style compressed",
-    "watch:eleventy": "npx @11ty/eleventy --ignore-initial --serve",
+    "watch:eleventy": "npx @11ty/eleventy --ignore-initial --incremental --serve",
     "watch": "npm-run-all watch:*",
     "start": "npm-run-all --parallel watch:*",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,6 +23,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-livereload": "^4.0.2",
     "gulp-sass": "^6.0.0",
+    "gulp-shell": "^0.8.0",
     "gulp-uglify": "^3.0.2",
     "html-minifier": "^4.0.0",
     "lessc-watch": "^1.0.2",
@@ -42,6 +42,7 @@
     "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-cli": "^3.0.0",
+    "gulp-fs-cache": "^0.1.0",
     "gulp-rsync": "^0.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-util": "^3.0.8",

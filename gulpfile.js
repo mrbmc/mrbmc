@@ -7,6 +7,7 @@ const rsync = require('gulp-rsync');
 const exec = require('child_process').exec;
 const yargs = require('yargs');
 const clean = require('gulp-clean');
+const fsCache = require( 'gulp-fs-cache' );
 
 // Command-line arguments parsing
 const argv = yargs.argv;
@@ -21,28 +22,34 @@ const paths = {
     ,'src/_js/gallery-inline.js'
     ,'src/_js/boids.js'
   ],
-  backups: [
-    'backup/1999/**/*',
-    'backup/2000/**/*',
-    'backup/2001/**/*',
-    'backup/2002/**/*',
-    'backup/2015/**/*',
-    'backup/2022/**/*',
-    'backup/2023/www/**/*'
-  ],
   css: [
     'src/_scss/**/!(_*).scss'
   ],
+  html: ['src/**/*.md', 'src/**/*.njk'], // Eleventy source files (assuming Markdown or Nunjucks)
   assets: [
-    'src/images/**/*',
-    'src/_fonts/PPNeueMontreal*'
+    {
+      'src':'src/images/',
+      'dst':'www/images'
+    },
+    {
+      'src':'src/_fonts/LT_Univers*',
+      'dst':'www/css/fonts'
+    }
+  ],
+  backups: [
+    {"src":'backup/1999/',"dst":'www/1999'},
+    {"src":'backup/2000/',"dst":'www/2000'},
+    {"src":'backup/2001/',"dst":'www/2001'},
+    {"src":'backup/2002/',"dst":'www/2002'},
+    {"src":'backup/2015/',"dst":'www/2015'},
+    {"src":'backup/2022/',"dst":'www/2022'},
+    {"src":'backup/2023/www/',"dst":'www/2023'}
   ],
   garbage: [
     // `${__dirname}/www/*/node_modules/**`,
     // `${__dirname}/www/metrics/**`,
     `${__dirname}/www/**/.DS_Store`
-  ],
-  html: ['src/**/*.md', 'src/**/*.njk'] // Eleventy source files (assuming Markdown or Nunjucks)
+  ]
 };
 
 
@@ -81,29 +88,72 @@ function buildHTML() {
 // Sync static assets (images)
 function syncAssets() {
   const log = argv.verbose ? console.log : () => {};
-  return src(paths.assets)
-    .pipe(rsync({
-      root: 'src',
-      destination: 'www/images',
-      exclude: ['portfolio/**','portfolio/','blog/**','blog/'],
-      archive: true,
-      silent: !argv.verbose
-    }))
-    .on('data', data => log(`Rsynced ${data}`))
-    .on('end', () => console.log('Rsync completed'));
+
+  //exec is much MUCH faster than calling gulp-rsync
+
+  let foo = [];
+  let command = `rsync -av #src #dst --exclude='portfolio' --exclude='blog' --exclude="DS_Store"`;
+  paths.assets.forEach((path)=>{
+    let cmd = command
+      .replace(/\#src/ig,path.src)
+      .replace(/\#dst/ig,path.dst);
+
+    // console.log(cmd);
+
+    foo.push(
+      exec(cmd)
+        .on('data', data => log(data.toString()))
+        .on('error', (err) => {
+          console.error(`Error synching assets: ${err}`);
+          process.exit(1);
+        })
+    )
+  })
+  return foo.pop();
+
+  // return src(paths.assets)
+  //   .pipe(rsync({
+  //     root: 'src',
+  //     destination: 'www/images',
+  //     exclude: ['portfolio/**','portfolio/','blog/**','blog/'],
+  //     archive: true,
+  //     silent: !argv.verbose
+  //   }))
+  //   .on('data', data => log(`Rsynced ${data}`))
+  //   .on('end', () => console.log('Rsync completed'));
 }
 
 function syncBackups() {
   const log = argv.verbose ? console.log : () => {};
-  return src(paths.backups)
-    .pipe(rsync({
-      root: 'backup',
-      destination: 'www',
-      archive: true,
-      silent: !argv.verbose
-    }))
-    .on('data', data => log(`Rsynced ${data}`))
-    .on('end', () => console.log('Rsync completed'));
+
+  //exec is much MUCH faster than calling gulp-rsync
+  let foo = [];
+  let command = `rsync -av #src #dst --exclude="DS_Store"`;
+   paths.backups.forEach((path)=>{
+    let cmd = command
+      .replace(/\#src/ig,path.src)
+      .replace(/\#dst/ig,path.dst);
+    // console.log(cmd);
+    foo.push(
+      exec(cmd)
+        .on('data', data => log(data.toString()))
+        .on('error', (err) => {
+          console.error(`Error synching assets: ${err}`);
+          process.exit(1);
+        })
+    )
+  })
+  return foo.pop();
+
+  // return src(paths.backups)
+  //   .pipe(rsync({
+  //     root: 'backup',
+  //     destination: 'www',
+  //     archive: true,
+  //     silent: !argv.verbose
+  //   }))
+  //   .on('data', data => log(`Rsynced ${data}`))
+  //   .on('end', () => console.log('Rsync completed'));
 
 }
 
@@ -115,6 +165,9 @@ function cleanUp() {
 exports.quick = series(
   buildJS,
   compileCSS,
+  // buildHTML,
+  // syncAssets,
+  // syncBackups,
 );
 
 // Define default task

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"im",
+				"img_result"
+			],
+			[
+				"des",
+				"destination"
+			],
+			[
 				"backg",
 				"background-size"
 			],
@@ -506,14 +514,6 @@
 			[
 				"brands",
 				"brandSecondary"
-			],
-			[
-				"go",
-				"goaccess_opt"
-			],
-			[
-				"goac",
-				"goaccess_cmd"
 			]
 		]
 	},
@@ -588,6 +588,14 @@
 				"Terminus: Toggle Panel"
 			],
 			[
+				"f",
+				"Format: Javascript"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
 				"form",
 				"Format CSS: Expanded"
 			],
@@ -598,10 +606,6 @@
 			[
 				"liq",
 				"Set Syntax: HTML (Liquid)"
-			],
-			[
-				"format",
-				"Format CSS: Expanded"
 			],
 			[
 				"to",
@@ -912,60 +916,65 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/brianmcconnell/Sites/mrbmc",
-		"/Users/brianmcconnell/Sites/mrbmc/src",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss"
+		"/Users/brianmcconnell/Sites/mrbmc"
 	],
 	"file_history":
 	[
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_post-list.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/blog.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/gulpfile.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/home.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_project-list.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_root.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_type.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout.html",
-		"/Users/brianmcconnell/Sites/mrbmc/package.json",
+		"/Users/brianmcconnell/Sites/mrbmc/eleventy.config.js",
+		"/Users/brianmcconnell/Sites/mrbmc/mrbmc.sublime-project",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/screen.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/node_modules/.bin/sass",
-		"/Users/brianmcconnell/Sites/mrbmc/src/index.md",
+		"/Users/brianmcconnell/Sites/mrbmc/package.json",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/gradient.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_colors.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_root.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/index.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/post.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_mixins.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout-three.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_footer.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_footer.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_variables.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/about.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/www/css/about.css",
+		"/Users/brianmcconnell/Sites/mrbmc/src/about.md",
+		"/Users/brianmcconnell/Sites/mrbmc/build.sh",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/blog.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/colophon.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/portfolio.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/project.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/css/post.css",
+		"/Users/brianmcconnell/Sites/mrbmc/src/about-leadership.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/about-principles.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/about-process.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_post-list.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_project-list.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_type.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/node_modules/.bin/sass",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_header.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_header.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/eleventy.config.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/images/profile/kageki-crane.svg",
-		"/Users/brianmcconnell/Sites/mrbmc/build.sh",
-		"/Users/brianmcconnell/Sites/mrbmc/gulpfile.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/project-detail.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/colophon.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/cv.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_molecules.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/resume.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_colors.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/colophon.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_atoms.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/css/colophon.css",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_project-list.md",
 		"/Users/brianmcconnell/Sites/mrbmc/backup/2023/src/_less/_home.less",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/project.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_gallery-inline.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/post-detail.html",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/post.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/blog.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/portfolio.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_masthead.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/portfolio.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/blog.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/about.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/about.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_footer.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_footer.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/home.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_root.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/backup/2003/less/_variables.less",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_mixins.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_masthead.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_animation.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_index.scss",
@@ -976,7 +985,6 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/about.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_footer.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_library.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/about-principles.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-groupwatch.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-enterprise.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/posts/bike-tour-2023.md",
@@ -985,7 +993,6 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/portfolio.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/project.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_gallery-inline.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/mrbmc.sublime-project",
 		"/Users/brianmcconnell/Sites/mrbmc/src/photos.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_publishing.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/post.scss",
@@ -999,7 +1006,6 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/boidsgl.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/boids.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/aiboids.html",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout-three.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/getLayer.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/getParticleSystem.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/sparky.js",
@@ -1041,15 +1047,11 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/mini.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_grid.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/home.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_js/blend.gsl",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_home.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout-micro.html",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_colophon.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_post-list.html"
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/blend.gsl"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -1191,6 +1193,72 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"images",
+			"speed",
+			"hslToHex",
+			"hsl",
+			"speed",
+			"noiseFilter",
+			"noiseImage",
+			"^about\\/([\\.\\w\\/-]+)$",
+			"src/images/",
+			"noise",
+			"Delta",
+			"freqDelta",
+			"amp",
+			"xSegCount",
+			"maxCssVarRetries",
+			"conf",
+			"\\, e",
+			"seed",
+			"density",
+			"seed",
+			"amp",
+			"vertDeform",
+			"noiseSpeed",
+			"5e-",
+			"setOrthographicCamera",
+			"density",
+			"rotation",
+			"zoom",
+			"noiseSpeed",
+			"initMaterial",
+			"mesh",
+			"resize",
+			"initGradientColors",
+			"colors\\.\\$tertiary",
+			"colors\\.\\$secondary",
+			"primary",
+			"gradient\\-color",
+			"setOrthographicCamera",
+			"resize",
+			"debug_output",
+			"fragment",
+			"v_color",
+			"jsDarkenTop",
+			"Darken",
+			"u_darken_top",
+			"gl_FragColor",
+			"snoise",
+			"waveLayers",
+			"u_waveLayers_length",
+			"blendNormal",
+			"fragment",
+			"shaderFiles",
+			"noise",
+			"permute",
+			"mod289",
+			"11ty",
+			"sass",
+			"gulp",
+			"sourcemaps",
+			"css",
+			"\\./about\\-",
+			"src",
+			"build_thumbs",
+			"\\./",
+			"for",
+			"images/",
 			"hover",
 			"type-sca",
 			"type-scale",
@@ -1252,73 +1320,7 @@
 			"@include",
 			"compileCSS",
 			"fullwidth",
-			"variables",
-			"\\$",
-			"typeset",
-			"include",
-			"full",
-			"transpose_table",
-			"mixins.\\$",
-			"variables.\\$",
-			"colors.\\$",
-			"gallery",
-			"mini",
-			"build",
-			"galleryLoad",
-			"colors\\.",
-			"variables",
-			"mixins",
-			"pagination",
-			"(\\w+)\\.\\$",
-			"(\\w+)\\.([\\$\\w])",
-			"(\\w+)\\.\\$",
-			"math.",
-			"mixins\\.",
-			"variables\\.",
-			"color\\.",
-			"color",
-			"hslToHex",
-			"\\, \\$space\\: rgb",
-			"\\$primary\\-inverse",
-			"hslToHex",
-			"\\$primary\\-hue",
-			"scs",
-			"20%",
-			"jie",
-			"scss",
-			"include",
-			"scss",
-			"\\.min\\.js",
-			"\\.min",
-			".min",
-			"min.js",
-			"rsync",
-			"cleanCSS",
-			"currentColor",
-			" fill\\=\"currentColor\"",
-			"shape",
-			"cop",
-			"renderer",
-			"domElement",
-			"mrbmc.min.js",
-			"<version>",
-			"module",
-			"border",
-			"jsmin",
-			"watch",
-			"princi",
-			"vertexShader",
-			"noise",
-			"start_date",
-			"stop_seconds",
-			"diff_days",
-			"download",
-			"blacklist",
-			"\\.grid",
-			"var\\(variables\\.\\$gutter\\)",
-			"\\-\\-grid\\-gutter",
-			"\\$breakpoint\\-",
-			"\\$breakpoint"
+			"variables"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1326,6 +1328,10 @@
 		"regex": true,
 		"replace_history":
 		[
+			"git mv \\1 about/\\1",
+			"",
+			"var(--tertiary)",
+			"var(--secondary)",
 			"currentColor",
 			"lib.",
 			".tert",
@@ -1449,11 +1455,7 @@
 			"\"/images",
 			"\"/_images",
 			"src/_images",
-			"small-type",
-			"image",
-			"brand-complement",
-			"brand-accent",
-			"transparentize($brand-secondary,0.8)"
+			"small-type"
 		],
 		"reverse": false,
 		"scrollbar_highlights": true,
@@ -1512,7 +1514,7 @@
 	},
 	"output.exec":
 	{
-		"height": 158.0
+		"height": 196.0
 	},
 	"output.find_results":
 	{
@@ -1536,6 +1538,138 @@
 		"selected_items":
 		[
 			[
+				"scree",
+				"src/_scss/screen.scss"
+			],
+			[
+				"hom",
+				"src/_scss/pages/home.scss"
+			],
+			[
+				"home",
+				"src/_scss/pages/home.scss"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"ele",
+				"eleventy.config.js"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"grad",
+				"src/_js/gradient.js"
+			],
+			[
+				"color",
+				"src/_scss/library/_colors.scss"
+			],
+			[
+				"root",
+				"src/_scss/_root.scss"
+			],
+			[
+				"_home",
+				"src/_scss/pages/home.scss"
+			],
+			[
+				"gradie",
+				"src/_js/gradient.js"
+			],
+			[
+				"post",
+				"src/_scss/pages/post.scss"
+			],
+			[
+				"_mix",
+				"src/_scss/library/_mixins.scss"
+			],
+			[
+				"scre",
+				"src/_scss/screen.scss"
+			],
+			[
+				"layout",
+				"src/_layouts/layout.html"
+			],
+			[
+				"_foot",
+				"src/_includes/_footer.html"
+			],
+			[
+				"footer",
+				"src/_includes/_footer.html"
+			],
+			[
+				"index",
+				"src/index.md"
+			],
+			[
+				"gra",
+				"src/_js/gradient.js"
+			],
+			[
+				"mixins.scs",
+				"src/_scss/library/_mixins.scss"
+			],
+			[
+				"_var",
+				"src/_scss/library/_variables.scss"
+			],
+			[
+				"root.scs",
+				"src/_scss/_root.scss"
+			],
+			[
+				"gradien",
+				"src/_js/gradient.js"
+			],
+			[
+				"Pack",
+				"package.json"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"about.sc",
+				"src/_scss/pages/about.scss"
+			],
+			[
+				"abou",
+				"www/css/about.css"
+			],
+			[
+				"elev",
+				"eleventy.config.js"
+			],
+			[
+				"bui",
+				"build.sh"
+			],
+			[
+				"gulpf",
+				"gulpfile.js"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"buil",
+				"build.sh"
+			],
+			[
+				"gulpfi",
+				"gulpfile.js"
+			],
+			[
 				"post-list",
 				"src/_scss/components/_post-list.scss"
 			],
@@ -1544,28 +1678,12 @@
 				"src/_scss/pages/blog.scss"
 			],
 			[
-				"home",
-				"src/_scss/pages/home.scss"
-			],
-			[
 				"project-list",
 				"src/_scss/components/_project-list.scss"
 			],
 			[
-				"root",
-				"src/_scss/_root.scss"
-			],
-			[
-				"layout",
-				"src/_layouts/layout.html"
-			],
-			[
 				"sass",
 				"node_modules/.bin/sass"
-			],
-			[
-				"packa",
-				"package.json"
 			],
 			[
 				"gradient",
@@ -1574,10 +1692,6 @@
 			[
 				"",
 				"src/_scss/pages/home.scss"
-			],
-			[
-				"index",
-				"src/index.md"
 			],
 			[
 				"Home.scs",
@@ -1596,24 +1710,12 @@
 				"src/_scss/components/_header.scss"
 			],
 			[
-				"_var",
-				"src/_scss/library/_variables.scss"
-			],
-			[
 				"_header.s",
 				"src/_scss/components/_header.scss"
 			],
 			[
-				"root.scs",
-				"src/_scss/_root.scss"
-			],
-			[
 				"_ty",
 				"src/_scss/_type.scss"
-			],
-			[
-				"ele",
-				"eleventy.config.js"
 			],
 			[
 				"Inde",
@@ -1624,24 +1726,12 @@
 				"src/_layouts/project-detail.html"
 			],
 			[
-				"bui",
-				"build.sh"
-			],
-			[
-				"gulp",
-				"gulpfile.js"
-			],
-			[
 				"resum.scs",
 				"src/_scss/pages/resume.scss"
 			],
 			[
 				"colo",
 				"src/colophon.md"
-			],
-			[
-				"scree",
-				"src/_scss/screen.scss"
 			],
 			[
 				"_roo",
@@ -1670,10 +1760,6 @@
 			[
 				"_colo",
 				"src/_scss/library/_colors.scss"
-			],
-			[
-				"_home",
-				"src/_scss/pages/home.scss"
 			],
 			[
 				"post-det",
@@ -1752,10 +1838,6 @@
 				"src/_scss/portfolio.scss"
 			],
 			[
-				"_mix",
-				"src/_scss/library/_mixins.scss"
-			],
-			[
 				"_ma",
 				"src/_scss/_masthead.scss"
 			],
@@ -1792,10 +1874,6 @@
 				"src/_scss/_footer.scss"
 			],
 			[
-				"pack",
-				"package.json"
-			],
-			[
 				"_li",
 				"src/_scss/_library.scss"
 			],
@@ -1830,10 +1908,6 @@
 			[
 				"projec-",
 				"src/_layouts/project-detail.html"
-			],
-			[
-				"post",
-				"src/_scss/post.scss"
 			],
 			[
 				"_pub",
@@ -1900,16 +1974,8 @@
 				"src/_layouts/layout.html"
 			],
 			[
-				"footer",
-				"src/_includes/_footer.html"
-			],
-			[
 				"bl",
 				"backup/_fonts/balto/balto-Light.woff"
-			],
-			[
-				"gra",
-				"src/_js/gradient.js"
 			],
 			[
 				"princi",
@@ -1918,10 +1984,6 @@
 			[
 				"abou.scs",
 				"src/_scss/about.scss"
-			],
-			[
-				"abou",
-				"src/about.md"
 			],
 			[
 				"regex.t",
@@ -1984,68 +2046,8 @@
 				"src/_scss/_footer.scss"
 			],
 			[
-				"scre",
-				"src/_scss/screen.scss"
-			],
-			[
 				"colo.scs",
 				"src/_scss/colophon.scss"
-			],
-			[
-				"mixi",
-				"src/_scss/_mixins.scss"
-			],
-			[
-				"disney-gr",
-				"src/projects/disney-growth.md"
-			],
-			[
-				"colors",
-				"src/_scss/_colors.scss"
-			],
-			[
-				"post.scs",
-				"src/_scss/post.scss"
-			],
-			[
-				"_heade",
-				"src/_scss/_header.scss"
-			],
-			[
-				"gradi",
-				"src/_js/gradient.js"
-			],
-			[
-				"_footer.scs",
-				"src/_scss/_footer.scss"
-			],
-			[
-				"build.s",
-				"backup/2023/build.sh"
-			],
-			[
-				"gallery-inline",
-				"src/_js/gallery-inline.js"
-			],
-			[
-				"project-det",
-				"src/_layouts/project-detail.html"
-			],
-			[
-				"mixin",
-				"src/_scss/_mixins.scss"
-			],
-			[
-				"post-de",
-				"src/_layouts/post-detail.html"
-			],
-			[
-				"BLOg.scs",
-				"src/_scss/blog.scss"
-			],
-			[
-				"portfoli.scs",
-				"src/_scss/portfolio.scss"
 			]
 		],
 		"width": 0.0

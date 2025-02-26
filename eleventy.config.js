@@ -151,10 +151,10 @@ module.exports = function(eleventyConfig) {
 
   // We enable the passthrough for development purposes.
   // This updates the build with realtime image updates.
-  eleventyConfig.addPassthroughCopy({"src/images":"images"});
+  // eleventyConfig.addPassthroughCopy({"src/images":"images"});
 
-  eleventyConfig.addWatchTarget("www/css/screen.css");
-
+  // this rebuilds the html if the css is transpiled
+  // eleventyConfig.addWatchTarget("www/css/screen.css");
 
   eleventyConfig.setServerOptions({
   //   // Default values are shown:
@@ -165,7 +165,7 @@ module.exports = function(eleventyConfig) {
   //   },
     port: 10000,
     showVersion: true,
-    watch: ["www/css/","src/css/","www/js/mrbmc.min.js"],
+    watch: ["www/css/","www/js/"],
   });
 
   // ========================================
