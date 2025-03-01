@@ -1,4 +1,6 @@
-## Design Leadership
+{% section "leadership","" %}
+
+## Design Leadership Philopsophy
 
 > A design leader is both a functional expert, *and* a human leader, who can give the business a competitive advantage by design.{.blockquote}
 
@@ -17,7 +19,7 @@ Here are some more leadership frameworks that have influenced my approach:
 * I also draw tremendous inspiration from [leadership in science and nature](/blog/leadership-in-nature/).
  -->
 
-### Leadership Philosophy 
+### Leadership Values 
 
 My leadership philosophy is inspired by lessons from nature, science, and history. There are highly effective leadership models in the animal kingdom that demonstrate the values I want to embody as a leader:
 + **mentorship**
@@ -28,11 +30,11 @@ My leadership philosophy is inspired by lessons from nature, science, and histor
 
 [![Orca, Lion, Bee](/images/about/leadership-nature.jpg)](/blog/leadership-in-nature/) {.fullwidths}
 
-### Functional Leader
+### Management Framework
 
-As a functional expert I try to support these three pillars to create a healthy design practice:
+As a functional expert I created a framework for nurturing high-performing teams:
 
-![Puzzle](/images/about/puzzle.svg){style="height:38vh;width:auto;display:inline-block"}
+![Puzzle](/images/about/puzzle.svg){style="height:50vh;width:auto;margin:0 auto;display:block"}
 
 #### Culture
 
@@ -46,7 +48,7 @@ I believe culture can be designed by rewarding behavior that reinforces our valu
 - Values
 - Hiring Process
 - Performance Management
-- Routines
+- Routines & Rituals
 
 &nbsp;
 
@@ -60,9 +62,9 @@ Making things that meet high quality standards requires learned skills applied i
 
 - Quality Standards
 - Career Guides
-- education & mentorship
+- Continuing Education & mentorship
 - Design Processes
-- Skills: Motion, Content, Systems
+- Skills: Visiual, Motion, Content
 - Design Systems
 
 &nbsp;
@@ -79,7 +81,7 @@ Design is a business function built on creativity. The acts of research, ideatio
 - Evidence & Insights
 - Product Vision
 - Program management
-- Budgeting
+- Team Budget
 
 
 <style>
@@ -95,3 +97,6 @@ Design is a business function built on creativity. The acts of research, ideatio
 		height: 10vw;
 	}
 </style>
+
+
+{% endsection %}
