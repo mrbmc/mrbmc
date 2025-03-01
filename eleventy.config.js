@@ -61,8 +61,8 @@ module.exports = function(eleventyConfig) {
     formats: ["webp"],
 
     // optional, output image widths
-    widths: ["auto"],
-    // widths: [1280],
+    // widths: ["auto"],
+    widths: [1024,640,1440],
 
     filenameFormat: function (id, src, width, format, options) {
       // id: hash of the original image
@@ -77,14 +77,18 @@ module.exports = function(eleventyConfig) {
    // optional, attributes assigned on <img> override these values.
     defaultAttributes: {
       loading: "lazy",
+      sizes: "(max-width: 768px) 640px,((min-width:768px) and (max-width:1199px)) 1024px,(min-width:1200px) 1440px",
       decoding: "async"
     },
   });
+
   eleventyConfig.addLiquidFilter("getOptimizedImageSrc",function (arg) {
     if (typeof arg == "undefined") return "";
     let result = "/images/optimized/";
-        result += arg.split("/").pop();
-        result += "-640.webp";
+        result += arg.split("/")
+        .pop()
+        .replace(/\..*/ig,'-640.webp');
+        // result += "-640.webp";
     return result;
   });
 
