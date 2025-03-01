@@ -43,23 +43,12 @@ I've led teams of 2 to 25 people through mergers, acquisitions, closures, transf
 
 [CV & Resumé](/resume/){.button} <!--&nbsp; [Design Blog](/blog/){.button}--> 
 
-<section id="leadership">
-
 {% include "_leadership.md" %}
-
-</section>
-
-<section id="principles">
 
 {% include "_principles.md" %}
 
-</section>
-
-<section id="process">
-
 {% include "_process.md" %}
 
-</section>
 <script type="text/javascript">
 window.addEventListener('load', function(e) {
     Array.from(document.getElementsByClassName('blur-in')).map(element => {
