@@ -3,10 +3,10 @@
 .card {
     box-sizing: border-box;
     width: 100%;
-    padding: lib.$gutter;
+    padding: var(--gutter);
     border: 1px solid var(--border-color);
-    border-radius: lib.$border-radius;
-    box-shadow: lib.$shadow;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
     background: var(--card-background);
     color: var(--card-text-color);
 
@@ -14,9 +14,18 @@
         color: var(--card-bold-color);
     }
 }
+
+.well {
+    margin-top:  var(--gutter);
+    margin-bottom: var(--gutter);
+    box-sizing: border-box;
+    padding: var(--gutter);
+    background: var(--well-background);
+}
+
 .hero {
     box-sizing: border-box;
-    padding: lib.$gutter;
+    padding: var(--gutter);
 
     @include lib.fullWidth(100vw);
 
@@ -27,13 +36,13 @@
     }
 
     @media (min-width: lib.$breakpoint) {
-        padding: lib.$gutter lib.$grid-margin;
+        padding: var(--gutter) lib.$grid-margin;
     }
 }
 
 blockquote,.blockquote {
-    padding: 0 lib.$gutter;
-    margin: lib.$gutter 0 lib.$gutter calc(lib.$gutter * -1);
+    padding: 0 var(--gutter);
+    margin: var(--gutter) 0 var(--gutter) calc(var(--gutter) * -1);
     border-left: solid 4px var(--text-secondary);
     color: var(--text-secondary);
 
@@ -46,8 +55,8 @@ blockquote,.blockquote {
     background: var(--primary);
     color: var(--on-primary);
 
-    padding: ( lib.$gutter * .5 ) lib.$gutter;
-    border-radius: lib.$border-radius;
+    padding: calc( var(--gutter) * .5 ) var(--gutter);
+    border-radius: var(--border-radius);
     text-decoration: none;
     box-shadow: inset 0px 1px 1px 0px var(--white-semi), lib.$shadow;
 
@@ -59,7 +68,7 @@ table {
   width: 100%;
   max-width: 100%;
   border-spacing: 0em;
-  margin-bottom: lib.$gutter;
+  margin-bottom: var(--gutter);
   // background: var(--body-background);
   overflow-x: scroll;
   display: block;

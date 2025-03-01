@@ -14,7 +14,7 @@ body.about {
             justify-content: center;
 
             p.portrait {
-                border-radius: lib.$border-radius-xl;
+                border-radius: var(--border-radius-xl);
                 overflow: hidden;
                     img {
                         display: block;
@@ -23,22 +23,17 @@ body.about {
 
             @media (min-width: lib.$breakpoint) {
                 h1,p.large-type {
-                    width: 60vw;
+                    width: calc(66vw - var(--gutter-xl) - var(--gutter));
                     margin: 0;
                 }
                 p.portrait {
                     position: absolute;
                     right: lib.$gutter;
                     top: 50%;
-                    width: calc(36vw - lib.$gutter);
-                    margin: -18vw 0 0 0;
+                    width: calc(34vw);
+                    margin: -17vw 0 0 0;
                 }                
             }
-        }
-        #leadership, #principles, #process {
-            border-top: solid 1px var(--border-color);
-            padding-top: lib.$gutter-xl;
-            margin-top: lib.$gutter-xl;
         }
     }
 
@@ -56,6 +51,11 @@ body.about {
             @media (min-width: lib.$breakpoint) {
                 padding: lib.$gutter lib.$grid-margin;
             }
+        }
+    }
+    section {
+        img {
+            border-radius: var(--border-radius);
         }
     }
 
@@ -105,7 +105,7 @@ ul.timeline {
             $bullet-size: .62rem;
             width: $bullet-size;
             height: $bullet-size;
-            border-radius: lib.$border-radius;
+            border-radius: var(--border-radius);
             margin: 0 lib.$gutter 0 calc((lib.$gutter * -1) - ($bullet-size * .5) - 1px);
             background: var(--text-secondary);
         }

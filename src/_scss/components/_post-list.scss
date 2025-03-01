@@ -15,7 +15,7 @@
         transition: all lib.$speed lib.$easing;
 
         header {
-            flex-basis: 81%;
+            flex-basis: 75%;
             h3 {
                 margin: 0;
                 a {
@@ -29,15 +29,17 @@
             }
         }
         figure,.figure {
-            flex-basis: 19%;
-            border-radius: lib.$border-radius;
+            flex-basis: 25%;
+            border-radius: var(--border-radius);
             overflow: hidden;
-            margin-bottom: 0;
+            margin: 0;
             a {
               display: block;
             }
             img {
               display: block;
+              object-fit: cover;
+              aspect-ratio: 1.5;
             }
         }
 
@@ -50,7 +52,19 @@
             }           
             transform: scale(1.02);
         }
-    }   
+
+        @media (max-width: lib.$breakpoint) {
+          & {
+            flex-direction: column;
+          }
+          figure {
+            img {
+              aspect-ratio: 2.39;
+            }
+          }
+        }
+
+    }
     &:has(article:hover) {
         article:not(:hover) header {
             h3 {

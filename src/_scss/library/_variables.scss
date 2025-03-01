@@ -30,8 +30,8 @@ $heading-kerning: -0.025em;
 // --------------------------------------------------
 $gutter: $base-line-height;
 $gutter-xl: $base-line-height * 2;
-$grid-width: 50rem;
-$grid-columns: 6;
+$grid-width: 40rem;
+$grid-columns: 12;
 $grid-column: math.div(($grid-width - (($grid-columns - 1) * $gutter)), $grid-columns);
 $grid-margin: calc((100vw - $grid-width) * .5);
 $breakpoint: 767px;
@@ -55,11 +55,10 @@ $speed: 400ms;
 $easing: $easeOutCubic;
 
 // ATOMS
-$input-height: 1.25rem;
-$navbar-height: 2.38rem;
-$border-radius: $gutter * 0.25;
-$border-radius-xl: $gutter;
-$shadow-color: hsla(colors.$primary-hue, 100%, 12%, 0.05);
+// $input-height: 1.25rem;
+// $border-radius: $gutter * 0.25;
+// $border-radius-xl: $gutter;
+$shadow-color: hsla(colors.$primary-hue, 100%, 12%, 0.13);
 $shadow-depth: $gutter;
 $shadow-offset: ($shadow-depth * .33);
 $shadow: 0 2px 8px $shadow-color, 0 $shadow-offset $shadow-depth $shadow-color;

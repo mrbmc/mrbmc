@@ -57,10 +57,12 @@
 
 @mixin fullWidth($_limit:100vw) {
   & {
+    box-sizing: border-box;
     width: $_limit;
     --delta: calc(#{$_limit} - #{variables.$grid-width});
     margin-left: calc( max(var(--delta),var(--gutter-xl)) * -0.5);
-    padding: 0 var(--gutter);
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
   }
 
   @media (max-width: (variables.$grid-width)) {

@@ -19,6 +19,15 @@ body.blog.post {
 	      }
 	    }
 	}
+	main {
+		figure {
+			margin: 0 0 var(--gutter-xl) 0;
+			img {
+				aspect-ratio: 2.16;
+				object-fit: cover;
+			}
+		}
+	}
 
 	.related-posts {
 		padding: lib.$gutter-xl 0;

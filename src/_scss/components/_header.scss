@@ -2,19 +2,18 @@
 
 
 #header {
-  padding: .38rem lib.$gutter;
-  position: relative;
-  z-index: 100;
   box-sizing: border-box;
-  // height: lib.$navbar-height;
-  min-height: 44px;
+  z-index: 100;
+  padding: 0 var(--gutter);
+  height: var(--navbar-height);
   width: 100%;
-  background: var(--body-background);
-  border: 0px solid var(--border-color);
-  border-width: 0 0 0px 0;
+  background: var(--navbar-background);
+  border: 0 0 0px 0 solid var(--navbar-border);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   transition: top lib.$speed lib.$easing;
 
   @media (max-width:lib.$breakpoint) {
@@ -27,14 +26,14 @@
   }
 
   .logo {
-    $logo-size: lib.$navbar-height * .62;
+    $logo-size: calc(var(--navbar-height) * 0.62);
     width: $logo-size;
     height: $logo-size;
     z-index: 3;
     margin: -0.25em;
     padding: 0.25em;
     overflow: hidden;
-    border-radius: lib.$border-radius;
+    border-radius: var(--border-radius);
 
     &:hover {
       background: var(--well-background);
@@ -53,7 +52,7 @@
       transition: all lib.$speed lib.$easing;
       padding: 0 (lib.$gutter * .5);
       margin: 0 0 0 lib.$gutter;
-      border-radius: lib.$border-radius;
+      border-radius: var(--border-radius);
 
       &:hover {
         transition: all (lib.$speed * .5) lib.$easing;
@@ -85,10 +84,10 @@
   z-index: 90;
   top: (lib.$gutter * .25);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   box-sizing: border-box;
   max-width: 100%;
-  margin: lib.$gutter auto;
+  margin: var(--gutter) auto;
   box-shadow: lib.$shadow;
   border-radius: 2rem;
   border: 1px solid var(--border-color);
@@ -176,7 +175,7 @@
     height: 1em;
     position: absolute;
     right: lib.$gutter;
-    top: (lib.$navbar-height * .38);
+    top: calc(var(--navbar-height) * .38);
   }
 
 }

@@ -1,6 +1,8 @@
 @use "library" as lib;
 
 :root {
+    // PRIMITIVES
+    // ------------------------------------------------------------
     --black:            #{lib.$neutral-10};
     --gray-dark:        #{lib.$neutral-30};
     --gray-mid:         #{lib.$neutral-50};
@@ -17,15 +19,13 @@
     --success:          #{lib.$success};
     --error:            #{lib.$error};
 
-    // TYPE
-    // -------------------------
+    // TOKENS
+    // ------------------------------------------------------------
     --text-primary:          var(--gray-dark);
     --text-secondary:        var(--gray-mid);
     --link-color:            var(--black);
     --link-color-hover:      var(--gray-dark);
 
-    // Scaffolding
-    // -------------------------
     --body-background:       var(--white);
     --border-color:          var(--gray-light);
     --card-background:       var(--white);
@@ -38,8 +38,27 @@
     --hero-text-color:       #{lib.$neutral-90};
     --hero-bold-color:       #{lib.$neutral-100};
 
-    --gutter:                #{lib.$gutter};
-    --gutter-xl:             #{lib.$gutter-xl};
+    --columns:               #{lib.$grid-columns};
+    --gutter:                #{lib.$base-line-height};
+    --gutter-xl:             calc(var(--gutter) * 2);
+    --border-radius:         calc(var(--gutter) * .25);//#{lib.$gutter * 0.25};
+    --border-radius-xl:      var(--gutter);
+
+    --shadow:                 0 2px 8px var(--hero-background), 0 calc(var(--gutter * .25)) var(--gutter) var(--hero-background);
+    --shadow-xl:              0 2px 8px var(--hero-background), 0 calc(var(--gutter * 1)) var(--gutter-xl) var(--hero-background);
+
+    // NAVBAR
+    // ------------------------------------------------------------
+    --navbar-height:                calc(#{lib.$base-line-height} * 1.38);
+    --navbar-background:            var(--card-background);
+    --navbar-border:                var(--border-color);
+    --navbar-text:                  var(--text-primary);
+    --navbar-primary:               var(--primary);
+    --navbar-link-color:            var(--link-color);
+    --navbar-link-hover-color:      var(--link-color-hover);
+    --navbar-link-hover-background: var(--well-background);
+    --navbar-link-active-color:     var(--body-background);
+    --navbar-link-active-background: var(--text-primary);
 
 }
 @media (prefers-color-scheme: dark) {

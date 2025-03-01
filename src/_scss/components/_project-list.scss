@@ -27,7 +27,7 @@
     }
 
     figure, .figure {
-      border-radius: lib.$border-radius;
+      border-radius: var(--border-radius);
       overflow: hidden;
       margin: 0;
       filter: saturate(95%);

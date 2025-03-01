@@ -30,6 +30,15 @@ body.home {
   }
 
   #masthead {
+
+    // @include lib.hero(
+    //     lib.$neutral-0,
+    //     lib.$neutral-30,
+    //     lib.$neutral-60,
+    //     lib.$neutral-0,
+    //     );
+
+
     &:after {
         content: "";
         width: 100%;
@@ -49,7 +58,7 @@ body.home {
     }
 
     @media (max-width:lib.$breakpoint) {
-      // padding-top: (lib.$gutter + lib.$navbar-height);
+      padding-top: var(--navbar-height);
     }
 
     @media (min-width:lib.$breakpoint) {
