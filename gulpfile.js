@@ -92,7 +92,14 @@ function syncAssets() {
   //exec is much MUCH faster than calling gulp-rsync
 
   let foo = [];
-  let command = `rsync -av #src #dst --exclude='portfolio' --exclude='blog' --exclude="DS_Store"`;
+  let command = `rsync -av #src #dst --exclude="DS_Store"`;
+  let optimizedImageMask = ['avif','jpg','jpeg','png','webp','gif'];
+  optimizedImageMask.forEach(ext=>{
+    command += " --exclude='blog/*\."+ext+"'";    
+    command += " --exclude='portfolio/*\."+ext+"'";
+    command += " --exclude='portfolio/**/*\."+ext+"'";
+  });
+
   paths.assets.forEach((path)=>{
     let cmd = command
       .replace(/\#src/ig,path.src)
@@ -157,8 +164,21 @@ function syncBackups() {
 
 }
 
-// Clean up unnecessary files (garbage collection)
+function checkLinks() {
+  return exec('blc http://localhost:8000 -roe > link-report.log')
+    .on('error', (err) => {
+      console.error(`Error checking links: ${err}`);
+      process.exit(1);
+    });
+}
+
 function cleanUp() {
+  let r = exec('find ~/Sites/mrbmc/ -name ".DS_Store" -type f -delete')
+    .on('data', data => log(data.toString()))
+    .on('error', (err) => {
+      console.error(`Error cleaning: ${err}`);
+      process.exit(1);
+    });
   return src(paths.garbage).pipe(clean());
 }
 
@@ -168,6 +188,7 @@ exports.quick = series(
   // buildHTML,
   // syncAssets,
   // syncBackups,
+  // cleanUp
 );
 
 // Define default task
@@ -177,5 +198,6 @@ exports.full = series(
   buildHTML,
   syncAssets,
   syncBackups,
-  cleanUp
+  cleanUp,
+  checkLinks
 );
