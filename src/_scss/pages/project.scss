@@ -31,18 +31,26 @@ body.project {
                 object-fit: cover;
             }
         }
-        img.pullleft {
+        .pullleft,.pull-left {
             @media (min-width: lib.$breakpoint) {
                 width: 38%;
-                margin-right: lib.$gutter;
+                margin-right: var(--gutter);
                 float: left;
             }
         }
-        img.pullright {
+        .pullright,.pull-right {
             @media (min-width: lib.$breakpoint) {
                 width: 38%;
-                margin-left: lib.$gutter;
                 float: right;
+                margin: 0 0 0 var(--gutter);
+            }
+        }
+        img,svg,figure {
+            &[data-width="50"] {
+                width: 50%;
+            }
+            &[data-width="62"] {
+                width: 62%;
             }
         }
 
@@ -55,8 +63,8 @@ body.project {
             margin-bottom: (lib.$gutter * 2);
         }
         h2,h3 {
-            margin-top: (lib.$gutter * 4);
-            margin-bottom: (lib.$gutter * 2);
+            margin-top: varl(--gutter-xl);
+            margin-bottom: var(--gutter);
         }
     }
     @media (max-width: lib.$breakpoint) {
@@ -102,7 +110,7 @@ body.project {
     }
 
     h1.section,h2.section {
-        padding: lib.$gutter;
+        padding-left: lib.$gutter;
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -141,6 +149,7 @@ body.project {
                 display: block;
                 height: 100%;
                 width: 100%;
+                max-width: calc(100vw - var(--gutter-xl));
                 object-fit: cover;
                 object-position: 50% 0%;
                 border-radius: var(--border-radius);

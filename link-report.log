@@ -26,7 +26,7 @@ Getting links from: http://localhost:8000/
 ├───OK─── http://localhost:8000/images/optimized/sealion-balance-640.webp
 ├───OK─── http://localhost:8000/colophon/
 └───OK─── http://localhost:8000/privacy/
-Finished! 44 links found. 17 excluded. 0 broken.
+Finished! 48 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/about/
 ├───OK─── http://localhost:8000/images/optimized/mrbmc-20241121-640.webp
@@ -43,7 +43,7 @@ Getting links from: http://localhost:8000/about/
 Finished! 49 links found. 38 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/
-├───OK─── http://localhost:8000/images/optimized/btr-cover-16x9-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-hosttools-teaser-2x1-640.webp
 ├───OK─── http://localhost:8000/portfolio/flint-and-silicon/
 ├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-thumb-640.webp
 ├───OK─── http://localhost:8000/portfolio/team-charter-workshop/
@@ -129,14 +129,14 @@ Getting links from: http://localhost:8000/blog/
 ├───OK─── http://localhost:8000/blog/newtons-laws-of-design/
 ├───OK─── http://localhost:8000/images/optimized/newton-640.webp
 ├───OK─── http://localhost:8000/blog/rss.xml
-Finished! 53 links found. 27 excluded. 0 broken.
+Finished! 69 links found. 43 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-growth/
 ├───OK─── http://localhost:8000/images/optimized/disney-growth-640.webp
 ├───OK─── http://localhost:8000/images/optimized/everest-basecamp-large-640.webp
 ├───OK─── http://localhost:8000/images/optimized/growth-team-start-640.webp
-├───OK─── http://localhost:8000/images/optimized/pod-structure-640.webp
-├───OK─── http://localhost:8000/images/optimized/pod-cadence-640.webp
+├───OK─── http://localhost:8000/images/optimized/product-operating-model-640.webp
+├───OK─── http://localhost:8000/images/optimized/ceremony-cadence-640.webp
 ├───OK─── http://localhost:8000/images/optimized/growth-team-end-640.webp
 ├───OK─── http://localhost:8000/images/optimized/everest-ascent-large-640.webp
 ├───OK─── http://localhost:8000/images/optimized/olp-v4-640.webp
@@ -222,6 +222,7 @@ Getting links from: http://localhost:8000/portfolio/disney-groupwatch/
 Finished! 58 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-enterprise/
+├───OK─── http://localhost:8000/images/optimized/ivan-cockpit-640.webp
 ├───OK─── http://localhost:8000/images/optimized/exd-roi-framework-640.webp
 ├───OK─── http://localhost:8000/images/optimized/exd-team-linda-184.webp
 ├───OK─── http://localhost:8000/images/optimized/exd-team-caroline-184.webp
@@ -257,12 +258,12 @@ Getting links from: http://localhost:8000/portfolio/disney-enterprise/
 ├───OK─── http://localhost:8000/images/optimized/polaris-edit_cta-640.webp
 ├───OK─── http://localhost:8000/images/optimized/polaris-collection-640.webp
 ├───OK─── http://localhost:8000/images/optimized/polaris-browse-640.webp
-├───OK─── http://localhost:8000/images/optimized/dataportal-640.webp
 ├───OK─── http://localhost:8000/images/optimized/optumus-session-640.webp
 ├───OK─── http://localhost:8000/images/optimized/optumus-dashboard-640.webp
 ├───OK─── http://localhost:8000/images/optimized/optumus-spotlight-640.webp
 ├───OK─── http://localhost:8000/images/optimized/weaponx-dashboard-640.webp
 ├───OK─── http://localhost:8000/images/optimized/weaponx-640.webp
+├───OK─── http://localhost:8000/images/optimized/dataportal-640.webp
 ├───OK─── http://localhost:8000/images/optimized/exd-design-system-overview-640.webp
 ├───OK─── http://localhost:8000/images/optimized/trek-inputs-640.webp
 ├───OK─── http://localhost:8000/images/optimized/trek-colors-640.webp
@@ -279,7 +280,7 @@ Getting links from: http://localhost:8000/portfolio/disney-enterprise/
 ├───OK─── http://localhost:8000/images/optimized/experiments-results-640.webp
 ├───OK─── http://localhost:8000/images/optimized/ads-mission-control-scheduling-640.webp
 ├───OK─── http://localhost:8000/images/optimized/dev-portal-640.webp
-Finished! 107 links found. 50 excluded. 0 broken.
+Finished! 108 links found. 50 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/espn/
 ├───OK─── http://localhost:8000/images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
@@ -368,22 +369,21 @@ Getting links from: http://localhost:8000/privacy/
 Finished! 18 links found. 18 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/blogtalkradio/
-├───OK─── http://localhost:8000/images/optimized/btr-hosttools-teaser-2x1-640.webp
-├───OK─── http://localhost:8000/images/optimized/customer-experience-map-hosts-640.webp
-├───OK─── http://localhost:8000/images/optimized/CRUD-edit-info-640.webp
-├───OK─── http://localhost:8000/images/optimized/CRUD-create-640.webp
-├───OK─── http://localhost:8000/images/optimized/CRUD-edit-advanced-640.webp
-├───OK─── http://localhost:8000/images/optimized/episodes-list-640.webp
-├───OK─── http://localhost:8000/images/optimized/episodes-list-select-640.webp
-├───OK─── http://localhost:8000/images/optimized/episodes-list-transcript-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-customer-experience-map-hosts-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-CRUD-edit-info-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-CRUD-create-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-CRUD-edit-advanced-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-select-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-transcript-640.webp
 ├───OK─── http://localhost:8000/images/optimized/btr-hosttools-dashboard-640.webp
 ├───OK─── http://localhost:8000/images/optimized/btr-host-artwork-640.webp
 ├───OK─── http://localhost:8000/images/optimized/btr-homepage-640.webp
-├───OK─── http://localhost:8000/images/optimized/studio-live-640.webp
-├───OK─── http://localhost:8000/images/optimized/studio-pre-show-640.webp
-├───OK─── http://localhost:8000/images/optimized/studio-ad-break-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-studio-live-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-studio-pre-show-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-studio-ad-break-640.webp
 ├───OK─── http://localhost:8000/images/optimized/btr-studio-teaser-2x1-640.webp
-Finished! 40 links found. 25 excluded. 0 broken.
+Finished! 39 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/leadership-in-nature/
 Finished! 28 links found. 28 excluded. 0 broken.
@@ -480,5 +480,5 @@ Error: Expected type "text/html" but got "application/xml"
 Getting links from: http://localhost:8000/gaia/boids/
 Finished! 2 links found. 2 excluded. 0 broken.
 
-Finished! 1422 links found. 1069 excluded. 0 broken.
+Finished! 1442 links found. 1089 excluded. 0 broken.
 Elapsed time: 1 second

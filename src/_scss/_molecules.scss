@@ -79,7 +79,6 @@ table {
 
   th {
     font-weight: lib.$bold-font-weight;
-    line-height: 1;
     font-size: lib.$small-font-size;
     border: 0 solid var(--border-color);
     border-width: 0 0 1px 0;
@@ -93,7 +92,25 @@ table {
   }
 
   &.rotate {
-    @include lib.transpose_table;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    thead,tbody {
+        display: grid;
+        tr {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-rows: repeat(4,1fr);
+        }
+        th,td {
+            padding: calc(var(--gutter) * .25);
+            border: 1px solid var(--border-color);
+            border-width: 0 0 1px 0;
+            display: block;
+            &:last-of-type {
+                border: none;
+            }
+        }
+    }
 
     @media (min-width:lib.$breakpoint) {
     }

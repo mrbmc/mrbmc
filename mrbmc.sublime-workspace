@@ -4,6 +4,74 @@
 		"selected_items":
 		[
 			[
+				"flex-",
+				"flex-basis"
+			],
+			[
+				"grid-col",
+				"grid-column-start"
+			],
+			[
+				"grid-co",
+				"grid-column"
+			],
+			[
+				"grid-templ",
+				"grid-template-rows"
+			],
+			[
+				"grid-",
+				"grid-auto-flow"
+			],
+			[
+				"base",
+				"base-line-height"
+			],
+			[
+				"grid-au",
+				"grid-auto-rows"
+			],
+			[
+				"grid",
+				"grid-template-columns"
+			],
+			[
+				"inl",
+				"inline-flex"
+			],
+			[
+				"gu",
+				"gutter"
+			],
+			[
+				"base-",
+				"base-line-height"
+			],
+			[
+				"flex",
+				"flex-basis"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"pa",
+				"paths"
+			],
+			[
 				"im",
 				"img_result"
 			],
@@ -68,10 +136,6 @@
 				"gutter-xl"
 			],
 			[
-				"grid",
-				"grid-template-columns"
-			],
-			[
 				"gutt",
 				"grid-gutter-xl"
 			],
@@ -104,10 +168,6 @@
 				"--gray-dark"
 			],
 			[
-				"flex",
-				"flex-basis"
-			],
-			[
 				"align",
 				"align-content"
 			],
@@ -126,10 +186,6 @@
 			[
 				"--text-",
 				"--text-primary"
-			],
-			[
-				"grid-co",
-				"grid-column-start"
 			],
 			[
 				"grid-colum",
@@ -156,10 +212,6 @@
 				"text-primary"
 			],
 			[
-				"back",
-				"background-size"
-			],
-			[
 				"break",
 				"breakpoint-widescreen"
 			],
@@ -182,10 +234,6 @@
 			[
 				"box",
 				"box-sizing"
-			],
-			[
-				"gu",
-				"gutter"
 			],
 			[
 				"st",
@@ -260,10 +308,6 @@
 				"spacer-vertical"
 			],
 			[
-				"box-s",
-				"box-shadow"
-			],
-			[
 				"full",
 				"fullwidth90"
 			],
@@ -326,10 +370,6 @@
 			[
 				"coll",
 				"collection"
-			],
-			[
-				"base",
-				"base-font-size"
 			],
 			[
 				"hero",
@@ -420,10 +460,6 @@
 				"grid"
 			],
 			[
-				"grid-",
-				"grid-gap"
-			],
-			[
 				"arg",
 				"arg_datestart"
 			],
@@ -478,47 +514,1040 @@
 			[
 				"sr",
 				"srcElement"
-			],
-			[
-				"ad",
-				"addEventListener"
-			],
-			[
-				"next",
-				"next_link"
-			],
-			[
-				"brandColor",
-				"brandColor60"
-			],
-			[
-				"b",
-				"block"
-			],
-			[
-				"her",
-				"heroUnitHeadingColor"
-			],
-			[
-				"brandCol",
-				"brandColor"
-			],
-			[
-				"brandCom",
-				"brandComplement"
-			],
-			[
-				"brandSec",
-				"brandSecondary"
-			],
-			[
-				"brands",
-				"brandSecondary"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "src/_scss/pages/project.scss",
+			"redo_stack":
+			[
+				[
+					246,
+					1,
+					"swap_line_up",
+					null,
+					"AgAAAMkEAAAAAAAAyQQAAAAAAADZAAAAICAgICAgICAgICAgaW1nLHN2ZyxmaWd1cmUgewogICAgICAgICAgICAgICAgJltkYXRhLXdpZHRoPSI1MCJdIHsKICAgICAgICAgICAgICAgICAgICB3aWR0aDogNTAlOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgJltkYXRhLXdpZHRoPSI2MiJdIHsKICAgICAgICAgICAgICAgICAgICB3aWR0aDogNjIlOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CtMEAAAAAAAArAUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3QQAAAAAAAChBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					245,
+					1,
+					"indent",
+					null,
+					"CAAAAJ4FAAAAAAAAngUAAAAAAAAEAAAAICAgIIwFAAAAAAAAjAUAAAAAAAAEAAAAICAgIGwFAAAAAAAAbAUAAAAAAAAEAAAAICAgIEcFAAAAAAAARwUAAAAAAAAEAAAAICAgIDUFAAAAAAAANQUAAAAAAAAEAAAAICAgIBUFAAAAAAAAFQUAAAAAAAAEAAAAICAgIPAEAAAAAAAA8AQAAAAAAAAEAAAAICAgINMEAAAAAAAA0wQAAAAAAAAEAAAAICAgIA",
+					"AQAAAAAAAAABAAAA5wQAAAAAAACrBQAAAAAAAAAAAAAAAPC/"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 4285,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "\nmax-"
+					},
+					"BgAAAKsNAAAAAAAArA0AAAAAAAAAAAAArA0AAAAAAAC8DQAAAAAAAAAAAAC8DQAAAAAAAL0NAAAAAAAAAAAAAL0NAAAAAAAAvg0AAAAAAAAAAAAAvg0AAAAAAAC/DQAAAAAAAAAAAAC/DQAAAAAAAMANAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAqw0AAAAAAACrDQAAAAAAAAAAAAAAgHFA"
+				],
+				[
+					9,
+					1,
+					"insert_completion",
+					{
+						"completion": "max-width: $0;",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "max-width"
+					},
+					"AgAAALwNAAAAAAAAvA0AAAAAAAAEAAAAbWF4LbwNAAAAAAAAyA0AAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwA0AAAAAAADADQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"paste",
+					null,
+					"AQAAAMcNAAAAAAAA5Q0AAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxw0AAAAAAADHDQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"insert",
+					{
+						"characters": "-xl"
+					},
+					"BAAAALoFAAAAAAAAuwUAAAAAAAAAAAAAuwUAAAAAAAC7BQAAAAAAAAQAAAAgKiA0uwUAAAAAAAC8BQAAAAAAAAAAAAC8BQAAAAAAAL0FAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvgUAAAAAAAC6BQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					37,
+					1,
+					"left_delete",
+					null,
+					"AQAAAOcFAAAAAAAA5wUAAAAAAAAEAAAAICogMg",
+					"AQAAAAAAAAABAAAA5wUAAAAAAADrBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": "--"
+					},
+					"AwAAAK8FAAAAAAAAsAUAAAAAAAAAAAAAsAUAAAAAAACwBQAAAAAAAAUAAABsaWIuJLAFAAAAAAAAsQUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtAUAAAAAAACvBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"insert",
+					{
+						"characters": "varl"
+					},
+					"BAAAAK4FAAAAAAAArwUAAAAAAAAAAAAArwUAAAAAAACwBQAAAAAAAAAAAACwBQAAAAAAALEFAAAAAAAAAAAAALEFAAAAAAAAsgUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAArgUAAAAAAACuBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					50,
+					1,
+					"insert",
+					{
+						"characters": "car"
+					},
+					"AwAAANsFAAAAAAAA3AUAAAAAAAAAAAAA3AUAAAAAAADdBQAAAAAAAAAAAADdBQAAAAAAAN4FAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2wUAAAAAAADbBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					51,
+					3,
+					"left_delete",
+					null,
+					"AwAAAN0FAAAAAAAA3QUAAAAAAAABAAAActwFAAAAAAAA3AUAAAAAAAABAAAAYdsFAAAAAAAA2wUAAAAAAAABAAAAYw",
+					"AQAAAAAAAAABAAAA3gUAAAAAAADeBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"insert",
+					{
+						"characters": "var"
+					},
+					"AwAAANwFAAAAAAAA3QUAAAAAAAAAAAAA3QUAAAAAAADeBQAAAAAAAAAAAADeBQAAAAAAAN8FAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3AUAAAAAAADcBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"insert",
+					{
+						"characters": "--"
+					},
+					"AwAAAOAFAAAAAAAA4QUAAAAAAAAAAAAA4QUAAAAAAADhBQAAAAAAAAUAAABsaWIuJOEFAAAAAAAA4gUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4AUAAAAAAADlBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					71,
+					1,
+					"left_delete",
+					null,
+					"AQAAADoDAAAAAAAAOgMAAAAAAAADAAAAaW1n",
+					"AQAAAAAAAAABAAAAPQMAAAAAAAA6AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					74,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPwDAAAAAAAA/AMAAAAAAAADAAAAaW1n",
+					"AQAAAAAAAAABAAAA/AMAAAAAAAD/AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					76,
+					1,
+					"insert",
+					{
+						"characters": ",."
+					},
+					"AgAAAAYEAAAAAAAABwQAAAAAAAAAAAAABwQAAAAAAAAIBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABgQAAAAAAAAGBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					77,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAAAgEAAAAAAAACgQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACAQAAAAAAAAIBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					78,
+					1,
+					"insert",
+					{
+						"characters": "u"
+					},
+					"AQAAAAkEAAAAAAAACgQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACQQAAAAAAAAJBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					79,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAkEAAAAAAAACQQAAAAAAAABAAAAdQ",
+					"AQAAAAAAAAABAAAACgQAAAAAAAAKBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					80,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Left Right.sublime-macro"
+					},
+					"AgAAAAgEAAAAAAAACAQAAAAAAAABAAAAWwgEAAAAAAAACAQAAAAAAAABAAAAXQ",
+					"AQAAAAAAAAABAAAACQQAAAAAAAAJBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					81,
+					1,
+					"insert",
+					{
+						"characters": "pull-left"
+					},
+					"CQAAAAgEAAAAAAAACQQAAAAAAAAAAAAACQQAAAAAAAAKBAAAAAAAAAAAAAAKBAAAAAAAAAsEAAAAAAAAAAAAAAsEAAAAAAAADAQAAAAAAAAAAAAADAQAAAAAAAANBAAAAAAAAAAAAAANBAAAAAAAAA4EAAAAAAAAAAAAAA4EAAAAAAAADwQAAAAAAAAAAAAADwQAAAAAAAAQBAAAAAAAAAAAAAAQBAAAAAAAABEEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACAQAAAAAAAAIBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					84,
+					4,
+					"left_delete",
+					null,
+					"BAAAABAEAAAAAAAAEAQAAAAAAAABAAAAdA8EAAAAAAAADwQAAAAAAAABAAAAZg4EAAAAAAAADgQAAAAAAAABAAAAZQ0EAAAAAAAADQQAAAAAAAABAAAAbA",
+					"AQAAAAAAAAABAAAAEQQAAAAAAAARBAAAAAAAAAAAAAAAYGlA"
+				],
+				[
+					85,
+					1,
+					"insert",
+					{
+						"characters": "rog"
+					},
+					"AwAAAA0EAAAAAAAADgQAAAAAAAAAAAAADgQAAAAAAAAPBAAAAAAAAAAAAAAPBAAAAAAAABAEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQQAAAAAAAANBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					86,
+					2,
+					"left_delete",
+					null,
+					"AgAAAA8EAAAAAAAADwQAAAAAAAABAAAAZw4EAAAAAAAADgQAAAAAAAABAAAAbw",
+					"AQAAAAAAAAABAAAAEAQAAAAAAAAQBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					87,
+					1,
+					"insert",
+					{
+						"characters": "ight"
+					},
+					"BAAAAA4EAAAAAAAADwQAAAAAAAAAAAAADwQAAAAAAAAQBAAAAAAAAAAAAAAQBAAAAAAAABEEAAAAAAAAAAAAABEEAAAAAAAAEgQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADgQAAAAAAAAOBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					95,
+					1,
+					"insert",
+					{
+						"characters": ",.pull-"
+					},
+					"BwAAAEMDAAAAAAAARAMAAAAAAAAAAAAARAMAAAAAAABFAwAAAAAAAAAAAABFAwAAAAAAAEYDAAAAAAAAAAAAAEYDAAAAAAAARwMAAAAAAAAAAAAARwMAAAAAAABIAwAAAAAAAAAAAABIAwAAAAAAAEkDAAAAAAAAAAAAAEkDAAAAAAAASgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQwMAAAAAAABDAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					96,
+					1,
+					"insert",
+					{
+						"characters": "left"
+					},
+					"BAAAAEoDAAAAAAAASwMAAAAAAAAAAAAASwMAAAAAAABMAwAAAAAAAAAAAABMAwAAAAAAAE0DAAAAAAAAAAAAAE0DAAAAAAAATgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASgMAAAAAAABKAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					101,
+					1,
+					"insert",
+					{
+						"characters": "var"
+					},
+					"BAAAAL0DAAAAAAAAvgMAAAAAAAAAAAAAvgMAAAAAAAC+AwAAAAAAAAwAAABsaWIuJGd1dHRlcju+AwAAAAAAAL8DAAAAAAAAAAAAAL8DAAAAAAAAwAMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvQMAAAAAAADJAwAAAAAAAP///////+9/"
+				],
+				[
+					102,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAMADAAAAAAAAwgMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwAMAAAAAAADAAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					103,
+					1,
+					"insert",
+					{
+						"characters": "--gutter"
+					},
+					"CAAAAMEDAAAAAAAAwgMAAAAAAAAAAAAAwgMAAAAAAADDAwAAAAAAAAAAAADDAwAAAAAAAMQDAAAAAAAAAAAAAMQDAAAAAAAAxQMAAAAAAAAAAAAAxQMAAAAAAADGAwAAAAAAAAAAAADGAwAAAAAAAMcDAAAAAAAAAAAAAMcDAAAAAAAAyAMAAAAAAAAAAAAAyAMAAAAAAADJAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwQMAAAAAAADBAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					105,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAMoDAAAAAAAAywMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAygMAAAAAAADKAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					112,
+					1,
+					"paste",
+					null,
+					"AgAAAI0EAAAAAAAAmwQAAAAAAAAAAAAAmwQAAAAAAACbBAAAAAAAAAwAAABsaWIuJGd1dHRlcjs",
+					"AQAAAAAAAAABAAAAjQQAAAAAAACZBAAAAAAAAP///////+9/"
+				],
+				[
+					122,
+					2,
+					"left_delete",
+					null,
+					"AgAAAIcEAAAAAAAAhwQAAAAAAAAEAAAAbGVmdIYEAAAAAAAAhgQAAAAAAAABAAAALQ",
+					"AQAAAAAAAAABAAAAhwQAAAAAAACLBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					124,
+					1,
+					"insert",
+					{
+						"characters": " 0"
+					},
+					"AgAAAIcEAAAAAAAAiAQAAAAAAAAAAAAAiAQAAAAAAACJBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhwQAAAAAAACHBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					125,
+					1,
+					"insert",
+					{
+						"characters": " 0"
+					},
+					"AgAAAIkEAAAAAAAAigQAAAAAAAAAAAAAigQAAAAAAACLBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAiQQAAAAAAACJBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					126,
+					1,
+					"insert",
+					{
+						"characters": " 0"
+					},
+					"AgAAAIsEAAAAAAAAjAQAAAAAAAAAAAAAjAQAAAAAAACNBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAiwQAAAAAAACLBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					129,
+					2,
+					"swap_line_up",
+					null,
+					"BAAAAJ0EAAAAAAAAnQQAAAAAAAAeAAAAICAgICAgICAgICAgICAgIGZsb2F0OiByaWdodDsKcAQAAAAAAACOBAAAAAAAAAAAAABwBAAAAAAAAHAEAAAAAAAAHgAAACAgICAgICAgICAgICAgICBmbG9hdDogcmlnaHQ7ClQEAAAAAAAAcgQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAugQAAAAAAAC6BAAAAAAAAAAAAAAAYGlA"
+				],
+				[
+					132,
+					1,
+					"insert",
+					{
+						"characters": "\nflex-"
+					},
+					"BwAAAI0EAAAAAAAAjgQAAAAAAAAAAAAAjgQAAAAAAACeBAAAAAAAAAAAAACeBAAAAAAAAJ8EAAAAAAAAAAAAAJ8EAAAAAAAAoAQAAAAAAAAAAAAAoAQAAAAAAAChBAAAAAAAAAAAAAChBAAAAAAAAKIEAAAAAAAAAAAAAKIEAAAAAAAAowQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAjQQAAAAAAACNBAAAAAAAAAAAAAAAYGlA"
+				],
+				[
+					134,
+					1,
+					"insert_completion",
+					{
+						"completion": "flex-basis: $0;",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "flex-basis"
+					},
+					"AgAAAJ4EAAAAAAAAngQAAAAAAAAFAAAAZmxleC2eBAAAAAAAAKsEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAowQAAAAAAACjBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					135,
+					1,
+					"insert",
+					{
+						"characters": "38%"
+					},
+					"AwAAAKoEAAAAAAAAqwQAAAAAAAAAAAAAqwQAAAAAAACsBAAAAAAAAAAAAACsBAAAAAAAAK0EAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAqgQAAAAAAACqBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					139,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHIEAAAAAAAAcgQAAAAAAAAcAAAAICAgICAgICAgICAgICAgIHdpZHRoOiAzOCU7Cg",
+					"AQAAAAAAAAABAAAAcgQAAAAAAACOBAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					142,
+					1,
+					"cut",
+					null,
+					"AQAAAHIEAAAAAAAAcgQAAAAAAAAhAAAAICAgICAgICAgICAgICAgIGZsZXgtYmFzaXM6IDM4JTsK",
+					"AQAAAAAAAAABAAAAcgQAAAAAAACTBAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					149,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAALYEAAAAAAAAtwQAAAAAAAAAAAAAtwQAAAAAAAC/BAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtgQAAAAAAAC2BAAAAAAAAAAAAAAAwFZA"
+				],
+				[
+					150,
+					1,
+					"insert",
+					{
+						"characters": "img,s"
+					},
+					"BQAAAL8EAAAAAAAAwAQAAAAAAAAAAAAAwAQAAAAAAADBBAAAAAAAAAAAAADBBAAAAAAAAMIEAAAAAAAAAAAAAMIEAAAAAAAAwwQAAAAAAAAAAAAAwwQAAAAAAADEBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvwQAAAAAAAC/BAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					151,
+					1,
+					"left_delete",
+					null,
+					"AQAAAMMEAAAAAAAAwwQAAAAAAAABAAAAcw",
+					"AQAAAAAAAAABAAAAxAQAAAAAAADEBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					152,
+					1,
+					"insert",
+					{
+						"characters": "srv"
+					},
+					"AwAAAMMEAAAAAAAAxAQAAAAAAAAAAAAAxAQAAAAAAADFBAAAAAAAAAAAAADFBAAAAAAAAMYEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwwQAAAAAAADDBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					153,
+					2,
+					"left_delete",
+					null,
+					"AgAAAMUEAAAAAAAAxQQAAAAAAAABAAAAdsQEAAAAAAAAxAQAAAAAAAABAAAAcg",
+					"AQAAAAAAAAABAAAAxgQAAAAAAADGBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					154,
+					1,
+					"insert",
+					{
+						"characters": "vg"
+					},
+					"AgAAAMQEAAAAAAAAxQQAAAAAAAAAAAAAxQQAAAAAAADGBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAQAAAAAAADEBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					155,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAMYEAAAAAAAAxwQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgQAAAAAAADGBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					156,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAMcEAAAAAAAAyQQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxwQAAAAAAADHBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					157,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"BgAAAMgEAAAAAAAAyQQAAAAAAAAAAAAAyQQAAAAAAADRBAAAAAAAAAAAAADRBAAAAAAAANIEAAAAAAAAAAAAANIEAAAAAAAA2gQAAAAAAAAAAAAAyQQAAAAAAADJBAAAAAAAAAgAAAAgICAgICAgIMkEAAAAAAAA1QQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAyAQAAAAAAADIBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					158,
+					1,
+					"insert",
+					{
+						"characters": "data"
+					},
+					"BAAAANUEAAAAAAAA1gQAAAAAAAAAAAAA1gQAAAAAAADXBAAAAAAAAAAAAADXBAAAAAAAANgEAAAAAAAAAAAAANgEAAAAAAAA2QQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1QQAAAAAAADVBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					159,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAANkEAAAAAAAA2wQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2QQAAAAAAADZBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					162,
+					1,
+					"insert",
+					{
+						"characters": "&"
+					},
+					"AgAAANUEAAAAAAAA1gQAAAAAAAAAAAAA1gQAAAAAAADWBAAAAAAAAAYAAABkYXRhW10",
+					"AQAAAAAAAAABAAAA1QQAAAAAAADbBAAAAAAAAP///////+9/"
+				],
+				[
+					163,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAANYEAAAAAAAA2AQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1gQAAAAAAADWBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					164,
+					1,
+					"insert",
+					{
+						"characters": "data-bas"
+					},
+					"CAAAANcEAAAAAAAA2AQAAAAAAAAAAAAA2AQAAAAAAADZBAAAAAAAAAAAAADZBAAAAAAAANoEAAAAAAAAAAAAANoEAAAAAAAA2wQAAAAAAAAAAAAA2wQAAAAAAADcBAAAAAAAAAAAAADcBAAAAAAAAN0EAAAAAAAAAAAAAN0EAAAAAAAA3gQAAAAAAAAAAAAA3gQAAAAAAADfBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1wQAAAAAAADXBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					165,
+					1,
+					"insert",
+					{
+						"characters": "is="
+					},
+					"AwAAAN8EAAAAAAAA4AQAAAAAAAAAAAAA4AQAAAAAAADhBAAAAAAAAAAAAADhBAAAAAAAAOIEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3wQAAAAAAADfBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					166,
+					1,
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					},
+					"AQAAAOIEAAAAAAAA5AQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4gQAAAAAAADiBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					167,
+					1,
+					"insert",
+					{
+						"characters": "50"
+					},
+					"AgAAAOMEAAAAAAAA5AQAAAAAAAAAAAAA5AQAAAAAAADlBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4wQAAAAAAADjBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					169,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAOcEAAAAAAAA6AQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5wQAAAAAAADnBAAAAAAAAP///////+9/"
+				],
+				[
+					170,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAOgEAAAAAAAA6gQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6AQAAAAAAADoBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					171,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"BgAAAOkEAAAAAAAA6gQAAAAAAAAAAAAA6gQAAAAAAAD2BAAAAAAAAAAAAAD2BAAAAAAAAPcEAAAAAAAAAAAAAPcEAAAAAAAAAwUAAAAAAAAAAAAA6gQAAAAAAADqBAAAAAAAAAwAAAAgICAgICAgICAgICDqBAAAAAAAAPoEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6QQAAAAAAADpBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					172,
+					1,
+					"insert",
+					{
+						"characters": "flex-"
+					},
+					"BQAAAPoEAAAAAAAA+wQAAAAAAAAAAAAA+wQAAAAAAAD8BAAAAAAAAAAAAAD8BAAAAAAAAP0EAAAAAAAAAAAAAP0EAAAAAAAA/gQAAAAAAAAAAAAA/gQAAAAAAAD/BAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+gQAAAAAAAD6BAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					176,
+					1,
+					"insert",
+					{
+						"characters": "b"
+					},
+					"AQAAAP8EAAAAAAAAAAUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/wQAAAAAAAD/BAAAAAAAAAAAAAAAYGJA"
+				],
+				[
+					177,
+					1,
+					"insert_completion",
+					{
+						"completion": "flex-basis: $0;",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "flex-basis"
+					},
+					"AgAAAPoEAAAAAAAA+gQAAAAAAAAGAAAAZmxleC1i+gQAAAAAAAAHBQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAUAAAAAAAAABQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					178,
+					1,
+					"insert",
+					{
+						"characters": "50"
+					},
+					"AgAAAAYFAAAAAAAABwUAAAAAAAAAAAAABwUAAAAAAAAIBQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABgUAAAAAAAAGBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					179,
+					1,
+					"insert",
+					{
+						"characters": "%"
+					},
+					"AQAAAAgFAAAAAAAACQUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACAUAAAAAAAAIBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					185,
+					1,
+					"insert",
+					{
+						"characters": ",figure"
+					},
+					"BwAAAMYEAAAAAAAAxwQAAAAAAAAAAAAAxwQAAAAAAADIBAAAAAAAAAAAAADIBAAAAAAAAMkEAAAAAAAAAAAAAMkEAAAAAAAAygQAAAAAAAAAAAAAygQAAAAAAADLBAAAAAAAAAAAAADLBAAAAAAAAMwEAAAAAAAAAAAAAMwEAAAAAAAAzQQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxgQAAAAAAADGBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					191,
+					1,
+					"insert",
+					{
+						"characters": "\nflex-"
+					},
+					"CAAAAFMEAAAAAAAAVAQAAAAAAAAAAAAAVAQAAAAAAABgBAAAAAAAAAAAAABgBAAAAAAAAGQEAAAAAAAAAAAAAGQEAAAAAAAAZQQAAAAAAAAAAAAAZQQAAAAAAABmBAAAAAAAAAAAAABmBAAAAAAAAGcEAAAAAAAAAAAAAGcEAAAAAAAAaAQAAAAAAAAAAAAAaAQAAAAAAABpBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUwQAAAAAAABTBAAAAAAAAP///////+9/"
+				],
+				[
+					193,
+					1,
+					"insert_completion",
+					{
+						"completion": "flex-basis: $0;",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "flex-basis"
+					},
+					"AgAAAGQEAAAAAAAAZAQAAAAAAAAFAAAAZmxleC1kBAAAAAAAAHEEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAaQQAAAAAAABpBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					194,
+					1,
+					"insert",
+					{
+						"characters": "38%"
+					},
+					"AwAAAHAEAAAAAAAAcQQAAAAAAAAAAAAAcQQAAAAAAAByBAAAAAAAAAAAAAByBAAAAAAAAHMEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcAQAAAAAAABwBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					200,
+					1,
+					"insert",
+					{
+						"characters": "wid"
+					},
+					"BAAAAGQEAAAAAAAAZQQAAAAAAAAAAAAAZQQAAAAAAABlBAAAAAAAAAoAAABmbGV4LWJhc2lzZQQAAAAAAABmBAAAAAAAAAAAAABmBAAAAAAAAGcEAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbgQAAAAAAABkBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					201,
+					1,
+					"insert_completion",
+					{
+						"completion": "width",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "width"
+					},
+					"AgAAAGQEAAAAAAAAZAQAAAAAAAADAAAAd2lkZAQAAAAAAABpBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAZwQAAAAAAABnBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					206,
+					1,
+					"insert",
+					{
+						"characters": "width"
+					},
+					"BgAAAB0FAAAAAAAAHgUAAAAAAAAAAAAAHgUAAAAAAAAeBQAAAAAAAAoAAABmbGV4LWJhc2lzHgUAAAAAAAAfBQAAAAAAAAAAAAAfBQAAAAAAACAFAAAAAAAAAAAAACAFAAAAAAAAIQUAAAAAAAAAAAAAIQUAAAAAAAAiBQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHQUAAAAAAAAnBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					210,
+					1,
+					"insert",
+					{
+						"characters": "d"
+					},
+					"AgAAAP8EAAAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABQAAAAAAAAUAAABiYXNpcw",
+					"AQAAAAAAAAABAAAA/wQAAAAAAAAEBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					211,
+					1,
+					"left_delete",
+					null,
+					"AQAAAP8EAAAAAAAA/wQAAAAAAAABAAAAZA",
+					"AQAAAAAAAAABAAAAAAUAAAAAAAAABQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					212,
+					1,
+					"insert",
+					{
+						"characters": "width"
+					},
+					"BQAAAP8EAAAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAABBQAAAAAAAAAAAAABBQAAAAAAAAIFAAAAAAAAAAAAAAIFAAAAAAAAAwUAAAAAAAAAAAAAAwUAAAAAAAAEBQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/wQAAAAAAAD/BAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					222,
+					2,
+					"paste",
+					null,
+					"AwAAAOwEAAAAAAAANwUAAAAAAAAAAAAANwUAAAAAAAA3BQAAAAAAAEsAAAAgICAgICAgICAgICAmW2RhdGEtd2lkdGg9IjUwIl0gewogICAgICAgICAgICAgICAgd2lkdGg6IDUwJTsKICAgICAgICAgICAgfQo3BQAAAAAAAIIFAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7AQAAAAAAAA3BQAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					226,
+					1,
+					"insert",
+					{
+						"characters": "62"
+					},
+					"AwAAAFEFAAAAAAAAUgUAAAAAAAAAAAAAUgUAAAAAAABSBQAAAAAAAAIAAAA1MFIFAAAAAAAAUwUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUwUAAAAAAABRBQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					230,
+					1,
+					"insert",
+					{
+						"characters": "62"
+					},
+					"AwAAAG8FAAAAAAAAcAUAAAAAAAAAAAAAcAUAAAAAAABwBQAAAAAAAAIAAAA1MHAFAAAAAAAAcQUAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcQUAAAAAAABvBQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "src/_scss/_atoms.scss",
+			"settings":
+			{
+				"buffer_size": 1407,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": ",svg"
+					},
+					"BAAAACIAAAAAAAAAIwAAAAAAAAAAAAAAIwAAAAAAAAAkAAAAAAAAAAAAAAAkAAAAAAAAACUAAAAAAAAAAAAAACUAAAAAAAAAJgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAACMAAAAAAAAAJAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIwAAAAAAAAAjAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "src/images/portfolio/disney-growth/product-operating-model.svg",
+			"settings":
+			{
+				"buffer_size": 1536507,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "/Users/brianmcconnell/Desktop/spring-post.txt",
+			"settings":
+			{
+				"buffer_size": 2448,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "🚀 We’re Hiring: Head of Design at Spring Health! 🚀"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAugAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AgAAAAAAAAAAAAAAkAkAAAAAAAAAAAAAkAkAAAAAAACQCQAAAAAAALoAAABXaGF0IGlzIGEgZ29vZCBmaXJzdCBwYXJhZ3JhcGggZm9yIGEgY292ZXIgbGV0dGVyIHRvIGFuIGV4ZWN1dGl2ZSByb2xlIGFzIGEgVlAgb2YgcHJvZHVjdCBkZXNpZ24/IEkgd2FudCB0byBiZSBwcm9mZXNzaW9uYWwgYnV0IG5vdCBmb3JtYWwsIGFwcHJvYWNoYWJsZSBidXQgY29uZmlkZW50LgoKRWRpdApIZXJlJ3MgYSBzdHI",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAC6AAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "/Users/brianmcconnell/Desktop/personal-intro.txt",
+			"settings":
+			{
+				"buffer_size": 2772,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "Looking at your career trajectory, there's an inte"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAA1AoAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "Searching 259 files for \"canzoom\" (regex)\n\n~/Sites/mrbmc/src/_js/portfolio.js:\n  102  window.addEventListener('load', function(e) {\n  103      console.log('project.window.load',e);\n  104:     var zoomies = document.querySelectorAll('.canzoom');\n  105      Object.entries(zoomies).forEach(([key, zoomy]) => {\n  106          console.log(`${key}: ${zoomy}`)\n\n~/Sites/mrbmc/src/_scss/pages/project.scss:\n   13          p {\n   14              &>img,&>svg,&>video {\n   15:                 &.canzoom {\n   16                      transition: all lib.$speed lib.$easing;\n   17                      &:hover {\n\n~/Sites/mrbmc/src/projects/blogtalkradio.md:\n  134  <p>The art direction was inspired by high-end Audio and video authoring applications. We wanted to convey a serious, professional-grade application for our hosts to work with.</p>\n  135  \n  136: + !['Live'](/images/portfolio/btr/btr-studio-live.png) {.col-4 .row-1 .canzoom .contain}\n  137  + !['Pre-Show'](/images/portfolio/btr/btr-studio-pre-show.png) {.col-4 .row-1}\n  138  + !['Ad Break'](/images/portfolio/btr/btr-studio-ad-break.png) {.col-4 .row-1}\n\n~/Sites/mrbmc/src/projects/disney-groupwatch.md:\n   60  The Visiontype is a powerful tool for gaining stakeholder buy-in, feeding user research studies, and communicating with other teams.\n   61  \n   62: ![WeWatch Visiontype](/images/portfolio/disney-groupwatch/groupwatch-visiontype-mocks.png){.canzoom}\n   63  \n   64  ### Proof of concept\n   ..\n   94  \n   95  Principles are a powerful way to align teams in big programs and guide decisions about tradeoffs in the design. Principles must address the specific user goals and business constraints of a project. Generic principles about \"ease of use\" and \"delightful\" do not aid critical thinking in a specific context.\n   96: ![](/images/portfolio/disney-groupwatch/groupwatch-tenets.png){.canzoom} \n   97  \n   98  <!--\n   ..\n  135  \n  136  Two designers and a researcher partnered to refine the invite UI. Using Rapid Iterative Test Evaluation tested prototypes with users to learn more about their mental models and identify any usabilty issues. This was the first prototype flow:\n  137: ![Invite flow version 1](/images/portfolio/disney-groupwatch/groupwatch-invite-v1.png){.canzoom}\n  138  \n  139  Testing convinced the team to make big changes: \n  ...\n  141  - Leverage the native social features in phones. \n  142  - Lean into the \"theater lobby\" metaphor of the social gathering.\n  143: ![Invite flow version 2](/images/portfolio/disney-groupwatch/groupwatch-invite-v2.png){.canzoom}\n  144  \n  145  ### Visual Design\n  ...\n  149  1. Visual design started with a broad spectrum of divergent ideas. We began to read-in more designers to the project at this point.\n  150  \n  151: ![24 versions of the waiting room](/images/portfolio/disney-groupwatch/groupwatch-visual-v1.jpg){.canzoom}\n  152  \n  153  \n  154  2. We focused on layouts that had the right balance of social and content priority.\n  155  \n  156: ![Waiting room layouts that balance social and content](/images/portfolio/disney-groupwatch/groupwatch-visual-v2.jpg){.canzoom}\n  157  \n  158  3. Engineering leads had been informed of the program but now was the point we dug deep with Client Engineers to identify expensive UI that couldn't be rendered or needed custom components.\n  159  \n  160: ![Waiting room layouts that are feasible](/images/portfolio/disney-groupwatch/groupwatch-visual-v3.jpg){.canzoom}\n  161  \n  162  4. Finally, we aligned to the existing visual style as much as possible so the feature would feel native and intentional.\n  163  \n  164: ![Waiting room designs that fit our visual language](/images/portfolio/disney-groupwatch/groupwatch-visual-v4.jpg){.canzoom}\n  165  \n  166  \n\n~/Sites/mrbmc/src/projects/disney-growth-long.md:\n   78  The Growth Design team began work long before Disney+ launched; before Disney acquired BAMTech to build its streaming services; even before BAMTech existed. Many of the people on the teams involved had already launched & operated dozens of direct-to-consumer services as part of *MLB Advanced Media*.\n   79  \n   80: ![streaming services we launched](/images/portfolio/disney-growth/mlbam-clients-grayscale.png){.canzoom}\n   81  \n   82  Disney acquired BAMTech for its ability to build *content businesses*. In addition to the technology for streaming high-quality video over the internet, BAMTech had the commerce platform turnstile UX to sell content directly to consumers at scale. That experience gave us a basecamp from which to begin our expedition up Disney+. We already had the infrastructure for many core Growth features:\n   ..\n  265  Existing accounts would be confirmed with an email confirmation containing a One Time Passcode. Once Confirmed, we could use the existing account to grant entitlements for streaming. Net new emails would create a new account by setting a password.\n  266  \n  267: ![Signup Web](/images/portfolio/disney-growth/Disney_SVOD_Product_Overview_Onboarding.032.jpeg){.canzoom}\n  268  Signup for Web{.caption}\n  269  \n  270: ![Signup Apple Mobile](/images/portfolio/disney-growth/Disney_SVOD_Product_Overview_Onboarding.101.jpeg){.canzoom}\n  271  Signup for Apple Mobile{.caption}\n  272  \n  ...\n  274  \n  275  We debated whether the success screen was truly necessary. From a functional stand-point it wasn't, and our tenet \"First Stream First\" suggested that we should remove it. On the other-hand there was a usability argument that any commerce transaction needs to communicate its status to the user.\n  276: ![success screen](/images/portfolio/disney-growth/signup-web-success-v1.jpeg){.canzoom}\n  277  \n  278  Ultimately the debate was settled by... you guessed it ... *licensing agreements!*\n  ...\n  282  The least awful place for us to advertise another service was at the end of the purchase funnel. We also removed the prompt to setup profiles in service of that \"First Stream...\" tenet to prevent any distractions. \n  283  \n  284: ![Starz Wars](/images/portfolio/disney-growth/StarzSept06final.006.jpeg){.canzoom}\n  285  \n  286  ### TV & Connected Devices {#tv-signup}\n  ...\n  351  In order to get this solution to market more efficiently the first shipped version would only have the license plate code – no QR code – and we had to remove the progress screens.\n  352  \n  353: ![](/images/portfolio/disney-growth/tv-signup-live.jpg){.canzoom}\n  354  \n  355  #### Outcomes\n  ...\n  373  We designed a scalable framework that could adapt to different billing capabilities or local regulations. We also designed materials for our Partnership team to help onboard resellers and developers.\n  374  \n  375: ![B2B2C OneSheet](/images/portfolio/disney-growth/Disney+_B2B2C_OneSheet.jpg){.canzoom}\n  376  \n  377  \n  ...\n  408  Latin America required additional fields for Tax collection in Argentina and Chile\n  409  \n  410: ![payment forms](/images/portfolio/disney-growth/disney+-signup-AR-step_4.png){.canzoom}\n  411  \n  412  #### Outcomes\n\n~/Sites/mrbmc/src/projects/disney-growth.md:\n  243  Latin America required additional fields for Tax collection in Argentina and Chile\n  244  \n  245: ![payment forms](/images/portfolio/disney-growth/disney+-signup-AR-step_4.png){.canzoom}\n  246  \n  247  #### Outcomes\n\n20 matches across 6 files\n",
+			"settings":
+			{
+				"buffer_size": 7259,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "src/portfolio.md",
+			"settings":
+			{
+				"buffer_size": 897,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/_scss/screen.scss",
+			"settings":
+			{
+				"buffer_size": 3075,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "1fr"
+					},
+					"BAAAAHAIAAAAAAAAcQgAAAAAAAAAAAAAcQgAAAAAAABxCAAAAAAAAA8AAABtaW5tYXgoMWVtLDJmcilxCAAAAAAAAHIIAAAAAAAAAAAAAHIIAAAAAAAAcwgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcAgAAAAAAAB/CAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "src/_scss/_molecules.scss",
+			"settings":
+			{
+				"buffer_size": 2505,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": "aiut"
+					},
+					"BQAAAHEIAAAAAAAAcggAAAAAAAAAAAAAcggAAAAAAAByCAAAAAAAAAIAAAAxMHIIAAAAAAAAcwgAAAAAAAAAAAAAcwgAAAAAAAB0CAAAAAAAAAAAAAB0CAAAAAAAAHUIAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcQgAAAAAAABzCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					3,
+					"left_delete",
+					null,
+					"AwAAAHQIAAAAAAAAdAgAAAAAAAABAAAAdHMIAAAAAAAAcwgAAAAAAAABAAAAdXIIAAAAAAAAcggAAAAAAAABAAAAaQ",
+					"AQAAAAAAAAABAAAAdQgAAAAAAAB1CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					2,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AgAAAHAIAAAAAAAAcAgAAAAAAAADAAAAKGEsaggAAAAAAABqCAAAAAAAAAYAAAByZXBlYXQ",
+					"AQAAAAAAAAABAAAAcwgAAAAAAABwCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					38,
+					1,
+					"left_delete",
+					null,
+					"AQAAAG0IAAAAAAAAbQgAAAAAAAABAAAAKQ",
+					"AQAAAAAAAAABAAAAbggAAAAAAABuCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					43,
+					1,
+					"insert",
+					{
+						"characters": "auto"
+					},
+					"BAAAAGoIAAAAAAAAawgAAAAAAAAAAAAAawgAAAAAAABsCAAAAAAAAAAAAABsCAAAAAAAAG0IAAAAAAAAAAAAAG0IAAAAAAAAbggAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAaggAAAAAAABqCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAG4IAAAAAAAAbwgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbggAAAAAAABuCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					49,
+					1,
+					"insert",
+					{
+						"characters": "repeat("
+					},
+					"CAAAAGoIAAAAAAAAawgAAAAAAAAAAAAAawgAAAAAAABrCAAAAAAAAAUAAABhdXRvIGsIAAAAAAAAbAgAAAAAAAAAAAAAbAgAAAAAAABtCAAAAAAAAAAAAABtCAAAAAAAAG4IAAAAAAAAAAAAAG4IAAAAAAAAbwgAAAAAAAAAAAAAbwgAAAAAAABwCAAAAAAAAAAAAABwCAAAAAAAAHEIAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAbwgAAAAAAABqCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					51,
+					1,
+					"insert",
+					{
+						"characters": ")"
+					},
+					"AQAAAHQIAAAAAAAAdQgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdAgAAAAAAAB0CAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					55,
+					1,
+					"insert",
+					{
+						"characters": "4,"
+					},
+					"AgAAAHEIAAAAAAAAcggAAAAAAAAAAAAAcggAAAAAAABzCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAcQgAAAAAAABxCAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
 	],
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
 	"build_system_choices":
@@ -588,11 +1617,19 @@
 				"Terminus: Toggle Panel"
 			],
 			[
-				"f",
-				"Format: Javascript"
+				"format",
+				"Format CSS: Expanded"
 			],
 			[
-				"format",
+				"t",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"to",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"f",
 				"Format: Javascript"
 			],
 			[
@@ -606,10 +1643,6 @@
 			[
 				"liq",
 				"Set Syntax: HTML (Liquid)"
-			],
-			[
-				"to",
-				"Terminus: Toggle Panel"
 			],
 			[
 				"install",
@@ -916,65 +1949,90 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/brianmcconnell/Sites/mrbmc"
+		"/Users/brianmcconnell/Sites/mrbmc",
+		"/Users/brianmcconnell/Sites/mrbmc/src"
 	],
 	"file_history":
 	[
-		"/Users/brianmcconnell/Sites/mrbmc/gulpfile.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/home.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/eleventy.config.js",
-		"/Users/brianmcconnell/Sites/mrbmc/mrbmc.sublime-project",
+		"/Users/brianmcconnell/Desktop/spring-jd.txt",
+		"/Users/brianmcconnell/Desktop/resumé.txt",
+		"/Users/brianmcconnell/Desktop/instacart-jd",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/screen.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/package.json",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_js/gradient.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_colors.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/mrbmc.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_gallery-inline.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_masthead.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_molecules.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/project-detail.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/portfolio.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_type.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_root.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/index.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout.html",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/post.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_mixins.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout-three.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_atoms.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/project.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_variables.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/eleventy.config.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/cv.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_principles.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-enterprise.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/espn.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhl.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhlgameflow.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhltv.md",
+		"/Users/brianmcconnell/Sites/mrbmc/gulpfile.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-groupwatch.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth-long.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_header.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/about.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_process.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_leadership.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/posts/leadership-in-nature.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_post-list.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_project-list.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/backup/2003/less/_variables.less",
+		"/Users/brianmcconnell/Sites/mrbmc/www/css/pages/about.css",
+		"/Users/brianmcconnell/Sites/mrbmc/src/about.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/index.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/home.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_colors.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_post-list.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_masthead.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/post-detail.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/post.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_footer.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_footer.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_variables.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/about.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/colophon.md",
+		"/Users/brianmcconnell/Sites/mrbmc/backup/2022/colophon.html",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_publishing.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_data/site.json",
+		"/Users/brianmcconnell/Sites/mrbmc/package.json",
+		"/Users/brianmcconnell/Sites/mrbmc/mrbmc.sublime-project",
+		"/Users/brianmcconnell/Library/Application Support/Sublime Text 3/Packages/User/SublimeOnSaveBuild.sublime-settings",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/gradient.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout-three.html",
 		"/Users/brianmcconnell/Sites/mrbmc/www/css/about.css",
-		"/Users/brianmcconnell/Sites/mrbmc/src/about.md",
 		"/Users/brianmcconnell/Sites/mrbmc/build.sh",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/blog.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/colophon.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/portfolio.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/project.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/css/post.css",
 		"/Users/brianmcconnell/Sites/mrbmc/src/about-leadership.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/about-principles.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/about-process.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_post-list.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_project-list.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_type.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/node_modules/.bin/sass",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_header.html",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_header.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/images/profile/kageki-crane.svg",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/project-detail.html",
-		"/Users/brianmcconnell/Sites/mrbmc/src/colophon.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/cv.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_molecules.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/resume.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_atoms.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/css/colophon.css",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_project-list.md",
 		"/Users/brianmcconnell/Sites/mrbmc/backup/2023/src/_less/_home.less",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_gallery-inline.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/post-detail.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/blog.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_masthead.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/portfolio.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/blog.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/home.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_root.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/backup/2003/less/_variables.less",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_masthead.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_animation.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_index.scss",
@@ -985,16 +2043,11 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/about.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_footer.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_library.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-groupwatch.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-enterprise.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/posts/bike-tour-2023.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth-long.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/gallery-inline.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_js/portfolio.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/project.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_gallery-inline.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/photos.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_publishing.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/post.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/gulpfile.bak.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/resume.scss",
@@ -1020,44 +2073,37 @@
 		"/Users/brianmcconnell/.bash_profile",
 		"/private/etc/hosts",
 		"/opt/homebrew/etc/httpd/extra/httpd-vhosts.conf",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_post-list.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/images/portfolio/disney-growth/chart-disney-growth.svg",
 		"/Users/brianmcconnell/Sites/mrbmc/src/images/portfolio/logo-bb.png",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/colophon.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/backup/2023/build.sh",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_masthead.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_masthead.md",
 		"/Users/brianmcconnell/Sites/mrbmc/gulper.sublime-build",
 		"/Users/brianmcconnell/Sites/mrbmc/src/privacy.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/rss.njk",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_data/site.json",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_blog.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/links.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/posts/design-for-durability.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/error.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/404.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/css/about.css",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/home.css",
-		"/Users/brianmcconnell/Sites/mrbmc/src/posts/design-quality.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_about.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_resume.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_portfolio.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_photos.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/mini.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_grid.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_js/home.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_js/blend.gsl"
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_blog.scss"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 101.0,
 		"where_history":
 		[
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/posts,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/projects,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/projects,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scsss,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src/projects,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
@@ -1173,18 +2219,6 @@
 			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/_js,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/blog,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/portfolio,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/_js,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>"
 		]
 	},
@@ -1193,6 +2227,94 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"design",
+			"canzoom",
+			"margin-top",
+			"rotate",
+			"scrollSpy",
+			"scroll",
+			"doParallax",
+			"parallax",
+			"top",
+			"fullwidth",
+			"table",
+			"grid",
+			"transpose_table",
+			"table",
+			"video",
+			"mosaic",
+			"\\.grid",
+			"\\.row(\\d)",
+			"\\.fullwidth \\.grid \\.well",
+			"\\.mosaic",
+			"mosaic",
+			"well",
+			"\\.col",
+			"\\.col#",
+			"\\.col(\\d)",
+			"mosaic",
+			"getOptimizedImageSrc",
+			"webp",
+			"fusion-family",
+			"exec",
+			"var\\(lib\\.\\$gutter\\)",
+			"\\.grid",
+			"## Chapter",
+			"basecamp",
+			"\\.jpg",
+			"portfolio/disney\\-growth",
+			"basecamp",
+			"h2",
+			"gutter",
+			"grid",
+			"shadow",
+			"lib\\.\\$gutter",
+			"lib\\.$gutter",
+			"gutter",
+			"var\\(lib\\.\\$gutter\\-xl\\)",
+			"gutter-xl",
+			"gutter",
+			"\\$border\\-radius",
+			"var\\(--border-radius\\)",
+			"var\\(--border-radius\\)-xl",
+			"lib\\.\\$border\\-radius",
+			"border",
+			"column",
+			"kpi",
+			"grid",
+			"pullleft",
+			"pull",
+			"    // @include lib.hero(\n    //     lib.$neutral-0,\n    //     lib.$neutral-30,\n    //     lib.$neutral-60,\n    //     lib.$neutral-0,\n    //     );\n\n",
+			"\timport { Gradient } from \"/js/gradient.js\";\n    const gradient = new Gradient();\n    gradient.initGradient(\"#gradient-canvas\");\n",
+			"hero",
+			"navbar",
+			"navbar-height",
+			"\\$logo\\-size",
+			"    // \\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\n",
+			"// \\$",
+			"for",
+			"hslToHex",
+			"\\,\\$alpha\\:\\-0\\.2",
+			"type",
+			"helvetica",
+			"breakpoint\\-widescreen",
+			"\\$columns",
+			"\\$width",
+			"\\$margin",
+			"clamp",
+			"font-s",
+			"\\-\\-gutter",
+			"section",
+			"type-scale",
+			"gutter",
+			"link-",
+			"mod-date",
+			"\\*\\*/\\*",
+			"backups",
+			"assets",
+			"syncAssets",
+			"exec",
+			"libsass",
 			"images",
 			"speed",
 			"hslToHex",
@@ -1232,95 +2354,7 @@
 			"gradient\\-color",
 			"setOrthographicCamera",
 			"resize",
-			"debug_output",
-			"fragment",
-			"v_color",
-			"jsDarkenTop",
-			"Darken",
-			"u_darken_top",
-			"gl_FragColor",
-			"snoise",
-			"waveLayers",
-			"u_waveLayers_length",
-			"blendNormal",
-			"fragment",
-			"shaderFiles",
-			"noise",
-			"permute",
-			"mod289",
-			"11ty",
-			"sass",
-			"gulp",
-			"sourcemaps",
-			"css",
-			"\\./about\\-",
-			"src",
-			"build_thumbs",
-			"\\./",
-			"for",
-			"images/",
-			"hover",
-			"type-sca",
-			"type-scale",
-			"scale",
-			"sass",
-			"speed",
-			"backgroun",
-			"#ffffff",
-			"-inverse",
-			"variables.",
-			"type\\.",
-			"primary-inverse",
-			"button",
-			"\\.tert",
-			"\\.second",
-			"accent",
-			"Complement",
-			"Accent",
-			"brand",
-			"\t\t\tcolor\\: transparent;\n",
-			"color\\.adjust",
-			"transparentize",
-			"colors\\.",
-			"rsync",
-			"exclude",
-			"variables",
-			"porfolio.scss",
-			"variables",
-			"kpo",
-			"mixins",
-			"variables",
-			"(variables)?(mixins)?",
-			"variables",
-			"reakpoint",
-			"variables",
-			"mixins",
-			"small",
-			" \\$",
-			"@include lib\\.small\\-type\\(\\);",
-			"typeset",
-			"lib\\.\\$",
-			"card",
-			"grid",
-			"details",
-			"\\.inverse",
-			"button",
-			"mixins",
-			"variables",
-			"\\.well",
-			"\\.hero",
-			"\\.well",
-			"hero",
-			"\\.small",
-			"\\.large",
-			"largeType",
-			"eyebrow",
-			"import",
-			"variables",
-			"@include",
-			"compileCSS",
-			"fullwidth",
-			"variables"
+			"debug_output"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1328,6 +2362,17 @@
 		"regex": true,
 		"replace_history":
 		[
+			".row-\\1",
+			".grid .well .fullwidth",
+			".grid .well",
+			".col-\\1",
+			"var(--gutter)",
+			"var(--gutter-xl)",
+			"var(--border-radius-xl)",
+			"var(--border-radius)",
+			"$grid-columns",
+			"$grid-width",
+			"$grid-margin",
 			"git mv \\1 about/\\1",
 			"",
 			"var(--tertiary)",
@@ -1444,18 +2489,7 @@
 			"$brand-hue",
 			"build_js",
 			"'",
-			"col4",
-			"optumus-",
-			"301 http://www.brianmcconnell.me",
-			"\\t65",
-			"row",
-			".col",
-			"",
-			"src/image",
-			"\"/images",
-			"\"/_images",
-			"src/_images",
-			"small-type"
+			"col4"
 		],
 		"reverse": false,
 		"scrollbar_highlights": true,
@@ -1470,6 +2504,374 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/_scss/pages/project.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								818,
+								1321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/_scss/_atoms.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/images/portfolio/disney-growth/product-operating-model.svg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1536507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								887454,
+								887458
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 151244.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/brianmcconnell/Desktop/spring-post.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2442,
+								2442
+							]
+						],
+						"settings":
+						{
+							"auto_name": "🚀 We’re Hiring: Head of Design at Spring Health! 🚀",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/brianmcconnell/Desktop/personal-intro.txt",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2772,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2772,
+								2772
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Looking at your career trajectory, there's an inte",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7259,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										234,
+										241
+									],
+									[
+										485,
+										492
+									],
+									[
+										918,
+										925
+									],
+									[
+										1405,
+										1412
+									],
+									[
+										1849,
+										1856
+									],
+									[
+										2237,
+										2244
+									],
+									[
+										2541,
+										2548
+									],
+									[
+										2841,
+										2848
+									],
+									[
+										3091,
+										3098
+									],
+									[
+										3425,
+										3432
+									],
+									[
+										3702,
+										3709
+									],
+									[
+										4197,
+										4204
+									],
+									[
+										4989,
+										4996
+									],
+									[
+										5151,
+										5158
+									],
+									[
+										5611,
+										5618
+									],
+									[
+										6035,
+										6042
+									],
+									[
+										6364,
+										6371
+									],
+									[
+										6709,
+										6716
+									],
+									[
+										6925,
+										6932
+									],
+									[
+										7194,
+										7201
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/portfolio.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Liquid/Syntaxes/Markdown (Liquid).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/_scss/screen.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2163,
+								2163
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1499.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/_scss/_molecules.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2505,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2048,
+								2048
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 517.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1510,11 +2912,11 @@
 	},
 	"output.Terminus":
 	{
-		"height": 91.0
+		"height": 210.0
 	},
 	"output.exec":
 	{
-		"height": 196.0
+		"height": 260.0
 	},
 	"output.find_results":
 	{
@@ -1528,7 +2930,7 @@
 	"project": "mrbmc.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 68.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1538,28 +2940,316 @@
 		"selected_items":
 		[
 			[
+				"product-oper",
+				"src/images/portfolio/disney-growth/product-operating-model.svg"
+			],
+			[
+				"atoms",
+				"src/_scss/_atoms.scss"
+			],
+			[
+				"por",
+				"src/portfolio.md"
+			],
+			[
+				"mole",
+				"src/_scss/_molecules.scss"
+			],
+			[
 				"scree",
 				"src/_scss/screen.scss"
 			],
 			[
-				"hom",
-				"src/_scss/pages/home.scss"
+				"project",
+				"src/_scss/pages/project.scss"
 			],
 			[
-				"home",
-				"src/_scss/pages/home.scss"
+				"mrbmc",
+				"src/_js/mrbmc.js"
 			],
 			[
-				"pack",
-				"package.json"
+				"portfolio.js",
+				"src/_js/portfolio.js"
+			],
+			[
+				"project-det",
+				"src/_layouts/project-detail.html"
+			],
+			[
+				"_masthead",
+				"src/_scss/components/_masthead.scss"
+			],
+			[
+				"_ty",
+				"src/_scss/_type.scss"
+			],
+			[
+				"_root",
+				"src/_scss/_root.scss"
+			],
+			[
+				"mix",
+				"src/_scss/library/_mixins.scss"
+			],
+			[
+				"_atom",
+				"src/_scss/_atoms.scss"
+			],
+			[
+				"projec",
+				"src/_scss/pages/project.scss"
+			],
+			[
+				"_typ",
+				"src/_scss/_type.scss"
+			],
+			[
+				"mixin",
+				"src/_scss/library/_mixins.scss"
+			],
+			[
+				"root",
+				"src/_scss/_root.scss"
+			],
+			[
+				"screen",
+				"src/_scss/screen.scss"
+			],
+			[
+				"cv.",
+				"src/cv.md"
+			],
+			[
+				"princ",
+				"src/_includes/_principles.md"
+			],
+			[
+				"_var",
+				"src/_scss/library/_variables.scss"
+			],
+			[
+				"elev",
+				"eleventy.config.js"
+			],
+			[
+				"-group",
+				"src/projects/disney-groupwatch.md"
+			],
+			[
+				"layout",
+				"src/_layouts/layout.html"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"growth.md",
+				"src/projects/disney-growth.md"
 			],
 			[
 				"ele",
 				"eleventy.config.js"
 			],
 			[
-				"gulp",
+				"-long",
+				"src/projects/disney-growth-long.md"
+			],
+			[
+				"gul",
 				"gulpfile.js"
+			],
+			[
+				"header.scs",
+				"src/_scss/components/_header.scss"
+			],
+			[
+				"groupwat",
+				"src/projects/disney-groupwatch.md"
+			],
+			[
+				"-growt",
+				"src/projects/disney-growth.md"
+			],
+			[
+				"_process",
+				"src/_includes/_process.md"
+			],
+			[
+				"leader",
+				"src/_includes/_leadership.md"
+			],
+			[
+				"about.scs",
+				"src/_scss/pages/about.scss"
+			],
+			[
+				"_mole",
+				"src/_scss/_molecules.scss"
+			],
+			[
+				"mixins",
+				"src/_scss/library/_mixins.scss"
+			],
+			[
+				"_atoms",
+				"src/_scss/_atoms.scss"
+			],
+			[
+				"_type",
+				"src/_scss/_type.scss"
+			],
+			[
+				"vari",
+				"backup/2003/less/_variables.less"
+			],
+			[
+				"_roo",
+				"src/_scss/_root.scss"
+			],
+			[
+				"scre",
+				"src/_scss/screen.scss"
+			],
+			[
+				"about.css",
+				"www/css/pages/about.css"
+			],
+			[
+				"_princ",
+				"src/_includes/_principles.md"
+			],
+			[
+				"_proce",
+				"src/_includes/_process.md"
+			],
+			[
+				"_lead",
+				"src/_includes/_leadership.md"
+			],
+			[
+				"about",
+				"src/about.md"
+			],
+			[
+				"scr",
+				"src/_scss/screen.scss"
+			],
+			[
+				"about.",
+				"src/_scss/pages/about.scss"
+			],
+			[
+				"_color",
+				"src/_scss/library/_colors.scss"
+			],
+			[
+				"masthead",
+				"src/_scss/components/_masthead.scss"
+			],
+			[
+				"home",
+				"src/_scss/pages/home.scss"
+			],
+			[
+				"index",
+				"src/index.md"
+			],
+			[
+				"_mast",
+				"src/_scss/components/_masthead.scss"
+			],
+			[
+				"Masthead",
+				"src/_scss/components/_masthead.scss"
+			],
+			[
+				"_home",
+				"src/_scss/pages/home.scss"
+			],
+			[
+				"_header",
+				"src/_scss/components/_header.scss"
+			],
+			[
+				"masthe",
+				"src/_scss/components/_masthead.scss"
+			],
+			[
+				"post-list",
+				"src/_includes/_post-list.md"
+			],
+			[
+				"variables",
+				"src/_scss/library/_variables.scss"
+			],
+			[
+				"post",
+				"src/_scss/pages/post.scss"
+			],
+			[
+				"masthea",
+				"src/_includes/_masthead.html"
+			],
+			[
+				"post-de",
+				"src/_layouts/post-detail.html"
+			],
+			[
+				"_colo",
+				"src/_scss/library/_colors.scss"
+			],
+			[
+				"colors.scs",
+				"src/_scss/library/_colors.scss"
+			],
+			[
+				"mast",
+				"src/_scss/components/_masthead.scss"
+			],
+			[
+				"inde",
+				"src/index.md"
+			],
+			[
+				"colo",
+				"src/colophon.md"
+			],
+			[
+				"footer",
+				"src/_includes/_footer.html"
+			],
+			[
+				"project-list",
+				"src/_scss/components/_project-list.scss"
+			],
+			[
+				"home.scs",
+				"src/_scss/pages/home.scss"
+			],
+			[
+				"foot",
+				"src/_includes/_footer.html"
+			],
+			[
+				"site.js",
+				"src/_data/site.json"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"gradi",
+				"src/_js/gradient.js"
+			],
+			[
+				"hom",
+				"src/_scss/pages/home.scss"
+			],
+			[
+				"pack",
+				"package.json"
 			],
 			[
 				"grad",
@@ -1570,44 +3260,16 @@
 				"src/_scss/library/_colors.scss"
 			],
 			[
-				"root",
-				"src/_scss/_root.scss"
-			],
-			[
-				"_home",
-				"src/_scss/pages/home.scss"
-			],
-			[
 				"gradie",
 				"src/_js/gradient.js"
-			],
-			[
-				"post",
-				"src/_scss/pages/post.scss"
 			],
 			[
 				"_mix",
 				"src/_scss/library/_mixins.scss"
 			],
 			[
-				"scre",
-				"src/_scss/screen.scss"
-			],
-			[
-				"layout",
-				"src/_layouts/layout.html"
-			],
-			[
 				"_foot",
 				"src/_includes/_footer.html"
-			],
-			[
-				"footer",
-				"src/_includes/_footer.html"
-			],
-			[
-				"index",
-				"src/index.md"
 			],
 			[
 				"gra",
@@ -1616,10 +3278,6 @@
 			[
 				"mixins.scs",
 				"src/_scss/library/_mixins.scss"
-			],
-			[
-				"_var",
-				"src/_scss/library/_variables.scss"
 			],
 			[
 				"root.scs",
@@ -1634,10 +3292,6 @@
 				"package.json"
 			],
 			[
-				"packa",
-				"package.json"
-			],
-			[
 				"about.sc",
 				"src/_scss/pages/about.scss"
 			],
@@ -1646,19 +3300,11 @@
 				"www/css/about.css"
 			],
 			[
-				"elev",
-				"eleventy.config.js"
-			],
-			[
 				"bui",
 				"build.sh"
 			],
 			[
 				"gulpf",
-				"gulpfile.js"
-			],
-			[
-				"gul",
 				"gulpfile.js"
 			],
 			[
@@ -1670,16 +3316,8 @@
 				"gulpfile.js"
 			],
 			[
-				"post-list",
-				"src/_scss/components/_post-list.scss"
-			],
-			[
 				"_blog",
 				"src/_scss/pages/blog.scss"
-			],
-			[
-				"project-list",
-				"src/_scss/components/_project-list.scss"
 			],
 			[
 				"sass",
@@ -1702,20 +3340,12 @@
 				"src/images/profile/kageki-crane.svg"
 			],
 			[
-				"_header",
-				"src/_includes/_header.html"
-			],
-			[
 				"_head",
 				"src/_scss/components/_header.scss"
 			],
 			[
 				"_header.s",
 				"src/_scss/components/_header.scss"
-			],
-			[
-				"_ty",
-				"src/_scss/_type.scss"
 			],
 			[
 				"Inde",
@@ -1730,36 +3360,12 @@
 				"src/_scss/pages/resume.scss"
 			],
 			[
-				"colo",
-				"src/colophon.md"
-			],
-			[
-				"_roo",
-				"src/_scss/_root.scss"
-			],
-			[
-				"mole",
-				"src/_scss/_molecules.scss"
-			],
-			[
-				"atoms",
-				"src/_scss/_atoms.scss"
-			],
-			[
-				"_root",
-				"src/_scss/_root.scss"
-			],
-			[
 				"color.scs",
 				"src/_scss/library/_colors.scss"
 			],
 			[
 				"coloph.scs",
 				"src/_scss/pages/colophon.scss"
-			],
-			[
-				"_colo",
-				"src/_scss/library/_colors.scss"
 			],
 			[
 				"post-det",
@@ -1778,10 +3384,6 @@
 				"src/_layouts/project-detail.html"
 			],
 			[
-				"home.scs",
-				"src/_scss/pages/home.scss"
-			],
-			[
 				"blog",
 				"src/blog.md"
 			],
@@ -1798,14 +3400,6 @@
 				"src/_scss/components/_project-list.scss"
 			],
 			[
-				"about.scs",
-				"src/_scss/pages/about.scss"
-			],
-			[
-				"about",
-				"src/about.md"
-			],
-			[
 				"project-deta",
 				"src/_layouts/project-detail.html"
 			],
@@ -1818,20 +3412,12 @@
 				"src/_scss/blog.scss"
 			],
 			[
-				"masthead",
-				"src/_scss/components/_masthead.scss"
-			],
-			[
 				"_foo",
 				"src/_includes/_footer.html"
 			],
 			[
 				"_ro",
 				"src/_scss/_root.scss"
-			],
-			[
-				"vari",
-				"backup/2003/less/_variables.less"
 			],
 			[
 				"portfol.scs",
@@ -1864,190 +3450,6 @@
 			[
 				"_t",
 				"src/_scss/_type.scss"
-			],
-			[
-				"_he",
-				"src/_scss/_header.scss"
-			],
-			[
-				"foot",
-				"src/_scss/_footer.scss"
-			],
-			[
-				"_li",
-				"src/_scss/_library.scss"
-			],
-			[
-				"groupwatch.md",
-				"src/projects/disney-groupwatch.md"
-			],
-			[
-				"pac",
-				"package.json"
-			],
-			[
-				"galler.scs",
-				"src/_scss/_gallery-inline.scss"
-			],
-			[
-				"layouy",
-				"src/_layouts/layout.html"
-			],
-			[
-				"portfo.js",
-				"src/_js/portfolio.js"
-			],
-			[
-				"portfolio.js",
-				"src/_js/portfolio.js"
-			],
-			[
-				"photo",
-				"src/photos.md"
-			],
-			[
-				"projec-",
-				"src/_layouts/project-detail.html"
-			],
-			[
-				"_pub",
-				"src/_scss/_publishing.scss"
-			],
-			[
-				"mast",
-				"src/_scss/_masthead.scss"
-			],
-			[
-				"portf",
-				"src/portfolio.md"
-			],
-			[
-				"project",
-				"src/_scss/project.scss"
-			],
-			[
-				"port",
-				"src/portfolio.md"
-			],
-			[
-				"var",
-				"src/_scss/_variables.scss"
-			],
-			[
-				"_color",
-				"src/_scss/_colors.scss"
-			],
-			[
-				"_masthea",
-				"src/_scss/_masthead.scss"
-			],
-			[
-				"masthea",
-				"src/_scss/_masthead.scss"
-			],
-			[
-				"resum",
-				"src/_scss/resume.scss"
-			],
-			[
-				"metr",
-				"metrics/metrics.sh"
-			],
-			[
-				"kageki-g",
-				"src/images/profile/kageki-crane.svg"
-			],
-			[
-				"layou",
-				"src/_layouts/layout.html"
-			],
-			[
-				"portf.scs",
-				"src/_scss/portfolio.scss"
-			],
-			[
-				"inde",
-				"src/index.md"
-			],
-			[
-				"lay",
-				"src/_layouts/layout.html"
-			],
-			[
-				"bl",
-				"backup/_fonts/balto/balto-Light.woff"
-			],
-			[
-				"princi",
-				"src/_includes/principles.md"
-			],
-			[
-				"abou.scs",
-				"src/_scss/about.scss"
-			],
-			[
-				"regex.t",
-				"metrics/regex.txt"
-			],
-			[
-				"black",
-				"metrics/blacklist-agents.txt"
-			],
-			[
-				"proj",
-				"src/_layouts/project-detail.html"
-			],
-			[
-				"projec",
-				"src/_scss/project.scss"
-			],
-			[
-				"build",
-				"build.sh"
-			],
-			[
-				"proj-li",
-				"src/_includes/_project-list.md"
-			],
-			[
-				"disney-gro",
-				"src/projects/disney-growth.md"
-			],
-			[
-				"po",
-				"src/portfolio.md"
-			],
-			[
-				"por",
-				"src/_scss/portfolio.scss"
-			],
-			[
-				"portfo",
-				"src/_scss/portfolio.scss"
-			],
-			[
-				"_type",
-				"src/_scss/_type.scss"
-			],
-			[
-				"blog.",
-				"src/blog.md"
-			],
-			[
-				"port.m",
-				"src/portfolio.md"
-			],
-			[
-				"portfo.scs",
-				"src/_scss/portfolio.scss"
-			],
-			[
-				"_footer.sc",
-				"src/_scss/_footer.scss"
-			],
-			[
-				"colo.scs",
-				"src/_scss/colophon.scss"
 			]
 		],
 		"width": 0.0

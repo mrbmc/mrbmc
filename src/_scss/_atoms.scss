@@ -1,9 +1,14 @@
 @use "library" as lib;
 
-img, video {
+img, video, svg {
   width: 100%;
   height: auto;
-  max-height: 120vh;
+  max-height: 100vh;
+  object-fit: contain;
+
+  &.fullwidth {
+    object-fit: cover;
+  }
 }
 
 video {

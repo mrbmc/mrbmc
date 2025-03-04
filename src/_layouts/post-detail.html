@@ -5,15 +5,20 @@ parallaxHeading: true
 cssfile: "css/pages/post.css"
 ---
 
-{% if masthead-video or masthead-image %}
-{% include "_masthead.html",parallaxHeading: true %}
-{% else %}
 <h1>{{ title }}</h1>
 <p class="date">
     {{ date | date: "%B %d, %Y" }}
     &bull;
     {{ content | timeToRead }} to read
 </p>
+
+{% if masthead-image or masthead-video %}
+<figure {% if parallaxHeading == true %}data-fade="100" data-parallax="81"{% endif %}>
+    {% if masthead-video %}
+    <video src="{{masthead-video}}" autoplay loop muted preload="auto" playsinline type="video/mp4"></video>{% else 
+    %}<img class="blur-in fade-in" src="{{ masthead-image }}" alt="{{ masthead-title }}" onload="this.classList.toggle('in',true);">
+    {% endif %}
+</figure>
 {% endif %}
 
 <a id="content"></a>

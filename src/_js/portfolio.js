@@ -8,6 +8,19 @@ function wrapElement (el, wrapper) {
     wrapper.appendChild(el);
 }
 
+function isInViewport (elem) {
+    var bounding = elem.getBoundingClientRect(),
+        peek = 0;//bounding.height / 10;
+    // if(VERBOSE) console.log('isInViewport',elem);
+    return (
+        bounding.bottom >= (0 - peek) &&
+        bounding.top <= ((window.innerHeight || document.documentElement.clientHeight) - peek) &&
+        // bounding.left >= 0 &&
+        // bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+        true
+    );
+}
+
 function parseSrcset(srcset) {
   return srcset.split(',').map(item => {
     const parts = item.trim().split(' ');
@@ -17,6 +30,22 @@ function parseSrcset(srcset) {
       density: parts[1] && parts[1].includes('x') ? parseFloat(parts[1]) : null,
     };
   });
+}
+
+function doParallax (yPos) {
+    var spies = document.querySelectorAll('[data-parallax]');
+    if(VERBOSE) console.log('doParallax',spies);
+    spies.forEach(function(value,index,array){
+        var me = array[index],
+            isVisible = isInViewport(me.parentElement),
+            innerHeight = window.innerHeight,
+            scrolledPercent = ((yPos / (innerHeight * 1)) - 0),
+            movementRange = parseInt(me.dataset.parallax),
+            val = scrolledPercent * (innerHeight * movementRange / 100);
+
+        if(isVisible) me.style.transform = "translate(0, " + val + "px)";
+        // if(isVisible) me.style.opacity = (1 - (scrolledPercent * .75));
+    });
 }
 
 function initMosaics() {
@@ -39,6 +68,20 @@ function initMosaics() {
   document.getElementById('lightbox').addEventListener('click',()=>{
     document.getElementById('lightbox').classList.remove('in');
   })
+}
+
+function onScroll (e) {
+    if(VERBOSE) console.log("onScroll",e);
+    last_known_scroll_position = window.scrollY;
+    if (!ticking) {
+        window.requestAnimationFrame(function() {
+            // scrollSpy(last_known_scroll_position);
+            doParallax(last_known_scroll_position);
+            // doScrollFade(last_known_scroll_position);
+            ticking = false;
+        });
+        ticking = true;
+    }
 }
 
 window.addEventListener('keydown', function(e) {
@@ -69,5 +112,6 @@ window.addEventListener('load', function(e) {
     });
 
     initMosaics();
+    window.addEventListener('scroll', onScroll, false);
 
 });

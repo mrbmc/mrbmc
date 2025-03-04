@@ -5,7 +5,7 @@ thumbnail: /images/portfolio/disney-growth/disney-growth-thumb.jpg
 eleventyExcludeFromCollections: false
 tags:
   - work
-description: Designing the product, team, and program that grew Disney+ from 0 to 105M subscribers.
+description: Designing the product, team, and program that launched Disney+ from 0 to 105M subscribers. I led the design of identity, payment, profile and account surfaces.
 timeline: 2018-2020
 parallaxHeading:
   - "-1"
@@ -18,7 +18,8 @@ parallaxHeading:
 | Role | Contributions | Design Team | Timeline |
 | -- | -- | -- | -- |
 | Senior Director, Product Design | 1. [Built a high performing team](#project-team) and empowered them to pursue the right outcomes.<br><br>2. Defined [experience principles](#ux-tenets) to align cross-functional teams across timezones and features.<br><br>3. [Communicated the product value](#landing-page) clearly to consumers.<br><br>4. Presented a [native experience](#tv-signup) on every device in every [global region](#global-expansion). | 7 Product Designers<br>2 Researchers<br>4 Design Specialists | Dec 2018 - Dec 2020 |
-{.rotate}
+
+{.rotate #summary}
 
 1. [Basecamp](#basecamp)
 	1. [The Mountain of Scope](#full-scope)
@@ -64,7 +65,7 @@ At inception, the "Growth" design team was 3 generalist designers + 1 UX researc
 ![Growth Team - January 2019](/images/portfolio/disney-growth/growth-team-start.png){.center}
 Growth Team - January 2019{.caption}
 
-#### Solution
+#### The Product-Operating Model
 
 Scaling the team was a design challenge I tackled with my peer Directors and VP of Product. We aimed for a modular structure, that could scale up,  while still providing **clear swimlanes**, **accountability**, and **autonomy**. 
 
@@ -78,12 +79,11 @@ After considering functional and matrix team structures, we agreed to organize p
 
 We then expanded this model to more teams from Data and Marketing (and eventually Operations) and added names. Each of these teams had the autonomy to self-organize around which tactics and processes they used to deliver against the KPIs.
 
-![Pods](/images/portfolio/disney-growth/pod-structure.png)  
-Example Pod{.caption}
+![Pods](/images/portfolio/disney-growth/product-operating-model.png)  
 
 Each pod had the autonomy to define their ways of working, but generally, they found a 2-week cadence of ceremonies to stay in sync, prioritize work, flatten issues, and break out working groups.
 
-![Pods](/images/portfolio/disney-growth/pod-cadence.svg)  {.fullwidth}
+![Pods](/images/portfolio/disney-growth/ceremony-cadence.svg)  {._fullwidth90}
 
 #### Outcomes
 
@@ -98,52 +98,23 @@ Growth Team in December 2020 {.caption}
 
 We established  **Experience Principles** for Disney+ because we've seen them improve the quality of design decisions on complex projects. Writing these with our cross-functional team made these real living ideas that people would say while collaborating.
 
-<div class="grid fullwidth">
-	<details class="card col-6">
-	<summary>"First stream, first."</summary>
-Disney's competitive advantage is that their content is <strong>already known and beloved</strong>. We believed escorting guests into a browsing experience of familiar content would lead them to their <em>first view</em> as quickly as possible. The first view was more valuable to us than collecting marketing information, or personalized onboarding.
++    {.col-2}
++ **"First stream, first."**{.large-type}  
+  Disney's competitive advantage is that their content is already known and beloved. We believed escorting guests into a browsing experience of familiar content would lead them to their first view as quickly as possible. The first view was more valuable than marketing information, or personalized onboarding. {.col-8 .card}
++ **"Disney... Aged up"**{.large-type}  
+  This common phrase was shorthand for the **premium & modern** visual design direction. The dark color palette, modern san-serif type, and restraint from pixie dust served this goal.  Disney has been on a steady brand transformation to appeal to wider demographics. The acquisition of new content, and the redesign of EPCOT at Walt Disney World support this vision. {.col-8 .card}
++  {.col-4}
++   {.col-4}
++ **"Subscribers, then revenue."**{.large-type}  
+  The goal of Disney+ was to deepen our guests' relationship with the stories & characters they love, not to optimize short-term revenue. We accept as an article of faith that this approach maximizes revenue in the long term. We targeted several business metrics with the design: CVR, LTV, and MRR. The commitment we made to shareholders for the first two years of operation was a singular KPI: net subscribers. {.col-8 .card}
++ **Brand Safe**{.large-type}  
+  Disney goes above and beyond legal requirements to protect its brand.
+  Give consumers a clear chose – no dark or deceptive patterns.
+  The Disney Voice is friendly, direct, and accessible - even for legal contracts.
+  Practice unreasonable hospitality.{.col-start-3 .col-end-10 .card}
++    {.col-1}
 
-- Remove *all* unnecessary signup fields (at the expense of marketing and advertising).
-- Defer all onboarding features (in favor of implicit personalization).
-- Minimize and humanize legal language.
-
-This sounds obvious, but it wasn't how our competitors were operating in 2018, or how Disney operated. This mindset shift required significant stakeholder education, reinforced by our 3rd tenet.
-</details>
-<details class="card col-6">
-	<summary>"Disney... Aged up"</summary>
-	<div>
-"Aged up" was a phrase that everyone on the design team used on a nearly daily basis. It was a shorthand for explaining that the design needed to be as premium & modern, as it was magical. The dark color palette, modern san-serif type, and restrained graphics exist in service of this tenet.
-
-Disney had already been on a long and steady brand transformation to appeal to all ages, especially adults without kids. It's not just for families. The acquisition of Lucasfilm, StarWars, and Fox are examples of the new content strategy, as is a forthcoming redesign of EPCOT at Walt Disney World.
-	</div>
-
-</details>
-<details class="card col-6">
-	<summary>"Subscribers, Then Revenue"</summary>
-	<div>
-The goal of Disney+ was to deepen our guests' relationship with the stories & characters they love, not to optimize short-term revenue. We accept as an article of faith that this approach maximizes revenue in the long term.
-
-We targeted several business metrics with the design: CVR, LTV, and MRR. The commitment we made to shareholders for the first two years of operation was a singular KPI: 
-
-**net subscribers**. 
-
-_Spoiler: this would change six months after the launch._
-	</div>
-
-</details>
-<details class="card col-6">
-	<summary>"Disney Hospitality."</summary>
-	<div>
-	
-* No dark or deceptive patterns.
-* Disney goes above and beyond legal requirements.
-* The Disney Voice is friendly, direct, and accessible - even for legal contracts. 
-* Practice unreasonable hospitality. 
-
-	</div>
-</details>
-</div>
-
+{.grid}
 
 ## Chapter 2: Ascent {#ascent .section}
 
@@ -393,6 +364,9 @@ h2#summit {
 }
 h2#descent {
     background-image: url(/images/optimized/everest-descent-1440.webp);
+}
+table#summary tr{
+    grid-template-rows: 1fr 4fr 2fr 1fr;
 }
 </style>
 

@@ -1,6 +1,6 @@
 ---
 title: BTR Dynamo™
-thumbnail: /images/portfolio/btr/btr-cover-16x9.jpg
+thumbnail: /images/portfolio/btr/btr-hosttools-teaser-2x1.jpg
 masthead-image: /images/portfolio/btr/btr-hosttools-teaser-2x1.jpg
 date: 2014-01-01
 tags:
@@ -32,9 +32,15 @@ When I joined BTR, it was a profitable tool for creating and distributing live r
 
 ### Opportunity 1: Expanding Ad Inventory
 
+{% section %}
+
+<figure class="pull-right" data-width="50">
+{% include "images/portfolio/btr/btr-listens-decay-curve.svg" %}  
+</figure>
+
 **Constraint 1:** Podcast advertising campaigns have a shelf life of 4 weeks. Many of our episodes had a long tail of consumption with most listens occurring weeks, months, or years after recording. *How might we monetize old podcasts with new listens?*
 
-{% include "images/portfolio/btr/btr-listens-decay-curve.svg" %}
+{% endsection %}
 
 **Solution:** Inserting ads at download time, instead of burn-in, meant the ads were fresh to listeners regardless of when the episode was produced. Real-time ad insertion for MP3s did not exist in 2013, but the potential upside was worth the effort.
 
@@ -136,5 +142,6 @@ The Studio is the heart of the BTR experience and it's the UI that hosts interac
 
 ----
 
-<style>main svg {width: 100%;max-width:40rem;height: auto;margin-bottom: 3rem;}</style>
+<style>
+</style>
 

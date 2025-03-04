@@ -2,12 +2,22 @@
 title: Disney Enterprise XD
 date: 2020-09-01
 thumbnail: /images/portfolio/disney-enterprise/optumus-mockup.jpg
+masthead-image: /images/portfolio/disney-enterprise/ivan-cockpit.webp
+parallaxHeading: true
 eleventyExcludeFromCollections: false
 tags:
   - work
 description: A suite of enterprise SAAS products behind Disney+, Hulu, and ESPN.
 timeline: 2019-2023
 ---
+
+## How might we connect consumers to the stories & characters they love through a streaming service?
+
+| Role & Responsibility                                                                                                                                          | Team                                   | Timeline            | Impact                                                                     |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ------------------- | -------------------------------------------------------------------------- |
+| **Sr. Director, Product Design**<br>Team hiring, management, and organization design. Design strategy. Partner management. Budgeting. Culture development. | 12 FT Designers + 6 Design Contractors | Jan 2019 - Aug 2023 | • Saved **$80M** p/a in operating costs<br>• Supported **25% YoY growth in MRR** | 
+
+{.rotate #summary}
 
 1. [The Strategy](#strategy)
 2. [The Team](#team)
@@ -18,10 +28,6 @@ timeline: 2019-2023
    3. [Developer Experience](#developer)
 
 {.stickynav}
-
-| Role & Responsibility                                                                                                                                          | Team                                   | Timeline            | Impact                                                                     |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ------------------- | -------------------------------------------------------------------------- |
-| **Sr. Director, Product Design**<br><br>Team hiring, management, and organization design. Design strategy. Partner management. Budgeting. Culture development. | 12 FT Designers + 6 Design Contractors | Jan 2019 - Aug 2023 | saved **$80M** p/a in operating costs<br>supported a **25% growth in MRR** |
 
 ## The Strategy (of Streaming){#strategy}
 
@@ -45,7 +51,8 @@ As the executive accountable for product design of these tools my mission was to
 | Ad Manager, Mission Control | Advertising curation, provisioning, and deployment.                                         | MRR                     | [Google AdSense](https://adsense.google.com/), Amazon Advertising            |
 | Partner Portal              | Testing APIs, documentation, and issue tracking for developers building with Disney's SDK.  | Net Subs, MRR           | [GitLabs](https://about.gitlab.com/)                                         |
 | [Galaxy](#galaxy)           | Platform for sending personalized targeted messages (Email, SMS, Push) to our users.        | Net Subs, MRR           | [salesforce](https://www.salesforce.com/) + [braze](https://www.braze.com/)  |
-_The scale of this platform was comparable to an entire industry._  
+
+The scale of this platform was comparable to an entire industry.{.caption}  
 
 To prioritize investment in each of these products, I used a Growth Framework, to compare the potential commercial impact for each. This helped in securing funding for staffing, contract, and roadmap priority.
 
@@ -147,19 +154,15 @@ The content strategy for most streaming services, including Disney+, is to creat
 
 Improve the quality of decision making for everyone at Disney.
 
-#### Data Portal{#dataportal}
-
-![Data Portal](/images/portfolio/disney-enterprise/dataportal.png)
-
 #### Streaming Analytics{#optumus}
 
 *codename Optumus*
 
-The internet is not built for persistent delivery of high bandwidth http packets. Making good on our promise of sterling quality video to consumers on any device in any region, required specialized tools that could pro-actively identify issues and notify engineers with actionable insights.
+The internet is not built for persistent delivery of high bandwidth http packets. Making good on our promise of sterling quality video to consumers on any device in any region required specialized tools that could pro-actively identify issues and notify engineers with actionable insights.
 
-The team used participatory design methods that included the users - delivery engineers - into the design process to ensure the product was usable and useful to real world use cases.
+The team used **participatory design** methods that included the users - delivery engineers - into the design process to ensure the product was usable and useful to real-world use cases.
 
-Building this product internally saved Disney **$30M/pa** over comparable third party products.
+This product saved Disney **$30M/pa** over comparable third party products.
 
 - ![Streaming QoS Analysis](/images/portfolio/disney-enterprise/optumus-session.png) {.col-8 .row-2}
 - ![Streaming QoS Analysis](/images/portfolio/disney-enterprise/optumus-dashboard.png) {.col-4 .contain}
@@ -170,11 +173,20 @@ Building this product internally saved Disney **$30M/pa** over comparable third 
 
 *codename WeaponX*
 
-Make better decisions faster.
+We built our own experimentation platform with multi-variate testing, sophisticated holdouts, and feature flagging to help Disney make **evidence-informed decisions**.
+
+##### Impact
+An home-made tool **saved us $5M/pa** in licensing fees and unlocked MRR growth.
 
 - ![Experimentation](/images/portfolio/disney-enterprise/weaponx-dashboard.jpg) {.col-6}
 - ![Experimentation](/images/portfolio/disney-enterprise/weaponx.png) {.col-6}
 {.grid .well .fullwidth}
+
+#### Data Portal{#dataportal}
+
+Our data portal centralized insights about subscriber growth, content consumption, and consumer sentiments in one place accessible to cast members across the enterprise.
+
+![Data Portal](/images/portfolio/disney-enterprise/dataportal.png)
 
 ### Developer Experience{#developer}
 
@@ -222,6 +234,9 @@ Evangelizing design system adoption begins with a promise of a better future. We
   height: 100%;
   object-position: 50% 50%;
   object-fit: contain;
+}
+table#summary tr {
+    grid-template-rows: 3fr 1fr 1fr 2fr;
 }
 </style>
 {% comment %}

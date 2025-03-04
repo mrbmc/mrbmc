@@ -76,7 +76,7 @@ function doParallax (yPos) {
 
 function doScrollFade (yPos) {
     var spies = document.querySelectorAll('[data-fade]');
-    if(VERBOSE) console.log('doParallax',spies);
+    if(VERBOSE) console.log('doScrollFade',spies);
     spies.forEach(function(value,index,array){
         var me = array[index],
             isVisible = isInViewport(me),
