@@ -7,13 +7,30 @@ permalink: /about/
 cssfile: "css/pages/about.css"
 ---
 
-{% section "bio","fullwidth" %}
+{% section "bio","" %}
 
-# Designer and <br />Product Maker.
+# Hello there.
 
-My family calls me Brian but my friends call me BMC. I am a father 👧🏻 👦🏻, [husband 👩🏻](https://www.bettykang.com/), New Yorker 🗽, ️[cyclist 🚲](https://www.strava.com/athletes/773650), [divemaster 🤿](https://www.steelgills.com/@mrbmc), [world traveler 🌎](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **[product design leader 👨‍💻](/portfolio/)** with a unique polymath background as designer, product manager, engineer, and founder.{.large-type}
+My family calls me **Brian**. My friends call me **BMC[\*](#killabmc){onclick="event.preventDefault();return false;"}**. I am a father 👧🏻 👦🏻, [husband 👩🏻](https://www.bettykang.com/), New Yorker 🗽, ️[cyclist 🚲](https://www.strava.com/athletes/773650), [divemaster 🤿](https://www.steelgills.com), short order cook 👨‍🍳, [world traveler 🌎](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE), and **[digital product maker 👨‍💻](/portfolio/)**.{.large-type}
 
 ![Portrait of Brian](/images/profile/mrbmc-20241121.jpeg) {.portrait  .blur-in}
+
+<span id="killabmc" class="tooltip">Short for "killaBMC", my genuine wu-tang-name betrothed by the GZA</span>
+
+{% endsection %}
+
+
+{% section "intro","well full-grid" %}
+
+### I love making stuff that is useful to people.
+
+Design has an incredible power to give form to ideas. The process of **listening, making, and learning** unlocks critical thinking for everyone. 
+
+My unique career path has pivoted between design, product, and engineering thanks to an entrepreneurial instinct to run towards ~~problems~~ opportunities. The common thread has been using design thinking to deliver through ambiguity at any scale. 
+
+<br />
+
+[CV & Resumé](/resume/){.button}
 
 {% endsection %}
 
@@ -24,6 +41,7 @@ My family calls me Brian but my friends call me BMC. I am a father 👧🏻 👦
 {.stickynav}
 
 ### Recent Highlights{.center #highlights}
+
 + **2023** – Built & managed a program for [SAAS Tools at Disney](/portfolio/disney-enterprise/), yielding $100M/pa cost savings and 200% growth in AARPU.
 + **2022** – Co-authored the designer career framework, hiring playbook, and performance tools for Disney leading to a 30% reduction in attrition, and 3x decrease in hiring time.
 + **2021** – [Led product design for STAR+](https://medium.com/disney-streaming/star-from-the-ground-up-building-a-brand-new-streaming-service-for-latin-america-fbe9f5b9366a), Disney's general entertainment service in Latin America.
@@ -34,14 +52,6 @@ My family calls me Brian but my friends call me BMC. I am a father 👧🏻 👦
 + **2015** – Led the team building a [patented](https://patents.google.com/patent/US20170195373A1/) podcast platform that paid creators a fair commission at [BlogTalkRadio](/portfolio/blogtalkradio/) leading to a $55M acquisition.
   
 {.timeline .card}
-
-&nbsp;
-
-Over 20+ years I've learned to **deliver through ambiguity** at nascent startups and global enterprises by bringing together evidence-based insights, rapid prototyping, and strategic design.
-
-I've led teams of 2 to 25 people through mergers, acquisitions, closures, transformations, and explosive growth. My unique career path has pivoted between leadership roles as a designer, engineer, and product manager thanks to an **entrepreneur mindset**. I practice design because of its unique power to **[amplify learning](/blog/a-little-feedback-often/)**. 
-
-[CV & Resumé](/resume/){.button} <!--&nbsp; [Design Blog](/blog/){.button}--> 
 
 {% include "_leadership.md" %}
 
@@ -56,6 +66,26 @@ window.addEventListener('load', function(e) {
     });
     Array.from(document.getElementsByClassName('fade-in')).map(element => {
         element.classList.add('in',true);
+    });
+
+    document.querySelector("a[href='#killabmc']").addEventListener('mouseover',function(event){
+        const tip = document.getElementById('killabmc');
+        var xposition = (event.clientX - this.offsetLeft);
+        var yposition = (event.clientY - this.offsetTop);
+        // tip.style.transform = "translate("+ xposition + "px," + yposition + "px)";
+        // tip.style.left = "calc("+this.offsetLeft + "px - 5rem)";
+        // tip.style.top = "calc("+this.offsetTop+"px - 4rem)";
+        tip.style.left = (this.offsetLeft - (tip.offsetWidth / 2)) + "px";
+        tip.style.top = (this.offsetTop - tip.offsetHeight) + "px";
+        tip.classList.add("in");
+        // console.log("debug", {
+        //     "this":this,
+        //     "offsetLeft":this.offsetLeft
+        // });
+    });
+    document.querySelector("a[href='#killabmc']").addEventListener('mouseout',function(event){
+        const tip = document.getElementById('killabmc');
+        tip.classList.remove("in");
     });
 });
 </script>

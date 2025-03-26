@@ -28,21 +28,21 @@ My leadership philosophy is inspired by lessons from nature, science, and histor
 
 [Blog post: Leadership Models in Nature](/blog/leadership-in-nature/)
 
-[![Orca, Lion, Bee](/images/about/leadership-nature.jpg)](/blog/leadership-in-nature/) {.fullwidths}
+[![Orca, Lion, Bee](/images/about/leadership-nature.jpg)](/blog/leadership-in-nature/) {.full-widths}
 
 ### Management Framework
 
 As a functional expert I created a framework for nurturing high-performing teams:
 
-![Puzzle](/images/about/puzzle.svg){style="height:50vh;width:auto;margin:0 auto;display:block"}
+![Puzzle](/images/about/puzzle.svg){style="height:50vh;"}
 
 #### Culture
 
 I believe culture can be designed by rewarding behavior that reinforces our values,  intentional hiring, and clear performance management.
 
-![Culture](/images/about/puzzle-culture.svg){style="width:19vw;float:right;"}
+##### Supporting Elements
 
-**Supporting Elements**
+![Culture](/images/about/puzzle-culture.svg){.pull-right}
 
 - Team Mission
 - Values
@@ -56,9 +56,10 @@ I believe culture can be designed by rewarding behavior that reinforces our valu
 
 Making things that meet high quality standards requires learned skills applied in a repeatable process.
 
-![Culture](/images/about/puzzle-craft.svg){style="width:19vw;float:right;"}
+##### Supporting Elements
 
-**Supporting Elements**
+![Culture](/images/about/puzzle-craft.svg)
+{.pull-right}
 
 - Quality Standards
 - Career Guides
@@ -73,9 +74,9 @@ Making things that meet high quality standards requires learned skills applied i
 
 Design is a business function built on creativity. The acts of research, ideation, and delivery are used to make an impact.
 
-![Culture](/images/about/puzzle-commerce.svg){style="width:19vw;float:right;"}
+##### Supporting Elements
 
-**Supporting Elements**
+![Culture](/images/about/puzzle-commerce.svg){.pull-right}
 
 - Design Strategy 
 - Evidence & Insights
@@ -85,6 +86,14 @@ Design is a business function built on creativity. The acts of research, ideatio
 
 
 <style>
+.pull-right {
+    width:19vw;
+    float:right;
+@media (max-width: 767px) {
+    width:38vw;
+}
+}
+
 	.pillars {
 		display: flex;
 		justify-content: space-between;

@@ -2,14 +2,9 @@
 
 ## The Design Process Is Storytelling
 
-Good product design is good storytelling. Storytelling is about _transformation_. Users are transformed by your product.
+Good product design is good storytelling. Storytelling is about _transformation_. Users are transformed by your product. [User Scenarios](https://articles.centercentre.com/when-it-comes-to-personas-the-real-value-is-in-the-scenarios/), [Jobs-To-Be-Done](https://jobs-to-be-done.com/), and [Linear Issues](https://linear.app/method/write-issues-not-user-stories) all exist because they force critical thinking about user transformation (when used correctly).
 
-<!--Users **_hated_** the design I shared in my first usability study. We tested the prototype for a fitness-tracking app. The cohort unanimously complained that the scoreboard was confusing; and that the app was irrelevant. After recovering from our shock, we dug into the feedback and found a simple fix to the progress calculation. The second test passed with flying colors and we saw healthier people because our app inspired them to move more.-->
-
-<!--![AHA MyStart!](/images/portfolio/aha-start-ui.jpg){style="max-width:600px;display:block;margin: 1rem auto;"}
-Web design in 2008{.caption}-->
-
-I believe in using story structure as a rubric for evaluating design work. There is a classic story writing tool called the **Story Spine** that can be very useful to designers:
+To avoid some of the pre-conceived notions attached to these methods, and maybe the influence of Disney, I've recently begun leaning on a classic writing tool, the **Story Spine**. It maps very well to design:
 
 Once upon a time there was <span class="underline">&nbsp;</span>,  
 Every day __________,  
@@ -21,18 +16,18 @@ And ever since that day __________.{.blockquote}
 
 An effective design depends on character development, conflict, and resolution; just like a compelling story. We need to understand our users (characters), frame their problems with evidence (development), ideate broadly on solutions (resolve conflict), and prove those solutions through testing (resolution).
 
-Once upon a time there was <span class="underline">User</span>,  
-Every day <span class="underline">User Story</span>,  
-One day <span class="underline">Problem Discovery</span>,  
-Because of that <span class="underline">JTBD</span>,  
-Because of that <span class="underline">Solutions</span>,  
-Until finally <span class="underline">Solution Validation</span>,  
-And ever since that day <span class="underline">Outcomes</span>.{.blockquote}
+Once upon a time there was <u>User Persona</u>,  
+Every day <u> User Scenario </u>,  
+One day <u> Problem Discovery </u>,  
+Because of that <u> Hypothesis </u>,  
+Because of that <u> Prototype </u>,  
+Until finally <u> Solution Validation </u></span>,  
+And ever since that day <u> Outcomes </u>.{.blockquote}
 
 The true value of the Story Spine is unlocked when you use it in tandem with other design processes. There are many wonderful design frameworks to guide the design process such as the [Double Diamond](https://www.designcouncil.org.uk/our-resources/the-double-diamond/), [Honeycomb](https://design-thinking.in/honeycomb%2Fdouble-diamond), or [The Loop](https://www.ibm.com/design/thinking/page/framework/loop/)™. These frameworks help designers navigate from ambiguity to clarity through a prescribed sequence of activities. There are more similarities than differences between them.
 
 
-<svg class="fullwidth" style="margin-top: 2em;margin-bottom:2em;" viewBox="0 0 1681 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="full-width" style="margin-top: 2em;margin-bottom:2em;" viewBox="0 0 1681 269" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="133.262" y="3.41409" width="186.461" height="186.461" transform="rotate(45 133.262 3.41409)" stroke="currentColor" stroke-width="2"/>
 <rect x="394.737" y="3.41409" width="186.461" height="186.461" transform="rotate(45 394.737 3.41409)" stroke="currentColor" stroke-width="2"/>
 <path d="M608.376 24.3724L670.818 24.3724L702.039 78.4489L670.818 132.525H608.376L577.155 78.4489L608.376 24.3724Z" stroke="currentColor" stroke-width="2"/>
@@ -46,7 +41,7 @@ The true value of the Story Spine is unlocked when you use it in tandem with oth
 
 Many musicians will tell you that the loudest note in music is the rest note. Fine artists step back and squint their eyes. Athletes build recovery into their training. These moments of inaction provide intentional contrast to their respective processes. I've always thought design frameworks could assist designers more with the critical thinking that happens at junctures between each phase. The Story Spine provides a rubric for evaluating the continuity and efficacy of the work at each of these steps.
 
-<svg viewBox="0 0 1681 300" fill="none" xmlns="http://www.w3.org/2000/svg"  class="fullwidth" style="margin-top: 2em;margin-bottom:2em;">
+<svg viewBox="0 0 1681 300" fill="none" xmlns="http://www.w3.org/2000/svg"  class="full-width" style="margin-top: 2em;margin-bottom:2em;">
 <rect x="133.262" y="34.4141" width="186.461" height="186.461" transform="rotate(45 133.262 34.4141)" stroke="currentColor" stroke-width="2"/>
 <rect x="394.738" y="34.4141" width="186.461" height="186.461" transform="rotate(45 394.738 34.4141)" stroke="currentColor" stroke-width="2"/>
 <circle cx="133.262" cy="32" r="28" stroke="#FF4F00" stroke-width="8"/>
