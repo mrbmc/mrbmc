@@ -3,7 +3,6 @@ title: ESPN
 thumbnail: /images/portfolio/espn/espn-thumbnail-1x1.png
 masthead-image: /images/portfolio/espn/espn-masthead-16x9.jpg
 masthead-video: /images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
-parallaxHeading: true
 date: 2019-11-12
 timeline: 2017-2021
 description: Leading Growth Design for ESPN+, and a vision for the future of streaming sports that **grew 11M subscribers** in Latin America.

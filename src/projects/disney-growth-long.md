@@ -7,8 +7,6 @@ tags:
   - work
 description: This is the story of building the Growth Design program - the team, process, and product - to launch Disney+ from 0 to 105M subscribers in two years.
 timeline: 2018-2020
-parallaxHeading:
-  - "-1"
 ---
 ![Cover image](/images/portfolio/disney-growth/disney-growth.png){.full-width style="object-fit:contain;"}
 

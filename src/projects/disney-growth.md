@@ -14,8 +14,6 @@ accomplishments:
  - Led growth design tactics - optimization, segmentation, and expansion - that **grew MRR & AARPU 25% YoY**.
 timeline: 2018-2020
 casestudy: true
-parallaxHeading:
-  - "-1"
 ---
 
 ![Disney+ Welcome on All Devices](/images/portfolio/disney-growth/disney-growth.jpg){.blur-in}
