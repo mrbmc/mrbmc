@@ -20,7 +20,7 @@ My family calls me **Brian**. My friends call me **BMC[\*](#killabmc){onclick="e
 {% endsection %}
 
 
-{% section "intro","well full-grid" %}
+{% section "intro","well full-width" %}
 
 ### I love making stuff that is useful to people.
 

@@ -16,49 +16,15 @@
   }
 }
 
-// @mixin neon($neonColor:$primary) {
-//   text-shadow:
-//     0 0 7px #fff,
-//     0 0 10px $neonColor,
-//     0 0 21px #fff,
-//     0 0 42px $neonColor,
-//     0 0 82px $neonColor,
-//     0 0 92px $neonColor,
-//     0 0 102px $neonColor,
-//     0 0 151px $neonColor;
-// }
-
 @mixin flexColumns ($cols:2) {
   flex: 1 0 math.div(100%, $cols);
-}
-
-@mixin full-width($_padding:var(--gutter)) {
-  & {
-    box-sizing: border-box;
-    width: 100vw;
-    --delta: calc(100vw - #{variables.$grid-width});
-    margin-left: calc( max(var(--delta),var(--gutter-xl)) * -0.5);
-    padding-left: $_padding;
-    padding-right: $_padding;
-  }
-  @media (max-width: (variables.$grid-width)) {
-    margin-left: calc(var(--gutter) * -1);
-  }
-  // @media (max-width: (variables.$grid-width)) {
-  //   padding-left: var(--gutter);
-  //   padding-right: var(--gutter);
-  // }
-}
-@mixin fullHeight($limit:calc(100vh - $navbar-height)) {
-  height: $limit;
-  max-height: $limit;
 }
 
 @mixin inverse($c1:var(--hero-background),$c2:false,$c3:false,$c4:false) {
   & {
     background-color: $c1;
     color: var(--hero-text-color);
-    h1,h2,h3,h4,h5,a {
+    h1,h2,h3,h4,h5,a,strong,b {
       color: var(--hero-bold-color);
       &:hover {
         color: var(--hero-text-color);

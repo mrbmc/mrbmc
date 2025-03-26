@@ -2,13 +2,14 @@
 
 #masthead {
 
-    padding: var(--gutter);
     height: calc(100vh - var(--navbar-height));
+    padding: var(--gutter);
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
     position: relative;
-    box-sizing: border-box;
     overflow: hidden;
     z-index: 10;
 
@@ -19,8 +20,6 @@
         lib.$neutral-0,
         );
 
-    @include lib.full-width();
-
     @media (max-width: lib.$breakpoint) {
         min-height: 56.25vw;
         height: auto;
@@ -30,25 +29,27 @@
         filter: none;
     }
 
-    h1,h2,h3 {
+    h1,h2,h3,p {
         z-index: 2;
-        margin-top: 0;
-    }
-    h1 + p {
-        margin-bottom: 0em;
+        margin: 0;
     }
 
-    figure {
+    &>figure,&>.figure {
         width: 100%;
-        height: calc(100% + var(--navbar-height));
+        height: 100%;
         position: absolute;
-        top: calc(var(--navbar-height) * -1);
+        top: 0;
         left: 0;
         right: 0;
         z-index: -1;
         margin: 0;
         overflow: hidden;
 
+        &[data-parallax] {
+            height: calc(100% + var(--navbar-height));
+            position: absolute;
+            top: calc(var(--navbar-height) * -1);
+        }
         img,video {
             height: 100%;
             object-fit: cover;

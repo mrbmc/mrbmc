@@ -68,7 +68,7 @@ height: 90vh;
 - ![capitol](/images/blog/gapco-capitol.JPG) {.col-4}
 - ![capitol](/images/blog/gapco-lincoln-sunset.JPG) {.col-8}
 
-{.grid .well .full-width}
+{.grid .well .full-grid}
 
 <style type="text/css"> 
 .grid.well img {

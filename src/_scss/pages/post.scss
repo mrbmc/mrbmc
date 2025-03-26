@@ -12,10 +12,11 @@ body.blog.post {
     }
 
     @media (min-width:lib.$breakpoint) {
+      flex-direction: column-reverse;
       justify-content: space-between;
 
-      h1, h2, p {
-        max-width: lib.$grid-width;
+      h1, h2 {
+        // max-width: lib.$grid-width;
       }
 
     }
@@ -23,7 +24,7 @@ body.blog.post {
   }
 
   main {
-    .date {
+    & > .date {
       color: var(--text-secondary);
     }
 

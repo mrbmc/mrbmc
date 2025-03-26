@@ -11,6 +11,18 @@ body.project {
         flex-direction: column;
         padding-top:0;
 
+        #masthead {
+            .description,.summary {
+                max-width: lib.$grid-width;
+            }
+            .metadata {
+                display: none;
+            }
+            @media (min-width:lib.$breakpoint) {
+              // flex-direction: column-reverse;
+              // justify-content: space-between;
+            }
+        }
         p {
             &>img,&>svg,&>video {
                 &.canzoom {
@@ -21,7 +33,7 @@ body.project {
                 }
                 &.zoom {
                     max-height: 100vh;
-                    @include lib.full-width(0vw);
+                    // @include lib.full-width(0vw);
                     &:hover {
                         cursor: zoom-out;
                     }
@@ -55,12 +67,7 @@ body.project {
             }
         }
 
-        #masthead {
-            .description,.summary {
-                max-width: lib.$grid-width;
-            }
-        }
-        p.summary {
+        &>p.summary {
             margin-bottom: (lib.$gutter * 2);
         }
     }
@@ -118,7 +125,7 @@ body.project {
         background-repeat: no-repeat;
         background-size: cover;
 
-        @include lib.full-width();
+        // @include lib.full-width();
 
         @media (max-width: lib.$breakpoint) {
             height: 56.25vw;

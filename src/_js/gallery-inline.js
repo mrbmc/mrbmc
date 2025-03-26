@@ -28,7 +28,7 @@ function galleryLoad (e) {
 
         // create wrapper container
         var wrapper = document.createElement('div');
-            wrapper.setAttribute('class','gallery-wrap');
+            wrapper.setAttribute('class','gallery-wrap full-grid');
         wrapElement(gallery, wrapper);
 
         // create the detail image

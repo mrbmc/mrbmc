@@ -1,7 +1,6 @@
 @use '../library' as lib;
 
 p#gallery,div.gallery-wrap {
-    @include lib.full-width(vw);
     @include lib.inverse();
 
     $thumb-size: 15vh;
