@@ -5,22 +5,17 @@ cssfile: "css/pages/project.css"
 ---
 
 {% if masthead-video or masthead-image %}
-{% include "_masthead.html" %}
+{% include "_masthead.md" %}
 {% else %}
-<h1 class="blur-in">{{ title }}</h1>
-{% if description %}<p class="summary large blur-in">{{ description }}</p>{% endif %}
+# {{title}} { .blur-in}
+{% if description %}{{ description }}{.summary .blur-in .large}{% endif %}
 {% endif %}
 
-<a id="content"></a>
-
-{{ content }}
+{{content}}
 
 {% assign nextPost = collections[tags[0]] | getPreviousCollectionItem: page %}
 {% assign previousPost = collections[tags[0]] | getNextCollectionItem: page %}
-<nav class="pagination">
-    {% if previousPost %}<a href="{{ previousPost.url }}">← Previous Project: {{ previousPost.data.title }}</a>{% endif %}
-    {% if nextPost %}<a href="{{ nextPost.url }}">Next Project: {{ nextPost.data.title }} →</a>{% endif %}
-</nav>
+
 
 <div id="lightbox" class=""></div>
 

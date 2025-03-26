@@ -1,5 +1,5 @@
 {
-	"layout": "post-detail.html",
+	"layout": "post-detail.md",
 	"tags": "post",
 	"permalink": "/blog/{{page.fileSlug}}/"
 }

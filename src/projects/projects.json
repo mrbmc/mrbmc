@@ -1,5 +1,5 @@
 {
-  "layout": "project-detail.html",
+  "layout": "project-detail.md",
   "tag":"projcet",
   "permalink": "/portfolio/{{page.fileSlug}}/"
 }
