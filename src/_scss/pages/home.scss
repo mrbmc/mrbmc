@@ -8,53 +8,80 @@
 
 body.home {
   #header {
-    position: absolute;
-    background: transparent;
+    // position: absolute;
+    // background: transparent;
 
-    .logo {
-        color: var(--hero-text-color);
-        &:hover {
-            color: var(--well-text-color);
-        }
-    }
+    // .logo {
+    //     color: var(--hero-text-color);
+    //     &:hover {
+    //         color: var(--well-text-color);
+    //     }
+    // }
 
-    #menu {
-      a {
-        color: var(--hero-text-color);
-        &:hover {
-          color: var(--link-color);
-        }
-      }
-    }
+    // #menu {
+    //   a {
+    //     color: var(--hero-text-color);
+    //     &:hover {
+    //       color: var(--link-color);
+    //     }
+    //   }
+    // }
 
   }
 
-  #masthead {
+  main {
+    padding-top: 0;
+  }
 
-    // @include lib.hero(
-    //     lib.$neutral-0,
-    //     lib.$neutral-30,
-    //     lib.$neutral-60,
-    //     lib.$neutral-0,
-    //     );
+  #topper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--body-background);
 
+    // &:after {
+    //     content: "";
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 2;
+    //     filter: url(#noiseFilter) opacity(10%);
+    // }
 
-    &:after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        filter: url(#noiseFilter) opacity(10%);
-    }
     h1 {
       z-index: 3;
+
+      // @include lib.hero(
+      //     lib.$primary,
+      //     lib.adjust(lib.$secondary,$alpha:-0.2),
+      //     lib.adjust(lib.$tertiary,$alpha:-0.0),
+      //     lib.adjust(lib.$primary,$alpha:-0.5),
+      //     );
+
+      $c1: lib.$primary;
+      $c2: lib.$secondary;
+      $c3: lib.$tertiary;
+      $c4: lib.$primary;
+      background-color: $c1;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image:
+      radial-gradient(ellipse 100% 100% at 0% 100%, $c4 0px, transparent 100%),
+      radial-gradient(ellipse 100% 200% at 0% 10%, $c3 0px, transparent 100%),
+      conic-gradient(from 0.75turn at 81% 138%, transparent 0%, $c2 20%, transparent 40%, transparent 99%),
+      ;    
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+
     }
     @media (min-width:lib.$breakpoint) {
       min-height: calc(81vh);
       height: auto;
+      // margin-bottom: 0;
     }
 
     @media (max-width:lib.$breakpoint) {
@@ -63,13 +90,13 @@ body.home {
 
     @media (min-width:lib.$breakpoint) {
       h1, h2, p.bio {
-        max-width: lib.$grid-width;
+        // max-width: lib.$grid-width;
       }
     }
-
   }
 
   #gradient-canvas, #masthead canvas {
+    display: none;
     position: absolute;
     z-index: 0;
     $scaler: 1;
@@ -93,19 +120,32 @@ body.home {
   }
 
   .project-list {
-    // padding: lib.$gutter;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    // padding-left: var(--gutter);
+    // padding-right: var(--gutter);
+    // padding: lib.$gutter;
     // grid-row-gap: lib.$gutter;
     // grid-column-gap: lib.$gutter;
 
     h2 {
-      display: none;
+      // display: none;
+      grid-column: span 2;
     }
 
     @media (min-width:lib.$breakpoint) {
       grid-template-columns: repeat(3, 1fr);
+      h2 {
+        grid-column: span 3;
+      }
     }
+
+    // @media (min-width:lib.$breakpoint-widescreen) {
+    //   grid-template-columns: repeat(4, 1fr);
+    //   h2 {
+    //     grid-column: span 4;
+    //   }
+    // }
 
     .project {
       flex-direction: column-reverse;
@@ -124,17 +164,8 @@ body.home {
 
       figure, .figure {
         img {
-          height: calc((100vw - (lib.$gutter * 4))/2);
-
-          @media (min-width:lib.$breakpoint) {
-            height: calc((100vw - (lib.$gutter * 4))/3);
-          }
-
-          @media (min-width:lib.$breakpoint-widescreen) {
-            height: calc((100vw - (lib.$gutter * 4))/4);
-          }
+          aspect-ratio: 1;
         }
-
       }
 
     }

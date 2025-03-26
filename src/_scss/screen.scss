@@ -90,6 +90,27 @@ details {
 
 }
 
+.tooltip, .fly-out {
+    display: block;
+    box-sizing: border-box;
+    width: 25vw;
+    padding: .25rem;
+    font-size: 0.81rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: lib.$shadow;
+    background: var(--card-background);
+    color: var(--card-text-color);
+    opacity: 0;
+    transition: 
+        transform (lib.$speed * 1.5) lib.$easing, 
+        left (lib.$speed * 1.5) lib.$easing, 
+        top (lib.$speed * 1.5) lib.$easing, 
+        opacity (lib.$speed * 1) lib.$easing;
+    &.in {
+        opacity: 1;
+    }
+}
 
 
 // ======================================================================
@@ -102,22 +123,26 @@ body,html {
     overscroll-behavior-x: none;
 }
 
-.fullwidth,.fullWidth {
-    @include lib.fullWidth(100vw);
+.full-width {
+    @include lib.full-width(0);
 }
-.fullwidth90 {
-    @include lib.fullWidth(90vw);
+.full-width-90 {
+    @include lib.full-width(5vw);
+}
+//This spreads the container to the full width but preserves the content grid width
+.full-grid {
+  @include lib.full-width(var(--grid-margin));
 }
 .fullheight {
     @include lib.fullHeight(90vh);
 }
 
 h1,h2,h3,h4,h5{
-    padding: 1em 0 1rem 0;
-    margin: 0;
+    // padding: 0 0 .4em 0;
+    // margin: 0;
 }
-p,ul,ol,dl {
-    margin: 0 0 1rem 0;
+ul,ol,dl {
+    // margin: 0 0 .4em 0;
     padding: 0;
 }
 li, dt {
@@ -129,7 +154,7 @@ body {
         box-sizing: content-box;
         max-width: lib.$grid-width;
         margin: 0 auto;
-        padding: 0 var(--gutter);
+        padding: var(--gutter-xl) var(--gutter);
 
         section {
             margin-bottom: var(--gutter-xl);
@@ -168,15 +193,15 @@ body {
 
     @media (max-width: lib.$breakpoint) {
 
-        // .col-1,.col-2,.col-3,.col-4,.col-5 {
-        //     grid-column: span 12;
-        // }
-        // .col-7,.col-8,.col-9,.col-10,.col-11 {
-        //     grid-column: span 12;
-        // }
-        [class^="col-"] {
-            grid-column: span var(--columns);
+        .col-1,.col-2,.col-3,.col-4,.col-5 {
+            grid-column: span 6;
         }
+        .col-7,.col-8,.col-9,.col-10,.col-11 {
+            grid-column: span 12;
+        }
+        // [class*="col-"] {
+        //     grid-column: span var(--columns);
+        // }
     }
     .card {
       height: 100%;

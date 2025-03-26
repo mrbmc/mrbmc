@@ -3,38 +3,49 @@
 @use "../components/masthead";
 
 body.blog.post {
+  transition: all (lib.$speed * 4) lib.$easing;
+  background: var(--body-background);
 
-	transition: all (lib.$speed * 4) lib.$easing;
+  #masthead {
+    p.summary {
+      display: none;
+    }
 
-	background: var(--well-background);
+    @media (min-width:lib.$breakpoint) {
+      justify-content: space-between;
 
-	#masthead {
-    	p.summary {
-    		display: none;
-    	}
-	    @media (min-width:lib.$breakpoint) {
-	    	justify-content: space-between;
-	      h1, h2, p {
-	        max-width: lib.$grid-width;
-	      }
-	    }
-	}
-	main {
-		figure {
-			margin: 0 0 var(--gutter-xl) 0;
-			img {
-				aspect-ratio: 2.16;
-				object-fit: cover;
-			}
-		}
-	}
+      h1, h2, p {
+        max-width: lib.$grid-width;
+      }
 
-	.related-posts {
-		padding: lib.$gutter-xl 0;
-		margin: lib.$gutter-xl 0;
-	}
+    }
 
-	&.scrolled {
-		background: var(--body-background);
-	}
+  }
+
+  main {
+    .date {
+      color: var(--text-secondary);
+    }
+
+    figure {
+      margin: 0 0 var(--gutter-xl) 0;
+
+      img {
+        aspect-ratio: 2.16;
+        object-fit: cover;
+      }
+
+    }
+
+  }
+
+  .related-posts {
+    padding: lib.$gutter-xl 0;
+    margin: lib.$gutter-xl 0;
+  }
+
+  // &.scrolled {
+  //   background: var(--body-background);
+  // }
+
 }

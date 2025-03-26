@@ -1,115 +1,137 @@
 @use "../library" as lib;
 
 body.about {
+  main, #main {
+    padding-top: 0;
 
-    main,#main {
-        #bio {
-            box-sizing: border-box;
-            padding: lib.$gutter-xl lib.$gutter;
-            min-height: 38vw;
+    #bio {
+      box-sizing: border-box;
+      height: 81vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+      // padding: lib.$gutter-xl lib.$gutter;
 
-            p.portrait {
-                border-radius: var(--border-radius-xl);
-                overflow: hidden;
-                    img {
-                        display: block;
-                    }
-            }
+      p.portrait {
+        border-radius: var(--border-radius-xl);
+        overflow: hidden;
 
-            @media (min-width: lib.$breakpoint) {
-                h1,p.large-type {
-                    width: calc(66vw - var(--gutter-xl) - var(--gutter));
-                    margin: 0;
-                }
-                p.portrait {
-                    position: absolute;
-                    right: lib.$gutter;
-                    top: 50%;
-                    width: calc(34vw);
-                    margin: -17vw 0 0 0;
-                }                
-            }
-        }
-    }
-
-    h1 + p {
-        margin: lib.$gutter 0 lib.$gutter-xl;
-    }
-
-    .well {
-        background: var(--well-background);
-        color: var(--well-text-color);
-        padding: lib.$gutter;
-        box-sizing: border-box;
-
-        &.fullwidth {
-            @media (min-width: lib.$breakpoint) {
-                padding: lib.$gutter lib.$grid-margin;
-            }
-        }
-    }
-    section {
         img {
-            border-radius: var(--border-radius);
+          display: block;
         }
+
+      }
+
+      @media (min-width:lib.$breakpoint) {
+        $pic-size: 33%;
+
+        h1,h2,p {
+          width: calc((100% - $pic-size) - var(--gutter-xl) - var(--gutter-xl));
+        }
+        p.large-type:last-of-type {
+          margin: 0;
+        }
+        h1,h2 {
+          margin: 0 0 var(--gutter);
+        }
+
+        p.portrait {
+          position: absolute;
+          right: lib.$gutter;
+          top: 50%;
+          width: calc($pic-size);
+          margin: ($pic-size * -.5) 0 0 0;
+        }
+
+      }
+
     }
 
-    img[alt="Disney"] {
-        height: 1.62em;
-        width:auto;
-        display:inline;
-        margin-bottom: -.4em;
-        margin-right: .25em;
+  }
+
+  section {
+    img {
+      border-radius: var(--border-radius);
     }
-    #travel-map {
-        width: 100%;
-        height: auto;
-        // filter: hue-rotate(60deg);
-    }
-    #strava-rides,#strava-profile {
-        height: 454px;
-        width: 100%;
+  }
+  #leadership {
+    @include lib.clearfix();
+  }
+
+  .grid {
+    h5 {
+      margin-top: 0;
     }
 
-    hr {
-        margin: lib.$gutter-xl auto;
+    [class*="col-"] {
+      // align-items: center;
+      // justify-content: center;
+      align-self: center;
     }
+
+  }
+
+  img[alt="Disney"] {
+    height: 1.62em;
+    width: auto;
+    display: inline;
+    margin-bottom: -.4em;
+    margin-right: .25em;
+  }
+
+  #travel-map {
+    width: 100%;
+    height: auto;
+    // filter: hue-rotate(60deg);
+  }
+
+  #strava-rides, #strava-profile {
+    height: 454px;
+    width: 100%;
+  }
+
+  hr {
+    margin: lib.$gutter-xl auto;
+  }
+
+  #killabmc {
+    position: absolute;
+    z-index: 100;
+  }
+
 }
-
-
-
 
 ul.timeline {
-    width: auto;
-    @media (min-width: lib.$breakpoint) {
-        margin: lib.$gutter-xl lib.$gutter;
+  width: auto;
+
+  @media (min-width:lib.$breakpoint) {
+    margin: lib.$gutter-xl lib.$gutter;
+  }
+
+  li {
+    margin: 0;
+    position: relative;
+    padding: 0 0 lib.$gutter-xl lib.$gutter;
+    border-left: 2px solid var(--text-secondary);
+    list-style: none;
+
+    &:last-of-type {
+      padding-bottom: 0;
     }
 
-    li {
-        margin: 0;
-        position: relative;
-        padding: 0 0 lib.$gutter-xl lib.$gutter;
-        border-left: 2px solid var(--text-secondary);
-        list-style: none;
-        &:last-of-type {
-            padding-bottom: 0;
-        }
-        &:before {
-            display: inline-block;
-            content: "";
-            $bullet-size: .62rem;
-            width: $bullet-size;
-            height: $bullet-size;
-            border-radius: var(--border-radius);
-            margin: 0 lib.$gutter 0 calc((lib.$gutter * -1) - ($bullet-size * .5) - 1px);
-            background: var(--text-secondary);
-        }
-
+    &:before {
+      display: inline-block;
+      content: "";
+      $bullet-size: .62rem;
+      width: $bullet-size;
+      height: $bullet-size;
+      border-radius: var(--border-radius);
+      margin: 0 lib.$gutter 0 calc((lib.$gutter * -1) - ($bullet-size * .5) - 1px);
+      background: var(--text-secondary);
     }
+
+  }
+
 }
-

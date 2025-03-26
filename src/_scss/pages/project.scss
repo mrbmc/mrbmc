@@ -9,6 +9,7 @@ body.project {
     #main {
         display: flex;
         flex-direction: column;
+        padding-top:0;
 
         p {
             &>img,&>svg,&>video {
@@ -20,13 +21,13 @@ body.project {
                 }
                 &.zoom {
                     max-height: 100vh;
-                    @include lib.fullWidth(100vw);
+                    @include lib.full-width(0vw);
                     &:hover {
                         cursor: zoom-out;
                     }
                 }
             }
-            img.fullwidth,svg.fullwidth,video.fullwidth {
+            img.full-width,svg.full-width,video.full-width {
                 max-height: 95vh;
                 object-fit: cover;
             }
@@ -63,8 +64,8 @@ body.project {
             margin-bottom: (lib.$gutter * 2);
         }
         h2,h3 {
-            margin-top: varl(--gutter-xl);
-            margin-bottom: var(--gutter);
+            // margin-top: var(--gutter-xl);
+            // margin-bottom: var(--gutter);
         }
     }
     @media (max-width: lib.$breakpoint) {
@@ -110,21 +111,18 @@ body.project {
     }
 
     h1.section,h2.section {
-        padding-left: lib.$gutter;
-        box-sizing: border-box;
+        padding: 0 var(--gutter);
         display: flex;
         align-items: center;
         height: 83.3vh;
         color: var(--hero-text-color);
-        position: relative;
 
-        // background-size: 120%;
         background-position: center center;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
 
-        @include lib.fullWidth();
+        @include lib.full-width();
 
         @media (max-width: lib.$breakpoint) {
             height: 56.25vw;
@@ -145,10 +143,11 @@ body.project {
 
         li {
             height: 100%;
-            img {
+            img,video {
                 display: block;
                 height: 100%;
                 width: 100%;
+                max-height: calc(100vh - var(--gutter-xl));
                 max-width: calc(100vw - var(--gutter-xl));
                 object-fit: cover;
                 object-position: 50% 0%;
@@ -158,11 +157,8 @@ body.project {
                     cursor: pointer;
                 }
             }
-            &.contain {
-                img {
-                    object-fit: contain;
-                    object-position: 50% 50%;
-                }
+            video {
+                object-fit: contain;
             }
             &.clear {
                 grid-row: 3 / span 2;

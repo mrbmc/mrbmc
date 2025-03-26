@@ -14,7 +14,7 @@ $bold-font-weight: 600;
 $base-font-size: 1.5em;
 //math.div(24, 16);
 //16px is the browser default so the numerator is your desired p size
-$base-line-height: 1.62rem;
+$base-line-height: 1.38em;
 $serif-font-weight: 200;
 $small-font-size: .81em;
 $large-font-size: 1.19em;
@@ -28,14 +28,14 @@ $heading-kerning: -0.025em;
 
 // GRID
 // --------------------------------------------------
-$gutter: $base-line-height;
+$gutter: 1.38rem;
 $gutter-xl: $base-line-height * 2;
-$grid-width: 40rem;
+$grid-width: 42rem;
 $grid-columns: 12;
 $grid-column: math.div(($grid-width - (($grid-columns - 1) * $gutter)), $grid-columns);
 $grid-margin: calc((100vw - $grid-width) * .5);
 $breakpoint: 767px;
-$breakpoint-widescreen: 1440px;
+$breakpoint-widescreen: 1599px;
 // $breakpoint-desktop: 960px;
 // $breakpoint-portrait: 768px;
 // $breakpoint-phone: 480px;
