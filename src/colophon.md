@@ -62,27 +62,52 @@ The primary typeface is [Univers by Linotype](https://www.myfonts.com/collection
 
 For extended prose we use a native serif: Hoefler on MacOS & iOS, Palatino on Android and Windows.
 
-{% assign typefactor = 1.19 %}
+{% assign typefactor = 1.2 %}
 
-# H1 Display ({{ typefactor | times: typefactor | times: typefactor | times: typefactor | times: typefactor | round: 3 }}rem)
+# H1 Display ({{ 
+	typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	round: 3 }}rem)
 
-## H2 Section Heading ({{ typefactor | times: typefactor | times: typefactor | round: 3 }}rem)
+## H2 Section ({{ 
+	typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	round: 3 }}rem)
 
-### H3 Sub-Section Heading ({{ typefactor | times: typefactor | round: 3 }}rem)
+### H3 Sub-Section ({{ 
+	typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	times: typefactor | 
+	round: 3 }}rem)
 
-#### H4 Component Heading ({{ 1 | times: 1 | round: 3 }}rem)
+#### H4 Component Heading ({{ 
+	typefactor | 
+	times: typefactor | 
+	round: 3 }}rem)
 
-##### H5 Component Sub-Heading ({{ 1 | times: typefactor | round: 3 }}rem)
+##### H5 Component Sub-Heading ({{ 1 | 
+	times: typefactor | 
+	round: 3 }}rem)
 
-#### Body:  (1rem)
+Body:  (1rem)
 
 Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation.
 
-#### Body.large-type:  ({{ 1 | times: typefactor | round: 3 }}rem)
+Body.large-type:  ({{ 1 | times: typefactor | round: 3 }}rem)
 
 Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation.{.large-type}
 
-#### Body.small-type:  ({{ 2 | minus: typefactor | round: 3 }}rem)
+Body.small-type:  ({{ 2 | minus: typefactor | round: 3 }}rem)
 
 Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off - then, I account it high time to get to sea as soon as I can.{.small-type}
 

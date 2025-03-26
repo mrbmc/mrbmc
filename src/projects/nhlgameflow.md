@@ -36,6 +36,6 @@ My role as director was assembling the team of designers, prototypers, and resea
 
 To secure buy-in from NHL and Disney leadership we needed to shop the feature in context. We built a VisionType in Keynote to walk execs through the experience. It also facilitated collaboration with services and client engineering. Our Apple developers in particular were eager to build new PiP capabiliites in TVOs, and experiment with synchronization capabilities between Apple devices.
 
-<video src="/images/portfolio/nhl/GameFlow-Demo.mp4" controls playsinline muted mute autoplay autoplay="autoplay" class="fullwidth"></video>
+<video src="/images/portfolio/nhl/GameFlow-Demo.mp4" controls playsinline muted mute autoplay autoplay="autoplay" class="full-width"></video>
 
 [GameFlow™ Press Release](https://www.nhl.com/news/nhl-launching-gameflow-interactive-experience-312169252)

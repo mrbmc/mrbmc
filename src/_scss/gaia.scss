@@ -1,13 +1,24 @@
 body {
-  margin:0;
+  margin: 0;
   background: #201c1D;
-  background: linear-gradient(180deg, hsl(180,21%,21%) 0%, hsl(180,100%,0%) 100%);
-  font-family: "HelveticaNeue","Helvetica Neue","Helvetica",sans-serif;
+  background: linear-gradient(180deg, hsl(180, 21%, 21%) 0%, hsl(180, 100%, 0%) 100%);
+  background-size: 100vw 100vh;
+  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", sans-serif;
+  color: white;
+}
+a {
+  color: white;
 }
 canvas {
   width: 100vw;
   height: 100vh;
 }
+
+main {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
 #debugger {
   background: #00000080;
   color: #0cF;
@@ -21,6 +32,7 @@ canvas {
   margin: 0;
   height: 6em;
 }
+
 #controls {
   text-align: right;
   padding: 0.5rem;
@@ -31,24 +43,27 @@ canvas {
   bottom: .25rem;
   right: .25rem;
 }
+
 label span {
   font-family: monospace;
   color: #FFF;
 }
-input.slider {
-    appearance: none;
-    width: 300px;
-    height: 0.5rem;
-    background: #000000;
-    outline: none;
-    border-radius: 1rem;
-}
 
-input.slider::-webkit-slider-thumb {
+input.slider {
   appearance: none;
-  width: .25rem;
-  height: 1rem;
-  // border-radius: 1rem;
-  background: #00CCCC;
-  cursor: pointer;
+  width: 300px;
+  height: 0.5rem;
+  background: #000000;
+  outline: none;
+  border-radius: 1rem;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: .25rem;
+    height: 1rem;
+    // border-radius: 1rem;
+    background: #00CCCC;
+    cursor: pointer;
+  }
+
 }

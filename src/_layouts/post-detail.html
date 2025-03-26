@@ -25,6 +25,16 @@ cssfile: "css/pages/post.css"
 
 {{ content }}
 
+<hr />
+
+<nav class="tags">
+{% for i in (1..8) %}
+  {% if tags[i] %}
+    <a href="/tags/{{ tags[i] | slugify }}">{{ tags[i] }}</a> &nbsp;
+  {% endif %}
+{% endfor %}
+</nav>
+
 <nav class="related-posts">
     <h2>Related Posts</h2>
     {% assign similar = collections.post | similarPosts: page.inputPath, tags %}
@@ -37,7 +47,7 @@ cssfile: "css/pages/post.css"
     </p>
     {% endfor %}
 </nav>
-
+{% comment %}
 <script type="text/javascript">
 let prevScrollpos = window.pageYOffset;
 let header = document.getElementById("header");
@@ -48,3 +58,4 @@ function onScroll() {
 window.addEventListener('load', function(e) {window.addEventListener('scroll',onScroll);});
 
 </script>
+{% endcomment %}

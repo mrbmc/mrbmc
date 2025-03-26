@@ -1,12 +1,19 @@
 ---
-title: Disney+ Growth Design
+title: Launching & Scaling Disney+
 date: 2020-12-01
 thumbnail: /images/portfolio/disney-growth/disney-growth-thumb.jpg
 eleventyExcludeFromCollections: false
 tags:
   - work
-description: Designing the product, team, and program that launched Disney+ from 0 to 105M subscribers. I led the design of identity, payment, profile and account surfaces.
+description: Leading the Growth Design program that propelled Disney+ from **0 - 105M subscribers**.
+jobtitle: Senior Director, Product Design
+sponsor: Disney Streaming
+accomplishments: 
+ - Led zero-to-one Design on identity, payment, profile and account surfaces for Disney+ launch across 13 device classes and into 4 global regions.
+ - Built a *consumer-first approach* with Product, Engineering, and Marketing across the enterprise to grow **105M subscribers in 2 years**.
+ - Led growth design tactics - optimization, segmentation, and expansion - that **grew MRR & AARPU 25% YoY**.
 timeline: 2018-2020
+casestudy: true
 parallaxHeading:
   - "-1"
 ---
@@ -23,18 +30,19 @@ parallaxHeading:
 
 1. [Basecamp](#basecamp)
 	1. [The Mountain of Scope](#full-scope)
-	1. [Assembling the team](#project-team)
-	1. [Experience Principles](#ux-tenets)
+	2. [Assembling the team](#project-team)
+	3. [Experience Principles](#ux-tenets)
 2. [Ascent](#ascent)
 	1. [Landing Page](#landing-page)
-	1. [TV Signup](#tv-signup)
+	2. [TV Signup](#tv-signup)
+	3. [Partnerships](#partners)
 3. [Summit](#summit)
 	1. [Global expansion](#global-expansion)
-	1. [Optimizing Revenue](#plan-picker)
-	1. [V2 Workshop](#workshop)
+	2. [Optimizing Revenue](#plan-picker)
+	3. [V2 Workshop](#workshop)
 4. [Descent](#descent)  
 	1. [Outcomes](#outcomes)
-	1. [Takeaways](#takeaways)
+	2. [Takeaways](#takeaways)
 
 {.stickynav}
 
@@ -205,10 +213,43 @@ Direct people off the TV to the mobile web for login and signup by using QR Code
 
 We ran usability studies to determine whether QR codes or "license plate" would be usable to our guests. This was before QR codes were normalized in the pandemic. **96% of participants preferred the QR code** to the existing solution of entering info manually. 45% of those participants had *never used a QR code before* but still preferred that UX.
 
-![UX research](/images/portfolio/disney-growth/tv-off-device-research-4x1.jpg){.fullwidth}
+![UX research](/images/portfolio/disney-growth/tv-off-device-research-4x1.jpg){.full-width}
 
-In-market we saw a **33% decrease**{.negative} in conversion rate, which was alarming. Fortunately, that was offset by a **200% increase**{.positive} in our Bundle take-rate. The rise in bundle sales boosted LTV & MRR making this new design a solid win for users and the business.
+In-market we saw a modest drop in conversion rate, which was alarming. Fortunately, that was offset by an increase in our Bundle take-rate, which made the change **revenue positive**. 
 
+**3% decrease**{.negative} CVR
+
+**200% increase**{.positive} MRR
+
+A solid win for users and the business.
+
+### Partnerships{#partners}
+
+**30% of our subscribers** come through resellers. Some global regions will only allow Disney+ to be purchased through local cable providers. There's also an enormous market of late adopters we can target with offers through cable partnerships.
+
+**How might we build a versatile and scalable UX across web and TV devices for our partners to resell Disney+?**
+
+We designed two interaction systems. A simple redemption flow for web and a flow for TV devices that lacked payment methods.
+
+#### Redemption and Gifting
+
+Our redemption flow enabled us to serve multiple use cases:
+
+- Gift cards
+- Resellers
+- Bundle Activations
+
+![Redemption Flow](/images/portfolio/disney-growth/disney-redemption-flow.png){.full-width}
+
+#### Cable Resellers
+
++ ![offer](/images/portfolio/disney-growth/b2b2c-canal-offer.png) {.col-2 .row-2}
++ ![choose plan](/images/portfolio/disney-growth/b2b2c-choose-plan.png) {.col-3 .row-3}
++ ![](/images/portfolio/disney-growth/b2b2c-account.png) {.col-2 .row-2}
++ ![](/images/portfolio/disney-growth/b2b2c-password.png) {.col-1 .hide}
++ ![](/images/portfolio/disney-growth/b2b2c-canal-terms.png) {.col-3 .row-3}
++ ![](/images/portfolio/disney-growth/b2b2c-canal-success.png) {.col-2 .row-2}
+{.grid .well .full-width}
 
 ## Chapter 3: Summit{#summit .section}
 

@@ -3,6 +3,7 @@ layout: layout.html
 bodyclass: portfolio list
 title: "Portfolio"
 cssfile: "css/pages/portfolio.css"
+permalink: /portfolio/
 ---
 
 1. [Work](#work)

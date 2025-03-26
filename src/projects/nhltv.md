@@ -31,7 +31,7 @@ In 2016 we redesigned and relaunched NHL's streaming streaming service across mo
 
 My team redesigned the streaming experience and the new user acquisition funnel.
 
-![](/images/portfolio/nhl/nhl-devices@2x.png){.fullwidth}
+![](/images/portfolio/nhl/nhl-devices@2x.png){.full-width}
 
 ## Around The League
 

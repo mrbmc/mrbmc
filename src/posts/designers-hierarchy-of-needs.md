@@ -1,6 +1,6 @@
 ---
 title: Designer's Hierarchy of Needs
-masthead-image: /images/blog/pyramid-cover.png
+thumbnail-image: /images/blog/pyramid-cover.png
 date: 2021-01-01
 tags:
   - design
@@ -10,9 +10,9 @@ tags:
   - career-growth
 ---
 
-The core premise of Servant Leadership is putting the needs of your team first. I believe it's a large part of success for any team is creating the environment that designers can thrive in. Attracting, retaining and engaging talented people requires intentional effort. Obviously the end goal is a highly performant team but getting there is a design project in itself. Identifying designer's needs is a valuable "problem discovery" research study in the design project in building your dream team.
-
 ![](/images/blog/pyramid-cover.png)
+
+The core premise of Servant Leadership is putting the needs of your team first. I believe it's a large part of success for any team is creating the environment that designers can thrive in. Attracting, retaining and engaging talented people requires intentional effort. Obviously the end goal is a highly performant team but getting there is a design project in itself. Identifying designer's needs is a valuable "problem discovery" research study in the design project in building your dream team.
 
 My many years (but not *that* many) of leading teams, managing designers, talking with fellow leaders, and interviewing candidates has distilled a few consistent insights into what designers needs are when taking on, or staying in, a role. As a bonus, many of these needs are also applicable to product managers and engineers. 
 

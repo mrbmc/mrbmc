@@ -14,7 +14,9 @@
 
 </header>
 
-{% if post.data.masthead-image %}
+{% if post.data.thumbnail %}
+[![{{ post.data.title }}]({{ post.data.thumbnail }})]({{ post.url }}) {.figure}
+{% elsif post.data.masthead-image %}
 [![{{ post.data.title }}]({{ post.data.masthead-image }})]({{ post.url }}) {.figure}
 {% endif %}
 

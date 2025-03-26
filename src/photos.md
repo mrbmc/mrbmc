@@ -8,6 +8,7 @@ pagination:
   size: 20
   reverse: false
   alias: pics
+cssfile: "css/pages/photos.css"
 ---
 
 {% section "masthead" %}

@@ -1,27 +1,39 @@
 ---
-title: BTR Dynamo™
+title: Dynamo Podcast Platform
 thumbnail: /images/portfolio/btr/btr-hosttools-teaser-2x1.jpg
 masthead-image: /images/portfolio/btr/btr-hosttools-teaser-2x1.jpg
 date: 2014-01-01
 tags:
   - work
 masthead-title: BlogTalkRadio
-description: Dynamo was a creator-economy ecosystem. We built an advertising platform that paid podcast hosts a fair income for their work.
+description: Leading the product, design, and engineering teams through a business transformation that drove **~40% revenue growth** in subscriptions and advertising.
+jobtitle: Senior Director, Product and Design
+casestudy: true
 timeline: 2013-2015
+accomplishments:
+- Drove 37% YoY ad revenue growth by architecting patented programmatic advertising platform (US20170195373A1) for targeted podcast monetization
+- Increased subscription revenue 42% YoY through development of comprehensive creator tools including analytics, educational content, and audio processing
+- Acquired by iHeartMedia for $50M.
 ---
 ## How might we reward podcast hosts with a fair income from their work?
 
 BlogTalkRadio was one of the first platforms to support a **Creator Economy** by compensating hosts for generating engagement through their content. I helped BlogTalkRadio pivot from a SAAS business model to an advertising model with a revenue share for hosts, resulting in significant revenue growth and a successful acquisition exit for the founders. 
 
 * [Product Strategy](#strategy)
-* [Host UX](#hostux)
 * [Virtual Radio Studio](#studio)
+* [Host UX](#hostux)
 {.stickynav}
 
 | Role                     | Responsibilities                                                                         | Team                                                | Timeline               | Impact                                                           |
 | :----------------------- | :--------------------------------------------------------------------------------------- | :-------------------------------------------------- | :--------------------- | ---------------------------------------------------------------- |
-| Director of Product & UX | KPI and OKR definition<br>roadmap prioritization<br>customer research<br>market research | 5 Engineers<br>2 UI Designers<br>1 Content Designer | June 2013 - April 2015 | Grew ad revenue by 37% YoY <br>Grew subscription revenue 42% YoY |
+| Director of Product & UX | <ul><li>KPI and OKR definition</li><li>Product requirements</li><li>Roadmap prioritization</li><li>UX research</li><li>Design strategy</li></ul> | 5 Engineers<br>2 UI Designers<br>1 Content Designer | June 2013 - April 2015 | Grew ad revenue by **37% YoY** <br>Grew subscription revenue **42% YoY** |
 
+{#summary .rotate}
+<style type="text/css">
+table#summary tr {
+    grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+}
+</style>
 ----
 
 ## Product Strategy{#strategy}
@@ -53,16 +65,17 @@ Most of our hosts were subject matter experts (nutrition, parenting, personal fi
 We interviewed hosts and mapped their Journey to identify opportunities for differentiation and growth. 
 This also aligned our cross-functional teams between product, design, engineering, marketing, and community management. This helped us identify key leverage points in the UX for building habituation to prioritize:
 
-Some of the biggest UX challenges for new hosts were:
-- Getting to your third episode
+**UX challenges for new hosts:**
+
 - Running a first test show
 - Inviting your first guests
 - Writing a short repeatable intro to keep guests engaged
-- Designing compelling cover art that scales across distribution channels
+- [Designing compelling cover art](#coverart) that scales across distribution channels
+- Getting to your third episode
 
-!['Journey Map'](/images/portfolio/btr/btr-customer-experience-map-hosts.jpg){.fullwidth}
+!['Journey Map'](/images/portfolio/btr/btr-customer-experience-map-hosts.jpg){.full}
 
-### Flywheel of Growth
+### Hypothesis: Flywheel of Growth
 
 The success of the platform relied on interlocking incentives: 
 
@@ -74,7 +87,48 @@ The success of the platform relied on interlocking incentives:
 - Tripled host activation (creating 3+ episodes) raised Pro Subscription revenue 20%
 
 
+## Virtual Radio Studio{#studio}
+
+The Studio is the heart of the BTR experience and it's the UI that hosts interact with during the highest stress moments of creating a podcast. Extensive user interviews and ride-alongs with our hosts revealed deep insights into user habits before, during, and after a live broadcast.
+
+#### UX research insights:
+- Producing a live interview for radio or podcast is a performance scenario that requires focus and preparation. It's stressful!
+- Discoverability is key in a high-pressure operation. Hosts need omnipresent feedback about the show state.
+- Hosts sometimes pre-record intros and outros. Use the audio clips to set up the show, not just effects.
+- Hosts struggle with understanding which callers are listeners and which want to speak. Hosts asked for a way to screen guests.
+- Promotion is a key part of pulling in a live audience. 
+
+### Art Direction
+
+The art direction was inspired by high-end Audio and video authoring applications. We wanted to convey a serious, professional-grade application for our hosts to work with.
+
++ !['Live'](/images/portfolio/btr/btr-studio-live.png) {.col-4 .row-1 .canzoom .contain}
++ !['Pre-Show'](/images/portfolio/btr/btr-studio-pre-show.png) {.col-4 .row-1}
++ !['Ad Break'](/images/portfolio/btr/btr-studio-ad-break.png) {.col-4 .row-1}
++ !['Macbook'](/images/portfolio/btr/btr-studio-imac.png) {.col-12 .contain}
+
+{.well .grid .full-width}
+
+### Ad Breaks
+
+Hosts wanted total control over when and how ads cut into their shows. We built an web-based audio editor that allowed hosts to splice in ads at the frame level.
+
+!['Ad Editor'](/images/portfolio/btr/btr-ad-editor.png) 
+ 
+
+----
+
 ## Host UX{#hostux}
+
+### Relevant Analytics
+
+By far the most common workflow we saw almost every host take in the dashboard was viewing the listen numbers for their content. Hosts wanted to see a quantifiable reward for their efforts. We surfaced these metrics and created new summary metrics in the dashboard to amplify the ROI for them.
+
++ ![Listens Overview](/images/portfolio/btr/btr-stats-home.png) {.col-6}
++ ![Listens Overview](/images/portfolio/btr/btr-stats-episode.png) {.col-6}
++ ![Podcast Host Dashboard](/images/portfolio/btr/btr-dashboard-laptop.png) {.col-12}
+
+{.grid .well .full-width}
 
 ### Content Guidance
 
@@ -90,17 +144,9 @@ We built features, like **Signal Strength**, and **Template Episodes** to help i
 + !['Manage Episodes'](/images/portfolio/btr/btr-episodes-list.png) {.col-4 .hide}
 + !['Manage Episodes'](/images/portfolio/btr/btr-episodes-list-select.png) {.col-6}
 + !['Order Transcript'](/images/portfolio/btr/btr-episodes-list-transcript.png) {.col-6}
-{.grid .well .fullwidth}
+{.grid .well .full-width}
 
-
-
-### Relevant Analytics
-
-By far the most common workflow we saw almost every host take in the dashboard was viewing the listen numbers for their content. Hosts wanted to see a quantifiable reward for their efforts. We surfaced these metrics and created new summary metrics in the dashboard to amplify the ROI for them.
-
-![Podcast Host Dashboard](/images/portfolio/btr/btr-hosttools-dashboard.png)
-
-### Improved Show Artwork
+### Improved Show Artwork{#coverart}
 
 For many of our hosts, their subject matter expertise is rarely graphic design. Creating usable, engaging, professional cover art for their show was an obstacle to content discovery, and a **pain point we repeatedly heard in user research**. 
 
@@ -108,9 +154,9 @@ I contracted several graphic designers to overhaul the cover art for our top 200
 
 Improved the artwork delivered tangible business impact: 
 
-1. Improved recency, frequency, and engagement from listeners. (`RFE`)
-2. Longer show lifespan from hosts (`LTV`)
-3. Higher CPMs thanks to a higher quality Media Book for advertisers.
+1. **Improved RFE**{.success}: recency, frequency, and engagement from listeners.
+2. **Grew LTV**{.success} with longer host lifespans and more episodes created
+3. **Higher CPMs**{.success} thanks to a higher quality Media Book for advertisers.
 
 
 
@@ -119,27 +165,6 @@ Improved the artwork delivered tangible business impact:
 {.grid .well .}
 ---
 
-## Virtual Radio Studio{#studio}
-
-The Studio is the heart of the BTR experience and it's the UI that hosts interact with during the highest stress moments of creating a podcast. Extensive user interviews and ride-alongs with our hosts revealed deep insights into user habits before, during, and after a live broadcast.
-
-##### Key UX research insights:
-- Producing a live interview for radio or podcast is a performance scenario that requires focus and preparation. It's stressful!
-- Discoverability is key in a high-pressure operation
-- Sound clips are used for pre-baked intro and outros.
-- Multiple affordances for caller states help first-time hosts.
-- Feedback about the show state.
-
-<p>The art direction was inspired by high-end Audio and video authoring applications. We wanted to convey a serious, professional-grade application for our hosts to work with.</p>
-
-+ !['Live'](/images/portfolio/btr/btr-studio-live.png) {.col-4 .row-1 .canzoom .contain}
-+ !['Pre-Show'](/images/portfolio/btr/btr-studio-pre-show.png) {.col-4 .row-1}
-+ !['Ad Break'](/images/portfolio/btr/btr-studio-ad-break.png) {.col-4 .row-1}
-+ !['Studio In Context'](/images/portfolio/btr/btr-studio-teaser-2x1.jpg) {.col-12 .contain}
-
-{.well .grid .fullwidth}
-
-----
 
 <style>
 </style>

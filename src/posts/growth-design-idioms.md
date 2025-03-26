@@ -1,6 +1,6 @@
 ---
 title: Maxims and Axioms On Growth Design
-masthead-image: /images/blog/growth-chart.jpg
+foo: /images/blog/growth-chart.jpg
 eleventyExcludeFromCollections: false
 date: 2024-11-22
 tags:
