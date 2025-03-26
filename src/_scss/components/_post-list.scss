@@ -15,7 +15,7 @@
         transition: all lib.$speed lib.$easing;
 
         header {
-            flex-basis: 75%;
+            flex-basis: 100%;
             h3 {
                 margin: 0;
                 a {
@@ -29,6 +29,7 @@
             }
         }
         figure,.figure {
+            display: none;
             flex-basis: 25%;
             border-radius: var(--border-radius);
             overflow: hidden;
@@ -56,8 +57,14 @@
         @media (max-width: lib.$breakpoint) {
           & {
             flex-direction: column;
+            margin-bottom: var(--gutter-xl);
           }
-          figure {
+          header {
+            width: 100%;
+            margin-bottom: var(--gutter);
+          }
+          figure,.figure {
+            width: 100%;
             img {
               aspect-ratio: 2.39;
             }

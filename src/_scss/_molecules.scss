@@ -6,7 +6,7 @@
     padding: var(--gutter);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: lib.$shadow;
     background: var(--card-background);
     color: var(--card-text-color);
 
@@ -24,19 +24,16 @@
 }
 
 .hero {
-    box-sizing: border-box;
-    padding: var(--gutter);
 
-    @include lib.fullWidth(100vw);
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+    margin-bottom: var(--gutter-xl);
 
-    @include lib.inverse();
+    @include lib.full-width(var(--gutter));
+    @include lib.inverse(var(--hero-background));
 
     li {
         list-style: none;
-    }
-
-    @media (min-width: lib.$breakpoint) {
-        padding: var(--gutter) lib.$grid-margin;
     }
 }
 

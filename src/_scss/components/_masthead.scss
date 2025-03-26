@@ -12,7 +12,7 @@
     overflow: hidden;
     z-index: 10;
 
-    @include lib.hero(
+    @include lib.inverse(
         lib.$neutral-0,
         lib.$neutral-30,
         lib.$neutral-60,
@@ -23,7 +23,7 @@
         // lib.adjust(lib.$primary,$alpha:-0.5),
         );
 
-    @include lib.fullWidth(100vw);
+    @include lib.full-width();
 
     @media (max-width: lib.$breakpoint) {
         min-height: 56.25vw;
@@ -40,9 +40,6 @@
     }
     h1 + p {
         margin-bottom: 0em;
-    }
-    .summary {
-        // color: var(--well-bold-color);
     }
 
     figure {
@@ -68,8 +65,8 @@
             position: absolute;
             right: lib.$gutter;
             bottom: lib.$gutter;
-            text-shadow: 0 1px 4px rgba(0,0,0,0.8);
-            color: var(--well-bold-color);
+            // text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+            // color: var(--well-bold-color);
         }
     }
 

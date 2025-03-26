@@ -6,8 +6,18 @@ img, video, svg {
   max-height: 100vh;
   object-fit: contain;
 
-  &.fullwidth {
+  &.full-width {
     object-fit: cover;
+  }
+  &.contain {
+    object-fit: contain !important;
+    object-position: 50% 50%;
+  }
+}
+.contain {
+  img {
+      object-fit: contain;
+      object-position: 50% 50%;
   }
 }
 
@@ -22,7 +32,7 @@ video {
 }
 
 strong, b {
-  color: var(--text-secondary);
+  color: var(--text-bold-color);
 }
 
 .center {

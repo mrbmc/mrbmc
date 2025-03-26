@@ -7,25 +7,25 @@
 //   src: url('/css/fonts/PPNeueMontreal-Book.woff2');
 // }
 
-// @font-face {
-//   font-family: "Univers";
-//   font-weight: lib.$base-font-weight;
-//   src: url('/css/fonts/LT_Univers-Light.woff2');
-// }
+@font-face {
+  font-family: "Univers";
+  font-weight: lib.$base-font-weight;
+  src: url('/css/fonts/LT_Univers-Light.woff2');
+}
 
-// @font-face {
-//   font-family: "Univers";
-//   font-weight: lib.$bold-font-weight;
-//   src: url('/css/fonts/LT_Univers-Medium.woff2');
-// }
+@font-face {
+  font-family: "Univers";
+  font-weight: lib.$bold-font-weight;
+  src: url('/css/fonts/LT_Univers-Medium.woff2');
+}
 
 :root {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-size: 18px;
-  font-size: clamp(18px, 1.8vw, 40px);
-  --type-scale: 1.19;
+  font-size: 21px;
+  font-size: clamp(18px, 1.6vw, 40px);
+  --type-scale: 1.2;
 
   @media (max-width: lib.$breakpoint) {
     --type-scale: 1.12;
@@ -38,7 +38,7 @@ body {
   font-family: lib.$base-font-family;
   font-weight: lib.$base-font-weight;
   font-size: 1rem;
-  line-height: lib.$base-line-height;
+  line-height: 1.38;
   letter-spacing: -0.0125em;
 }
 
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-family: lib.$display-font-family;
   font-weight: lib.$display-font-weight;
-  font-size: calc(1rem * pow(var(--type-scale), 8));
+  font-size: calc(1rem * pow(var(--type-scale), 7));
   line-height: 1.0;
   letter-spacing: -0.0375em;
 }

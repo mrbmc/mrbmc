@@ -1,21 +1,24 @@
 @use '../library' as lib;
 
 p#gallery,div.gallery-wrap {
-    display: block;
-    margin-bottom: lib.$gutter;
-    background: var(--hero-background);
-    box-shadow: inset lib.$shadow;
-    overflow: auto;//this prevents collapsing margins
-    position: relative;
+    // display: block;
+    // margin-bottom: lib.$gutter;
+    // background: var(--hero-background);
+    // box-shadow: inset lib.$shadow;
+    // overflow: auto;//this prevents collapsing margins
+    // position: relative;
 
-    @include lib.fullWidth(100vw);
+    @include lib.full-width(vw);
+    @include lib.inverse();
+
+    $thumb-size: 15vh;
 
     .image-detail {
-        width: 98vw;
-        height: calc(84vh - lib.$gutter);
+        box-sizing: border-box;
+        max-height: calc(100vh - $thumb-size - var(--gutter));
         object-fit: contain;
-        padding: 0;
-        margin: 0 auto;
+        padding: var(--gutter) 0;
+        margin: 0;
         display: block;
 
         @media (max-width: lib.$breakpoint) {
@@ -51,18 +54,16 @@ p#gallery,div.gallery-wrap {
 
         li {
             list-style: none;
-            margin: 0 (lib.$gutter * 0.5);
-			color: var(--text-secondary);
-			// font-size: lib.$small-font-size;
-            // @include small-type();
+            margin: 0;
+			// color: var(--text-secondary);
             img {
                 display: block;
-                height: calc(16vh - (lib.$gutter * 0.5));
+                height: $thumb-size;
                 width: auto;
-                object-position: top center;
+                // padding: 0;
+                // margin: 0;
+                // object-position: center center;
                 object-fit: cover;
-                padding: 0;
-                margin: 0;
             }
             p {
                 margin: 0;

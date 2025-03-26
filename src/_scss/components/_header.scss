@@ -29,7 +29,7 @@
     $logo-size: calc(var(--navbar-height) * 0.62);
     width: $logo-size;
     height: $logo-size;
-    z-index: 3;
+    z-index: 30;
     margin: -0.25em;
     padding: 0.25em;
     overflow: hidden;
@@ -40,6 +40,17 @@
       color: var(--well-text-color);
     }
 
+  }
+  a.nav-top {
+    position: fixed;
+    z-index: 20;
+
+    color: #{lib.$neutral-100};
+    mix-blend-mode: exclusion !important;
+    @media (max-width: lib.$breakpoint) {
+      display: none;
+      
+    }
   }
 
   #menu {

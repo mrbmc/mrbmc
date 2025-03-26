@@ -23,8 +23,9 @@
     // ------------------------------------------------------------
     --text-primary:          var(--gray-dark);
     --text-secondary:        var(--gray-mid);
+    --text-bold-color:       var(--black);
     --link-color:            var(--black);
-    --link-color-hover:      var(--gray-dark);
+    --link-color-hover:      var(--primary);
 
     --body-background:       var(--white);
     --border-color:          var(--gray-light);
@@ -39,13 +40,15 @@
     --hero-bold-color:       #{lib.$neutral-100};
 
     --columns:               #{lib.$grid-columns};
-    --gutter:                #{lib.$base-line-height};
+    --gutter:                #{lib.$gutter};
     --gutter-xl:             calc(var(--gutter) * 2);
+    --grid-margin:           #{lib.$grid-margin};
     --border-radius:         calc(var(--gutter) * .25);//#{lib.$gutter * 0.25};
     --border-radius-xl:      var(--gutter);
 
-    --shadow:                 0 2px 8px var(--hero-background), 0 calc(var(--gutter * .25)) var(--gutter) var(--hero-background);
-    --shadow-xl:              0 2px 8px var(--hero-background), 0 calc(var(--gutter * 1)) var(--gutter-xl) var(--hero-background);
+    // Defining shadows as a CSS var doesn't work for some reason
+    // --shadow: 0 2px 8px var(--hero-background), 0 calc(var(--gutter * .25)) var(--gutter) var(--hero-background);
+    // --shadow-xl: 0 2px 8px var(--hero-background), 0 calc(var(--gutter * 1)) var(--gutter-xl) var(--hero-background);
 
     // NAVBAR
     // ------------------------------------------------------------
@@ -60,6 +63,10 @@
     --navbar-link-active-color:     var(--body-background);
     --navbar-link-active-background: var(--text-primary);
 
+    @media (max-width: (lib.$grid-width)) {
+      // --gutter: 1rem;
+      --grid-margin: var(--gutter);
+    }
 }
 @media (prefers-color-scheme: dark) {
     :root {
