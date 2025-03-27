@@ -38,8 +38,9 @@ $quartiary:             $_sunshine;
 $success:               $_teal;
 $error:                 $_orange;
 
+$neutral-hue:           238;
 $neutral-100:           hslToHex($primary-hue,00%,100%);
-$neutral-95:            hslToHex($primary-hue,100%,96%);
+$neutral-95:            hslToHex($primary-hue,03%,96%);
 $neutral-90:            hslToHex($primary-hue,01%,92%);
 $neutral-80:            hslToHex($primary-hue,02%,82%);
 $neutral-70:            hslToHex($primary-hue,02%,71%);
