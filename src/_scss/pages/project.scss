@@ -1,9 +1,8 @@
 @use '../library' as lib;
 
+@use "../base/molecules";
 @use "../components/masthead";
-
 @use "../components/gallery-inline";
-
 @use "../components/sticky-nav";
 
 body.project {
@@ -116,7 +115,7 @@ body.project {
     }
 
     h1.section,h2.section {
-        padding: 0 var(--gutter);
+        padding-left: var(--gutter);
         display: flex;
         align-items: center;
         height: 83.3vh;
@@ -126,8 +125,6 @@ body.project {
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-
-        // @include lib.full-width();
 
         @media (max-width: lib.$breakpoint) {
             height: 56.25vw;

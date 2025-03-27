@@ -1,5 +1,7 @@
 @use "../library" as lib;
 
+@use "../base/molecules";
+
 body.colophon {
 	.chip {
 		width: 19%;

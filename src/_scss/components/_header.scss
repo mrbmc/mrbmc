@@ -7,8 +7,8 @@
   padding: 0 var(--gutter);
   height: var(--navbar-height);
   width: 100%;
-  background: var(--navbar-background);
-  border: 0 0 0px 0 solid var(--navbar-border);
+  background: var(--card-background);
+  border: 0 0 0px 0 solid var(--border-color);
 
   display: flex;
   justify-content: space-between;
@@ -21,8 +21,6 @@
   }
 
   a {
-    text-transform: uppercase;
-    text-decoration: none;
   }
 
   .logo {
@@ -64,6 +62,12 @@
       padding: 0 (lib.$gutter * .5);
       margin: 0 0 0 lib.$gutter;
       border-radius: var(--border-radius);
+      text-transform: uppercase;
+      text-decoration: none;
+
+      // these are hacks for the Univers font
+      line-height: 1;
+      padding: .25em .75rem 0;s
 
       &:hover {
         background: var(--well-background);

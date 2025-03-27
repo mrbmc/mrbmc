@@ -1,11 +1,11 @@
-@use "library" as lib;
+@use "../library" as lib;
 
 .card {
     box-sizing: border-box;
     width: 100%;
     padding: var(--gutter);
     border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-xl);
     box-shadow: lib.$shadow;
     background: var(--card-background);
     color: var(--card-text-color);
@@ -16,13 +16,24 @@
 }
 
 .well {
-    margin-top:  var(--gutter);
-    margin-bottom: var(--gutter);
-    box-sizing: border-box;
-    padding: var(--gutter);
-    background: var(--well-background);
+  // margin-top:  var(--gutter);
+  box-sizing: border-box;
+  padding: var(--gutter);
+  margin-bottom: var(--gutter-xl);
+  background: var(--well-background);
+  border-radius: var(--border-radius-xl);
+  box-shadow: lib.$shadow-inset;
+  &.full-width,
+  &.full-grid {
+    border-radius: 0;
+  }
+  &.full-width {
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+  }
 }
 
+// we assume that this is a mosaic
 .well.grid {
   padding: var(--gutter);
 }

@@ -1,5 +1,6 @@
 @use "../library" as lib;
 
+@use "../base/molecules";
 @use "../components/sticky-nav";
 
 body.about {

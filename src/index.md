@@ -22,7 +22,7 @@ cssfile: "css/pages/home.css"
 
 {% endsection %}
 
-{% include "_project-list.md", projectList: collections.work, heading: false, count: 6, class: "", description:false %}
+{% include "_project-list.md", projectList: collections.work, heading: false, count: 6, class: "full-grid", description:false %}
 
 {% include "_post-list.md", postList: collections.post, heading: "Recent Posts", count: 4, description:false %}
 

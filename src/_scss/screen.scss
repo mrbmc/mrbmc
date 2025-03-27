@@ -1,14 +1,28 @@
-@use "library" as lib;
-
 @use "base";
+//12.1k
 
 // ======================================================================
 // ORGANISM STYLES
-// 0.6k
 
 @use "components/_header";
+// 1.7k
 
 @use "components/footer";
+// 1.1k
+
+
+// these are included in their required pages. 
+// showing them here as a weight inventory
+// @use "components/masthead";
+//2.5kb
+// @use "components/gallery-inline";
+//3.1KB
+// @use "components/sticky-nav";
+//2.0kb
+// @use 'components/project-list';
+// 1.1kb
+// @use 'components/post-list';
+//1.6kb
 
 #noiseImage {
     display: none;

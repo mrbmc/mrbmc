@@ -1,5 +1,15 @@
 @use "library" as lib;
 
+h1,h2,h3,h4,h5 {
+    color: var(--text-primary);
+}
+a {
+    color: var(--link-color);
+    &:hover {
+        color: var(--link-color-hover);
+    }
+}
+
 img, video, svg {
   width: 100%;
   height: auto;
@@ -31,9 +41,9 @@ video {
 
 }
 
-strong, b {
-  color: var(--text-bold-color);
-}
+// strong, b {
+//   color: var(--text-bold-color);
+// }
 
 .center {
   display: block;

@@ -1,4 +1,4 @@
-{% section "principles","full-grid hero" %}
+{% section "principles","full-width hero" %}
 
 ## Design Principles
 

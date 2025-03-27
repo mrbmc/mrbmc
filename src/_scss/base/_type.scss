@@ -1,12 +1,6 @@
 @use 'sass:math';
 @use 'library' as lib;
 
-// @font-face {
-//   font-family: "Montreal";
-//   font-weight: lib.$base-font-weight;
-//   src: url('/css/fonts/PPNeueMontreal-Book.woff2');
-// }
-
 @font-face {
   font-family: "Univers";
   font-weight: lib.$base-font-weight;
@@ -23,107 +17,60 @@
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-size: 21px;
   font-size: clamp(18px, 1.6vw, 40px);
   --type-scale: 1.2;
-
   @media (max-width: lib.$breakpoint) {
     --type-scale: 1.12;
   }
-
 }
-
 
 body {
   font-family: lib.$base-font-family;
   font-weight: lib.$base-font-weight;
-  font-size: 1rem;
+  // font-size: 1rem;
   line-height: 1.38;
   letter-spacing: -0.0125em;
-}
-
-.serif {
-  font-family: lib.$serif-font-family;
-  font-weight: lib.$serif-font-weight;
 }
 
 a {
   text-decoration: underline;
 }
-
 h1, h2, h3, h4, h5 {
   font-family: lib.$heading-font-family;
   font-weight: lib.$heading-font-weight;
-  line-height: 1.2;
-  letter-spacing: lib.$heading-kerning;
+  line-height: lib.$heading-line-height;
+  letter-spacing: lib.$heading-font-kerning;
   a {
     text-decoration: none;
   }
 }
-
-h1 {
+h1,h2 {
   font-family: lib.$display-font-family;
   font-weight: lib.$display-font-weight;
+  letter-spacing: lib.$display-font-kerning;
+}
+h1 {
   font-size: calc(1rem * pow(var(--type-scale), 7));
-  line-height: 1.0;
-  letter-spacing: -0.0375em;
 }
 
 h2 {
-  // @include lib.typeset($heading-font-family, lib.$display-font-weight, calc(1rem * pow(var(--type-scale), 6)), 1.2, -0.0375em);
-  font-family: lib.$display-font-family;
-  font-weight: lib.$display-font-weight;
   font-size: calc(1rem * pow(var(--type-scale), 6));
 }
-
 h3 {
-  // @include lib.typeset($base-font-family, lib.$heading-font-weight, calc(1rem * pow(var(--type-scale), 2)), 1.2, -0.0250em);
   font-size: calc(1rem * pow(var(--type-scale), 4));
 }
-
 h4 {
-  // @include lib.typeset($base-font-family, lib.$heading-font-weight, calc(1rem * pow(var(--type-scale), 1)), 1.2, -0.0250em);
   font-size: calc(1rem * pow(var(--type-scale), 2));
 }
-
 h5 {
-  // @include lib.typeset($heading-font-family, lib.$heading-font-weight, calc(1rem * pow(var(--type-scale), 1)), 1.2, -0.0em);
   font-size: calc(1rem * pow(var(--type-scale), 1));
 }
-
-strong, b {
-  font-weight: lib.$bold-font-weight;
-}
-
-em {
-  font-style: italic;
-}
-
-code, pre {
-  font-family: lib.$mono-font-family;
-}
-
 .large-type {
   font-size: lib.$large-font-size;
 }
-
-.small-type {
+.small-type,.caption,.legal {
   font-size: lib.$small-font-size;
 }
-
-.caption, .legal {
-  font-size: lib.$small-font-size;
-  font-style: italic;
-}
-
 blockquote, .blockquote {
-  // font-style: italic;
-  font-family: lib.$serif-font-family;
-  font-weight: lib.$serif-font-weight;
-  font-size: 133%;
-
-  p:last-of-type {
-    margin-bottom: 0;
-  }
-
+  font-size: calc(1rem * pow(var(--type-scale), 2));
 }

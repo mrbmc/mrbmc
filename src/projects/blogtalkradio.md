@@ -107,7 +107,7 @@ The art direction was inspired by high-end Audio and video authoring application
 + !['Ad Break'](/images/portfolio/btr/btr-studio-ad-break.png) {.col-4 .row-1}
 + !['Macbook'](/images/portfolio/btr/btr-studio-imac.png) {.col-12 .contain}
 
-{.well .grid .full-width}
+{.grid .well .full-width}
 
 ### Ad Breaks
 
@@ -160,9 +160,10 @@ Improved the artwork delivered tangible business impact:
 
 
 
-+ ![New Artwork](/images/portfolio/btr/btr-host-artwork.png){ style="object-position:0% 0;"} {.col-12}
-+ ![New Artwork](/images/portfolio/btr/btr-homepage.jpg) {.col-12}
-{.grid .well .}
+![New Artwork](/images/portfolio/btr/btr-host-artwork.png){ style="object-position:0% 0;" .col-12}
+
+![New Artwork](/images/portfolio/btr/btr-homepage.jpg){.col-12}
+
 ---
 
 

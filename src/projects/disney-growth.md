@@ -44,7 +44,7 @@ casestudy: true
 
 {.sticky-nav}
 
-## Chapter 1: Basecamp{#basecamp .section}  
+## Chapter 1: Basecamp{#basecamp .section .full-grid}
 
 ![Basecamp](/images/portfolio/disney-growth/everest-basecamp-large.avif) {.hide}
 
@@ -122,7 +122,7 @@ We established  **Experience Principles** for Disney+ because we've seen them im
 
 {.grid}
 
-## Chapter 2: Ascent {#ascent .section}
+## Chapter 2: Ascent {#ascent .section .full-grid}
 
 ![Ascent](/images/portfolio/disney-growth/everest-ascent-large.jpg) {.hide}
 
@@ -249,7 +249,7 @@ Our redemption flow enabled us to serve multiple use cases:
 + ![](/images/portfolio/disney-growth/b2b2c-canal-success.png) {.col-2 .row-2}
 {.grid .well .full-width}
 
-## Chapter 3: Summit{#summit .section}
+## Chapter 3: Summit{#summit .section .full-grid}
 
 ![Basecamp](/images/portfolio/disney-growth/everest-north-side-sun-over-tibetan-plateau.jpg) {.hide}
 
@@ -360,7 +360,7 @@ We also had a list of 6 viable ideas to prototype and test with users.
 
 ![](/images/portfolio/disney-growth/bundle-workshop-wireframes.jpg){.full-width-90}
 
-## Chapter 4: Descent {#descent .section}
+## Chapter 4: Descent {#descent .section .full-grid}
 
 ![Basecamp](/images/portfolio/disney-growth/everest-descent.jpeg) {.hide}
 

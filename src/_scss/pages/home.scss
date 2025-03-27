@@ -95,38 +95,35 @@ body.home {
     }
   }
 
-  #gradient-canvas, #masthead canvas {
-    display: none;
-    position: absolute;
-    z-index: 0;
-    $scaler: 1;
-    width: 100% * $scaler;
-    height: 100% * $scaler;
-    left: 50% * ($scaler - 1) * -1;
-    top: 50% * ($scaler - 1) * -1;
+  // #gradient-canvas, #masthead canvas {
+  //   display: none;
+  //   position: absolute;
+  //   z-index: 0;
+  //   $scaler: 1;
+  //   width: 100% * $scaler;
+  //   height: 100% * $scaler;
+  //   left: 50% * ($scaler - 1) * -1;
+  //   top: 50% * ($scaler - 1) * -1;
 
-    //full color
-    // --gradient-color-1: var(--primary);
-    // --gradient-color-2: var(--secondary);
-    // --gradient-color-3: var(--tertiary);
-    // --gradient-color-4: var(--primary);
+  //   //full color
+  //   // --gradient-color-1: var(--primary);
+  //   // --gradient-color-2: var(--secondary);
+  //   // --gradient-color-3: var(--tertiary);
+  //   // --gradient-color-4: var(--primary);
 
-    // grayscale
-    --gradient-color-1: #{lib.$neutral-10};
-    --gradient-color-2: #{lib.$neutral-30};
-    --gradient-color-3: #{lib.$neutral-50};
-    --gradient-color-4: #{lib.$neutral-10};
+  //   // grayscale
+  //   --gradient-color-1: #{lib.$neutral-10};
+  //   --gradient-color-2: #{lib.$neutral-30};
+  //   --gradient-color-3: #{lib.$neutral-50};
+  //   --gradient-color-4: #{lib.$neutral-10};
 
-  }
+  // }
 
   .project-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // padding-left: var(--gutter);
-    // padding-right: var(--gutter);
-    // padding: lib.$gutter;
-    // grid-row-gap: lib.$gutter;
-    // grid-column-gap: lib.$gutter;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
 
     h2 {
       // display: none;
