@@ -39,31 +39,32 @@ timeline: 2019-2023
 >To create something truly novel you need novel tools.  
 -Brian McConnell
 
-Building a global streaming service that fully meets consumer needs requires a constellation of software components in commerce, content, support, data insights, and developer tools. Disney's scale often requires us to build novel solutions due to cost or privacy constraints. 
+Building a global streaming service that meets consumer expectations requires an **entire industry** of components in commerce, content, support, data insights, and developer tools. Disney's costs at scale & privacy policies required us to build novel solutions.
 
-As the executive accountable for product design of these tools my mission was to invest design effort in the products that could make the biggest business impact through customer acquisition, cost optimization, increasing agility, or improving decision quality.
+I was accountable for investing design in the biggest business opportunities of:  
+customer acquisition - `Net Subs`  
+revenue growth - `MRR`  
+cost optimization - `OpEx`  
+customer engagement - `RFE`
 
-| Disney Product              | Purpose                                                                                     | Kpi                     | Commercial Analog(s)                                                         |
-| --------------------------- | ------------------------------------------------------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------- |
-| [Genie](#genie)             | Billing and SKU management                                                                  | Net Subs, MRR           | [Orb](https://www.withorb.com/), [Metronome](https://metronome.com/)         |
-| [Baymax](#baymax)           | Customer Support Portal                                                                     | OpEx, Gross Margin      | [Zendesk](https://www.zendesk.com/)                                          |
-| [WeaponX](#weaponx)         | Experimentation & Feature Flagging                                                          | Net Subs, MRR, [RFE](#) | Optimizely, Launch Darkly                                                    |
-| [Polaris](#content-tools)   | Content Curation                                                                            | RFE                     | [Contentful](https://www.contentful.com/)                                    |
-| [Tesseract](#content-tools) | Content Review                                                                              | RFE, OpEx               | [ContentStudio](https://contentstudio.io/)                                   |
-| [Optumus](#optumus)         | Streaming Quality Analysis                                                                  | OpEx                    | [Conviva](https://www.conviva.com/)                                          |
-| Developer Platform          | Centralized resources for managing developer resources (services, APIs, documentation, etc) | OpEx                    | n/a                                                                          |
-| [DATA Portal](#dataportal)  | A one-stop shop for all metrics and analytics of our streaming services.                    | n/a                     | [Tableau](https://www.tableau.com/), [Zoho](https://www.zoho.com/analytics/) |
-| Ad Manager, Mission Control | Advertising curation, provisioning, and deployment.                                         | MRR                     | [Google AdSense](https://adsense.google.com/), Amazon Advertising            |
-| Partner Portal              | Testing APIs, documentation, and issue tracking for developers building with Disney's SDK.  | Net Subs, MRR           | [GitLabs](https://about.gitlab.com/)                                         |
-| [Galaxy](#galaxy)           | Platform for sending personalized targeted messages (Email, SMS, Push) to our users.        | Net Subs, MRR           | [salesforce](https://www.salesforce.com/) + [braze](https://www.braze.com/)  |
+| Platform Need | Kpi | Commercial Analog(s) | Disney Product |
+| -- | -- | -- | -- |
+| Commerce Orchestration | Net Subs, MRR | [Orb](https://www.withorb.com/), [Metronome](https://metronome.com/) | [Genie](#genie) |
+| Content Curation | RFE | [Contentful](https://www.contentful.com/) | [Polaris](#content-tools) |
+| Content Review | RFE, OpEx | [ContentStudio](https://contentstudio.io/) | [Tesseract](#content-tools) |
+| Experimentation & Feature Flagging | Net Subs, MRR, RFE | Optimizely, Launch Darkly | [WeaponX](#weaponx)|
+| Customer Support Portal | OpEx, Gross Margin | [Zendesk](https://www.zendesk.com/) | [Baymax](#baymax) |
+| Streaming Quality Analysis | OpEx | [Conviva](https://www.conviva.com/) | [Optumus](#optumus) |
+| Centralized resources for managing developer resources (services, APIs, documentation, etc) | OpEx | n/a | Developer Platform |
+| Insights & Data portal | n/a | [Tableau](https://www.tableau.com/), [Zoho](https://www.zoho.com/analytics/) | [DATA Portal](#dataportal)|
+| Advertising curation, provisioning, and deployment. | MRR | [Google AdSense](https://adsense.google.com/), Amazon Advertising | Ad Manager, Mission Control |
+| Testing APIs, documentation, and issue tracking for developers building with Disney's SDK. | Net Subs, MRR | [GitLabs](https://about.gitlab.com/) | Partner Portal |
+| Personalized messaging (Email, SMS, Push) | Net Subs, MRR | [salesforce](https://www.salesforce.com/) + [braze](https://www.braze.com/) | [Galaxy](#galaxy) |
 
-The scale of this platform was comparable to an entire industry.{.caption}  
 
-To prioritize investment in each of these products, I used a Growth Framework, to compare the potential commercial impact for each. This helped in securing funding for staffing, contract, and roadmap priority.
-
+I used a **Growth Framework** to prioritize investment in each of these products. This helped in securing funding for staffing, contract, and roadmap priority. We proceeded from the top right to the lower left in sequencing our hiring and projects.
 
 ![Enterprise ROI](/images/portfolio/disney-enterprise/exd-roi-framework.png)
-
 
 ## The Team{#team}
 
@@ -91,7 +92,7 @@ To tackle such a large surface area, we organized the team into pods for each to
 
 ### Commerce Tools{#commerce}
 
-#### Offer Management {#genie}
+#### Commerce Orchestration {#genie}
 
 *codename "Genie"*
 
@@ -132,15 +133,6 @@ A guiding UX principle across Disney+ is to **put the right offer in front of th
 
 ### Content Platform{#content-tools}
 
-*codenames Polaris & Tesseract*
-
-A team of editors steeped in knowledge of the Disney catalog created hundreds of content collections around themes, brands, characters. We built a WYSIWYG editor that showed the custom artwork for each title so editors could organize collections in a visually harmonious way. We saw **engagement**{.success} and **CVR**{.success} lift from doing this.
-
-- ![Visual Browsing](/images/portfolio/disney-enterprise/polaris-search.png) {.col-4 .contain}
-- ![Visual Browsing](/images/portfolio/disney-enterprise/polaris-visualbrowse.png) {.col-4 .contain}
-- ![Content Curation](/images/portfolio/disney-enterprise/polaris-set-pcs.png) {.col-4}
-{.grid .well .full-width}
-
 #### An Audience of One
 
 The content strategy for most streaming services, including Disney+, is to create an audience of one. Each user experiences a bespoke presentation of content.
@@ -149,6 +141,14 @@ The content strategy for most streaming services, including Disney+, is to creat
 
  Our tactic to achieve this was an "Algotorial" presentation that leveraged the best attributes of human curation and machine learning. Editorial collections were ML optimized, and the display order was optimized with a few human overrides for ~~redacted tactic~~.
 
+*codenames Polaris & Tesseract*
+
+- ![Visual Browsing](/images/portfolio/disney-enterprise/polaris-search.png) {.col-4 .contain}
+- ![Visual Browsing](/images/portfolio/disney-enterprise/polaris-visualbrowse.png) {.col-4 .contain}
+- ![Content Curation](/images/portfolio/disney-enterprise/polaris-set-pcs.png) {.col-4}
+{.grid .well .full-width}
+
+A team of editors steeped in knowledge of the Disney catalog created hundreds of content collections around themes, brands, characters. We built a WYSIWYG editor that showed the custom artwork for each title so editors could organize collections in a visually harmonious way. We saw **engagement**{.success} and **CVR**{.success} lift from doing this.
 
 - ![Content Targeting](/images/portfolio/disney-enterprise/polaris-edit_cta.png) {.col-3 .contain}
 - ![Content Targeting](/images/portfolio/disney-enterprise/polaris-collection.png) {.col-6 .contain}
