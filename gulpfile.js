@@ -58,22 +58,36 @@ const paths = {
 
 
 // Compile and minify JavaScript
-function buildJS() {
+function buildJSPro() {
   const log = argv.verbose ? console.log : () => {};
   return src(paths.js)
     .pipe(uglify())
+    .on('data', file => log(`Raw ${file.path}`))
+    .pipe(dest('www/js'));
+}
+function buildJSDev() {
+  const log = argv.verbose ? console.log : () => {};
+  return src(paths.js)
     .on('data', file => log(`Uglified ${file.path}`))
     .pipe(dest('www/js'));
 }
 
 // Compile SCSS to CSS
-function compileCSS() {
+function compileCSSDev() {
   const log = argv.verbose ? console.log : () => {};
   return src(paths.css)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS()) // CSS minification
+    .pipe(cleanCSS({format: 'beautify'}))
     .pipe(sourcemaps.write())
+    .on('data', file => log(`Minified ${file.path}`))
+    .pipe(dest('www/css'));
+}
+function compileCSSPro() {
+  const log = argv.verbose ? console.log : () => {};
+  return src(paths.css)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(cleanCSS()) // CSS minification
     .on('data', file => log(`Minified ${file.path}`))
     .pipe(dest('www/css'));
 }
@@ -121,17 +135,6 @@ function syncAssets() {
     )
   })
   return foo.pop();
-
-  // return src(paths.assets)
-  //   .pipe(rsync({
-  //     root: 'src',
-  //     destination: 'www/images',
-  //     exclude: ['portfolio/**','portfolio/','blog/**','blog/'],
-  //     archive: true,
-  //     silent: !argv.verbose
-  //   }))
-  //   .on('data', data => log(`Rsynced ${data}`))
-  //   .on('end', () => console.log('Rsync completed'));
 }
 
 function syncBackups() {
@@ -156,16 +159,6 @@ function syncBackups() {
   })
   return foo.pop();
 
-  // return src(paths.backups)
-  //   .pipe(rsync({
-  //     root: 'backup',
-  //     destination: 'www',
-  //     archive: true,
-  //     silent: !argv.verbose
-  //   }))
-  //   .on('data', data => log(`Rsynced ${data}`))
-  //   .on('end', () => console.log('Rsync completed'));
-
 }
 
 function checkLinks() {
@@ -187,8 +180,8 @@ function cleanUp() {
 }
 
 exports.quick = series(
-  buildJS,
-  compileCSS,
+  buildJSDev,
+  compileCSSDev,
   // buildHTML,
   // syncAssets,
   // syncBackups,
@@ -197,8 +190,8 @@ exports.quick = series(
 
 // Define default task
 exports.full = series(
-  buildJS,
-  compileCSS,
+  buildJSPro,
+  compileCSSPro,
   buildHTML,
   syncAssets,
   syncBackups,
