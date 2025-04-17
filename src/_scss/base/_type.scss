@@ -1,17 +1,53 @@
 @use 'sass:math';
 @use 'library' as lib;
 
+// @font-face {
+//   font-family: "Univers";
+//   font-weight: lib.$base-font-weight;
+//   src: url('/css/fonts/LT_Univers-Light.woff2');
+// }
+
+// @font-face {
+//   font-family: "Univers";
+//   font-weight: lib.$bold-font-weight;
+//   src: url('/css/fonts/LT_Univers-Medium.woff2');
+// }
+
 @font-face {
-  font-family: "Univers";
+  font-family: "Monument";
   font-weight: lib.$base-font-weight;
-  src: url('/css/fonts/LT_Univers-Light.woff2');
+  src: url('/css/fonts/ABCMonumentGrotesk-Light-Trial.woff2');
 }
 
 @font-face {
-  font-family: "Univers";
+  font-family: "Monument";
   font-weight: lib.$bold-font-weight;
-  src: url('/css/fonts/LT_Univers-Medium.woff2');
+  src: url('/css/fonts/ABCMonumentGrotesk-Medium-Trial.woff2');
 }
+
+// @font-face {
+//   font-family: "Pelikan";
+//   font-weight: lib.$base-font-weight;
+//   src: url('/css/fonts/ABCPelikan-Light-Trial.woff2');
+// }
+
+// @font-face {
+//   font-family: "Pelikan";
+//   font-weight: lib.$bold-font-weight;
+//   src: url('/css/fonts/ABCPelikan-Medium-Trial.woff2');
+// }
+
+// @font-face {
+//   font-family: "NeueMontreal";
+//   font-weight: lib.$base-font-weight;
+//   src: url('/css/fonts/PPNeueMontreal-Book.woff2');
+// }
+
+// @font-face {
+//   font-family: "NeueMontreal";
+//   font-weight: lib.$bold-font-weight;
+//   src: url('/css/fonts/PPNeueMontreal-Medium.woff2');
+// }
 
 :root {
   -webkit-font-smoothing: antialiased;

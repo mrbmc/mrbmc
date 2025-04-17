@@ -58,7 +58,7 @@ Transportation provided by custom-built bikes:
 
 ### Typography
 
-The primary typeface is [Univers by Linotype](https://www.myfonts.com/collections/univers-font-linotype) because it aligns with my design principles: modern, pragmatic, and versatile.
+The primary typeface is [Monument Grotesk by ABC Dinamo](https://abcdinamo.com/buy/monument-grotesk) because it aligns with my design principles: modern, pragmatic, and versatile.
 
 For extended prose we use a native serif: Hoefler on MacOS & iOS, Palatino on Android and Windows.
 
