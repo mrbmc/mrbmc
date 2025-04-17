@@ -34,7 +34,12 @@ body.project {
                 }
                 &.zoom {
                     max-height: 100vh;
-                    // @include lib.full-width(0vw);
+                    // @include base.fullwidth(true);
+                    width: 100vw;
+                    margin-left: calc( max(var(--margin),var(--gutter)) * -1);
+                    margin-right: 0;
+                    padding-left: 0;
+                    padding-right: 0;
                     &:hover {
                         cursor: zoom-out;
                     }
