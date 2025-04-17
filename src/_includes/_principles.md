@@ -44,7 +44,7 @@ It's so much easier to pivot or accelerate if you're already in motion. A sealio
   
 <div class="col-7">
 
-##### "Walk all around the tree to pick the best fruit."
+##### "Walk all the way around the tree to find the best fruit."
 
 The solution in design often seems obvious but is usually the product of a rigorous process. In the rare event that you find a viable solution quickly, you still have the burden of proof to be sure.
 
