@@ -16,13 +16,12 @@ body.home {
    #bio {
       box-sizing: border-box;
       position: relative;
-      padding: 6rem 0;
-      // height: 81vh;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
+      padding: 0 var(--gutter);
+      height: calc(100vh - var(--navbar-height) - var(--navbar-height));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-      // padding: lib.$gutter-xl lib.$gutter;
 
       p.portrait {
         border-radius: var(--border-radius-xl);
@@ -45,7 +44,7 @@ body.home {
       }
 
       @media (min-width:lib.$breakpoint) {
-        $pic-size: 33%;
+        $pic-size: 32vw;
 
         h1,h2,p {
           width: calc((100% - $pic-size) - var(--gutter-xl) - var(--gutter-xl));

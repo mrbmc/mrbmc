@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: false
 cssfile: "css/pages/home.css"
 ---
 
-{% section "bio","" %}
+{% section "bio","full-width" %}
 
 # Hello there.
 
