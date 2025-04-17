@@ -20,9 +20,6 @@
     margin-left: 0;
   }
 
-  a {
-  }
-
   .logo {
     $logo-size: calc(var(--navbar-height) * 0.62);
     width: $logo-size;
@@ -66,8 +63,8 @@
       text-decoration: none;
 
       // these are hacks for the Univers font
-      line-height: 1;
-      padding: .25em .75rem 0;s
+      // line-height: 1;
+      padding: .125em .75rem;
 
       &:hover {
         background: var(--muted-background);
@@ -91,6 +88,7 @@
 .active_nav, 
 body.about #header #menu a[href="/about/"], 
 body.portfolio #header #menu a[href="/portfolio/"], 
+body.work #header #menu a[href="/portfolio/"], 
 body.blog #header #menu a[href="/blog/"], 
 body.resume #header #menu a[href="/about/"] {
   background: var(--accent-background);
