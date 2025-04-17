@@ -15,7 +15,7 @@ stop_seconds=$(date -j -f %Y%m%d $stop_date +%s)
 local flag_skipdownload flag_verbose flag_help flag_raw
 local usage=(
 "metrics.sh [-h|--help]"
-"metrics-sh [-v|--verbose] [-s|--skipdownload] [-r|--raw] [-f|--from=<start-date>] [-u|--until=<stop-date>] [-t|--term=<duration>] [-i|--ip=ip.to.investigate]"
+"metrics-sh [-v|--verbose] [-s|--skipdownload] [-r|--raw] [-f|--from=<YYYYMMDD>] [-u|--until=<YYYYMMDD>] [-t|--term=<duration>] [-i|--ip=ip.to.investigate]"
 )
 
 goaccess_opt="--log-format=CLOUDFRONT "
@@ -152,7 +152,7 @@ function analyze () {
 
 	done
 
-	periods_opt=('7d' '30d' '90d')
+	periods_opt=('7d' '14d' '30d' '90d')
 	for duration in $periods_opt
 	do
 		[[ -z "$flag_verbose" ]] || { echo "Analyzing -$duration";}

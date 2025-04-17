@@ -41,3 +41,4 @@ ueditor
 wp-includes
 wp-login
 xmlrpc
+	404	
