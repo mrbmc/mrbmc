@@ -13,7 +13,7 @@ Executive design leader with a proven track record of scaling design organizatio
 4. **26** largest team{.card .kpi .col-3}
 {.stats .grid}
 
-[Download 2-Page Resumé](/images/uploads/Brian_McConnell-Resume.pdf){.button .hidden-print}
+[Download 2-Page Resumé](/images/uploads/Brian_McConnell-Resume_2025.pdf){.button .hidden-print}
 
 ---
 
