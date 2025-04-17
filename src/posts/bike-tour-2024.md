@@ -11,7 +11,8 @@ tags:
   - adventure
 ---
 
-<video controls poster="/images/blog/gapco-potomac-preview.png" autoplay autoplay="autoplay" loop mute muted class="full-width" playsinline>
+<video controls poster="/images/optimized/gapco-potomac-preview-1440.webp" autoplay autoplay="autoplay" loop mute muted class="full-width" playsinline>
+  <img src="/images/blog/gapco-potomac-preview.png" alt="Potomac River">
   <source src="/images/blog/gapco-potomac-lo.mp4" type="video/mp4" media="(max-width: 767px)" playsinline>
   <source src="/images/blog/gapco-potomac-hi.mp4" type="video/mp4" media="(min-width: 768px)" playsinline>
   Your browser does not support the video tag.
