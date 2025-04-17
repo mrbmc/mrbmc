@@ -1,9 +1,9 @@
 ---
 title: Generative Art
 date: 2012-12-15
-thumbnail: /images/portfolio/boids-thumb.png
-masthead-image: /images/portfolio/boids-masthead.png
-masthead-video: /images/portfolio/boids.mp4
+thumbnail: /images/portfolio/gaia/boids-thumb.png
+masthead-image: /images/portfolio/gaia/boids-masthead.png
+masthead-video: /images/portfolio/gaia/boids.mp4
 tags:
   - personal
   - tools
