@@ -32,10 +32,10 @@
     --card-bold-color:       var(--black);
     --muted-background:      var(--gray-light);
     --muted-foreground:      var(--gray-dark);
-    --well-bold-color:       var(--black);
+    --muted-emphasized:       var(--black);
     --accent-background:       #{lib.$neutral-30};
     --accent-foreground:       #{lib.$neutral-90};
-    --hero-bold-color:       #{lib.$neutral-100};
+    --accent-emphasized:       #{lib.$neutral-100};
     --border-color:          var(--gray-light);
 
     // GRID & LAYOUT

@@ -24,10 +24,10 @@
   & {
     background-color: $c1;
     color: var(--accent-foreground);
-    &>h1,&>h2,&>h3,&>h4,&>h5,&>a,&>strong,&>b {
-      color: var(--hero-bold-color);
+    a {
+      color: var(--accent-foreground);
       &:hover {
-        color: var(--accent-foreground);
+        color: var(--secondary);
       }
     }   
   }
