@@ -28,7 +28,7 @@
     margin: -0.25em;
     padding: 0.25em;
     overflow: hidden;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-xl);
 
     &:hover {
       background: var(--muted-background);
@@ -58,7 +58,7 @@
       transition: all lib.$speed lib.$easing;
       padding: 0 (lib.$gutter * .5);
       margin: 0 0 0 lib.$gutter;
-      border-radius: var(--border-radius);
+      border-radius: var(--border-radius-xl);
       text-transform: uppercase;
       text-decoration: none;
 

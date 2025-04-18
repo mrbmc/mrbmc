@@ -20,10 +20,11 @@ Design has an incredible power to give form to ideas. The process of **listening
 {% endsection %}
 
 
-* [Design Principles](#principles) 
-* [Design Storytelling](#process)
-* [Design Leadership](#leadership) 
-{.sticky-nav style="margin-top: var(--gutter-xl);margin-bottom: var(--gutter-xl);"}
+1. [Design Principles](#principles) 
+2. [Design Storytelling](#process)
+3. [Design Leadership](#leadership) 
+
+{.sticky-nav}
 
 {% include "_principles.md" %}
 

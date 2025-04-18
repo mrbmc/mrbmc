@@ -109,6 +109,7 @@ function compileCSSDev() {
     .on('data', file => log(`Minified ${file.path}`))
     .pipe(dest('www/css'));
 }
+
 function compileCSSPro() {
   const log = argv.verbose ? console.log : () => {};
   return src(paths.css)
@@ -121,12 +122,22 @@ function compileCSSPro() {
 // Build HTML with Eleventy
 function buildHTML() {
   const log = argv.verbose ? console.log : () => {};
-  return exec('npx @11ty/eleventy')
-    .on('data', data => log(data.toString()))
-    .on('error', (err) => {
-      console.error(`Error building HTML: ${err}`);
-      process.exit(1);
-    });
+
+  return exec('npx @11ty/eleventy', function (err, stdout, stderr) {
+        if(argv.verbose) {
+          console.log(stdout);
+          console.log(stderr);      
+        }
+      }).on('error',(err)=>{
+          console.error(`Error synching assets: ${err}`);
+          process.exit(1);
+      });
+  // return exec('npx @11ty/eleventy')
+  //   .on('data', data => log(data.toString()))
+  //   .on('error', (err) => {
+  //     console.error(`Error building HTML: ${err}`);
+  //     process.exit(1);
+  //   });
 }
 
 // Sync static assets (images)
@@ -160,12 +171,15 @@ function syncAssets() {
     if(argv.verbose) console.log(cmd);
 
     foo.push(
-      exec(cmd)
-        .on('data', data => log(data.toString()))
-        .on('error', (err) => {
+      exec(cmd, function (err, stdout, stderr) {
+        if(argv.verbose) {
+          console.log(stdout);
+          console.log(stderr);      
+        }
+      }).on('error',(err)=>{
           console.error(`Error synching assets: ${err}`);
           process.exit(1);
-        })
+      })
     )
   })
   return foo.pop();
@@ -205,7 +219,9 @@ function checkLinks() {
 
 function cleanUp() {
   let r = exec('find ~/Sites/mrbmc/ -name ".DS_Store" -type f -delete')
-    .on('data', data => log(data.toString()))
+    .on('data', (err,stdout,stderr)=> {
+      log(stdout.toString());
+    })
     .on('error', (err) => {
       console.error(`Error cleaning: ${err}`);
       process.exit(1);
@@ -214,16 +230,21 @@ function cleanUp() {
 }
 
 function upload() {
+  const log = argv.verbose ? console.log : () => {};
   let cmd = "aws s3 sync www s3://"+S3BUCKET+" --delete";
   if(debug) {
     cmd += " --dryrun";
     console.log(cmd);
   }
-  return exec(cmd)
-    .on('error',(err)=>{
+  return exec(cmd, function (err, stdout, stderr) {
+    if(argv.verbose) {
+      console.log(stdout);
+      console.log(stderr);      
+    }
+  }).on('error',(err)=>{
       console.error(`Error deploying: ${err}`);
       process.exit(1);
-    })
+  });
 }
 function uncache() {
   let cmd = "aws cloudfront create-invalidation"+(debug?" --debug":"")+" --distribution-id "+CFDISTRO+" --paths ";
@@ -237,11 +258,15 @@ function uncache() {
     return true;
   }
 
-  return exec(cmd)
-    .on('error',(err)=>{
+  return exec(cmd, function (err, stdout, stderr) {
+    if(argv.verbose) {
+      console.log(stdout);
+      console.log(stderr);      
+    }
+  }).on('error',(err)=>{
       console.error(`Error deploying: ${err}`);
       process.exit(1);
-    })
+  })
 }
 
 exports.deploy = series(

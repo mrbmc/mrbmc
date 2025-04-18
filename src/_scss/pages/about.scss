@@ -1,18 +1,20 @@
 @use "../library" as lib;
 
 @use "../base/molecules";
-
 @use "../components/sticky-nav";
 
 body.about {
   main, #main {
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   section {
     img {
       border-radius: var(--border-radius);
     }
+    padding-bottom: var(--gutter-xl);
   }
 
   #leadership {

@@ -10,49 +10,21 @@
 		"Pretty JSON":
 		{
 			"pretty_on_save": true,
-		},
-		"libsass":
-		{
-		    "output": {
-		        "dir": "../www/css",
-		        "structure": "nested"
-		    },
-		    "compile": {
-		        "style": "compressed",
-		        "line-numbers": false,      
-		        "line-comments": false,     
-		        "load-path": false,         
-		        "plugin-path": false,       
-		        "sourcemap": true,         
-		        "omit-map-comment": false,  
-		        "precision": false          
-		    }
-		},
-		"less2css":
-		{
-			"main_file": "/Users/brianmcconnell/Sites/mrbmc/src/_less/screen.less",
-			"outputDir": "/Users/brianmcconnell/Sites/mrbmc/www/css",
-			"autoCompile": false,
-			"createCssSourceMaps": true,
-			"ignorePrefixedFiles": true,
-			"minify": true,
-			"minName": ".min",
-			"showErrorWithWindow": true,
-		},
-		"SublimeOnSaveBuild":{
-		    "filename_filter": "\\.(scss|sass|js)$",
-		    "build_on_save": 1
 		}
     },
     "build_systems":
     [
         {
-            "name": "MRBMC",
+            "name": "SHELL",
 			"shell_cmd": "/Users/brianmcconnell/Sites/mrbmc/build.sh js",
         },
         {
-            "name": "MCGULP",
-			"shell_cmd": "gulp quick",
+            "name": "GULP DEV",
+			"shell_cmd": "gulp dev",
+        },
+        {
+            "name": "GULP BUILD",
+			"shell_cmd": "gulp build --verbose",
         }
 	],
 }
