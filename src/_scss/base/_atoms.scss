@@ -17,7 +17,7 @@ img, video, svg {
   max-height: 100vh;
   object-fit: contain;
 
-  &.full-width {
+  &[class*="full-width"] {
     object-fit: cover;
   }
   &.contain {
@@ -80,7 +80,9 @@ ul.inline, ol.inline {
     float: left;
   }
 }
-
+.muted {
+  color: var(--muted-foreground);
+}
 hr {
   background: none;
   margin: var(--gutter-xl) auto;

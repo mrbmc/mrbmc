@@ -14,7 +14,7 @@ accomplishments:
 timeline: 2019-2020
 ---
 
-<video src="/images/portfolio/disney-groupwatch/GW-Demo_02-24.mp4" autoplay loop muted preload="auto" playsinline type="video/mp4"></video>
+<video src="/images/portfolio/disney-groupwatch/GW-Demo_02-24.mp4" autoplay loop muted preload="auto" playsinline type="video/mp4" class="full-grid"></video>
 
 <!-- ![GroupWatch Devices](/images/portfolio/disney-groupwatch/disney-groupwatch-devices.png){.full-width .blur-in} -->
 
@@ -88,7 +88,7 @@ Our executive leaders wanted to ensure there was a viable market for social-view
 * ![Quant Insights](/images/portfolio/disney-groupwatch/groupwatch-research-frame4.jpg)
 {.gallery}
 
-### Experience Guidelines
+### Experience Principles
 
 The market research we collected along with the previous UX research gave us a foundation to start defining guidelines that would guide future product, design, and technology decisions. These were co-authored by teammates from Design, Product, and Product Marketing.
 
@@ -98,12 +98,7 @@ The market research we collected along with the previous UX research gave us a f
    GroupWatch will be most used by groups of 2-4 people, as opposed to community viewing (theatre) or massive social viewing party (Twitch).{.card .col-4}
 3. **GroupWatch is additive to existing behaviors**  
    Use mobile devices for communication and TVs for viewing. Tap into existing social norms for planning and watching.{.card .col-4}
-{.hero .grid}
-
-### Design Principles
-
-Principles are a powerful way to align teams in big programs and guide decisions about tradeoffs in the design. Principles must address the specific user goals and business constraints of a project. Generic principles about "ease of use" and "delightful" do not aid critical thinking in a specific context.
-![](/images/portfolio/disney-groupwatch/groupwatch-tenets.png){.canzoom} 
+{.hero .grid .full-grid style="padding-left: var(--gutter); padding-right: var(--gutter);"}
 
 ### Objectives & Key Results
 
@@ -124,11 +119,10 @@ Demonstrate Disney’s commitment to innovation and improving the guest experien
 ## Develop{#develop .center}
 ![Double Diamond](/images/portfolio/doublediamond-develop.png){.doublediamond}
 
+The biggest design challenge was to **reduce the emotional labor of group "Hosts"**. We knew the invitation flow had to be frictionless and integrate with existing user behaviors.
 
-All the research and feedback helped clarify the primary user archetypes and their JTBDs. The single biggest interaction and UX challenge was helping the Host user archetype with the emotional labor of inviting people to watch together. We knew the invitation flow had to be frictionless and integrate with existing user behaviors.
+![Interaction Design for the Invite](/images/portfolio/disney-groupwatch/groupwatch-ixd.jpg){.full-width-90}
 
-![Interaction Design for the Invite](/images/portfolio/disney-groupwatch/groupwatch-ixd.jpg)
-{.full-width-90}  
 
 Interaction design for the invite.{.caption}
 
@@ -140,6 +134,17 @@ Testing convinced the team to make big changes:
 - Leverage the native social features in phones. 
 - Lean into the "theater lobby" metaphor of the social gathering.
 ![Invite flow version 2](/images/portfolio/disney-groupwatch/groupwatch-invite-v2.png){.canzoom}
+
+#### UX Design: The Lobby
+
+* Hosts wanted certainty about which guests were ready, and clear control over when to start the show.
+* Guests wanted to know who else was watching and to have clarity that they were in the right place.
+
+We took cues from our colleagues designing Disney parks and created a "weenie", a recognizable meeting point for the group to gather before the show began. 
+
+**The Lobby** was our virtual meeting point for guests and hosts. 
+
+![The Lobby](/images/portfolio/disney-groupwatch/disney-groupwatch-devices.png){.full-width-90 .canzoom}
 
 ### Visual Design
 
@@ -222,8 +227,10 @@ Leading up to the launch of the feature I was able to collaborate with the Marke
 The feature was well covered in the tech and media press. Many outlets called out the unique value of the feature during the Covid Pandemic.
 
 Fan reception was positive as well although people attempting to watch across different international regions experienced issues with different cuts of films being incompatible.
-![Press reactions](/images/portfolio/disney-groupwatch/press.png){style="width:48%;display:inline-block;"}
-![Social reactions](/images/portfolio/disney-groupwatch/social.png){style="width:48%;display:inline-block;"}
+
++ ![Press reactions](/images/portfolio/disney-groupwatch/press.png) {.col-6}
++ ![Social reactions](/images/portfolio/disney-groupwatch/social.png) {.col-6}
+{.grid .well .full-width}
 
 ### In Market Performance
 

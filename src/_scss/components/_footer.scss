@@ -12,13 +12,15 @@ body > footer {
     gap: lib.$gutter;
 
     // @include lib.hero();
-    background: var(--muted-background);
+    background: var(--accent-background);
+    color: var(--accent-foreground);
 
     &>div {
         nav {
             display: flex;
             justify-content: center;
             a {
+                color: var(--accent-foreground);
                 margin: 0 (lib.$gutter * 0.5);
             }
         }

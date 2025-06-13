@@ -1,17 +1,6 @@
 @use 'sass:math';
 @use 'library' as lib;
 
-// @font-face {
-//   font-family: "Univers";
-//   font-weight: lib.$base-font-weight;
-//   src: url('/css/fonts/LT_Univers-Light.woff2');
-// }
-
-// @font-face {
-//   font-family: "Univers";
-//   font-weight: lib.$bold-font-weight;
-//   src: url('/css/fonts/LT_Univers-Medium.woff2');
-// }
 
 @font-face {
   font-family: "Monument";
@@ -25,35 +14,11 @@
   src: url('/css/fonts/ABCMonumentGrotesk-Medium-Trial.woff2');
 }
 
-// @font-face {
-//   font-family: "Pelikan";
-//   font-weight: lib.$base-font-weight;
-//   src: url('/css/fonts/ABCPelikan-Light-Trial.woff2');
-// }
-
-// @font-face {
-//   font-family: "Pelikan";
-//   font-weight: lib.$bold-font-weight;
-//   src: url('/css/fonts/ABCPelikan-Medium-Trial.woff2');
-// }
-
-// @font-face {
-//   font-family: "NeueMontreal";
-//   font-weight: lib.$base-font-weight;
-//   src: url('/css/fonts/PPNeueMontreal-Book.woff2');
-// }
-
-// @font-face {
-//   font-family: "NeueMontreal";
-//   font-weight: lib.$bold-font-weight;
-//   src: url('/css/fonts/PPNeueMontreal-Medium.woff2');
-// }
-
 :root {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-size: clamp(18px, 1.6vw, 40px);
+  font-size: clamp(18px, 1.6vw, 28px);
   --type-scale: 1.2;
   @media (max-width: lib.$breakpoint) {
     --type-scale: 1.12;
@@ -80,20 +45,19 @@ h1, h2, h3, h4, h5 {
     text-decoration: none;
   }
 }
-h1,h2 {
+h1 {
   font-family: lib.$display-font-family;
   font-weight: lib.$display-font-weight;
   letter-spacing: lib.$display-font-kerning;
 }
 h1 {
-  font-size: calc(1rem * pow(var(--type-scale), 7));
+  font-size: calc(1rem * pow(var(--type-scale), 8));
 }
-
 h2 {
-  font-size: calc(1rem * pow(var(--type-scale), 6));
+  font-size: calc(1rem * pow(var(--type-scale), 5));
 }
 h3 {
-  font-size: calc(1rem * pow(var(--type-scale), 4));
+  font-size: calc(1rem * pow(var(--type-scale), 3));
 }
 h4 {
   font-size: calc(1rem * pow(var(--type-scale), 2));
@@ -109,4 +73,10 @@ h5 {
 }
 blockquote, .blockquote {
   font-size: calc(1rem * pow(var(--type-scale), 2));
+}
+#header {
+  a {
+  font-family: lib.$navbar-font-family;
+  font-weight: lib.$navbar-font-weight;
+  }
 }

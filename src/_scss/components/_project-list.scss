@@ -27,7 +27,7 @@
     }
 
     figure, .figure {
-      border-radius: var(--border-radius);
+      border-radius: var(--border-radius-xl);
       overflow: hidden;
       margin: 0;
       filter: saturate(95%);
@@ -53,7 +53,7 @@
         box-shadow: lib.$shadow;
       }
 
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
 
   }

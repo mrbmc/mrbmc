@@ -9,11 +9,15 @@ cssfile: "css/pages/about.css"
 
 {% section "intro","" %}
 
-# Making products that are useful to people.
+# Ridding the world of crummy software.
+
+I have always been fascinated by tools. Tools augment our capability as a species. They empower us, change us, and mold our view of the world. The power conferred can spark a conversation with evolution. 
+
+Software is a tool that influences our capabilities in unprecedented ways.
+
+Making good software, that is inherently good, has been my career mission. I love the balance of creativity and analysis required to create something that is both useful to people and inherently good. Software Design has an incredible power to give form to ideas. The process of **listening, making, and collaborating** unlocks critical thinking for everyone. 
 
 My unique career path has pivoted between design, product, and engineering thanks to an entrepreneurial instinct to run towards ~~problems~~ opportunities. The common thread has been using Design to deliver through ambiguity at any scale. 
-
-Design has an incredible power to give form to ideas. The process of **listening, making, and collaborating** unlocks critical thinking for everyone. 
 
 [CV & Resumé](/images/uploads/Brian_McConnell-Resume_2025.pdf)
 

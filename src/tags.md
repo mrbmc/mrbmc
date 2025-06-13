@@ -12,6 +12,7 @@ pagination:
   filter:
     - all
     - project
+    - gallery
 ---
 
 {% section "masthead" %}

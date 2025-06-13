@@ -8,7 +8,7 @@
 
 body.blog.post {
   transition: background (lib.$speed * 4) lib.$easing;
-  background: var(--muted-background);
+  // background: var(--muted-background);
 
   #masthead {
 

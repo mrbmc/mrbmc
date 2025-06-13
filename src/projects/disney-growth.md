@@ -71,6 +71,13 @@ At inception, the "Growth" design team was 3 generalist designers + 1 UX researc
 ![Growth Team - January 2019](/images/portfolio/disney-growth/growth-team-start.png){.center}
 Growth Team - January 2019{.caption}
 
+Over the 18 months from inception until Launch, I grew the Growth team to 1 Design Manager, 1 Principal Designer, 5 product designers, 2 researchers, and 1 program manager. We also had specialists from our Motion Studio, Prototyping, Design Systems, and International UX teams embedded in the growth team.
+
+I **mentored** two new designer leaders into positions leading their teams, with the autonomy to deliver against clear KPIs.
+
+![](/images/portfolio/disney-growth/growth-team-end.png){.center}
+Growth Team in December 2020 {.caption}
+
 #### The Product-Operating Model
 
 Scaling the team was a design challenge I tackled with my peer Directors and VP of Product. We aimed for a modular structure, that could scale up,  while still providing **clear swimlanes**, **accountability**, and **autonomy**. 
@@ -90,15 +97,6 @@ We then expanded this model to more teams from Data and Marketing (and eventuall
 Each pod had the autonomy to define their ways of working, but generally, they found a 2-week cadence of ceremonies to stay in sync, prioritize work, flatten issues, and break out working groups.
 
 ![Pods](/images/portfolio/disney-growth/ceremony-cadence.svg)  {._full-width-90}
-
-#### Outcomes
-
-Over the 18 months from inception until Launch, I grew the Growth team to 1 Design Manager, 1 Principal Designer, 5 product designers, 2 researchers, and 1 program manager. We also had specialists from our Motion Studio, Prototyping, Design Systems, and International UX teams embedded in the growth team.
-
-I mentored two new designer leaders into positions leading their teams, with the autonomy to deliver against clear KPIs.
-
-![](/images/portfolio/disney-growth/growth-team-end.png){.center}
-Growth Team in December 2020 {.caption}
 
 ### Experience Principles (aka Tenets or Axioms){#ux-tenets}
 

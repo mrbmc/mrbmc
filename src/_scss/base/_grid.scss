@@ -27,6 +27,11 @@
 .full-width {
   @include fullwidth(false);
 }
+.full-width-90 {
+  @include fullwidth(true);
+  width: 90vw;
+  padding-left: 5vw;
+}
 
 .grid {
     display: grid;

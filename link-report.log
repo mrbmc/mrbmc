@@ -4,140 +4,373 @@ Getting links from: http://localhost:8000/
 ├───OK─── http://localhost:8000/resume/
 ├───OK─── http://localhost:8000/photos/
 ├───OK─── http://localhost:8000/blog/
-├───OK─── http://localhost:8000/images/optimized/mrbmc-20241121-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney-growth-thumb-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-preview-640.webp
-├───OK─── http://localhost:8000/images/optimized/optumus-mockup-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn-thumbnail-1x1-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-thumbnail-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-hosttools-teaser-2x1-640.webp
+├───OK─── http://localhost:8000/images/optimized/headshot-slash-640.gif
+├───OK─── http://localhost:8000/portfolio/disney-growth/
+├───OK─── http://localhost:8000/images/optimized/disney-growth-thumb-640.gif
+├───OK─── http://localhost:8000/portfolio/disney-groupwatch/
+├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-preview-640.gif
+├───OK─── http://localhost:8000/portfolio/disney-enterprise/
+├───OK─── http://localhost:8000/images/optimized/optumus-mockup-640.gif
+├───OK─── http://localhost:8000/portfolio/espn/
+├───OK─── http://localhost:8000/images/optimized/espn-thumbnail-1x1-640.gif
+├───OK─── http://localhost:8000/portfolio/nhl/
+├───OK─── http://localhost:8000/images/optimized/nhl-thumbnail-640.gif
+├───OK─── http://localhost:8000/blog/software-is-hard/
+├───OK─── http://localhost:8000/blog/job-market-2025/
 ├───OK─── http://localhost:8000/blog/greenpoint-pan-chocolat-2025/
-├───OK─── http://localhost:8000/images/optimized/pan-chocolat-lineup-640.webp
+├───OK─── http://localhost:8000/images/optimized/pan-chocolat-lineup-640.gif
 ├───OK─── http://localhost:8000/blog/read-history/
-├───OK─── http://localhost:8000/images/optimized/firstbenz-jpggettyimages-905504772-640.webp
-├───OK─── http://localhost:8000/blog/design-quality/
-├───OK─── http://localhost:8000/blog/bike-tour-2024/
-├───OK─── http://localhost:8000/images/optimized/gapco-continental-divide-640.webp
+├───OK─── http://localhost:8000/images/optimized/firstbenz-jpggettyimages-905504772-640.gif
 ├───OK─── http://localhost:8000/colophon/
 └───OK─── http://localhost:8000/privacy/
-Finished! 46 links found. 25 excluded. 0 broken.
+Finished! 50 links found. 26 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/about/
-├───OK─── http://localhost:8000/images/optimized/wewatch-interview-participants-3x3-640.webp
-├───OK─── http://localhost:8000/images/optimized/workshop-pictogram-640.webp
-├───OK─── http://localhost:8000/images/optimized/sealion-balance-640.webp
+├───OK─── http://localhost:8000/images/optimized/wewatch-interview-participants-3x3-640.gif
+├───OK─── http://localhost:8000/images/optimized/workshop-pictogram-640.gif
+├───OK─── http://localhost:8000/images/optimized/sealion-balance-640.gif
 ├───OK─── http://localhost:8000/blog/a-little-feedback-often/
-├───OK─── http://localhost:8000/images/optimized/about-wireframes-xl-640.webp
+├───OK─── http://localhost:8000/images/optimized/about-wireframes-xl-640.gif
 ├───OK─── http://localhost:8000/blog/leadership-in-nature/
-├───OK─── http://localhost:8000/images/optimized/leadership-nature-640.webp
-├───OK─── http://localhost:8000/images/optimized/puzzle-640.webp
-├───OK─── http://localhost:8000/images/optimized/puzzle-culture-640.webp
-├───OK─── http://localhost:8000/images/optimized/puzzle-craft-640.webp
-├───OK─── http://localhost:8000/images/optimized/puzzle-commerce-640.webp
+├───OK─── http://localhost:8000/images/optimized/leadership-nature-640.gif
+├───OK─── http://localhost:8000/images/optimized/puzzle-640.gif
+├───OK─── http://localhost:8000/images/optimized/puzzle-culture-640.gif
+├───OK─── http://localhost:8000/images/optimized/puzzle-craft-640.gif
+├───OK─── http://localhost:8000/images/optimized/puzzle-commerce-640.gif
 Finished! 40 links found. 29 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/
-├───OK─── http://localhost:8000/portfolio/disney-growth/
-├───OK─── http://localhost:8000/portfolio/disney-groupwatch/
-├───OK─── http://localhost:8000/portfolio/disney-enterprise/
-├───OK─── http://localhost:8000/portfolio/espn/
-├───OK─── http://localhost:8000/portfolio/nhl/
-├───OK─── http://localhost:8000/portfolio/blogtalkradio/
 ├───OK─── http://localhost:8000/portfolio/flint-and-silicon/
-├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-thumb-640.webp
+├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-thumb-640.gif
 ├───OK─── http://localhost:8000/portfolio/team-charter-workshop/
-├───OK─── http://localhost:8000/images/optimized/culture-workshop-640.webp
+├───OK─── http://localhost:8000/images/optimized/culture-workshop-640.gif
 ├───OK─── http://localhost:8000/portfolio/design-prototyping-201/
-├───OK─── http://localhost:8000/images/optimized/bamtech-prototyping-thumb-640.webp
+├───OK─── http://localhost:8000/images/optimized/bamtech-prototyping-thumb-640.gif
 ├───OK─── http://localhost:8000/portfolio/fusion-family-feast/
-├───OK─── http://localhost:8000/images/optimized/fusion-family-feast-640.webp
+├───OK─── http://localhost:8000/images/optimized/fusion-family-feast-640.gif
 ├───OK─── http://localhost:8000/portfolio/steelgills/
-├───OK─── http://localhost:8000/images/optimized/steelgills-thumb-640.webp
+├───OK─── http://localhost:8000/images/optimized/steelgills-thumb-640.gif
 ├───OK─── http://localhost:8000/portfolio/pal-9100/
-├───OK─── http://localhost:8000/images/optimized/PAL9100-tablet-640.webp
+├───OK─── http://localhost:8000/images/optimized/PAL9100-tablet-640.gif
 ├───OK─── http://localhost:8000/portfolio/boids/
-├───OK─── http://localhost:8000/images/optimized/boids-thumb-640.webp
-Finished! 63 links found. 43 excluded. 0 broken.
+├───OK─── http://localhost:8000/images/optimized/boids-thumb-640.gif
+Finished! 56 links found. 42 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/resume/
 Finished! 29 links found. 29 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/photos/
-├───OK─── http://localhost:8000/images/optimized/h-2006_Paris_118-640.webp
-├───OK─── http://localhost:8000/images/optimized/h-2007_4952954758_a75d2f14e1_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/h-2008_16980591764_9b7c0021ed_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/h-2008_17600754872_fbeea6e8cb_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/h-2008_4952969684_44e95b8651_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/h-2008_8813926776_1b58ce6dc4_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/h-2010_5705012090_024da42a4a_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/h-2012_16980614044_45f2aa24f1_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/h-2012_7223164048_042d3d3015_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/h-2015_17576781256_7ec8b6b52f_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/p-2012_8803203491_41e70bd0b4_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/s-2007_4952363743_4b04abf55f_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/s-2007_4952369121_f43d20edef_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/t-2007_4952957826_62e1f47def_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/t-2008_4952965132_9760b87659_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/t-2012_17576830576_e7d64d05a0_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/t-2012_17600819772_671d18e7b5_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/t-2012_17603151861_e5d7ef68b5_o-640.webp
-├───OK─── http://localhost:8000/images/optimized/h-2006_Paris_118-256.webp
-├───OK─── http://localhost:8000/images/optimized/h-2007_4952954758_a75d2f14e1_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/h-2008_16980591764_9b7c0021ed_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/h-2008_17600754872_fbeea6e8cb_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/h-2008_4952969684_44e95b8651_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/h-2008_8813926776_1b58ce6dc4_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/h-2010_5705012090_024da42a4a_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/h-2012_16980614044_45f2aa24f1_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/h-2012_7223164048_042d3d3015_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/h-2015_17576781256_7ec8b6b52f_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/p-2012_8803203491_41e70bd0b4_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/s-2007_4952363743_4b04abf55f_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/s-2007_4952369121_f43d20edef_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/t-2007_4952957826_62e1f47def_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/t-2008_4952965132_9760b87659_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/t-2012_17576830576_e7d64d05a0_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/t-2012_17600819772_671d18e7b5_o-256.webp
-├───OK─── http://localhost:8000/images/optimized/t-2012_17603151861_e5d7ef68b5_o-256.webp
+├───OK─── http://localhost:8000/images/optimized/h-2006_Paris_118-640.gif
+├───OK─── http://localhost:8000/images/optimized/h-2007_4952954758_a75d2f14e1_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/h-2008_16980591764_9b7c0021ed_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/h-2008_17600754872_fbeea6e8cb_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/h-2008_4952969684_44e95b8651_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/h-2008_8813926776_1b58ce6dc4_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/h-2010_5705012090_024da42a4a_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/h-2012_16980614044_45f2aa24f1_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/h-2012_7223164048_042d3d3015_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/h-2015_17576781256_7ec8b6b52f_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/p-2012_8803203491_41e70bd0b4_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/s-2007_4952363743_4b04abf55f_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/s-2007_4952369121_f43d20edef_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/t-2007_4952957826_62e1f47def_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/t-2008_4952965132_9760b87659_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/t-2012_17576830576_e7d64d05a0_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/t-2012_17600819772_671d18e7b5_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/t-2012_17603151861_e5d7ef68b5_o-640.gif
+├───OK─── http://localhost:8000/images/optimized/h-2006_Paris_118-256.gif
+├───OK─── http://localhost:8000/images/optimized/h-2007_4952954758_a75d2f14e1_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/h-2008_16980591764_9b7c0021ed_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/h-2008_17600754872_fbeea6e8cb_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/h-2008_4952969684_44e95b8651_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/h-2008_8813926776_1b58ce6dc4_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/h-2010_5705012090_024da42a4a_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/h-2012_16980614044_45f2aa24f1_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/h-2012_7223164048_042d3d3015_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/h-2015_17576781256_7ec8b6b52f_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/p-2012_8803203491_41e70bd0b4_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/s-2007_4952363743_4b04abf55f_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/s-2007_4952369121_f43d20edef_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/t-2007_4952957826_62e1f47def_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/t-2008_4952965132_9760b87659_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/t-2012_17576830576_e7d64d05a0_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/t-2012_17600819772_671d18e7b5_o-256.gif
+├───OK─── http://localhost:8000/images/optimized/t-2012_17603151861_e5d7ef68b5_o-256.gif
 Finished! 73 links found. 37 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/
+├───OK─── http://localhost:8000/blog/design-quality/
+├───OK─── http://localhost:8000/blog/bike-tour-2024/
+├───OK─── http://localhost:8000/images/optimized/gapco-continental-divide-640.gif
 ├───OK─── http://localhost:8000/blog/growth-design-idioms/
 ├───OK─── http://localhost:8000/blog/intentional-consumption/
-├───OK─── http://localhost:8000/images/optimized/girl-turntable-640.webp
+├───OK─── http://localhost:8000/images/optimized/girl-turntable-640.gif
 ├───OK─── http://localhost:8000/blog/bike-tour-2023/
-├───OK─── http://localhost:8000/images/optimized/vt-tour-640.webp
+├───OK─── http://localhost:8000/images/optimized/vt-tour-640.gif
 ├───OK─── http://localhost:8000/blog/design-for-durability/
-├───OK─── http://localhost:8000/images/optimized/blacklightning-1990-640.webp
+├───OK─── http://localhost:8000/images/optimized/blacklightning-1990-640.gif
 ├───OK─── http://localhost:8000/blog/good-people-management-is-invisible/
-├───OK─── http://localhost:8000/images/optimized/solar-system-640.webp
+├───OK─── http://localhost:8000/images/optimized/solar-system-640.gif
 ├───OK─── http://localhost:8000/blog/olympics-danger-being-a-good-neighbor/
-├───OK─── http://localhost:8000/images/optimized/winter-olympics-640.webp
+├───OK─── http://localhost:8000/images/optimized/winter-olympics-640.gif
 ├───OK─── http://localhost:8000/blog/travel-made-me-a-better-designer/
-├───OK─── http://localhost:8000/images/optimized/bg-dades-valley-640.webp
+├───OK─── http://localhost:8000/images/optimized/bg-dades-valley-640.gif
 ├───OK─── http://localhost:8000/blog/designers-hierarchy-of-needs/
 ├───OK─── http://localhost:8000/blog/usability-testing-tv-apps/
 ├───OK─── http://localhost:8000/blog/our-judicial-system-is-the-worst/
-├───OK─── http://localhost:8000/images/optimized/justice-640.webp
+├───OK─── http://localhost:8000/images/optimized/justice-640.gif
 ├───OK─── http://localhost:8000/blog/soccer-i-love-to-hate-you/
-├───OK─── http://localhost:8000/images/optimized/World_Cup_2014_06-640.webp
+├───OK─── http://localhost:8000/images/optimized/World_Cup_2014_06-640.gif
 ├───OK─── http://localhost:8000/blog/londoner-guide-to-NYC-cycling/
-├───OK─── http://localhost:8000/images/optimized/nyc-cycling-640.webp
+├───OK─── http://localhost:8000/images/optimized/nyc-cycling-640.gif
 ├───OK─── http://localhost:8000/blog/design-is-never-done/
-├───OK─── http://localhost:8000/images/optimized/mobius-640.webp
+├───OK─── http://localhost:8000/images/optimized/mobius-640.gif
 ├───OK─── http://localhost:8000/blog/big-data-causes-night-blindness/
 ├───OK─── http://localhost:8000/blog/consumer-design-for-enterprise/
 ├───OK─── http://localhost:8000/blog/newtons-laws-of-design/
-├───OK─── http://localhost:8000/images/optimized/newton-640.webp
+├───OK─── http://localhost:8000/images/optimized/newton-640.gif
 ├───OK─── http://localhost:8000/blog/rss.xml
-Finished! 73 links found. 45 excluded. 0 broken.
+Finished! 75 links found. 44 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/portfolio/disney-growth/
+├───OK─── http://localhost:8000/images/optimized/disney-growth-640.gif
+├───OK─── http://localhost:8000/images/optimized/everest-basecamp-large-640.gif
+├───OK─── http://localhost:8000/images/optimized/growth-team-start-640.gif
+├───OK─── http://localhost:8000/images/optimized/growth-team-end-640.gif
+├───OK─── http://localhost:8000/images/optimized/product-operating-model-640.gif
+├───OK─── http://localhost:8000/images/optimized/ceremony-cadence-640.gif
+├───OK─── http://localhost:8000/images/optimized/everest-ascent-large-640.gif
+├───OK─── http://localhost:8000/images/optimized/olp-v4-640.gif
+├───OK─── http://localhost:8000/images/optimized/olp-v3-640.gif
+├───OK─── http://localhost:8000/images/optimized/olp-v2-640.gif
+├───OK─── http://localhost:8000/images/optimized/olp-v1-640.gif
+├───OK─── http://localhost:8000/images/optimized/olp-v0-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-reference-signup-1-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-reference-signup-2-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-reference-signup-3-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-reference-signup-4-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-reference-signup-5-640.gif
+├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-1-640.gif
+├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-2-640.gif
+├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-3-640.gif
+├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-5-640.gif
+├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-6-640.gif
+├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-7-640.gif
+├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-9-640.gif
+├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-10-640.gif
+├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-11-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-1-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-2-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-3-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-4-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-5-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-6-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-7-640.gif
+├───OK─── http://localhost:8000/images/optimized/tv-off-device-research-4x1-640.gif
+├───OK─── http://localhost:8000/images/optimized/disney-redemption-flow-640.gif
+├───OK─── http://localhost:8000/images/optimized/b2b2c-canal-offer-640.gif
+├───OK─── http://localhost:8000/images/optimized/b2b2c-choose-plan-640.gif
+├───OK─── http://localhost:8000/images/optimized/b2b2c-account-640.gif
+├───OK─── http://localhost:8000/images/optimized/b2b2c-password-640.gif
+├───OK─── http://localhost:8000/images/optimized/b2b2c-canal-terms-640.gif
+├───OK─── http://localhost:8000/images/optimized/b2b2c-canal-success-640.gif
+├───OK─── http://localhost:8000/images/optimized/everest-north-side-sun-over-tibetan-plateau-640.gif
+├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_0-640.gif
+├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_1-640.gif
+├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_2-640.gif
+├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_3-640.gif
+├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_4-640.gif
+├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_5-640.gif
+├───OK─── http://localhost:8000/images/optimized/disney+-signup-AR-step_4-640.gif
+├───OK─── http://localhost:8000/images/optimized/plan-picker-test-1-640.gif
+├───OK─── http://localhost:8000/images/optimized/plan-picker-test-2-640.gif
+├───OK─── http://localhost:8000/images/optimized/plan-picker-test-3-640.gif
+├───OK─── http://localhost:8000/images/optimized/plan-picker-test-4-640.gif
+├───OK─── http://localhost:8000/images/optimized/plan-picker-test-5-640.gif
+├───OK─── http://localhost:8000/images/optimized/plan-picker-test-slide-640.gif
+├───OK─── http://localhost:8000/images/optimized/workshop-agenda-640.gif
+├───OK─── http://localhost:8000/images/optimized/bundle-workshop-wireframes-640.gif
+├───OK─── http://localhost:8000/images/optimized/everest-descent-640.gif
+Finished! 100 links found. 42 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/portfolio/disney-groupwatch/
+├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/GW-Demo_02-24.mp4
+├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-cover-640.gif
+├───OK─── http://localhost:8000/images/optimized/doublediamond-discover-161.gif
+├───OK─── http://localhost:8000/images/optimized/wewatch-interview-participants-5x2-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-patent-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-workshop-640.gif
+├───OK─── http://localhost:8000/images/optimized/doublediamond-define-161.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-visiontype-mocks-640.gif
+├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/WeWatch_VideoDemo.mp4
+├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame1-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame2-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame3-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame4-640.gif
+├───OK─── http://localhost:8000/images/optimized/doublediamond-develop-161.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-ixd-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-invite-v1-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-invite-v2-640.gif
+├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-devices-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v1-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v2-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v3-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v4-640.gif
+├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/groupwatch-motion-mobile.mp4
+├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/groupwatch-motion-tv.mp4
+├───OK─── http://localhost:8000/images/optimized/groupwatch-reactions-ideation-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-reactions-final-640.gif
+├───OK─── http://localhost:8000/images/optimized/doublediamond-deliver-161.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-tv-desired-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-tv-actual-640.gif
+├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/GWMPT.mp4
+├───OK─── http://localhost:8000/images/optimized/groupwatch-marketing-640.gif
+├───OK─── http://localhost:8000/images/optimized/press-640.gif
+├───OK─── http://localhost:8000/images/optimized/social-640.gif
+├───OK─── http://localhost:8000/images/optimized/groupwatch-metrics-640.gif
+Finished! 58 links found. 24 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/portfolio/disney-enterprise/
+├───OK─── http://localhost:8000/images/optimized/ivan-cockpit-640.gif
+├───OK─── http://localhost:8000/images/optimized/exd-roi-framework-640.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-linda-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-caroline-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-dan-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-alexaf-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-daria-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-takeem-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-alexac-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-jenny-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-willet-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-sarah-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-kda-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-cathy-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-carol-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-jon-184.gif
+├───OK─── http://localhost:8000/images/optimized/exd-team-agency-340.gif
+├───OK─── http://localhost:8000/images/optimized/EXD-Golden-Circle-640.gif
+├───OK─── http://localhost:8000/images/portfolio/culture-workshop/EXD-workshop-timelapse.mp4
+├───OK─── http://localhost:8000/images/optimized/exd-pods-640.gif
+├───OK─── http://localhost:8000/images/optimized/props-list-640.gif
+├───OK─── http://localhost:8000/images/optimized/genie-campaign-640.gif
+├───OK─── http://localhost:8000/images/optimized/genie-offers-640.gif
+├───OK─── http://localhost:8000/images/optimized/baymax-customer-640.gif
+├───OK─── http://localhost:8000/images/optimized/baymax-search_results-640.gif
+├───OK─── http://localhost:8000/images/optimized/baymax-cancel-640.gif
+├───OK─── http://localhost:8000/images/optimized/galaxy-localization-1-640.gif
+├───OK─── http://localhost:8000/images/optimized/galaxy-v1-640.gif
+├───OK─── http://localhost:8000/images/optimized/galaxy-push-640.gif
+├───OK─── http://localhost:8000/images/optimized/disney-content-strategy-640.gif
+├───OK─── http://localhost:8000/images/optimized/polaris-search-640.gif
+├───OK─── http://localhost:8000/images/optimized/polaris-visualbrowse-640.gif
+├───OK─── http://localhost:8000/images/optimized/polaris-set-pcs-640.gif
+├───OK─── http://localhost:8000/images/optimized/polaris-edit_cta-640.gif
+├───OK─── http://localhost:8000/images/optimized/polaris-collection-640.gif
+├───OK─── http://localhost:8000/images/optimized/polaris-browse-640.gif
+├───OK─── http://localhost:8000/images/optimized/optumus-session-640.gif
+├───OK─── http://localhost:8000/images/optimized/optumus-dashboard-640.gif
+├───OK─── http://localhost:8000/images/optimized/optumus-spotlight-640.gif
+├───OK─── http://localhost:8000/images/optimized/weaponx-dashboard-640.gif
+├───OK─── http://localhost:8000/images/optimized/weaponx-640.gif
+├───OK─── http://localhost:8000/images/optimized/dataportal-640.gif
+├───OK─── http://localhost:8000/images/optimized/exd-design-system-overview-640.gif
+├───OK─── http://localhost:8000/images/optimized/trek-inputs-640.gif
+├───OK─── http://localhost:8000/images/optimized/trek-colors-640.gif
+├───OK─── http://localhost:8000/images/optimized/trek-type-640.gif
+├───OK─── http://localhost:8000/images/optimized/trek-navigation-640.gif
+├───OK─── http://localhost:8000/images/optimized/trek-buttons-640.gif
+├───OK─── http://localhost:8000/images/optimized/commerce-offer-detail-640.gif
+├───OK─── http://localhost:8000/images/optimized/sisu-customer-details-640.gif
+├───OK─── http://localhost:8000/images/optimized/messaging-new-email-640.gif
+├───OK─── http://localhost:8000/images/optimized/cypher-dictionary-640.gif
+├───OK─── http://localhost:8000/images/optimized/content-portal-episode-640.gif
+├───OK─── http://localhost:8000/images/optimized/knowsmore-640.gif
+├───OK─── http://localhost:8000/images/optimized/qos-spotlight-640.gif
+├───OK─── http://localhost:8000/images/optimized/experiments-results-640.gif
+├───OK─── http://localhost:8000/images/optimized/ads-mission-control-scheduling-640.gif
+├───OK─── http://localhost:8000/images/optimized/dev-portal-640.gif
+Finished! 106 links found. 48 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/portfolio/espn/
+├───OK─── http://localhost:8000/images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
+├───OK─── http://localhost:8000/images/optimized/espn-masthead-2x1-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn-ppv-1-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn-ppv-2-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn-ppv-3-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn-ppv-3a-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn-ppv-4-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn-ppv-3b-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn-ppv-3c-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn+_01-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn+_09-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn+_02-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn+_07-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn+_06-640.gif
+├───OK─── http://localhost:8000/images/optimized/espn+_10-640.gif
+├───OK─── http://localhost:8000/images/optimized/starplus-1-640.gif
+├───OK─── http://localhost:8000/images/optimized/starplus-3-640.gif
+├───OK─── http://localhost:8000/images/optimized/starplus-4-640.gif
+├───OK─── http://localhost:8000/images/optimized/starplus-2-640.gif
+├───OK─── http://localhost:8000/images/optimized/comboplus-640.gif
+├───OK─── http://localhost:8000/images/optimized/comboplus-signup-success-640.gif
+├───OK─── http://localhost:8000/images/optimized/starplus-5-640.gif
+├───OK─── http://localhost:8000/images/optimized/starplus-640.gif
+├───OK─── http://localhost:8000/images/optimized/starplus-6-640.gif
+├───OK─── http://localhost:8000/images/portfolio/espn/SportsCenter_plus.mp4
+Finished! 51 links found. 26 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/portfolio/nhl/
+├───OK─── http://localhost:8000/images/portfolio/nhl/nhl-masthead.mp4
+├───OK─── http://localhost:8000/images/optimized/nhl-devices@2x-640.gif
+├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-highlights-640.gif
+├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-scores-640.gif
+├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-player_info-640.gif
+├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-favorites-640.gif
+├───OK─── http://localhost:8000/images/optimized/bug-ps4-timestamp-playhead-640.gif
+├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-player-640.gif
+├───OK─── http://localhost:8000/images/optimized/nhl-aroundtheleague-shelf-640.gif
+├───OK─── http://localhost:8000/images/portfolio/nhl/nhl-around-the-league.mp4
+├───OK─── http://localhost:8000/images/optimized/nhl-aroundtheleague-pip-640.gif
+├───OK─── http://localhost:8000/images/optimized/nhl-mobile-video-before-640.gif
+├───OK─── http://localhost:8000/images/optimized/nhl-mobile-video-after-607.gif
+├───OK─── http://localhost:8000/images/portfolio/nhl/1a-Mobile-Video-Improvements.mp4
+├───OK─── http://localhost:8000/images/portfolio/nhl/on-the-fly.mp4
+├───OK─── http://localhost:8000/images/optimized/gameflow_01-640.gif
+├───OK─── http://localhost:8000/images/optimized/gameflow_03-640.gif
+├───OK─── http://localhost:8000/images/optimized/gameflow_02-640.gif
+├───OK─── http://localhost:8000/images/optimized/gameflow_05-640.gif
+├───OK─── http://localhost:8000/images/optimized/gameflow_04-640.gif
+├───OK─── http://localhost:8000/images/optimized/gameflow_06-640.gif
+├───OK─── http://localhost:8000/images/portfolio/nhl/GameFlow-Demo.mp4
+Finished! 48 links found. 26 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/blog/software-is-hard/
+├───OK─── http://localhost:8000/tags/design-strategy
+├───OK─── http://localhost:8000/tags/design
+├───OK─── http://localhost:8000/tags/process
+Finished! 24 links found. 21 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/blog/job-market-2025/
+├───OK─── http://localhost:8000/images/optimized/key-cylinder-wards-640.gif
+├───OK─── http://localhost:8000/images/optimized/key-warding-notches-600.gif
+├───OK─── http://localhost:8000/images/optimized/key-biting-wards-640.gif
+├───OK─── http://localhost:8000/images/blog/key-bits.mp4
+├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-UI-559.gif
+├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-UX-559.gif
+├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-systems-559.gif
+├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-generalist-559.gif
+├───OK─── http://localhost:8000/images/optimized/the-a-team-640.gif
+├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-team-559.gif
+├───OK─── http://localhost:8000/tags/hiring
+├───OK─── http://localhost:8000/tags/capitalism
+Finished! 37 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/greenpoint-pan-chocolat-2025/
-├───OK─── http://localhost:8000/images/optimized/pan-choclat-bakeri-640.webp
-├───OK─── http://localhost:8000/images/optimized/pan-choclat-charlotte-640.webp
-├───OK─── http://localhost:8000/images/optimized/pan-choclat-nicksons-640.webp
-├───OK─── http://localhost:8000/images/optimized/pan-choclat-panpan-640.webp
-├───OK─── http://localhost:8000/images/optimized/pan-choclat-radio-640.webp
+├───OK─── http://localhost:8000/images/optimized/pan-choclat-bakeri-640.gif
+├───OK─── http://localhost:8000/images/optimized/pan-choclat-charlotte-640.gif
+├───OK─── http://localhost:8000/images/optimized/pan-choclat-nicksons-640.gif
+├───OK─── http://localhost:8000/images/optimized/pan-choclat-panpan-640.gif
+├───OK─── http://localhost:8000/images/optimized/pan-choclat-radio-640.gif
 ├───OK─── http://localhost:8000/tags/brooklyn
 ├───OK─── http://localhost:8000/tags/baking
 ├───OK─── http://localhost:8000/tags/greenpoint
@@ -149,44 +382,7 @@ Finished! 42 links found. 30 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/read-history/
 ├───OK─── http://localhost:8000/tags/futurism
-├───OK─── http://localhost:8000/tags/design
-├───OK─── http://localhost:8000/tags/process
-Finished! 29 links found. 26 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/blog/design-quality/
-├───OK─── http://localhost:8000/tags/design-strategy
-Finished! 24 links found. 23 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/blog/bike-tour-2024/
-├───OK─── http://localhost:8000/images/optimized/gapco-potomac-preview-1440.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-potomac-preview-640.webp
-├───OK─── http://localhost:8000/images/blog/gapco-potomac-lo.mp4
-├───OK─── http://localhost:8000/images/blog/gapco-potomac-hi.mp4
-├───OK─── http://localhost:8000/blog/bike-tour-2023
-├───OK─── http://localhost:8000/images/optimized/gapco-penn-station-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-big-bend-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-autumn-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-steel-city-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-industrial-zone-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-rig-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-single-track-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-morning-whiteout-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-tunnel-short-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-morning-mist-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-path-bridge-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-panorama-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-masondixon-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-antietam-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-selfie-lock-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-great-falls-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-japanese-garden-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-capitol-640.webp
-├───OK─── http://localhost:8000/images/optimized/gapco-lincoln-sunset-640.webp
-├───OK─── http://localhost:8000/tags/cycling
-├───OK─── http://localhost:8000/tags/travel
-├───OK─── http://localhost:8000/tags/bike-touring
-├───OK─── http://localhost:8000/tags/adventure
-Finished! 54 links found. 26 excluded. 0 broken.
+Finished! 29 links found. 28 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/colophon/
 Finished! 43 links found. 43 excluded. 0 broken.
@@ -196,8 +392,8 @@ Finished! 19 links found. 19 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/a-little-feedback-often/
 ├───OK─── http://localhost:8000/images/blog/sealion-balance-ball.mp4
-├───OK─── http://localhost:8000/images/optimized/feedback-constant-640.webp
-├───OK─── http://localhost:8000/images/optimized/feedback-delayed-640.webp
+├───OK─── http://localhost:8000/images/optimized/feedback-constant-640.gif
+├───OK─── http://localhost:8000/images/optimized/feedback-delayed-640.gif
 ├───OK─── http://localhost:8000/images/blog/bmc-juggling.mp4
 ├───OK─── http://localhost:8000/tags/momentum
 Finished! 29 links found. 24 excluded. 0 broken.
@@ -207,267 +403,35 @@ Getting links from: http://localhost:8000/blog/leadership-in-nature/
 ├───OK─── http://localhost:8000/tags/leadership
 Finished! 31 links found. 29 excluded. 0 broken.
 
-Getting links from: http://localhost:8000/portfolio/disney-growth/
-├───OK─── http://localhost:8000/images/optimized/disney-growth-640.webp
-├───OK─── http://localhost:8000/images/optimized/everest-basecamp-large-640.webp
-├───OK─── http://localhost:8000/images/optimized/growth-team-start-640.webp
-├───OK─── http://localhost:8000/images/optimized/product-operating-model-640.webp
-├───OK─── http://localhost:8000/images/optimized/ceremony-cadence-640.webp
-├───OK─── http://localhost:8000/images/optimized/growth-team-end-640.webp
-├───OK─── http://localhost:8000/images/optimized/everest-ascent-large-640.webp
-├───OK─── http://localhost:8000/images/optimized/olp-v4-640.webp
-├───OK─── http://localhost:8000/images/optimized/olp-v3-640.webp
-├───OK─── http://localhost:8000/images/optimized/olp-v2-640.webp
-├───OK─── http://localhost:8000/images/optimized/olp-v1-640.webp
-├───OK─── http://localhost:8000/images/optimized/olp-v0-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-reference-signup-1-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-reference-signup-2-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-reference-signup-3-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-reference-signup-4-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-reference-signup-5-640.webp
-├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-1-640.webp
-├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-2-640.webp
-├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-3-640.webp
-├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-5-640.webp
-├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-6-640.webp
-├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-7-640.webp
-├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-9-640.webp
-├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-10-640.webp
-├───OK─── http://localhost:8000/images/optimized/signup-tvos-screen-11-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-1-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-2-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-3-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-4-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-5-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-6-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-signup-vision-7-640.webp
-├───OK─── http://localhost:8000/images/optimized/tv-off-device-research-4x1-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney-redemption-flow-640.webp
-├───OK─── http://localhost:8000/images/optimized/b2b2c-canal-offer-640.webp
-├───OK─── http://localhost:8000/images/optimized/b2b2c-choose-plan-640.webp
-├───OK─── http://localhost:8000/images/optimized/b2b2c-account-640.webp
-├───OK─── http://localhost:8000/images/optimized/b2b2c-password-640.webp
-├───OK─── http://localhost:8000/images/optimized/b2b2c-canal-terms-640.webp
-├───OK─── http://localhost:8000/images/optimized/b2b2c-canal-success-640.webp
-├───OK─── http://localhost:8000/images/optimized/everest-north-side-sun-over-tibetan-plateau-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_0-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_1-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_2-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_3-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_4-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_5-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney+-signup-AR-step_4-640.webp
-├───OK─── http://localhost:8000/images/optimized/plan-picker-test-1-640.webp
-├───OK─── http://localhost:8000/images/optimized/plan-picker-test-2-640.webp
-├───OK─── http://localhost:8000/images/optimized/plan-picker-test-3-640.webp
-├───OK─── http://localhost:8000/images/optimized/plan-picker-test-4-640.webp
-├───OK─── http://localhost:8000/images/optimized/plan-picker-test-5-640.webp
-├───OK─── http://localhost:8000/images/optimized/plan-picker-test-slide-640.webp
-├───OK─── http://localhost:8000/images/optimized/workshop-agenda-640.webp
-├───OK─── http://localhost:8000/images/optimized/bundle-workshop-wireframes-640.webp
-├───OK─── http://localhost:8000/images/optimized/everest-descent-640.webp
-Finished! 100 links found. 42 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/disney-groupwatch/
-├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/GW-Demo_02-24.mp4
-├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-cover-640.webp
-├───OK─── http://localhost:8000/images/optimized/doublediamond-discover-161.webp
-├───OK─── http://localhost:8000/images/optimized/wewatch-interview-participants-5x2-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-patent-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-workshop-640.webp
-├───OK─── http://localhost:8000/images/optimized/doublediamond-define-161.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-visiontype-mocks-640.webp
-├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/WeWatch_VideoDemo.mp4
-├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame1-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame2-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame3-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame4-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-tenets-640.webp
-├───OK─── http://localhost:8000/images/optimized/doublediamond-develop-161.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-ixd-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-invite-v1-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-invite-v2-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v1-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v2-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v3-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v4-640.webp
-├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/groupwatch-motion-mobile.mp4
-├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/groupwatch-motion-tv.mp4
-├───OK─── http://localhost:8000/images/optimized/groupwatch-reactions-ideation-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-reactions-final-640.webp
-├───OK─── http://localhost:8000/images/optimized/doublediamond-deliver-161.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-tv-desired-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-tv-actual-640.webp
-├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/GWMPT.mp4
-├───OK─── http://localhost:8000/images/optimized/groupwatch-marketing-640.webp
-├───OK─── http://localhost:8000/images/optimized/press-640.webp
-├───OK─── http://localhost:8000/images/optimized/social-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-metrics-640.webp
-Finished! 58 links found. 24 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/disney-enterprise/
-├───OK─── http://localhost:8000/images/optimized/ivan-cockpit-640.webp
-├───OK─── http://localhost:8000/images/optimized/exd-roi-framework-640.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-linda-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-caroline-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-dan-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-alexaf-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-daria-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-takeem-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-alexac-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-jenny-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-willet-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-sarah-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-kda-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-cathy-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-carol-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-jon-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-agency-340.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-Golden-Circle-640.webp
-├───OK─── http://localhost:8000/images/portfolio/culture-workshop/EXD-workshop-timelapse.mp4
-├───OK─── http://localhost:8000/images/optimized/exd-pods-640.webp
-├───OK─── http://localhost:8000/images/optimized/props-list-640.webp
-├───OK─── http://localhost:8000/images/optimized/genie-campaign-640.webp
-├───OK─── http://localhost:8000/images/optimized/genie-offers-640.webp
-├───OK─── http://localhost:8000/images/optimized/baymax-customer-640.webp
-├───OK─── http://localhost:8000/images/optimized/baymax-search_results-640.webp
-├───OK─── http://localhost:8000/images/optimized/baymax-cancel-640.webp
-├───OK─── http://localhost:8000/images/optimized/galaxy-localization-1-640.webp
-├───OK─── http://localhost:8000/images/optimized/galaxy-v1-640.webp
-├───OK─── http://localhost:8000/images/optimized/galaxy-push-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney-content-strategy-640.webp
-├───OK─── http://localhost:8000/images/optimized/polaris-search-640.webp
-├───OK─── http://localhost:8000/images/optimized/polaris-visualbrowse-640.webp
-├───OK─── http://localhost:8000/images/optimized/polaris-set-pcs-640.webp
-├───OK─── http://localhost:8000/images/optimized/polaris-edit_cta-640.webp
-├───OK─── http://localhost:8000/images/optimized/polaris-collection-640.webp
-├───OK─── http://localhost:8000/images/optimized/polaris-browse-640.webp
-├───OK─── http://localhost:8000/images/optimized/optumus-session-640.webp
-├───OK─── http://localhost:8000/images/optimized/optumus-dashboard-640.webp
-├───OK─── http://localhost:8000/images/optimized/optumus-spotlight-640.webp
-├───OK─── http://localhost:8000/images/optimized/weaponx-dashboard-640.webp
-├───OK─── http://localhost:8000/images/optimized/weaponx-640.webp
-├───OK─── http://localhost:8000/images/optimized/dataportal-640.webp
-├───OK─── http://localhost:8000/images/optimized/exd-design-system-overview-640.webp
-├───OK─── http://localhost:8000/images/optimized/trek-inputs-640.webp
-├───OK─── http://localhost:8000/images/optimized/trek-colors-640.webp
-├───OK─── http://localhost:8000/images/optimized/trek-type-640.webp
-├───OK─── http://localhost:8000/images/optimized/trek-navigation-640.webp
-├───OK─── http://localhost:8000/images/optimized/trek-buttons-640.webp
-├───OK─── http://localhost:8000/images/optimized/commerce-offer-detail-640.webp
-├───OK─── http://localhost:8000/images/optimized/sisu-customer-details-640.webp
-├───OK─── http://localhost:8000/images/optimized/messaging-new-email-640.webp
-├───OK─── http://localhost:8000/images/optimized/cypher-dictionary-640.webp
-├───OK─── http://localhost:8000/images/optimized/content-portal-episode-640.webp
-├───OK─── http://localhost:8000/images/optimized/knowsmore-640.webp
-├───OK─── http://localhost:8000/images/optimized/qos-spotlight-640.webp
-├───OK─── http://localhost:8000/images/optimized/experiments-results-640.webp
-├───OK─── http://localhost:8000/images/optimized/ads-mission-control-scheduling-640.webp
-├───OK─── http://localhost:8000/images/optimized/dev-portal-640.webp
-Finished! 106 links found. 48 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/espn/
-├───OK─── http://localhost:8000/images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
-├───OK─── http://localhost:8000/images/optimized/espn-masthead-2x1-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn-ppv-1-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn-ppv-2-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn-ppv-3-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn-ppv-3a-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn-ppv-4-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn-ppv-3b-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn-ppv-3c-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn+_01-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn+_09-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn+_02-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn+_07-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn+_06-640.webp
-├───OK─── http://localhost:8000/images/optimized/espn+_10-640.webp
-├───OK─── http://localhost:8000/images/optimized/starplus-1-640.webp
-├───OK─── http://localhost:8000/images/optimized/starplus-3-640.webp
-├───OK─── http://localhost:8000/images/optimized/starplus-4-640.webp
-├───OK─── http://localhost:8000/images/optimized/starplus-2-640.webp
-├───OK─── http://localhost:8000/images/optimized/comboplus-640.webp
-├───OK─── http://localhost:8000/images/optimized/comboplus-signup-success-640.webp
-├───OK─── http://localhost:8000/images/optimized/starplus-5-640.webp
-├───OK─── http://localhost:8000/images/optimized/starplus-640.webp
-├───OK─── http://localhost:8000/images/optimized/starplus-6-640.webp
-├───OK─── http://localhost:8000/images/portfolio/espn/SportsCenter_plus.mp4
-Finished! 51 links found. 26 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/nhl/
-├───OK─── http://localhost:8000/images/portfolio/nhl/nhl-masthead.mp4
-├───OK─── http://localhost:8000/images/optimized/nhl-devices@2x-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-highlights-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-scores-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-player_info-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-favorites-640.webp
-├───OK─── http://localhost:8000/images/optimized/bug-ps4-timestamp-playhead-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-player-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-aroundtheleague-shelf-640.webp
-├───OK─── http://localhost:8000/images/portfolio/nhl/nhl-around-the-league.mp4
-├───OK─── http://localhost:8000/images/optimized/nhl-aroundtheleague-pip-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-mobile-video-before-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-mobile-video-after-607.webp
-├───OK─── http://localhost:8000/images/portfolio/nhl/1a-Mobile-Video-Improvements.mp4
-├───OK─── http://localhost:8000/images/portfolio/nhl/on-the-fly.mp4
-├───OK─── http://localhost:8000/images/optimized/gameflow_01-640.webp
-├───OK─── http://localhost:8000/images/optimized/gameflow_03-640.webp
-├───OK─── http://localhost:8000/images/optimized/gameflow_02-640.webp
-├───OK─── http://localhost:8000/images/optimized/gameflow_05-640.webp
-├───OK─── http://localhost:8000/images/optimized/gameflow_04-640.webp
-├───OK─── http://localhost:8000/images/optimized/gameflow_06-640.webp
-├───OK─── http://localhost:8000/images/portfolio/nhl/GameFlow-Demo.mp4
-Finished! 49 links found. 27 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/blogtalkradio/
-├───OK─── http://localhost:8000/images/optimized/btr-customer-experience-map-hosts-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-studio-live-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-studio-pre-show-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-studio-ad-break-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-studio-imac-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-ad-editor-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-stats-home-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-stats-episode-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-dashboard-laptop-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-CRUD-edit-info-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-CRUD-create-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-CRUD-edit-advanced-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-select-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-transcript-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-host-artwork-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-homepage-640.webp
-Finished! 42 links found. 25 excluded. 0 broken.
-
 Getting links from: http://localhost:8000/portfolio/flint-and-silicon/
-├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-masthead-640.webp
+├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-masthead-640.gif
 Finished! 22 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/team-charter-workshop/
-├───OK─── http://localhost:8000/images/optimized/workshop-plan-doc-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-trading-cards-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-voting-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-headsdown-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-values-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-elevator-640.webp
+├───OK─── http://localhost:8000/images/optimized/workshop-plan-doc-640.gif
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-trading-cards-640.gif
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-voting-640.gif
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-headsdown-640.gif
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-values-640.gif
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-elevator-640.gif
 Finished! 32 links found. 26 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/design-prototyping-201/
-├───OK─── http://localhost:8000/images/optimized/bamtech-prototyping-masthead-640.webp
+├───OK─── http://localhost:8000/images/optimized/bamtech-prototyping-masthead-640.gif
 Finished! 23 links found. 22 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/fusion-family-feast/
 Finished! 22 links found. 22 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/steelgills/
-├───OK─── http://localhost:8000/images/optimized/steelgills-teaser-640.webp
+├───OK─── http://localhost:8000/images/optimized/steelgills-teaser-640.gif
 Finished! 24 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/pal-9100/
-├───OK─── http://localhost:8000/images/optimized/PAL9100-desktop-640.webp
+├───OK─── http://localhost:8000/images/optimized/PAL9100-desktop-640.gif
 ├───OK─── http://localhost:8000/images/portfolio/pal-9100/PAL9100-prototype-breadboard.mp4
-├───OK─── http://localhost:8000/images/optimized/PAL9100-default-640.webp
-├───OK─── http://localhost:8000/images/optimized/PAL9100-active-640.webp
+├───OK─── http://localhost:8000/images/optimized/PAL9100-default-640.gif
+├───OK─── http://localhost:8000/images/optimized/PAL9100-active-640.gif
 Finished! 26 links found. 22 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/boids/
@@ -475,11 +439,44 @@ Getting links from: http://localhost:8000/portfolio/boids/
 ├───OK─── http://localhost:8000/gaia/boids/
 Finished! 22 links found. 20 excluded. 0 broken.
 
+Getting links from: http://localhost:8000/blog/design-quality/
+Finished! 24 links found. 24 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/blog/bike-tour-2024/
+├───OK─── http://localhost:8000/images/optimized/gapco-potomac-preview-1440.webp
+├───OK─── http://localhost:8000/images/optimized/gapco-potomac-preview-640.gif
+├───OK─── http://localhost:8000/images/blog/gapco-potomac-lo.mp4
+├───OK─── http://localhost:8000/images/blog/gapco-potomac-hi.mp4
+├───OK─── http://localhost:8000/blog/bike-tour-2023
+├───OK─── http://localhost:8000/images/optimized/gapco-penn-station-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-big-bend-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-autumn-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-steel-city-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-industrial-zone-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-rig-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-single-track-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-morning-whiteout-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-tunnel-short-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-morning-mist-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-path-bridge-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-panorama-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-masondixon-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-antietam-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-selfie-lock-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-great-falls-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-japanese-garden-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-capitol-640.gif
+├───OK─── http://localhost:8000/images/optimized/gapco-lincoln-sunset-640.gif
+├───OK─── http://localhost:8000/tags/cycling
+├───OK─── http://localhost:8000/tags/travel
+├───OK─── http://localhost:8000/tags/bike-touring
+├───OK─── http://localhost:8000/tags/adventure
+Finished! 54 links found. 26 excluded. 0 broken.
+
 Getting links from: http://localhost:8000/blog/growth-design-idioms/
 ├───OK─── http://localhost:8000/tags/ui
 ├───OK─── http://localhost:8000/tags/usability
-├───OK─── http://localhost:8000/tags/capitalism
-Finished! 26 links found. 23 excluded. 0 broken.
+Finished! 26 links found. 24 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/intentional-consumption/
 ├───OK─── http://localhost:8000/tags/music
@@ -491,15 +488,15 @@ Finished! 28 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/bike-tour-2023/
 ├───OK─── http://localhost:8000/images/blog/vt-ride-720p.mp4
-├───OK─── http://localhost:8000/images/optimized/bike-tour-2023-route-v1-640.webp
-├───OK─── http://localhost:8000/images/optimized/bike-tour-2023-route-v2-640.webp
-├───OK─── http://localhost:8000/images/optimized/bike-tour-bike-640.webp
-├───OK─── http://localhost:8000/images/optimized/bike-tour-gear-640.webp
+├───OK─── http://localhost:8000/images/optimized/bike-tour-2023-route-v1-640.gif
+├───OK─── http://localhost:8000/images/optimized/bike-tour-2023-route-v2-640.gif
+├───OK─── http://localhost:8000/images/optimized/bike-tour-bike-640.gif
+├───OK─── http://localhost:8000/images/optimized/bike-tour-gear-640.gif
 Finished! 50 links found. 45 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/design-for-durability/
-├───OK─── http://localhost:8000/images/optimized/cannondale-caad-optimo-105-640.webp
-├───OK─── http://localhost:8000/images/optimized/reduce-reuse-recycle-640.webp
+├───OK─── http://localhost:8000/images/optimized/cannondale-caad-optimo-105-640.gif
+├───OK─── http://localhost:8000/images/optimized/reduce-reuse-recycle-640.gif
 ├───OK─── http://localhost:8000/tags/dieterrams
 Finished! 28 links found. 25 excluded. 0 broken.
 
@@ -520,8 +517,8 @@ Getting links from: http://localhost:8000/blog/travel-made-me-a-better-designer/
 Finished! 28 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/designers-hierarchy-of-needs/
-├───OK─── http://localhost:8000/images/optimized/pyramid-cover-640.webp
-├───OK─── http://localhost:8000/images/optimized/pyramid-diagram-640.webp
+├───OK─── http://localhost:8000/images/optimized/pyramid-cover-640.gif
+├───OK─── http://localhost:8000/images/optimized/pyramid-diagram-640.gif
 ├───OK─── http://localhost:8000/tags/mission
 ├───OK─── http://localhost:8000/tags/teamwork
 ├───OK─── http://localhost:8000/tags/culture
@@ -571,6 +568,21 @@ Finished! 29 links found. 26 excluded. 0 broken.
 Getting links from: http://localhost:8000/blog/rss.xml
 Error: Expected type "text/html" but got "application/xml"
 
+Getting links from: http://localhost:8000/tags/design-strategy
+Finished! 20 links found. 20 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/design
+Finished! 53 links found. 53 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/process
+Finished! 29 links found. 29 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/hiring
+Finished! 19 links found. 19 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/capitalism
+Finished! 20 links found. 20 excluded. 0 broken.
+
 Getting links from: http://localhost:8000/tags/brooklyn
 Finished! 21 links found. 21 excluded. 0 broken.
 
@@ -595,14 +607,17 @@ Finished! 21 links found. 21 excluded. 0 broken.
 Getting links from: http://localhost:8000/tags/futurism
 Finished! 24 links found. 24 excluded. 0 broken.
 
-Getting links from: http://localhost:8000/tags/design
-Finished! 51 links found. 51 excluded. 0 broken.
+Getting links from: http://localhost:8000/tags/momentum
+Finished! 21 links found. 21 excluded. 0 broken.
 
-Getting links from: http://localhost:8000/tags/process
+Getting links from: http://localhost:8000/tags/nature
+Finished! 21 links found. 21 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/leadership
 Finished! 28 links found. 28 excluded. 0 broken.
 
-Getting links from: http://localhost:8000/tags/design-strategy
-Finished! 19 links found. 19 excluded. 0 broken.
+Getting links from: http://localhost:8000/gaia/boids/
+Finished! 2 links found. 2 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/cycling
 Finished! 30 links found. 30 excluded. 0 broken.
@@ -616,26 +631,11 @@ Finished! 24 links found. 24 excluded. 0 broken.
 Getting links from: http://localhost:8000/tags/adventure
 Finished! 24 links found. 24 excluded. 0 broken.
 
-Getting links from: http://localhost:8000/tags/momentum
-Finished! 21 links found. 21 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/nature
-Finished! 21 links found. 21 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/leadership
-Finished! 28 links found. 28 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/gaia/boids/
-Finished! 2 links found. 2 excluded. 0 broken.
-
 Getting links from: http://localhost:8000/tags/ui
 Finished! 19 links found. 19 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/usability
 Finished! 20 links found. 20 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/capitalism
-Finished! 19 links found. 19 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/music
 Finished! 21 links found. 21 excluded. 0 broken.
@@ -736,5 +736,5 @@ Finished! 21 links found. 21 excluded. 0 broken.
 Getting links from: http://localhost:8000/tags/ai-art
 Finished! 21 links found. 21 excluded. 0 broken.
 
-Finished! 2821 links found. 2380 excluded. 0 broken.
+Finished! 2862 links found. 2427 excluded. 0 broken.
 Elapsed time: 1 second

@@ -2,10 +2,6 @@
 
 # {{title}} {data-parallax="50"}
 
-{% if description %}
-{{ description }}{.summary .large data-parallax="50"}
-{% endif %}
-
 {% if bodyclass == "blog post" %}
 
 **{{date | date: "%B %d, %Y" }}**{.date} &bull; {{ content | timeToRead }} to read {.metadata data-parallax="50"}

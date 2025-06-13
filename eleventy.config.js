@@ -58,11 +58,15 @@ module.exports = function(eleventyConfig) {
 
     // optional, output image formats
     // formats: ["auto"],
-    formats: ["webp"],
+    formats: ["webp","gif"],
 
     // optional, output image widths
     // widths: ["auto"],
-    widths: [1024,640,1440],
+    widths: [640,1024,1440],
+
+    sharpOptions: {
+      animated: true,
+    },
 
     filenameFormat: function (id, src, width, format, options) {
       // id: hash of the original image
@@ -70,8 +74,8 @@ module.exports = function(eleventyConfig) {
       // width: current width in px
       // format: current file format
       // options: set of options passed to the Image call
-      let _src = src.split('/').pop().split(".")[0];
-      return `${_src}-${width}.${format}`;
+      let filename = src.split('/').pop().split(".")[0];
+      return `${filename}-${width}.${format}`;
     },
 
    // optional, attributes assigned on <img> override these values.
@@ -97,8 +101,8 @@ module.exports = function(eleventyConfig) {
   // ========================================
   // FILTERS, TRANSFORMATIONS, PROCESSING
 
-  eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.setLibrary('md', markdownLib);
+  eleventyConfig.addPlugin(timeToRead);
 
   eleventyConfig.addPairedShortcode('section', (children,_id,_class) => {
     let result = `<section`;
@@ -149,7 +153,6 @@ module.exports = function(eleventyConfig) {
   // ========================================
   // BUILD ASSETS
   eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
-
   eleventyConfig.addPassthroughCopy({"src/robots.txt": "/robots.txt" });
   eleventyConfig.addPassthroughCopy({"src/images/favicon/favicon.ico":"favicon.ico"});
 

@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: false
 cssfile: "css/pages/home.css"
 ---
 
-{% section "bio","full-width" %}
+{% section "bio","full-grid" %}
 
 # Hello there.
 
@@ -15,18 +15,17 @@ My family calls me **Brian**. My friends call me **BMC[\*](#killabmc){onclick="e
 
 Short for "killaBMC", my genuine wu-tang-name betrothed by the GZA{#killabmc .tooltip}
 
-![Portrait of Brian](/images/profile/mrbmc-20241121.jpeg) {.portrait  .blur-in}
+![Portrait of Brian](/images/profile/headshot-slash.png) {.portrait  .blur-in}
+
+<canvas id="gradient-canvas"></canvas>
 
 {% endsection %}
-
-
-{% comment %}
-<canvas id="gradient-canvas"></canvas>
 <script type="module" language="javascript">
     import { Gradient } from "/js/gradient.js";
     const gradient = new Gradient();
     gradient.initGradient("#gradient-canvas");
 </script>
+{% comment %}
 {% endcomment %}
 
 {% include "_project-list.md", projectList: collections.work, heading: false, count: 6, class: "full-grid", description:false %}

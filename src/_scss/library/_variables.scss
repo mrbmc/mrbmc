@@ -6,36 +6,36 @@
 // -------------------------
 $system-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 $sans-font-family: "Monument","Helvetica Neue", $system-font-family;
-$serif-font-family: "Cormorant Garamond", "Palatino", "Georgia", "Roboto Serif", Times, serif;
+$serif-font-family: "Cormorant", "Palatino", "Georgia", "Roboto Serif", Times, serif;
 $mono-font-family: "Courier New", monospace;
 $base-font-family: $sans-font-family;
 $base-font-weight: 400;
 $bold-font-weight: 600;
+$serif-font-weight: 500;
 $base-font-size: 1.5em;
 //math.div(24, 16);
 //16px is the browser default so the numerator is your desired p size
 $base-line-height: 1.38em;
-$serif-font-weight: 200;
 $small-font-size: .81em;
 $large-font-size: 1.19em;
 $heading-font-family: $base-font-family;
-$heading-font-weight: $bold-font-weight;
+$heading-font-weight: $base-font-weight;
 $heading-font-kerning: -0.025em;
 $heading-line-height: 1.2;
 $display-font-family: $base-font-family;
 $display-font-weight: $base-font-weight;
 $display-font-kerning: -0.0375em;
 $display-line-height: 1.2;
-$navbar-font-family: $base-font-family;
-$navbar-font-weight: $base-font-weight;
+$navbar-font-family: $heading-font-family;
+$navbar-font-weight: $heading-font-weight;
 
 // GRID
 // --------------------------------------------------
-$grid-width: 42rem;
+$grid-width: 36rem;
 $gutter: 1.38rem;
 $gutter-xl: $base-line-height * 2;
 $grid-columns: 12;
-$grid-column: math.div(($grid-width - (($grid-columns - 1) * $gutter)), $grid-columns);
+// $grid-column: math.div(($grid-width - (($grid-columns - 1) * $gutter)), $grid-columns);
 $grid-margin: calc((100vw - $grid-width) * .5);
 $breakpoint: 767px;
 $breakpoint-widescreen: 1599px;

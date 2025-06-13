@@ -8,15 +8,11 @@
 {% section _heading, _class %}
 
 {% for project in projectList reversed %}{% if forloop.index0 < count %}
-<article class="project{%if bodyclass != "home" %} full{% endif %}">
+<article class="project">
 
 <header>
 
-{% if bodyclass == "home" %}
-#### {{ project.data.title }}
-{% else %}
 #### [{{ project.data.title }}]({{ project.url }})
-{% endif %}
 
 {% if project.data.timeline %}#### {{project.data.timeline}}{.timeline}{% endif %}
 
@@ -26,23 +22,11 @@
 - {{ product }}
 {% endfor %}{.small-type}
 
-{% if project.data.casestudy %}<a href="#" data-part1="b" data-part2="brianmcconnell" data-part3="me" data-part4="Case Study Request: {{project.data.title}}" class="link-email">Case study available</a>{% endif %}
+<span class="muted">{{project.content | timeToRead}} to read</span>  
 
 </header>
 
-{% if bodyclass == "home" %}
-
-<figure>
-	<img src="{{ project.data.thumbnail }}" alt="{{ project.data.title }}" />
-</figure>
-
-{% else %}
-
-<figure>
-	<a href="{{project.url}}"><img src="{{ project.data.thumbnail }}" alt="{{ project.data.title }}" /></a>
-</figure>
-
-{% endif %}
+[![{{ project.data.title }}]({{ project.data.thumbnail }})]({{project.url}}) {.figure}
 
 </article>
 {% endif %}

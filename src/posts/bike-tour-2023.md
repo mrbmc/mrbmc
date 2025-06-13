@@ -13,9 +13,11 @@ tags:
 
 <video src="/images/blog/vt-ride-720p.mp4" autoplay autoplay="autoplay" loop mute muted class="full-width"></video>
 
->**ad·ven·ture**  
->*noun*{.small-type}  
->An unusual and exciting, typically *hazardous*, experience or activity.
+**ad·ven·ture**  
+*/ədˈven(t)SHər/*{.small-type}  
+*noun*{.small-type}  
+An unusual and exciting, typically *hazardous*, experience or activity.
+{.card}
 
 In August 2023 I rode my bike across the Green Mountains of Vermont, zig-zagging over mountain passes, abandoned logging roads, and working dairy farms. It was the most demanding endurance challenge of my life (maybe). It provided an extended opportunity for reflection on why we do hard things. 
 

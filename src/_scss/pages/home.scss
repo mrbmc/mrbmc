@@ -9,22 +9,24 @@
 @use '../components/post-list';
 
 body.home {
-  main {
-    // padding-top: 0;
+
+  #header {
+    position: absolute;
+    background: transparent;
   }
 
    #bio {
       box-sizing: border-box;
       position: relative;
-      padding: 0 var(--gutter);
-      height: calc(100vh - var(--navbar-height) - var(--navbar-height));
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      overflow: hidden;
+      margin-bottom: var(--gutter-xl);
 
 
       p.portrait {
-        border-radius: var(--border-radius-xl);
         overflow: hidden;
 
         img {
@@ -43,11 +45,26 @@ body.home {
         width: 25vw !important;
       }
 
+      &:before {
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        filter: url(#noiseFilter) opacity(10%);
+      }
+
       @media (min-width:lib.$breakpoint) {
-        $pic-size: 32vw;
+        $pic-w: 62vh;
+        $pic-h: 100vh;
+        padding-left: var(--gutter);
+        padding-right: var(--gutter);
+        // $pic-size: calc(lib.$grid-width * .33);
 
         h1,h2,p {
-          width: calc((100% - $pic-size) - var(--gutter-xl) - var(--gutter-xl));
+          width: calc((100vw - $pic-w) - var(--gutter-xl) - var(--gutter-xl));
         }
         p.large-type:last-of-type {
           margin: 0;
@@ -58,39 +75,44 @@ body.home {
 
         p.portrait {
           position: absolute;
-          right: lib.$gutter;
+          right: 0;
           top: 50%;
-          width: calc($pic-size);
-          margin: ($pic-size * -.5) 0 0 0;
+          width: $pic-w;
+          height: $pic-h;
+          margin: ($pic-h * -.5) 0 0 0;
+          img {
+            height: 100%;
+          }
         }
 
       }
 
     }
 
-  // #gradient-canvas, #masthead canvas {
-  //   display: none;
-  //   position: absolute;
-  //   z-index: 0;
-  //   $scaler: 1;
-  //   width: 100% * $scaler;
-  //   height: 100% * $scaler;
-  //   left: 50% * ($scaler - 1) * -1;
-  //   top: 50% * ($scaler - 1) * -1;
+  #gradient-canvas, #masthead canvas {
+    // display: none;
+    position: absolute;
+    z-index: -1;
+    $scaler: 1;
+    width: 100% * $scaler;
+    height: 100% * $scaler;
+    left: 50% * ($scaler - 1) * -1;
+    top: 50% * ($scaler - 1) * -1;
+    opacity: .15;
 
-  //   //full color
-  //   // --gradient-color-1: var(--primary);
-  //   // --gradient-color-2: var(--secondary);
-  //   // --gradient-color-3: var(--tertiary);
-  //   // --gradient-color-4: var(--primary);
+    //full color
+    --gradient-color-1: var(--primary);
+    --gradient-color-2: var(--secondary);
+    --gradient-color-3: var(--tertiary);
+    --gradient-color-4: var(--primary);
 
-  //   // grayscale
-  //   --gradient-color-1: #{lib.$neutral-10};
-  //   --gradient-color-2: #{lib.$neutral-30};
-  //   --gradient-color-3: #{lib.$neutral-50};
-  //   --gradient-color-4: #{lib.$neutral-10};
+    // grayscale
+    // --gradient-color-1: #{lib.$neutral-10};
+    // --gradient-color-2: #{lib.$neutral-30};
+    // --gradient-color-3: #{lib.$neutral-50};
+    // --gradient-color-4: #{lib.$neutral-10};
 
-  // }
+  }
 
   .project-list {
     display: grid;

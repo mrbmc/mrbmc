@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"font-",
+				"font-family"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"line",
+				"linear-gradient()"
+			],
+			[
+				"time",
+				"timeToRead"
+			],
+			[
+				"c",
+				"column"
+			],
+			[
 				"he",
 				"height"
 			],
@@ -158,10 +178,6 @@
 			[
 				"ma",
 				"margin"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"box-s",
@@ -498,45 +514,39 @@
 			[
 				"wekl",
 				"well-background"
-			],
-			[
-				"brand-c",
-				"brand-color"
-			],
-			[
-				"brand-co",
-				"brand-color"
-			],
-			[
-				"grid-ga",
-				"grid-column-gap"
-			],
-			[
-				"bra",
-				"brand-color"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/Users/brianmcconnell/Desktop/mainscreen.c",
+			"file": "src/blog.md",
 			"settings":
 			{
-				"buffer_size": 12961,
+				"buffer_size": 199,
 				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "#include \"lvgl.h\""
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/_scss/pages/post.scss",
+			"settings":
+			{
+				"buffer_size": 1085,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
 				[
+					5,
 					1,
-					1,
-					"paste",
-					null,
-					"AQAAAAAAAAAAAAAAoTIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAMIAAAAAAAAAxQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAA"
 				]
 			]
 		}
@@ -605,15 +615,19 @@
 		"selected_items":
 		[
 			[
+				"t",
+				"Terminus: Toggle Panel"
+			],
+			[
 				"tog",
 				"Terminus: Toggle Panel"
 			],
 			[
-				"to",
-				"Terminus: Toggle Panel"
+				"sort",
+				"Sort Lines"
 			],
 			[
-				"t",
+				"to",
 				"Terminus: Toggle Panel"
 			],
 			[
@@ -651,10 +665,6 @@
 			[
 				"ter",
 				"Terminus: Toggle Panel"
-			],
-			[
-				"sort",
-				"Sort Lines"
 			],
 			[
 				"remove",
@@ -946,75 +956,105 @@
 	"expanded_folders":
 	[
 		"/Users/brianmcconnell/Sites/mrbmc",
-		"/Users/brianmcconnell/Sites/mrbmc/src"
+		"/Users/brianmcconnell/Sites/mrbmc/src",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages"
 	],
 	"file_history":
 	[
-		"/Users/brianmcconnell/Sites/bootbox-UI/diagram.json",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_post-list.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_project-list.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/portfolio.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/index.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_project-list.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_colors.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_root.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/home.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_type.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_header.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_variables.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/package.json",
+		"/Users/brianmcconnell/Sites/mrbmc/src/about.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/portfolio.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/404.md",
+		"/Users/brianmcconnell/Sites/mrbmc/eleventy.config.js",
 		"/Users/brianmcconnell/Sites/mrbmc/gulpfile.js",
-		"/Users/brianmcconnell/Desktop/resume-disney.md",
-		"/Users/brianmcconnell/Sites/mrbmc/link-report.log",
+		"/Users/brianmcconnell/Sites/mrbmc/src/blog.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/tags.md",
+		"/Users/brianmcconnell/Sites/mrbmc/node_modules/eleventy-plugin-time-to-read/index.js",
+		"/Users/brianmcconnell/Sites/mrbmc/node_modules/eleventy-plugin-time-to-read/components/measure-time.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/post-detail.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/rss.njk",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_post-list.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_masthead.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_molecules.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_grid.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/project-detail.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_atoms.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/metrics.sh",
+		"/Users/brianmcconnell/Sites/mrbmc/mrbmc.sublime-project",
+		"/Users/brianmcconnell/Library/Application Support/Sublime Text 3/Packages/User/SublimeOnSaveBuild.sublime-settings",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_sticky-nav.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-enterprise.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/project.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/about.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_mixins.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_footer.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/posts/bike-tour-2024.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/gallery-inline.js",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/blogtalkradio.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/posts/bike-tour-2023.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/pal-9100.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhltv.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhlgameflow.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhl.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/eurosport.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/espnvision.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/espn.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_leadership.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_process.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-groupwatch.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth-long.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_work-list.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/resume.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/post.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_gallery-inline.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/photos.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_footer.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-agents.txt",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/bogus.log",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/bogus_filter.txt",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-urls.txt",
+		"/Users/brianmcconnell/Sites/mrbmc/src/colophon.md",
+		"/Users/brianmcconnell/Sites/mrbmc/link-report.log",
+		"/Users/brianmcconnell/Sites/mrbmc/src/cv.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/design.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_principles.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_header.html",
+		"/Users/brianmcconnell/Desktop/mainscreen.c",
+		"/Users/brianmcconnell/Sites/bootbox-UI/diagram.json",
+		"/Users/brianmcconnell/Desktop/resume-disney.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/boids.md",
 		"/Users/brianmcconnell/Sites/mrbmc/build.sh",
-		"/Users/brianmcconnell/Sites/mrbmc/src/about.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio.md",
-		"/Users/brianmcconnell/Sites/mrbmc/mrbmc.sublime-project",
 		"/Users/brianmcconnell/Sites/mrbmc/src/work.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_project-list.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/portfolio.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/package.json",
-		"/Users/brianmcconnell/Sites/mrbmc/eleventy.config.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_type.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_atoms.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/home.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/index.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_project-list.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/design.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_header.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/team-charter-workshop.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/flint-and-silicon.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/design-prototyping-201.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_process.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_principles.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/about.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-urls.txt",
-		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-agents.txt",
 		"/Users/brianmcconnell/Sites/mrbmc/metrics/logs/log_clean_2025-04",
-		"/Users/brianmcconnell/Sites/mrbmc/metrics/metrics.sh",
 		"/Users/brianmcconnell/Sites/mrbmc/metrics/logs/investigation.log",
 		"/Users/brianmcconnell/Sites/mrbmc/src/robots.txt",
 		"/Users/brianmcconnell/Library/CloudStorage/GoogleDrive-thebmc@gmail.com/My Drive/Documents/Resumé SRC/LLM files/jd-unily.txt",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_root.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_variables.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout.html",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/post-detail.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/post.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/project.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/blog.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/steelgills.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_header.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/colophon.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_js/portfolio.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-enterprise.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_molecules.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_grid.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_colors.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_index.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/blogtalkradio.md",
 		"/Users/brianmcconnell/Sites/mrbmc/www/css/pages/project.css",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/screen.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/posts/growth-design-idioms.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_mixins.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_sticky-nav.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/posts/bike-tour-2023.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-groupwatch.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth-long.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/espn.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhl.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/project-detail.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_masthead.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/.obsidian/types.json",
 		"/Users/brianmcconnell/Sites/mrbmc/src/posts/posts.json",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_masthead.scss",
@@ -1023,8 +1063,6 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/_project-detail.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/projects.json",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/post-detail.html",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_gallery-inline.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_js/gallery-inline.js",
 		"/Users/brianmcconnell/Sites/mrbmc/node_modules/lodash/_root.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_molecules.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_animation.scss",
@@ -1032,30 +1070,16 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_root.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_type.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/blog.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_leadership.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/espnvision.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/eurosport.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_atoms.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhlgameflow.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/nhltv.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/pal-9100.md",
 		"/Users/brianmcconnell/Sites/mrbmc/www/css/pages/photos.css",
 		"/Users/brianmcconnell/Sites/mrbmc/backup/2023/src/_less/_gallery.less",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_post-list.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/tags.md",
 		"/Users/brianmcconnell/Desktop/jd.txt",
 		"/Users/brianmcconnell/Desktop/resume.txt",
 		"/Users/brianmcconnell/Desktop/pvp.txt",
-		"/Users/brianmcconnell/Sites/mrbmc/src/blog.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_post-list.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_footer.html",
 		"/Users/brianmcconnell/Sites/mrbmc/backup/2003/less/_variables.less",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_data/site.json",
 		"/Users/brianmcconnell/Sites/mrbmc/src/photos.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/photos.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/_photos.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/colophon.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_work-list.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/links.md",
 		"/Users/brianmcconnell/Sites/kageki/data-maker.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_work.md",
@@ -1066,28 +1090,21 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/boids.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/life.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/life.html",
-		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/smoke.html",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_js/smoke.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/three.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/images/portfolio/disney-growth/product-operating-model.svg",
-		"/Users/brianmcconnell/Desktop/spring-post.txt",
-		"/Users/brianmcconnell/Desktop/personal-intro.txt",
-		"/Users/brianmcconnell/Desktop/spring-jd.txt",
-		"/Users/brianmcconnell/Desktop/resumé.txt",
-		"/Users/brianmcconnell/Desktop/instacart-jd",
-		"/Users/brianmcconnell/Sites/mrbmc/src/cv.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/posts/leadership-in-nature.md",
-		"/Users/brianmcconnell/Sites/mrbmc/www/css/pages/about.css"
+		"/Users/brianmcconnell/Sites/mrbmc/src/gaia/smoke.html"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
 		"height": 101.0,
 		"where_history":
 		[
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scss,<project filters>",
+			"/Users/brianmcconnell/Sites/mrbmc/src/_scsss,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src/projects,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src/posts,<project filters>",
@@ -1211,18 +1228,93 @@
 			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src/,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>",
-			"/Users/brianmcconnell/Sites/mrbmc/src,<project filters>",
 			"/Users/brianmcconnell/Sites/mrbmc/src/_less,<project filters>"
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"content",
+			"figure",
+			"\\.project",
+			"upper",
+			"display\\-font\\-family",
+			"navbar\\-font\\-family",
+			"jpg",
+			"canzoom",
+			"serif",
+			"Cormorant",
+			"coromant",
+			"serif",
+			"fonts\\.google",
+			"readingTime",
+			"images",
+			"Time\\-to\\-read's input",
+			"readingTime",
+			"reading\\-time",
+			"reading-time",
+			"getSimilarCategories",
+			"htmlmin",
+			"markdownLib",
+			"timeToRead",
+			"content",
+			"input",
+			"\\.full-width",
+			"full-width-90",
+			"timeToRead",
+			"readingTime",
+			"timeToRead",
+			"full",
+			"portrait",
+			"verbose",
+			"erbose",
+			"log",
+			"upload",
+			"cmd",
+			"sticky-nav",
+			"\\-\\-white",
+			"white-semi",
+			"sticky",
+			"sticky\\-nav",
+			"stick",
+			"border\\-radius",
+			"border",
+			"well\\-bold\\-color",
+			"hero\\-bold\\-color",
+			"full\\-width\\-bak",
+			"###",
+			"full-grid-bak",
+			"full-width",
+			"full-grid",
+			"full-width",
+			"full-grid",
+			"zoom",
+			"well",
+			"blockquote",
+			"\\-\\-hero\\-foreground",
+			"\\-\\-hero\\-background",
+			"\\-\\-well\\-background",
+			"--well-foreground",
+			"\\-\\-secondary\\-foreground",
+			"\\-\\-text\\-primary",
+			"\\-\\-text\\-secondary",
+			"\\-text\\-color",
+			"-text-color",
+			"primary\\-inverse",
+			"raw",
+			"grep",
+			"$",
+			"^",
+			"([0-9]{1,3}\\.){3}([0-9]{1,3})",
+			"usage",
+			"flag_help",
+			"196.251",
+			"Pelikan",
+			"MonumentGrotesk",
+			"Brian_McConnell-Resume",
+			"404",
 			"S3BUCKET",
 			"BROKEN",
 			"├─BROKEN─",
@@ -1271,86 +1363,7 @@
 			"images/favicon",
 			"pullright",
 			"pull-right",
-			"scrolled",
-			"raising exposure",
-			"project-l",
-			"initMosaics",
-			"well",
-			"Net Subs",
-			"RFE",
-			"\\s\\s+\\|",
-			"             ",
-			"\\.section",
-			"\\.section ",
-			"## ",
-			"##",
-			"buildJS",
-			"buildHTMLDev",
-			"buildHTML",
-			"well",
-			"\\.well",
-			"compileCSSPro",
-			"compileCSS",
-			"compileCSSDev",
-			"compileCSS",
-			"compileCSSDev",
-			"compileCSS",
-			"compileCSSDev",
-			"compileCSS",
-			"css",
-			"\\$mono\\-font\\-family",
-			"```",
-			"``",
-			"`",
-			"\\`",
-			"`",
-			"\\<pre",
-			"\\<code",
-			"code",
-			"navbar\\-font\\-weight",
-			"heading\\-kerning",
-			"kerning",
-			"\\-\\-navbar",
-			"navbar",
-			"\\.serif",
-			"caption",
-			"serif",
-			"sticky\\-nav",
-			"stickynav",
-			"sticky",
-			"sticky\\-nav",
-			"sticky-nav",
-			"menu",
-			"noiseImage",
-			"fullHeight",
-			"parallaxHeading",
-			"full",
-			"full-width",
-			"grid\\.well",
-			"summary",
-			"date",
-			"parall",
-			"color",
-			"grid-margin",
-			"full-width",
-			"fullwidth",
-			"lib\\.",
-			"lib",
-			"columns",
-			"library",
-			"lib\\.",
-			"ticking",
-			"onScroll",
-			"scrollSpy",
-			"scrollspy",
-			"blur\\-in",
-			"scrollspy",
-			"mask",
-			"favicon-icon",
-			"img",
-			"eleventyImageTransformPlugin",
-			"popstate",
-			"grid"
+			"scrolled"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1358,6 +1371,23 @@
 		"regex": true,
 		"replace_history":
 		[
+			"muted-emphasized",
+			"accent-emphasized",
+			"full-width",
+			"full-grid",
+			"full-grid-bak",
+			"full-grid",
+			"full-grid-bak",
+			"--accent-foreground",
+			"--accent-background",
+			"--muted-background",
+			"--muted-foreground",
+			"--body-foreground",
+			"--secondary-foreground",
+			"-foreground",
+			"\\tfoobar_text.html",
+			"http-404\\t",
+			"Brian_McConnell-Resume_2025",
 			"images/portfolio/gaia/boids",
 			"\\t",
 			"Engagement",
@@ -1468,24 +1498,7 @@
 			"start_day",
 			"start_da",
 			"start_day",
-			"scrollRange",
-			"GET \\t",
-			"\\1 \\t",
-			"\\1\\t\\2 \\t",
-			"433 \\t",
-			"432 \\t",
-			"790 \\t",
-			"800 \\t",
-			"431 \\t",
-			" ",
-			"585 \\t",
-			"571 \\t",
-			"-\t-      \t-                     \t",
-			"-\t-      \t-\t",
-			"Hit     \\t",
-			"566 \t",
-			"text-secondary",
-			"$text-primary;"
+			"scrollRange"
 		],
 		"reverse": false,
 		"scrollbar_highlights": true,
@@ -1502,27 +1515,55 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/brianmcconnell/Desktop/mainscreen.c",
-					"selected": true,
+					"file": "src/blog.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12961,
+						"buffer_size": 199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								199,
+								199
 							]
 						],
 						"settings":
 						{
-							"auto_name": "#include \"lvgl.h\"",
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"tab_size": 4,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/_scss/pages/post.scss",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1569,19 +1610,25 @@
 	"menu_visible": true,
 	"output.SublimeLinter":
 	{
-		"height": 0.0
+		"height": 0.0,
+		"history":
+		[
+		]
 	},
 	"output.Terminus":
 	{
-		"height": 761.0
+		"height": 234.0
 	},
 	"output.exec":
 	{
-		"height": 172.0
+		"height": 318.0
 	},
 	"output.find_results":
 	{
-		"height": 413.0
+		"height": 413.0,
+		"history":
+		[
+		]
 	},
 	"output.guard":
 	{
@@ -1591,7 +1638,7 @@
 	"project": "mrbmc.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1601,28 +1648,256 @@
 		"selected_items":
 		[
 			[
-				"gulp",
-				"gulpfile.js"
+				"post",
+				"src/_scss/pages/post.scss"
 			],
 			[
-				"link-",
-				"link-report.log"
+				"_post-",
+				"src/_includes/_post-list.md"
 			],
 			[
-				"link",
-				"link-report.log"
+				"blog",
+				"src/blog.md"
 			],
 			[
-				"gu",
-				"gulpfile.js"
+				"portfolio.",
+				"src/_scss/pages/portfolio.scss"
 			],
 			[
 				"portf",
 				"src/portfolio.md"
 			],
 			[
+				"project-list",
+				"src/_includes/_project-list.md"
+			],
+			[
+				"index",
+				"src/index.md"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"_head",
+				"src/_scss/components/_header.scss"
+			],
+			[
+				"_var",
+				"src/_scss/library/_variables.scss"
+			],
+			[
+				"_tye",
+				"src/_scss/base/_type.scss"
+			],
+			[
+				"root",
+				"src/_scss/base/_root.scss"
+			],
+			[
+				"_color",
+				"src/_scss/library/_colors.scss"
+			],
+			[
+				"home",
+				"src/_scss/pages/home.scss"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"elev",
+				"eleventy.config.js"
+			],
+			[
+				"404",
+				"src/404.md"
+			],
+			[
 				"about",
 				"src/about.md"
+			],
+			[
+				"_typ",
+				"src/_scss/base/_type.scss"
+			],
+			[
+				"ele",
+				"eleventy.config.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"post-deta",
+				"src/_layouts/post-detail.md"
+			],
+			[
+				"tags",
+				"src/tags.md"
+			],
+			[
+				"post-list",
+				"src/_includes/_post-list.md"
+			],
+			[
+				"_ty",
+				"src/_scss/base/_type.scss"
+			],
+			[
+				"_type",
+				"src/_scss/base/_type.scss"
+			],
+			[
+				"_masthea",
+				"src/_includes/_masthead.md"
+			],
+			[
+				"project",
+				"src/_layouts/project-detail.md"
+			],
+			[
+				"portfolio",
+				"src/portfolio.md"
+			],
+			[
+				"root.css",
+				"src/_scss/base/_root.scss"
+			],
+			[
+				"atoms",
+				"src/_scss/base/_atoms.scss"
+			],
+			[
+				"post-det",
+				"src/_layouts/post-detail.md"
+			],
+			[
+				"portfolio.scss",
+				"src/_scss/pages/portfolio.scss"
+			],
+			[
+				"projec-list",
+				"src/_scss/components/_project-list.scss"
+			],
+			[
+				"_home",
+				"src/_scss/pages/home.scss"
+			],
+			[
+				"metric",
+				"metrics/metrics.sh"
+			],
+			[
+				"disney-enter",
+				"src/projects/disney-enterprise.md"
+			],
+			[
+				"_colors",
+				"src/_scss/library/_colors.scss"
+			],
+			[
+				"_root",
+				"src/_scss/base/_root.scss"
+			],
+			[
+				"sticky-nav",
+				"src/_scss/components/_sticky-nav.scss"
+			],
+			[
+				"about.scs",
+				"src/_scss/pages/about.scss"
+			],
+			[
+				"disney-",
+				"src/projects/disney-growth.md"
+			],
+			[
+				"_header",
+				"src/_scss/components/_header.scss"
+			],
+			[
+				"footer",
+				"src/_includes/_footer.html"
+			],
+			[
+				"bike tour",
+				"src/posts/bike-tour-2024.md"
+			],
+			[
+				"_grid",
+				"src/_scss/base/_grid.scss"
+			],
+			[
+				"grid.scs",
+				"src/_scss/base/_grid.scss"
+			],
+			[
+				"_Project",
+				"src/_scss/pages/project.scss"
+			],
+			[
+				"_mixin",
+				"src/_scss/library/_mixins.scss"
+			],
+			[
+				"disney-grou",
+				"src/projects/disney-groupwatch.md"
+			],
+			[
+				"_process",
+				"src/_includes/_process.md"
+			],
+			[
+				"blac",
+				"metrics/blacklist-agents.txt"
+			],
+			[
+				"black",
+				"metrics/blacklist-agents.txt"
+			],
+			[
+				"metr",
+				"metrics/metrics.sh"
+			],
+			[
+				"_footer",
+				"src/_scss/components/_footer.scss"
+			],
+			[
+				"colo",
+				"src/colophon.md"
+			],
+			[
+				"link",
+				"link-report.log"
+			],
+			[
+				"leader",
+				"src/_includes/_leadership.md"
+			],
+			[
+				"_princ",
+				"src/_includes/_principles.md"
+			],
+			[
+				"_hea",
+				"src/_includes/_header.html"
+			],
+			[
+				"atom",
+				"src/_scss/base/_atoms.scss"
+			],
+			[
+				"link-",
+				"link-report.log"
+			],
+			[
+				"gu",
+				"gulpfile.js"
 			],
 			[
 				"www/js/mr",
@@ -1645,28 +1920,12 @@
 				"src/_scss/pages/portfolio.scss"
 			],
 			[
-				"project-list",
-				"src/_scss/components/_project-list.scss"
-			],
-			[
-				"ele",
-				"eleventy.config.js"
-			],
-			[
 				"g",
 				"gulpfile.js"
 			],
 			[
-				"pack",
-				"package.json"
-			],
-			[
 				"packa",
 				"package.json"
-			],
-			[
-				"_header",
-				"src/_includes/_header.html"
 			],
 			[
 				"design",
@@ -1679,10 +1938,6 @@
 			[
 				"portfol",
 				"src/portfolio.md"
-			],
-			[
-				"home",
-				"src/_scss/pages/home.scss"
 			],
 			[
 				"team-c",
@@ -1713,10 +1968,6 @@
 				"src/_includes/_principles.md"
 			],
 			[
-				"index",
-				"src/index.md"
-			],
-			[
 				"port",
 				"src/portfolio.md"
 			],
@@ -1725,88 +1976,28 @@
 				"src/work.md"
 			],
 			[
-				"portfolio",
-				"src/portfolio.md"
-			],
-			[
-				"atoms",
-				"src/_scss/base/_atoms.scss"
-			],
-			[
-				"_ty",
-				"src/_scss/base/_type.scss"
-			],
-			[
-				"about.scs",
-				"src/_scss/pages/about.scss"
-			],
-			[
 				"invest",
 				"metrics/logs/investigation.log"
-			],
-			[
-				"metr",
-				"metrics/metrics.sh"
 			],
 			[
 				"2025-04",
 				"metrics/logs/log_clean_2025-04"
 			],
 			[
-				"blac",
-				"metrics/blacklist-urls.txt"
-			],
-			[
 				"robot",
 				"src/robots.txt"
-			],
-			[
-				"_var",
-				"src/_scss/library/_variables.scss"
-			],
-			[
-				"_root",
-				"src/_scss/base/_root.scss"
 			],
 			[
 				"lay",
 				"src/_layouts/layout.html"
 			],
 			[
-				"post-det",
-				"src/_layouts/post-detail.md"
-			],
-			[
-				"post",
-				"src/_scss/pages/post.scss"
-			],
-			[
 				"blog.scs",
 				"src/_scss/pages/blog.scss"
 			],
 			[
-				"_head",
-				"src/_scss/components/_header.scss"
-			],
-			[
-				"disney-enter",
-				"src/projects/disney-enterprise.md"
-			],
-			[
 				"disney",
 				"src/projects/disney-growth.md"
-			],
-			[
-				"project",
-				"src/_scss/pages/project.scss"
-			],
-			[
-				"_grid",
-				"src/_scss/base/_grid.scss"
-			],
-			[
-				"_color",
-				"src/_scss/library/_colors.scss"
 			],
 			[
 				"projec",
@@ -1829,10 +2020,6 @@
 				"src/_scss/screen.scss"
 			],
 			[
-				"_hea",
-				"src/_scss/components/_header.scss"
-			],
-			[
 				"_atoms",
 				"src/_scss/base/_atoms.scss"
 			],
@@ -1849,10 +2036,6 @@
 				"src/_includes/_masthead.md"
 			],
 			[
-				"post-deta",
-				"src/_layouts/post-detail.md"
-			],
-			[
 				"_heade",
 				"src/_scss/components/_header.scss"
 			],
@@ -1863,10 +2046,6 @@
 			[
 				"bike",
 				"src/posts/bike-tour-2024.md"
-			],
-			[
-				"projec-list",
-				"src/_includes/_project-list.md"
 			],
 			[
 				"project-d",
@@ -1921,10 +2100,6 @@
 				"src/_scss/pages/home.scss"
 			],
 			[
-				"atom",
-				"src/_scss/base/_atoms.scss"
-			],
-			[
 				"mixi",
 				"src/_scss/library/_mixins.scss"
 			],
@@ -1969,10 +2144,6 @@
 				"src/_includes/_leadership.md"
 			],
 			[
-				"_princ",
-				"src/_includes/_principles.md"
-			],
-			[
 				"_about",
 				"src/_scss/pages/about.scss"
 			],
@@ -1987,130 +2158,6 @@
 			[
 				"photos",
 				"www/css/pages/photos.css"
-			],
-			[
-				"_gallery",
-				"src/_scss/components/_gallery-inline.scss"
-			],
-			[
-				"_home",
-				"src/_scss/pages/home.scss"
-			],
-			[
-				"post-list",
-				"src/_scss/components/_post-list.scss"
-			],
-			[
-				"screen",
-				"src/_scss/screen.scss"
-			],
-			[
-				"_process",
-				"src/_includes/_process.md"
-			],
-			[
-				"post-de",
-				"src/_layouts/post-detail.html"
-			],
-			[
-				"tags.",
-				"src/tags.md"
-			],
-			[
-				"footer",
-				"src/_includes/_footer.html"
-			],
-			[
-				"blog",
-				"src/blog.md"
-			],
-			[
-				"index.",
-				"src/index.md"
-			],
-			[
-				"scr",
-				"src/_scss/screen.scss"
-			],
-			[
-				"_home.scs",
-				"src/_scss/pages/home.scss"
-			],
-			[
-				"var",
-				"backup/2003/less/_variables.less"
-			],
-			[
-				"-growth",
-				"src/projects/disney-growth.md"
-			],
-			[
-				"groupwat",
-				"src/projects/disney-groupwatch.md"
-			],
-			[
-				"esp",
-				"src/projects/espn.md"
-			],
-			[
-				"gallery-in",
-				"src/_js/gallery-inline.js"
-			],
-			[
-				"gallery.scs",
-				"src/_scss/components/_gallery-inline.scss"
-			],
-			[
-				"mixins",
-				"src/_scss/library/_mixins.scss"
-			],
-			[
-				"root",
-				"src/_scss/_root.scss"
-			],
-			[
-				"site.js",
-				"src/_data/site.json"
-			],
-			[
-				"portfoli",
-				"src/portfolio.md"
-			],
-			[
-				"photos.scs",
-				"src/_scss/_photos.scss"
-			],
-			[
-				"photo",
-				"src/photos.md"
-			],
-			[
-				"header.ht",
-				"src/_includes/_header.html"
-			],
-			[
-				"_roo",
-				"src/_scss/_root.scss"
-			],
-			[
-				"post.",
-				"src/_scss/pages/post.scss"
-			],
-			[
-				"colo",
-				"src/colophon.md"
-			],
-			[
-				"project-list.",
-				"src/_includes/_project-list.md"
-			],
-			[
-				"_type",
-				"src/_scss/_type.scss"
-			],
-			[
-				"process",
-				"src/_includes/_process.md"
 			]
 		],
 		"width": 0.0

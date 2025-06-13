@@ -11,9 +11,13 @@ eleventyExcludeFromCollections: false
 description: The hard truth about design is business constraints define the quality you can achieve.
 ---
 
-Let's talk about design quality and the value of design.
+I want to offer a stupid-simple way to describe "the value of design."
 
-I believe that design quality is a feature you can offer customers. The reality is that some customers will pay for higher-quality design, while others won't. The quality you can achieve is almost always a product of who you're selling to and what you can charge (Total Addressable Market x margin). 
+Defining the value of design is a hot topic of debate among interaction designers. Design pundits and mentors commonly tell young designers they need to "speak the language of the business" to gain influence. Young designers then ask for guidance on how to rationalize the ROI of Design to business leaders. All these people get "wrapped around a tree" trying to frame this question in convoluted ways.
+
+**Design quality is a feature you can offer customers.** It's an additional value that some customers will pay for. Some customers are willing (or able) to invest in products made with more craft, durability, and care. Other customers don't want to make that investment and will instead buy a product offering a lower standard of quality. Some people buy from Ikea while others buy from Room & Board. The quality you can achieve is almost always a product of who you're selling to and what you can charge (Total Addressable Market x margin).
+
+The most common limiting factor on design quality I've seen in my career is not the talent of the design team or the organizational processes. It's market dynamics. If you want to raise the quality of design in your company and product; you need to find a market of customers big enough to pay for it.
 
 A project I'm working on just provided a great example. For context, the product is similar to a smart thermostat. That market has three tiers of design quality (screen resolution, animations, gestures, shading, typography, build quality, etc.). Tier one is Nest and Ecobee Premium; tier two has Sensi, Honeywell T9 and Ecobee Lite; and tier three is the knockoffs, nonames, and nonsense. The product cost in each tier correlates with the design quality, i.e. tier one is 3x more expensive than tier three. 
 

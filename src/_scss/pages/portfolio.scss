@@ -23,7 +23,11 @@ body.work {
     flex-direction: row-reverse;
     gap: var(--gutter-xl);
     align-items: center;
-    header,figure {
+    &.full-grid {
+      padding-left: var(--gutter-xl);
+      padding-right: var(--gutter-xl);
+    }
+    header,.figure {
       flex-basis: 50%;
     }
     header {
@@ -31,7 +35,7 @@ body.work {
         margin-bottom: 0.5rem;
       }
     }
-    figure {
+    .figure {
       margin: 0;
       img {
         border-radius: var(--border-radius);
@@ -39,6 +43,10 @@ body.work {
         aspect-ratio: 1.78;
         object-fit: cover;
       }
+    }
+
+    ol,ul {
+      display: none;
     }
     @media (max-width:lib.$breakpoint) {
       flex-direction: column-reverse;
@@ -49,7 +57,7 @@ body.work {
 
   #impact-projects {
     article {
-      figure {
+      .figure {
         img {
           aspect-ratio: 1;
         }
