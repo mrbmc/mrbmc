@@ -48,6 +48,8 @@ casestudy: true
 
 ## Chapter 1: Basecamp{#basecamp .section .full-grid}
 
+![Basecamp](/images/portfolio/disney-growth/everest-basecamp-large.avif) {.hide}
+
 ### The Mountain of Scope {#full-scope}
 > Features  x Devices x Payment Terms x Regions
 
