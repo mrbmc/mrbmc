@@ -4,7 +4,7 @@ thumbnail: /images/portfolio/eurosport/eurosport-thumb-1x1.png
 date: 2018-01-01
 tags:
   - work
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 description: I led an end-to-end redesign across TV, Mobile and Web of Europe's largest streaming sports service (analogous to ESPN in the US).
 ---
 ![](/images/portfolio/eurosport/eurosport-product-lineup-2x1.jpg){.full-width-90}
