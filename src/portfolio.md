@@ -6,7 +6,7 @@ cssfile: "css/pages/portfolio.css"
 permalink: /portfolio/
 ---
 
-{% include "_project-list.md", projectList: collections.work, heading: "Impact Projects", description: false, count:6 %}
+{% include "_project-list.md", projectList: collections.work, heading: "Impact Projects", description: false, count:10 %}
 
 {% if collections.talk.length > 0 %}
 {% include "_project-list.md", projectList: collections.talk, heading: "Talks", description: "A great way to learn is to share what you think you know.", count:3 %}
