@@ -6,6 +6,7 @@ p#gallery,div.gallery-wrap {
     $thumb-size: 10vh;
     & {
         padding: 0;
+        position: relative;
     }
 
     .image-detail {
@@ -68,6 +69,10 @@ p#gallery,div.gallery-wrap {
     }
 
     a.next,a.prev {
+        background: #00000061;
+        backdrop-filter: blur(.25rem);
+        border-radius: 6vh;
+        mix-blend-mode: exclusion !important; 
         &:before {
             content: "";
             display: block;
@@ -88,12 +93,12 @@ p#gallery,div.gallery-wrap {
         &:before {
             transform: rotate(90deg);
         }
-        left: lib.$gutter;
+        left: .5rem;
     }
     a.next {
         &:before {
             transform: rotate(-90deg);
         }
-        right: lib.$gutter;
+        right: .5rem;
     }
 }
