@@ -142,6 +142,7 @@ window.addEventListener('scroll', handleScroll);
 updatePolygons(0);
 
 // Optional: Add keyboard controls for precise scrubbing
+/*
 document.addEventListener('keydown', (e) => {
     const scrollAmount = 50;
     const currentScroll = window.pageYOffset;
@@ -183,3 +184,4 @@ document.addEventListener('touchmove', (e) => {
     touchStartY = touchY;
     e.preventDefault();
 });
+*/
