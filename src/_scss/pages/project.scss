@@ -25,7 +25,7 @@ body.project {
             }
         }
         p {
-            &>img,&>svg,&>video {
+            img,svg,video {
                 &.canzoom {
                     transition: all lib.$speed lib.$easing;
                     &:hover {
