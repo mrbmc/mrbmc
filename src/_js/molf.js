@@ -173,7 +173,7 @@ const setupScene = (window, options = {}) => {
     let isDragging = false;
     
     // Animation loop for smooth camera movement
-    /*const animate = () => {
+    const animate = () => {
         let rotX = 7 * (mouseX + momentumX);
         let rotY = 7 * (mouseY + momentumY);
         
@@ -222,10 +222,8 @@ const setupScene = (window, options = {}) => {
     };
     
     requestAnimationFrame(animate);
-    */
     
     // Setup mouse/touch controls (commented out in original)
-    /*
     setupControls(window, 
         (deltaX, deltaY) => {
             // isDragging = true;
@@ -241,7 +239,7 @@ const setupScene = (window, options = {}) => {
             mouseY = velocityY = mouseX = velocityX = 0;
         }
     );
-    */
+
     return {
         gl: initWebGL(canvas),
         camera: camera
@@ -264,7 +262,6 @@ const updateProjectionMatrix = (matrix, {fieldOfView, aspectRatio = 1, near = 2,
 };
 
 // Setup mouse/touch controls
-/*
 const setupControls = (window, onMove, onEnd) => {
     let lastX = 0, lastY = 0;
     const bodyStyle = window.document.body.style;
@@ -313,7 +310,6 @@ const setupControls = (window, onMove, onEnd) => {
     window.addEventListener("pointercancel", handlePointerEnd);
     
 };
-*/
 
 // Initialize the scene
 const {gl, camera} = setupScene(window, {lockOrientation: false});

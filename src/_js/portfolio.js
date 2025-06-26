@@ -1,5 +1,4 @@
-import "./modules/dom_utils.mjs";
-import { name, parallax } from "./modules/parallax.mjs";
+import { doParallax } from "./modules/parallax.mjs";
 import { initGallery, galleryPopstate, galleryKeyPress } from "./modules/gallery-inline.mjs";
 
 globalThis.DEBUG = (document.location.hostname == "localhost" || document.location.href.includes('debug'));
@@ -30,21 +29,6 @@ function initMosaics() {
   })
 }
 
-function onScroll (e) {
-    if(VERBOSE) console.log("onScroll",e);
-    last_known_scroll_position = window.scrollY;
-    // scrollSpy(last_known_scroll_position);
-    parallax(last_known_scroll_position);
-    // doScrollFade(last_known_scroll_position);
-
-    // if (!ticking) {
-    //     window.requestAnimationFrame(function() {
-    //         p_ticking = false;
-    //     });
-    //     p_ticking = true;
-    // }
-}
-
 window.addEventListener('keydown', function(e) {
     console.log('onkeydown',e);
 
@@ -59,7 +43,6 @@ window.addEventListener('keydown', function(e) {
 window.addEventListener('popstate',function(e){
     galleryPopstate(e);
 });
-
 window.addEventListener('load', function(e) {
     console.log('project.window.load',e);
     var zoomies = document.querySelectorAll('.canzoom');
@@ -74,6 +57,10 @@ window.addEventListener('load', function(e) {
 
     initMosaics(e);
     initGallery(e);
-    window.addEventListener('scroll', onScroll, false);
-
 });
+
+// window.addEventListener('scroll', function(e) {
+//     doParallax(e);
+// }, false);
+
+window.addEventListener('scroll', doParallax);

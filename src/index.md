@@ -28,10 +28,7 @@ cssfile: "css/pages/home.css"
 
 {% include "_post-list.md", postList: collections.post, heading: "Recent Posts", count: 4, description:false %}
 
-<script type="text/javascript" language="javascript" src="/js/molf.js"></script>
+<!-- <script type="text/javascript" language="javascript" src="/js/modules/molf.mjs"></script> -->
 
+<script type="module" src="/js/home.bundle.js"></script>
 
-<script type="text/javascript">
-window.addEventListener('load', function(e) {
-});
-</script>

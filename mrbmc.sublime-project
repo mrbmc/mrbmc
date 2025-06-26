@@ -20,11 +20,11 @@
         },
         {
             "name": "GULP DEV",
-			"shell_cmd": "gulp dev",
+			"shell_cmd": "gulp build --dev",
         },
         {
-            "name": "GULP BUILD",
-			"shell_cmd": "gulp build --verbose",
+            "name": "GULP PROD",
+			"shell_cmd": "gulp build --prod --verbose",
         }
 	],
 }

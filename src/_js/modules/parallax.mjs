@@ -1,9 +1,8 @@
-import { isInViewport } from "./dom_utils.mjs";
+import { isInViewport,parseSrcset,wrapElement } from "./dom_utils.mjs";
 
-export const name = "parallax";
-
-export function parallax (yPos) {
+export function doParallax (e) {
     // if(VERBOSE) console.log('doParallax',arguments);
+    var yPos = window.scrollY;
     var spies = document.querySelectorAll('[data-parallax]');
     spies.forEach(function(value,index,array){
         var me = array[index],
@@ -18,5 +17,3 @@ export function parallax (yPos) {
     });
     return spies;
 }
-
-// export { name, scrolly };

@@ -29,12 +29,4 @@ cssfile: "css/pages/post.css"
 {{ post.data.date | date: "%Y-%m-%d" }} &nbsp; [{{ post.data.title }}]({{ post.url }})
 {% endfor %}
 
-<script type="text/javascript">
-let prevScrollpos = window.pageYOffset;
-let header = document.getElementById("header");
-function onScroll() {
-    document.getElementsByTagName('body')[0].classList.toggle('scrolled',window.pageYOffset >= (window.innerHeight * 0.62));
-}
-window.addEventListener('load', function(e) {window.addEventListener('scroll',onScroll);});
-
-</script>
+<script type="module" src="/js/blogpost.bundle.js"></script>

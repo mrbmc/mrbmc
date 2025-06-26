@@ -19,4 +19,4 @@ cssfile: "css/pages/project.css"
 
 <div id="lightbox" class=""></div>
 
-<script type="module" src="/js/portfolio.js"></script>
+<script type="module" src="/js/portfolio.bundle.js"></script>

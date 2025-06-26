@@ -1,11 +1,45 @@
+const { src, dest, watch, series, parallel } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const rsync = require('gulp-rsync');
+const rename = require('gulp-rename');
+const uglify = require('gulp-uglify');
+const cleanCSS = require('gulp-clean-css'); // If you want CSS minification
+const sourcemaps = require('gulp-sourcemaps');
+const exec = require('child_process').exec;
+const yargs = require('yargs');
+const clean = require('gulp-clean');
+const fsCache = require( 'gulp-fs-cache' );
+const argv = yargs.argv;
+const rollup = require('rollup');
+const terser  = require('@rollup/plugin-terser');
+const gulpif = require('gulp-if');
+
+
 const localenv = "http://localhost:8000";
 const localdir = "mrbmc";
 const S3BUCKET = "www.brianmcconnell.me"
 const CFDISTRO = "E1TNSK7JF24IAY";
 const paths = {
+  jsbundles: [
+    {
+      input: 'src/_js/mrbmc.js',
+      output: 'www/js/mrbmc.bundle.js'
+    },
+    {
+      input: 'src/_js/home.js',
+      output: 'www/js/home.bundle.js'
+    },
+    {
+      input: 'src/_js/blogpost.js', 
+      output: 'www/js/blogpost.bundle.js'
+    },
+    {
+      input: 'src/_js/portfolio.js',
+      output: 'www/js/portfolio.bundle.js'
+    }
+  ],
   js: [
-    'src/_js/*.js',
-    'src/_js/*/*.mjs'
+    'src/_js/gaia/*.js'
   ],
   css: [
     'src/_scss/**/!(_*).scss'
@@ -50,72 +84,67 @@ const paths = {
     "/colophon/*"
   ]
 };
+const dryrun = argv.dryrun || argv.debug == "dryrun";
+const isProduction = argv.prod || argv.env === 'production';
 
 
-
-
-const debug = false;
-const { src, dest, series } = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const uglify = require('gulp-uglify');
-const cleanCSS = require('gulp-clean-css'); // If you want CSS minification
-const sourcemaps = require('gulp-sourcemaps');
-const rsync = require('gulp-rsync');
-const exec = require('child_process').exec;
-const yargs = require('yargs');
-const clean = require('gulp-clean');
-const fsCache = require( 'gulp-fs-cache' );
-const argv = yargs.argv;
-
-// Compile and minify JavaScript
-function buildJSPro() {
+async function rollupJS() {
   const log = argv.verbose ? console.log : () => {};
+  const plugins = [];
+
+  if (isProduction) {
+    plugins.push(terser());
+  }
+
+  const buildPromises = paths.jsbundles.map(async (config) => {
+    const bundle = await rollup.rollup({
+      input: config.input,
+      plugins: plugins
+    });
+    
+    const result = await bundle.write({
+      file: config.output,
+      format: 'es',
+      sourcemap: !isProduction
+    });
+    
+    log(`Built ${config.output}`);
+    return result;
+  });
+
+  return Promise.all(buildPromises);
+
+}
+
+function buildJS() {
+  const log = argv.verbose ? console.log : () => {};
+
   return src(paths.js)
+    .pipe(gulpif(!isProduction,sourcemaps.init()))
     .pipe(uglify({
-      mangle: true,
+      mangle: isProduction,
       compress: {
-        drop_console: true
+        drop_console: isProduction
       },
       output: {
-          beautify: false,
-          comments: false
+          beautify: !isProduction,
+          comments: !isProduction
       }
     }))
-    .on('data', file => log(`Raw ${file.path}`))
-    .pipe(dest('www/js'));
-}
-function buildJSDev() {
-  const log = argv.verbose ? console.log : () => {};
-  return src(paths.js)
-    .pipe(sourcemaps.init())
-    .pipe(uglify({
-      mangle: false,
-      output: {
-          beautify: true
-      }
-    }))
-    .pipe(sourcemaps.write())
+    .pipe(gulpif(!isProduction,sourcemaps.write()))
     .on('data', file => log(`Uglified ${file.path}`))
     .pipe(dest('www/js'));
 }
 
 // Compile SCSS to CSS
-function compileCSSDev() {
+function compileCSS() {
   const log = argv.verbose ? console.log : () => {};
+  const format = isProduction ? '' : 'beautify';
   return src(paths.css)
-    .pipe(sourcemaps.init())
+    .pipe(gulpif(!isProduction,sourcemaps.init()))
     .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS({format: 'beautify'}))
-    .pipe(sourcemaps.write())
-    .on('data', file => log(`Minified ${file.path}`))
-    .pipe(dest('www/css'));
-}
-
-function compileCSSPro() {
-  const log = argv.verbose ? console.log : () => {};
-  return src(paths.css)
-    .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS()) // CSS minification
+    .pipe(cleanCSS({format: format}))
+    .pipe(gulpif(!isProduction,sourcemaps.write()))
     .on('data', file => log(`Minified ${file.path}`))
     .pipe(dest('www/css'));
 }
@@ -123,6 +152,7 @@ function compileCSSPro() {
 // Build HTML with Eleventy
 function buildHTML() {
   const log = argv.verbose ? console.log : () => {};
+  if(!isProduction) return Promise.resolve();
 
   return exec('npx @11ty/eleventy', function (err, stdout, stderr) {
         if(argv.verbose) {
@@ -133,17 +163,12 @@ function buildHTML() {
           console.error(`Error synching assets: ${err}`);
           process.exit(1);
       });
-  // return exec('npx @11ty/eleventy')
-  //   .on('data', data => log(data.toString()))
-  //   .on('error', (err) => {
-  //     console.error(`Error building HTML: ${err}`);
-  //     process.exit(1);
-  //   });
 }
 
 // Sync static assets (images)
 function syncAssets() {
   const log = argv.verbose ? console.log : () => {};
+  if(!isProduction) return Promise.resolve();
 
   //exec is much MUCH faster than calling gulp-rsync
 
@@ -188,6 +213,7 @@ function syncAssets() {
 
 function syncBackups() {
   const log = argv.verbose ? console.log : () => {};
+  if(!isProduction) return Promise.resolve();
 
   //exec is much MUCH faster than calling gulp-rsync
   let foo = [];
@@ -211,6 +237,7 @@ function syncBackups() {
 }
 
 function checkLinks() {
+  if(!isProduction) return Promise.resolve();
   return exec('blc '+localenv+' -roe > link-report.log')
     .on('error', (err) => {
       console.error(`Error checking links: ${err}`);
@@ -219,6 +246,7 @@ function checkLinks() {
 }
 
 function cleanUp() {
+  if(!isProduction) return Promise.resolve();
   let r = exec('find ~/Sites/mrbmc/ -name ".DS_Store" -type f -delete')
     .on('data', (err,stdout,stderr)=> {
       log(stdout.toString());
@@ -233,7 +261,7 @@ function cleanUp() {
 function upload() {
   const log = argv.verbose ? console.log : () => {};
   let cmd = "aws s3 sync www s3://"+S3BUCKET+" --delete";
-  if(debug) {
+  if(dryrun) {
     cmd += " --dryrun";
     console.log(cmd);
   }
@@ -247,14 +275,15 @@ function upload() {
       process.exit(1);
   });
 }
+
 function uncache() {
-  let cmd = "aws cloudfront create-invalidation"+(debug?" --debug":"")+" --distribution-id "+CFDISTRO+" --paths ";
+  let cmd = "aws cloudfront create-invalidation"+(dryrun?" --debug":"")+" --distribution-id "+CFDISTRO+" --paths ";
 
   paths.caches.forEach((path)=>{
     cmd += `"`+path+`" `;
   });
 
-  if(debug) {
+  if(dryrun) {
     console.log(cmd);
     return true;
   }
@@ -270,24 +299,21 @@ function uncache() {
   })
 }
 
+
 exports.deploy = series(
   upload,
   uncache
 );
 
-exports.dev = series(
-  buildJSDev,
-  compileCSSDev,
-  syncAssets,
-);
-
 // Define default task
 exports.build = series(
-  buildJSPro,
-  compileCSSPro,
+  rollupJS,
+  buildJS,
+  compileCSS,
   buildHTML,
   syncAssets,
   syncBackups,
   cleanUp,
   checkLinks
 );
+

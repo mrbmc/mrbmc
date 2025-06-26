@@ -97,7 +97,7 @@ function onPostLoaded ( input ) {
     //prepare metadata
     if(typeof(input)=="string") {
         var post = $pdata[$postIndex];
-            post['content'] = parseMarkdown(input);
+            post['content'] = markdownParse(input);
     } else {
         var post = input;
     }

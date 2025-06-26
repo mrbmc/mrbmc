@@ -106,7 +106,7 @@ function updatePolygons(progress) {
 
 // Throttled scroll handler for better performance
 let ticking = false;
-function handleScroll() {
+export function critterScroll() {
     if (!ticking) {
         requestAnimationFrame(() => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -136,7 +136,7 @@ function handleScroll() {
 }
 
 // Add scroll event listener
-window.addEventListener('scroll', handleScroll);
+window.addEventListener('scroll', critterScroll);
 
 // Initialize with first frame
 updatePolygons(0);
