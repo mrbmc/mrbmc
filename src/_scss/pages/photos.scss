@@ -25,6 +25,11 @@ body.photos {
             height: 100vh;
             box-sizing: border-box;
             padding: var(--thumb-size) 0 calc(var(--thumb-size) * 2) 0;
+
+  width: 100vw;
+  margin-left: calc( max(var(--margin),var(--gutter)) * -1);
+
+
             img {
                 height: 100%;
                 object-fit: contain;
