@@ -1,4 +1,5 @@
 import { doParallax } from "./modules/parallax.mjs";
+import { parseSrcset } from "./modules/dom_utils.mjs";
 import { initGallery, galleryPopstate, galleryKeyPress } from "./modules/gallery-inline.mjs";
 
 globalThis.DEBUG = (document.location.hostname == "localhost" || document.location.href.includes('debug'));
