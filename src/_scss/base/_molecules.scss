@@ -16,10 +16,8 @@
 }
 
 .well {
-  // margin-top:  var(--gutter);
   box-sizing: border-box;
   padding: var(--gutter);
-  margin-bottom: var(--gutter-xl);
   background: var(--muted-background);
   border-radius: var(--border-radius-xl);
   box-shadow: lib.$shadow-inset;
@@ -34,15 +32,15 @@
 }
 
 // we assume that this is a mosaic
-.well.grid {
-  padding: var(--gutter) calc(var(--navbar-height) + 1rem);
-}
+// .well.grid {
+//   padding: var(--gutter) calc(var(--navbar-height) + 1rem);
+// }
 
 .hero {
 
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
-    margin-bottom: var(--gutter-xl);
+    // margin-bottom: var(--gutter-xl);
 
     // @include lib.full-width(var(--gutter));
     @include lib.inverse(var(--accent-background));

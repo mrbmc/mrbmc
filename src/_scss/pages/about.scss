@@ -14,13 +14,10 @@ body.about {
     box-sizing: border-box;
     position: relative;
     height: calc(100vh - var(--navbar-height));
-    // height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    margin-bottom: var(--gutter-xl);
-
 
     p.portrait {
       overflow: hidden;
@@ -104,7 +101,7 @@ body.about {
     img {
       border-radius: var(--border-radius);
     }
-    padding-bottom: var(--gutter-xl);
+    // padding-bottom: var(--gutter-xl);
   }
 
   #leadership {

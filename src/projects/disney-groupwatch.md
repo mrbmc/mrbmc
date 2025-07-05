@@ -204,15 +204,17 @@ We ran the reactions through a couple of rounds of usability and preference test
 
 ### Developer Collaboration
 
-A key part of our strategy for this feature was our TV support. Disney's patented technology worked across devices which meant people could group on mobile and watch on TV. We know that subscribers who stream on TV screens more have a *significantly* higher **AARPU**. 
+A key tactic was making GroupWatch work seamlessly on TV devices. Subscribers who stream on TV screens more have a *significantly* higher **AARPU** and our patented technology was the only competitor to do this.
 
 We designed a wayfinding system to help hosts and guests navigate to their Groupwatch on TV after they received an invite on their phone. 
 
-![TV desired design](/images/portfolio/disney-groupwatch/groupwatch-tv-desired.jpg)
+Our client and services engineers were concerned that loading the GroupWatch™ session state & user data, and rendering this module in the middle of the homepage would slow the experience for the majority of users. We negotiated a few ideas that would ensure a quick load time with sufficient information about the session.
 
-Our client and services engineers had reservations about this design. They were concerned that loading the GroupWatch™ session state, loading user data, and rendering this module in the middle of the homepage would create a slow experience for the majority of non-group users. Design and engineering negotiated a few ideas that would ensure a quick load time with sufficient information about the session.
-
-![TV feasible design](/images/portfolio/disney-groupwatch/groupwatch-tv-actual.jpg)
++ Original Design {.col-6 .center}
++ Shipped Design {.col-6 .center}
++ ![TV desired design](/images/portfolio/disney-groupwatch/groupwatch-tv-desired.jpg) {.col-6}
++ ![TV feasible design](/images/portfolio/disney-groupwatch/groupwatch-tv-actual.jpg) {.col-6}
+{.grid .well .full-grid}
 
 ### Marketing Collaboration
 
