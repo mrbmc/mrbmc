@@ -104,6 +104,27 @@ function updatePolygons(progress) {
     });
 }
 
+//This pauses the animation at specified points while scrolling
+// function scrollPause (scrollProgress) {
+//     let scrollPause = 0.25;//when to stop animation
+//     let scrollResume = 0.75;
+//     let animPause = 0.5;//what % of the animation do we want to pause at
+//     let adjProgress = 0;
+
+//     if(scrollProgress <= scrollPause) {
+//         adjProgress = scrollProgress * (animPause / scrollPause);
+//         // updatePolygons(adjProgress);
+//     } else if(scrollProgress >= scrollResume) {
+//         adjProgress = ((1 - animPause)/(1 - scrollResume)) * (scrollProgress - scrollResume) + animPause;
+//         // updatePolygons(adjProgress);
+//     } else {
+//         // updatePolygons(animPause);
+//         adjProgress = animPause;
+//     }
+//     return adjProgress;
+// }
+
+
 // Throttled scroll handler for better performance
 let ticking = false;
 export function critterScroll() {
@@ -111,22 +132,9 @@ export function critterScroll() {
         requestAnimationFrame(() => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollProgress = Math.max(0, Math.min(1, scrollTop / scrollHeight));
+            let scrollProgress = Math.max(0, Math.min(1, scrollTop / scrollHeight));
 
-    // let scrollPause = .5;//0.25;
-    // let scrollResume = .5;//0.72;
-    // let animPause = 0.5;
-    // let adjProgress = 0;
-
-    // if(scrollProgress <= scrollPause) {
-    //     adjProgress = scrollProgress * (animPause / scrollPause);
-    //     updatePolygons(adjProgress);
-    // } else if(scrollProgress >= scrollResume) {
-    //     adjProgress = ((1 - animPause)/(1 - scrollResume)) * (scrollProgress - scrollResume) + animPause;
-    //     updatePolygons(adjProgress);
-    // } else {
-    //     updatePolygons(animPause);
-    // }
+            // scrollProgress = scrollPause(scrollProgress);
             
             updatePolygons(scrollProgress);
             ticking = false;
