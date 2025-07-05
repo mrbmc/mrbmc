@@ -1,20 +1,3 @@
-function toggleClass(element, _class, b) {
-    // if(DEBUG) console.log('toggleClass',arguments);
-    if(b !== undefined) {
-        switch(b){
-            case true:
-                element.classList.add(_class);
-                break;
-            case false:
-                element.classList.remove(_class);
-                break;
-        }
-    } else {
-        element.classList.toggle(_class);
-    }
-    return element.classList.value;
-}
-
 export function wrapElement (el, wrapper) {
     el.parentNode.insertBefore(wrapper, el);
     wrapper.appendChild(el);

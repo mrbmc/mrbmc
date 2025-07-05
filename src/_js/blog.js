@@ -86,7 +86,7 @@ NAVIGATION FUNCTIONS
 function $gotoIndex(_input) {
     if(DEBUG) window.console.log('gotoIndex',arguments);
     document.getElementById('item-detail').innerHTML = "";
-    toggleClass(document.getElementById('item-list'),'mini',false);
+    document.getElementById('item-list').classList.toggle('mini',false);
     window.document.title = "Notes On Design | Brian McConnell";
     onScroll();
 }
@@ -112,7 +112,7 @@ function onPostLoaded ( input ) {
     //Reset the page styling
     onScroll();
     onResize();
-    toggleClass(document.getElementById('item-list'),"mini",true);
+    document.getElementById('item-list').classList.toggle('mini',true);
     window.scrollTo({left:0,top:0,behavior: 'smooth'});
 
     //Google Analytics

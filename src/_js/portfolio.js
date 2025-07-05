@@ -50,7 +50,6 @@ window.addEventListener('load', function(e) {
         console.log(`${key}: ${zoomy}`)
         zoomy.addEventListener('click', function(e) {
             console.log('zoomie clicked!',this);
-            // toggleClass(this,'zoom');
             this.classList.toggle('zoom');
         });
     });
