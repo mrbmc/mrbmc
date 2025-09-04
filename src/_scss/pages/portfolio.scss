@@ -2,6 +2,7 @@
 
 @use "../components/project-list";
 
+
 body.portfolio {
   h5 {
     color: var(--muted-foreground);
@@ -15,6 +16,10 @@ body.portfolio {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    h2,p {
+      grid-column: span 2;
+    }
 
     .project {
       flex-basis: 50%;

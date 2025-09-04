@@ -4,15 +4,32 @@ Getting links from: http://localhost:8000/
 ├───OK─── http://localhost:8000/resume/
 ├───OK─── http://localhost:8000/photos/
 ├───OK─── http://localhost:8000/blog/
+├───OK─── http://localhost:8000/portfolio/disney-growth/
+├───OK─── http://localhost:8000/images/optimized/disney-growth-thumb-640.webp
+├───OK─── http://localhost:8000/portfolio/disney-groupwatch/
+├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-preview-640.webp
+├───OK─── http://localhost:8000/portfolio/disney-enterprise/
+├───OK─── http://localhost:8000/images/optimized/optumus-mockup-640.webp
+├───OK─── http://localhost:8000/portfolio/espn/
+├───OK─── http://localhost:8000/images/optimized/espn-thumbnail-1x1-640.webp
+├───OK─── http://localhost:8000/portfolio/nhl/
+├───OK─── http://localhost:8000/images/optimized/nhl-thumbnail-640.webp
+├───OK─── http://localhost:8000/portfolio/eurosport/
+├───OK─── http://localhost:8000/images/optimized/eurosport-thumb-1x1-640.webp
+├───OK─── http://localhost:8000/portfolio/blogtalkradio/
+├───OK─── http://localhost:8000/images/optimized/btr-hosttools-teaser-2x1-640.webp
+├───OK─── http://localhost:8000/blog/job-market-2025/
+├───OK─── http://localhost:8000/blog/greenpoint-pan-chocolat-2025/
+├───OK─── http://localhost:8000/images/optimized/pan-chocolat-lineup-640.webp
+├───OK─── http://localhost:8000/blog/read-history/
+├───OK─── http://localhost:8000/images/optimized/firstbenz-jpggettyimages-905504772-640.webp
+├───OK─── http://localhost:8000/blog/design-quality/
 ├───OK─── http://localhost:8000/colophon/
 ├───OK─── http://localhost:8000/privacy/
-Finished! 20 links found. 13 excluded. 0 broken.
+Finished! 50 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/about/
 ├───OK─── http://localhost:8000/images/optimized/mrbmc-20241121-640.webp
-├───OK─── http://localhost:8000/portfolio/blogtalkradio/
-├───OK─── http://localhost:8000/portfolio/disney-groupwatch/
-├───OK─── http://localhost:8000/portfolio/disney-growth/#project-team
 ├───OK─── http://localhost:8000/portfolio/team-charter-workshop/
 ├───OK─── http://localhost:8000/images/optimized/wewatch-interview-participants-3x3-640.webp
 ├───OK─── http://localhost:8000/images/optimized/workshop-pictogram-640.webp
@@ -25,20 +42,9 @@ Getting links from: http://localhost:8000/about/
 ├───OK─── http://localhost:8000/images/optimized/puzzle-culture-537.svg
 ├───OK─── http://localhost:8000/images/optimized/puzzle-craft-537.svg
 ├───OK─── http://localhost:8000/images/optimized/puzzle-commerce-537.svg
-Finished! 53 links found. 37 excluded. 0 broken.
+Finished! 53 links found. 40 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/
-├───OK─── http://localhost:8000/images/optimized/disney-growth-thumb-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-preview-640.webp
-├───OK─── http://localhost:8000/portfolio/disney-enterprise/
-├───OK─── http://localhost:8000/images/optimized/optumus-mockup-640.webp
-├───OK─── http://localhost:8000/portfolio/espn/
-├───OK─── http://localhost:8000/images/optimized/espn-thumbnail-1x1-640.webp
-├───OK─── http://localhost:8000/portfolio/nhl/
-├───OK─── http://localhost:8000/images/optimized/nhl-thumbnail-640.webp
-├───OK─── http://localhost:8000/portfolio/eurosport/
-├───OK─── http://localhost:8000/images/optimized/eurosport-thumb-1x1-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-hosttools-teaser-2x1-640.webp
 ├───OK─── http://localhost:8000/portfolio/flint-and-silicon/
 ├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-thumb-640.webp
 ├───OK─── http://localhost:8000/images/optimized/culture-workshop-640.webp
@@ -52,7 +58,7 @@ Getting links from: http://localhost:8000/portfolio/
 ├───OK─── http://localhost:8000/images/optimized/PAL9100-tablet-640.webp
 ├───OK─── http://localhost:8000/portfolio/boids/
 ├───OK─── http://localhost:8000/images/optimized/boids-thumb-640.webp
-Finished! 62 links found. 38 excluded. 0 broken.
+Finished! 62 links found. 49 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/resume/
 Finished! 30 links found. 30 excluded. 0 broken.
@@ -97,12 +103,6 @@ Getting links from: http://localhost:8000/photos/
 Finished! 74 links found. 38 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/
-├───OK─── http://localhost:8000/blog/job-market-2025/
-├───OK─── http://localhost:8000/blog/greenpoint-pan-chocolat-2025/
-├───OK─── http://localhost:8000/images/optimized/pan-chocolat-lineup-640.webp
-├───OK─── http://localhost:8000/blog/read-history/
-├───OK─── http://localhost:8000/images/optimized/firstbenz-jpggettyimages-905504772-640.webp
-├───OK─── http://localhost:8000/blog/design-quality/
 ├───OK─── http://localhost:8000/blog/bike-tour-2024/
 ├───OK─── http://localhost:8000/images/optimized/gapco-continental-divide-640.webp
 ├───OK─── http://localhost:8000/blog/growth-design-idioms/
@@ -133,73 +133,9 @@ Getting links from: http://localhost:8000/blog/
 ├───OK─── http://localhost:8000/blog/newtons-laws-of-design/
 ├───OK─── http://localhost:8000/images/optimized/newton-640.webp
 ├───OK─── http://localhost:8000/blog/rss.xml
-Finished! 75 links found. 39 excluded. 0 broken.
+Finished! 75 links found. 45 excluded. 0 broken.
 
-Getting links from: http://localhost:8000/colophon/
-Finished! 44 links found. 44 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/privacy/
-Finished! 20 links found. 20 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/blogtalkradio/
-├───OK─── http://localhost:8000/images/optimized/btr-customer-experience-map-hosts-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-episode-experience-map-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-studio-live-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-studio-pre-show-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-studio-ad-break-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-studio-imac-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-ad-editor-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-stats-home-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-stats-episode-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-dashboard-laptop-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-CRUD-edit-info-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-CRUD-create-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-CRUD-edit-advanced-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-select-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-transcript-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-host-artwork-640.webp
-├───OK─── http://localhost:8000/images/optimized/btr-homepage-640.webp
-Finished! 43 links found. 25 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/disney-groupwatch/
-├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/GW-Demo_02-24.mp4
-├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-cover-640.webp
-├───OK─── http://localhost:8000/images/optimized/doublediamond-discover-161.webp
-├───OK─── http://localhost:8000/images/optimized/wewatch-interview-participants-5x2-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-patent-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-workshop-640.webp
-├───OK─── http://localhost:8000/images/optimized/doublediamond-define-161.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-visiontype-mocks-640.webp
-├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/WeWatch_VideoDemo.mp4
-├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame1-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame2-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame3-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame4-640.webp
-├───OK─── http://localhost:8000/images/optimized/doublediamond-develop-161.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-ixd-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-invite-v1-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-invite-v2-640.webp
-├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-devices-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v1-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v2-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v3-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v4-640.webp
-├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/groupwatch-motion-mobile.mp4
-├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/groupwatch-motion-tv.mp4
-├───OK─── http://localhost:8000/images/optimized/groupwatch-reactions-ideation-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-reactions-final-640.webp
-├───OK─── http://localhost:8000/images/optimized/doublediamond-deliver-161.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-tv-desired-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-tv-actual-640.webp
-├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/GWMPT.mp4
-├───OK─── http://localhost:8000/images/optimized/groupwatch-marketing-640.webp
-├───OK─── http://localhost:8000/images/optimized/press-640.webp
-├───OK─── http://localhost:8000/images/optimized/social-640.webp
-├───OK─── http://localhost:8000/images/optimized/groupwatch-metrics-640.webp
-Finished! 58 links found. 24 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/disney-growth/#project-team
+Getting links from: http://localhost:8000/portfolio/disney-growth/
 ├───OK─── http://localhost:8000/images/optimized/disney-growth-640.webp
 ├───OK─── http://localhost:8000/images/optimized/everest-basecamp-large-640.webp
 ├───OK─── http://localhost:8000/images/optimized/growth-team-start-640.webp
@@ -260,31 +196,42 @@ Getting links from: http://localhost:8000/portfolio/disney-growth/#project-team
 ├───OK─── http://localhost:8000/images/optimized/everest-descent-640.webp
 Finished! 101 links found. 43 excluded. 0 broken.
 
-Getting links from: http://localhost:8000/portfolio/team-charter-workshop/
-├───OK─── http://localhost:8000/images/portfolio/culture-workshop/EXD-workshop-timelapse.mp4
-├───OK─── http://localhost:8000/images/optimized/workshop-plan-doc-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-trading-cards-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-voting-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-headsdown-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-values-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-elevator-640.webp
-Finished! 32 links found. 25 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/blog/a-little-feedback-often/
-├───OK─── http://localhost:8000/images/blog/sealion-balance-ball.mp4
-├───OK─── http://localhost:8000/images/optimized/feedback-constant-640.webp
-├───OK─── http://localhost:8000/images/optimized/feedback-delayed-640.webp
-├───OK─── http://localhost:8000/images/blog/bmc-juggling.mp4
-├───OK─── http://localhost:8000/tags/momentum
-├───OK─── http://localhost:8000/tags/design
-├───OK─── http://localhost:8000/tags/process
-├───OK─── http://localhost:8000/tags/feedback
-Finished! 32 links found. 24 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/blog/leadership-in-nature/
-├───OK─── http://localhost:8000/tags/nature
-├───OK─── http://localhost:8000/tags/leadership
-Finished! 33 links found. 31 excluded. 0 broken.
+Getting links from: http://localhost:8000/portfolio/disney-groupwatch/
+├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/GW-Demo_02-24.mp4
+├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-cover-640.webp
+├───OK─── http://localhost:8000/images/optimized/doublediamond-discover-161.webp
+├───OK─── http://localhost:8000/images/optimized/wewatch-interview-participants-5x2-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-patent-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-workshop-640.webp
+├───OK─── http://localhost:8000/images/optimized/doublediamond-define-161.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-visiontype-mocks-640.webp
+├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/WeWatch_VideoDemo.mp4
+├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame1-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame2-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame3-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-research-frame4-640.webp
+├───OK─── http://localhost:8000/images/optimized/doublediamond-develop-161.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-ixd-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-invite-v1-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-invite-v2-640.webp
+├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-devices-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v1-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v2-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v3-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-visual-v4-640.webp
+├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/groupwatch-motion-mobile.mp4
+├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/groupwatch-motion-tv.mp4
+├───OK─── http://localhost:8000/images/optimized/groupwatch-reactions-ideation-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-reactions-final-640.webp
+├───OK─── http://localhost:8000/images/optimized/doublediamond-deliver-161.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-tv-desired-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-tv-actual-640.webp
+├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/GWMPT.mp4
+├───OK─── http://localhost:8000/images/optimized/groupwatch-marketing-640.webp
+├───OK─── http://localhost:8000/images/optimized/press-640.webp
+├───OK─── http://localhost:8000/images/optimized/social-640.webp
+├───OK─── http://localhost:8000/images/optimized/groupwatch-metrics-640.webp
+Finished! 58 links found. 24 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-enterprise/
 ├───OK─── http://localhost:8000/images/optimized/ivan-cockpit-640.webp
@@ -305,6 +252,7 @@ Getting links from: http://localhost:8000/portfolio/disney-enterprise/
 ├───OK─── http://localhost:8000/images/optimized/exd-team-jon-184.webp
 ├───OK─── http://localhost:8000/images/optimized/exd-team-agency-340.webp
 ├───OK─── http://localhost:8000/images/optimized/EXD-Golden-Circle-640.webp
+├───OK─── http://localhost:8000/images/portfolio/culture-workshop/EXD-workshop-timelapse.mp4
 ├───OK─── http://localhost:8000/images/optimized/exd-pods-640.webp
 ├───OK─── http://localhost:8000/images/optimized/props-list-640.webp
 ├───OK─── http://localhost:8000/images/optimized/genie-campaign-640.webp
@@ -344,7 +292,7 @@ Getting links from: http://localhost:8000/portfolio/disney-enterprise/
 ├───OK─── http://localhost:8000/images/optimized/experiments-results-640.webp
 ├───OK─── http://localhost:8000/images/optimized/ads-mission-control-scheduling-640.webp
 ├───OK─── http://localhost:8000/images/optimized/dev-portal-640.webp
-Finished! 95 links found. 38 excluded. 0 broken.
+Finished! 95 links found. 37 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/espn/
 ├───OK─── http://localhost:8000/images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
@@ -410,6 +358,96 @@ Getting links from: http://localhost:8000/portfolio/eurosport/
 ├───OK─── http://localhost:8000/images/optimized/eurosport-9-640.webp
 Finished! 28 links found. 20 excluded. 0 broken.
 
+Getting links from: http://localhost:8000/portfolio/blogtalkradio/
+├───OK─── http://localhost:8000/images/optimized/btr-customer-experience-map-hosts-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-episode-experience-map-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-studio-live-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-studio-pre-show-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-studio-ad-break-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-studio-imac-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-ad-editor-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-stats-home-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-stats-episode-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-dashboard-laptop-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-CRUD-edit-info-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-CRUD-create-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-CRUD-edit-advanced-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-select-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-transcript-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-host-artwork-640.webp
+├───OK─── http://localhost:8000/images/optimized/btr-homepage-640.webp
+Finished! 43 links found. 25 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/blog/job-market-2025/
+├───OK─── http://localhost:8000/images/optimized/key-cylinder-wards-640.webp
+├───OK─── http://localhost:8000/images/optimized/key-warding-notches-600.webp
+├───OK─── http://localhost:8000/images/optimized/key-biting-wards-640.webp
+├───OK─── http://localhost:8000/images/blog/key-bits.mp4
+├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-UI-559.webp
+├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-UX-559.webp
+├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-systems-559.webp
+├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-generalist-559.webp
+├───OK─── http://localhost:8000/images/optimized/the-a-team-640.webp
+├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-team-559.webp
+├───OK─── http://localhost:8000/tags/design
+├───OK─── http://localhost:8000/tags/hiring
+├───OK─── http://localhost:8000/tags/capitalism
+Finished! 39 links found. 26 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/blog/greenpoint-pan-chocolat-2025/
+├───OK─── http://localhost:8000/images/optimized/pan-choclat-bakeri-640.webp
+├───OK─── http://localhost:8000/images/optimized/pan-choclat-charlotte-640.webp
+├───OK─── http://localhost:8000/images/optimized/pan-choclat-nicksons-640.webp
+├───OK─── http://localhost:8000/images/optimized/pan-choclat-panpan-640.webp
+├───OK─── http://localhost:8000/images/optimized/pan-choclat-radio-640.webp
+├───OK─── http://localhost:8000/tags/brooklyn
+├───OK─── http://localhost:8000/tags/baking
+├───OK─── http://localhost:8000/tags/greenpoint
+├───OK─── http://localhost:8000/tags/pan-au-chocolat
+├───OK─── http://localhost:8000/tags/chocolate-croissant
+├───OK─── http://localhost:8000/tags/science
+├───OK─── http://localhost:8000/tags/experimentation
+Finished! 44 links found. 32 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/blog/read-history/
+├───OK─── http://localhost:8000/tags/futurism
+├───OK─── http://localhost:8000/tags/process
+Finished! 31 links found. 29 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/blog/design-quality/
+├───OK─── http://localhost:8000/tags/design-strategy
+Finished! 26 links found. 25 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/colophon/
+Finished! 44 links found. 44 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/privacy/
+Finished! 20 links found. 20 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/portfolio/team-charter-workshop/
+├───OK─── http://localhost:8000/images/optimized/workshop-plan-doc-640.webp
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-trading-cards-640.webp
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-voting-640.webp
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-headsdown-640.webp
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-values-640.webp
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-elevator-640.webp
+Finished! 32 links found. 26 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/blog/a-little-feedback-often/
+├───OK─── http://localhost:8000/images/blog/sealion-balance-ball.mp4
+├───OK─── http://localhost:8000/images/optimized/feedback-constant-640.webp
+├───OK─── http://localhost:8000/images/optimized/feedback-delayed-640.webp
+├───OK─── http://localhost:8000/images/blog/bmc-juggling.mp4
+├───OK─── http://localhost:8000/tags/momentum
+├───OK─── http://localhost:8000/tags/feedback
+Finished! 32 links found. 26 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/blog/leadership-in-nature/
+├───OK─── http://localhost:8000/tags/nature
+├───OK─── http://localhost:8000/tags/leadership
+Finished! 33 links found. 31 excluded. 0 broken.
+
 Getting links from: http://localhost:8000/portfolio/flint-and-silicon/
 ├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-masthead-640.webp
 Finished! 22 links found. 21 excluded. 0 broken.
@@ -436,44 +474,6 @@ Getting links from: http://localhost:8000/portfolio/boids/
 ├───OK─── http://localhost:8000/images/portfolio/gaia/boids.mp4
 ├───OK─── http://localhost:8000/gaia/boids/
 Finished! 22 links found. 20 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/blog/job-market-2025/
-├───OK─── http://localhost:8000/images/optimized/key-cylinder-wards-640.webp
-├───OK─── http://localhost:8000/images/optimized/key-warding-notches-600.webp
-├───OK─── http://localhost:8000/images/optimized/key-biting-wards-640.webp
-├───OK─── http://localhost:8000/images/blog/key-bits.mp4
-├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-UI-559.webp
-├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-UX-559.webp
-├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-systems-559.webp
-├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-generalist-559.webp
-├───OK─── http://localhost:8000/images/optimized/the-a-team-640.webp
-├───OK─── http://localhost:8000/images/optimized/designer-skill-profile-team-559.webp
-├───OK─── http://localhost:8000/tags/hiring
-├───OK─── http://localhost:8000/tags/capitalism
-Finished! 39 links found. 27 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/blog/greenpoint-pan-chocolat-2025/
-├───OK─── http://localhost:8000/images/optimized/pan-choclat-bakeri-640.webp
-├───OK─── http://localhost:8000/images/optimized/pan-choclat-charlotte-640.webp
-├───OK─── http://localhost:8000/images/optimized/pan-choclat-nicksons-640.webp
-├───OK─── http://localhost:8000/images/optimized/pan-choclat-panpan-640.webp
-├───OK─── http://localhost:8000/images/optimized/pan-choclat-radio-640.webp
-├───OK─── http://localhost:8000/tags/brooklyn
-├───OK─── http://localhost:8000/tags/baking
-├───OK─── http://localhost:8000/tags/greenpoint
-├───OK─── http://localhost:8000/tags/pan-au-chocolat
-├───OK─── http://localhost:8000/tags/chocolate-croissant
-├───OK─── http://localhost:8000/tags/science
-├───OK─── http://localhost:8000/tags/experimentation
-Finished! 44 links found. 32 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/blog/read-history/
-├───OK─── http://localhost:8000/tags/futurism
-Finished! 31 links found. 30 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/blog/design-quality/
-├───OK─── http://localhost:8000/tags/design-strategy
-Finished! 26 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/bike-tour-2024/
 ├───OK─── http://localhost:8000/images/optimized/gapco-potomac-preview-1920.webp
@@ -601,26 +601,8 @@ Finished! 31 links found. 28 excluded. 0 broken.
 Getting links from: http://localhost:8000/blog/rss.xml
 Error: Expected type "text/html" but got "application/xml"
 
-Getting links from: http://localhost:8000/tags/momentum
-Finished! 22 links found. 22 excluded. 0 broken.
-
 Getting links from: http://localhost:8000/tags/design
 Finished! 53 links found. 53 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/process
-Finished! 29 links found. 29 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/feedback
-Finished! 22 links found. 22 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/nature
-Finished! 22 links found. 22 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/leadership
-Finished! 29 links found. 29 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/gaia/boids/
-Finished! 2 links found. 2 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/hiring
 Finished! 20 links found. 20 excluded. 0 broken.
@@ -652,8 +634,26 @@ Finished! 22 links found. 22 excluded. 0 broken.
 Getting links from: http://localhost:8000/tags/futurism
 Finished! 25 links found. 25 excluded. 0 broken.
 
+Getting links from: http://localhost:8000/tags/process
+Finished! 29 links found. 29 excluded. 0 broken.
+
 Getting links from: http://localhost:8000/tags/design-strategy
 Finished! 20 links found. 20 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/momentum
+Finished! 22 links found. 22 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/feedback
+Finished! 22 links found. 22 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/nature
+Finished! 22 links found. 22 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/leadership
+Finished! 29 links found. 29 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/gaia/boids/
+Finished! 2 links found. 2 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/cycling
 Finished! 31 links found. 31 excluded. 0 broken.
@@ -772,5 +772,5 @@ Finished! 22 links found. 22 excluded. 0 broken.
 Getting links from: http://localhost:8000/tags/ai-art
 Finished! 22 links found. 22 excluded. 0 broken.
 
-Finished! 3017 links found. 2552 excluded. 0 broken.
-Elapsed time: 2 seconds
+Finished! 3047 links found. 2582 excluded. 0 broken.
+Elapsed time: 1 second

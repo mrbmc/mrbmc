@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"grid-",
+				"grid-column"
+			],
+			[
 				"case",
 				"casestudy"
 			],
@@ -300,10 +304,6 @@
 				"grid-template-rows"
 			],
 			[
-				"grid-",
-				"grid-auto-flow"
-			],
-			[
 				"base",
 				"base-line-height"
 			],
@@ -520,101 +520,54 @@
 	"buffers":
 	[
 		{
-			"file": "metrics/metrics.sh",
+			"file": "src/index.md",
 			"settings":
 			{
-				"buffer_size": 9197,
+				"buffer_size": 1164,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
 				[
-					20,
+					9,
+					1,
+					"left_delete",
+					null,
+					"AQAAAKQDAAAAAAAApAMAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAApQMAAAAAAAClAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
 					1,
 					"insert",
 					{
 						"characters": " "
 					},
-					"AQAAAJUTAAAAAAAAlhMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAlRMAAAAAAACVEwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					21,
-					1,
-					"insert_snippet",
-					{
-						"contents": "'$0'"
-					},
-					"AQAAAJYTAAAAAAAAmBMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAlhMAAAAAAACWEwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					22,
-					1,
-					"insert",
-					{
-						"characters": "14d"
-					},
-					"AwAAAJcTAAAAAAAAmBMAAAAAAAAAAAAAmBMAAAAAAACZEwAAAAAAAAAAAACZEwAAAAAAAJoTAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAlxMAAAAAAACXEwAAAAAAAAAAAAAAAPC/"
+					"AQAAAKQDAAAAAAAApQMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAApAMAAAAAAACkAwAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		},
 		{
-			"file": "metrics/blacklist-agents.txt",
-			"redo_stack":
-			[
-				[
-					31,
-					1,
-					"left_delete",
-					null,
-					"AQAAAD8EAAAAAAAAQAQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAPwQAAAAAAAA/BAAAAAAAAAAAAAAAAPC/"
-				]
-			],
+			"file": "src/_scss/pages/portfolio.scss",
 			"settings":
 			{
-				"buffer_size": 1088,
+				"buffer_size": 1316,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
 				[
-					7,
-					1,
-					"left_delete",
-					null,
-					"AQAAAJ0DAAAAAAAAnQMAAAAAAAAOAAAAMzQuMTc0Ljc5LjE4OQo",
-					"AQAAAAAAAAABAAAAnQMAAAAAAACrAwAAAAAAAAAAAAAAAAAA"
-				],
-				[
-					9,
-					1,
-					"paste",
-					null,
-					"AQAAADMEAAAAAAAAPwQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAMwQAAAAAAAAzBAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					25,
-					1,
-					"swap_line_up",
-					null,
-					"CgAAADMEAAAAAAAAMwQAAAAAAAAMAAAANTQuMjIxLjI4LjU3MgQAAAAAAAAyBAAAAAAAAAEAAAAKDwQAAAAAAAAQBAAAAAAAAAAAAAAPBAAAAAAAABsEAAAAAAAAAAAAAA8EAAAAAAAADwQAAAAAAAANAAAANTQuMjIxLjI4LjU3CgIEAAAAAAAADwQAAAAAAAAAAAAAAgQAAAAAAAACBAAAAAAAAA0AAAA1NC4yMjEuMjguNTcK9gMAAAAAAAADBAAAAAAAAAAAAAD2AwAAAAAAAPYDAAAAAAAADQAAADU0LjIyMS4yOC41NwrrAwAAAAAAAPgDAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAPwQAAAAAAAA/BAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					29,
+					4,
 					1,
 					"insert",
 					{
-						"characters": "\n"
+						"characters": ",p"
 					},
-					"AQAAAD8EAAAAAAAAQAQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAPwQAAAAAAAA/BAAAAAAAAAAAAAAAAPC/"
+					"AgAAAEABAAAAAAAAQQEAAAAAAAAAAAAAQQEAAAAAAABCAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQAEAAAAAAABAAQAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		}
@@ -1033,13 +986,23 @@
 	[
 		"/Users/brianmcconnell/Sites/mrbmc",
 		"/Users/brianmcconnell/Sites/mrbmc/src",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base"
 	],
 	"file_history":
 	[
-		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-agents.txt",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_project-list.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_root.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_project.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/portfolio.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_variables.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/index.md",
+		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/home.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-enterprise.md",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/metrics.sh",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-agents.txt",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_animation.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/screen.scss",
@@ -1050,15 +1013,11 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/project-detail.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/portfolio.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/base.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/portfolio.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_footer.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_footer.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_data/site.json",
-		"/Users/brianmcconnell/Sites/mrbmc/metrics/metrics.sh",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_atoms.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_root.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_molecules.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/library/_variables.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/about.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_process.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_leadership.md",
@@ -1068,14 +1027,12 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/layout.html",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/gaia.scss",
 		"/Users/brianmcconnell/Sites/LLM-knowledge/BMCCareer/js_braze.txt",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/home.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/photos.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/post.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/project.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/resume.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/blog.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/colophon.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/portfolio.scss",
 		"/Users/brianmcconnell/Library/Application Support/Sublime Text 3/Packages/User/SublimeOnSaveBuild.sublime-settings",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_grid.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_project-list.scss",
@@ -1101,7 +1058,6 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_post-list.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_post-list.md",
 		"/Users/brianmcconnell/Sites/mrbmc/eleventy.config.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_project-list.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/modules/molf-boids.mjs",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/eurosport.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth-long.md",
@@ -1137,7 +1093,6 @@
 		"/Users/brianmcconnell/Sites/mrbmc/www/js/bundle.js",
 		"/Users/brianmcconnell/Sites/mrbmc/webpack.config.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/components/_gallery-inline.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-enterprise.md",
 		"/Users/brianmcconnell/Library/Application Support/Sublime Text 3/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_masthead.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_js/gallery-inline.js",
@@ -1164,8 +1119,7 @@
 		"/Users/brianmcconnell/Sites/mrbmc/node_modules/eleventy-plugin-time-to-read/components/measure-time.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/rss.njk",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/blogtalkradio.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/posts/bike-tour-2023.md",
-		"/Users/brianmcconnell/Sites/mrbmc/src/projects/pal-9100.md"
+		"/Users/brianmcconnell/Sites/mrbmc/src/posts/bike-tour-2023.md"
 	],
 	"find":
 	{
@@ -1311,6 +1265,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\.full-width",
+			"small",
+			"h1",
 			"blacklist",
 			"uncache",
 			"verbose",
@@ -1435,10 +1392,7 @@
 			"startRenderLoop",
 			"\\./",
 			"\\./www/js",
-			"builds",
-			"parallax",
-			"debug",
-			"verbpose"
+			"builds"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1446,6 +1400,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			".full-grid",
 			"$bold-font-weight",
 			"head-font-",
 			"currentColor",
@@ -1572,8 +1527,7 @@
 			"var(--text-tertiary)",
 			"var(--text-secondary)",
 			"var(--text-primary)",
-			"primary-hue",
-			"tertiary"
+			"primary-hue"
 		],
 		"reverse": false,
 		"scrollbar_highlights": true,
@@ -1590,29 +1544,29 @@
 			[
 				{
 					"buffer": 0,
-					"file": "metrics/metrics.sh",
+					"file": "src/index.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9197,
+						"buffer_size": 1164,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5018,
-								5018
+								933,
+								933
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Bash.sublime-syntax",
+							"syntax": "Packages/Liquid/Syntaxes/Markdown (Liquid).sublime-syntax",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": false
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1314.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1621,28 +1575,30 @@
 				},
 				{
 					"buffer": 1,
-					"file": "metrics/blacklist-agents.txt",
+					"file": "src/_scss/pages/portfolio.scss",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1088,
+						"buffer_size": 1316,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1088,
-								1088
+								322,
+								322
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 14.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1719,7 +1675,7 @@
 	"project": "mrbmc.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 68.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1728,6 +1684,46 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"portf.sc",
+				"src/_scss/pages/portfolio.scss"
+			],
+			[
+				"project-list",
+				"src/_includes/_project-list.md"
+			],
+			[
+				"index",
+				"src/index.md"
+			],
+			[
+				"portfol",
+				"src/portfolio.md"
+			],
+			[
+				"root",
+				"src/_scss/base/_root.scss"
+			],
+			[
+				"portfolio.scs",
+				"src/_scss/pages/portfolio.scss"
+			],
+			[
+				"_var",
+				"src/_scss/library/_variables.scss"
+			],
+			[
+				"home",
+				"src/_scss/pages/home.scss"
+			],
+			[
+				"-enter",
+				"src/projects/disney-enterprise.md"
+			],
+			[
+				"porfolio.s",
+				"src/_scss/pages/portfolio.scss"
+			],
 			[
 				"black",
 				"metrics/blacklist-agents.txt"
@@ -1739,10 +1735,6 @@
 			[
 				"disney-gr",
 				"src/projects/disney-growth.md"
-			],
-			[
-				"index",
-				"src/index.md"
 			],
 			[
 				"packa",
@@ -1785,20 +1777,12 @@
 				"src/about.md"
 			],
 			[
-				"root",
-				"src/_scss/base/_root.scss"
-			],
-			[
 				"_root",
 				"src/_scss/base/_root.scss"
 			],
 			[
 				"atom",
 				"src/_scss/base/_atoms.scss"
-			],
-			[
-				"_var",
-				"src/_scss/library/_variables.scss"
 			],
 			[
 				"_ty",
@@ -1829,10 +1813,6 @@
 				"src/_scss/screen.scss"
 			],
 			[
-				"home",
-				"src/_scss/pages/home.scss"
-			],
-			[
 				"mole",
 				"src/_scss/base/_molecules.scss"
 			],
@@ -1855,10 +1835,6 @@
 			[
 				"_home",
 				"src/_scss/pages/home.scss"
-			],
-			[
-				"project-list",
-				"src/_scss/components/_project-list.scss"
 			],
 			[
 				"port.scs",
@@ -2219,26 +2195,6 @@
 			[
 				"masthead",
 				"src/_includes/_masthead.md"
-			],
-			[
-				"airfl",
-				"src/_js/airflow.js"
-			],
-			[
-				"gaia",
-				"src/_scss/gaia.scss"
-			],
-			[
-				"mrbmc.js",
-				"src/_js/mrbmc.js"
-			],
-			[
-				"portf",
-				"src/portfolio.md"
-			],
-			[
-				"blacklist",
-				"metrics/blacklist-urls.txt"
 			]
 		],
 		"width": 0.0
