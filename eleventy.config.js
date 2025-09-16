@@ -171,7 +171,7 @@ module.exports = function(eleventyConfig) {
   //     // key: "./localhost.key",
   //     // cert: "./localhost.cert",
   //   },
-    port: 10000,
+    port: 9999,
     showVersion: true,
     watch: ["www/css/","www/js/"],
   });
