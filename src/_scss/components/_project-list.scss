@@ -1,22 +1,6 @@
 @use '../library' as lib;
 
 .project-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: var(--gutter);
-  grid-column-gap: var(--gutter);
-  box-sizing: border-box;
-
-  @media (min-width:lib.$breakpoint-widescreen) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  h2,p {
-    grid-column: span 2;
-    @media (min-width:lib.$breakpoint-widescreen) {
-      grid-column: span 3;
-    }
-  }
 
   .project {
     display: flex;
@@ -34,24 +18,38 @@
     }
 
     header {
-      display: none;
       box-sizing: border-box;
-      background: var(--card-background);
-      padding: 0 var(--gutter);
-      height: 100%;
+      // background: var(--card-background);
+      // padding: 0 var(--gutter);
+      // height: 100%;
+      // width: 100%;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // z-index: 1;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      // opacity: 0;
+      transition: opacity lib.$speed lib.$easing;
 
-      h3,h4,h5 {
-        margin-bottom: 0.0em;
+      h3,h4,h5,p {
+        margin: 0.75rem 0;
       }
       p {
-        margin-top: 0;
-      }
-      .summary, .duration {
-      }
-      .timeline {
         margin: 0;
+      }
+      .summary {
         color: var(--muted-foreground);
       }
+      .timeline, ul,.duration {
+        display: none;
+      }
+      // .timeline {
+      //   margin: 0;
+      //   color: var(--muted-foreground);
+      // }
 
     }
 
@@ -76,12 +74,13 @@
 
     &:hover {
       z-index: 3;
-      box-shadow: lib.$shadow;
+      // box-shadow: lib.$shadow;
 
       figure, p.figure {
         filter: saturate(1.02) contrast(1.1) brightness(1.1);
       }
       header {
+        opacity: 0.8;
       }      
 
       transform: scale(1.02);

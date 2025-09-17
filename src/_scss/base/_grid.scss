@@ -8,11 +8,9 @@
   margin-left: calc( max(var(--margin),var(--gutter)) * -1);
   margin-right: 0;
 
-  // we set this to zero because it's component agnostic. 
-  // set padding inside components.
   @if $fluid {
-    padding-left: calc(var(--navbar-height) + 1rem);
-    padding-right: calc(var(--navbar-height) + 1rem);
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
   } @else {
     padding-left: var(--margin);
     padding-right: var(--margin);
@@ -36,7 +34,7 @@
     display: grid;
     grid-template-columns: repeat(var(--columns), 1fr);
     grid-column-gap: var(--gutter);
-    grid-row-gap: var(--gutter-xl);
+    grid-row-gap: var(--gutter);
     grid-auto-flow: row;
 
     &>* {
@@ -53,7 +51,6 @@
           grid-column-end: ($i + 1);
         }
         .col-#{$i} {
-        //   align-self: center;
           grid-column: span $i;
         }
         .row-#{$i} {
@@ -66,11 +63,10 @@
     }
 
     @media (max-width: lib.$breakpoint) {
-        gap: var(--gutter);
-        .col-1,.col-2,.col-3,.col-4,.col-5 {
-            grid-column: span var(--columns);
+        .col-1,.col-2 {
+            grid-column: span calc(var(--columns) * 0.5);
         }
-        .col-7,.col-8,.col-9,.col-10,.col-11 {
+        .col-4,.col-5,.col-7,.col-8,.col-9,.col-10,.col-11 {
             grid-column: span var(--columns);
         }
     }

@@ -97,6 +97,12 @@
       // --gutter: 1rem;
       --margin: var(--gutter);
     }
+    @media (max-width: lib.$breakpoint) {
+        --columns: #{lib.$grid-columns * 0.5};
+    }
+    @media (min-width: lib.$breakpoint-widescreen) {
+        --columns: #{lib.$grid-columns * 1.5};
+    }
 }
 @media (prefers-color-scheme: dark) {
     :root {
