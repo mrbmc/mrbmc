@@ -3,65 +3,62 @@
 body > footer {
     position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    // color: $gray-800;
-    overflow: hidden;
-    padding: lib.$gutter-xl lib.$gutter;
-    margin-top: var(--gutter-xl);
-    gap: lib.$gutter;
+    flex-direction: column;
+    margin-left: 0 !important;
+    // justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: calc(var(--gutter-xl) * 2) var(--gutter) var(--gutter);
+    font-size: lib.$small-font-size;
 
-    // @include lib.hero();
-    background: var(--accent-background);
-    color: var(--accent-foreground);
+    color: var(--muted-foreground);
+    h3 {
+        display: none;
+    }
 
     &>div {
-        height: 100%;
+        padding: var(--gutter) 0 0;
         nav {
             display: flex;
             flex-direction: column;
+            flex-direction: row;
             justify-content: center;
+            gap: var(--gutter);
             a {
-                color: var(--accent-foreground);
+                // color: var(--accent-foreground);
                 // margin: 0 (lib.$gutter * 0.5);
                 &:hover {
-                    color: var(--white);
+                    // color: var(--white);
                 }
             }
         }
-        p {
+        p,a {
             text-align: center;
-            margin-bottom: 0;
+            margin: 0;
         }
     }
     #colophon {
-        display: flex;
-        flex-direction: column;
-        nav {
-            justify-content: flex-end;
+    }
+    .logo {
+        svg {
+            width: 1.62em;
         }
     }
     #contact {
         nav {
-            $itemsize: 1.38rem;
+            $itemsize: 1em;
 
             a {
-                // font-size: $itemsize;
-                // line-height: $itemsize;
-                // width: $itemsize;
-                // height: $itemsize;
+                width: $itemsize;
+                height: $itemsize;
                 overflow: hidden;
             }
             img,svg {
-                width: 100%;
-                height: 100%;
+                width: $itemsize;
+                height: $itemsize;
             }
             a.link-linkedin svg {
                 filter: saturate(0);
-                // filter: hue-rotate(38deg) brightness(0.9);
-
-                //brand hsb: 238 82 66;
-                //linkedin hsb: 199/100/73;
             }
             a.link-medium svg {
                 filter: invert(100%);

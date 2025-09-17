@@ -1,23 +1,31 @@
-<footer id="footer">
+<footer id="footer" class="full-grid">
+
     <div id="contact">
         <h3>Contact</h3>
         <nav>
-            <a href="#" data-part1="b" data-part2="brianmcconnell" data-part3="me" data-part4="What's good B?" class="link-email">
+            <a href="#" data-part1="b" data-part2="brianmcconnell" data-part3="me" data-part4="What's good B?" class="link-email">{% include "images/social-icons/email.svg" %}
                 Email
             </a>
+
 {% for social in site.socials %}
 {% assign socialimageurl = "images/social-icons/" | append: social.slug | append: ".svg" %}
-<a href="{{social.url}}">{{social.name}}</a>
+<a href="{{social.url}}">{% include socialimageurl %}{{social.name}}</a>
 {% endfor %}
 
         </nav>
     </div>
+
     <div id="colophon">
         <h3>Colophon</h3>
         <nav>
             <a href="/colophon/">Colophon</a>
             <a href="/privacy/">Privacy</a>
-            <p class="updated-timestamp">© {{ "now" | date: '%Y-%m-%d' }} Brian McConnell</p>
+            <p class="updated-timestamp">© {{ "now" | date: '%Y' }} Brian McConnell</p>
         </nav>
     </div>
+
+    <div class="logo">
+        {% include 'images/about/kageki-crane.svg' %}
+    </div>
+
 </footer>
