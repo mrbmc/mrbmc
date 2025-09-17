@@ -3,12 +3,12 @@
 .sticky-nav {
   position: sticky;
   z-index: 90;
-  top: calc(100vh - 2.375rem);
+  top: calc(100vh - 2.375em);
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   max-width: 100%;
-  margin: var(--gutter) auto;
+  margin: 0 auto -2.375em;
   box-shadow: lib.$shadow;
   -webkit-backdrop-filter: blur(.2rem);
   backdrop-filter: blur(.2rem);
@@ -43,6 +43,7 @@
       text-align: center;
       padding: .375em .5em;
       font-size: .85rem;
+      transition: all lib.$speed lib.$easing;
 
       &:hover {
         background: var(--muted-background);

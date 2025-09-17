@@ -6,7 +6,7 @@ export function wrapElement (el, wrapper) {
 export function isInViewport (elem,_peek) {
     // console.log('isInViewport',elem);
     var bounding = elem.getBoundingClientRect(),
-        peek = _peek ? _peek : (bounding.height / 2);
+        peek = (_peek !== undefined) ? _peek : (bounding.height / 2);
     return (
         bounding.bottom >= (0 - peek) &&
         bounding.top <= ((window.innerHeight || document.documentElement.clientHeight) - peek) &&

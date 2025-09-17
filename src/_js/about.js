@@ -2,7 +2,7 @@ import { isInViewport } from './modules/dom_utils.mjs';
 
 function aboutScroll (e) {
 	document.querySelectorAll('section').forEach(el => {
-		var bVisible = isInViewport(el,1);
+		var bVisible = isInViewport(el,-1);
 		console.log('el#'+el.id,bVisible);
 		let navItem = document.querySelector('a[href*="#'+el.id+'"]');
 		if(navItem)

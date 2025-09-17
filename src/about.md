@@ -32,15 +32,17 @@ Short for "killaBMC", my genuine wu-tang-name betrothed by the GZA{#killabmc .to
 </svg>
 
 1. [Mission](#mission) 
-1. [UX Principles](#principles) 
-1. [Design Storytelling](#process)
-1. [Leadership Philosophy](#leadership) 
+1. [Principles](#principles) 
+1. [Storytelling](#process)
+1. [Leadership](#leadership) 
 
 {#pagenav .sticky-nav}
 
 {% include "_mission.md" %}
 
-----
+&nbsp;
+
+&nbsp;
 
 {% include "_principles.md" %}
 
