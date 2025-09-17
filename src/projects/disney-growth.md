@@ -6,7 +6,7 @@ thumbnail: /images/portfolio/disney-growth/disney-growth-thumb.jpg
 eleventyExcludeFromCollections: false
 tags:
   - work
-summary: Leading the Growth Design program that launched Disney+ from **0 - 105M subscribers**.
+summary: Leading Growth Design from inception to **105M subscribers**.
 description: Over three years I built the Growth Design team, architected the UX strategy, and managed a cross-functional program to launch Disney+ and scale it across the world. Disney+ became the fastest growing streaming service ever, going from **0 - 105M subscribers** in two years. As we surpassed subscriber targets, we used data-driven design to grow **MRR & AARPU 25% YoY**.
 jobtitle: Senior Director, Product Design
 sponsor: Disney Streaming

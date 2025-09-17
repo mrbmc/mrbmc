@@ -6,6 +6,7 @@ masthead-video: /images/portfolio/nhl/nhl-masthead.mp4
 masthead-image: /images/portfolio/nhl/nhl-teaser-2x1.jpg
 tags:
   - work
+summary: Innovating the hockey viewing experience.
 description: Launching the NHL.tv streaming service and introducing **product-led-growth** for the official NHL app and website.
 jobtitle: Director, UX & Design
 sponsor: MLB Advaned Media

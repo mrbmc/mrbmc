@@ -1,4 +1,4 @@
-<article class="project">
+<article class="project col-6">
 
 <header>
 
@@ -6,7 +6,7 @@
 
 {% if project.data.timeline %}#### {{project.data.timeline}}{.timeline}{% endif %}
 
-{% if project.data.description %}{{ project.data.description }}{.summary}{% endif %}
+{% if project.data.summary %}{{ project.data.summary }}{.summary}{% endif %}
 
 {% for product in project.data.accomplishments %}
 - {{ product }}

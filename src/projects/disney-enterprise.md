@@ -6,7 +6,7 @@ thumbnail: /images/portfolio/disney-enterprise/optumus-mockup.jpg
 eleventyExcludeFromCollections: false
 tags:
   - work
-summary: Founding & leading design for Disney's streaming platform behind Disney+, Hulu, and ESPN+.
+summary: \"Streaming As A Service\" for Disney+, Hulu, and ESPN+.
 description: I founded the program, and grew a team from 1 to 16 designers, for Disney's Streaming As A Service platform. The Enterprise XD team designed a suite of 30+ industrial grade products that operate Disney+, ESPN+, Hulu, and STAR+. The platform saved Disney $80M per year, and increased MRR 25% YoY.
 jobtitle: Senior Director, Product Design
 accomplishments: 

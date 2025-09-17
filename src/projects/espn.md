@@ -5,7 +5,8 @@ masthead-image: /images/portfolio/espn/espn-masthead-16x9.jpg
 masthead-video: /images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
 date: 2019-11-12
 timeline: 2017-2021
-description: Leading Growth Design for ESPN+, and a vision for the future of streaming sports in Latin America.
+summary: Launching ESPN+, and envisioning the future of streaming sports.
+description: Leading Growth Design for the launch of ESPN+ and its first 21M subscribers; and a defining vision for the future of streaming sports in Latin America and the US.
 tags:
   - work
 jobtitle: Director, Product Design

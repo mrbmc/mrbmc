@@ -6,6 +6,7 @@ date: 2014-01-01
 tags:
   - work
 masthead-title: BlogTalkRadio
+summary: Paying podcast hosts their fair share.
 description: Leading the product, design, and engineering teams through a business transformation that drove **~40% revenue growth** in subscriptions and advertising.
 jobtitle: Senior Director, Product and Design
 casestudy: true

@@ -5,6 +5,7 @@ thumbnail: /images/portfolio/disney-groupwatch/disney-groupwatch-preview.jpg
 eleventyExcludeFromCollections: false
 tags:
   - work
+summary: Connecting people, from afar, to the stories they love.
 description: Nurturing an innovative feature that connects guests to friends & loved ones from concept through launch to adoption.
 casestudy: true
 jobtitle: Senior Director, Product Design
