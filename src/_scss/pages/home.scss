@@ -33,10 +33,11 @@ body.home {
     }
     @media (min-width: lib.$breakpoint) {
       height: 80vh;
-      // justify-content: flex-end;
-      // h1,h2,h3,p {
-      //   width: 62%;
-      // }
+      p.center {
+        font-size: 1.62rem;
+        width: 62%;
+        margin: 0 auto;
+      }
       #boids {
         position: absolute;
         left: 0;

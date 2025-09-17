@@ -9,7 +9,7 @@ cssfile: "css/pages/home.css"
 
 {% section "masthead","full-grid" %}
 
-# Design, Product Discovery, and Cross-Functional Leadership across B2C and B2B, from early startups to global enterprises.{.blur-in}
+Design, Product Discovery, and Cross-Functional Leadership across B2C and B2B, from early startups to global enterprises.{.blur-in .large-type .center}
 
 {#boids}
 
