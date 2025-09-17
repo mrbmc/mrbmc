@@ -10,13 +10,9 @@
   max-width: 100%;
   margin: 0 auto -2.375em;
   box-shadow: lib.$shadow;
-  -webkit-backdrop-filter: blur(.2rem);
-  backdrop-filter: blur(.2rem);
-  background: var(--white-semi);
   border-radius: var(--border-radius-xl);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-right-color: rgba(0,0,0,0.2);
-  border-bottom-color: rgba(0,0,0,0.2);
+  overflow: hidden;
+  @include lib.glass();
 
   &>li {
     list-style: none;
@@ -47,7 +43,7 @@
 
       &:hover {
         background: var(--muted-background);
-        color: var(--muted-foreground);
+        color: var(--body-emphasized);
       }
 
       &.on {

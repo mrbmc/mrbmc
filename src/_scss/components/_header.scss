@@ -44,8 +44,9 @@
     position: fixed;
     z-index: 20;
     color: #{lib.$neutral-100};
+    @include lib.glass();
     background: #00000061;
-    backdrop-filter: blur(.25rem);
+    box-shadow: inset 1px 1px 0px 0px #00000032,inset -1px -1px 0px 0px #FFFFFF32;
     border-radius: 6vh;
     transition: transform lib.$speed lib.$easing;
     mix-blend-mode: exclusion !important;
@@ -53,7 +54,7 @@
     svg {
     }
     &:hover {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
     @media (max-width: lib.$breakpoint) {
       display: none;
