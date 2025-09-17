@@ -89,10 +89,10 @@ h1 {
   letter-spacing: lib.$display-font-kerning;
 }
 h1 {
-  font-size: calc(1rem * pow(var(--type-scale), 6));
+  font-size: calc(1rem * pow(var(--type-scale), 7));
 }
 h2 {
-  font-size: calc(1rem * pow(var(--type-scale), 4));
+  font-size: calc(1rem * pow(var(--type-scale), 5));
 }
 h3 {
   font-size: calc(1rem * pow(var(--type-scale), 3));
