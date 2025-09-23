@@ -42,6 +42,8 @@ Short for "killaBMC", my genuine wu-tang-name betrothed by the GZA{#killabmc .to
 
 &nbsp;
 
+{% include "about_timeline.md" %}
+
 &nbsp;
 
 {% include "about_principles.md" %}

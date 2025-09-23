@@ -42,7 +42,7 @@ Getting links from: http://localhost:8000/about/
 ├───OK─── http://localhost:8000/images/optimized/puzzle-culture-537.svg
 ├───OK─── http://localhost:8000/images/optimized/puzzle-craft-537.svg
 ├───OK─── http://localhost:8000/images/optimized/puzzle-commerce-537.svg
-Finished! 54 links found. 41 excluded. 0 broken.
+Finished! 60 links found. 47 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/
 ├───OK─── http://localhost:8000/portfolio/flint-and-silicon/
@@ -796,5 +796,5 @@ Finished! 22 links found. 22 excluded. 0 broken.
 Getting links from: http://localhost:8000/tags/ai-art
 Finished! 22 links found. 22 excluded. 0 broken.
 
-Finished! 3054 links found. 2565 excluded. 0 broken.
-Elapsed time: 2 seconds
+Finished! 3060 links found. 2571 excluded. 0 broken.
+Elapsed time: 1 second
