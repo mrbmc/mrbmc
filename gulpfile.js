@@ -29,39 +29,39 @@ const CFDISTRO = "E1TNSK7JF24IAY";
 const paths = {
   jsbundles: [
     {
-    //   input: 'src/_js/gaia/pixi.js',
+    //   input: 'src/assets/js/gaia/pixi.js',
     //   output: 'www/js/pixi.bundle.js'
     // },
     // {
-      input: 'src/_js/base.js',
+      input: 'src/assets/js/base.js',
       output: 'www/js/base.bundle.js'
     },
     {
-      input: 'src/_js/home.js',
+      input: 'src/assets/js/home.js',
       output: 'www/js/home.bundle.js'
     },
     {
-      input: 'src/_js/about.js',
+      input: 'src/assets/js/about.js',
       output: 'www/js/about.bundle.js'
     },
     {
-      input: 'src/_js/blogpost.js', 
+      input: 'src/assets/js/blogpost.js', 
       output: 'www/js/blogpost.bundle.js'
     },
     {
-      input: 'src/_js/portfolio.js',
+      input: 'src/assets/js/portfolio.js',
       output: 'www/js/portfolio.bundle.js'
     },
     {
-      input: 'src/_js/photos.js',
+      input: 'src/assets/js/photos.js',
       output: 'www/js/photos.bundle.js'
     }
   ],
   js: [
-    'src/_js/gaia/*.js'
+    'src/assets/js/gaia/*.js'
   ],
   css: [
-    'src/_scss/**/!(_*).scss'
+    'src/assets/scss/**/!(_*).scss'
   ],
   assets: [
     {
@@ -69,7 +69,7 @@ const paths = {
       'dst':'www/images'
     },
     {
-      'src':'src/_fonts/',
+      'src':'src/assets/fonts/',
       'dst':'www/css/fonts'
     }
   ],
