@@ -279,7 +279,7 @@ In Europe, we modified the core signup flow to present users with the license ag
 
 Latin America required additional fields for Tax collection in Argentina and Chile
 
-![payment forms](/images/portfolio/disney-growth/disney+-signup-AR-step_4.png){.canzoom}
+![payment forms](/images/portfolio/disney-growth/disney+-signup-AR-step_4.png){.addLightbox}
 
 #### Outcomes
 

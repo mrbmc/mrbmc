@@ -2,6 +2,7 @@
 
 @use "../base/molecules";
 @use "../components/sticky-nav";
+@use "../components/lightbox";
 
 html {
     scroll-snap-type: y proximity;
@@ -87,9 +88,6 @@ body.about {
       }
       @media (max-width:lib.$breakpoint) {
         align-content: center;
-        .canzoom {
-          order: 3;
-        }
       }
     }
   }

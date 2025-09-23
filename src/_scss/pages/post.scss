@@ -1,10 +1,9 @@
 @use '../library' as lib;
 
 @use "../base/molecules";
-
 @use "../components/masthead";
-
 @use "../components/sticky-nav";
+@use "../components/lightbox";
 
 body.blog.post {
   transition: background (lib.$speed * 4) lib.$easing;

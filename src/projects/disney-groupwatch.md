@@ -69,7 +69,7 @@ Once we had alignment on the core use cases we wanted to solve, I paired a desig
 
 The Visiontype is a powerful tool for gaining stakeholder buy-in, feeding user research studies, and communicating with other teams.
 
-![WeWatch Visiontype](/images/portfolio/disney-groupwatch/groupwatch-visiontype-mocks.png){.canzoom}
+![WeWatch Visiontype](/images/portfolio/disney-groupwatch/groupwatch-visiontype-mocks.png){.addLightbox}
 
 ### Proof of concept
 
@@ -120,19 +120,19 @@ Demonstrate Disney’s commitment to innovation and improving the guest experien
 
 The biggest design challenge was to **reduce the emotional labor of group "Hosts"**. We knew the invitation flow had to be frictionless and integrate with existing user behaviors.
 
-![Interaction Design for the Invite](/images/portfolio/disney-groupwatch/groupwatch-ixd.jpg){.full-width}
+![Interaction Design for the Invite](/images/portfolio/disney-groupwatch/groupwatch-ixd.jpg){.full-grid .addLightbox}
 
 
 Interaction design for the invite.{.caption}
 
 Two designers and a researcher partnered to refine the invite UI. Using Rapid Iterative Test Evaluation tested prototypes with users to learn more about their mental models and identify any usabilty issues. This was the first prototype flow:
-![Invite flow version 1](/images/portfolio/disney-groupwatch/groupwatch-invite-v1.png){.canzoom}
+![Invite flow version 1](/images/portfolio/disney-groupwatch/groupwatch-invite-v1.png){.addLightbox}
 
 Testing convinced the team to make big changes: 
 - Remove UI that "triggered" users and added anxiety.
 - Leverage the native social features in phones. 
 - Lean into the "theater lobby" metaphor of the social gathering.
-![Invite flow version 2](/images/portfolio/disney-groupwatch/groupwatch-invite-v2.png){.canzoom}
+![Invite flow version 2](/images/portfolio/disney-groupwatch/groupwatch-invite-v2.png){.addLightbox}
 
 #### UX Design: The Lobby
 
@@ -143,7 +143,7 @@ We took cues from our colleagues designing Disney parks and created a "weenie", 
 
 **The Lobby** was our virtual meeting point for guests and hosts. 
 
-![The Lobby](/images/portfolio/disney-groupwatch/disney-groupwatch-devices.png){.full-grid .canzoom}
+![The Lobby](/images/portfolio/disney-groupwatch/disney-groupwatch-devices.png){.full-grid .addLightbox}
 
 ### Visual Design
 
@@ -151,20 +151,20 @@ Once we had the core invite experience dialed in we moved on to visual design of
 
 1. Visual design started with a broad spectrum of divergent ideas. We began to read-in more designers to the project at this point.
 
-![24 versions of the waiting room](/images/portfolio/disney-groupwatch/groupwatch-visual-v1.jpg){.canzoom}
+![24 versions of the waiting room](/images/portfolio/disney-groupwatch/groupwatch-visual-v1.jpg){.addLightbox}
 
 
 2. We focused on layouts that had the right balance of social and content priority.
 
-![Waiting room layouts that balance social and content](/images/portfolio/disney-groupwatch/groupwatch-visual-v2.jpg){.canzoom}
+![Waiting room layouts that balance social and content](/images/portfolio/disney-groupwatch/groupwatch-visual-v2.jpg){.addLightbox}
 
 3. Engineering leads had been informed of the program but now was the point we dug deep with Client Engineers to identify expensive UI that couldn't be rendered or needed custom components.
 
-![Waiting room layouts that are feasible](/images/portfolio/disney-groupwatch/groupwatch-visual-v3.jpg){.canzoom}
+![Waiting room layouts that are feasible](/images/portfolio/disney-groupwatch/groupwatch-visual-v3.jpg){.addLightbox}
 
 4. Finally, we aligned to the existing visual style as much as possible so the feature would feel native and intentional.
 
-![Waiting room designs that fit our visual language](/images/portfolio/disney-groupwatch/groupwatch-visual-v4.jpg){.canzoom}
+![Waiting room designs that fit our visual language](/images/portfolio/disney-groupwatch/groupwatch-visual-v4.jpg){.addLightbox}
 
 
 ### Motion Design
@@ -221,7 +221,7 @@ Leading up to the launch of the feature I was able to collaborate with the Marke
 
 <video src="/images/portfolio/disney-groupwatch/GWMPT.mp4" controls autoplay loop class="full-width" style="display:block;clear:both;"></video>
 
-![Marketing designs](/images/portfolio/disney-groupwatch/groupwatch-marketing.png){.full-width}
+![Marketing designs](/images/portfolio/disney-groupwatch/groupwatch-marketing.png){.full-width .hero}
 
 ### Public Reception
 

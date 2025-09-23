@@ -1,0 +1,30 @@
+@use '../library' as lib;
+
+#lightbox {
+    visibility: hidden;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: var(--gutter);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000cc;
+    opacity: 0;
+    transition: opacity lib.$speed lib.$easing;
+
+    &.in {
+        visibility: visible;
+        opacity: 1;
+    }
+    img {
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.hasLightbox {
+    &:hover {
+        cursor: zoom-in,
+    }
+}

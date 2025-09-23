@@ -6,7 +6,7 @@ These mantras - which colleagues have heard me repeat - help guide consistent hi
 
 <div class="grid full-grid">
 
-![Alt Text](/images/portfolio/disney-groupwatch/wewatch-interview-participants-3x3.jpg) {.col-start-2 .col-end-5 .canzoom}
+![User Interviews](/images/portfolio/disney-groupwatch/wewatch-interview-participants-3x3.jpg){.addLightbox} {.col-start-2 .col-end-5}
 
 <div class="col-start-7 col-end-11">
 
@@ -27,12 +27,12 @@ Success is an infinite sum game that can be grown through collaboration. A great
 
 </div>
   
-![Workshop](/images/portfolio/disney-growth/workshop-pictogram.jpg) {.col-start-8 .col-end-11 .canzoom}
+![Workshop](/images/portfolio/disney-growth/workshop-pictogram.jpg){.addLightbox} {.col-start-8 .col-end-11}
 
 </div>
 <div class="grid full-grid">
 
-![Sea Lion](/images/blog/sealion-balance.jpg) {.col-start-2 .col-end-5 .canzoom}
+![Sea Lion](/images/blog/sealion-balance.jpg){.addLightbox} {.col-start-2 .col-end-5}
 
 <div class="col-start-7 col-end-11">
 
@@ -55,7 +55,7 @@ The solution in design often seems obvious but is usually the product of a rigor
 
 </div>
   
-![Wireframes](/images/about/about-wireframes-xl.jpg) {.col-start-8 .col-end-11 .canzoom}
+![Wireframes](/images/about/about-wireframes-xl.jpg){.addLightbox} {.col-start-8 .col-end-11}
 
 </div>
 

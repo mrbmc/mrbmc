@@ -75,7 +75,7 @@ I was the design executive accountable for investing design in these biggest bus
 
 This model helped in securing funding for staffing, contractors, and roadmap priority. We sequenced our work from the top right to lower left in hiring and project planning.
 
-![Enterprise ROI](/images/portfolio/disney-enterprise/exd-roi-framework.png){.canzoom}
+![Enterprise ROI](/images/portfolio/disney-enterprise/exd-roi-framework.png)
 
 ----
 

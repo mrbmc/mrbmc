@@ -44,7 +44,7 @@ Sometimes the evaluation is informal, but a common rubric for evaluating skills 
 
 | Product Designer | UX Researcher |
 |----------|----------|
-| ![visual designer](/images/blog/designer-skill-profile-UI.png){.canzoom}    | ![UX designer](/images/blog/designer-skill-profile-UX.png)    |
+| ![visual designer](/images/blog/designer-skill-profile-UI.png){.addLightbox}    | ![UX designer](/images/blog/designer-skill-profile-UX.png)    |
 
 | Design Systems Designer  | Generalist Designer|
 |----------|----------|

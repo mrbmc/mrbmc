@@ -107,7 +107,7 @@ The Studio is the heart of the BTR experience and it's the UI that hosts interac
 
 The art direction was inspired by high-end Audio and video authoring applications. We wanted to convey a serious, professional-grade application for our hosts to work with.
 
-+ !['Live'](/images/portfolio/btr/btr-studio-live.png) {.col-4 .row-1 .canzoom .contain}
++ !['Live'](/images/portfolio/btr/btr-studio-live.png) {.col-4 .row-1 .contain}
 + !['Pre-Show'](/images/portfolio/btr/btr-studio-pre-show.png) {.col-4 .row-1}
 + !['Ad Break'](/images/portfolio/btr/btr-studio-ad-break.png) {.col-4 .row-1}
 + !['Macbook'](/images/portfolio/btr/btr-studio-imac.png) {.col-12 .contain}
@@ -118,7 +118,7 @@ The art direction was inspired by high-end Audio and video authoring application
 
 Hosts wanted total control over when and how ads cut into their shows. We built an web-based audio editor that allowed hosts to splice in ads at the frame level.
 
-!['Ad Editor'](/images/portfolio/btr/btr-ad-editor.png){.canzoom} 
+!['Ad Editor'](/images/portfolio/btr/btr-ad-editor.png){.addLightbox} 
  
 
 ----
@@ -165,9 +165,10 @@ Improved the artwork delivered tangible business impact:
 
 
 
-![New Artwork](/images/portfolio/btr/btr-host-artwork.png){.col-12 .canzoom}
++ ![New Artwork](/images/portfolio/btr/btr-host-artwork.png){.addLightbox} {.col-6}
++ ![New Artwork](/images/portfolio/btr/btr-homepage.jpg){.addLightbox} {.col-6}
 
-![New Artwork](/images/portfolio/btr/btr-homepage.jpg){.col-12 .canzoom}
+{.grid .full-grid}
 
 ---
 

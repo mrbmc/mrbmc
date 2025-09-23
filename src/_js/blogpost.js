@@ -1,4 +1,5 @@
 import { doParallax } from "./modules/parallax.mjs";
+import { addLightbox } from "./modules/lightbox.mjs";
 
 window.addEventListener('scroll', function(e) {
     // doParallax(e);
@@ -8,3 +9,14 @@ window.addEventListener('scroll', function(e) {
 });
 
 window.addEventListener('scroll', doParallax);
+
+window.addEventListener('load', function(e) {
+    var zoomies = document.querySelectorAll('.addLightbox');
+    zoomies.forEach(el => {
+        addLightbox(el);
+    });
+    var imgs = document.querySelectorAll('.grid.well img');
+        imgs.forEach(img => {
+            addLightbox(img);
+        })
+});

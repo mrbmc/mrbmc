@@ -36,18 +36,18 @@ Over the next two years I grew the team from 3 generalists to a program of 12 de
 
 I collaborated with other design leaders to add specialists from our Motion Studio, Prototyping, Design Systems, and International UX teams.
 
-![](/images/portfolio/disney-growth/growth-team-end.png){.center}
+![](/images/portfolio/disney-growth/growth-team-end.png){.center .addLightbox}
 Growth Team in December 2020 {.caption}
 
 #### The Product-Operating Model
 
 The formiddable scale of features, devices, and global territories required a new organization design and process to succeed. I collaborated with my peer Directors and VP of Product to evangelize empowered product teams that had **clear swim-lanes**, **accountability**, and **autonomy**. We expanded the new product operating model to include Data, Marketing, and Operations.
 
-![Pods](/images/portfolio/disney-growth/product-operating-model.png){.canzoom}  
+![Pods](/images/portfolio/disney-growth/product-operating-model.png){.addLightbox}  
 
 Each pod had the autonomy to define their ways of working, but generally, they found a 2-week cadence of ceremonies to stay in sync, prioritize work, flatten issues, and break out working groups.
 
-![Pods](/images/portfolio/disney-growth/ceremony-cadence.svg)  {._full-width-90}
+![Pods](/images/portfolio/disney-growth/ceremony-cadence.svg){.addLightbox}
 
 ### Experience Principles (aka Tenets or Axioms){#ux-tenets}
 
@@ -165,7 +165,7 @@ We grew Disney+ rapidly by expanding horizontally into new geographic markets. E
 
 Latin America required additional fields for Tax collection in Argentina and Chile
 
-![payment forms](/images/portfolio/disney-growth/disney+-signup-AR-step_4.png){.canzoom}
+![payment forms](/images/portfolio/disney-growth/disney+-signup-AR-step_4.png){.addLightbox}
 
 ### Optimizing Subscribers for Revenue {#plan-picker}
 

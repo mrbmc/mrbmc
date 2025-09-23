@@ -75,7 +75,7 @@ The internally stated goal for Disney+ was to acquire as many subscribers as pos
 
 The Growth Design team began work long before Disney+ launched; before Disney acquired BAMTech to build its streaming services; even before BAMTech existed. Many of the people on the teams involved had already launched & operated dozens of direct-to-consumer services as part of *MLB Advanced Media*.
 
-![streaming services we launched](/images/portfolio/disney-growth/mlbam-clients-grayscale.png){.canzoom}
+![streaming services we launched](/images/portfolio/disney-growth/mlbam-clients-grayscale.png){.addLightbox}
 
 Disney acquired BAMTech for its ability to build *content businesses*. In addition to the technology for streaming high-quality video over the internet, BAMTech had the commerce platform turnstile UX to sell content directly to consumers at scale. That experience gave us a basecamp from which to begin our expedition up Disney+. We already had the infrastructure for many core Growth features:
 
@@ -262,16 +262,16 @@ We settled on a "wizard" signup flow that stepped through information progressiv
 
 Existing accounts would be confirmed with an email confirmation containing a One Time Passcode. Once Confirmed, we could use the existing account to grant entitlements for streaming. Net new emails would create a new account by setting a password.
 
-![Signup Web](/images/portfolio/disney-growth/Disney_SVOD_Product_Overview_Onboarding.032.jpeg){.canzoom}
+![Signup Web](/images/portfolio/disney-growth/Disney_SVOD_Product_Overview_Onboarding.032.jpeg){.addLightbox}
 Signup for Web{.caption}
 
-![Signup Apple Mobile](/images/portfolio/disney-growth/Disney_SVOD_Product_Overview_Onboarding.101.jpeg){.canzoom}
+![Signup Apple Mobile](/images/portfolio/disney-growth/Disney_SVOD_Product_Overview_Onboarding.101.jpeg){.addLightbox}
 Signup for Apple Mobile{.caption}
 
 #### Purchase Success Screen
 
 We debated whether the success screen was truly necessary. From a functional stand-point it wasn't, and our tenet "First Stream First" suggested that we should remove it. On the other-hand there was a usability argument that any commerce transaction needs to communicate its status to the user.
-![success screen](/images/portfolio/disney-growth/signup-web-success-v1.jpeg){.canzoom}
+![success screen](/images/portfolio/disney-growth/signup-web-success-v1.jpeg){.addLightbox}
 
 Ultimately the debate was settled by... you guessed it ... *licensing agreements!*
 
@@ -279,7 +279,7 @@ Disney had a substantial content licensing business before launching its own str
 
 The least awful place for us to advertise another service was at the end of the purchase funnel. We also removed the prompt to setup profiles in service of that "First Stream..." tenet to prevent any distractions. 
 
-![Starz Wars](/images/portfolio/disney-growth/StarzSept06final.006.jpeg){.canzoom}
+![Starz Wars](/images/portfolio/disney-growth/StarzSept06final.006.jpeg){.addLightbox}
 
 ### TV & Connected Devices {#tv-signup}
 
@@ -348,7 +348,7 @@ We created a hybrid QR code / License Plate design that would elegantly shift us
 
 In order to get this solution to market more efficiently the first shipped version would only have the license plate code – no QR code – and we had to remove the progress screens.
 
-![](/images/portfolio/disney-growth/tv-signup-live.jpg){.canzoom}
+![](/images/portfolio/disney-growth/tv-signup-live.jpg){.addLightbox}
 
 #### Outcomes
 
@@ -370,7 +370,7 @@ We needed to support a seamless purchase and signup through hundreds of local re
 
 We designed a scalable framework that could adapt to different billing capabilities or local regulations. We also designed materials for our Partnership team to help onboard resellers and developers.
 
-![B2B2C OneSheet](/images/portfolio/disney-growth/Disney+_B2B2C_OneSheet.jpg){.canzoom}
+![B2B2C OneSheet](/images/portfolio/disney-growth/Disney+_B2B2C_OneSheet.jpg){.addLightbox}
 
 
 + ![](/images/portfolio/disney-growth/redemption-0.jpg)
@@ -405,7 +405,7 @@ In Europe, we modified the core signup flow to present users with the license ag
 
 Latin America required additional fields for Tax collection in Argentina and Chile
 
-![payment forms](/images/portfolio/disney-growth/disney+-signup-AR-step_4.png){.canzoom}
+![payment forms](/images/portfolio/disney-growth/disney+-signup-AR-step_4.png){.addLightbox}
 
 #### Outcomes
 

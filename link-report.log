@@ -26,7 +26,7 @@ Getting links from: http://localhost:8000/
 ├───OK─── http://localhost:8000/blog/design-quality/
 ├───OK─── http://localhost:8000/colophon/
 ├───OK─── http://localhost:8000/privacy/
-Finished! 50 links found. 23 excluded. 0 broken.
+Finished! 49 links found. 22 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/about/
 ├───OK─── http://localhost:8000/images/optimized/mrbmc-20241121-640.webp
@@ -42,7 +42,7 @@ Getting links from: http://localhost:8000/about/
 ├───OK─── http://localhost:8000/images/optimized/puzzle-culture-537.svg
 ├───OK─── http://localhost:8000/images/optimized/puzzle-craft-537.svg
 ├───OK─── http://localhost:8000/images/optimized/puzzle-commerce-537.svg
-Finished! 53 links found. 40 excluded. 0 broken.
+Finished! 54 links found. 41 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/
 ├───OK─── http://localhost:8000/portfolio/flint-and-silicon/
@@ -58,7 +58,7 @@ Getting links from: http://localhost:8000/portfolio/
 ├───OK─── http://localhost:8000/images/optimized/PAL9100-tablet-640.webp
 ├───OK─── http://localhost:8000/portfolio/boids/
 ├───OK─── http://localhost:8000/images/optimized/boids-thumb-640.webp
-Finished! 62 links found. 49 excluded. 0 broken.
+Finished! 61 links found. 48 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/resume/
 Finished! 30 links found. 30 excluded. 0 broken.
@@ -137,12 +137,9 @@ Finished! 75 links found. 45 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-growth/
 ├───OK─── http://localhost:8000/images/optimized/disney-growth-640.webp
-├───OK─── http://localhost:8000/images/optimized/everest-basecamp-large-640.webp
-├───OK─── http://localhost:8000/images/optimized/growth-team-start-640.webp
 ├───OK─── http://localhost:8000/images/optimized/growth-team-end-640.webp
 ├───OK─── http://localhost:8000/images/optimized/product-operating-model-640.webp
 ├───OK─── http://localhost:8000/images/optimized/ceremony-cadence-1697.svg
-├───OK─── http://localhost:8000/images/optimized/everest-ascent-large-640.webp
 ├───OK─── http://localhost:8000/images/optimized/olp-v4-640.webp
 ├───OK─── http://localhost:8000/images/optimized/olp-v3-640.webp
 ├───OK─── http://localhost:8000/images/optimized/olp-v2-640.webp
@@ -177,7 +174,6 @@ Getting links from: http://localhost:8000/portfolio/disney-growth/
 ├───OK─── http://localhost:8000/images/optimized/b2b2c-password-640.webp
 ├───OK─── http://localhost:8000/images/optimized/b2b2c-canal-terms-640.webp
 ├───OK─── http://localhost:8000/images/optimized/b2b2c-canal-success-640.webp
-├───OK─── http://localhost:8000/images/optimized/everest-north-side-sun-over-tibetan-plateau-640.webp
 ├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_0-640.webp
 ├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_1-640.webp
 ├───OK─── http://localhost:8000/images/optimized/disney+-signup-DE-step_2-640.webp
@@ -193,8 +189,7 @@ Getting links from: http://localhost:8000/portfolio/disney-growth/
 ├───OK─── http://localhost:8000/images/optimized/plan-picker-test-slide-640.webp
 ├───OK─── http://localhost:8000/images/optimized/workshop-agenda-640.webp
 ├───OK─── http://localhost:8000/images/optimized/bundle-workshop-wireframes-640.webp
-├───OK─── http://localhost:8000/images/optimized/everest-descent-640.webp
-Finished! 101 links found. 43 excluded. 0 broken.
+Finished! 80 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-groupwatch/
 ├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/GW-Demo_02-24.mp4
@@ -525,7 +520,36 @@ Getting links from: http://localhost:8000/blog/bike-tour-2023/
 ├───OK─── http://localhost:8000/images/optimized/bike-tour-2023-route-v2-640.webp
 ├───OK─── http://localhost:8000/images/optimized/bike-tour-bike-640.webp
 ├───OK─── http://localhost:8000/images/optimized/bike-tour-gear-640.webp
-Finished! 52 links found. 47 excluded. 0 broken.
+├───OK─── http://localhost:8000/images/optimized/IMG_1514-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1847-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1808-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1906-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1794-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1867-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1706-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1762-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1612-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1731-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1753-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1724-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1711-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1698-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1544-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1525-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1657-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1566-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1509-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1455-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1393-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1431-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1437-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1333-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1322-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1499-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1440-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1377-640.webp
+├───OK─── http://localhost:8000/images/optimized/IMG_1343-640.webp
+Finished! 81 links found. 47 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/design-for-durability/
 ├───OK─── http://localhost:8000/images/optimized/cannondale-caad-optimo-105-640.webp
@@ -772,5 +796,5 @@ Finished! 22 links found. 22 excluded. 0 broken.
 Getting links from: http://localhost:8000/tags/ai-art
 Finished! 22 links found. 22 excluded. 0 broken.
 
-Finished! 3047 links found. 2582 excluded. 0 broken.
-Elapsed time: 1 second
+Finished! 3054 links found. 2565 excluded. 0 broken.
+Elapsed time: 2 seconds

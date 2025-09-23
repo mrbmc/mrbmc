@@ -16,7 +16,4 @@ cssfile: "css/pages/project.css"
 {% assign nextPost = collections[tags[0]] | getPreviousCollectionItem: page %}
 {% assign previousPost = collections[tags[0]] | getNextCollectionItem: page %}
 
-
-<div id="lightbox" class=""></div>
-
 <script type="module" src="/js/portfolio.bundle.js"></script>

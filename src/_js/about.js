@@ -1,4 +1,5 @@
 import { isInViewport } from './modules/dom_utils.mjs';
+import { addLightbox } from "./modules/lightbox.mjs";
 
 function aboutScroll (e) {
 	document.querySelectorAll('section').forEach(el => {
@@ -11,6 +12,7 @@ function aboutScroll (e) {
 }
 
 window.addEventListener('load', function(e) {
+
     document.querySelector("a[href='#killabmc']").addEventListener('mouseover',function(event){
         const tip = document.getElementById('killabmc');
         var xposition = (event.clientX - this.offsetLeft);
@@ -23,6 +25,12 @@ window.addEventListener('load', function(e) {
         const tip = document.getElementById('killabmc');
         tip.classList.remove("in");
     });
+
+  var zoomies = document.querySelectorAll('.addLightbox');
+      zoomies.forEach(el => {
+        addLightbox(el);
+      });
+
 });
 
 window.addEventListener('scroll', aboutScroll);
