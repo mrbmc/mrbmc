@@ -19,14 +19,10 @@ Short for "killaBMC", my genuine wu-tang-name betrothed by the GZA{#killabmc .to
 
 {% endsection %}
 
-<svg viewBox="0 0 600 600" style="height:0;">
+<svg viewBox="0 0 1000 1000" style="height:0;">
   <defs>
     <clipPath id="portrait_mask" clipPathUnits="objectBoundingBox">
-      <path fill="none" d="
-      M 0.1,0.0 
-      L 0.0,1.0 
-      L 0.9,1.0
-      L 1.0,0.0"/>
+      <path fill="none" d="M0.89129 0.402478C0.628798 0.682086 1.05785 0.934858 0.789056 0.983747C0.516255 1.03337 0.00000448498 0.977644 0.00000268558 0.700988C0.000000503265 0.365459 0.120981 0 0.398278 0C0.688796 0 1.23208 0.03947 0.89129 0.402478Z"/>
     </clipPath>
   </defs>
 </svg>
