@@ -76,7 +76,7 @@ body > main {
   box-sizing: content-box;
   max-width: var(--width);
   margin: 0 auto;
-  padding: var(--gutter);
+  padding: 0 var(--gutter);
   position: relative;
   z-index: 1;
 

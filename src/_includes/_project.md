@@ -1,4 +1,4 @@
-<article class="project col-6">
+<article class="project col-12">
 
 <header>
 
