@@ -1,0 +1,66 @@
+@use "../library" as lib;
+
+@use "root";
+
+@use 'type';
+
+@use "atoms";
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-column-gap: var(--gutter);
+    grid-row-gap: var(--gutter-xl);
+    grid-auto-flow: row;
+
+    &>* {
+        box-sizing: border-box;
+        list-style: none;
+        margin: 0;
+    }
+
+    @for $i from 1 through lib.$grid-columns {
+        .col-start-#{$i} {
+          grid-column-start: $i;
+        }
+        .col-end-#{$i} {
+          grid-column-end: ($i + 1);
+        }
+        .col-#{$i} {
+          grid-column: span $i;
+        }
+        .row-#{$i} {
+            grid-row: span $i;
+        }
+    }
+
+    h1,h2,h3,h4,h5 {
+        grid-column: span var(--columns);
+    }
+
+    @media (max-width: lib.$breakpoint) {
+      [class*="col-"]{
+        grid-column: span var(--columns);
+      }
+    }
+    .card {
+      height: 100%;
+    }
+}
+
+body > main {
+  padding: var(--gutter);
+}
+
+
+img {
+	max-height: 50vh;
+}
+
+
+@media print {
+  @page {
+    size: A4 portrait; /* Sets page size to A4 and orientation to portrait */
+    margin: 1cm; /* Sets a 1cm margin on all sides */
+  }
+}
