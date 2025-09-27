@@ -136,7 +136,7 @@ Getting links from: http://localhost:8000/blog/
 Finished! 76 links found. 46 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-growth/
-├───OK─── http://localhost:8000/images/optimized/disney-growth-640.webp
+├───OK─── http://localhost:8000/images/optimized/disney-growth-device-cluster-640.webp
 ├───OK─── http://localhost:8000/images/optimized/growth-team-end-640.webp
 ├───OK─── http://localhost:8000/images/optimized/product-operating-model-640.webp
 ├───OK─── http://localhost:8000/images/optimized/ceremony-cadence-1697.svg
@@ -229,26 +229,7 @@ Getting links from: http://localhost:8000/portfolio/disney-groupwatch/
 Finished! 59 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-enterprise/
-├───OK─── http://localhost:8000/images/optimized/ivan-cockpit-640.webp
-├───OK─── http://localhost:8000/images/optimized/exd-roi-framework-640.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-linda-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-caroline-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-dan-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-alexaf-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-daria-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-takeem-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-alexac-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-jenny-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-willet-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-sarah-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-kda-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-cathy-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-carol-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-jon-184.webp
-├───OK─── http://localhost:8000/images/optimized/exd-team-agency-340.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-Golden-Circle-640.webp
-├───OK─── http://localhost:8000/images/portfolio/culture-workshop/EXD-workshop-timelapse.mp4
-├───OK─── http://localhost:8000/images/optimized/exd-pods-640.webp
+├───OK─── http://localhost:8000/images/optimized/disney-enterprise-sso_gates-640.webp
 ├───OK─── http://localhost:8000/images/optimized/props-list-640.webp
 ├───OK─── http://localhost:8000/images/optimized/genie-campaign-640.webp
 ├───OK─── http://localhost:8000/images/optimized/genie-offers-640.webp
@@ -272,22 +253,46 @@ Getting links from: http://localhost:8000/portfolio/disney-enterprise/
 ├───OK─── http://localhost:8000/images/optimized/weaponx-640.webp
 ├───OK─── http://localhost:8000/images/optimized/dataportal-640.webp
 ├───OK─── http://localhost:8000/images/optimized/exd-design-system-overview-640.webp
-├───OK─── http://localhost:8000/images/optimized/trek-inputs-640.webp
 ├───OK─── http://localhost:8000/images/optimized/trek-colors-640.webp
 ├───OK─── http://localhost:8000/images/optimized/trek-type-640.webp
+├───OK─── http://localhost:8000/images/optimized/trek-inputs-640.webp
 ├───OK─── http://localhost:8000/images/optimized/trek-navigation-640.webp
 ├───OK─── http://localhost:8000/images/optimized/trek-buttons-640.webp
+├───OK─── http://localhost:8000/images/optimized/commerce-offers-list-640.webp
 ├───OK─── http://localhost:8000/images/optimized/commerce-offer-detail-640.webp
 ├───OK─── http://localhost:8000/images/optimized/sisu-customer-details-640.webp
 ├───OK─── http://localhost:8000/images/optimized/messaging-new-email-640.webp
 ├───OK─── http://localhost:8000/images/optimized/cypher-dictionary-640.webp
-├───OK─── http://localhost:8000/images/optimized/content-portal-episode-640.webp
+├───OK─── http://localhost:8000/images/optimized/cypher-edit-key-640.webp
+├───OK─── http://localhost:8000/images/optimized/content-portal-entities-episode-640.webp
+├───OK─── http://localhost:8000/images/optimized/content-portal-programming-episode-640.webp
 ├───OK─── http://localhost:8000/images/optimized/knowsmore-640.webp
 ├───OK─── http://localhost:8000/images/optimized/qos-spotlight-640.webp
+├───OK─── http://localhost:8000/images/optimized/qos-workbench-640.webp
 ├───OK─── http://localhost:8000/images/optimized/experiments-results-640.webp
+├───OK─── http://localhost:8000/images/optimized/experiment-detail-640.webp
 ├───OK─── http://localhost:8000/images/optimized/ads-mission-control-scheduling-640.webp
 ├───OK─── http://localhost:8000/images/optimized/dev-portal-640.webp
-Finished! 96 links found. 38 excluded. 0 broken.
+├───OK─── http://localhost:8000/images/optimized/exd-roi-framework-640.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-linda-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-caroline-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-dan-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-alexaf-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-daria-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-takeem-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-alexac-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-jenny-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-willet-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-sarah-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-kda-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-cathy-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-carol-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-jon-184.webp
+├───OK─── http://localhost:8000/images/optimized/exd-team-agency-340.webp
+├───OK─── http://localhost:8000/images/optimized/EXD-Golden-Circle-640.webp
+├───OK─── http://localhost:8000/images/portfolio/culture-workshop/EXD-workshop-timelapse.mp4
+├───OK─── http://localhost:8000/images/optimized/exd-pods-640.webp
+Finished! 102 links found. 39 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/espn/
 ├───OK─── http://localhost:8000/images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
@@ -599,7 +604,7 @@ Finished! 28 links found. 27 excluded. 0 broken.
 Getting links from: http://localhost:8000/blog/londoner-guide-to-NYC-cycling/
 ├───OK─── http://localhost:8000/tags/parody
 ├───OK─── http://localhost:8000/tags/new-york
-Finished! 29 links found. 27 excluded. 0 broken.
+Finished! 28 links found. 26 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/design-is-never-done/
 ├───OK─── http://localhost:8000/tags/creativity
@@ -796,5 +801,5 @@ Finished! 23 links found. 23 excluded. 0 broken.
 Getting links from: http://localhost:8000/tags/ai-art
 Finished! 23 links found. 23 excluded. 0 broken.
 
-Finished! 3162 links found. 2673 excluded. 0 broken.
-Elapsed time: 1 second
+Finished! 3167 links found. 2673 excluded. 0 broken.
+Elapsed time: 2 seconds
