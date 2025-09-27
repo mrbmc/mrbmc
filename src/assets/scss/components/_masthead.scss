@@ -5,6 +5,7 @@
     height: calc(100vh - var(--navbar-height));
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
+    margin-bottom: var(--gutter-xl);
 
     display: flex;
     flex-direction: column;
@@ -14,12 +15,7 @@
     overflow: hidden;
     z-index: 10;
 
-    @include lib.inverse(
-        lib.$primary,
-        lib.$secondary,
-        lib.$primary,
-        lib.$tertiary,
-        );
+    @include lib.inverse();
 
     @media (max-width: lib.$breakpoint) {
         min-height: 56.25vw;

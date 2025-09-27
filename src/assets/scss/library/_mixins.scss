@@ -20,7 +20,11 @@
   flex: 1 0 math.div(100%, $cols);
 }
 
-@mixin inverse($c1:var(--accent-background),$c2:false,$c3:false,$c4:false) {
+        // lib.$neutral-0,
+        // lib.$neutral-10,
+        // lib.$neutral-0,
+        // lib.$neutral-20,
+@mixin inverse($c1:colors.$neutral-05,$c2:colors.$neutral-20,$c3:colors.$neutral-0,$c4:colors.$neutral-10) {
   & {
     background-color: $c1;
     color: var(--accent-foreground);
