@@ -10,21 +10,21 @@ var last_known_scroll_position = 0,
 
 function initMosaics() {
     var imgs = document.querySelectorAll('.grid.well img');
-        imgs.forEach(img => {
-            addLightbox(img);
-        })
-  var zoomies = document.querySelectorAll('.addLightbox');
-  zoomies.forEach(el => {
-    addLightbox(el);
-  });
+    imgs.forEach(img => {
+        addLightbox(img);
+    })
+    var zoomies = document.querySelectorAll('.addLightbox');
+    zoomies.forEach(el => {
+        addLightbox(el);
+    });
 }
 
-window.addEventListener('popstate',function(e){
+window.addEventListener('popstate', function(e) {
     galleryPopstate(e);
 });
 
 window.addEventListener('load', function(e) {
-    console.log('project.window.load',e);
+    console.log('project.window.load', e);
     initMosaics(e);
     initGallery(e);
 });
