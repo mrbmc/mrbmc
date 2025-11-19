@@ -519,246 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/assets/scss/components/_masthead.scss",
-			"settings":
-			{
-				"buffer_size": 1843,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					7,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"CAAAAB0BAAAAAAAAIAEAAAAAAAAAAAAABwEAAAAAAAAKAQAAAAAAAAAAAADvAAAAAAAAAPIAAAAAAAAAAAAAAM8AAAAAAAAA0gAAAAAAAAAAAAAAswAAAAAAAAC2AAAAAAAAAAAAAACgAAAAAAAAAKMAAAAAAAAAAAAAAHwAAAAAAAAAfwAAAAAAAAAAAAAAXAAAAAAAAABfAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAWAAAAAAAAAAqAQAAAAAAAAAAAAAAAAAA"
-				],
-				[
-					12,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAP4AAAAAAAAA/gAAAAAAAAADAAAALy8g",
-					"AQAAAAAAAAABAAAABgEAAAAAAAAGAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					14,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAABYBAAAAAAAAFgEAAAAAAAADAAAALy8g",
-					"AQAAAAAAAAABAAAAGwEAAAAAAAAbAQAAAAAAAAAAAAAAgE9A"
-				],
-				[
-					17,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAACwBAAAAAAAALAEAAAAAAAADAAAALy8g",
-					"AQAAAAAAAAABAAAALgEAAAAAAAAuAQAAAAAAAAAAAAAAAEVA"
-				],
-				[
-					21,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AwAAANsAAAAAAAAA2wAAAAAAAAADAAAALy8gvAAAAAAAAAC8AAAAAAAAAAMAAAAvLyCmAAAAAAAAAKYAAAAAAAAAAwAAAC8vIA",
-					"AQAAAAAAAAABAAAA2wAAAAAAAACmAAAAAAAAAAAAAAAAADxA"
-				],
-				[
-					32,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AgAAAH8AAAAAAAAAfwAAAAAAAAADAAAALy8gXAAAAAAAAABcAAAAAAAAAAMAAAAvLyA",
-					"AQAAAAAAAAABAAAAZgAAAAAAAACJAAAAAAAAAAAAAAAAgFhA"
-				],
-				[
-					37,
-					1,
-					"insert",
-					{
-						"characters": "\nmargin-b"
-					},
-					"CQAAAJoAAAAAAAAAnwAAAAAAAAAAAAAAnwAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKEAAAAAAAAAAAAAAKEAAAAAAAAAogAAAAAAAAAAAAAAogAAAAAAAACjAAAAAAAAAAAAAACjAAAAAAAAAKQAAAAAAAAAAAAAAKQAAAAAAAAApQAAAAAAAAAAAAAApQAAAAAAAACmAAAAAAAAAAAAAACmAAAAAAAAAKcAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAmgAAAAAAAACaAAAAAAAAAP///////+9/"
-				],
-				[
-					38,
-					1,
-					"insert_completion",
-					{
-						"completion": "margin-bottom: $0;",
-						"format": "snippet",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "margin-bottom"
-					},
-					"AgAAAJ8AAAAAAAAAnwAAAAAAAAAIAAAAbWFyZ2luLWKfAAAAAAAAAK8AAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAApwAAAAAAAACnAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					39,
-					1,
-					"insert",
-					{
-						"characters": "var"
-					},
-					"AwAAAK4AAAAAAAAArwAAAAAAAAAAAAAArwAAAAAAAACwAAAAAAAAAAAAAACwAAAAAAAAALEAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAArgAAAAAAAACuAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					40,
-					1,
-					"insert_snippet",
-					{
-						"contents": "($0)"
-					},
-					"AQAAALEAAAAAAAAAswAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAsQAAAAAAAACxAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					41,
-					1,
-					"insert",
-					{
-						"characters": "--gutter-xl"
-					},
-					"CwAAALIAAAAAAAAAswAAAAAAAAAAAAAAswAAAAAAAAC0AAAAAAAAAAAAAAC0AAAAAAAAALUAAAAAAAAAAAAAALUAAAAAAAAAtgAAAAAAAAAAAAAAtgAAAAAAAAC3AAAAAAAAAAAAAAC3AAAAAAAAALgAAAAAAAAAAAAAALgAAAAAAAAAuQAAAAAAAAAAAAAAuQAAAAAAAAC6AAAAAAAAAAAAAAC6AAAAAAAAALsAAAAAAAAAAAAAALsAAAAAAAAAvAAAAAAAAAAAAAAAvAAAAAAAAAC9AAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAsgAAAAAAAACyAAAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		},
-		{
-			"file": "src/assets/scss/components/_sticky-nav.scss",
-			"settings":
-			{
-				"buffer_size": 2387,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					90,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAK8EAAAAAAAArwQAAAAAAAADAAAALy8g",
-					"AQAAAAAAAAABAAAAxAQAAAAAAADEBAAAAAAAAAAAAAAAoGdA"
-				],
-				[
-					92,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAANkEAAAAAAAA3AQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA6wQAAAAAAADrBAAAAAAAAAAAAAAAAGVA"
-				],
-				[
-					96,
-					1,
-					"left_delete",
-					null,
-					"AQAAAB0FAAAAAAAAHQUAAAAAAAABAAAAMw",
-					"AQAAAAAAAAABAAAAHgUAAAAAAAAeBQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					108,
-					1,
-					"paste",
-					null,
-					"AQAAAL8EAAAAAAAA0gQAAAAAAAARAAAALS1ib2R5LWJhY2tncm91bmQ",
-					"AQAAAAAAAAABAAAAvwQAAAAAAADQBAAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		},
-		{
-			"file": "src/assets/scss/base/_root.scss",
-			"settings":
-			{
-				"buffer_size": 4513,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					8,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAL4LAAAAAAAAvgsAAAAAAAADAAAALy8g",
-					"AQAAAAAAAAABAAAAxwsAAAAAAADHCwAAAAAAAAAAAAAAwFZA"
-				],
-				[
-					18,
-					1,
-					"insert",
-					{
-						"characters": "white-"
-					},
-					"BgAAAOQLAAAAAAAA5QsAAAAAAAAPAAAAY2FyZC1iYWNrZ3JvdW5k5QsAAAAAAADmCwAAAAAAAAAAAADmCwAAAAAAAOcLAAAAAAAAAAAAAOcLAAAAAAAA6AsAAAAAAAAAAAAA6AsAAAAAAADpCwAAAAAAAAAAAADpCwAAAAAAAOoLAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA8wsAAAAAAADkCwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					19,
-					1,
-					"insert_completion",
-					{
-						"completion": "--white-semi",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "--white-semi"
-					},
-					"AgAAAOILAAAAAAAA4gsAAAAAAAAIAAAALS13aGl0ZS3iCwAAAAAAAO4LAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA6gsAAAAAAADqCwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					32,
-					1,
-					"insert",
-					{
-						"characters": "white"
-					},
-					"BQAAAOQLAAAAAAAA5QsAAAAAAAAKAAAAd2hpdGUtc2VtaeULAAAAAAAA5gsAAAAAAAAAAAAA5gsAAAAAAADnCwAAAAAAAAAAAADnCwAAAAAAAOgLAAAAAAAAAAAAAOgLAAAAAAAA6QsAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA5AsAAAAAAADuCwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					37,
-					1,
-					"insert",
-					{
-						"characters": "off-"
-					},
-					"BAAAAOQLAAAAAAAA5QsAAAAAAAAAAAAA5QsAAAAAAADmCwAAAAAAAAAAAADmCwAAAAAAAOcLAAAAAAAAAAAAAOcLAAAAAAAA6AsAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA5AsAAAAAAADkCwAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		}
 	],
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
 	"build_system_choices":
@@ -1181,18 +941,21 @@
 	],
 	"file_history":
 	[
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/metrics.sh",
+		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/components/_masthead.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/components/_sticky-nav.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/base/_root.scss",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-agents.txt",
+		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-urls.txt",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-enterprise.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/library/_colors.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/library/_mixins.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/components/_masthead.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/base/_root.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/backup/2023/src/_less/_mixins.less",
 		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/library/_variables.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/base/_molecules.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/assets/js/portfolio.js",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_layouts/project-detail.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/assets/js/modules/lightbox.mjs",
-		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/components/_sticky-nav.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/assets/scss/components/_lightbox.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/projects/disney-growth.md",
@@ -1300,19 +1063,16 @@
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/pages/photos.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_process.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_includes/_work-list.md",
-		"/Users/brianmcconnell/Sites/mrbmc/metrics/metrics.sh",
-		"/Users/brianmcconnell/Sites/mrbmc/metrics/blacklist-agents.txt",
 		"/Users/brianmcconnell/Sites/mrbmc/src/colophon.md",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/screen.scss",
 		"/Users/brianmcconnell/Sites/mrbmc/mrbmc.sublime-project",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_data/site.json",
 		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/base/_atoms.scss",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_js/gaia/pixi.js",
-		"/Users/brianmcconnell/Sites/mrbmc/src/_scss/gaia.scss"
+		"/Users/brianmcconnell/Sites/mrbmc/src/_js/gaia/pixi.js"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -1454,6 +1214,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tempstartmonth",
+			"start_seconds",
+			"start_day",
+			"start_date",
+			"stop_seconds",
+			"clean",
+			"analyze\\-range",
 			"inverse",
 			"hero",
 			"trek-v2",
@@ -1574,14 +1341,7 @@
 			"scroll\\-snap",
 			"scroll\\-snap\\-",
 			"scroll-snap",
-			"snap",
-			"principles",
-			"timeline",
-			"30d",
-			"easeOut",
-			"bold\\-font\\-weight",
-			"bold",
-			"sort"
+			"snap"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1731,100 +1491,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/assets/scss/components/_masthead.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1843,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								119,
-								119
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/assets/scss/components/_sticky-nav.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2387,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1234,
-								1234
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 241.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/assets/scss/base/_root.scss",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4513,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3048,
-								3048
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 862.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1895,7 +1561,7 @@
 	"project": "mrbmc.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1904,6 +1570,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"metr",
+				"metrics/metrics.sh"
+			],
+			[
+				"bla",
+				"metrics/blacklist-agents.txt"
+			],
+			[
+				"black",
+				"metrics/blacklist-urls.txt"
+			],
 			[
 				"_root",
 				"src/assets/scss/base/_root.scss"
@@ -2403,18 +2081,6 @@
 			[
 				"photo",
 				"src/photos.md"
-			],
-			[
-				"princi",
-				"src/_includes/_principles.md"
-			],
-			[
-				"black",
-				"metrics/blacklist-agents.txt"
-			],
-			[
-				"metric",
-				"metrics/metrics.sh"
 			]
 		],
 		"width": 0.0

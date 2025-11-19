@@ -24,7 +24,8 @@ goaccess_opt+="--agent-list "
 goaccess_opt+="--ignore-crawlers "
 goaccess_opt+="--unknowns-as-crawlers "
 goaccess_opt+="--tz='America/New York' "
-goaccess_opt+="--geoip-database=$BASE/GeoLite2-City_20250401/GeoLite2-City.mmdb "
+goaccess_opt+="--geoip-database=/opt/homebrew/var/GeoIP/GeoLite2-City.mmdb "
+# goaccess_opt+="--geoip-database=$BASE/GeoLite2-City_20250401/GeoLite2-City.mmdb "
 
 
 # ==================================================
@@ -50,11 +51,6 @@ function download () {
 		aws s3 sync s3://brianmcconnell.me $BASE/downloads --quiet
 	fi
 
-	tempstartmonth=$start_month;
-	if [[ "$arg_duration[-1]" != "all" ]]; then
-		tempstartmonth=$stop_month;
-	fi
-
 	#NOTE: you can't unzip all files for a year so we go month by month
 	#gunzip -c -k -f $BASE'/downloads/E1TNSK7JF24IAY.2024-0'* | grep  -E -v -i -f ../blacklist.txt | goaccess  -o ../www/2024.html --log-format=CLOUDFRONT --no-query-string --agent-list --ignore-crawlers --unknowns-as-crawlers --tz="America/New York"
 	#zcat -f logs/log_clean0* 
@@ -63,6 +59,7 @@ function download () {
 	local last_date="";
 
 	[[ -z "$flag_verbose" ]] || { echo "----------------------------------------";}
+
 	for ((i = $diff_days; i > 0; i--)); do
 
 	    target_date=$(date -v-$i"d" -j -f %Y%m%d $stop_date +%Y-%m)
@@ -176,6 +173,7 @@ function analyze () {
 
 	return 1;
 }
+
 
 function analyze-range () {
 
