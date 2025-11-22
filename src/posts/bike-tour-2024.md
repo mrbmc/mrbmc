@@ -54,7 +54,7 @@ height: 90vh;
 - ![tunnel-short](/images/blog/gapco-tunnel-short.JPG) {.col-2}
 - ![morning-mist](/images/blog/gapco-morning-mist.JPG) {.col-5}
 - ![Bridge Path](/images/blog/gapco-path-bridge.jpeg) {.col-4}
-- ![Panorama](/images/blog/gapco-panorama.JPG) {.col-8}
+- ![Panorama](/images/blog/gapco-panorama.jpeg) {.col-8}
 - ![Mason Dixon](/images/blog/gapco-masondixon.JPG) {.col-3}
 - ![antietam](/images/blog/gapco-antietam.JPG) {.col-6}
 - ![Locked](/images/blog/gapco-selfie-lock.JPG) {.col-3}
