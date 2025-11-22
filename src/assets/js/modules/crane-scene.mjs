@@ -33,9 +33,9 @@ export class CraneScene {
 
     // Configuration
     this.config = {
-      rotationSpeed: 2.0,
+      rotationSpeed: 3.0,
       rotationAmplitude: Math.PI / 6, // 30 degrees
-      rotationOffset: Math.PI / 12, // 15 degrees base rotation
+      rotationOffset: Math.PI / 12, // 30 degrees base rotation
       mouseSensitivity: 0.002 ,
       damping: 0.5,
       returnSpeed: 0.025,
@@ -191,13 +191,14 @@ export class CraneScene {
       // Calculate target auto-animation rotation
       const elapsed = (Date.now() - this.startTime) * 0.001;
       const targetRotationY = Math.sin(elapsed * this.config.rotationSpeed * 0.1) * this.config.rotationAmplitude + this.config.rotationOffset;
-      const targetRotationX = (Math.PI / -30);
+      const targetRotationX = Math.sin(elapsed * this.config.rotationSpeed * 0.05) * (this.config.rotationAmplitude/2) - (Math.PI / 10);
+      // const targetRotationX = (Math.PI / -30);
       
       if (!this.mouse.hasInteracted) {
         // Smoothly interpolate back to auto-animation
         this.mouse.rotationY += (targetRotationY - this.mouse.rotationY) * this.config.returnSpeed;
         this.mouse.rotationX += (targetRotationX - this.mouse.rotationX) * this.config.returnSpeed;
-        
+
         // Snap to target when very close
         if (Math.abs(targetRotationY - this.mouse.rotationY) < 0.001) {
           this.mouse.rotationY = targetRotationY;
@@ -206,15 +207,6 @@ export class CraneScene {
           this.mouse.rotationX = targetRotationX;
         }
         
-        // // Move camera in arc to stay perpendicular to crane
-        // const cameraAngle = this.mouse.rotationY;
-        // const offsetX = this.config.cameraOffsetX();
-        // const lookAtX = this.config.lookAtOffsetX();
-        // const arcRadius = this.config.cameraDistance();
-        // // Apply offset as a base position, not added to the arc
-        // this.camera.position.x = Math.sin((cameraAngle/1.5)) * arcRadius * 0.3 + offsetX;
-        // this.camera.position.z = Math.cos(cameraAngle/1.5) * arcRadius;
-        // this.camera.lookAt(lookAtX, 0, 0);
       } else if (!this.mouse.isDragging) {
         // Apply damping when released but keep user's rotation
         this.mouse.velocityY *= this.config.damping;

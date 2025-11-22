@@ -14,7 +14,7 @@ export function setupLighting(scene) {
   
   // Main key light - extremely bright white
   lights.mainWhite = new THREE.DirectionalLight(0xffffff, 2.0);
-  lights.mainWhite.position.set(4, 7, 5);
+  lights.mainWhite.position.set(3, 7, 3);
   lights.mainWhite.castShadow = true;
   lights.mainWhite.shadow.mapSize.width = 2048;
   lights.mainWhite.shadow.mapSize.height = 2048;
@@ -23,9 +23,9 @@ export function setupLighting(scene) {
   lights.mainWhite.shadow.camera.right = 10;
   lights.mainWhite.shadow.camera.top = 10;
   lights.mainWhite.shadow.camera.bottom = -10;
-//   scene.add(lights.mainWhite);
+  scene.add(lights.mainWhite);
   
-  // Secondary bright white
+  // Indigo secondary light for cool tones
   lights.secondaryWhite = new THREE.DirectionalLight(0x1F23AD, 4.5);
   lights.secondaryWhite.position.set(-5, 5, 4);
   lights.secondaryWhite.castShadow = true;
@@ -34,24 +34,28 @@ export function setupLighting(scene) {
   scene.add(lights.secondaryWhite);
   
   // Top light for crown brilliance
-  lights.topLight = new THREE.DirectionalLight(0x1F23AD, 4.0);
+  lights.topLight = new THREE.DirectionalLight(0xCFD3FD, 4.0);
   lights.topLight.position.set(0, 10, 0);
   scene.add(lights.topLight);
   
   // Cool rim light from left
-  lights.rimLight = new THREE.DirectionalLight(0xDDEEFF, 3.0);
-  lights.rimLight.position.set(-6, 3, 2);
-  scene.add(lights.rimLight);
+  // highlight the left edges of the crane
+  lights.coolRim = new THREE.DirectionalLight(0x1F23AD, 4);
+  lights.coolRim.position.set(-2, 1, 0);
+  // lights.coolRim.target.position.set(0, 0, 0);
+  scene.add(lights.coolRim);
   
   // Warm rim light from right
-  lights.warmRim = new THREE.DirectionalLight(0xff4f00, 2.5);
-  lights.warmRim.position.set(6, 3, 2);
+  // highlight the right edges of the crane
+  lights.warmRim = new THREE.DirectionalLight(0xff4f00, 8);
+  lights.warmRim.position.set(2, 1, -1);
+  // lights.warmRim.target.position.set(0, 0, 0);
   scene.add(lights.warmRim);
   
   // Strong back fill
   lights.backFill = new THREE.DirectionalLight(0xffffff, 3.0);
   lights.backFill.position.set(0, 0, -8);
-//   scene.add(lights.backFill);
+  scene.add(lights.backFill);
   
   // Multiple point lights for sparkle
 //   lights.sparkle1 = new THREE.PointLight(0xffffff, 4.0, 40);
@@ -73,14 +77,14 @@ export function setupLighting(scene) {
 //   scene.add(lights.sparkle4);
 
   // Add prismatic colored accents for rainbow sparkle
-  lights.prism1 = new THREE.DirectionalLight(0xff4f00, 3.5, 30);  // Pink
-  lights.prism1.position.set(3, 4, 6);
-  lights.prism1.target.position.set(0, 0, 0);
+  lights.prism1 = new THREE.DirectionalLight(0xff4f00, 3.5, 30);  // ORANGE
+  lights.prism1.position.set(8, 4, 6);
+  lights.prism1.target.position.set(2, 0, 0);
   scene.add(lights.prism1);
   
-  lights.prism2 = new THREE.DirectionalLight(0x1F23AD, 5.5, 30);  // Blue
+  lights.prism2 = new THREE.DirectionalLight(0x1F23AD, 5.5, 30);  // INDIGO
   lights.prism2.position.set(0, 4, 6);
-  lights.prism2.target.position.set(0, 0, 0);
+  lights.prism2.target.position.set(2, 0, 0);
   scene.add(lights.prism2);
   
   lights.prism3 = new THREE.DirectionalLight(0xffeb6b, 8.0, 30);  // Gold
