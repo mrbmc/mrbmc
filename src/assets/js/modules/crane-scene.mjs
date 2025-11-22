@@ -191,8 +191,8 @@ export class CraneScene {
       // Calculate target auto-animation rotation
       const elapsed = (Date.now() - this.startTime) * 0.001;
       const targetRotationY = Math.sin(elapsed * this.config.rotationSpeed * 0.1) * this.config.rotationAmplitude + this.config.rotationOffset;
-      const targetRotationX = Math.sin(elapsed * this.config.rotationSpeed * 0.05) * (this.config.rotationAmplitude/2) - (Math.PI / 10);
-      // const targetRotationX = (Math.PI / -30);
+      // const targetRotationX = Math.sin(elapsed * this.config.rotationSpeed * 0.05) * (this.config.rotationAmplitude/2) - (Math.PI / 10);
+      const targetRotationX = (Math.PI / -30);
       
       if (!this.mouse.hasInteracted) {
         // Smoothly interpolate back to auto-animation

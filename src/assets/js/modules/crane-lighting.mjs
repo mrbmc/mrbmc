@@ -83,8 +83,8 @@ export function setupLighting(scene) {
   scene.add(lights.prism1);
   
   lights.prism2 = new THREE.DirectionalLight(0x1F23AD, 5.5, 30);  // INDIGO
-  lights.prism2.position.set(0, 4, 6);
-  lights.prism2.target.position.set(2, 0, 0);
+  lights.prism2.position.set(-4, 0, 4);
+  lights.prism2.target.position.set(0, 1, 0);
   scene.add(lights.prism2);
   
   lights.prism3 = new THREE.DirectionalLight(0xffeb6b, 8.0, 30);  // Gold
