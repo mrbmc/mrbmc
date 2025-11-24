@@ -11,7 +11,7 @@ cssfile: "css/pages/home.css"
 
 # Brian McConnell 
 
-Design leader who builds with technology and empathy. I embed human-centered practices into engineering-driven organizations and lead transformations at any scale.{.blur-in .large-type}
+I am a design leader who builds with technology and empathy. I embed human-centered practices into engineering-driven organizations and lead transformations at any scale.{.blur-in .large-type}
 
 <canvas id="crane-canvas"></canvas> {#crane}
 
