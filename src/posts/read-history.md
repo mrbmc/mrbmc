@@ -1,5 +1,5 @@
 ---
-title: The future is an echo of the past.
+title: Driving Autonomous Horses
 date: 2025-03-07
 tags:
   - futurism
@@ -7,12 +7,11 @@ tags:
   - process
 eleventyExcludeFromCollections: false
 description: Studying history helps us predict what's to come.
-masthead-image: /images/blog/firstbenz-jpggettyimages-905504772.jpg
 ---
 
 “I’m sure people said they love riding their horse.”
 
-—
+![The First Car](/images/blog/firstbenz-jpggettyimages-905504772.jpg)
 
 Some years ago--never mind how long precisely-- I was having lunch with my team and the topic of autonomous driving came up. A pair of early-20s designers shared deep skepticism about the appeal of self-driving cars.
 

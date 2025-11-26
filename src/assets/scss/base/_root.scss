@@ -16,8 +16,9 @@
 
 
 :root {
-    // PRIMITIVES
+    // PRIMITIVE TOKENS
     // ------------------------------------------------------------
+    --black-semi:       #{lib.$neutral-05}CC;
     --black:            #{lib.$neutral-05};
     --off-black:        #{lib.$neutral-10};
     --gray-dark:        #{lib.$neutral-30};
@@ -25,7 +26,7 @@
     --gray-light:       #{lib.$neutral-90};
     --off-white:        #{lib.$neutral-95};
     --white:            #{lib.$neutral-100};
-    --white-semi:       #{lib.$neutral-100}4D;
+    --white-semi:       #{lib.$neutral-100}CC;
 
     --primary:          #{lib.$primary};
     --secondary:        #{lib.$secondary};
@@ -41,19 +42,22 @@
     --body-background:       var(--off-white);
     --body-foreground:       var(--gray-dark);
     --body-emphasized:       var(--black);
-    // --inverse-foreground:    var(--white);
 
     --card-background:       var(--white);
     --card-foreground:       var(--gray-dark);
-    --card-bold-color:       var(--black);
-    //nee well-background
+    --card-emphasized:       var(--black);
+
     --muted-background:      var(--gray-light);
     --muted-foreground:      var(--gray-mid);
     --muted-emphasized:      var(--black);
-    //nee hero-background
-    --accent-background:       #{lib.$neutral-20};
-    --accent-foreground:       #{lib.$neutral-90};
-    --accent-emphasized:       #{lib.$neutral-100};
+
+    --accent-background:       var(--gray-dark);
+    --accent-foreground:       var(--off-white);
+    --accent-emphasized:       var(--white);
+
+    // theater components are always in dark mode
+    --theater-background:    var(--black);
+    --theater-foreground:    var(--white);
 
     --border-color:          var(--gray-mid);
 
@@ -83,8 +87,10 @@
 
     // NAVBAR
     // ------------------------------------------------------------
-    --navbar-height:                calc(#{lib.$base-line-height} * 1.38);
-    // --navbar-background:            var(--card-background);
+    --navbar-height:                calc(#{lib.$base-line-height} * 2);
+    --navbar-background:                var(--white-semi);
+    --navbar-foreground:                var(--off-black);
+    --navbar-emphasized:                var(--black);
     // --navbar-border:                var(--border-color);
     // --navbar-text:                  var(--body-foreground);
     // --navbar-primary:               var(--primary);
@@ -107,16 +113,25 @@
 }
 @media (prefers-color-scheme: dark) {
     :root {
+        --black-semi:   #{lib.$neutral-100}CC;
         --black:        #{lib.$neutral-100};
         --off-black:    #{lib.$neutral-95};
         --gray-dark:    #{lib.$neutral-90};
         --gray-mid:     #{lib.$neutral-50};
         --gray-light:   #{lib.$neutral-30};
-        --white:        #{lib.$neutral-10};
         --off-white:    #{lib.$neutral-05};
-        --white-semi:   #{lib.$neutral-05}4D;
+        --white:        #{lib.$neutral-0};
+        --white-semi:   #{lib.$neutral-05}CC;
 
         --primary:      #{lib.$primary-inverse};
+
+        // elevate card over muted
+        --card-background:      var(--gray-light);
+        --muted-background:       var(--white);
+
+        // theater is always dark mode
+        --theater-background:    var(--white);
+        --theater-foreground:    var(--off-black);
     };
 }
 ::selection {

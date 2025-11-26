@@ -8,4 +8,4 @@
 + **2016** – Led the design of streaming services for NHL, MLB, Eurosport, PGA, MLS, and more; growing MLB's streaming business toward a $4B exit.
 + **2015** – Led the team building a [patented](https://patents.google.com/patent/US20170195373A1/) podcast platform that paid creators a fair commission at [BlogTalkRadio](/portfolio/blogtalkradio/) leading to a $55M acquisition.
 
-{.timeline .card}
+{.timeline .well}

@@ -2,6 +2,11 @@
 
 @use "../components/post-list";
 
-body.blog #post-list {
-    padding-top: lib.$gutter-xl;
+body.blog {
+    #header {
+        margin-bottom: var(--gutter-xl);
+    }
+    #post-list {
+        padding-top: lib.$gutter-xl;
+    }
 }

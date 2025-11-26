@@ -1,3 +1,5 @@
+import { initCritters, scrollCritters } from "./modules/critters.mjs";
+import { isInViewport } from './modules/dom_utils.mjs';
 /* * * * * * * * * * * * * * * * * * * * *
 CONFIGURATION
 * * * * * * * * * * * * * * * * * * * * */
@@ -6,10 +8,6 @@ const MOBILE = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(na
 var VERBOSE = false && DEBUG,
     last_known_scroll_position = 0;
 
-/* * * * * * * * * * * * * * * * * * * * *
-FUNCTIONS
-* * * * * * * * * * * * * * * * * * * * */
-import { isInViewport } from './modules/dom_utils.mjs';
 
 function initEmails(){
     if(DEBUG) console.log('initEmails');
@@ -41,6 +39,7 @@ window.addEventListener('load', function(e) {
     "use strict";
     initEmails();
     animateElementsInView();
+    initCritters();
 },false);
 
 window.addEventListener('scroll', baseScroll);
@@ -50,6 +49,5 @@ window.addEventListener('scroll', baseScroll);
 /* * * * * * * * * * * * * * * * * * * * *
 MODULES
 * * * * * * * * * * * * * * * * * * * * */
-import "./modules/critters.mjs";
+import "./modules/ga.mjs";
 
-// import "./modules/ga.mjs";

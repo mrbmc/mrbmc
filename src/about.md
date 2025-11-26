@@ -13,9 +13,9 @@ cssfile: "css/pages/about.css"
 
 <span class="parallelogram"></span>My family calls me **Brian**. My friends call me **[BMC\*](#killabmc){onclick="event.preventDefault();return false;"}**. I am a father 👧🏻 👦🏻, husband 👩🏻, New Yorker 🗽, ️[cyclist](https://www.strava.com/athletes/773650) 🚲, [divemaster](https://www.steelgills.com) 🤿, [fusion chef](https://www.fusionfamilyfeast.com/) 👨‍🍳, [world traveler](https://www.google.com/maps/d/u/0/edit?mid=1jAS6t-WP2zKeOYag3KsGKZtqxERvSfE) 🌎, and **[digital product maker](/portfolio/)** 👨‍💻.{.large-type .blur-in .col-7}
 
-Short for "killaBMC", my genuine wu-tang-name betrothed by the GZA{#killabmc .tooltip}
-
 ![Portrait of Brian](/images/profile/mrbmc-20241121.jpeg) {#portrait .blur-in .col-5 .row-2}
+
+Short for "killaBMC", my genuine wu-tang-name betrothed by the GZA{#killabmc .tooltip}
 
 {% endsection %}
 
@@ -29,10 +29,10 @@ Short for "killaBMC", my genuine wu-tang-name betrothed by the GZA{#killabmc .to
 
 1. [Mission](#mission) 
 1. [Principles](#principles) 
-1. [Storytelling](#process)
+1. [Process](#process)
 1. [Leadership](#leadership) 
 
-{#pagenav .sticky-nav}
+{#subnav .sticky-nav}
 
 {% include "about_mission.md" %}
 

@@ -12,8 +12,7 @@ eleventyImport:
 	collection: collections.work, 
 	count:10,
 	id: "work", 
-	class: "",
-	heading: "Impact Projects", 
+	class: "full-width-grid",
 	summary: false %}
 
 ----

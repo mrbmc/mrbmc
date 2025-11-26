@@ -159,7 +159,7 @@ module.exports = function(eleventyConfig) {
 
   // We enable the passthrough for development purposes.
   // This updates the build with realtime image updates.
-  // eleventyConfig.addPassthroughCopy({"src/images":"images"});
+  eleventyConfig.addPassthroughCopy({"src/images/icons":"images/icons"});
 
   // this rebuilds the html if the css is transpiled
   // eleventyConfig.addWatchTarget("www/css/screen.css");

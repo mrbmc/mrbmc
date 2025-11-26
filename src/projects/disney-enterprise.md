@@ -18,17 +18,13 @@ casestudy: true
 timeline: 2019-2023
 ---
 
-![SSO Gates](/images/portfolio/disney-enterprise/disney-enterprise-sso_gates.png){.full-width-grid style="padding: 0;"}
-
-3. [The Products](#products)
-   1. [Commerce](#commerce)
-   2. [Content](#content-tools)
-   4. [Business Intelligence](#analytics)
-   3. [Developer Experience](#developer)
+1. [The Products](#products)
 1. [The Strategy](#strategy)
-2. [The Team](#team)
+1. [The Team](#team)
 
-{.sticky-nav}
+{.sticky-nav #subnav}
+
+![SSO Gates](/images/portfolio/disney-enterprise/disney-enterprise-sso_gates.png){.full-width-grid style="padding: 0;"}
 
 | Role & Responsibility                                                                                                                                          | Team                                   | Timeline            | Impact                                                                     |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ------------------- | -------------------------------------------------------------------------- |
@@ -37,6 +33,8 @@ timeline: 2019-2023
 {.rotate #summary}
 
 ## To create something truly novel, you need novel tools.
+
+{% section "products","" %}
 
 ## The Products {#products}
 
@@ -160,7 +158,7 @@ We partnered with a team of engineers who cared deeply about developer productiv
 {.grid .well .full-width-grid}
 
 
-## Unified Platform Vision
+### Unified Platform Vision
 
 Evangelizing design system adoption begins with a promise of a better future. We buy on emotion and rationalize with facts (stability and scalability for developers; operational savings and velocity for business owners; usability and brand trust for designers). We designed a vision-state for a platform of feature products with a shared visual language.
 
@@ -227,8 +225,11 @@ Disney has a rich history of building new tools that unlock creative possibiliti
 {.gallery}
 {% endcomment %}
 
+{% endsection %}
 
-## Streaming as a Service Strategy{#strategy}
+{% section "strategy","" %}
+
+## Streaming as a Service Strategy
 
 What is worth building?
 
@@ -266,7 +267,9 @@ This model helped in securing funding for staffing, contractors, and roadmap pri
 
 ![Enterprise ROI](/images/portfolio/disney-enterprise/exd-roi-framework.png)
 
-----
+{% endsection %}
+
+{% section "team","" %}
 
 ## The Team{#team}
 
@@ -291,6 +294,7 @@ Aligning our team with these business areas enabled long lived product teams tha
 
 ![](/images/portfolio/disney-enterprise/exd-pods.png){.card}
 
+{% endsection %}
 
 <style>
 .team {

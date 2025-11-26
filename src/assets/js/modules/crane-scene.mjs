@@ -40,6 +40,7 @@ export class CraneScene {
       damping: 0.5,
       returnSpeed: 0.025,
       cameraDistance: function() {
+        return (this.isLandscape() ? 14 : 32);
         const delta = Math.abs(1.4 - (window.innerWidth / window.innerHeight));
         const factor = 1 + (delta * 1.2);
         return 10 * factor;
@@ -50,11 +51,11 @@ export class CraneScene {
       },
       cameraOffsetX: function() {
         // Move camera to the left (negative X) so crane appears on right
-        return this.isLandscape() ? 8 : 0;
+        return this.isLandscape() ? -5 : 0;
       },
       lookAtOffsetX: function() {
         // Adjust look-at target to keep crane centered in right half
-        return this.isLandscape() ? 4 : 0;
+        return this.isLandscape() ? -5 : 0;
       }
     };
     
@@ -74,8 +75,8 @@ export class CraneScene {
     this.camera = new THREE.PerspectiveCamera(45, aspect, 0.2, 1000);
     const offsetX = this.config.cameraOffsetX();
     const lookAtX = this.config.lookAtOffsetX();
-    this.camera.position.set(offsetX, 0, this.config.cameraDistance());
-    this.camera.lookAt(lookAtX, 0, 0);
+    this.camera.position.set(offsetX, (this.config.isLandscape() ? 0 : 2), this.config.cameraDistance());
+    this.camera.lookAt(lookAtX, (this.config.isLandscape() ? 0 : 3), 0);
 
     // Renderer
     this.renderer = new THREE.WebGLRenderer({
@@ -99,8 +100,6 @@ export class CraneScene {
     this.craneMesh = new THREE.Mesh(geometry, material);
     this.craneMesh.castShadow = true;
     this.craneMesh.receiveShadow = true;
-    // Flip horizontally by inverting X scale
-    this.craneMesh.scale.x = -1;
     this.scene.add(this.craneMesh);
 
     // Setup post-processing with subtle bloom

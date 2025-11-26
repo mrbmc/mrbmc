@@ -11,17 +11,22 @@
     color: var(--card-foreground);
 
     h1,h2,h3,h4,strong,b {
-        color: var(--card-bold-color);
+        color: var(--card-emphasized);
     }
 }
 
 .well {
   box-sizing: border-box;
   padding: var(--gutter);
-  background: var(--muted-background);
-  // color: var(--muted-foreground);
   border-radius: var(--border-radius-xl);
   box-shadow: lib.$shadow-inset;
+
+  background: var(--muted-background);
+  color: var(--muted-foreground);
+  a {
+    color: var(--muted-emphasized);
+  }
+
   &.full-width,
   &.full-width-grid {
     border-radius: 0;
@@ -32,16 +37,15 @@
   }
 }
 
-// we assume that this is a mosaic
-// .well.grid {
-//   padding: var(--gutter) calc(var(--navbar-height) + 1rem);
-// }
-
 .hero {
-
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
-    @include lib.inverse(var(--accent-background));
+
+    background: var(--accent-background);
+    color: var(--accent-foreground);
+    a {
+      color: var(--accent-emphasized);
+    }
 
     li {
         list-style: none;

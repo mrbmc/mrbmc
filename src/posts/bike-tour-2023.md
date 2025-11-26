@@ -23,13 +23,13 @@ In August 2023 I rode my bike across the Green Mountains of Vermont, zig-zagging
 
 <br />
 
-1. [But Why](#why)
+1. [The Why](#why)
 3. [The Plan](#plan)
 4. [The Gear](#gear)  
 1. [Reflections](#results)
 1. [Photos](#photos)
 
-{.sticky-nav}
+{.sticky-nav #subnav}
 
 | Distance  | Elevation | Ride Time | Energy    |
 | :-------- | :-------- | :-------- | :-------- |

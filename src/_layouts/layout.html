@@ -24,7 +24,6 @@
 
   <link rel="preload" as="style" href="/css/screen.css">
   <link rel="stylesheet" type="text/css" media="screen" href="/css/screen.css" />
-  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
 {% if cssfile %}
   <link rel="stylesheet" type="text/css" media="screen" href="/{{cssfile}}" />
 {% endif %}
@@ -40,7 +39,7 @@
 
 </main>
 
-{% include "_footer.html" %}
+{% unless hidefooter %}{% include "_footer.html" %}{% endunless %}
 
 </body>
 </html>

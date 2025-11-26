@@ -9,9 +9,16 @@ html {
 }
 
 body.about {
+
   #bio {
 
     row-gap: var(--gutter);
+
+    @for $i from 1 through 5 { // Loop from 1 to 5 for p elements
+      p:nth-child(#{$i}) { // Target each p element using nth-child
+        transition-delay: ($i * (lib.$speed * 0.25)); // Calculate incremental delay (e.g., 0.1s, 0.2s, etc.)
+      }
+    }
 
     #killabmc {
       position: absolute;

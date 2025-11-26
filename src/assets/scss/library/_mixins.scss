@@ -20,31 +20,13 @@
   flex: 1 0 math.div(100%, $cols);
 }
 
-        // lib.$neutral-0,
-        // lib.$neutral-10,
-        // lib.$neutral-0,
-        // lib.$neutral-20,
-@mixin inverse($c1:colors.$neutral-05,$c2:colors.$neutral-20,$c3:colors.$neutral-0,$c4:colors.$neutral-10) {
+@mixin theater() {
   & {
-    background-color: $c1;
-    color: var(--accent-foreground);
+    background: var(--theater-background);
+    color: var(--theater-foreground);
     a {
-      color: var(--accent-foreground);
-      &:hover {
-        color: var(--secondary);
-      }
+      color: var(--theater-foreground);
     }   
-  }
-  @if $c2 {
-    & {
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      background-image:
-      radial-gradient(ellipse 100% 100% at 0% 100%, $c4 0px, transparent 100%),
-      radial-gradient(ellipse 100% 200% at 0% 10%, $c3 0px, transparent 100%),
-      conic-gradient(from 0.75turn at 81% 138%, transparent 0%, $c2 20%, transparent 40%, transparent 99%),
-      ;    
-    }
   }
   &>* {
     z-index: 1;

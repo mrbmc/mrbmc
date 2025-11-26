@@ -17,6 +17,7 @@ const rollup = require('rollup');
 const nodeResolve = require('@rollup/plugin-node-resolve');
 const gulpif = require('gulp-if');
 const { terser } = require('rollup-plugin-terser');
+const path = require('path');
 
 
 /* * * * * * * * * * * * * * * * * * * * 
@@ -127,7 +128,7 @@ async function bundleJS() {
     nodeResolve({
       browser: true,
       preferBuiltins: false,
-      modulesOnly: true  // Enable tree-shaking for ES modules
+      extensions: ['.mjs', '.js', '.json']  // Resolve .mjs and .js files as modules
     }),
   ];
 
@@ -151,7 +152,7 @@ async function bundleJS() {
       plugins: plugins,
       external: config.external || [],  // Use external deps if specified
       treeshake: {
-        moduleSideEffects: false,  // Aggressive tree-shaking
+        moduleSideEffects: true,  // Aggressive tree-shaking
         propertyReadSideEffects: false,
         tryCatchDeoptimization: false
       }

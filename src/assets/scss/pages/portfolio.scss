@@ -2,16 +2,14 @@
 
 @use "../components/project-list";
 
-
 body.portfolio {
+  #header {
+    margin-bottom: var(--gutter-xl);
+  }
   h5 {
     color: var(--muted-foreground);
   }
   main header li {
     color: var(--muted-foreground);
   }
-}
-
-.sticky-nav {
-    display: none;
 }

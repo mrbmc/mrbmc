@@ -8,15 +8,6 @@ tags:
 description: This is the story of building the Growth Design program - the team, process, and product - to launch Disney+ from 0 to 105M subscribers in two years.
 timeline: 2018-2020
 ---
-![Disney+ Welcome on All Devices](/images/portfolio/disney-growth/disney-growth-device-cluster.png){.full-width-grid style="object-fit:contain;"}
-
-| Role                            | Responsibilities                                                                     | Team                                                         | Timeline            |
-| :------------------------------ | :----------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------------------ |
-| Senior Director, Product Design | Design Strategy, Hiring &  Management, Organizational Design, Stakeholder Management | 7 Product Designers<br>2 Researchers<br>4 Design Specialists | Dec 2018 - Dec 2020 |
-
-{.rotate}
-
-*Note: This is a long and unconventional case study. For quick reference, you can jump to [project context](#strategy), [team leadership](#project-team), [design principles](#ux-tenets), [launch UI](#ascent), [expansion UI](#summit)* {.well}
 
 1. [Basecamp](#basecamp)
 	1. [The Strategy](#strategy)
@@ -39,7 +30,17 @@ timeline: 2018-2020
 	1. [Outcomes](#outcomes)
 	3. [Takeaways](#takeaways)
 
-{.sticky-nav}
+{.sticky-nav #subnav}
+
+![Disney+ Welcome on All Devices](/images/portfolio/disney-growth/disney-growth-device-cluster.png){.full-width-grid style="object-fit:contain;"}
+
+| Role                            | Responsibilities                                                                     | Team                                                         | Timeline            |
+| :------------------------------ | :----------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------------------ |
+| Senior Director, Product Design | Design Strategy, Hiring &  Management, Organizational Design, Stakeholder Management | 7 Product Designers<br>2 Researchers<br>4 Design Specialists | Dec 2018 - Dec 2020 |
+
+{.rotate}
+
+*Note: This is a long and unconventional case study. For quick reference, you can jump to [project context](#strategy), [team leadership](#project-team), [design principles](#ux-tenets), [launch UI](#ascent), [expansion UI](#summit)* {.well}
 
 Building Disney+ was an adventure. Adventures rarely follow a straight line of progress. You often venture off the beaten path, climb over obstacles, or take one step back and two steps sideways to make progress. I've included just a few of the most interesting UX challenges we faced in the multi-year saga of launching Disney+.
 
@@ -180,10 +181,10 @@ The use of tenets, axioms, or principles improves the quality of design decision
 
 Writing these with our cross-functional team made these real living ideas that you would hear people say while collaborating.
 
-* First Stream, First
-* Disney, Aged Up
-* Subscribers, Then Revenue
-* Disney Hospitality
+* First Stream, First{.col-3}
+* Disney, Aged Up {.col-3}
+* Subscribers, Then Revenue {.col-3}
+* Disney Hospitality {.col-3}
 {.grid}
 
 #### 1. "First Stream, First"
@@ -539,7 +540,7 @@ I'd like to think the foundation we created enabled the continued growth over th
 @media (prefers-color-scheme: dark) {
 ##main img[src*="svg"] { filter:invert(1) hue-rotate(180deg);}
 }
-h2#basecamp:before {
+h2#basecamp {
     background-image: url(/images/portfolio/disney-growth/everest-basecamp-web.jpg);
 }
 h2#ascent:before {

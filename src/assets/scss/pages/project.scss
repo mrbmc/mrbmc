@@ -25,6 +25,11 @@ body.project {
               // justify-content: space-between;
             }
         }
+
+        h2[id]{
+            padding-top: var(--navbar-height);
+        }
+
         p {
             img.full-width,svg.full-width,video.full-width {
                 max-height: 95vh;
@@ -81,45 +86,37 @@ body.project {
     }
 
 
-// h2.section {
-//     padding: 0;
-// }
-// h2.section picture {
-// }
-// h2.section picture img {
-//     display: block;
-// }
-    h1.section,h2.section {
-        // padding-left: var(--gutter);
-        padding: 0;
-        position: relative;
-        display: flex;
-        align-items: center;
-        height: 83.3vh;
-        color: var(--accent-foreground);
+    // h1.section,h2.section {
+    //     // padding-left: var(--gutter);
+    //     padding: 0;
+    //     position: relative;
+    //     display: flex;
+    //     align-items: center;
+    //     height: 83.3vh;
+    //     color: var(--accent-foreground);
 
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+    //     background-position: center center;
+    //     background-attachment: fixed;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
 
-        // picture {
-        //     position: absolute;
-        //     display: block;
-        //     width: 10vw;
-        //     left: 0;
-        //     top: 0;
-        //     z-index: -1;
-        //     img {
-        //         display: block;
-        //         object-fit: cover;
-        //     }
-        // }
+    //     // picture {
+    //     //     position: absolute;
+    //     //     display: block;
+    //     //     width: 10vw;
+    //     //     left: 0;
+    //     //     top: 0;
+    //     //     z-index: -1;
+    //     //     img {
+    //     //         display: block;
+    //     //         object-fit: cover;
+    //     //     }
+    //     // }
 
-        @media (max-width: lib.$breakpoint) {
-            height: 56.25vw;
-        }
-    }
+    //     @media (max-width: lib.$breakpoint) {
+    //         height: 56.25vw;
+    //     }
+    // }
 
     .grid.well {
         li {
@@ -133,7 +130,6 @@ body.project {
                 object-fit: cover;
                 object-position: 50% 0%;
                 border-radius: var(--border-radius);
-                // box-shadow: lib.$shadow;
             }
             video {
                 object-fit: contain;

@@ -36,9 +36,7 @@ $quartiary:             $_sunshine;
 $success:               $_teal;
 $error:                 $_orange;
 
-$neutral-hue:           238;
 $neutral-hue:           58;
-//slight tone
 $neutral-100:           hslToHex($neutral-hue,00%,100%);
 $neutral-95:            hslToHex($neutral-hue,21%,96%);
 $neutral-90:            hslToHex($neutral-hue,13%,92%);
@@ -52,18 +50,3 @@ $neutral-20:            hslToHex($neutral-hue,05%,20%);
 $neutral-10:            hslToHex($neutral-hue,08%,12%);
 $neutral-05:            hslToHex($neutral-hue,13%,06%);
 $neutral-0:             hslToHex($neutral-hue,21%,02%);
-
-//cold gray
-// $neutral-100:           hslToHex($neutral-hue,00%,100%);
-// $neutral-95:            hslToHex($neutral-hue,00%,96%);
-// $neutral-90:            hslToHex($neutral-hue,00%,92%);
-// $neutral-80:            hslToHex($neutral-hue,00%,82%);
-// $neutral-70:            hslToHex($neutral-hue,00%,71%);
-// $neutral-60:            hslToHex($neutral-hue,00%,62%);
-// $neutral-50:            hslToHex($neutral-hue,00%,49%);
-// $neutral-40:            hslToHex($neutral-hue,00%,42%);
-// $neutral-30:            hslToHex($neutral-hue,00%,30%);
-// $neutral-20:            hslToHex($neutral-hue,00%,20%);
-// $neutral-10:            hslToHex($neutral-hue,00%,12%);
-// $neutral-05:            hslToHex($neutral-hue,00%,06%);
-// $neutral-0:             hslToHex($neutral-hue,00%,02%);

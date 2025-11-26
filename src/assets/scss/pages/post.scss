@@ -7,7 +7,6 @@
 
 body.blog.post {
   transition: background (lib.$speed * 4) lib.$easing;
-  // background: var(--muted-background);
 
   #masthead {
 
@@ -21,15 +20,16 @@ body.blog.post {
       flex-direction: column-reverse;
       justify-content: space-between;
 
-      h1, h2 {
-        // max-width: lib.$grid-width;
-      }
-
     }
 
   }
 
   main {
+
+    h2[id] {
+      padding-top: var(--navbar-height);
+    }
+
     & > .date {
       color: var(--muted-foreground);
     }

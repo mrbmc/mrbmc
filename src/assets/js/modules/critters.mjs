@@ -1,7 +1,9 @@
 // Get polygon elements
 const polygons = document.querySelectorAll('.nav-top svg polygon');
-const link = document.querySelectorAll('.nav-top');
-const svg = document.querySelectorAll('.nav-top svg');
+const link = document.getElementsByClassName('nav-top')[0];
+// const svg = document.querySelectorAll('.nav-top svg');
+let isScrolling = false;
+let lastScroll = 0;
 
 // Define the animation keyframes for each polygon
 const keyframes = [
@@ -37,10 +39,6 @@ const keyframes = [
                 "149.9,517.58 226.57,547.48 208.15,594.96",
 ]
 ];
-
-// const polyColors = [
-//     "#C00","#0C0","#00C","#C90","#09C"
-// ]
 
 // Function to parse polygon points string into array of coordinates
 function parsePoints(pointsString) {
@@ -106,19 +104,19 @@ function updatePolygons(progress) {
     });
 }
 
-function updateEffects(velocity) {
-    // if(DEBUG) console.log('velocity',velocity);
-    let vOffset = (velocity / -10);
-    let spread = 4 * Math.abs(velocity / 100);
-    let vScale = 1 + Math.abs(velocity / 100);
-    let vPos = 0;//(velocity / -100);
-    let blur = Math.abs(velocity / 150) * 2;
+// function updateEffects(velocity) {
+//     // if(DEBUG) console.log('velocity',velocity);
+//     let vOffset = (velocity / -10);
+//     let spread = 4 * Math.abs(velocity / 100);
+//     let vScale = 1 + Math.abs(velocity / 100);
+//     let vPos = 0;//(velocity / -100);
+//     let blur = Math.abs(velocity / 150) * 2;
 
-    // add a motion blur
-    // document.querySelector('.nav-top').style.boxShadow = '0 '+vOffset+'px '+spread+'px rgba(0, 0, 0, 0.13)';
-    document.querySelector('.nav-top svg').style.transform = "scale(1.0,"+vScale+")  translateY("+vPos+"px)";
-    document.querySelector('.nav-top svg').style.filter = "blur("+blur+"px)";
-}
+//     // add a motion blur
+//     // document.querySelector('.nav-top').style.boxShadow = '0 '+vOffset+'px '+spread+'px rgba(0, 0, 0, 0.13)';
+//     document.querySelector('.nav-top svg').style.transform = "scale(1.0,"+vScale+")  translateY("+vPos+"px)";
+//     document.querySelector('.nav-top svg').style.filter = "blur("+blur+"px)";
+// }
 
 //This pauses the animation at specified points while scrolling
 // function scrollPause (scrollProgress) {
@@ -142,10 +140,10 @@ function updateEffects(velocity) {
 
 
 // Throttled scroll handler for better performance
-let isScrolling = false;
-let lastScroll = 0;
-export function critterScroll() {
+
+export function scrollCritters() {
     window.clearTimeout( isScrolling );
+    // console.log('scrollCritters');
 
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -154,16 +152,25 @@ export function critterScroll() {
     updatePolygons(scrollProgress);
 
     let velocity = scrollTop - lastScroll;
-    updateEffects(velocity);
+    // updateEffects(velocity);
     lastScroll = scrollTop;
 
-    isScrolling = setTimeout(()=>{
-        updateEffects(0);
-    }, 66);
+    // isScrolling = setTimeout(()=>{
+    //     updateEffects(0);
+    // }, 66);
 }
 
-// Add scroll event listener
-window.addEventListener('scroll', critterScroll);
+export function initCritters() {
+    console.log('initCritters');
+
+    scrollCritters();
+    window.addEventListener('scroll', scrollCritters);
+
+    // blur the nav-top on click
+    link.addEventListener('click', function(e){
+        
+    });
+}
 
 // Optional: Add keyboard controls for precise scrubbing
 /*
@@ -211,5 +218,5 @@ document.addEventListener('touchmove', (e) => {
 */
 
 // Initialize with first frame
-updatePolygons(0);
+// updatePolygons(0);
 

@@ -1,16 +1,8 @@
 @use '../library' as lib;
 
-@use "../base/molecules";
-
-@use "../components/masthead";
-
-@use '../components/project-list';
-
-@use '../components/post-list';
-
-
 body.home {
   #header {
+    display: none;
     position: absolute;
     a {
       color: var(--accent-foreground);
@@ -18,19 +10,31 @@ body.home {
   }
 
   #masthead {
-    background: var(--body-background);
-    margin-bottom: var(--gutter-xl);
+    height: calc(100vh - var(--navbar-height));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+
+    @include lib.theater();
+
 
     h1,h2,h3,p {
-      color: var(--accent-foreground);
+      margin-bottom: var(--gutter);
     }
     p.large-type {
-      background-image: linear-gradient(to bottom, var(--accent-foreground), var(--border-color)); /* Example: Red to Blue linear gradient */
+      background-image: linear-gradient(to bottom, var(--theater-foreground), var(--border-color)); /* Example: Red to Blue linear gradient */
       -webkit-background-clip: text; /* For Webkit browsers like Chrome, Safari */
       background-clip: text;
       -webkit-text-fill-color: transparent; /* For Webkit browsers */
       color: transparent; /* Fallback for other browsers, or if -webkit-text-fill-color isn't needed */
-
+    }
+    a {
+      text-decoration: none;
     }
 
     #crane {
@@ -47,37 +51,50 @@ body.home {
     }
 
     height: 100vh;
-    @media (min-width: lib.$breakpoint) {
-      align-items: flex-end;
+    @media (orientation: landscape) {
+      align-items: flex-start;
       justify-content: center;
+      h1,h2,h3,p {
+        width: 38%;
+      }
       h1 {
         font-size: calc(1rem * pow(var(--type-scale), 6));
         margin-bottom: var(--gutter);
-        width: 38%;
       }
       p.large-type {
         font-size: calc(1rem * pow(var(--type-scale), 1));
-        width: 38%;
+      }
+      @for $i from 1 through 5 { // Loop from 1 to 5 for p elements
+        p:nth-child(#{$i}) { // Target each p element using nth-child
+          transition-delay: ($i * (lib.$speed*0.5)); // Calculate incremental delay (e.g., 0.1s, 0.2s, etc.)
+        }
       }
     }
-    @media (max-width: lib.$breakpoint) {
+    @media (orientation: portrait) {
       flex-direction: column;
       justify-content: flex-start;
-      h1 {
-        margin-top: var(--gutter)
-      }
-      p.large-type {
-        margin-top: var(--gutter);
-      }
+      // #mininav {
+      //   position: absolute;
+      //   bottom: 8rem;
+      // }
     }
   }
 
   .project-list {
-    row-gap: 0;
     .project {
       header {
         display: none;
       }
     }
+  }
+
+
+}
+
+@media (max-width: lib.$breakpoint) {
+  body {
+    overscroll-behavior: none;
+    max-height: 100vh;
+
   }
 }

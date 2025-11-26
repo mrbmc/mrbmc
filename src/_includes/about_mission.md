@@ -1,4 +1,4 @@
-{% section "mission","well" %}
+{% section "mission","card" %}
 
 ## Useful, Usable, Unique
 

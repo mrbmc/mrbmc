@@ -1,17 +1,15 @@
 {% section "leadership","" %}
 
-## Design Leadership Philopsophy
+## Design Leadership 
 
-My leadership style flows from a principled approach:
+
+### Leadership Philopsophy
 
 * Define a clear strategy.
-* Recruit smart, ambitious, people to the strategy.
-* Build operational support for those people to achieve their dreams.
+* Recruit smart, ambitious, people.
+* Build operational support for those people.
 
-These three points contain multitudes but they define the outline of how I rally teams toward ambitious goals. I lean on my personal strenghts of strategic insight, personalized coaching, and systems thinking. It's a coach-mentor style of leadership more than a charismatic figurehead.
-
-> If you want to build a ship, don't drum up the men to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.
-> -- Antoine de Sait-Exupery
+Each of these points contains multitudes, but taken together enable me to rally teams around ambitious goals. I lean on my personal strengths as a **coach-mentor style of leader** more than a charismatic figurehead. This leverages my strongest skills of strategic insight, personalized coaching, and systems thinking.
 
 ### Leadership Values 
 
