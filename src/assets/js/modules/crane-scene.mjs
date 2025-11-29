@@ -35,12 +35,12 @@ export class CraneScene {
     this.config = {
       rotationSpeed: 3.0,
       rotationAmplitude: Math.PI / 6, // 30 degrees
-      rotationOffset: Math.PI / 12, // 30 degrees base rotation
+      rotationOffset: Math.PI / -60, // 15 degrees base rotation
       mouseSensitivity: 0.002 ,
       damping: 0.5,
       returnSpeed: 0.025,
       cameraDistance: function() {
-        return (this.isLandscape() ? 14 : 32);
+        return (this.isLandscape() ? 16 : 40);
         const delta = Math.abs(1.4 - (window.innerWidth / window.innerHeight));
         const factor = 1 + (delta * 1.2);
         return 10 * factor;
@@ -53,9 +53,17 @@ export class CraneScene {
         // Move camera to the left (negative X) so crane appears on right
         return this.isLandscape() ? -5 : 0;
       },
+      cameraOffsetY: function() {
+        // Move camera up slightly in landscape
+        return this.isLandscape() ? 0 : 2;
+      },
       lookAtOffsetX: function() {
         // Adjust look-at target to keep crane centered in right half
         return this.isLandscape() ? -5 : 0;
+      },
+      lookAtOffsetY: function() {
+        // Adjust look-at target Y position based on orientation
+        return this.isLandscape() ? 0 : 3;
       }
     };
     
@@ -73,10 +81,8 @@ export class CraneScene {
     // Camera
     const aspect = this.canvas.clientWidth / this.canvas.clientHeight;
     this.camera = new THREE.PerspectiveCamera(45, aspect, 0.2, 1000);
-    const offsetX = this.config.cameraOffsetX();
-    const lookAtX = this.config.lookAtOffsetX();
-    this.camera.position.set(offsetX, (this.config.isLandscape() ? 0 : 2), this.config.cameraDistance());
-    this.camera.lookAt(lookAtX, (this.config.isLandscape() ? 0 : 3), 0);
+    this.camera.position.set(this.config.cameraOffsetX(), this.config.cameraOffsetY(), this.config.cameraDistance());
+    this.camera.lookAt(this.config.lookAtOffsetX(), this.config.lookAtOffsetY(), 0);
 
     // Renderer
     this.renderer = new THREE.WebGLRenderer({
@@ -111,8 +117,8 @@ export class CraneScene {
     // Subtle bloom pass - only highlights glow
     const bloomPass = new UnrealBloomPass(
       new THREE.Vector2(window.innerWidth, window.innerHeight),
-      0.2,    // strength - subtle glow
-      0.6,    // radius - soft spread
+      0.1,    // strength - subtle glow
+      0.3,    // radius - soft spread
       0.85    // threshold - only bright areas glow
     );
     this.composer.addPass(bloomPass);
@@ -138,12 +144,9 @@ export class CraneScene {
 
     this.camera.aspect = width / height;
     this.camera.updateProjectionMatrix();
-    this.camera.position.z = this.config.cameraDistance();
     // Update camera offset for landscape
-    const offsetX = this.config.cameraOffsetX();
-    const lookAtX = this.config.lookAtOffsetX();
-    this.camera.position.x = offsetX;
-    this.camera.lookAt(lookAtX, 0, 0);
+    this.camera.position.set(this.config.cameraOffsetX(), this.config.cameraOffsetY(), this.config.cameraDistance());
+    this.camera.lookAt(this.config.lookAtOffsetX(), this.config.lookAtOffsetY(), 0);
     this.renderer.setSize(width, height);
     this.composer.setSize(width, height);
   }

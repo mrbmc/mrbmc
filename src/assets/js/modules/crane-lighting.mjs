@@ -47,7 +47,7 @@ export function setupLighting(scene) {
   
   // Warm rim light from right
   // highlight the right edges of the crane
-  lights.warmRim = new THREE.DirectionalLight(0xff4f00, 8);
+  lights.warmRim = new THREE.DirectionalLight(0xff669f, 8);
   lights.warmRim.position.set(2, 1, -1);
   // lights.warmRim.target.position.set(0, 0, 0);
   scene.add(lights.warmRim);
@@ -77,7 +77,7 @@ export function setupLighting(scene) {
 //   scene.add(lights.sparkle4);
 
   // Add prismatic colored accents for rainbow sparkle
-  lights.prism1 = new THREE.DirectionalLight(0xff4f00, 3.5, 30);  // ORANGE
+  lights.prism1 = new THREE.DirectionalLight(0xff669f, 3.5, 30);  // ORANGE
   lights.prism1.position.set(8, 4, 6);
   lights.prism1.target.position.set(2, 0, 0);
   scene.add(lights.prism1);

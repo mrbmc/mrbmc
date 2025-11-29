@@ -42,6 +42,7 @@ const keyframes = [
 
 // Function to parse polygon points string into array of coordinates
 function parsePoints(pointsString) {
+    if(!pointsString) return [];
     return pointsString.trim().split(/\s+/).map(point => {
         const [x, y] = point.split(',').map(Number);
         return { x, y };
@@ -162,14 +163,10 @@ export function scrollCritters() {
 
 export function initCritters() {
     console.log('initCritters');
+    // if(document.getElementById('header') == null) return;
 
     scrollCritters();
     window.addEventListener('scroll', scrollCritters);
-
-    // blur the nav-top on click
-    link.addEventListener('click', function(e){
-        
-    });
 }
 
 // Optional: Add keyboard controls for precise scrubbing
