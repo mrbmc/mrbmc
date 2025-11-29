@@ -10,6 +10,10 @@
 		"Pretty JSON":
 		{
 			"pretty_on_save": true,
+		},
+		"SublimeOnSaveBuilt": {
+		    "filename_filter": "\\.(js)$",
+		    "build_on_save": false
 		}
     },
     "build_systems":

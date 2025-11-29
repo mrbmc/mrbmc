@@ -70,7 +70,11 @@ blockquote,.blockquote {
     padding: calc( var(--gutter) * .5 ) var(--gutter);
     border-radius: var(--border-radius);
     text-decoration: none;
-    box-shadow: inset 0px 1px 1px 0px var(--white-semi), lib.$shadow;
+    border: none;
+    // box-shadow: inset 0px 1px 1px 0px var(--white-semi), lib.$shadow;
+    box-shadow: lib.$shadow;
+
+    font-size: 1rem;
 
     &:hover {
       color: var(--on-primary);

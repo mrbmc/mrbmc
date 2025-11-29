@@ -109,7 +109,8 @@ const paths = {
     "/about/*",
     "/resume/*",
     "/gaia/*",
-    "/colophon/*"
+    "/colophon/*",
+    "/login/*"
   ]
 };
 const dryrun = argv.dryrun || argv.debug == "dryrun";

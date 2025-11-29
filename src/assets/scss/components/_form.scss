@@ -1,0 +1,30 @@
+@use '../library' as lib;
+
+body > header { 
+	margin-bottom: var(--gutter-xl);
+}
+
+label {
+	display: none;	
+	color: var(--muted-foreground);
+	font-size: 0.85rem;
+}
+input {
+	border-radius: var(--border-radius);
+	border: 1px solid var(--border-color);
+	padding: 0.25rem 0.5rem;
+	display: block;	
+	font-size: 1rem;
+}
+.form-group,fieldset {
+	margin: 0 0 1rem 0;
+}
+#emailStep, #otpStep {
+	input,button {
+		box-sizing: border-box;
+		width: 100%;
+	}
+}
+#otpStep {
+	display: none;
+}
