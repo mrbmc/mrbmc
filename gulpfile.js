@@ -54,6 +54,10 @@ const paths = {
       output: 'www/js/photos.bundle.js'
     },
     {
+      input: 'src/assets/js/login.js',
+      output: 'www/js/login.bundle.js'
+    },
+    {
       input: 'src/assets/js/crane.js',
       output: 'www/js/crane.bundle.js',
       external: ['three'],
