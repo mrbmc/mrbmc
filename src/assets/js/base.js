@@ -1,5 +1,5 @@
-import { initCritters, scrollCritters } from "./modules/critters.mjs";
-import { isInViewport } from './modules/dom_utils.mjs';
+import { initCritters } from "./modules/critters.mjs";
+
 /* * * * * * * * * * * * * * * * * * * * *
 CONFIGURATION
 * * * * * * * * * * * * * * * * * * * * */
@@ -7,6 +7,7 @@ const DEBUG = (document.location.hostname == "localhost" || document.location.hr
 const MOBILE = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
 var VERBOSE = false && DEBUG,
     last_known_scroll_position = 0;
+const observer = new IntersectionObserver(intersectionCallback, {});
 
 
 function initEmails(){
@@ -20,16 +21,25 @@ function initEmails(){
   })
 }
 
-function animateElementsInView() {
-    Array
-    .from(document.querySelectorAll('.blur-in,.fade-in,.build-in'))
-    .map(element => {
-        element.classList.toggle('in',isInViewport(element));
+function intersectionCallback(entries, observer) {
+    console.log('intersectionCallback');
+    entries.forEach(entry => {
+        if(entry.target.id === 'header') {
+            // console.log('Header visibility changed:', entry.isIntersecting);
+            document.querySelector('.nav-top').classList.toggle('hide',entry.isIntersecting);
+        } else {
+            // console.log('Element entered viewport:', entry.target.id);
+            entry.target.classList.toggle('in',entry.isIntersecting);
+        }
     });
 }
 
-function baseScroll (e) {
-    animateElementsInView();
+function initAnimations() {
+    console.log('initAnimations');
+    document.querySelectorAll('.blur-in,.fade-in,.build-in').forEach(element => {
+        observer.observe(element);
+    });
+    observer.observe(document.getElementById('header'));
 }
 
 /* * * * * * * * * * * * * * * * * * * * *
@@ -38,16 +48,9 @@ EVENT LISTENERS
 window.addEventListener('load', function(e) {
     "use strict";
     initEmails();
-    animateElementsInView();
+    initAnimations();
     initCritters();
 },false);
 
-window.addEventListener('scroll', baseScroll);
-
-
-
-/* * * * * * * * * * * * * * * * * * * * *
-MODULES
-* * * * * * * * * * * * * * * * * * * * */
 import "./modules/ga.mjs";
 
