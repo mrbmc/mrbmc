@@ -43,6 +43,7 @@ exports.handler = async (event) => {
       body = event; // Direct invocation
     }
     const email = body.email?.toLowerCase().trim();
+    const redirect = body.redirect.trim();
 
     // Validate email
     if (!email || !email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
@@ -72,7 +73,7 @@ exports.handler = async (event) => {
 
     // Create magic link
     const baseUrl = getAllowedOrigin(event);
-    const magicLink = `${baseUrl}/login/?token=${magicToken}&email=${encodeURIComponent(email)}`;
+    const magicLink = `${baseUrl}/login/?token=${magicToken}&email=${encodeURIComponent(email)}&redirect=${redirect}`;
 
     // Send OTP to user
     await ses.send(new SendEmailCommand({
@@ -85,8 +86,8 @@ exports.handler = async (event) => {
           Html: { Data: `
             <p>Your one-time access code for Brian's portfolio is:</p>
             <h1 style="font-size: 32px; letter-spacing: 8px; color: #333;">${otp}</h1>
-            <p style="margin: 20px 0;">Or click the button below to verify automatically:</p>
-            <a href="${magicLink}" style="display: inline-block; padding: 12px 24px; background: #1F23AD; color: #FFFFFF; text-decoration: none; border-radius: 8px; font-weight: 600;">Verify Access</a>
+            <p style="margin: 20px 0;">Or click the link below to verify automatically:</p>
+            <a href="${magicLink}">${magicLink}</a>
             <p style="margin-top: 20px; color: #666; font-size: 12px;">This code expires in ${OTP_EXPIRY_MINUTES} minutes.</p>
             <p style="color: #666; font-size: 12px;">If you didn't request this, please ignore this email.</p>
           `}
