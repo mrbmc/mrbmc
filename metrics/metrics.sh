@@ -13,7 +13,9 @@ stop_day=$(date -j -f %Y%m%d $stop_date +%d);
 stop_month=$(date -j -f %Y%m%d $stop_date +%m);
 stop_seconds=$(date -j -f %Y%m%d $stop_date +%s)
 
-# ...existing code...
+this_year=$(date -j +%Y);
+this_month=$(date -j +%m);
+this_day=$(date -j +%d);
 
 local flag_skipdownload flag_skipfilter flag_verbose flag_help flag_raw flag_update_blacklists
 local usage=(
@@ -56,9 +58,9 @@ function download () {
 	[[ -z "$flag_verbose" ]] || { echo "----------------------------------------";}
 
 	if (( $#flag_verbose )); then
-		aws s3 sync s3://brianmcconnell.me $BASE/downloads
+		aws s3 sync s3://brianmcconnell.me $BASE/downloads --exclude "*" --include "*.$this_year-$this_month*.gz"
 	else
-		aws s3 sync s3://brianmcconnell.me $BASE/downloads --quiet
+		aws s3 sync s3://brianmcconnell.me $BASE/downloads --exclude "*" --include "*.$this_year-$this_month*.gz" --quiet
 	fi
 
 	#NOTE: you can't unzip all files for a year so we go month by month
