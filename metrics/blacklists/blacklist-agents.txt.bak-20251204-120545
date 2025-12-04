@@ -1,4 +1,3 @@
-
 (^| )PTST\\/
 (^| )sentry\\/
 (sistrix|SISTRIX) [cC]rawler
@@ -7,16 +6,11 @@
 [pP]ingdom
 [wW]get
 # Auto-updated crawler user agents (2025-11-19)
-# Auto-updated crawler user agents (2025-12-04)
 ^Apache-HttpClient
 ^BW\\/
 ^curl
 ^LCC 
 ^PHP-Curl-Class
-007ac9 Crawler
-2ip bot
-2ip\\.ru
-360Spider
 A Patent Crawler
 A6-Indexer
 Aboundex
