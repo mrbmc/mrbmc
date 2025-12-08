@@ -49,11 +49,11 @@ export function createCraneGeometry() {
     const shape = createShapeFromPath(pathData);
     
     const extrudeSettings = {
-      depth: 0.1,
+      depth: 0.2,
       bevelEnabled: true,
-      bevelThickness: 0.1,
-      bevelSize: 0.1,
-      bevelOffset: 0.1,
+      bevelThickness: 0.2,
+      bevelSize: 0.2,
+      bevelOffset: -0.1,
       bevelSegments: 1,
     };
     
