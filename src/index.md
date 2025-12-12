@@ -14,7 +14,11 @@ hidefooter: true
 
 I am a design leader who builds with technology and empathy. I embed human-centered practices into engineering-driven organizations and lead transformations at any scale.{.blur-in .large-type}
 
-[Impact Projects](/portfolio/) • [How I Work](/about/) • [Blog](/blog/) {.blur-in #mininav}
+* [Portfolio](/portfolio/)
+* [How I Work](/about/)
+* [Blog](/blog/)
+
+{.blur-in .nav #mininav}
 
 <canvas id="crane-canvas"></canvas> {#crane}
 
