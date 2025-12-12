@@ -7,9 +7,10 @@ import * as THREE from 'three';
  */
 export function createGlassMaterial(config = {}) {
   return new THREE.MeshPhysicalMaterial({
-    color: 0xFFFFFF,          // Pure white - no color tint
-    specularColor: 0xff004f,    // Orange specular highlights
-    specularIntensity: 0.2,  // Full intensity for sharp highlights
+    color: 0xFFFFFF,
+    // attenuationColor: 0xDCDDF9,
+    // attenuationDistance: 3.5,
+    specularColor: 0xff4f00,    // Orange specular highlights
     metalness: 0.1,        // Almost non-metallic
     roughness: 0.2,           // Perfect smoothness for clear refraction
     transmission: 1.0,       // High transmission with slight visibility

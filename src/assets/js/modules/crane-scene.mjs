@@ -33,7 +33,7 @@ export class CraneScene {
 
     // Configuration
     this.config = {
-      rotationSpeed: 3.0,
+      rotationSpeed: 10.0,
       rotationAmplitude: Math.PI / 6, // 30 degrees
       rotationOffset: Math.PI / -60, // 15 degrees base rotation
       mouseSensitivity: 0.002 ,
@@ -47,7 +47,9 @@ export class CraneScene {
       },
       // Landscape positioning
       isLandscape: function() {
-        return window.innerWidth > window.innerHeight && window.innerWidth / window.innerHeight > 1.2;
+        return (window.innerWidth > window.innerHeight);
+        return (window.innerWidth > window.innerHeight) && (window.innerWidth / window.innerHeight > 1.2);
+        return (window.innerWidth >= 768);
       },
       cameraOffsetX: function() {
         // Move camera to the left (negative X) so crane appears on right
@@ -55,7 +57,7 @@ export class CraneScene {
       },
       cameraOffsetY: function() {
         // Move camera up slightly in landscape
-        return this.isLandscape() ? 0 : 2;
+        return this.isLandscape() ? 0 : 0;
       },
       lookAtOffsetX: function() {
         // Adjust look-at target to keep crane centered in right half
@@ -63,7 +65,7 @@ export class CraneScene {
       },
       lookAtOffsetY: function() {
         // Adjust look-at target Y position based on orientation
-        return this.isLandscape() ? 0 : 3;
+        return this.isLandscape() ? 0 : 5;
       }
     };
     
@@ -96,7 +98,37 @@ export class CraneScene {
     this.renderer.toneMappingExposure = 3.2;  // Maximum exposure for diamond brilliance
     this.renderer.shadowMap.enabled = true;
     this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-    
+
+    // cyclorama
+    const planeGeo = new THREE.PlaneGeometry(40, 40, 32, 32);
+    const positions = planeGeo.attributes.position;
+
+    // Curve the bottom half
+    for (let i = 0; i < positions.count; i++) {
+      const y = positions.getY(i);
+      if (y < 0) {
+        const curve = Math.pow(Math.abs(y) / 10, 2);
+        positions.setZ(i, curve * 5);
+      }
+    }
+
+    positions.needsUpdate = true;
+    planeGeo.computeVertexNormals();
+
+    const backdrop = new THREE.Mesh(
+      planeGeo,
+      new THREE.MeshStandardMaterial({ 
+        color: 0x00010f,
+        roughness: 0.33,    // 0 = mirror, 1 = matte (default is 1)
+        metalness: 0.0     // 0 = non-metal, 1 = metal (default is 0)
+      })
+    );
+    backdrop.receiveShadow = true;
+    backdrop.position.z = -10;
+    backdrop.position.x = -5;
+    // this.scene.add(backdrop);
+
+
     // Setup lights using dedicated module
     this.lights = setupLighting(this.scene);
     
@@ -125,6 +157,9 @@ export class CraneScene {
     
     const outputPass = new OutputPass();
     this.composer.addPass(outputPass);
+
+
+
 
     // Mouse controls
     this.canvas.addEventListener('mousedown', this.onMouseDown);

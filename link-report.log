@@ -4,7 +4,7 @@ Getting links from: http://localhost:8000/
 ├───OK─── http://localhost:8000/resume/
 ├───OK─── http://localhost:8000/photos/
 ├───OK─── http://localhost:8000/blog/
-Finished! 15 links found. 10 excluded. 0 broken.
+Finished! 16 links found. 11 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/about/
 ├───OK─── http://localhost:8000/images/optimized/mrbmc-20241121-640.webp
@@ -21,7 +21,7 @@ Getting links from: http://localhost:8000/about/
 ├───OK─── http://localhost:8000/images/optimized/puzzle-commerce-537.svg
 ├───OK─── http://localhost:8000/colophon/
 ├───OK─── http://localhost:8000/privacy/
-Finished! 55 links found. 41 excluded. 0 broken.
+Finished! 56 links found. 42 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/
 ├───OK─── http://localhost:8000/images/optimized/disney-growth-thumb-640.webp
@@ -47,10 +47,10 @@ Getting links from: http://localhost:8000/portfolio/
 ├───OK─── http://localhost:8000/images/optimized/PAL9100-tablet-640.webp
 ├───OK─── http://localhost:8000/portfolio/boids/
 ├───OK─── http://localhost:8000/images/optimized/boids-thumb-640.webp
-Finished! 61 links found. 38 excluded. 0 broken.
+Finished! 62 links found. 39 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/resume/
-Finished! 30 links found. 30 excluded. 0 broken.
+Finished! 34 links found. 34 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/photos/
 ├───OK─── http://localhost:8000/images/optimized/h-2006_Paris_118-640.webp
@@ -89,7 +89,7 @@ Getting links from: http://localhost:8000/photos/
 ├───OK─── http://localhost:8000/images/optimized/t-2012_17576830576_e7d64d05a0_o-256.webp
 ├───OK─── http://localhost:8000/images/optimized/t-2012_17600819772_671d18e7b5_o-256.webp
 ├───OK─── http://localhost:8000/images/optimized/t-2012_17603151861_e5d7ef68b5_o-256.webp
-Finished! 74 links found. 38 excluded. 0 broken.
+Finished! 75 links found. 39 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/
 ├───OK─── http://localhost:8000/blog/job-market-2025/
@@ -101,9 +101,7 @@ Getting links from: http://localhost:8000/blog/
 ├───OK─── http://localhost:8000/images/optimized/gapco-continental-divide-640.webp
 ├───OK─── http://localhost:8000/blog/growth-design-idioms/
 ├───OK─── http://localhost:8000/blog/intentional-consumption/
-├───OK─── http://localhost:8000/images/optimized/girl-turntable-640.webp
 ├───OK─── http://localhost:8000/blog/a-little-feedback-often/
-├───OK─── http://localhost:8000/images/optimized/sealion-balance-640.webp
 ├───OK─── http://localhost:8000/blog/bike-tour-2023/
 ├───OK─── http://localhost:8000/images/optimized/vt-tour-640.webp
 ├───OK─── http://localhost:8000/blog/design-for-durability/
@@ -129,7 +127,7 @@ Getting links from: http://localhost:8000/blog/
 ├───OK─── http://localhost:8000/blog/newtons-laws-of-design/
 ├───OK─── http://localhost:8000/images/optimized/newton-640.webp
 ├───OK─── http://localhost:8000/blog/rss.xml
-Finished! 73 links found. 36 excluded. 0 broken.
+Finished! 68 links found. 33 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/blogtalkradio/
 ├───OK─── http://localhost:8000/images/optimized/btr-customer-experience-map-hosts-640.webp
@@ -150,7 +148,7 @@ Getting links from: http://localhost:8000/portfolio/blogtalkradio/
 ├───OK─── http://localhost:8000/images/optimized/btr-episodes-list-transcript-640.webp
 ├───OK─── http://localhost:8000/images/optimized/btr-host-artwork-640.webp
 ├───OK─── http://localhost:8000/images/optimized/btr-homepage-640.webp
-Finished! 43 links found. 25 excluded. 0 broken.
+Finished! 44 links found. 26 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-groupwatch/
 ├───OK─── http://localhost:8000/images/portfolio/disney-groupwatch/GW-Demo_02-24.mp4
@@ -187,7 +185,7 @@ Getting links from: http://localhost:8000/portfolio/disney-groupwatch/
 ├───OK─── http://localhost:8000/images/optimized/press-640.webp
 ├───OK─── http://localhost:8000/images/optimized/social-640.webp
 ├───OK─── http://localhost:8000/images/optimized/groupwatch-metrics-640.webp
-Finished! 58 links found. 24 excluded. 0 broken.
+Finished! 59 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-growth/#project-team
 ├───OK─── http://localhost:8000/images/optimized/disney-growth-device-cluster-640.webp
@@ -244,7 +242,7 @@ Getting links from: http://localhost:8000/portfolio/disney-growth/#project-team
 ├───OK─── http://localhost:8000/images/optimized/workshop-pictogram-640.webp
 ├───OK─── http://localhost:8000/images/optimized/workshop-agenda-640.webp
 ├───OK─── http://localhost:8000/images/optimized/bundle-workshop-wireframes-640.webp
-Finished! 80 links found. 26 excluded. 0 broken.
+Finished! 81 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/team-charter-workshop/
 ├───OK─── http://localhost:8000/images/portfolio/culture-workshop/EXD-workshop-timelapse.mp4
@@ -254,7 +252,7 @@ Getting links from: http://localhost:8000/portfolio/team-charter-workshop/
 ├───OK─── http://localhost:8000/images/optimized/EXD-workshop-headsdown-640.webp
 ├───OK─── http://localhost:8000/images/optimized/EXD-workshop-values-640.webp
 ├───OK─── http://localhost:8000/images/optimized/EXD-workshop-elevator-640.webp
-Finished! 32 links found. 25 excluded. 0 broken.
+Finished! 33 links found. 26 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-enterprise/
 ├───OK─── http://localhost:8000/images/optimized/disney-enterprise-sso_gates-640.webp
@@ -319,18 +317,18 @@ Getting links from: http://localhost:8000/portfolio/disney-enterprise/
 ├───OK─── http://localhost:8000/images/optimized/exd-team-agency-340.webp
 ├───OK─── http://localhost:8000/images/optimized/EXD-Golden-Circle-640.webp
 ├───OK─── http://localhost:8000/images/optimized/exd-pods-640.webp
-Finished! 97 links found. 35 excluded. 0 broken.
+Finished! 98 links found. 36 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/leadership-in-nature/
 ├───OK─── http://localhost:8000/tags/nature
 ├───OK─── http://localhost:8000/tags/leadership
-Finished! 33 links found. 31 excluded. 0 broken.
+Finished! 34 links found. 32 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/colophon/
-Finished! 44 links found. 44 excluded. 0 broken.
+Finished! 45 links found. 45 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/privacy/
-Finished! 20 links found. 20 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/espn/
 ├───OK─── http://localhost:8000/images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
@@ -358,7 +356,7 @@ Getting links from: http://localhost:8000/portfolio/espn/
 ├───OK─── http://localhost:8000/images/optimized/starplus-640.webp
 ├───OK─── http://localhost:8000/images/optimized/starplus-6-640.webp
 ├───OK─── http://localhost:8000/images/portfolio/espn/SportsCenter_plus.mp4
-Finished! 51 links found. 26 excluded. 0 broken.
+Finished! 52 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/nhl/
 ├───OK─── http://localhost:8000/images/portfolio/nhl/nhl-masthead.mp4
@@ -383,7 +381,7 @@ Getting links from: http://localhost:8000/portfolio/nhl/
 ├───OK─── http://localhost:8000/images/optimized/gameflow_04-640.webp
 ├───OK─── http://localhost:8000/images/optimized/gameflow_06-640.webp
 ├───OK─── http://localhost:8000/images/portfolio/nhl/GameFlow-Demo.mp4
-Finished! 53 links found. 31 excluded. 0 broken.
+Finished! 54 links found. 32 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/eurosport/
 ├───OK─── http://localhost:8000/images/optimized/eurosport-product-lineup-2x1-640.webp
@@ -394,34 +392,34 @@ Getting links from: http://localhost:8000/portfolio/eurosport/
 ├───OK─── http://localhost:8000/images/optimized/eurosport-2-640.webp
 ├───OK─── http://localhost:8000/images/optimized/eurosport-8-640.webp
 ├───OK─── http://localhost:8000/images/optimized/eurosport-9-640.webp
-Finished! 28 links found. 20 excluded. 0 broken.
+Finished! 29 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/flint-and-silicon/
 ├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-masthead-640.webp
-Finished! 22 links found. 21 excluded. 0 broken.
+Finished! 23 links found. 22 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/design-prototyping-201/
 ├───OK─── http://localhost:8000/images/optimized/bamtech-prototyping-masthead-640.webp
-Finished! 23 links found. 22 excluded. 0 broken.
+Finished! 24 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/fusion-family-feast/
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/steelgills/
 ├───OK─── http://localhost:8000/images/optimized/steelgills-teaser-640.webp
-Finished! 24 links found. 23 excluded. 0 broken.
+Finished! 25 links found. 24 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/pal-9100/
 ├───OK─── http://localhost:8000/images/optimized/PAL9100-desktop-640.webp
 ├───OK─── http://localhost:8000/images/portfolio/pal-9100/PAL9100-prototype-breadboard.mp4
 ├───OK─── http://localhost:8000/images/optimized/PAL9100-default-640.webp
 ├───OK─── http://localhost:8000/images/optimized/PAL9100-active-640.webp
-Finished! 26 links found. 22 excluded. 0 broken.
+Finished! 27 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/boids/
 ├───OK─── http://localhost:8000/images/portfolio/gaia/boids.mp4
 ├───OK─── http://localhost:8000/gaia/boids/
-Finished! 22 links found. 20 excluded. 0 broken.
+Finished! 23 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/job-market-2025/
 ├───OK─── http://localhost:8000/images/optimized/key-cylinder-wards-640.webp
@@ -437,7 +435,7 @@ Getting links from: http://localhost:8000/blog/job-market-2025/
 ├───OK─── http://localhost:8000/tags/design
 ├───OK─── http://localhost:8000/tags/hiring
 ├───OK─── http://localhost:8000/tags/capitalism
-Finished! 39 links found. 26 excluded. 0 broken.
+Finished! 40 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/greenpoint-pan-chocolat-2025/
 ├───OK─── http://localhost:8000/images/optimized/pan-choclat-bakeri-640.webp
@@ -452,17 +450,17 @@ Getting links from: http://localhost:8000/blog/greenpoint-pan-chocolat-2025/
 ├───OK─── http://localhost:8000/tags/chocolate-croissant
 ├───OK─── http://localhost:8000/tags/science
 ├───OK─── http://localhost:8000/tags/experimentation
-Finished! 44 links found. 32 excluded. 0 broken.
+Finished! 45 links found. 33 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/read-history/
 ├───OK─── http://localhost:8000/images/optimized/firstbenz-jpggettyimages-905504772-640.webp
 ├───OK─── http://localhost:8000/tags/futurism
 ├───OK─── http://localhost:8000/tags/process
-Finished! 33 links found. 30 excluded. 0 broken.
+Finished! 34 links found. 31 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/design-quality/
 ├───OK─── http://localhost:8000/tags/design-strategy
-Finished! 26 links found. 25 excluded. 0 broken.
+Finished! 27 links found. 26 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/bike-tour-2024/
 ├───OK─── http://localhost:8000/images/optimized/gapco-potomac-preview-1920.webp
@@ -493,20 +491,21 @@ Getting links from: http://localhost:8000/blog/bike-tour-2024/
 ├───OK─── http://localhost:8000/tags/travel
 ├───OK─── http://localhost:8000/tags/bike-touring
 ├───OK─── http://localhost:8000/tags/adventure
-Finished! 56 links found. 28 excluded. 0 broken.
+Finished! 57 links found. 29 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/growth-design-idioms/
 ├───OK─── http://localhost:8000/tags/ui
 ├───OK─── http://localhost:8000/tags/usability
-Finished! 28 links found. 26 excluded. 0 broken.
+Finished! 29 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/intentional-consumption/
+├───OK─── http://localhost:8000/images/optimized/girl-turntable-640.webp
 ├───OK─── http://localhost:8000/tags/music
 ├───OK─── http://localhost:8000/tags/consumption
 ├───OK─── http://localhost:8000/tags/art
 ├───OK─── http://localhost:8000/tags/focus
 ├───OK─── http://localhost:8000/tags/growth
-Finished! 30 links found. 25 excluded. 0 broken.
+Finished! 31 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/a-little-feedback-often/
 ├───OK─── http://localhost:8000/images/blog/sealion-balance-ball.mp4
@@ -552,17 +551,17 @@ Getting links from: http://localhost:8000/blog/bike-tour-2023/
 ├───OK─── http://localhost:8000/images/optimized/IMG_1440-640.webp
 ├───OK─── http://localhost:8000/images/optimized/IMG_1377-640.webp
 ├───OK─── http://localhost:8000/images/optimized/IMG_1343-640.webp
-Finished! 81 links found. 47 excluded. 0 broken.
+Finished! 82 links found. 48 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/design-for-durability/
 ├───OK─── http://localhost:8000/images/optimized/cannondale-caad-optimo-105-640.webp
 ├───OK─── http://localhost:8000/images/optimized/reduce-reuse-recycle-640.webp
 ├───OK─── http://localhost:8000/tags/dieterrams
-Finished! 30 links found. 27 excluded. 0 broken.
+Finished! 31 links found. 28 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/good-people-management-is-invisible/
 ├───OK─── http://localhost:8000/tags/management
-Finished! 28 links found. 27 excluded. 0 broken.
+Finished! 29 links found. 28 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/olympics-danger-being-a-good-neighbor/
 ├───OK─── http://localhost:8000/tags/danger
@@ -570,11 +569,11 @@ Getting links from: http://localhost:8000/blog/olympics-danger-being-a-good-neig
 ├───OK─── http://localhost:8000/tags/ukraine
 ├───OK─── http://localhost:8000/tags/war
 ├───OK─── http://localhost:8000/tags/sports
-Finished! 31 links found. 26 excluded. 0 broken.
+Finished! 32 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/travel-made-me-a-better-designer/
 ├───OK─── http://localhost:8000/tags/greece
-Finished! 30 links found. 29 excluded. 0 broken.
+Finished! 31 links found. 30 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/designers-hierarchy-of-needs/
 ├───OK─── http://localhost:8000/images/optimized/pyramid-cover-640.webp
@@ -583,221 +582,221 @@ Getting links from: http://localhost:8000/blog/designers-hierarchy-of-needs/
 ├───OK─── http://localhost:8000/tags/teamwork
 ├───OK─── http://localhost:8000/tags/culture
 ├───OK─── http://localhost:8000/tags/career-growth
-Finished! 30 links found. 24 excluded. 0 broken.
+Finished! 31 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/usability-testing-tv-apps/
 ├───OK─── http://localhost:8000/tags/tv
-Finished! 32 links found. 31 excluded. 0 broken.
+Finished! 33 links found. 32 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/our-judicial-system-is-the-worst/
 ├───OK─── http://localhost:8000/tags/law
 ├───OK─── http://localhost:8000/tags/justice
 ├───OK─── http://localhost:8000/tags/civics
-Finished! 27 links found. 24 excluded. 0 broken.
+Finished! 28 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/soccer-i-love-to-hate-you/
 ├───OK─── http://localhost:8000/tags/soccer
-Finished! 27 links found. 26 excluded. 0 broken.
+Finished! 28 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/londoner-guide-to-NYC-cycling/
 ├───OK─── http://localhost:8000/tags/parody
 ├───OK─── http://localhost:8000/tags/new-york
-Finished! 27 links found. 25 excluded. 0 broken.
+Finished! 28 links found. 26 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/design-is-never-done/
 ├───OK─── http://localhost:8000/tags/creativity
 ├───OK─── http://localhost:8000/tags/programming
-Finished! 28 links found. 26 excluded. 0 broken.
+Finished! 29 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/big-data-causes-night-blindness/
 ├───OK─── http://localhost:8000/tags/data
 ├───OK─── http://localhost:8000/tags/evidence
 ├───OK─── http://localhost:8000/tags/research
-Finished! 27 links found. 24 excluded. 0 broken.
+Finished! 28 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/consumer-design-for-enterprise/
 ├───OK─── http://localhost:8000/tags/enterprise
-Finished! 25 links found. 24 excluded. 0 broken.
+Finished! 26 links found. 25 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/newtons-laws-of-design/
 ├───OK─── http://localhost:8000/tags/physics
 ├───OK─── http://localhost:8000/tags/midjourney
 ├───OK─── http://localhost:8000/tags/ai-art
-Finished! 31 links found. 28 excluded. 0 broken.
+Finished! 32 links found. 29 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/rss.xml
 Error: Expected type "text/html" but got "application/xml"
 
 Getting links from: http://localhost:8000/tags/nature
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/leadership
-Finished! 29 links found. 29 excluded. 0 broken.
+Finished! 28 links found. 28 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/gaia/boids/
 Finished! 2 links found. 2 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/design
-Finished! 51 links found. 51 excluded. 0 broken.
+Finished! 50 links found. 50 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/hiring
-Finished! 20 links found. 20 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/capitalism
-Finished! 21 links found. 21 excluded. 0 broken.
+Finished! 22 links found. 22 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/brooklyn
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/baking
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/greenpoint
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/pan-au-chocolat
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/chocolate-croissant
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/science
-Finished! 25 links found. 25 excluded. 0 broken.
+Finished! 26 links found. 26 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/experimentation
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/futurism
-Finished! 23 links found. 23 excluded. 0 broken.
+Finished! 24 links found. 24 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/process
-Finished! 27 links found. 27 excluded. 0 broken.
+Finished! 26 links found. 26 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/design-strategy
-Finished! 20 links found. 20 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/cycling
-Finished! 31 links found. 31 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/travel
-Finished! 28 links found. 28 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/bike-touring
-Finished! 25 links found. 25 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/adventure
-Finished! 25 links found. 25 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/ui
-Finished! 20 links found. 20 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/usability
 Finished! 21 links found. 21 excluded. 0 broken.
 
-Getting links from: http://localhost:8000/tags/music
+Getting links from: http://localhost:8000/tags/cycling
+Finished! 32 links found. 32 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/travel
+Finished! 29 links found. 29 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/bike-touring
+Finished! 26 links found. 26 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/adventure
+Finished! 26 links found. 26 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/ui
+Finished! 21 links found. 21 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/usability
 Finished! 22 links found. 22 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/music
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/consumption
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/art
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/focus
-Finished! 25 links found. 25 excluded. 0 broken.
+Finished! 24 links found. 24 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/growth
-Finished! 28 links found. 28 excluded. 0 broken.
+Finished! 27 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/momentum
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/feedback
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/dieterrams
-Finished! 22 links found. 22 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/management
-Finished! 22 links found. 22 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/danger
-Finished! 22 links found. 22 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/olympics
-Finished! 22 links found. 22 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/ukraine
-Finished! 22 links found. 22 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/war
-Finished! 22 links found. 22 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/sports
-Finished! 25 links found. 25 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/greece
-Finished! 22 links found. 22 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/mission
-Finished! 20 links found. 20 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/teamwork
-Finished! 20 links found. 20 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/tags/culture
 Finished! 23 links found. 23 excluded. 0 broken.
 
+Getting links from: http://localhost:8000/tags/management
+Finished! 23 links found. 23 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/danger
+Finished! 23 links found. 23 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/olympics
+Finished! 23 links found. 23 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/ukraine
+Finished! 23 links found. 23 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/war
+Finished! 23 links found. 23 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/sports
+Finished! 26 links found. 26 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/greece
+Finished! 23 links found. 23 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/mission
+Finished! 21 links found. 21 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/teamwork
+Finished! 21 links found. 21 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/tags/culture
+Finished! 24 links found. 24 excluded. 0 broken.
+
 Getting links from: http://localhost:8000/tags/career-growth
-Finished! 20 links found. 20 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/tv
-Finished! 20 links found. 20 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/law
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/justice
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/civics
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/soccer
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/parody
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/new-york
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/creativity
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/programming
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/data
-Finished! 20 links found. 20 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/evidence
-Finished! 20 links found. 20 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/research
-Finished! 20 links found. 20 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/enterprise
-Finished! 20 links found. 20 excluded. 0 broken.
+Finished! 21 links found. 21 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/physics
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/midjourney
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/tags/ai-art
-Finished! 22 links found. 22 excluded. 0 broken.
+Finished! 23 links found. 23 excluded. 0 broken.
 
-Finished! 3017 links found. 2525 excluded. 0 broken.
-Elapsed time: 1 second
+Finished! 3092 links found. 2601 excluded. 0 broken.
+Elapsed time: 2 seconds

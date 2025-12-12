@@ -8,6 +8,6 @@ The most powerful project you can design as leader is the team that makes produc
 
 Currently, I'm working with mission-driven startups to bring new products to market and level up their design literacy.
 
-[CV & Resumé](/images/uploads/Brian_McConnell-Resume_2025.pdf)
+[CV & Resumé](/images/uploads/Brian_McConnell-Resume_2026.pdf)
 
 {% endsection %}

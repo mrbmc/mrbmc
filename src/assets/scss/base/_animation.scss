@@ -41,10 +41,16 @@
     transform: translate(0, 10%);
 
     &.slide-left {
-        transform: translate(-20%, 0);
+        transform: translate(calc(var(--gutter-xl) * -1), 0);
     }
     &.slide-right {
-        transform: translate(20%, 0);
+        transform: translate(calc(var(--gutter-xl) * 1), 0);
+    }
+    &.slide-up {
+        transform: translate(0%, calc(var(--gutter-xl) * 1));
+    }
+    &.slide-down {
+        transform: translate(0%, calc(var(--gutter-xl) * -1));
     }
     &.in {
         transition: all lib.$speed lib.$easing;

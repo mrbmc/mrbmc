@@ -1,14 +1,13 @@
 <a name="top"></a>
 
 <header id="header">
-    <a class="nav-home logo" href="/">{% include "images/profile/kageki-crane.svg" %}BMC</a>
-    <a class="nav-top logo" href="#top">{% include "images/profile/kageki-crane.svg" %}</a>
+    <a class="nav-home" href="/">{% include "images/profile/kageki-crane.svg" %}BMC</a>
+    <a class="nav-top" href="#top">{% include "images/profile/kageki-crane.svg" %}</a>
     <nav id="menu">
-        <a class="nav-about" href="/about/" title="About">About</a>
-        <a class="nav-portfolio" href="/portfolio/" title="Portfolio">Portfolio</a>
+        <a class="nav-about{% if page.url contains 'about' %} active{% endif %}" href="/about/" title="About">About</a>
+        <a class="nav-portfolio{% if page.url contains 'portfolio' %} active{% endif %}" href="/portfolio/" title="Portfolio">Portfolio</a>
         <a class="nav-resume" href="/resume/" title="Resumé">Resumé</a>
         <a class="nav-photos" href="/photos/" title="Gallery">Photos</a>
-        <a class="nav-blog" href="/blog/" title="Blog">Blog</a>
+        <a class="nav-blog{% if page.url contains 'blog' %} active{% endif %}" href="/blog/" title="Blog">Blog</a>
     </nav>
-    <!-- <a class="nav-subnav" href="#subnav" id="subnav-toggle">{% include "images/icons/menu.svg" %}</a> -->
 </header>

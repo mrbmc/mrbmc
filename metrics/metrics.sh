@@ -87,7 +87,6 @@ function download () {
 	done
 }
 
-
 function parse () {
 	if [[ "$flag_skipfilter" ]]; then
 		echo "========================================";
@@ -105,13 +104,22 @@ function parse () {
     else
         local diff_days=$(((stop_seconds - start_seconds) / 86400))
         local last_date="";
+        local timer_start timer_end timer_elapsed
 
         [[ -z "$flag_verbose" ]] || { echo "Preparing filters..."; }
+        
+        # Timer: Start building awk script
+        timer_start=$(date +%s%N)
+        [[ -z "$flag_verbose" ]] || { echo "  [TIMER] Starting awk script build..."; }
         
         # Build awk script for fast single-pass filtering
         local awk_script='
         BEGIN {
             FS = "\t";  # CloudFront logs are tab-delimited
+            
+            # Timer: Start loading blacklist-agents
+            print "TIMER:load_agents_start" > "/dev/stderr";
+            fflush("/dev/stderr");
             
             # Load user-agent patterns (case-insensitive regex)
             agent_count = 0;
@@ -121,6 +129,12 @@ function parse () {
                 }
             }
             close("'$BASE'/blacklists/blacklist-agents.txt");
+            print "TIMER:load_agents_end:" agent_count > "/dev/stderr";
+            fflush("/dev/stderr");
+            
+            # Timer: Start loading blacklist-ips
+            print "TIMER:load_ips_start" > "/dev/stderr";
+            fflush("/dev/stderr");
             
             # Load IP addresses into hash for O(1) lookup
             ip_count = 0;
@@ -131,6 +145,12 @@ function parse () {
                 }
             }
             close("'$BASE'/blacklists/blacklist-ips.txt");
+            print "TIMER:load_ips_end:" ip_count > "/dev/stderr";
+            fflush("/dev/stderr");
+            
+            # Timer: Start loading blacklist-urls
+            print "TIMER:load_urls_start" > "/dev/stderr";
+            fflush("/dev/stderr");
             
             # Load URL patterns (case-insensitive regex)
             url_count = 0;
@@ -140,12 +160,28 @@ function parse () {
                 }
             }
             close("'$BASE'/blacklists/blacklist-urls.txt");
+            print "TIMER:load_urls_end:" url_count > "/dev/stderr";
+            fflush("/dev/stderr");
+            
+            filter_browser = 0;
+            filter_method = 0;
+            filter_status = 0;
+            filter_ip = 0;
+            filter_agent = 0;
+            filter_url = 0;
+            passed = 0;
+            lines_processed = 0;
+            
+            print "TIMER:begin_processing_start" > "/dev/stderr";
+            fflush("/dev/stderr");
         }
         {
             # CloudFront log fields (tab-delimited):
             # 1=date 2=time 3=x-edge-location 4=sc-bytes 5=c-ip 6=cs-method 
             # 7=cs(Host) 8=cs-uri-stem 9=sc-status 10=cs(Referer) 11=cs(User-Agent) 
             # 12=cs-uri-query 13=cs(Cookie) 14=x-edge-result-type 15=x-edge-request-id
+            
+            lines_processed++;
             
             ip = $5;           # c-ip
             method = $6;       # cs-method
@@ -154,33 +190,43 @@ function parse () {
             useragent = $11;   # cs(User-Agent) - URL encoded
             
             # Filter 1: Must have browser user-agent signatures
-            if (useragent !~ /Mozilla\/5\.0|AppleWebKit|Chrome|Safari|Firefox|Edge|Opera/) next;
+            if (useragent !~ /Mozilla\/5\.0|AppleWebKit|Chrome|Safari|Firefox|Edge|Opera/) { filter_browser++; next; }
             
             # Filter 2: Must be GET request
-            if (method !~ /GET/) next;
+            if (method !~ /GET/) { filter_method++; next; }
             
             # Filter 3: Exclude 301 redirects
-            if (status ~ /301/) next;
+            if (status ~ /301/) { filter_status++; next; }
             
             # Filter 4: Check if IP is blocked (O(1) hash lookup)
-            if (ip in blocked_ips) next;
+            if (ip in blocked_ips) { filter_ip++; next; }
             
             # Filter 5: Check user-agent patterns (case-insensitive)
             useragent_lower = tolower(useragent);
             for (i = 1; i <= agent_count; i++) {
-                if (useragent_lower ~ agent_patterns[i]) next;
+                if (useragent_lower ~ agent_patterns[i]) { filter_agent++; next; }
             }
             
             # Filter 6: Check URL patterns (case-insensitive)
             uri_lower = tolower(uri);
             for (i = 1; i <= url_count; i++) {
-                if (uri_lower ~ url_patterns[i]) next;
+                if (uri_lower ~ url_patterns[i]) { filter_url++; next; }
             }
             
             # Line passed all filters
+            passed++;
             print $0;
         }
+        END {
+            print "TIMER:processing_end:" lines_processed ":" passed ":" filter_browser ":" filter_method ":" filter_status ":" filter_ip ":" filter_agent ":" filter_url > "/dev/stderr";
+            fflush("/dev/stderr");
+        }
         '
+        
+        timer_end=$(date +%s%N)
+        timer_elapsed=$(( (timer_end - timer_start) / 1000000 ))
+        [[ -z "$flag_verbose" ]] || { echo "  [TIMER] Awk script built in ${timer_elapsed}ms"; }
+        
 
         for ((i = $diff_days; i > 0; i--)); do
             target_date=$(date -v-$i"d" -j -f %Y%m%d $stop_date +%Y-%m)
@@ -188,16 +234,34 @@ function parse () {
             if [[ $target_date != $last_date ]]; then
                 [[ -z "$flag_verbose" ]] || { echo "Cleaning $target_date"; }
                 
-                awk "$awk_script" "$BASE/logs/log_raw_$target_date" > "$BASE/logs/log_clean_$target_date"
+                # Run awk with stderr captured to display timing
+                timer_start=$(date +%s%N)
+                awk "$awk_script" "$BASE/logs/log_raw_$target_date" 2>/dev/null > "$BASE/logs/log_clean_$target_date"
+                timer_end=$(date +%s%N)
+                timer_elapsed=$(( (timer_end - timer_start) / 1000000 ))
+                
+                # Display timing info if verbose
+                if [[ -n "$flag_verbose" ]]; then
+                    echo "  [TIMER] Processing $target_date: ${timer_elapsed}ms"
+                fi
                 
                 last_date=$target_date;
             fi
         done
 
         [[ -z "$flag_verbose" ]] || { echo "Concatenating 2024 clean"; }
+        timer_start=$(date +%s%N)
         zcat -f $BASE/logs/log_clean_2024-* > $BASE/logs/log_clean;
+        timer_end=$(date +%s%N)
+        timer_elapsed=$(( (timer_end - timer_start) / 1000000 ))
+        [[ -z "$flag_verbose" ]] || { echo "  [TIMER] 2024 concatenation: ${timer_elapsed}ms"; }
+        
         [[ -z "$flag_verbose" ]] || { echo "Concatenating 2025 clean"; }
+        timer_start=$(date +%s%N)
         zcat -f $BASE/logs/log_clean_2025-* >> $BASE/logs/log_clean;
+        timer_end=$(date +%s%N)
+        timer_elapsed=$(( (timer_end - timer_start) / 1000000 ))
+        [[ -z "$flag_verbose" ]] || { echo "  [TIMER] 2025 concatenation: ${timer_elapsed}ms"; }
     fi
 
     return true;
@@ -330,7 +394,6 @@ function analyze-range () {
 	return 1;
 }
 
-
 function investigate () {
 
 	echo "========================================";
@@ -354,7 +417,6 @@ function investigate () {
 
 	eval ${the_cmd};
 }
-
 
 function update_blacklists () {
 
