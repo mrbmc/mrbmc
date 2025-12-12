@@ -8,11 +8,12 @@ tags:
   - art
   - focus
   - growth
-masthead-image: /images/blog/girl-turntable.jpg
 ---
 On the last night of Channukah, I gave each of my kids their first vinyl record from their *current* favorite artist (Taylor Swift and Imagine Dragons respectively but that's not important to the story.) The physical records were not the real gift. My real goal was to give them a special kind of experience.
 
-When I was young - maybe 14 until 18 - almost every other Tuesday I would head down to Main Street in my hometown to the "cool" record store. Tuesday was Release Day when all the new music would come out. I'd listen to the new arrivals and try to decide which one CD I could afford. It was one and only one – one CD, one album, one artist – because $16.99 felt like a lot of money to a kid in 1992.
+![girl with turntable](/images/blog/girl-turntable.jpg)
+
+Way back in the late 1900s when I was in highschool, every Tuesday afternoon I would head down to Sally's Place - the "cool" record store - in my hometown. Tuesday was Release Day when all the new music would come out. I'd listen to the new arrivals and try to decide which one CD I could afford. It was one and only one – one CD, one album, one artist – because $16.99 felt like a lot of money to a kid in 1992.
 
 Disc in hand, I'd hustle back home or to a friend's house and immediately sit in front of the stereo to listen. We listened to that entire album from start to finish without interruption. I'd read every word - every credit, lyric, and letter - in the liner notes while listening. I'd pore over the artwork. Then I'd go back and listen to the best songs. Then listen to the whole thing again. If my neighbor had a different album we'd trade them for a week. If it was the new Best. Album. Ever. we'd dub it onto old cassettes that had already been recorded over 8 times.
 

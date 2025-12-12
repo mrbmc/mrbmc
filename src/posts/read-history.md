@@ -1,5 +1,5 @@
 ---
-title: Driving Autonomous Horses
+title: Predicting The Future Of Autonomous Horses
 date: 2025-03-07
 tags:
   - futurism

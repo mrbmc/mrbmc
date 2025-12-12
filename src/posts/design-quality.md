@@ -10,7 +10,7 @@ eleventyExcludeFromCollections: false
 description: The hard truth about design is business constraints define the quality you can achieve.
 ---
 
-Last week, I had to downgrade a product design from tier one to tier two. Not because our design team lacked talent. The chipset couldn't handle the animations and resolution we wanted, and upgrading the hardware would price us out of our target market. This chipset limitation didn't kill the design—it forced us to decide which three interactions mattered most.
+Last week, I had to downgrade a product design from S tier to A tier. Not because our design team lacked talent, but because the chipset couldn't handle the animations and resolution we wanted. Upgrading the hardware would price us out of our target market. This chipset limitation didn't kill the design—it forced us to decide which three interactions mattered most.
 
 This illustrates a hard truth: market economics determine design quality more than designer skill.
 
