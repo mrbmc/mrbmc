@@ -15,9 +15,10 @@
     column-gap: lib.$gutter;
     position: relative;
 
-    @media (max-width:lib.$breakpoint) {
+    @media (orientation: portrait) {
       flex-direction: column-reverse;
       row-gap: 1rem;
+      grid-column: span var(--columns);
     }
 
     header {

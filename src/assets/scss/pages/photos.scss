@@ -30,13 +30,14 @@ body.photos {
             box-sizing: border-box;
             padding: var(--thumb-size) 0 calc(var(--thumb-size) * 2) 0;
 
-  width: 100vw;
-  margin-left: calc( max(var(--margin),var(--gutter)) * -1);
-
-
             img {
                 height: 100%;
                 object-fit: contain;
+            }
+
+            @media (orientation: landscape) {
+              width: 100vw;
+              margin-left: calc( max(var(--margin),var(--gutter)) * -1);
             }
         }
     }
@@ -57,7 +58,7 @@ body.photos {
 
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
 
         p {
             margin: 0;
@@ -70,6 +71,7 @@ body.photos {
             height: var(--thumb-size);
             opacity: 68;
             transition: all lib.$speed lib.$easing;
+            z-index: 1;
             img {
                 height: 100%;
                 width: auto;
@@ -80,11 +82,12 @@ body.photos {
 
             &.active,&:hover,&:focus {
                 opacity: 100;
-                transform: scale(1.2);
+                transform: scale(1.05);
+                z-index: 10;
             }
             &.active {
                 img {
-                    border-color: var(--outline);
+                    border-color: var(--primary);
                 }
             }
 
@@ -96,7 +99,7 @@ body.photos {
 
 
 //tablets & phones
-@media (max-width: lib.$breakpoint) {
+@media (orientation: portrait) {
     #gallery {
         .detail {
             height: 100vw;

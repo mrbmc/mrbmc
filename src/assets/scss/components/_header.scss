@@ -15,7 +15,7 @@
 
   transition: top lib.$speed lib.$easing;
 
-  @media (max-width:lib.$breakpoint) {
+  @media (orientation: portrait) {
     margin-left: 0;
   }
 
@@ -24,12 +24,17 @@
     font-weight: lib.$navbar-font-weight;
   }
 
-  .logo,.nav-top {
+  .nav-home,.nav-top {
     width: $logo-size;
     height: $logo-size;
     z-index: 30;
     overflow: hidden;
     border-radius: var(--border-radius);
+    text-decoration: none;
+    svg {
+      width: $logo-size;
+      height: $logo-size;
+    }
   }
 
   a.nav-top {
@@ -52,51 +57,29 @@
       -webkit-tap-highlight-color: transparent;
       transition: all lib.$speed lib.$easing;
       padding: 0 calc(var(--gutter) * .5);
-      margin: 0 0 0 var(--gutter);
       border-radius: var(--border-radius);
       text-decoration: none;
-
       color: var(--navbar-foreground);
+
       &:hover {
         background: var(--muted-background);
         color: var(--navbar-emphasized);
       }
 
-      // &:hover {
-      //   background: var(--muted-background);
-      //   color: var(--muted-foreground);
-      // }
-
       &.nav-cv, &.nav-resume, &.nav-photos {
         display: none;
       }
 
-      @media (max-width:lib.$breakpoint) {
-        margin: 0;
+      &.active {
+        background: var(--accent-background);
+        color: var(--accent-foreground);
+      }
+
+      @media (orientation: portrait) {
+        margin-left: var(--gutter);
       }
 
     }
-
-    @media (min-width: lib.$breakpoint) {
-      width: 38%;
-      justify-content: space-between;
-      margin-right: var(--gutter);
-      a {
-        margin-left: 0;
-      }
-      
-    }
-
   }
-
 }
 
-.active_nav, 
-body.about #header #menu a[href="/about/"], 
-body.portfolio #header #menu a[href="/portfolio/"], 
-body.work #header #menu a[href="/portfolio/"], 
-body.blog #header #menu a[href="/blog/"], 
-body.resume #header #menu a[href="/about/"] {
-  background: var(--accent-background);
-  color: var(--accent-foreground);
-}

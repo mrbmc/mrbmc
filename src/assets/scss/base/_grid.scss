@@ -21,10 +21,11 @@
 .full-width, .full-width-90 {
   @include fullwidth(false);
 }
+
 //this expands the grid to fill the container and the window
 .full-width-grid {
   @include fullwidth(true);
-  @media (max-width: lib.$breakpoint) {
+  @media (orientation: portrait) {
     padding-left: var(--gutter);
     padding-right: var(--gutter);
   }
@@ -62,8 +63,14 @@
         grid-column: span var(--columns);
     }
 
-    @media (max-width: lib.$breakpoint) {
-      [class*="col-"]{
+    @media (orientation: portrait) {
+      // [class*="col-"]{
+      //   grid-column: span var(--columns);
+      // }
+      .col-1,.col-2,.col-3, .col-4, .col-5 {
+        grid-column: span calc(var(--columns)/2);
+      }
+      .col-7,.col-8,.col-9, .col-10, .col-11 {
         grid-column: span var(--columns);
       }
     }
@@ -79,16 +86,6 @@ body > main {
   padding: 0 var(--gutter);
   position: relative;
   z-index: 1;
-
-  // Phones & Tablets
-  @media (max-width: lib.$breakpoint) {
-    // margin: 0 var(--gutter);
-  }
 }
 
-
-// body > header,body > footer {
-//   @include fullwidth(false);
-//   margin-left: 0;
-// }
 

@@ -58,7 +58,7 @@ blockquote,.blockquote {
     border-left: solid 4px var(--border-color);
     // color: var(--muted-foreground);
 
-    @media (max-width: lib.$breakpoint) {
+    @media (orientation: portrait) {
         margin-left: 0;
     }
 }
@@ -67,7 +67,8 @@ blockquote,.blockquote {
     background: var(--primary);
     color: var(--on-primary);
 
-    padding: calc( var(--gutter) * .5 ) var(--gutter);
+    display: inline-block;
+    padding: .5em var(--gutter);
     border-radius: var(--border-radius);
     text-decoration: none;
     border: none;
@@ -135,9 +136,6 @@ table {
                 border: none;
             }
         }
-    }
-
-    @media (min-width:lib.$breakpoint) {
     }
 
   }

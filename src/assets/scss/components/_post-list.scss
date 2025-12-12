@@ -2,7 +2,7 @@
 
 .post-list {
 
-    @media (max-width: lib.$breakpoint) {
+    @media (orientation: portrait) {
         margin-top: 0;
     }
 
@@ -61,7 +61,7 @@
             transform: scale(1.02);
         }
 
-        @media (max-width: lib.$breakpoint) {
+        @media (orientation: portrait) {
           & {
             flex-direction: column;
             margin-bottom: var(--gutter-xl);

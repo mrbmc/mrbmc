@@ -15,7 +15,7 @@ body.about {
     row-gap: var(--gutter);
 
     @for $i from 1 through 5 { // Loop from 1 to 5 for p elements
-      p:nth-child(#{$i}) { // Target each p element using nth-child
+      p:nth-of-type(#{$i}) { // Target each p element using nth-child
         transition-delay: ($i * (lib.$speed * 0.25)); // Calculate incremental delay (e.g., 0.1s, 0.2s, etc.)
       }
     }
@@ -35,9 +35,9 @@ body.about {
       }
     }
 
-    @media (min-width:lib.$breakpoint) {
+    // desktop
+    @media (orientation: landscape) {
       height: calc(80vh);
-
 
       .parallelogram {
         shape-outside: polygon(90% 0, 100% 0, 10% 100%, 0 100%);
@@ -64,9 +64,15 @@ body.about {
       }
 
     }
-    @media (max-width:lib.$breakpoint) {
+
+    // mobile
+    @media (orientation: portrait) {
       padding-top: var(--gutter-xl);
       padding-bottom: var(--gutter-xl);
+
+      #portrait {
+        grid-column: span var(--columns);
+      }
     }
 
   }
@@ -87,9 +93,9 @@ body.about {
     .grid {
       height: 100vh;
       scroll-snap-align: center;
-      @media (min-width:lib.$breakpoint) {
+      @media (orientation: landscape) {
       }
-      @media (max-width:lib.$breakpoint) {
+      @media (orientation: portrait) {
         align-content: center;
       }
     }
@@ -114,7 +120,7 @@ body.about {
 ul.timeline {
   width: auto;
 
-  @media (min-width:lib.$breakpoint) {
+  @media (orientation: landscape) {
     margin: lib.$gutter-xl lib.$gutter;
   }
 

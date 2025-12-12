@@ -17,7 +17,7 @@ p#gallery,div.gallery-wrap {
         margin: 0;
         display: block;
 
-        @media (max-width: lib.$breakpoint) {
+        @media (orientation: portrait) {
             max-height: 62vw;
         }
     }

@@ -81,7 +81,7 @@ body.colophon {
 	.critters {
 		display: flex;
 		flex-direction: row;
-		@media (max-width: lib.$breakpoint) {
+		@media (orientation: portrait) {
 			flex-wrap: wrap;
 			svg {
 				flex-basis: 50%;

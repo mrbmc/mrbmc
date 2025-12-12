@@ -71,16 +71,12 @@
   text-rendering: optimizeLegibility;
   font-size: clamp(18px, 1.6vw, 28px);
   --type-scale: 1.2;
-  @media (max-width: lib.$breakpoint) {
+  @media (orientation: portrait) {
     --type-scale: 1.12;
   }
-}
-
-body {
   font-family: lib.$base-font-family;
   font-weight: lib.$base-font-weight;
-  // font-size: 1rem;
-  line-height: 1.38;
+  line-height: lib.$base-line-height;
   letter-spacing: -0.0125em;
 }
 
@@ -129,4 +125,7 @@ blockquote, .blockquote {
 }
 strong,b {
   font-weight: lib.$bold-font-weight;
+}
+p {
+  line-height: 1.62;
 }

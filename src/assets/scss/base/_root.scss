@@ -100,18 +100,11 @@
     // --navbar-link-active-color:     var(--body-background);
     // --navbar-link-active-background: var(--body-foreground);
 
-    @media (max-width: (lib.$grid-width)) {
-      // --gutter: 1rem;
-      --margin: var(--gutter);
-    }
-    @media (max-width: lib.$breakpoint) {
-        --columns: #{lib.$grid-columns * 0.5};
-    }
-    @media (min-width: lib.$breakpoint-widescreen) {
-        --columns: #{lib.$grid-columns * 1.5};
-    }
+    // @media (orientation: portrait) {
+    //   --margin: var(--gutter);
+    // }
 }
-@media (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
     :root {
         --black-semi:   #{lib.$neutral-100}CC;
         --black:        #{lib.$neutral-100};

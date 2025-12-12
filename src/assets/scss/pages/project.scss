@@ -20,7 +20,7 @@ body.project {
             .metadata {
                 display: none;
             }
-            @media (min-width:lib.$breakpoint) {
+            @media (orientation: landscape) {
               // flex-direction: column-reverse;
               // justify-content: space-between;
             }
@@ -37,14 +37,14 @@ body.project {
             }
         }
         .pullleft,.pull-left {
-            @media (min-width: lib.$breakpoint) {
+            @media (orientation: landscape) {
                 width: 38%;
                 margin-right: var(--gutter);
                 float: left;
             }
         }
         .pullright,.pull-right {
-            @media (min-width: lib.$breakpoint) {
+            @media (orientation: landscape) {
                 width: 38%;
                 float: right;
                 margin: 0 0 0 var(--gutter);
@@ -63,7 +63,7 @@ body.project {
             margin-bottom: (lib.$gutter * 2);
         }
     }
-    @media (max-width: lib.$breakpoint) {
+    @media (orientation: portrait) {
         #scrollhint {
             display: none;
         }
@@ -80,7 +80,7 @@ body.project {
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: lib.$breakpoint) {
+        @media (orientation: portrait) {
             flex-direction: column-reverse;
         }
     }
@@ -113,7 +113,7 @@ body.project {
     //     //     }
     //     // }
 
-    //     @media (max-width: lib.$breakpoint) {
+    //     @media (orientation: portrait) {
     //         height: 56.25vw;
     //     }
     // }

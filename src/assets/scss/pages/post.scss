@@ -10,16 +10,37 @@ body.blog.post {
 
   #masthead {
 
+    padding-top: 0;
+    padding-bottom: 0;
     margin-bottom: var(--gutter-xl);
+    height: auto;
+    background: transparent;
+    flex-direction: column-reverse;
+    color: var(--body-foreground);
 
     p.summary {
       display: none;
     }
 
-    @media (min-width:lib.$breakpoint) {
+    @media (orientation: landscape) {
       flex-direction: column-reverse;
       justify-content: space-between;
 
+    }
+
+    &>figure,&>.figure {
+      position: static;
+      width: 100vw;
+      margin-bottom: var(--gutter);
+      img {
+        display: block;
+      }
+      @media (orientation: landscape) {
+        margin-left: calc(var(--gutter-xl) * -1);
+      }
+      @media (orientation: portrait) {
+        margin-left: calc(var(--gutter) * -1);
+      }
     }
 
   }
@@ -44,9 +65,13 @@ body.blog.post {
 
     }
 
+    p,li {
+      line-height: 1.62;
+    }
+
     .pullright,.pull-right {
         clear: both;
-        @media (min-width: lib.$breakpoint) {
+        @media (orientation: landscape) {
             width: 38%;
             float: right;
             margin: 0 0 0 var(--gutter);
@@ -63,5 +88,10 @@ body.blog.post {
   &.scrolled {
     background: var(--body-background);
   }
+
+}
+
+
+@media print {
 
 }

@@ -80,7 +80,7 @@
 
   }
 
-  @media (max-width:lib.$breakpoint) {
+  @media (orientation: portrait) {
     position: fixed;
     top: 0.5rem;
     width: calc(100vw - 6rem);
@@ -142,7 +142,7 @@ a.nav-subnav {
   border-radius: var(--border-radius-xl);
   @include lib.glass();
 
-  @media (min-width: lib.$breakpoint) {
+  @media (orientation: landscape) {
     display: none;
   }
   @media (prefers-color-scheme: dark) {

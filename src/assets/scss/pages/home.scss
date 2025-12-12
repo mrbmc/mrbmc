@@ -32,9 +32,22 @@ body.home {
       background-clip: text;
       -webkit-text-fill-color: transparent; /* For Webkit browsers */
       color: transparent; /* Fallback for other browsers, or if -webkit-text-fill-color isn't needed */
+      transition-delay: (lib.$speed * .33);
+    }
+    #mininav {
+      display: flex;
+      li {
+        list-style-type: none;
+        margin: 0 var(--gutter) 0 0;
+      }
+      @media (orientation: portrait) {
+        justify-content: space-between;
+      }
+      transition-delay: (lib.$speed * .66);
     }
     a {
       text-decoration: none;
+      font-weight: lib.$bold-font-weight;
     }
 
     #crane {
@@ -66,7 +79,7 @@ body.home {
         font-size: calc(1rem * pow(var(--type-scale), 1));
       }
       @for $i from 1 through 5 { // Loop from 1 to 5 for p elements
-        p:nth-child(#{$i}) { // Target each p element using nth-child
+        *:nth-child(#{$i}) { // Target each p element using nth-child
           transition-delay: ($i * (lib.$speed*0.5)); // Calculate incremental delay (e.g., 0.1s, 0.2s, etc.)
         }
       }
@@ -74,10 +87,10 @@ body.home {
     @media (orientation: portrait) {
       flex-direction: column;
       justify-content: flex-start;
-      // #mininav {
+      #mininav {
       //   position: absolute;
       //   bottom: 8rem;
-      // }
+      }
     }
   }
 
@@ -89,13 +102,10 @@ body.home {
     }
   }
 
-
-}
-
-@media (max-width: lib.$breakpoint) {
-  body {
+  @media (orientation: portrait) {
     overscroll-behavior: none;
     max-height: 100vh;
-
   }
+
 }
+
