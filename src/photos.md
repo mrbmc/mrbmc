@@ -24,7 +24,7 @@ Mostly horizons, textures, and silhouettes.
 
 {% for p in pics %}
 
-![{{ p.title }}]({{p.path}}){data-spy="scroll" class="fade" loading="lazy"} {id="{{p.id}}"}
+![{{ p.title }}]({{p.path}}){.fade-in data-spy="scroll" loading="lazy"} {id="{{p.id}}"}
 
 {% endfor %}
 
@@ -48,10 +48,4 @@ Mostly horizons, textures, and silhouettes.
 </nav>
 {% endif %}
 
-
-<style type="text/css">
-html {
-    scroll-snap-type: y mandatory;
-}
-</style>
-<script type="text/javascript" language="javascript" src="/js/photos.bundle.js"></script>
+<script type="module" src="/js/photos.bundle.js"></script>
