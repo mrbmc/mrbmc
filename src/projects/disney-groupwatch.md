@@ -229,8 +229,8 @@ The feature was well covered in the tech and media press. Many outlets called ou
 
 Fan reception was positive as well although people attempting to watch across different international regions experienced issues with different cuts of films being incompatible.
 
-+ ![Press reactions](/images/portfolio/disney-groupwatch/press.png) {.col-6}
-+ ![Social reactions](/images/portfolio/disney-groupwatch/social.png) {.col-6}
++ ![Press reactions](/images/portfolio/disney-groupwatch/Press.png) {.col-6}
++ ![Social reactions](/images/portfolio/disney-groupwatch/Social.png) {.col-6}
 {.grid .well .full-width}
 
 ### In Market Performance
