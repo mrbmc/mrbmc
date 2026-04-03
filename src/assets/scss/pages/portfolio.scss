@@ -171,8 +171,23 @@ input[name="iso-filter"] {
       filter: saturate(92%);
     }
 
-    &--empty {
+    &--title {
       aspect-ratio: 16 / 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      background: var(--gray-dark);
+
+      .item-figure-title {
+        font-size: 1.1em;
+        font-weight: lib.$bold-font-weight;
+        line-height: 1.25;
+        text-align: center;
+        color: var(--white);
+        hyphens: auto;
+        overflow-wrap: break-word;
+      }
     }
   }
 
@@ -221,6 +236,13 @@ input[name="iso-filter"] {
     }
   }
 }
+
+// Title-card background colors keyed to filter category
+.isotope-item[data-filter="work"]  .item-figure--title { background: var(--primary); }
+.isotope-item[data-filter="speak"] .item-figure--title { background: var(--secondary); }
+.isotope-item[data-filter="play"]  .item-figure--title { background: var(--tertiary); }
+.isotope-item[data-filter="write"] .item-figure--title { background: var(--off-black); }
+
 
 // Large item: wider image crop + larger title
 .isotope-item.lg {
