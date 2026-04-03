@@ -25,20 +25,20 @@ Finished! 56 links found. 42 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/
 ├───OK─── http://localhost:8000/images/optimized/disney-growth-thumb-640.webp
-├───OK─── http://localhost:8000/portfolio/flint-and-silicon/
-├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-thumb-640.webp
-├───OK─── http://localhost:8000/images/optimized/optumus-mockup-640.webp
-├───OK─── http://localhost:8000/portfolio/boids/
-├───OK─── http://localhost:8000/images/optimized/boids-thumb-640.webp
-├───OK─── http://localhost:8000/portfolio/espn/
-├───OK─── http://localhost:8000/images/optimized/espn-thumbnail-1x1-640.webp
-├───OK─── http://localhost:8000/blog/growth-design-idioms/
-├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-preview-640.webp
-├───OK─── http://localhost:8000/images/optimized/culture-workshop-640.webp
 ├───OK─── http://localhost:8000/portfolio/nhl/
 ├───OK─── http://localhost:8000/images/optimized/nhl-thumbnail-640.webp
+├───OK─── http://localhost:8000/portfolio/espn/
+├───OK─── http://localhost:8000/images/optimized/espn-thumbnail-1x1-640.webp
+├───OK─── http://localhost:8000/images/optimized/optumus-mockup-640.webp
 ├───OK─── http://localhost:8000/portfolio/fusion-family-feast/
 ├───OK─── http://localhost:8000/images/optimized/fusion-family-feast-640.webp
+├───OK─── http://localhost:8000/images/optimized/disney-groupwatch-preview-640.webp
+├───OK─── http://localhost:8000/portfolio/boids/
+├───OK─── http://localhost:8000/images/optimized/boids-thumb-640.webp
+├───OK─── http://localhost:8000/portfolio/flint-and-silicon/
+├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-thumb-640.webp
+├───OK─── http://localhost:8000/blog/growth-design-idioms/
+├───OK─── http://localhost:8000/images/optimized/EXD-workshop-voting-640.webp
 ├───OK─── http://localhost:8000/blog/job-market-2025/
 ├───OK─── http://localhost:8000/portfolio/eurosport/
 ├───OK─── http://localhost:8000/images/optimized/eurosport-thumb-1x1-640.webp
@@ -250,11 +250,10 @@ Getting links from: http://localhost:8000/portfolio/team-charter-workshop/
 ├───OK─── http://localhost:8000/images/portfolio/culture-workshop/EXD-workshop-timelapse.mp4
 ├───OK─── http://localhost:8000/images/optimized/workshop-plan-doc-640.webp
 ├───OK─── http://localhost:8000/images/optimized/EXD-workshop-trading-cards-640.webp
-├───OK─── http://localhost:8000/images/optimized/EXD-workshop-voting-640.webp
 ├───OK─── http://localhost:8000/images/optimized/EXD-workshop-headsdown-640.webp
 ├───OK─── http://localhost:8000/images/optimized/EXD-workshop-values-640.webp
 ├───OK─── http://localhost:8000/images/optimized/EXD-workshop-elevator-640.webp
-Finished! 33 links found. 26 excluded. 0 broken.
+Finished! 33 links found. 27 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/disney-enterprise/
 ├───OK─── http://localhost:8000/images/optimized/disney-enterprise-sso_gates-640.webp
@@ -332,14 +331,30 @@ Finished! 45 links found. 45 excluded. 0 broken.
 Getting links from: http://localhost:8000/privacy/
 Finished! 21 links found. 21 excluded. 0 broken.
 
-Getting links from: http://localhost:8000/portfolio/flint-and-silicon/
-├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-masthead-640.webp
-Finished! 23 links found. 22 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/boids/
-├───OK─── http://localhost:8000/images/portfolio/gaia/boids.mp4
-├───OK─── http://localhost:8000/gaia/boids/
-Finished! 23 links found. 21 excluded. 0 broken.
+Getting links from: http://localhost:8000/portfolio/nhl/
+├───OK─── http://localhost:8000/images/portfolio/nhl/nhl-masthead.mp4
+├───OK─── http://localhost:8000/images/optimized/nhl-devices@2x-640.webp
+├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-highlights-640.webp
+├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-scores-640.webp
+├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-player_info-640.webp
+├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-favorites-640.webp
+├───OK─── http://localhost:8000/images/optimized/bug-ps4-timestamp-playhead-640.webp
+├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-player-640.webp
+├───OK─── http://localhost:8000/images/optimized/nhl-aroundtheleague-shelf-640.webp
+├───OK─── http://localhost:8000/images/portfolio/nhl/nhl-around-the-league.mp4
+├───OK─── http://localhost:8000/images/optimized/nhl-aroundtheleague-pip-640.webp
+├───OK─── http://localhost:8000/images/optimized/nhl-mobile-video-before-640.webp
+├───OK─── http://localhost:8000/images/optimized/nhl-mobile-video-after-607.webp
+├───OK─── http://localhost:8000/images/portfolio/nhl/1a-Mobile-Video-Improvements.mp4
+├───OK─── http://localhost:8000/images/portfolio/nhl/on-the-fly.mp4
+├───OK─── http://localhost:8000/images/optimized/gameflow_01-640.webp
+├───OK─── http://localhost:8000/images/optimized/gameflow_03-640.webp
+├───OK─── http://localhost:8000/images/optimized/gameflow_02-640.webp
+├───OK─── http://localhost:8000/images/optimized/gameflow_05-640.webp
+├───OK─── http://localhost:8000/images/optimized/gameflow_04-640.webp
+├───OK─── http://localhost:8000/images/optimized/gameflow_06-640.webp
+├───OK─── http://localhost:8000/images/portfolio/nhl/GameFlow-Demo.mp4
+Finished! 54 links found. 32 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/portfolio/espn/
 ├───OK─── http://localhost:8000/images/portfolio/espn/ESPN-ORGANIC_MLP_Generic.mp4
@@ -369,40 +384,24 @@ Getting links from: http://localhost:8000/portfolio/espn/
 ├───OK─── http://localhost:8000/images/portfolio/espn/SportsCenter_plus.mp4
 Finished! 52 links found. 27 excluded. 0 broken.
 
+Getting links from: http://localhost:8000/portfolio/fusion-family-feast/
+Finished! 23 links found. 23 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/portfolio/boids/
+├───OK─── http://localhost:8000/images/portfolio/gaia/boids.mp4
+├───OK─── http://localhost:8000/gaia/boids/
+Finished! 23 links found. 21 excluded. 0 broken.
+
+Getting links from: http://localhost:8000/portfolio/flint-and-silicon/
+├───OK─── http://localhost:8000/images/optimized/flint-and-silicon-masthead-640.webp
+Finished! 23 links found. 22 excluded. 0 broken.
+
 Getting links from: http://localhost:8000/blog/growth-design-idioms/
 ├───OK─── http://localhost:8000/tags/design
 ├───OK─── http://localhost:8000/tags/ui
 ├───OK─── http://localhost:8000/tags/usability
 ├───OK─── http://localhost:8000/tags/capitalism
 Finished! 29 links found. 25 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/nhl/
-├───OK─── http://localhost:8000/images/portfolio/nhl/nhl-masthead.mp4
-├───OK─── http://localhost:8000/images/optimized/nhl-devices@2x-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-highlights-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-scores-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-player_info-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-favorites-640.webp
-├───OK─── http://localhost:8000/images/optimized/bug-ps4-timestamp-playhead-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-tv-tvos-player-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-aroundtheleague-shelf-640.webp
-├───OK─── http://localhost:8000/images/portfolio/nhl/nhl-around-the-league.mp4
-├───OK─── http://localhost:8000/images/optimized/nhl-aroundtheleague-pip-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-mobile-video-before-640.webp
-├───OK─── http://localhost:8000/images/optimized/nhl-mobile-video-after-607.webp
-├───OK─── http://localhost:8000/images/portfolio/nhl/1a-Mobile-Video-Improvements.mp4
-├───OK─── http://localhost:8000/images/portfolio/nhl/on-the-fly.mp4
-├───OK─── http://localhost:8000/images/optimized/gameflow_01-640.webp
-├───OK─── http://localhost:8000/images/optimized/gameflow_03-640.webp
-├───OK─── http://localhost:8000/images/optimized/gameflow_02-640.webp
-├───OK─── http://localhost:8000/images/optimized/gameflow_05-640.webp
-├───OK─── http://localhost:8000/images/optimized/gameflow_04-640.webp
-├───OK─── http://localhost:8000/images/optimized/gameflow_06-640.webp
-├───OK─── http://localhost:8000/images/portfolio/nhl/GameFlow-Demo.mp4
-Finished! 54 links found. 32 excluded. 0 broken.
-
-Getting links from: http://localhost:8000/portfolio/fusion-family-feast/
-Finished! 23 links found. 23 excluded. 0 broken.
 
 Getting links from: http://localhost:8000/blog/job-market-2025/
 ├───OK─── http://localhost:8000/images/optimized/key-cylinder-wards-640.webp
@@ -810,5 +809,5 @@ Finished! 21 links found. 21 excluded. 0 broken.
 Getting links from: http://localhost:8000/tags/enterprise
 Finished! 21 links found. 21 excluded. 0 broken.
 
-Finished! 3166 links found. 2672 excluded. 0 broken.
+Finished! 3166 links found. 2673 excluded. 0 broken.
 Elapsed time: 1 second

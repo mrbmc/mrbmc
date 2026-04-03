@@ -176,11 +176,12 @@ input[name="iso-filter"] {
     }
 
     &--title {
-      aspect-ratio: 16 / 9;
+      // aspect-ratio: 16 / 9;
+      height: 16rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1.5rem;
+      padding: 0 var(--gutter);
       background: var(--gray-dark);
 
       .item-figure-title {
